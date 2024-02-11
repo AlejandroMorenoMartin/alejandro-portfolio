@@ -1,6 +1,7 @@
 @import url('variables.css');
 
 /* Reseteamos los margin y paddings de todas las etiquetas */
+
 * , *::before , *::after{
   margin: 0;
   padding: 0;
@@ -8,11 +9,13 @@
   box-sizing: border-box;
   vertical-align: baseline;
 }
+
 *::before , *::after{
   display: block;
 }
 
 /* Evitamos problemas con las imagenes */
+
 img , picture , video , iframe , figure{
   max-width: 100%;  
   display: block;
@@ -24,40 +27,48 @@ img , picture , video , iframe , figure{
 }
 
 /* Reseteamos los enlaces para funcionar como cajas... */
+
 a {
   display: block;
   text-decoration: none;
   color:inherit;
   font-size:inherit;
 }
+
 /* ... excepto los que se encuentran en párrafos */
+
 p a {
   display: inline;
 }
 
 /* Quitamos los puntos de los <li> */
+
 li {
   list-style-type: none;
 }
 
 /* (Opcional) Configuramos anclas suaves */
+
 html {
   scroll-behavior: smooth;
 }
 
 /* Evitamos problemas con los pseudoelementos de quotes */
+
 blockquote:before, blockquote:after, q:before, q:after {
 	content: '';
 	content: none;
 }
 
 /* (Opcional) Configuramos el texto que seleccionamos */
+
 ::selection {
   background-color: var(--negro);
   color: var(--blanco);
 }
 
 /* Nivelamos problemas de tipografías y colocación de formularios */
+
 form , input, textarea, select , button , label{
     font-family: inherit;
     font-size: inherit;
@@ -75,6 +86,7 @@ form , input, textarea, select , button , label{
 } */
 
 /* Evitamos problemas con los SVG */
+
 svg{
     width: 100%;
     display: block;
@@ -82,6 +94,7 @@ svg{
 }
 
 /* Configuramos la tipografía para toda la web */
+
 body {
   min-height  : 100vh;
   font-size   : 100%;  
