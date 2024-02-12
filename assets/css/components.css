@@ -33,7 +33,10 @@
     1.5.5 card-5 (card-education, card-persona)    
     1.5.6 card-6 (card-author)
     1.5.7 card-7 (card-article)
-    1.5.8 card-8 (card-color)      
+    1.5.8 card-senzo (card-color) 
+    1.5.9 card-neutral (card-color)
+    1.5.10 card-atipiko (card-color)
+    1.5.11 card-tattoo (card-color)     
 
   1.6 Scroller
     1.6.1 scroller 
@@ -369,7 +372,7 @@ input[type="checkbox"] {
   padding: 12px 24px;
   color: var(--primary-1000);
   background-color: var(--primary-500);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
   cursor: pointer;
   width: fit-content;
   text-align: center;
@@ -377,7 +380,7 @@ input[type="checkbox"] {
 }
 
 .button-primary:hover {
-  background-color: var(--primary-700);
+  background-color: var(--primary-400);
 }
 
 @media (max-width: 1200px) {
@@ -933,166 +936,260 @@ input[type="checkbox"] {
   width: 100%;
 }
 
-/* 1.5.8 card-8 (card-color) */
+/* 1.5.8 card-senzo (card-color) */
 
-.card-8 {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
-  padding: 16px;
-  border: var(--bw-0) solid var(--neutral-500);
-  background: var(--neutral-1000);
-  border-radius: var(--br-4);
-}
-
-.card-8__header {
+.card-senzo__header {
   display: flex;
   flex-direction: column;
   gap: 12px;
   width: 100%;
 }
 
-.card-8__main-color {
+.card-senzo__main-color {
   height: 96px;
   width: 100%;
   background-color: #FF0A44;
   border-radius: var(--br-4);
 }
 
-.card-8__scale {
+.card-senzo__scale {
   display: flex;
   width: 100%;
   gap: 4px;
 }
 
-.card-8__scale- {
+.card-senzo__scale- {
   height: 16px;
   width: 100%;
   border-radius: var(--br-4);
 }
 
-.card-8__scale-1 {
+.card-senzo__scale-1 {
   background-color: #EDD0D7;
 }
 
-.card-8__scale-2 {
+.card-senzo__scale-2 {
   background-color: #FFBFCE;
 }
 
-.card-8__scale-3 {
+.card-senzo__scale-3 {
   background-color: #FF7F9D;
 }
 
-.card-8__scale-4 {
+.card-senzo__scale-4 {
   background-color: #FF3F6D;
 }
 
-.card-8__scale-5 {
+.card-senzo__scale-5 {
   background-color: #FF0A44;
 }
 
-.card-8__scale-6 {
+.card-senzo__scale-6 {
   background-color: #BF002D;
 }
 
-.card-8__scale-7 {
+.card-senzo__scale-7 {
   background-color: #7F001E;
 }
 
-.card-8__scale-8 {
+.card-senzo__scale-8 {
   background-color: #3F000F;
 }
 
-.card-8__scale-9 {
+.card-senzo__scale-9 {
   background-color: #210109;
 }
 
-.card-8__neutral-color {
+/* 1.5.9 card-neutral (card-color) */
+
+.card-neutral__header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.card-neutral__main-color {
   height: 96px;
   width: 100%;
-  background-color: #383C46;
+  background-color: #393B40;
   border-radius: var(--br-4);
 }
 
-.card-8__scale-10 {
+.card-neutral__scale {
+  display: flex;
+  width: 100%;
+  gap: 4px;
+}
+
+.card-neutral__scale- {
+  height: 16px;
+  width: 100%;
+  border-radius: var(--br-4);
+}
+
+.card-neutral__scale-1 {
   background-color: #F5F6FA;
 }
 
-.card-8__scale-11 {
+.card-neutral__scale-2 {
   background-color: #D8DADF;
 }
 
-.card-8__scale-12 {
+.card-neutral__scale-3 {
   background-color: #90949E;
 }
 
-.card-8__scale-13 {
+.card-neutral__scale-4 {
   background-color: #5C606A;
 }
 
-.card-8__scale-14 {
+.card-neutral__scale-5 {
   background-color: #383C46;
 }
 
-.card-8__scale-15 {
+.card-neutral__scale-6 {
   background-color: #1D2028;
 }
 
-.card-8__scale-16 {
+.card-neutral__scale-7 {
   background-color: #0D111C;
 }
 
-.card-8__scale-17 {
+.card-neutral__scale-8 {
   background-color: #02060F;
 }
 
-.card-8__scale-18 {
+.card-neutral__scale-9 {
   background-color: #000105;
 }
 
-.card-8__main-color-19 {
+/* 1.5.9 card-atipiko (card-color) */
+
+.card-atipiko__header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.card-atipiko__main-color {
   height: 96px;
   width: 100%;
   background-color: #FF800A;
   border-radius: var(--br-4);
 }
 
-.card-8__scale-20 {
+.card-atipiko__scale {
+  display: flex;
+  width: 100%;
+  gap: 4px;
+}
+
+.card-atipiko__scale- {
+  height: 16px;
+  width: 100%;
+  border-radius: var(--br-4);
+}
+
+.card-atipiko__scale-1 {
   background-color: #EDDED0;
 }
 
-.card-8__scale-21 {
+.card-atipiko__scale-2 {
   background-color: #FFDEBF;
 }
 
-.card-8__scale-22 {
+.card-atipiko__scale-3 {
   background-color: #FFBD7F;
 }
 
-.card-8__scale-23 {
+.card-atipiko__scale-4 {
   background-color: #FF9C3F;
 }
 
-.card-8__scale-24 {
+.card-atipiko__scale-5 {
   background-color: #FF800A;
 }
 
-.card-8__scale-25 {
+.card-atipiko__scale-6 {
   background-color: #BF5C00;
 }
 
-.card-8__scale-26 {
+.card-atipiko__scale-7 {
   background-color: #7F3D00;
 }
 
-.card-8__scale-27 {
+.card-atipiko__scale-8 {
   background-color: #3F1E00;
 }
 
-.card-8__scale-28 {
+.card-atipiko__scale-9 {
   background-color: #211001;
+}
+
+/* 1.5.9 card-tattoo (card-color) */
+
+.card-tattoo__header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.card-tattoo__main-color {
+  height: 96px;
+  width: 100%;
+  background-color: #A02ED6;
+  border-radius: var(--br-4);
+}
+
+.card-tattoo__scale {
+  display: flex;
+  width: 100%;
+  gap: 4px;
+}
+
+.card-tattoo__scale- {
+  height: 16px;
+  width: 100%;
+  border-radius: var(--br-4);
+}
+
+.card-tattoo__scale-1 {
+  background-color: #F2E7F6;
+}
+
+.card-tattoo__scale-2 {
+  background-color: #E9BAFF;
+}
+
+.card-tattoo__scale-3 {
+  background-color: #D998F6;
+}
+
+.card-tattoo__scale-4 {
+  background-color: #C158F1;
+}
+
+.card-tattoo__scale-5 {
+  background-color: #9A20D2;
+}
+
+.card-tattoo__scale-6 {
+  background-color: #7408A6;
+}
+
+.card-tattoo__scale-7 {
+  background-color: #4C046D;
+}
+
+.card-tattoo__scale-8 {
+  background-color: #220231;
+}
+
+.card-tattoo__scale-9 {
+  background-color: #09000D;
 }
 
 /* ----------------------------------------------- */
