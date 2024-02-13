@@ -1140,7 +1140,7 @@ input[type="checkbox"] {
 .card-tattoo__main-color {
   height: 96px;
   width: 100%;
-  background-color: #A02ED6;
+  background-color: #A937DE;
   border-radius: var(--br-4);
 }
 
@@ -1157,39 +1157,39 @@ input[type="checkbox"] {
 }
 
 .card-tattoo__scale-1 {
-  background-color: #F2E7F6;
+  background-color: #F9F0FC;
 }
 
 .card-tattoo__scale-2 {
-  background-color: #E9BAFF;
+  background-color: #ECD4F8;
 }
 
 .card-tattoo__scale-3 {
-  background-color: #D998F6;
+  background-color: #D79BF1;
 }
 
 .card-tattoo__scale-4 {
-  background-color: #C158F1;
+  background-color: #C96AF4;
 }
 
 .card-tattoo__scale-5 {
-  background-color: #9A20D2;
+  background-color: #A937DE;
 }
 
 .card-tattoo__scale-6 {
-  background-color: #7408A6;
+  background-color: #7312A0;
 }
 
 .card-tattoo__scale-7 {
-  background-color: #4C046D;
+  background-color: #530C73;
 }
 
 .card-tattoo__scale-8 {
-  background-color: #220231;
+  background-color: #35064B;
 }
 
 .card-tattoo__scale-9 {
-  background-color: #09000D;
+  background-color: #1B0225;
 }
 
 /* ----------------------------------------------- */
@@ -1640,14 +1640,14 @@ tr:nth-of-type(2n) {
 
   th {
     display: none;
-  }
+  }  
 
   td {
     display: grid;
     grid-template-columns: 15ch auto;
     gap: 0.5rem;
     padding: 0.5rem 1rem;
-    align-items: center;
+    align-items: start;
   }
 
   td:first-child {
@@ -1664,6 +1664,15 @@ tr:nth-of-type(2n) {
     text-transform: capitalize;
   }
 }
+
+@media (min-width: 1200px) {
+  .table-wrapper__usability tr th:last-child,
+  .table-wrapper__usability tr td:last-child {
+    width: 40%;
+  }
+}
+
+
 
 /* ----------------------------------------------- */
 
@@ -2044,11 +2053,11 @@ tr:nth-of-type(2n) {
 
 /* ABOUT ME & BLOG */
 
-.tab-content {
+.tab-content { 
   display: none;
 }
 
-.tab-content.active {
+.tab-content.active {  
   display: block;
 }
 
@@ -2072,7 +2081,7 @@ tr:nth-of-type(2n) {
 
 /* 2.2.2 display flex (experience-container)  */
 
-.experience-container {
+.experience-container {  
   display: flex;
   flex-direction: column;
   gap: 64px;
@@ -2086,6 +2095,10 @@ tr:nth-of-type(2n) {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(291px, 100%), 1fr));
   gap: 12px;
+}
+
+.component-container{
+  width: 100%;
 }
 
 /* ----------------------------------------------- */
