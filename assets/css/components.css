@@ -429,7 +429,7 @@ input[type="checkbox"] {
   border-radius: var(--br-4);
 }
 
-.button-terciary p {
+.button-terciary a {
   color: var(--neutral-500);
 }
 
