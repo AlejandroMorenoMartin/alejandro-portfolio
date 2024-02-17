@@ -594,7 +594,7 @@ input[type="checkbox"] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  cursor: pointer;
 }
 
 .card-1__image {
@@ -2218,13 +2218,9 @@ tr:nth-of-type(2n) {
   height: auto;
 }
 
-.design-decisions__image video {
+.design-decisions__image dotlottie-player {
   width: 50%;
-  margin: 0 auto;
-  height: auto;
-  pointer-events: none;
-  user-drag: none;
-  -webkit-user-drag: none;  
+  margin: 0 auto;      
 }
 
 .project-section--hero {

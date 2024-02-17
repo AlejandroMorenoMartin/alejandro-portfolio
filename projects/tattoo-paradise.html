@@ -18,7 +18,9 @@
   <link rel="stylesheet" href="../assets/css/components.css">
 
   <!-- Script -->
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <!-- Incluye la biblioteca Lottie desde la CDN -->
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
 
   <!-- Title -->
   <title>Alejandro Moreno - Tattoo paradise</title>
@@ -699,7 +701,8 @@
           </p>
         </div>
         <div class="design-decisions__image">
-          <video autoplay loop controls="false" src="/assets/animations/tattoo/design-decisions-1.mp4" type="video/mp4"></video>
+          <dotlottie-player src="https://lottie.host/9c61fd55-1ac3-4c2f-9799-86d531be4bfb/5fgR5L329Y.json"
+            background="transparent" speed="1" loop autoplay></dotlottie-player>          
         </div>
       </div>
 
@@ -723,7 +726,7 @@
             secure resolution of the post-tattoo stage.
           </p>
         </div>
-        <div class="design-decisions__image">
+        <div class="design-decisions__image">          
           <img src="../assets/images/tattoo/design-decisions-3.png" alt="frame-mobile">
         </div>
 
@@ -998,36 +1001,36 @@
         <div class="project-section__components">
         </div>
 
-         <!-- 1.7.1 tab -->
-      <div class="tab">
+        <!-- 1.7.1 tab -->
+        <div class="tab">
 
-        <!-- 1.7.2 tab-button -->
-        <button class="tab-button active" onclick="changeTab('cards')" id="cardsBtn">
-          <p class="label">Cards</p>
-        </button>
+          <!-- 1.7.2 tab-button -->
+          <button class="tab-button active" onclick="changeTab('cards')" id="cardsBtn">
+            <p class="label">Cards</p>
+          </button>
 
-        <!-- 1.7.2 tab-button -->
-        <button class="tab-button" onclick="changeTab('buttons')" id="buttonsBtn">
-          <p class="label">Buttons</p>
-        </button>
+          <!-- 1.7.2 tab-button -->
+          <button class="tab-button" onclick="changeTab('buttons')" id="buttonsBtn">
+            <p class="label">Buttons</p>
+          </button>
 
-      </div>
-
-      <!-- 2.2.2 display flex (cards-container) -->
-      <div id="cards" class="tab-content active">
-        <div class="component-container">
-          <img src="../assets/images/tattoo/tattoo-components-1.png" alt="tattoo-components-1">    
         </div>
-      </div>
 
-      <!-- 2.1.2 display grid (buttons-container) -->
-      <div id="buttons" class="tab-content">
-        <div class="component-container">
-          <img src="../assets/images/tattoo/tattoo-components-2.png" alt="tattoo-components-2">  
+        <!-- 2.2.2 display flex (cards-container) -->
+        <div id="cards" class="tab-content active">
+          <div class="component-container">
+            <img src="../assets/images/tattoo/tattoo-components-1.png" alt="tattoo-components-1">
+          </div>
         </div>
-      </div>
 
-       
+        <!-- 2.1.2 display grid (buttons-container) -->
+        <div id="buttons" class="tab-content">
+          <div class="component-container">
+            <img src="../assets/images/tattoo/tattoo-components-2.png" alt="tattoo-components-2">
+          </div>
+        </div>
+
+
       </div>
     </section>
 
@@ -1038,7 +1041,9 @@
           <h2>Learnings</h2>
         </div>
         <div class="section-header__text">
-          <p class="large">This was a project where I could conduct in-depth market research and had the opportunity to observe user behavior live. It particularly helped me learn how to empathize with the user, pinpoint where in the flow they get stuck, and understand the reasons behind it.
+          <p class="large">This was a project where I could conduct in-depth market research and had the opportunity to
+            observe user behavior live. It particularly helped me learn how to empathize with the user, pinpoint where
+            in the flow they get stuck, and understand the reasons behind it.
           </p>
         </div>
       </div>
