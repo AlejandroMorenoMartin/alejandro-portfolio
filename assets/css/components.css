@@ -2218,7 +2218,7 @@ tr:nth-of-type(2n) {
   height: auto;
 }
 
-.design-decisions__image dotlottie-player {
+.design-decisions__image .lottie {
   width: 50%;
   margin: 0 auto;      
 }
