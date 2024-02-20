@@ -36,7 +36,8 @@
     1.5.8 card-senzo (card-color) 
     1.5.9 card-neutral (card-color)
     1.5.10 card-atipiko (card-color)
-    1.5.11 card-tattoo (card-color)     
+    1.5.11 card-tattoo (card-color)   
+    1.5.12 card-skill  
 
   1.6 Scroller
     1.6.1 scroller 
@@ -1192,6 +1193,106 @@ input[type="checkbox"] {
   background-color: #1B0225;
 }
 
+/* 1.5.12 card-skill */
+
+.card-skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 48px 136px 112px 136px;
+  border: var(--bw-0) solid var(--neutral-500);
+  background: var(--neutral-1000);
+  border-radius: var(--br-4);
+  position: relative;
+  overflow: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card-skill__text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: left;
+  gap: 12px;
+  padding: 24px;
+  background-color: var(--neutral-800);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transform: translateY(50%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card-skill__text .regular {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(100%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  height: auto;
+}
+
+.card-skill:hover>.card-skill__text {
+  transform: translateY(0);
+}
+
+.card-skill:hover>.card-skill__text .regular {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.card-skill:hover .card-skill__button {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.card-skill__button {
+  display: flex;
+  padding: 4px;
+  border-radius: var(--br-4);
+  background-color: var(--neutral-800);
+  position: absolute;
+  top: -12px;
+  left: 46%;
+}
+
+.card-skill__button img {
+  width: 24px;
+}
+
+@media (max-width: 1200px) {
+  .card-skill {
+    display: flex;
+    flex-direction: column;         
+    overflow: visible;
+    padding: 0px;
+    gap: 0px;
+    width: 100%;    
+  }
+
+  .card-skill img {
+    width: 96px;
+    margin: 0 auto;
+  }
+
+  .card-skill__text {
+    position: static;
+    width: 296px;
+    transform: translateY(0%);   
+  }
+
+  .card-skill__text .regular {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0%);    
+  }
+  
+  .card-skill__button {
+    display: none;    
+  }  
+}
+
 /* ----------------------------------------------- */
 
 /* SCROLLER */
@@ -2034,6 +2135,13 @@ tr:nth-of-type(2n) {
   gap: 12px;
 }
 
+@media screen and (max-width: 1200px) {
+  .skills-container {
+    display: flex;
+    overflow-x: auto;
+  }
+}
+
 /* ----------------------------------------------- */
 
 /* 2.1.6 index-section__testimonials */
@@ -2220,7 +2328,7 @@ tr:nth-of-type(2n) {
 
 .design-decisions__image .lottie {
   width: 50%;
-  margin: 0 auto;      
+  margin: 0 auto;
 }
 
 .project-section--hero {
