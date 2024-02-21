@@ -26,7 +26,7 @@
     1.4.2 tag-other
 
   1.5 Cards
-    1.5.1 card-1 (card-projects, card-skills)
+    1.5.1 card-1 (card-projects)
     1.5.2 card-2 (card-testimonials)
     1.5.3 card-3 (card-readings)
     1.5.4 card-4 (card-experience)
@@ -682,6 +682,13 @@ input[type="checkbox"] {
   border-radius: 0px 0px 4px 4px;
 }
 
+@media (max-width: 1200px) {
+  .card-1 {
+    flex: 0 0 95%;
+    scroll-snap-align: start;
+  }
+}
+
 /* 1.5.2 card-2 (card-testimonials) */
 
 .card-2 {
@@ -731,6 +738,18 @@ input[type="checkbox"] {
   color: var(--neutral-100);
 }
 
+.card-2:nth-child(1) {
+  grid-column: span 2;
+}
+
+
+@media (max-width: 1200px) {
+  .card-2 {
+    flex: 0 0 90%;
+    scroll-snap-align: start;
+  }
+}
+
 /* 1.5.3 card-3 (card-readings) */
 
 .card-3 {
@@ -763,6 +782,13 @@ input[type="checkbox"] {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+  .card-3 {
+    flex: 0 0 90%;
+    scroll-snap-align: start;
+  }
 }
 
 /* 1.5.4 card-4 (card-experience) */
@@ -823,6 +849,8 @@ input[type="checkbox"] {
   color: var(--neutral-100);
 }
 
+
+
 /* 1.5.5 card-5 (card-education, card-persona) */
 
 .card-5 {
@@ -876,6 +904,13 @@ input[type="checkbox"] {
 
 .card-5 .button-secondary {
   width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .card-5 {
+    flex: 0 0 90%;
+    scroll-snap-align: start;
+  }
 }
 
 /* 1.5.6 card-6 (card-author) */
@@ -1199,7 +1234,7 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 48px 136px 112px 136px;
+  padding: 24px 148px 112px 148px;
   border: var(--bw-0) solid var(--neutral-500);
   background: var(--neutral-1000);
   border-radius: var(--br-4);
@@ -1244,7 +1279,7 @@ input[type="checkbox"] {
 
 .card-skill:hover .card-skill__button {
   transform: rotate(180deg);
-  transition: transform 0.3s ease;
+
 }
 
 .card-skill__button {
@@ -1255,6 +1290,7 @@ input[type="checkbox"] {
   position: absolute;
   top: -12px;
   left: 46%;
+  transition: transform 0.3s ease;
 }
 
 .card-skill__button img {
@@ -1264,11 +1300,11 @@ input[type="checkbox"] {
 @media (max-width: 1200px) {
   .card-skill {
     display: flex;
-    flex-direction: column;         
+    flex-direction: column;
     overflow: visible;
-    padding: 0px;
-    gap: 0px;
-    width: 100%;    
+    padding: 12px 0px 0px 0px;
+    gap: 12px;
+    width: 100%;
   }
 
   .card-skill img {
@@ -1279,18 +1315,18 @@ input[type="checkbox"] {
   .card-skill__text {
     position: static;
     width: 296px;
-    transform: translateY(0%);   
+    transform: translateY(0%);
   }
 
   .card-skill__text .regular {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0%);    
+    transform: translateY(0%);
   }
-  
+
   .card-skill__button {
-    display: none;    
-  }  
+    display: none;
+  }
 }
 
 /* ----------------------------------------------- */
@@ -2136,25 +2172,16 @@ tr:nth-of-type(2n) {
 }
 
 @media screen and (max-width: 1200px) {
-  .skills-container {
+
+  .skills-container,
+  .testimonials-container,
+  .projects-container,
+  .readings-container,
+  .education-container {
     display: flex;
     overflow-x: auto;
+    scroll-snap-type: x mandatory;
   }
-}
-
-/* ----------------------------------------------- */
-
-/* 2.1.6 index-section__testimonials */
-
-.card-2:nth-child(1) {
-  grid-column: span 2;
-}
-
-@media (max-width: 1200px) {
-  .card-2:nth-child(1) {
-    grid-column: auto;
-  }
-
 }
 
 /* ----------------------------------------------- */
