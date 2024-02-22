@@ -618,7 +618,7 @@ input[type="checkbox"] {
   align-items: flex-start;
   gap: 16px;
   border: var(--bw-0) solid var(--neutral-500);
-  background: var(--neutral-1000);
+  background: var(--neutral-800);
   border-radius: var(--br-4);
 }
 
@@ -699,7 +699,7 @@ input[type="checkbox"] {
   align-items: flex-start;
   gap: 16px;
   border: var(--bw-0) solid var(--neutral-500);
-  background: var(--neutral-1000);
+  background: var(--neutral-800);
   border-radius: var(--br-4);
 }
 
@@ -739,7 +739,7 @@ input[type="checkbox"] {
 }
 
 .card-2:nth-child(1) {
-  grid-column: span 2;
+  grid-columncard-2: span 2;
 }
 
 
@@ -760,7 +760,7 @@ input[type="checkbox"] {
   gap: 16px;
   padding: 16px;
   border: var(--bw-0) solid var(--neutral-500);
-  background: var(--neutral-1000);
+  background: var(--neutral-800);
   border-radius: var(--br-4);
 }
 
@@ -861,7 +861,7 @@ input[type="checkbox"] {
   gap: 16px;
   padding: 16px;
   border: var(--bw-0) solid var(--neutral-500);
-  background: var(--neutral-1000);
+  background: var(--neutral-800);
   border-radius: var(--br-4);
 }
 
@@ -936,7 +936,7 @@ input[type="checkbox"] {
   gap: 16px;
   padding: 16px;
   border: var(--bw-0) solid var(--neutral-500);
-  background: var(--neutral-1000);
+  background: var(--neutral-800);
   border-radius: var(--br-4);
 }
 
