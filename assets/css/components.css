@@ -2301,6 +2301,17 @@ tr:nth-of-type(2n) {
   align-self: stretch;
 }
 
+.article-container__paragraph a
+ {
+  color: var(--neutral-200);
+}
+
+.article-container__paragraph:hover a {
+  color: var(--neutral-100);
+}
+
+
+
 /* ----------------------------------------------- */
 
 /* PROJECTS */
