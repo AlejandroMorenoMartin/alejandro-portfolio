@@ -44,7 +44,7 @@ h4 {
   line-height: var(--lh-large);
   font-weight: 400;
   letter-spacing: 0;
-  color: var(--neutral-100);
+  color: var(--neutral-300);
 }
 
 .label {

@@ -33,12 +33,10 @@
     1.5.5 card-5 (card-education, card-persona)    
     1.5.6 card-6 (card-author)
     1.5.7 card-7 (card-article)
-    1.5.8 card-senzo (card-color) 
-    1.5.9 card-neutral (card-color)
-    1.5.10 card-atipiko (card-color)
-    1.5.11 card-tattoo (card-color)   
-    1.5.12 card-skill 
-    1.5.13 card-article 
+    1.5.8 card-color       
+    1.5.9 card-skill 
+    1.5.10 card-article 
+    1.5.11 card-storyboard
 
   1.6 Scroller
     1.6.1 scroller 
@@ -898,7 +896,7 @@ input[type="checkbox"] {
   width: 100%;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
+  gap: 16px;
   padding: 16px;
   border: var(--bw-0) solid var(--neutral-500);
   background: var(--neutral-800);
@@ -972,260 +970,452 @@ input[type="checkbox"] {
   height: 64px;
 }
 
-/* 1.5.8 card-senzo (card-color) */
+/* 1.5.8 card-color */
 
-.card-senzo__header {
+.card-color__header {
   display: flex;
   flex-direction: column;
   gap: 12px;
   width: 100%;
 }
 
-.card-senzo__main-color {
+.card-color__main-color {
   height: 96px;
-  width: 100%;
-  background-color: #FF0A44;
+  width: 100%;  
   border-radius: var(--br-4);
 }
 
-.card-senzo__scale {
+.card-color__main-color-1{
+  background-color: #FF0A44;
+}
+
+.card-color__main-color-2{
+  background-color: #393B40;
+}
+
+.card-color__main-color-3{
+  background-color: #FF800A;
+}
+
+.card-color__main-color-4{
+  background-color: #A937DE;
+}
+
+.card-color__main-color-5{
+  background-color: var(--primary-500);
+}
+
+.card-color__main-color-6{
+  background-color: var(--green-500);
+}
+
+.card-color__main-color-7{
+  background-color: var(--blue-500);
+}
+
+.card-color__main-color-8{
+  background-color: var(--yellow-500);
+}
+
+.card-color__main-color-9{
+  background-color: var(--red-500);
+}
+
+
+.card-color__scale {
   display: flex;
   width: 100%;
   gap: 4px;
 }
 
-.card-senzo__scale- {
+.card-color__scale- {
   height: 16px;
   width: 100%;
   border-radius: var(--br-4);
 }
 
-.card-senzo__scale-1 {
+.card-color__scale-1 {
   background-color: #EDD0D7;
 }
 
-.card-senzo__scale-2 {
+.card-color__scale-2 {
   background-color: #FFBFCE;
 }
 
-.card-senzo__scale-3 {
+.card-color__scale-3 {
   background-color: #FF7F9D;
 }
 
-.card-senzo__scale-4 {
+.card-color__scale-4 {
   background-color: #FF3F6D;
 }
 
-.card-senzo__scale-5 {
+.card-color__scale-5 {
   background-color: #FF0A44;
 }
 
-.card-senzo__scale-6 {
+.card-color__scale-6 {
   background-color: #BF002D;
 }
 
-.card-senzo__scale-7 {
+.card-color__scale-7 {
   background-color: #7F001E;
 }
 
-.card-senzo__scale-8 {
+.card-color__scale-8 {
   background-color: #3F000F;
 }
 
-.card-senzo__scale-9 {
+.card-color__scale-9 {
   background-color: #210109;
 }
 
-/* 1.5.9 card-neutral (card-color) */
-
-.card-neutral__header {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  width: 100%;
-}
-
-.card-neutral__main-color {
-  height: 96px;
-  width: 100%;
-  background-color: #393B40;
-  border-radius: var(--br-4);
-}
-
-.card-neutral__scale {
-  display: flex;
-  width: 100%;
-  gap: 4px;
-}
-
-.card-neutral__scale- {
-  height: 16px;
-  width: 100%;
-  border-radius: var(--br-4);
-}
-
-.card-neutral__scale-1 {
+.card-color__scale-10 {
   background-color: #F5F6FA;
 }
 
-.card-neutral__scale-2 {
+.card-color__scale-11 {
   background-color: #D8DADF;
 }
 
-.card-neutral__scale-3 {
+.card-color__scale-12 {
   background-color: #90949E;
 }
 
-.card-neutral__scale-4 {
+.card-color__scale-13 {
   background-color: #5C606A;
 }
 
-.card-neutral__scale-5 {
+.card-color__scale-14 {
   background-color: #383C46;
 }
 
-.card-neutral__scale-6 {
+.card-color__scale-15 {
   background-color: #1D2028;
 }
 
-.card-neutral__scale-7 {
+.card-color__scale-16 {
   background-color: #0D111C;
 }
 
-.card-neutral__scale-8 {
+.card-color__scale-17 {
   background-color: #02060F;
 }
 
-.card-neutral__scale-9 {
+.card-color__scale-18 {
   background-color: #000105;
 }
 
-/* 1.5.9 card-atipiko (card-color) */
-
-.card-atipiko__header {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  width: 100%;
-}
-
-.card-atipiko__main-color {
-  height: 96px;
-  width: 100%;
-  background-color: #FF800A;
-  border-radius: var(--br-4);
-}
-
-.card-atipiko__scale {
-  display: flex;
-  width: 100%;
-  gap: 4px;
-}
-
-.card-atipiko__scale- {
-  height: 16px;
-  width: 100%;
-  border-radius: var(--br-4);
-}
-
-.card-atipiko__scale-1 {
+.card-color__scale-19 {
   background-color: #EDDED0;
 }
 
-.card-atipiko__scale-2 {
+.card-color__scale-20 {
   background-color: #FFDEBF;
 }
 
-.card-atipiko__scale-3 {
+.card-color__scale-21 {
   background-color: #FFBD7F;
 }
 
-.card-atipiko__scale-4 {
+.card-color__scale-22 {
   background-color: #FF9C3F;
 }
 
-.card-atipiko__scale-5 {
+.card-color__scale-23 {
   background-color: #FF800A;
 }
 
-.card-atipiko__scale-6 {
+.card-color__scale-24 {
   background-color: #BF5C00;
 }
 
-.card-atipiko__scale-7 {
+.card-color__scale-25 {
   background-color: #7F3D00;
 }
 
-.card-atipiko__scale-8 {
+.card-color__scale-26 {
   background-color: #3F1E00;
 }
 
-.card-atipiko__scale-9 {
+.card-color__scale-27 {
   background-color: #211001;
 }
 
-/* 1.5.9 card-tattoo (card-color) */
-
-.card-tattoo__header {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  width: 100%;
-}
-
-.card-tattoo__main-color {
-  height: 96px;
-  width: 100%;
-  background-color: #A937DE;
-  border-radius: var(--br-4);
-}
-
-.card-tattoo__scale {
-  display: flex;
-  width: 100%;
-  gap: 4px;
-}
-
-.card-tattoo__scale- {
-  height: 16px;
-  width: 100%;
-  border-radius: var(--br-4);
-}
-
-.card-tattoo__scale-1 {
+.card-color__scale-28 {
   background-color: #F9F0FC;
 }
 
-.card-tattoo__scale-2 {
+.card-color__scale-29 {
   background-color: #ECD4F8;
 }
 
-.card-tattoo__scale-3 {
+.card-color__scale-30 {
   background-color: #D79BF1;
 }
 
-.card-tattoo__scale-4 {
+.card-color__scale-31 {
   background-color: #C96AF4;
 }
 
-.card-tattoo__scale-5 {
+.card-color__scale-32 {
   background-color: #A937DE;
 }
 
-.card-tattoo__scale-6 {
+.card-color__scale-33 {
   background-color: #7312A0;
 }
 
-.card-tattoo__scale-7 {
+.card-color__scale-34 {
   background-color: #530C73;
 }
 
-.card-tattoo__scale-8 {
+.card-color__scale-35 {
   background-color: #35064B;
 }
 
-.card-tattoo__scale-9 {
+.card-color__scale-36 {
   background-color: #1B0225;
+}
+
+.card-color__scale-37 {
+  background-color: var(--neutral-100);
+}
+
+.card-color__scale-38 {
+  background-color: var(--neutral-200);
+}
+
+.card-color__scale-39 {
+  background-color: var(--neutral-300);
+}
+
+.card-color__scale-40 {
+  background-color: var(--neutral-400);
+}
+
+.card-color__scale-41 {
+  background-color: var(--neutral-500);
+}
+
+.card-color__scale-42 {
+  background-color: var(--neutral-600);
+}
+
+.card-color__scale-43 {
+  background-color: var(--neutral-700);
+}
+
+.card-color__scale-44 {
+  background-color: var(--neutral-800);
+}
+
+.card-color__scale-45 {
+  background-color: var(--neutral-900);
+}
+
+.card-color__scale-46 {
+  background-color: var(--neutral-1000);
+}
+
+.card-color__scale-47 {
+  background-color: var(--primary-100);
+}
+
+.card-color__scale-48 {
+  background-color: var(--primary-200);
+}
+
+.card-color__scale-49 {
+  background-color: var(--primary-300);
+}
+
+.card-color__scale-50 {
+  background-color: var(--primary-400);
+}
+
+.card-color__scale-51 {
+  background-color: var(--primary-500);
+}
+
+.card-color__scale-52 {
+  background-color: var(--primary-600);
+}
+
+.card-color__scale-53 {
+  background-color: var(--primary-700);
+}
+
+.card-color__scale-54 {
+  background-color: var(--primary-800);
+}
+
+.card-color__scale-55 {
+  background-color: var(--primary-900);
+}
+
+.card-color__scale-56 {
+  background-color: var(--primary-1000);
+}
+
+.card-color__scale-57 {
+  background-color: var(--green-100);
+}
+
+.card-color__scale-58 {
+  background-color: var(--green-200);
+}
+
+.card-color__scale-59 {
+  background-color: var(--green-300);
+}
+
+.card-color__scale-60 {
+  background-color: var(--green-400);
+}
+
+.card-color__scale-61 {
+  background-color: var(--green-500);
+}
+
+.card-color__scale-62 {
+  background-color: var(--green-600);
+}
+
+.card-color__scale-63 {
+  background-color: var(--green-700);
+}
+
+.card-color__scale-64 {
+  background-color: var(--green-800);
+}
+
+.card-color__scale-65 {
+  background-color: var(--green-900);
+}
+
+.card-color__scale-66 {
+  background-color: var(--green-1000);
+}
+
+.card-color__scale-67 {
+  background-color: var(--blue-100);
+}
+
+.card-color__scale-68 {
+  background-color: var(--blue-200);
+}
+
+.card-color__scale-69 {
+  background-color: var(--blue-300);
+}
+
+.card-color__scale-70 {
+  background-color: var(--blue-400);
+}
+
+.card-color__scale-71 {
+  background-color: var(--blue-500);
+}
+
+.card-color__scale-72 {
+  background-color: var(--blue-600);
+}
+
+.card-color__scale-73 {
+  background-color: var(--blue-700);
+}
+
+.card-color__scale-74 {
+  background-color: var(--blue-800);
+}
+
+.card-color__scale-75 {
+  background-color: var(--blue-900);
+}
+
+.card-color__scale-76 {
+  background-color: var(--blue-1000);
+}
+
+.card-color__scale-77 {
+  background-color: var(--yellow-100);
+}
+
+.card-color__scale-78 {
+  background-color: var(--yellow-200);
+}
+
+.card-color__scale-79 {
+  background-color: var(--yellow-300);
+}
+
+.card-color__scale-80 {
+  background-color: var(--yellow-400);
+}
+
+.card-color__scale-81 {
+  background-color: var(--yellow-500);
+}
+
+.card-color__scale-82 {
+  background-color: var(--yellow-600);
+}
+
+.card-color__scale-83 {
+  background-color: var(--yellow-700);
+}
+
+.card-color__scale-84 {
+  background-color: var(--yellow-800);
+}
+
+.card-color__scale-85 {
+  background-color: var(--yellow-900);
+}
+
+.card-color__scale-86 {
+  background-color: var(--yellow-1000);
+}
+
+.card-color__scale-87 {
+  background-color: var(--red-100);
+}
+
+.card-color__scale-88 {
+  background-color: var(--red-200);
+}
+
+.card-color__scale-89 {
+  background-color: var(--red-300);
+}
+
+.card-color__scale-90 {
+  background-color: var(--red-400);
+}
+
+.card-color__scale-91 {
+  background-color: var(--red-500);
+}
+
+.card-color__scale-92 {
+  background-color: var(--red-600);
+}
+
+.card-color__scale-93 {
+  background-color: var(--red-700);
+}
+
+.card-color__scale-94 {
+  background-color: var(--red-800);
+}
+
+.card-color__scale-95 {
+  background-color: var(--red-900);
+}
+
+.card-color__scale-96 {
+  background-color: var(--red-1000);
 }
 
 /* 1.5.12 card-skill */
@@ -1329,7 +1519,7 @@ input[type="checkbox"] {
   }
 }
 
-/* 1.5.13 card-article */
+/* 1.5.10 card-article */
 
 .card-article {
   display: flex;
@@ -1369,6 +1559,34 @@ input[type="checkbox"] {
 
   .card-article__image{
     height: 90%;
+  }
+}
+
+/* 1.5.11 card-storyboard */
+
+.card-storyboard{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;  
+  border-radius: var(--br-4);
+  background-color: var(--white); 
+}
+
+.card-storyboard p.large {
+  color: var(--neutral-1000);
+}
+
+.card-storyboard p.regular {
+  color: var(--neutral-1000);
+}
+
+@media (max-width: 1200px) {
+  .card-storyboard {
+    flex: 0 0 90%;
+    scroll-snap-align: start;
   }
 }
 
