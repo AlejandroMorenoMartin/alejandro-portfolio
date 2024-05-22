@@ -558,7 +558,7 @@ input[type="checkbox"] {
 
 .tag-default {
   display: inline-flex;
-  padding: 4px 8px;
+  padding: 3px 6px;
   justify-content: center;
   align-items: center;
   color: var(--neutral-100);
