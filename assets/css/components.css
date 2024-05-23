@@ -37,6 +37,7 @@
     1.5.9 card-skill 
     1.5.10 card-article 
     1.5.11 card-storyboard
+    1.5.12 card-persona
 
   1.6 Scroller
     1.6.1 scroller 
@@ -1588,6 +1589,56 @@ input[type="checkbox"] {
     flex: 0 0 90%;
     scroll-snap-align: start;
   }
+}
+
+/* 1.5.12 card-persona */
+
+.card-persona{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px;
+  border: var(--bw-0) solid var(--neutral-500);
+  background: var(--white);
+  border-radius: var(--br-4);
+}
+
+.card-5 {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px;
+  border: var(--bw-0) solid var(--neutral-500);
+  background: var(--neutral-800);
+  border-radius: var(--br-4);
+}
+
+.card-5__header {
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+
+.card-5__body{
+  display: flex;
+  flex-direction: column;  
+  gap: 6px;
+}
+
+.card-5__icon {
+  height: 64px;
+  width: 64px;
+}
+
+.card-5__title {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 /* ----------------------------------------------- */
