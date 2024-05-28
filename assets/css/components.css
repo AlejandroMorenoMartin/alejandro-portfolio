@@ -30,8 +30,8 @@
     1.5.1 card-projects
     1.5.2 card-2 (card-testimonials)
     1.5.3 card-3 (card-readings)
-    1.5.4 card-4 (card-experience)
-    1.5.5 card-5 (card-education, card-persona)    
+    1.5.4 card-experience
+    1.5.5 card-education    
     1.5.6 card-6 (card-author)
     1.5.7 card-7 (card-article)
     1.5.8 card-color       
@@ -478,7 +478,7 @@ input[type="checkbox"] {
 .button-seemore {
   display: flex;
   height: fit-content;
-  padding: 8px;
+  padding: 8px 16px;
   border-radius: var(--br-4);
   color: var(--primary-500);
 }
@@ -585,7 +585,7 @@ input[type="checkbox"] {
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
-  padding: 16px; 
+  padding: 16px;
   background: var(--neutral-800);
   border-radius: var(--br-4);
 }
@@ -745,7 +745,7 @@ input[type="checkbox"] {
   padding: 16px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;  
+  gap: 16px;
   background: var(--neutral-800);
   border-radius: var(--br-4);
 }
@@ -819,9 +819,9 @@ input[type="checkbox"] {
   width: 144px;
   height: 144px;
   background-color: var(--neutral-300);
-  border-radius: var(--br-4);  
-  justify-content: center; 
-  align-items: center; 
+  border-radius: var(--br-4);
+  justify-content: center;
+  align-items: center;
   height: 100%;
   padding: 8px;
 }
@@ -833,7 +833,7 @@ input[type="checkbox"] {
   justify-content: center;
 }
 
-.card-3__body{
+.card-3__body {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -842,7 +842,7 @@ input[type="checkbox"] {
   width: 100%;
 }
 
-.card-3__body-info{
+.card-3__body-info {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -855,123 +855,64 @@ input[type="checkbox"] {
   }
 }
 
-/* 1.5.4 card-4 (card-experience) */
+/* 1.5.4 card-experience */
 
-.card-4 {
+.card-experience {
   display: flex;
-  width: 100%;
   flex-direction: column;
-  align-items: flex-start;
   gap: 16px;
-  padding-bottom: 32px;
-  border-bottom: var(--bw-0) solid var(--neutral-500);
-  background: var(--neutral-1000);
-  border-radius: var(--br-4);
 }
 
-.card-4__header {
-  display: flex;
-  align-items: flex-start;
-  align-items: center;
-  gap: 12px;
-}
-
-.card-4__icon {
-  height: 64px;
-  width: 64px;
-}
-
-.card-4__title {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.card-4__title-2 {
-  display: flex;
-  gap: 8px;
-}
-
-.card-4__title-info .large {
+.card-experience a {
   color: var(--primary-500);
 }
 
-.card-4__title-info .fa-solid {
-  color: var(--primary-500);
-  font-size: 12px;
-}
-
-.card-4__title-info:hover .large {
+.card-experience a:hover {
   color: var(--primary-300);
 }
 
-.card-4__title-info:hover .fa-solid {
-  color: var(--primary-300);
+
+.divider {
+  height: 0.25px;
+  background-color: var(--neutral-500);
 }
 
 /* 1.5.5 card-5 (card-education, card-persona) */
 
-.card-5 {
+.card-education {
   display: flex;
   width: 100%;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
   padding: 16px;
-  border: var(--bw-0) solid var(--neutral-500);
   background: var(--neutral-800);
   border-radius: var(--br-4);
 }
 
-.card-5__header {
+.card-education:hover {
+  background: var(--neutral-700);
+}
+
+.card-education__header {
   display: flex;
-  align-items: flex-start;
   align-items: center;
-  gap: 12px;
-}
-
-.card-5__body {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.card-5__icon {
-  height: 64px;
-  width: 64px;
-}
-
-.card-5__title {
-  display: flex;
-  flex-direction: column;
   gap: 8px;
 }
 
-.card-5 .button-secondary,
-.button-terciary {
-  width: 100%;
+.card-education__header img {
+  width: 36px;
 }
 
-.card-5 p {
+.card-education .regular {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
-.card-5__title p {
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.card-5 .button-secondary {
-  width: 100%;
-}
-
 @media (max-width: 1200px) {
-  .card-5 {
+  .card-education {
     flex: 0 0 90%;
     scroll-snap-align: start;
   }
@@ -1448,16 +1389,16 @@ input[type="checkbox"] {
   align-items: center;
   justify-content: space-between;
   height: fit-content;
-  position: relative; 
+  position: relative;
   cursor: pointer;
   transition: hover 0.3s ease-in-out;
 }
 
-.card-skills:hover{
+.card-skills:hover {
   background: var(--primary-200);
 }
 
-.card-skills:hover .card-skills__icon-container{
+.card-skills:hover .card-skills__icon-container {
   background: var(--primary-400);
 }
 
@@ -1648,22 +1589,14 @@ input[type="checkbox"] {
 /* 1.7.1 Tab */
 
 .tab {
-  display: inline-flex;
-  padding: 4px 4px;
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 16px;
-  border: var(--bw-0) solid var(--neutral-500);
-  background: var(--neutral-700);
-  width: fit-content;
-  border-radius: var(--br-4);
 }
 
 @media (max-width: 1200px) {
-  .tab {
-    justify-content: space-between;
-    width: 100%;
-  }
+  .tab {}
 }
 
 /* ----------------------------------------------- */
@@ -1672,7 +1605,6 @@ input[type="checkbox"] {
 
 .tab-button {
   display: inline-flex;
-  height: 44px;
   padding: 8px 16px;
   justify-content: center;
   align-items: center;
@@ -1681,17 +1613,24 @@ input[type="checkbox"] {
   border-radius: var(--br-4);
 }
 
-/* ----------------------------------------------- */
+.tab-button.active {
+  background: var(--primary-900);
+}
 
-/* 1.7.3 Tab-button-active */
+.tab-button:hover.active {
+  background: var(--primary-800);
+}
 
 .tab-button.active {
-  background: var(--neutral-1000);
+  color: var(--primary-500);
+}
+
+.tab-button.noactive {
   border: var(--bw-0) solid var(--neutral-500);
 }
 
-.tab-button.active p {
-  color: var(--neutral-200);
+.tab-button:hover.noactive {
+  background: var(--neutral-800);
 }
 
 /* ----------------------------------------------- */
@@ -2413,7 +2352,7 @@ tr:nth-of-type(2n) {
   gap: 12px;
 }
 
-.readings-container{
+.readings-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(230px, 100%), 1fr));
   gap: 12px;
@@ -2467,7 +2406,7 @@ tr:nth-of-type(2n) {
 .experience-container {
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: 48px;
 }
 
 /* ----------------------------------------------- */
