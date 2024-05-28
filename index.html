@@ -34,7 +34,7 @@
 
       <a class="logo" href="index.html"><img src="/assets/icons/logo.png" alt="logo-alejandro">
         <div class="logo__name">
-          <h4>Alejandro</h4>
+          <p class="large">Alejandro</p>
           <p class="small">2.0</p>
         </div>
       </a>
@@ -44,21 +44,18 @@
           <input type="checkbox" id="click">
           <label for="click" class="navbar-button">
             <i class="fa-solid fa-x"></i>
-          </label>          
+          </label>
         </li>
         <li class="navbar__item">
-          <a href="index.html" class="navbar__link large active">Home</a>
+          <a href="index.html" class="navbar__link regular active">Home</a>
         </li>
         <li class="navbar__item">
-          <a href="pages/about-me.html" class="navbar__link large">About me</a>
+          <a href="pages/about-me.html" class="navbar__link regular">About me</a>
         </li>
         <li class="navbar__item">
-          <a href="pages/blog.html" class="navbar__link large">Blog</a>
+          <a href="pages/blog.html" class="navbar__link regular">Blog</a>
         </li>
         <li class="navbar__buttons">
-          <div class="button-secondary">
-            <a href="/assets/documents/alejandro-resume.pdf" class="label" target="_blank">Resume</a>
-          </div>
           <div class="button-primary">
             <a href="mailto:alejandromorenomartin1990@gmail.com" class="label" target="_blank">Contact</a>
           </div>
@@ -79,36 +76,23 @@
     </nav>
   </header>
 
-  <!-- 1.1.2 latbar -->
-  <aside class="latbar">
-    <p class="small">&copy; Alejandro Moreno</p>
-    <p class="regular">Designing - 2024</p>
-    <div class="sidebar__social">
-      <a class="button-social" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
-      <a class="button-social" href="https://github.com/kakomoma" target="_blank">
-        <i class="fa-brands fa-square-github"></i>
-      </a>
-    </div>
-  </aside>
-
   <!-- 2.0.1 main-container -->
   <main class="main-container">
 
     <!-- 2.1.1 index-hero -->
     <section class="index-hero">
       <div class="index-hero__img">
-        <img src="/assets/images/alejandro-400.png" alt="alejandro-moreno">
+        <img src="/assets/images/alejandro-400-2.png" alt="alejandro-moreno">
       </div>
       <div class="index-hero__content">
-        <h1>I'm Alejandro, <b></b>product designer.</h1>
-        <p class="large">I'm currently <b>working on</b> a personal project with a group of people, designing and
+        <h2>I'm Alejandro, <b></b>product designer.</h2>
+        <p class="regular">I'm currently <b>working on</b> a personal project with a group of people, designing and
           developing a
           mobile game called 
           <b>Geomites</b>.
         </p>
-        <p class="large"><span>Here you can find information about me, including my education, professional experience,
+        <p class="regular"><span>Here you can find information about me, including my education, professional
+            experience,
             interests, and my evolution as a product designer.</span>
         </p>
         <div class="button-primary">
@@ -122,119 +106,70 @@
 
       <!-- 1.3.1 section-header -->
       <div class="section-header">
-        <div class="section-header__title">
-          <h2>Projects</h2>
+        <div class="section-header__info">
+          <div class="section-header__title">
+            <h4>Projects</h4>
+          </div>
+          <div class="section-header__text">
+            <p class="regular">These are some of the projects I have worked on.</p>
+          </div>
         </div>
-        <div class="section-header__text">
-          <p class="large">These are some of the projects I have worked on.</p>
-        </div>
+        <a href="" class="button-seemore regular">See more</a>
       </div>
 
       <!-- 2.1.2 display grid (projects-container) -->
       <div class="projects-container">
         <a class="card-project" href="projects/playtomic.html" target="_blank">
           <div class="card-project__image">
-            <img src="assets/images/projects-cover/playtomic-cover.png" alt="Project-image">
+            <img src="assets/images/playtomic/cardproject-playtomic.png" alt="Project-image">
           </div>
-          <div class="card-project__body">
-            <p class="large">Playtomic</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">2024</p>
-              </div>
-              <div class="tag-default">
-                <p class="small">Case study</p>
-              </div>
+          <div class="card-project__header">
+            <div class="card-project__header-1">
+              <img src="assets/images/playtomic/cardfavicon-playtomic.png" alt="card-project__favicon">
+              <p class="large">Playtomic</p>
             </div>
-            <p class="regular">Improving engament through user feedback.</p>
+            <div class="tag-default">
+              <p class="small">Case study </p>
+            </div>
           </div>
+          <p class="regular">Improving engament through user feedback.</p>
+          <p class="small">10 min read</p>
+
+
         </a>
         <a class="card-project" href="projects/geomites.html" target="_blank">
           <div class="card-project__image">
-            <img src="assets/images/projects-cover/geomites-cover.png" alt="Project-image">
+            <img src="assets/images/geomites/cardproject-geomites.png" alt="Project-image">
           </div>
-          <div class="card-project__body">
-            <p class="large">Geomites</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">2024</p>
-              </div>
-              <div class="tag-default">
-                <p class="small">Video game design</p>
-              </div>
+          <div class="card-project__header">
+            <div class="card-project__header-1">
+              <img src="assets/images/geomites/cardfavicon-geomites.png" alt="card-project__favicon">
+              <p class="large">Geomites</p>
             </div>
-            <p class="regular">Design of a video game for mobiles, entrepreneurship project.</p>
+            <div class="tag-default">
+              <p class="small">Game design</p>
+            </div>
           </div>
+          <p class="regular">In charge of designing a video game for Android and iOS platforms.</p>
+          <p class="small">10 min read</p>
         </a>
         <a class="card-project" href="projects/portfolio.html" target="_blank">
           <div class="card-project__image">
-            <img src="assets/images/projects-cover/portfolio-cover.png" alt="Project-image">
+            <img src="assets/images/portfolio/cardproject-portfolio.png" alt="Project-image">
           </div>
-          <div class="card-project__body">
-            <p class="large">My portfolio</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">2023</p>
-              </div>
-              <div class="tag-default">
-                <p class="small">Responsive design</p>
-              </div>
+          <div class="card-project__header">
+            <div class="card-project__header-1">
+              <img src="assets/images/portfolio/cardfavicon-portfolio.png" alt="card-project__favicon">
+              <p class="large">Portfolio</p>
             </div>
-            <p class="regular">Discover the process of creating my portfolio.</p>
+            <div class="tag-default">
+              <p class="small">Responsive design</p>
+            </div>
           </div>
+          <p class="regular">Discover the process of creating my portfolio.</p>
+          <p class="small">8 min read</p>
         </a>
-        <a class="card-project" href="projects/tattoo-paradise.html" target="_blank">
-          <div class="card-project__image">
-            <img src="assets/images/projects-cover/tattoo-cover.png" alt="Project-image">
-          </div>
-          <div class="card-project__body">
-            <p class="large">Tattoo paradise</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">2023</p>
-              </div>
-              <div class="tag-default">
-                <p class="small">Mobile design</p>
-              </div>
-            </div>
-            <p class="regular">Mobile aplication that connect studios, artists and users.</p>
-          </div>
-        </a>
-        <a class="card-project" href="projects/atipiko-tours.html" target="_blank">
-          <div class="card-project__image">
-            <img src="assets/images/projects-cover/atipiko-cover.png" alt="Project-image">
-          </div>
-          <div class="card-project__body">
-            <p class="large">Atipiko tours</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">2023</p>
-              </div>
-              <div class="tag-default">
-                <p class="small">Web design</p>
-              </div>
-            </div>
-            <p class="regular">Design and development of a website for a travel agency.</p>
-          </div>
-        </a>        
-        <a class="card-project" href="projects/senzo-studio.html" target="_blank">
-          <div class="card-project__image">
-            <img src="assets/images/projects-cover/senzo-cover.png" alt="Project-image">
-          </div>
-          <div class="card-project__body">
-            <p class="large">Senzo studio</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">2022</p>
-              </div>
-              <div class="tag-default">
-                <p class="small">Web design</p>
-              </div>
-            </div>
-            <p class="regular">Design and development of a website for a VFX studio.</p>
-          </div>
-        </a>       
-      </div>      
+      </div>
     </section>
 
     <!-- 2.0.2 main-section (Skills) -->
@@ -242,107 +177,99 @@
 
       <!-- 1.3.1 section-header -->
       <div class="section-header">
-        <div class="section-header__title">
-          <h2>Skills</h2>
-        </div>
-        <div class="section-header__text">
-          <p class="large">These are the areas that empower me to engage in design.</p>
+        <div class="section-header__info">
+          <div class="section-header__title">
+            <h4>Skills</h4>
+          </div>
+          <div class="section-header__text">
+            <p class="regular">These are the areas that empower me to engage in design.</p>
+          </div>
         </div>
       </div>
 
       <!-- 2.1.2 display grid (skills-container) -->
       <div class="skills-container">
         <!-- 1.5.12 card-skill -->
-        <div class="card-skill">
-          <img src="assets/icons/skill/iterating-2.png" alt="icon-iterating">
-          <div class="card-skill__text">
-            <p class="large">Making & Iterating</p>
-            <p class="regular">Craft compelling designs, iterating with precision to bring ideas to life and enhance user experiences.</p>
-            <div class="card-skill__button">
-              <img src="assets/icons/skill/arrow.png" alt="icon-arrow">
-            </div>
+        <div class="card-skills">
+          <p class="regular">Iterating</p>
+          <div class="card-skills__icon-container">
+            <img src="assets/icons/skill/icon/iterating.png" alt="icon-iterating">
           </div>
+          <div class="card-skills__tooltip">Craft compelling designs, iterating with precision to bring ideas to life
+            and enhance user experiences.</div>
         </div>
-        <div class="card-skill">
-          <img src="assets/icons/skill/prototyping-2.png" alt="icon-prototyping">
-          <div class="card-skill__text">
-            <p class="large">Prototyping</p>
-            <p class="regular">Transform concepts into interactive prototypes, fostering a tangible feel for seamless user interactions.</p>
-            <div class="card-skill__button">
-              <img src="assets/icons/skill/arrow.png" alt="icon-arrow">
-            </div>
+        <div class="card-skills">
+          <p class="regular">Prototyping</p>
+          <div class="card-skills__icon-container">
+            <img src="assets/icons/skill/icon/prototyping.png" alt="icon-iterating">
           </div>
+          <div class="card-skills__tooltip">Transform concepts into interactive prototypes, fostering a tangible feel
+            for seamless user interactions.</div>
         </div>
-        <div class="card-skill">
-          <img src="assets/icons/skill/visual-design-2.png" alt="icon-visual design">
-          <div class="card-skill__text">
-            <p class="large">Visual design</p>
-            <p class="regular">Infuse aesthetic appeal into interfaces, blending creativity and usability to captivate users attention.</p>
-            <div class="card-skill__button">
-              <img src="assets/icons/skill/arrow.png" alt="icon-arrow">
-            </div>
+        <div class="card-skills">
+          <p class="regular">Visual design</p>
+          <div class="card-skills__icon-container">
+            <img src="assets/icons/skill/icon/visual-design.png" alt="icon-iterating">
           </div>
+          <div class="card-skills__tooltip">Infuse aesthetic appeal into interfaces, blending creativity and usability
+            to captivate users attention.</div>
         </div>
-        <div class="card-skill">
-          <img src="assets/icons/skill/interaction-2.png" alt="icon-interaction">
-          <div class="card-skill__text">
-            <p class="large">Interaction Details</p>
-            <p class="regular">Meticulously refine micro-interactions, ensuring every detail contributes to a delightful user journey.</p>
-            <div class="card-skill__button">
-              <img src="assets/icons/skill/arrow.png" alt="icon-arrow">
-            </div>
+        <div class="card-skills">
+          <p class="regular">Interactions</p>
+          <div class="card-skills__icon-container">
+            <img src="assets/icons/skill/icon/interaction.png" alt="icon-iterating">
           </div>
+          <div class="card-skills__tooltip">Meticulously refine micro-interactions, ensuring every detail contributes to
+            a delightful user journey.</div>
         </div>
-        <div class="card-skill">
-          <img src="assets/icons/skill/design-system-2.png" alt="icon-design system">
-          <div class="card-skill__text">
-            <p class="large">Design Systems</p>
-            <p class="regular">Architect cohesive design systems, promoting consistency and scalability for a harmonized user experience.</p>
-            <div class="card-skill__button">
-              <img src="assets/icons/skill/arrow.png" alt="icon-arrow">
-            </div>
+        <div class="card-skills">
+          <p class="regular">Design systems</p>
+          <div class="card-skills__icon-container">
+            <img src="assets/icons/skill/icon/design-system.png" alt="icon-iterating">
           </div>
+          <div class="card-skills__tooltip">Architect cohesive design systems, promoting consistency and scalability for
+            a harmonized user experience.</div>
         </div>
-        <div class="card-skill">
-          <img src="assets/icons/skill/information-arquitecture-2.png" alt="icon-information architecture">
-          <div class="card-skill__text">
-            <p class="large">Information architecture</p>
-            <p class="regular">Structure content strategically, creating intuitive information pathways that enhance user navigation.</p>
-            <div class="card-skill__button">
-              <img src="assets/icons/skill/arrow.png" alt="icon-arrow">
-            </div>
+        <div class="card-skills">
+          <p class="regular">Data structuring</p>
+          <div class="card-skills__icon-container">
+            <img src="assets/icons/skill/icon/information-architecture.png" alt="icon-iterating">
           </div>
+          <div class="card-skills__tooltip">Structure content strategically, creating intuitive information pathways
+            that enhance user navigation.</div>
         </div>
-        <div class="card-skill">
-          <img src="assets/icons/skill/communication-2.png" alt="icon-communication">
-          <div class="card-skill__text">
-            <p class="large">Communication</p>
-            <p class="regular">I try to convey as accurately as possible my decision-making process and my progress on a day-to-day basis.</p>
-            <div class="card-skill__button">
-              <img src="assets/icons/skill/arrow.png" alt="icon-arrow">
-            </div>
+        <div class="card-skills">
+          <p class="regular">Communication</p>
+          <div class="card-skills__icon-container">
+            <img src="assets/icons/skill/icon/comunication.png" alt="icon-iterating">
           </div>
+          <div class="card-skills__tooltip">I try to convey as accurately as possible my decision-making process and my
+            progress on a day-to-day basis.</div>
         </div>
-        <div class="card-skill">
-          <img src="assets/icons/skill/problem-solving-2.png" alt="icon-problem solving">
-          <div class="card-skill__text">
-            <p class="large">Problem solving</p>
-            <p class="regular">I like to have an overview to be able to focus on specifics and propose effective solutions.</p>
-            <div class="card-skill__button">
-              <img src="assets/icons/skill/arrow.png" alt="icon-arrow">
-            </div>
+        <div class="card-skills">
+          <p class="regular">Problem solving</p>
+          <div class="card-skills__icon-container">
+            <img src="assets/icons/skill/icon/problem-solving.png" alt="icon-iterating">
           </div>
+          <div class="card-skills__tooltip">I like to have an overview to be able to focus on specifics and propose
+            effective solutions.</div>
         </div>
-        <div class="card-skill">
-          <img src="assets/icons/skill/research-2.png" alt="icon-research">
-          <div class="card-skill__text">
-            <p class="large">Research & Testing</p>
-            <p class="regular">I focus my work based on the objectivity obtained from thorough research and compelling evidence.</p>
-            <div class="card-skill__button">
-              <img src="assets/icons/skill/arrow.png" alt="icon-arrow">
-            </div>
+        <div class="card-skills">
+          <p class="regular">Research</p>
+          <div class="card-skills__icon-container">
+            <img src="assets/icons/skill/icon/research.png" alt="icon-iterating">
           </div>
-        </div>        
+          <div class="card-skills__tooltip">I focus my work based on the objectivity obtained from thorough research and
+            compelling evidence.</div>
+        </div>
+        <div class="card-skills">
+          <p class="regular">Testing</p>
+          <div class="card-skills__icon-container">
+            <img src="assets/icons/skill/icon/testing.png" alt="icon-iterating">
+          </div>
+          <div class="card-skills__tooltip">Verify that the proposed designs are accepted, understood, and enjoyed by
+            users.</div>
+        </div>
       </div>
     </section>
 
@@ -351,12 +278,13 @@
 
       <!-- 1.3.1 section-header -->
       <div class="section-header">
-        <div class="section-header__title">
-          <h2>Toolstack</h2>
-        </div>
-        <div class="section-header__text">
-          <p class="large">As a designer, I strive to stay up-to-date on new technologies and tools. Here are some of
-            the ones I typically use.</p>
+        <div class="section-header__info">
+          <div class="section-header__title">
+            <h4>Toolstack</h4>
+          </div>
+          <div class="section-header__text">
+            <p class="regular">As a designer, I strive to stay up-to-date on new technologies and tools.</p>
+          </div>
         </div>
       </div>
 
@@ -385,12 +313,13 @@
 
       <!-- 1.3.1 section-header -->
       <div class="section-header">
-        <div class="section-header__title">
-          <h2>Testimonials</h2>
-        </div>
-        <div class="section-header__text">
-          <p class="large">Throughout my career, I have collaborated with numerous individuals. Some of them have kindly
-            offered to provide testimonialss about me in this section.</p>
+        <div class="section-header__info">
+          <div class="section-header__title">
+            <h4>Testimonials</h4>
+          </div>
+          <div class="section-header__text">
+            <p class="regular">Throughout my career, I have collaborated with numerous individuals.</p>
+          </div>
         </div>
       </div>
 
@@ -412,7 +341,8 @@
               <i class="fa-brands fa-linkedin"></i>
             </a>
           </div>
-          <p class="regular">“Alex has a self-taught and hard-working profile that makes him a real asset to any design team. He adapts, learns and progresses very quickly in highly demanding environments”.</p>
+          <p class="regular">“Alex has a self-taught and hard-working profile that makes him a real asset to any design
+            team. He adapts, learns and progresses very quickly in highly demanding environments”.</p>
         </div>
         <div class="card-2">
           <div class="card-2__header">
@@ -431,7 +361,8 @@
               <i class="fa-brands fa-linkedin"></i>
             </a>
           </div>
-          <p class="regular">“Working with him has been very easy, and he has been very profesional in delivering what has been requested”.</p>
+          <p class="regular">“Working with him has been very easy, and he has been very profesional in delivering what
+            has been requested”.</p>
         </div>
         <div class="card-2">
           <div class="card-2__header">
@@ -449,7 +380,8 @@
               <i class="fa-brands fa-linkedin"></i>
             </a>
           </div>
-          <p class="regular">“Attention to detail and ability to solve problems makes Alejandro a good partner to face great challenges”.</p>
+          <p class="regular">“Attention to detail and ability to solve problems makes Alejandro a good partner to face
+            great challenges”.</p>
         </div>
         <div class="card-2">
           <div class="card-2__header">
@@ -488,7 +420,8 @@
               <i class="fa-brands fa-linkedin"></i>
             </a>
           </div>
-          <p class="regular">"Alejandro is a disciplined and dedicated person in the projects he decides to carry out".</p>
+          <p class="regular">"Alejandro is a disciplined and dedicated person in the projects he decides to carry out".
+          </p>
         </div>
       </div>
     </section>
@@ -498,205 +431,90 @@
 
       <!-- 1.3.1 section-header -->
       <div class="section-header">
-        <div class="section-header__title">
-          <h2>Readings</h2>
+        <div class="section-header__info">
+          <div class="section-header__title">
+            <h4>Readings</h4>
+          </div>
+          <div class="section-header__text">
+            <p class="regular">I love reading and learning new things. Here are some readings I can recommend to you.
+            </p>
+          </div>
         </div>
-        <div class="section-header__text">
-          <p class="large">I love reading and learning new things. Here are some readings I can recommend to you.</p>
-        </div>
+        <a href="" class="button-seemore regular">See more</a>
       </div>
 
       <!-- 2.1.2 display grid (readings-container) -->
       <div class="readings-container">
-        <div class="card-3">
-          <div class="card-3__header">
-            <p class="large">The path to Sr. product designer</p>
-            <div class="tags-container">
-              <div class="tag-other">
-                <p class="small">New</p>
-              </div>
-              <div class="tag-default">
-                <p class="small">Product design</p>
-              </div>
-            </div>
+        <a class="card-3" href="https://www.amazon.es/Path-Senior-Product-Designer-Actionable/dp/B0CG83BYWM"
+          target="_blank">
+          <div class="card-3__image">
+            <img src="assets/images/readings/the path to st.product designer.png" alt="book_image">
           </div>
-          <p class="regular">Knowing every Figma trick doesn’t get you promoted. Learn 12 skills that do, like
-            presenting, mentoring, giving feedback, and improving processes.</p>
-          <a href="https://www.amazon.es/Path-Senior-Product-Designer-Actionable/dp/B0CG83BYWM" target="_blank"
-            class="button__link regular">View book</a>
-        </div>
-        <div class="card-3">
-          <div class="card-3__header">
-            <p class="large">About face: The essentials of Interaction Design</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">Product design</p>
-              </div>
+          <div class="card-3__body">
+            <div class="card-3__body-info">
+              <p class="large">The path to senior product designer</p>
+              <p class="regular">By Artiom Dashinsky</p>
             </div>
+            <p class="small">286 pages</p>
           </div>
-          <p class="regular">Written by industry experts, this book focuses on the essential principles of interaction
-            design. It provides a detailed guide on how to design</p>
-          <a href="https://www.amazon.es/About-Face-Essentials-Interaction-Design/dp/1118766571/ref=sr_1_1?crid=I6VJU8KJKIP0&keywords=about+face+the+essentials+of+interaction+design&qid=1706604643&sprefix=About+face+the+essential%2Caps%2C85&sr=8-1"
-            target="_blank" class="button__link regular">View book</a>
-
-        </div>
-        <div class="card-3">
-          <div class="card-3__header">
-            <p class="large">The design of every day things</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">Product design</p>
-              </div>
+        </a>
+        <a class="card-3" href="https://www.amazon.com/Solving-Product-Design-Exercises-Questions/dp/1977000428"
+          target="_blank">
+          <div class="card-3__image">
+            <img src="assets/images/readings/solving product design exercises.png" alt="book_image">
+          </div>
+          <div class="card-3__body">
+            <div class="card-3__body-info">
+              <p class="large">Solving product design exercises</p>
+              <p class="regular">By Artiom Dashinsky</p>
             </div>
+            <p class="small">171 pages</p>
           </div>
-          <p class="regular">Don Norman is a reference in design and cognitive psychology. In this book, he explores how
-            people interact with objects in their everyday lives and how these principles can be applied to the design
-            of digital products to make them more efficient and satisfying.</p>
-          <a href="https://www.amazon.es/Design-Everyday-Things-Revised-Expanded/dp/0465050654/ref=sr_1_1?crid=1S3G4XCKPKMX2&keywords=the+design+of+everyday+things&qid=1706604695&sprefix=The+design+of+every+day+things%2Caps%2C83&sr=8-1"
-            target="_blank" class="button__link regular">View book</a>
-        </div>
-        <div class="card-3">
-          <div class="card-3__header">
-            <p class="large">Don't make me think</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">Product design</p>
-              </div>
+        </a>
+        <a class="card-3" href="https://www.amazon.com/Mental-Models-Exceptional-Decision-Making-Problem-Solving/dp/1093915684"
+          target="_blank">
+          <div class="card-3__image">
+            <img src="assets/images/readings/mental models.png" alt="book_image">
+          </div>
+          <div class="card-3__body">
+            <div class="card-3__body-info">
+              <p class="large">Mental models</p>
+              <p class="regular">By Peter Hollins</p>
             </div>
+            <p class="small">257 pages</p>
           </div>
-          <p class="regular">This book is a classic in the field of interaction design. Krug presents fundamental
-            principles of usability in an accessible and practical way, focusing on the idea that good design should be
-            intuitive and understandable without effort.</p>
-          <a href="https://www.amazon.es/hagas-pensar-Actualizaci%C3%B3n-T%C3%ADtulos-Especiales/dp/8441537275/ref=sr_1_2?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=178RAGGP1Q17X&keywords=Don%27t+make+me+think&qid=1706604726&sprefix=don%27t+make+me+think%2Caps%2C81&sr=8-2"
-            target="_blank" class="button__link regular">View book</a>
-        </div>
-        <div class="card-3">
-          <div class="card-3__header">
-            <p class="large">Seductive interaction design</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">Product design</p>
-              </div>
+        </a>
+        <a class="card-3" href=https://www.amazon.com/Making-Manager-What-Everyone-Looks/dp/0735219567/ref=sr_1_1?crid=21USMGJVJC6RT&dib=eyJ2IjoiMSJ9.QP3K-ZJj_mBsyUvNEPUdDfdEMwUe9RHqUykL9rsDhNoLDtP7mwhL1dO6g2hgxMdylWhgwGkk1Lci_MmmQs92yyfLorCztPJjFeGgdHwqXoV9UIol1o1bWNoy6sjNBKd1zHthR_PdR4YmOd_UbjKzCSbs-GAUflctJd9pfZE-e8DVEylHAbfwHsVd7Q9A4tON4IbpQFzah2-i8Pgd37i1dK1tNGcr4_EmnYcijeqaGIg.k-iW2jNVyC55jeWHQIbiWq1uPiGNGVL9OI9xGdimNF0&dib_tag=se&keywords=the+making+of+a+manager&qid=1716880227&s=books&sprefix=the+making+of+a+manager+%2Cstripbooks-intl-ship%2C153&sr=1-1
+          target="_blank">
+          <div class="card-3__image">
+            <img src="assets/images/readings/the making of a manager.png" alt="book_image">
+          </div>
+          <div class="card-3__body">
+            <div class="card-3__body-info">
+              <p class="large">The making of a manager</p>
+              <p class="regular">By Julie Zhuo</p>
             </div>
+            <p class="small">288 pages</p>
           </div>
-          <p class="regular">Anderson addresses the emotional aspect of interaction design. He explores how designers
-            can create engaging and captivating experiences by understanding and leveraging users' emotions.</p>
-          <a href="https://www.amazon.es/Seductive-Interaction-Design-Effective-Experiences/dp/0321725522/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=FP052KBVRRG9&keywords=Seductive+interaction+design&qid=1706604745&sprefix=seductive+interaction+design%2Caps%2C76&sr=8-1"
-            target="_blank" class="button__link regular">View book</a>
-        </div>
-        <div class="card-3">
-          <div class="card-3__header">
-            <p class="large">Getting Things Done</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">Productivity</p>
-              </div>
+        </a>
+        <a class="card-3" href="https://www.amazon.es/Seductive-Interaction-Design-Effective-Experiences/dp/0321725522/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=FP052KBVRRG9&keywords=Seductive+interaction+design&qid=1706604745&sprefix=seductive+interaction+design%2Caps%2C76&sr=8-1"
+          target="_blank">
+          <div class="card-3__image">
+            <img src="assets/images/readings/seductive interaction design.png" alt="book_image">
+          </div>
+          <div class="card-3__body">
+            <div class="card-3__body-info">
+              <p class="large">Seductive interaction design</p>
+              <p class="regular">By Stephen P. Anderson</p>
             </div>
+            <p class="small">240 pages</p>
           </div>
-          <p class="regular">This book is a classic in time management and productivity. David Allen presents a
-            comprehensive system for organizing tasks and improving efficiency.</p>
-          <a href="https://www.amazon.es/Getting-Things-Done-David-Allen/dp/0143126563/ref=sr_1_1?crid=39H70FK5LPVB8&keywords=getting+things+done&qid=1706604775&sprefix=gettin%2Caps%2C93&sr=8-1"
-            target="_blank" class="button__link regular">View book</a>
-        </div>
-        <div class="card-3">
-          <div class="card-3__header">
-            <p class="large">The 7 Habits of Highly Effective People</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">Productivity</p>
-              </div>
-            </div>
-          </div>
-          <p class="regular">Covey explores seven habits that can transform personal and professional effectiveness.
-            It's a highly influential book in the productivity realm.</p>
-          <a href="https://www.amazon.es/Habits-Highly-Effective-People-Anniversary/dp/1471195201/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3ACDXC3821SNR&keywords=The+7+Habits+of+Highly+Effective+People&qid=1706604799&sprefix=the+7+habits+of+highly+effective+people%2Caps%2C93&sr=8-1"
-            target="_blank" class="button__link regular">View book</a>
-        </div>
-        <div class="card-3">
-          <div class="card-3__header">
-            <p class="large">Atomic Habits</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">Productivity</p>
-              </div>
-            </div>
-          </div>
-          <p class="regular">While not specifically focused on productivity, this book explores how small habits can
-            have a significant impact on performance and effectiveness.</p>
-          <a href="https://www.amazon.es/Atomic-Habits-MR-EXP-Proven-Build/dp/0593189647/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2ISMBU28BMWO7&keywords=Atomic+Habits&qid=1706604826&sprefix=atomic+habits%2Caps%2C88&sr=8-1"
-            target="_blank" class="button__link regular">View book</a>
-        </div>
-        <div class="card-3">
-          <div class="card-3__header">
-            <p class="large">Deep Work</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">Productivity</p>
-              </div>
-            </div>
-          </div>
-          <p class="regular">Newport examines the importance of deep concentration in a world full of distractions. He
-            offers strategies to cultivate the ability to do meaningful, uninterrupted work.</p>
-          <a href="https://www.amazon.es/Deep-Work-Focused-Success-Distracted/dp/0349411905/ref=sr_1_2?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3S1YCL5MFNIR9&keywords=deep+work&qid=1706604849&sprefix=deep+work%2Caps%2C86&sr=8-2"
-            target="_blank" class="button__link regular">View book</a>
-        </div>
-        <div class="card-3">
-          <div class="card-3__header">
-            <p class="large">Chatter</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">Psychology</p>
-              </div>
-            </div>
-          </div>
-          <p class="regular">Explores the impact of our inner voice on mental well-being. It offers insights and
-            strategies to manage self-talk positively.</p>
-          <a href="https://www.amazon.es/Chatter-Voice-Our-Head-Harness/dp/1785041967/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=JBIHTZLGES6K&keywords=chatter&qid=1706604868&sprefix=chatte%2Caps%2C87&sr=8-1"
-            target="_blank" class="button__link regular">View book</a>
-        </div>
-        <div class="card-3">
-          <div class="card-3__header">
-            <p class="large">Thinking, Fast and Slow</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">Productivity</p>
-              </div>
-            </div>
-          </div>
-          <p class="regular">Provides valuable insights into human decision-making. Designers can benefit from
-            understanding the cognitive processes that influence user choices and behaviors.</p>
-          <a href="https://www.amazon.es/Thinking-Fast-Slow-Daniel-Kahneman/dp/0141033576/ref=sr_1_1?crid=2G1XJQUC28EF0&keywords=think+fast+and+slow&qid=1706604896&sprefix=think+fast+and+slow%2Caps%2C86&sr=8-1"
-            target="_blank" class="button__link regular">View book</a>
-
-        </div>
-        <div class="card-3">
-          <div class="card-3__header">
-            <p class="large">Influence: The Psychology of Persuasion</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">Productivity</p>
-              </div>
-            </div>
-          </div>
-          <p class="regular">Explores the psychology of persuasion. Cialdini outlines key principles shaping human
-            behavior, offering insights into effective communication.</p>
-          <a href="https://www.amazon.es/Influence-New-Expanded-Psychology-Persuasion/dp/0062937650/ref=sr_1_1?crid=3536NRCVCPO4T&keywords=influence+the+psychology+of+persuasion&qid=1706604924&sprefix=influence+%2Caps%2C89&sr=8-1"
-            target="_blank" class="button__link regular">View book</a>
-        </div>
-        <div class="card-3">
-          <div class="card-3__header">
-            <p class="large">Predictably Irrational</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">Productivity</p>
-              </div>
-            </div>
-          </div>
-          <p class="regular">Designers can gain insights into how to anticipate and leverage these irrational tendencies
-            in creating more effective designs.</p>
-          <a href="https://www.amazon.es/Predictably-Irrational-Hidden-Forces-Decisions/dp/0007256531/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=32ERRXI2MJFCS&keywords=Predictably+Irrational&qid=1706604948&sprefix=predictably+irrational%2Caps%2C89&sr=8-1"
-            target="_blank" class="button__link regular">View book</a>
-        </div>
+        </a>
+        
+        
+        
+        
+       
       </div>
     </section>
 
@@ -711,14 +529,16 @@
   <!-- 1.1.3 footer -->
   <footer>
     <nav class="footer">
-      <a class="logo" href="index.html"><img src="/assets/icons/logo.png" alt="logo-alejandro">
-        <div class="logo__name">
-          <h4>Alejandro</h4>
-          <p class="small">2.0</p>
-        </div>
-      </a>
+      <div class="footer__social">
+        <a class="button-social" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a class="button-social" href="mailto:alejandromorenomartin1990@gmail.com" target="_blank">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
       <p class="regular">Designing - 2024</p>
-      <p class="small">&copy; Alejandro Moreno</p>
+      <p class="regular">&copy; Alejandro Moreno</p>
     </nav>
   </footer>
 

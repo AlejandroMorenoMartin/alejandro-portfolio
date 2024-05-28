@@ -12,7 +12,7 @@ h1 {
   line-height: var(--lh-h1);
   font-weight: 900;
   letter-spacing: 0;
-  color: var(--neutral-200);
+  color: var(--neutral-100);
 }
 
 h2 {
@@ -20,7 +20,7 @@ h2 {
   line-height: var(--lh-h2);
   font-weight: 800;
   letter-spacing: 0;
-  color: var(--neutral-200);
+  color: var(--neutral-100);
 }
 
 h3 {
@@ -28,7 +28,7 @@ h3 {
   line-height: var(--lh-h3);
   font-weight: 700;
   letter-spacing: 0;
-  color: var(--neutral-200);
+  color: var(--neutral-100);
 }
 
 h4 {
@@ -36,7 +36,7 @@ h4 {
   line-height: var(--lh-h4);
   font-weight: 700;
   letter-spacing: 0;
-  color: var(--neutral-200);
+  color: var(--neutral-100);
 }
 
 .large, caption {
@@ -58,14 +58,15 @@ h4 {
   font-size: var(--fs-regular);
   line-height: var(--lh-regular);
   font-weight: 400;
-  letter-spacing: 0.075rem;
+  letter-spacing: 0.05rem;
 }
 
 .small {
   font-size: var(--fs-small);
   line-height: var(--lh-small);
-  font-weight: 100;
+  font-weight: 400;
   letter-spacing: 0.125rem;
+  color: var(--neutral-300);
 }
 
 b {

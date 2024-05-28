@@ -50,9 +50,9 @@
   --fs-h2: 2.5rem;
   --fs-h3: 2.25rem;
   --fs-h4: 1.75rem;
-  --fs-large: 1.125rem;
+  --fs-large: 1.2rem;
   --fs-regular: 1rem;
-  --fs-small: 0.75rem;
+  --fs-small: 0.8rem;
 }
 
 @media (max-width: 1200px) {
@@ -75,7 +75,7 @@
   --lh-h4: 2rem;
   --lh-large: 1.75rem;
   --lh-regular: 1.5rem;
-  --lh-small: 1.25rem;
+  --lh-small: 1rem;
 }
 
 @media (max-width: 1200px) {
@@ -196,5 +196,11 @@
   --bw-0: 0.05rem;
   --bw-1: 1px;
 }
+
+/* Shadow */
+:root{
+  --shadow-1:  0 2px 0 rgba(0, 0, 0, 0.5);
+}
+  
 
 

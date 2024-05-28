@@ -32,27 +32,30 @@
         <i class="fa-solid fa-bars"></i>
       </label>
 
-      <a class="logo" href="../index.html"><img src="../assets/icons/logo.png" alt="logo-alejandro">
+      <a class="logo" href="../index.html"><img src="/assets/icons/logo.png" alt="logo-alejandro">
         <div class="logo__name">
-          <h4>Alejandro</h4>
+          <p class="large">Alejandro</p>
           <p class="small">2.0</p>
         </div>
       </a>
 
       <ul class="navbar__navigation">
-        <li class="navbar__item">
-          <a href="../index.html" class="navbar__link large">Home</a>
+        <li class="navbar__responsive">
+          <input type="checkbox" id="click">
+          <label for="click" class="navbar-button">
+            <i class="fa-solid fa-x"></i>
+          </label>
         </li>
         <li class="navbar__item">
-          <a href="about-me.html" class="navbar__link large">About me</a>
+          <a href="../index.html" class="navbar__link regular">Home</a>
         </li>
         <li class="navbar__item">
-          <a href="blog.html" class="navbar__link large active">Blog</a>
+          <a href="../pages/about-me.html" class="navbar__link regular">About me</a>
         </li>
-        <li class="navbar__buttons">
-          <div class="button-secondary">
-            <a href="/assets/documents/alejandro-resume.pdf" class="label" target="_blank">Resume</a>
-          </div>
+        <li class="navbar__item">
+          <a href="../pages/blog.html" class="navbar__link regular active">Blog</a>
+        </li>
+        <li class="navbar__buttons">         
           <div class="button-primary">
             <a href="mailto:alejandromorenomartin1990@gmail.com" class="label" target="_blank">Contact</a>
           </div>
@@ -71,21 +74,7 @@
         </li>
       </ul>
     </nav>
-  </header>
-
-  <!-- 1.1.2 latbar -->
-  <aside class="latbar">
-    <p class="small">&copy; Alejandro Moreno</p>
-    <p class="regular">Designing - 2024</p>
-    <div class="sidebar__social">
-      <a class="button-social" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
-      <a class="button-social" href="https://github.com/kakomoma" target="_blank">
-        <i class="fa-brands fa-square-github"></i>
-      </a>
-    </div>
-  </aside>
+  </header>   
 
   <!-- 2.0.1 main-container -->
   <main class="main-container">
@@ -99,7 +88,7 @@
           <h2>Blog</h2>
         </div>
         <div class="section-header__text">
-          <p class="large">This is where I write in my free time. I enjoy researching issues related to my profession. I
+          <p class="regular">This is where I write in my free time. I enjoy researching issues related to my profession. I
             do not adhere to a set schedule for new publications; I create them at my own pace.</p>
         </div>
       </div>
@@ -324,15 +313,17 @@
 
   <!-- 1.1.3 footer -->
   <footer>
-    <nav class="footer">
-      <a class="logo" href="../index.html"><img src="../assets/icons/logo.png" alt="logo-alejandro">
-        <div class="logo__name">
-          <h4>Alejandro</h4>
-          <p class="small">2.0</p>
-        </div>
-      </a>
+    <nav class="footer">      
+      <div class="footer__social">
+        <a class="button-social" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a class="button-social" href="mailto:alejandromorenomartin1990@gmail.com" target="_blank">
+        <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
       <p class="regular">Designing - 2024</p>
-      <p class="small">&copy; Alejandro Moreno</p>
+      <p class="regular">&copy; Alejandro Moreno</p>
     </nav>
   </footer>
 
