@@ -38,8 +38,7 @@ function handleScroll() {
 
 // Agrega un event listener al evento de scroll
 window.addEventListener("scroll", handleScroll);
-
-
+ 
 /* ----------------------------------------------- */
 
 /* 1.2 Button - index-hero (Salto a sección) */
