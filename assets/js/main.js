@@ -10,37 +10,6 @@
 
 /* ----------------- NAVIGATION ----------------- */
 
-/* 1.1 Menu (appears and dissapear) */
-
-// Obtén el elemento del navbar
-/*const navbar = document.getElementById("navbar");
-
-// Inicializa la posición de desplazamiento anterior
-let prevScrollPos = window.pageYOffset;
-
-// Función para manejar el evento de desplazamiento
-function handleScroll() {
-  // Obtén la posición actual de desplazamiento
-  const currentScrollPos = window.pageYOffset;
-
-  // Compara la posición actual con la anterior
-  if (prevScrollPos > currentScrollPos) {
-    // Si haces scroll hacia arriba, muestra el navbar desplazándolo hacia abajo
-    navbar.style.top = "0";
-  } else {
-    // Si haces scroll hacia abajo, esconde el navbar desplazándolo hacia arriba
-    navbar.style.top = `-${navbar.offsetHeight + 30}px`;
-  }
-
-  // Actualiza la posición anterior
-  prevScrollPos = currentScrollPos;
-}
-
-// Agrega un event listener al evento de scroll
-window.addEventListener("scroll", handleScroll);
- 
-/* ----------------------------------------------- */
-
 /* 1.2 Button - index-hero (Salto a sección) */
 
 document.addEventListener('DOMContentLoaded', function () {
