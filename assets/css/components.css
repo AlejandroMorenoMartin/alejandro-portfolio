@@ -48,7 +48,7 @@
     1.8.1 image-article
     1.8.2 carousel
     1.8.3 image-project
-    1.8.4 image-hero__main
+    1.8.4 2-image
 
   1.9 Line
     1.9.1 hr-article 
@@ -80,17 +80,17 @@
 2. Layout
 
   2.0 Commun
-    2.0.1 main-container
+    2.0.1 main
     2.0.2 main-section
-    2.0.3 main-container__2
-    2.0.4 grid-container__3
+    2.0.3 main-2
+    2.0.4 grid-3
     2.0.5 grid-container__4
-    2.0.6 grid-container__5
+    2.0.6 grid-5
     2.0.7 flex-container__1
 
   2.1 Index    
-    2.1.1 index-hero    
-    2.1.2 grid-container__3, 
+    2.1.1 main-hero    
+    2.1.2 grid-3, 
     skills-container, testimonial-container, readings-container, education-container)       
 
   2.2 About me 
@@ -298,7 +298,7 @@ input[type="checkbox"] {
     align-items: flex-start;
     gap: 4px;
 
-    p.large {
+    p.regular {
       color: var(--neutral-300);
       transition: color 0.3s ease
     }
@@ -396,13 +396,13 @@ input[type="checkbox"] {
   max-width: 100%;
   max-height: 100%;
   font-size: 24px;
-  color: var(--neutral-300);
+  color: var(--primary-500);
   transition: all 0.3s ease-in-out;
   border-radius: var(--br-4);
 }
 
 .button-social i:hover {
-  color: var(--neutral-100);
+  color: var(--primary-300);
 }
 
 /* button-progress */
@@ -741,6 +741,8 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  background: var(--neutral-800);
+  padding: 16px;
 }
 
 .card-experience a {
@@ -1262,21 +1264,8 @@ input[type="checkbox"] {
   transition: hover 0.3s ease-in-out;
 }
 
-.card-skill__icon-container {
-  border-radius: 1000px;
-  padding: 6px;
-  background: var(--neutral-500);
-}
-
-.card-skill__icon-skill {
+.icon {
   width: 24px;
-}
-
-.card-skill__icon-info {
-  width: 16px;
-  position: absolute;
-  top: 4px;
-  right: 4px;
 }
 
 .card-skill__tooltip {
@@ -1341,7 +1330,7 @@ input[type="checkbox"] {
   overflow: hidden;
 }
 
-.card-article__info{
+.card-article__info {
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -1460,9 +1449,7 @@ input[type="checkbox"] {
 
 /* ----------------------------------------------- */
 
-/* TABS */
-
-/* 1.7.1 Tab */
+/* tab-container */
 
 .tab-container {
   display: flex;
@@ -1673,16 +1660,17 @@ input[type="checkbox"] {
   padding: 8px;
 }
 
-/* 1.8.4 image-hero__main */
+/* [main-2__image] */
 
-.image-hero__main {
-  position: relative;
-  height: fit-content;
+.main-2__image {
+  position: absolute;
+  top: 100px;
   width: 100%;
+  z-index: -1;
 }
 
-.image-hero__main-image{
-  height: 160px;
+.main-2__image-img {
+  height: 248px;
 }
 
 /* ----------------------------------------------- */
@@ -2123,9 +2111,9 @@ tr:nth-of-type(2n) {
 
 /* ----------------- LAYOUT ----------------- */
 
-/* 2.0.1 main-container */
+/* 2.0.1 main */
 
-.main-container {
+.main {
   display: flex;
   flex-direction: column;
   height: calc(100% -52px -88px);
@@ -2139,7 +2127,7 @@ tr:nth-of-type(2n) {
 }
 
 @media (max-width: 1200px) {
-  .main-container {
+  .main {
     width: 100%;
     padding: 12px 12px 12px 12px;
     height: calc(100% - 56px - 152px);
@@ -2149,19 +2137,18 @@ tr:nth-of-type(2n) {
   }
 }
 
-/* 2.0.2 main-container__2 */
+/* [main-2] */
 
-.main-container__2 {
+.main-2 {
   display: flex;
   flex-direction: column;
-  height: calc(100% -52px -88px);
-  width: 100%;
+  width: 1200px;
   align-items: center;
   justify-content: center;
   gap: 50px;
   margin: 0 auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 144px;
+  margin-bottom: 144px;
 }
 
 @media (max-width: 1200px) {
@@ -2191,41 +2178,88 @@ tr:nth-of-type(2n) {
   }
 }
 
-/* 2.0.4 grid-container__3 */
+/* [main-2__section] */
 
-.grid-container__3 {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(0, 384px));
-  gap: 24px;
-}
-
-/* 2.0.5 grid-container__4 */
-
-.grid-container__4 {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(0, 282px));
-  gap: 24px;
-}
-
-/* 2.0.6 grid-container__5 */
-
-.grid-container__5 {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(0, 220.8px));
-  gap: 24px;
-}
-
-.flex-container__1 {
+.main-2__section {
   display: flex;
   flex-direction: column;
   gap: 48px;
+  padding: 24px;
+  background: var(--neutral-1000);
+  border-radius: var(--br-4);
+  width: 100%;
+  border: var(--bw-0) solid var(--neutral-500);
+}
+
+/* [main-2__section-header] */
+
+.main-2__section-header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* [main-2__section-header-info] */
+
+.main-2__section-header-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;  
+}
+
+/* [grid-3] */
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(0, 384px));
+  gap: 12px;
+}
+
+/* [grid-3__p] */
+
+.grid-3__p{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(0, 375px));
+  gap: 12px;
+}
+
+/* [grid-4__p] */
+
+.grid-4__p {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(0, 278px));
+  gap: 12px;
+}
+
+/* [grid-5] */
+
+.grid-5 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(0, 220.8px));
+  gap: 12px;
+}
+
+/* [grid-5__p] */
+
+.grid-5__p{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(0, 220px));
+  gap: 12px;
+}
+
+/* [flex-1] */
+
+.flex-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 @media (max-width: 1200px) {
 
-  .grid-container__3,
+  .grid-3,
   .grid-container__4,
-  .grid-container__5,
+  .grid-5,
   .flex-container__1 {
     display: flex;
     overflow-x: auto;
@@ -2238,9 +2272,9 @@ tr:nth-of-type(2n) {
 
 /* INDEX */
 
-/* 2.1.1 index-hero */
+/* 2.1.1 main-hero */
 
-.index-hero {
+.main-hero {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2250,11 +2284,11 @@ tr:nth-of-type(2n) {
   margin: 0 auto;
 }
 
-.index-hero__img {
+.main-hero__img {
   flex: 0.8;
 }
 
-.index-hero__content {
+.main-hero__content {
   display: flex;
   flex-direction: column;
   flex: 1.2;
@@ -2264,7 +2298,7 @@ tr:nth-of-type(2n) {
 }
 
 @media (max-width: 1200px) {
-  .index-hero {
+  .main-hero {
     display: flex;
     flex-direction: column;
     height: calc(100vh - 56px);
@@ -2272,14 +2306,14 @@ tr:nth-of-type(2n) {
     width: 100%;
   }
 
-  .index-hero__content {
+  .main-hero__content {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     gap: 12px;
   }
 
-  .index-hero__content p {
+  .main-hero__content p {
     display: none;
   }
 }

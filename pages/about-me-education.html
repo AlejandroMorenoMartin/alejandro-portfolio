@@ -3,25 +3,27 @@
 
 <head>
 
-  <!-- Metas -->
+  <!-- [metas] -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Language" content="en">
   <meta name="description"
     content="Explore the world of design through the lens of a passionate product designer. Delve into my portfolio, where I showcase impactful projects and share insights on design, web development, psychology, and productivity.">
 
-  <!-- Links -->
-  <link rel="icon" href="../assets/icons/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="stylesheet" href="../assets/css/reset.css">
-  <link rel="stylesheet" href="../assets/css/variables.css">
-  <link rel="stylesheet" href="../assets/css/components.css">
+  <!-- [links] -->
+  <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="/assets/css/variables.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+
+  <!-- [title] -->
   <title>Alejandro Moreno - About me</title>
 </head>
 
 <body>
 
-  <!-- 1.1.1 navbar -->
+  <!-- [navbar] -->
   <header>
     <nav class="navbar" id="navbar">
 
@@ -30,7 +32,7 @@
         <i class="fa-solid fa-bars"></i>
       </label>
 
-      <a class="logo" href="../index.html"><img src="/assets/icons/logo.png" alt="logo-alejandro">
+      <a class="logo" href="index.html"><img src="/assets/icons/logo.png" alt="logo-alejandro">
         <div class="logo__name">
           <p class="large">Alejandro</p>
           <p class="small">2.0</p>
@@ -48,7 +50,7 @@
           <a href="../index.html" class="navbar__link regular">Home</a>
         </li>
         <li class="navbar__item">
-          <a href="../pages/about-me.html" class="navbar__link regular active">About me</a>
+          <a href="../pages/about-me-experience.html" class="navbar__link regular active">About me</a>
         </li>
         <li class="navbar__item">
           <a href="../pages/blog.html" class="navbar__link regular">Blog</a>
@@ -74,31 +76,42 @@
     </nav>
   </header>
 
-  <!-- 2.0.3 main-container__2 -->
-  <main class="main-container__2">
+  <!-- [main-2__image] -->
+  <div class="main-2__image">
+    <img class="main-2__image-img" src="../assets/images/main-2__image.png" alt="image-hero">
+  </div>
 
-    <div class="image-hero__main">
-      <img class="image-hero__main-image" src="../assets/images/image-hero-2.png" alt="image-hero">
-    </div>  
+  <!-- [main-2] -->
+  <main class="main-2">
 
-    <!-- 2.0.2 main-section (experience) -->
-    <section class="main-section"> 
-      
-      <!-- 1.3.1 section-header__2 -->
-      <div class="section-header__2">
-        <h2>About me</h2>
-        <p class="regular">I love designing and creating digital experiences that solve real user problems and help companies achieve their goals. I consider myself a positive, proactive, methodical, self-taught person and I put my all into every project I undertake.</p>        
+    <!-- [main-2__header] -->
+    <div class="main-2__header">
+      <h2>About me</h2>
+    </div>
+
+
+    <!-- [tab-container] -->
+    <div class="tab-container">
+      <!-- 1.7.2 tab-button -->
+      <a href="about-me-experience.html" class="tab-button noactive regular">Experience</a>
+      <a href="about-me-education.html" class="tab-button active regular">Education</a>
+    </div>
+
+    <!-- [main-2__section] -->
+    <div class="main-2__section">
+
+      <!-- [main-2__section-header] -->
+      <div class="main-2__section-header">
+        <div class="main-2__section-header-info">
+          <img class="icon" src="/assets/icons/certificate.png" alt="icon-section">
+          <p class="large">Education</p>
+        </div>
+        <p class="regular">I always keep myself updated; I am a lifelong learner.</p>
       </div>
 
-      <div class="tab-container">
-        <!-- 1.7.2 tab-button -->
-        <a href="about-me-experience.html" class="tab-button noactive regular">Experience</a>
-        <a href="about-me-education.html" class="tab-button active regular">Education</a>
-      </div>
-
-      <!-- 2.0.4 grid-container__3 (education) -->
-      <div class="grid-container__3">
-        <a class="card-education" href="" target="_blank">
+      <!-- [grid-3__p] -->
+      <div class="grid-3__p">
+        <a class="card-education" href="">
           <div class="card-education__header">
             <img src="../assets/icons/platform/udemy.png" alt="card-education__favicon">
             <p class="large">HMTL5 and CSS3</p>
@@ -219,20 +232,21 @@
           <p class="regular">Data analysis and synthesis, organizational skills, communication, economic and
             business, interdisciplinary skills and critical capacity.</p>
           <p class="small">2021</p>
-        </a>       
-      </div>
-      
-    </section>    
+        </a> 
 
-    <!-- 2.1.8 button-progress -->
+      </div>
+      </section>
+    </div>
+
+    <!-- [progress-button] -->
     <div id="progress-button">
       <span id="progress-value">
         <i class="fa-solid fa-chevron-up"></i>
       </span>
     </div>
-  </main>  
+  </main>
 
-  <!-- 1.1.3 footer -->
+  <!-- [footer] -->
   <footer>
     <nav class="footer">
       <div class="footer__social">
@@ -248,7 +262,7 @@
     </nav>
   </footer>
 
-  <script src="../assets/js/main.js"></script>
+  <script src="/assets/js/main.js"></script>
   <script src="https://kit.fontawesome.com/35d35eeb85.js" crossorigin="anonymous"></script>
 </body>
 

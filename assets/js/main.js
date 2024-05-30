@@ -13,7 +13,7 @@
 /* 1.1 Menu (appears and dissapear) */
 
 // Obtén el elemento del navbar
-const navbar = document.getElementById("navbar");
+/*const navbar = document.getElementById("navbar");
 
 // Inicializa la posición de desplazamiento anterior
 let prevScrollPos = window.pageYOffset;
