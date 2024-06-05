@@ -12,11 +12,11 @@
 
 /* 1.2 Button - index-hero (Salto a sección) */
 
-/*document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
   // Función para manejar el clic en el enlace
   function scrollToSection() {
     const section = document.getElementById('step-section');
-    const yOffset = -200; // Ajusta este valor según tus necesidades
+    const yOffset = -100; // Ajusta este valor según tus necesidades
 
     // Obtener la posición de la sección
     const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
@@ -31,7 +31,7 @@
     event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
     scrollToSection();
   });
-});*/
+});
 
 /* ----------------------------------------------- */
 
