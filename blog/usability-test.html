@@ -3,27 +3,27 @@
 
 <head>
 
-  <!-- Metas -->
+  <!-- [metas] -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Language" content="en">
   <meta name="description"
     content="Explore the world of design through the lens of a passionate product designer. Delve into my portfolio, where I showcase impactful projects and share insights on design, web development, psychology, and productivity.">
 
-  <!-- Links -->
+  <!-- [links] -->
   <link rel="icon" href="../assets/icons/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/reset.css">
   <link rel="stylesheet" href="../assets/css/variables.css">
   <link rel="stylesheet" href="../assets/css/components.css">
-  
-  <!-- Title -->
+
+  <!-- [title] -->
   <title>Alejandro Moreno - Usability test</title>
 </head>
 
 <body>
 
-  <!-- 1.1.1 navbar -->
+  <!-- [navbar] -->
   <header>
     <nav class="navbar" id="navbar">
 
@@ -32,31 +32,30 @@
         <i class="fa-solid fa-bars"></i>
       </label>
 
-      <a class="logo" href="../index.html"><img src="../assets/icons/logo.png" alt="logo-alejandro">
+      <a class="logo" href="index.html"><img src="../assets/icons/logo.png" alt="logo-alejandro">
         <div class="logo__name">
-          <h4>Alejandro</h4>
+          <p class="large">Alejandro</p>
           <p class="small">2.0</p>
         </div>
       </a>
 
       <ul class="navbar__navigation">
-        <li class="navbar__item">
-          <a href="../index.html" class="navbar__link large">Home</a>
+        <li class="navbar__responsive">
+          <input type="checkbox" id="click">
+          <label for="click" class="navbar-button">
+            <i class="fa-solid fa-x"></i>
+          </label>
         </li>
         <li class="navbar__item">
-          <a href="../pages/about-me.html" class="navbar__link large">About me</a>
+          <a href="../index.html" class="navbar__link regular">Home</a>
         </li>
         <li class="navbar__item">
-          <a href="../pages/blog.html" class="navbar__link large active">Blog</a>
+          <a href="../pages/about-me-experience.html" class="navbar__link regular">About me</a>
         </li>
-        <li class="navbar__buttons">
-          <div class="button-secondary">
-            <a href="../assets/documents/alejandro-resume.pdf" class="label" target="_blank">Resume</a>
-          </div>
-          <div class="button-primary">
-            <a href="mailto:alejandromorenomartin1990@gmail.com" class="label" target="_blank">Contact</a>
-          </div>
+        <li class="navbar__item">
+          <a href="../pages/blog.html" class="navbar__link regular active">Blog</a>
         </li>
+
         <li class="navbar__social">
           <a class="button-social" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
             <i class="fa-brands fa-linkedin"></i>
@@ -73,189 +72,194 @@
     </nav>
   </header>
 
-  <!-- 1.1.2 latbar -->
-  <aside class="latbar">
-    <p class="small">&copy; Alejandro Moreno</p>
-    <p class="regular">Designing - 2024</p>
-    <div class="sidebar__social">
-      <a class="button-social" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
-        <i class="fa-brands fa-linkedin"></i>
+  <!-- [main] -->
+  <div>
+    <!-- [main-3__article-hero] -->
+    <div class="main-3__article-hero">
+
+      <!-- [main-3__article-hero-info] -->
+      <div class="main-3__article-hero-info">
+
+        <!-- [main-3__article-hero-info-title] -->
+        <div class="main-3__article-hero-info-title">
+          <div class="icon-emblem">
+            <i class="fa-solid fa-newspaper"></i>
+          </div>
+          <h4>Usability test</h4>
+        </div>
+        <p class="regular">Some tips to assist you in this task.</p>
+
+        <!-- [main-3__article-author-share] -->
+        <div class="main-3__article-author-share">
+
+          <!-- [card-author] -->
+          <div class="card-author">
+            <div class="card-author__image-container">
+              <img class="card-author__image" src="../assets/images/alejandro-author.png" alt="author-image">
+            </div>
+            <div class="card-author__info">
+              <p class="regular">Alejandro Moreno</p>
+              <p class="small">5 min read - Nov 08, 2023</p>
+            </div>
+          </div>
+
+          <!-- [share-container] -->
+          <div class="share-container">
+            <p class="regular">Share</p>
+            <div class="share-container__buttons" id="share-buttons">
+              <a class="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+              <a class="twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- [article-image] -->
+        <img class="article-image" src="../assets/images/articles/usability-test.png"
+          alt="article-image">
+
+      </div>
+
+    </div>
+
+    <!-- [table-of-content] -->
+    <div class="table-of-content">
+      <a href="#section-1" class="table-of-content__navigation-link">
+        <p class="regular">Define objectives</p>
       </a>
-      <a class="button-social" href="https://github.com/kakomoma" target="_blank">
-        <i class="fa-brands fa-square-github"></i>
+      <a href="#section-2" class="table-of-content__navigation-link">
+        <p class="regular">Recruit participants</p>
+      </a>
+      <a href="#section-3" class="table-of-content__navigation-link">
+        <p class="regular">Create scenarios</p>
+      </a>
+      <a href="#section-4" class="table-of-content__navigation-link">
+        <p class="regular">Encourage feedback</p>
+      </a>
+      <a href="#section-5" class="table-of-content__navigation-link">
+        <p class="regular">Iterate again</p>
       </a>
     </div>
-  </aside>
 
-  <!-- 2.0.1 main-container -->
-  <main class="main-container">
-
-    <!-- 2.2.1 about-blog-articles-hero -->
-    <section class="about-blog-articles-hero">
-
-      <!-- 1.3.1 section-header -->
-      <div class="section-header">        
-        <div class="section-header__title">
-          <h2>Blog - Usability test</h2>
-        </div>
-        <div class="section-header__text">
-          <p class="large">Some tips to assist you in this task.</p>
-        </div>
-        <div class="tags-container">
-          <div class="tag-default">
-            <p class="small">Mar 24</p>
-          </div>
-          <div class="tag-default">
-            <p class="small">Research</p>
-          </div>
-        </div>        
-        <div class="image-article">
-          <img src="/assets/images/articles/usability-test.png" alt="Image article">
-        </div>
+    <!-- [main-3__article-sections] -->
+    <div class="main-3__article-sections">
+      <div class="main-3__article-sections-section">
+        <p class="regular">Usability testing is a crucial step in the product design process, allowing designers to identify usability issues, gather feedback, and iteratively improve the user experience. Here are some tips to ensure your usability tests are effective.
+        </p>
       </div>
-
-      <!-- 2.4.1 display flex (article-container) -->
-      <div class="article-container">        
-        <div class="article-container__paragraph">
-          <h3>Definition</h3>
-          <p class="regular">Usability tests can be conducted on a prototype, a website, a mobile application, where users are given specific tasks to complete typical tasks users face in everyday situations. The goal is to understand how users interact with the product and identify any difficulties they encounter in completing the intended flows.</p>                 
-        </div>  
-        <div class="article-container__paragraph">
-          <h3>How often?</h3>
-          <p class="regular">How to create or maintain documentation, design systems, processes, and tools is important. However, knowing how to identify the problems and needs of all of the above is a much more valuable skill.</p>          
+      <div id="section-1" class="main-3__article-sections-section">
+        <div class="main-3__article-section-header">
+          <p class="large">Define clear objectives</p>
         </div>
-        <div class="article-container__paragraph">
-          <h3>How many participants?</h3>
-          <p class="regular">A small group of 3 - 5 users is sufficient to identify the main problems of the product and determine how to address them.</p>            
-        </div>
-        <div class="article-container__paragraph">
-          <h3>How to choose them?</h3>
-          <p class="regular">Ideally, some participants should be selected based on the segmentation of the target audience. Others may be users who do not fit into that segmentation. Testing with a "random" user can also be helpful, as simplicity and clarity are appreciated by all. Exposing your product to any user, whether or not they are the target audience, allows for an evaluation of design quality.</p>         
-        </div>
-        <div class="article-container__paragraph">
-          <h3>Who should observe the test?</h3>
-          <p class="regular">This test is enlightening for any team member. Gather as many people as possible (designers, developers, researchers, stakeholders, executives) to observe firsthand how users react. This will enable the group to identify major problems and be prepared to discuss solutions.</p>                 
-        </div>
-        <div class="article-container__paragraph">
-          <h3>What to test and when?</h3>
-          <p class="regular">Ideally, tests should be conducted from the beginning and after the product has been launched. Conducting periodic tests throughout the design and development cycle is a valuable tool for making improvements. Tests should allow users to perform everyday tasks that any user would encounter in a normal situation.</p>                 
-        </div>  
-        <div class="article-container__paragraph">
-          <h3>What tests should be conducted?</h3>
-          <p class="regular">Create lists of tasks or actions you want users to perform. Ensure participants understand what is being asked of them for each task. Provide details or expand task descriptions if necessary.</p>                 
-        </div>
-        <div class="article-container__paragraph">
-          <h3>What happens during the test?</h3>
-          <p class="regular">During the test, make the user feel comfortable and relaxed. The focus should primarily be on completing the tasks and clarifying them if necessary, with minimal intervention. At the end, you should have a clear picture of how the test went, which tasks were completed, which were not, reasons for success or failure, notes on user interaction, areas of difficulty, and why. Observing closely and using your ingenuity can provide valuable additional information.</p>                 
-        </div>               
+        <p class="regular">Before conducting usability tests, clearly define your objectives and what you hope to learn from the tests. Determine the specific tasks or scenarios you want participants to complete and the metrics you will use to evaluate their performance. Setting clear goals will help you stay focused during the testing process and ensure that you gather relevant insights.
+        </p>
       </div>
-
-      <!-- 1.9.1 hr-article -->  
-      <hr class="hr-article">
-
-      <!-- 1.3.1 section-header -->
-      <div class="section-header">
-        <div class="section-header__title">
-          <h2>Other articles</h2>
+      <div id="section-2" class="main-3__article-sections-section">
+        <div class="main-3__article-section-header">
+          <p class="large">Recruit diverse participants</p>
         </div>
-        <div class="section-header__text">
-          <p class="large">Want more? Discover other articles...</p>
+        <p class="regular">To obtain meaningful feedback, recruit a diverse group of participants that represents your target audience. Consider factors such as age, gender, technical expertise, and familiarity with the product domain. Recruiting participants with a range of backgrounds and experiences will help uncover a broader range of usability issues and ensure that your product caters to a diverse user base.
+        </p>
+      </div>
+      <div id="section-3" class="main-3__article-sections-section">
+        <div class="main-3__article-section-header">
+          <p class="large">Create realistic scenarios</p>
         </div>
+        <p class="regular">Design realistic scenarios or tasks for participants to complete during the usability test. These tasks should reflect typical user interactions with the product and cover a range of functionalities. Avoid leading participants or providing too much guidance, as this may bias their responses. Instead, allow participants to explore the product naturally and observe how they navigate through it.
+        </p>
       </div>
-
-      <!-- 2.3.1 display grid (blog-container) -->
-      <div class="blog-container">        
-        <a class="card-article" href="../blog/how-to-grow-as-a-product-designer.html">
-          <div class="card-article__image">
-            <img src="../assets/images/articles/how-to-grow-as-a-product-designer.png" alt="Article-image">
-          </div>
-          <div class="card-article__body">
-            <p class="large">How to grow as a product designer</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">Mar 24</p>
-              </div>
-              <div class="tag-default">
-                <p class="small">Product design</p>
-              </div>
-            </div>
-            <p class="regular">Discover the areas you need to improve to advance in your career.</p>
-          </div>
-        </a>
-        <a class="card-article" href="../blog/product-designer-competencies.html">
-          <div class="card-article__image">
-            <img src="../assets/images/articles/product-designer-competencies.png" alt="Article-image">
-          </div>
-          <div class="card-article__body">
-            <p class="large">Product designer competencies</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">Mar 24</p>
-              </div>
-              <div class="tag-default">
-                <p class="small">Product design</p>
-              </div>
-            </div>
-            <p class="regular">These are the main competencies that a product designer should have.</p>
-          </div>
-        </a>
-        <a class="card-article" href="../blog/interaction-with-multidisciplinary-teams.html">
-          <div class="card-article__image">
-            <img src="../assets/images/articles/interaction-with-multidisciplinary-teams.png" alt="Article-image">
-          </div>
-          <div class="card-article__body">
-            <p class="large">Interaction with Multidisciplinary Teams</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">Ap 23</p>
-              </div>
-              <div class="tag-default">
-                <p class="small">Product design</p>
-              </div>
-            </div>
-            <p class="regular">Get to know the various roles that interact with design.</p>
-          </div>
-        </a>
-        <a class="card-article" href="../blog/the-influence-of-size-company.html">
-          <div class="card-article__image">
-            <img src="../assets/images/articles/the-influence-of-size-and-company.png" alt="Article-image">
-          </div>
-          <div class="card-article__body">
-            <p class="large">The Influence of Company Size</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">Mar 23</p>
-              </div>
-              <div class="tag-default">
-                <p class="small">Product design</p>
-              </div>
-            </div>
-            <p class="regular">Advantages - Disadvantages of Business Types.</p>
-          </div>
-        </a>                  
+      <div id="section-4" class="main-3__article-sections-section">
+        <div class="main-3__article-section-header">
+          <p class="large">Encourage honest feedback</p>
+        </div>
+        <p class="regular">Create a comfortable and non-judgmental environment that encourages participants to provide honest feedback. Assure participants that their opinions are valued and that the goal of the test is to improve the product, not evaluate their performance. Use open-ended questions to prompt participants to share their thoughts, experiences, and any difficulties they encountered while using the product.
+        </p>
       </div>
-
-    </section>
-
-    <!-- 2.1.8 button-progress -->
-    <div id="progress-button">
-      <span id="progress-value">
-        <i class="fa-solid fa-chevron-up"></i>
-      </span>
+      <div id="section-5" class="main-3__article-sections-section">
+        <div class="main-3__article-section-header">
+          <p class="large">Iterate and iterate again</p>
+        </div>
+        <p class="regular">Usability testing is an iterative process, and it's essential to incorporate feedback into your design iteratively. Analyze the results of each usability test, identify patterns and recurring issues, and prioritize areas for improvement. Make iterative design changes based on the feedback received and conduct additional usability tests to validate the effectiveness of these changes. By continuously iterating and refining your design based on user feedback, you can create a more user-friendly and intuitive product.
+        </p>
+      </div>
     </div>
-  </main>
+  </div>
 
-  <!-- 1.1.3 footer -->
+  <!-- [main-3__article-others] -->
+  <section class="main-3__article-others">
+
+    <!-- [section-header] -->
+    <div class="section-header">
+      <div class="section-header__info">
+        <div class="section-header__title">
+          <h4>Other articles</h4>
+        </div>
+        <div class="section-header__text">
+          <p class="regular">Want more? Discover other articles...</p>
+        </div>
+      </div>
+      <a href="../pages/blog.html" class="button-terciary">See more</a>
+    </div>
+
+    <!-- [grid-3] -->
+    <div class="grid-3">
+      <a class="card-article" href="../blog/less-is-more.html">
+        <div class="card-article__image">
+          <img src="../assets/images/articles/less-is-more.png" alt="Article-image">
+        </div>
+        <p class="large">Less is more</p>
+        <p class="regular">Small changes to solve problems.</p>
+        <div class="card-article__info">
+          <p class="small">6 min read</p>
+          <p class="small">Jan 17, 2024</p>
+        </div>
+      </a>
+      <a class="card-article" href="../blog/designing-based-on-our-thoughts.html">
+        <div class="card-article__image">
+          <img src="../assets/images/articles/designing-based-on-our-thoughts.png" alt="Article-image">
+        </div>
+        <p class="large">Designing based on our thoughts</p>
+        <p class="regular">How to use psychology to make better designs.</p>
+        <div class="card-article__info">
+          <p class="small">5 min read</p>
+          <p class="small">Jan 28, 2024</p>
+        </div>
+      </a>
+      <a class="card-article" href="../blog/mental-models.html">
+        <div class="card-article__image">
+          <img src="../assets/images/articles/mental-models.png" alt="Article-image">
+        </div>
+        <p class="large">Mental models</p>
+        <p class="regular">Learn about this concept and some of the best known ones.</p>
+        <div class="card-article__info">
+          <p class="small">7 min read</p>
+          <p class="small">Feb 23, 2024</p>
+        </div>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- [progress-button] -->
+  <div id="progress-button">
+    <span id="progress-value">
+      <i class="fa-solid fa-chevron-up"></i>
+    </span>
+  </div>
+
+  <!-- [footer] -->
   <footer>
     <nav class="footer">
-      <a class="logo" href="../index.html"><img src="../assets/icons/logo.png" alt="logo-alejandro">
-        <div class="logo__name">
-          <h4>Alejandro</h4>
-          <p class="small">2.0</p>
-        </div>
-      </a>
+      <div class="footer__social">
+        <a class="button-social" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a class="button-social" href="mailto:alejandromorenomartin1990@gmail.com" target="_blank">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
       <p class="regular">Designing - 2024</p>
-      <p class="small">&copy; Alejandro Moreno</p>
+      <p class="regular">&copy; Alejandro Moreno</p>
     </nav>
   </footer>
 

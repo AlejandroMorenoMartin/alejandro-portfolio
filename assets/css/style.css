@@ -42,7 +42,7 @@ h4 {
 .large, caption {
   font-size: var(--fs-large);
   line-height: var(--lh-large);
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 0;
   color: var(--neutral-100);
 }
@@ -65,7 +65,8 @@ h4 {
   font-size: var(--fs-small);
   line-height: var(--lh-small);
   font-weight: 400;
-  letter-spacing: 0.125rem;  
+  letter-spacing: 0.125rem;
+  color: var(--neutral-400);  
 }
 
 b {

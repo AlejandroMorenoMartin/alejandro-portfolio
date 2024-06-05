@@ -3,27 +3,27 @@
 
 <head>
 
-  <!-- Metas -->
+  <!-- [metas] -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Language" content="en">
   <meta name="description"
     content="Explore the world of design through the lens of a passionate product designer. Delve into my portfolio, where I showcase impactful projects and share insights on design, web development, psychology, and productivity.">
 
-  <!-- Links -->
+  <!-- [links] -->
   <link rel="icon" href="../assets/icons/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/reset.css">
   <link rel="stylesheet" href="../assets/css/variables.css">
   <link rel="stylesheet" href="../assets/css/components.css">
-  
-  <!-- Title -->
+
+  <!-- [title] -->
   <title>Alejandro Moreno - Product development life cycle</title>
 </head>
 
 <body>
 
-  <!-- 1.1.1 navbar -->
+  <!-- [navbar] -->
   <header>
     <nav class="navbar" id="navbar">
 
@@ -32,31 +32,30 @@
         <i class="fa-solid fa-bars"></i>
       </label>
 
-      <a class="logo" href="../index.html"><img src="../assets/icons/logo.png" alt="logo-alejandro">
+      <a class="logo" href="index.html"><img src="../assets/icons/logo.png" alt="logo-alejandro">
         <div class="logo__name">
-          <h4>Alejandro</h4>
+          <p class="large">Alejandro</p>
           <p class="small">2.0</p>
         </div>
       </a>
 
       <ul class="navbar__navigation">
-        <li class="navbar__item">
-          <a href="../index.html" class="navbar__link large">Home</a>
+        <li class="navbar__responsive">
+          <input type="checkbox" id="click">
+          <label for="click" class="navbar-button">
+            <i class="fa-solid fa-x"></i>
+          </label>
         </li>
         <li class="navbar__item">
-          <a href="../pages/about-me.html" class="navbar__link large">About me</a>
+          <a href="../index.html" class="navbar__link regular">Home</a>
         </li>
         <li class="navbar__item">
-          <a href="../pages/blog.html" class="navbar__link large active">Blog</a>
+          <a href="../pages/about-me-experience.html" class="navbar__link regular">About me</a>
         </li>
-        <li class="navbar__buttons">
-          <div class="button-secondary">
-            <a href="../assets/documents/alejandro-resume.pdf" class="label" target="_blank">Resume</a>
-          </div>
-          <div class="button-primary">
-            <a href="mailto:alejandromorenomartin1990@gmail.com" class="label" target="_blank">Contact</a>
-          </div>
+        <li class="navbar__item">
+          <a href="../pages/blog.html" class="navbar__link regular active">Blog</a>
         </li>
+
         <li class="navbar__social">
           <a class="button-social" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
             <i class="fa-brands fa-linkedin"></i>
@@ -73,193 +72,188 @@
     </nav>
   </header>
 
-  <!-- 1.1.2 latbar -->
-  <aside class="latbar">
-    <p class="small">&copy; Alejandro Moreno</p>
-    <p class="regular">Designing - 2024</p>
-    <div class="sidebar__social">
-      <a class="button-social" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
-      <a class="button-social" href="https://github.com/kakomoma" target="_blank">
-        <i class="fa-brands fa-square-github"></i>
-      </a>
+  <!-- [main] -->
+  <div>
+    <!-- [main-3__article-hero] -->
+    <div class="main-3__article-hero">
+
+      <!-- [main-3__article-hero-info] -->
+      <div class="main-3__article-hero-info">
+
+        <!-- [main-3__article-hero-info-title] -->
+        <div class="main-3__article-hero-info-title">
+          <div class="icon-emblem">
+            <i class="fa-solid fa-newspaper"></i>
+          </div>
+          <h4>Product development life cycle</h4>
+        </div>
+        <p class="regular">Discover the stages in the creation of a product.</p>
+
+        <!-- [main-3__article-author-share] -->
+        <div class="main-3__article-author-share">
+
+          <!-- [card-author] -->
+          <div class="card-author">
+            <div class="card-author__image-container">
+              <img class="card-author__image" src="../assets/images/alejandro-author.png" alt="author-image">
+            </div>
+            <div class="card-author__info">
+              <p class="regular">Alejandro Moreno</p>
+              <p class="small">5 min read - Dec 06, 2022</p>
+            </div>
+          </div>
+
+          <!-- [share-container] -->
+          <div class="share-container">
+            <p class="regular">Share</p>
+            <div class="share-container__buttons" id="share-buttons">
+              <a class="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+              <a class="twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- [article-image] -->
+        <img class="article-image" src="../assets/images/articles/product-development-life-cycle.png"
+          alt="article-image">
+
+      </div>
+
     </div>
-  </aside>
 
-  <!-- 2.0.1 main-container -->
-  <main class="main-container">
+    <!-- [table-of-content] -->
+    <div class="table-of-content">
+      <a href="#section-1" class="table-of-content__navigation-link">
+        <p class="regular">Brainstorming</p>
+      </a>
+      <a href="#section-2" class="table-of-content__navigation-link">
+        <p class="regular">Design</p>
+      </a>
+      <a href="#section-3" class="table-of-content__navigation-link">
+        <p class="regular">Testing</p>
+      </a>
+      <a href="#section-4" class="table-of-content__navigation-link">
+        <p class="regular">Launch</p>
+      </a>      
+    </div>
 
-    <!-- 2.2.1 about-blog-articles-hero -->
-    <section class="about-blog-articles-hero">
+    <!-- [main-3__article-sections] -->
+    <div class="main-3__article-sections">
+      <div class="main-3__article-sections-section">
+        <p class="regular">Developing a successful product involves a structured process that ensures ideas are effectively transformed into market-ready solutions. The product development cycle consists of several key phases: brainstorming, design, testing, and launch. Each phase plays a crucial role in shaping the final product. Here’s a closer look at each stage of this cycle.
+        </p>
+      </div>
+      <div id="section-1" class="main-3__article-sections-section">
+        <div class="main-3__article-section-header">
+          <p class="large">Brainstorming</p>
+        </div>
+        <p class="regular">The development cycle begins with brainstorming. This phase is all about generating ideas and identifying potential solutions to user problems. It involves collaboration among team members, including designers, developers, marketers, and stakeholders. Techniques such as mind mapping, sketching, and collaborative workshops are often used to explore a wide range of ideas. The goal is to gather as many concepts as possible and then refine them into viable product ideas that align with the company’s goals and market needs.
+        </p>
+      </div>
+      <div id="section-2" class="main-3__article-sections-section">
+        <div class="main-3__article-section-header">
+          <p class="large">Design</p>
+        </div>
+        <p class="regular">Once a promising idea is identified, the design phase begins. This stage involves creating detailed plans and specifications for the product. It includes both User Experience (UX) and User Interface (UI) design. UX design focuses on ensuring the product is intuitive and meets user needs, while UI design concentrates on the product's visual elements. Prototypes and wireframes are developed to visualize the product's structure and functionality. Designers use tools like Sketch, Adobe XD, and Figma to create these visual representations, which will serve as the blueprint for the development phase.
+        </p>
+      </div>
+      <div id="section-3" class="main-3__article-sections-section">
+        <div class="main-3__article-section-header">
+          <p class="large">Testing</p>
+        </div>
+        <p class="regular">The testing phase is critical for validating the product’s design and functionality. Prototypes are tested with real users to gather feedback and identify any usability issues or bugs. This phase often includes several rounds of testing, such as usability testing, A/B testing, and beta testing. Each round of testing provides valuable insights that inform necessary adjustments and refinements to the product. The objective is to ensure the product is user-friendly, functional, and ready for the market. Iteration is key during this phase, as continuous improvements are made based on user feedback.
+        </p>
+      </div>
+      <div id="section-4" class="main-3__article-sections-section">
+        <div class="main-3__article-section-header">
+          <p class="large">Launch</p>
+        </div>
+        <p class="regular">The final phase is the product launch. This involves bringing the product to market and making it available to users. A comprehensive launch plan is developed, including marketing strategies, sales plans, and customer support preparations. This phase also includes finalizing the product’s technical aspects, such as deployment and distribution. Monitoring the product’s performance post-launch is crucial to address any issues that arise and gather user feedback for future updates. A successful launch is marked by effective communication with users, ensuring they understand the product’s value and how to use it.
+        </p>
+      </div>
+      <div class="main-3__article-sections-section">        
+        <p class="regular">The product development cycle is a systematic process that transforms ideas into market-ready products. By following the phases of brainstorming, design, testing, and launch, teams can create products that effectively meet user needs and achieve business goals. Each phase is integral to the product’s success, ensuring it is well-conceived, well-designed, thoroughly tested, and effectively launched.
+        </p>
+      </div>
+    </div>
+  </div>
 
-      <!-- 1.3.1 section-header -->
-      <div class="section-header">    
+  <!-- [main-3__article-others] -->
+  <section class="main-3__article-others">
+
+    <!-- [section-header] -->
+    <div class="section-header">
+      <div class="section-header__info">
         <div class="section-header__title">
-          <h2>Blog - Product development life cycle</h2>
+          <h4>Other articles</h4>
         </div>
         <div class="section-header__text">
-          <p class="large">Discover the stages in the creation of a product.</p>
-        </div>
-        <div class="tags-container">
-          <div class="tag-default">
-            <p class="small">Dec 22</p>
-          </div>
-          <div class="tag-default">
-            <p class="small">Product design</p>
-          </div>
-        </div>        
-        <div class="image-article">
-          <img src="/assets/images/articles/product-development-life-cycle.png" alt="Image article">
+          <p class="regular">Want more? Discover other articles...</p>
         </div>
       </div>
-
-      <!-- 2.4.1 display flex (article-container) -->
-      <div class="article-container">
-        <div class="article-container__paragraph">
-          <p class="regular">Every product follows specific steps from being a simple idea to becoming a final product. This is known as the product development life cycle and consists of 5 stages: brainstorming, definition, design, testing, and launch.</p>
-          <p class="regular">In this article, we explore the product development cycle and <b>how product designers work in each phase</b>. Designers play their most significant role in the design stage but collaborate closely with other team members in the other phases to ensure the product meets the appropriate requirements.</p>
-          <p class="regular">This life cycle doesn't estimate specific timelines; each stage can take different amounts of time depending on various factors. It's possible to revert to a previous stage if feedback requires it, and it's essential to follow the order of the stages to ensure maximum efficiency in the work.</p>
-        </div>
-        <div class="article-container__paragraph">
-          <h3>Brainstorming</h3>
-          <p class="regular">The first stage is brainstorming, where the team begins to conceptualize the product idea. The team needs to understand the problem that users want to solve. If these pain points or problems are not defined, it's time to identify them before starting.</p>
-          <p class="regular">Multidisciplinary teams with diverse backgrounds and experiences are often more effective at defining new ideas because greater diversity and experience lead to a broader capacity for new solutions.</p>
-          <p class="regular">This is also an appropriate time to examine existing products in the market and see what problems they are solving and how. It's crucial to ensure that the product you are launching has a place in the market and can provide extra value to users.</p>
-          <p class="regular">In large companies, designers typically do not participate in this stage, but in small companies or startups, designers may be involved.</p>
-        </div>
-        <div class="article-container__paragraph">
-          <h3>Design</h3>
-          <p class="regular">The third stage is design. This is where designers take the lead, developing the product ideas. Generally, the work begins with the generation of wireframes and later the creation of prototypes.</p>
-          <p class="regular">At this point, designers must ensure they include the specifications required in the previous stage. The work should be done in a way that makes it very easy and intuitive for the user to understand the presented interface.</p>
-          <p class="regular">A key point is that designers can define the tasks that users must perform and ensure that the design allows the completion of these tasks without issues.</p>
-        </div>
-        <div class="article-container__paragraph">
-          <h3>Testing</h3>
-          <p class="regular">Designs now move to the testing stage. Designers and engineers work together to develop prototypes and ensure that every specified detail becomes a reality. This stage must, therefore, include the development of the precise code.</p>
-          <p class="regular">There are other options for testing products before they are coded by engineers. Adobe XD or Figma allows the creation of interactive prototypes that simplify their creation and do not require the work of engineers.</p>
-          <p class="regular">During this stage, testing is usually divided into three different phases: internal tests, tests with stakeholders, and tests with real users.</p>
-          <h4>Internal test</h4>
-          <p class="regular">Allow the definition of technical aspects and some initial usability issues.</p>
-          <h4>Tests with stakeholders</h4>
-          <p class="regular">To ensure that the product aligns with the company's specifications and objectives.</p>
-          <h4>With real users</h4>
-          <p class="regular">It's the time to ensure that the product provides a good experience and works according to design principles (usable, equitable, pleasant, and useful).</p>
-          <p class="regular">In this stage, it's crucial to collect feedback and iterate on the product, making it possible to improve and address any problems that arise. It's important to note that the product development cycle is not a linear process, and the team can go back to a necessary stage whenever a reason for it is identified.</p>
-        </div>
-        <div class="article-container__paragraph">
-          <h3>Launch</h3>
-          <p class="regular">Finally, the product is ready for its launch phase. In this stage, tasks may include making the product available on the market through the Play Store or developing a website to introduce it.</p>
-          <p class="regular">It's time to start promoting the product, making posts on social media, and introducing it as comprehensively as possible. During the early stages of the launch, with real users testing the product, usability or design problems may arise that the team needs to address and resolve. Therefore, it wouldn't be uncommon to return to one of the previous stages and tackle the corresponding issue.
-          </p>        
-        </div>        
-      </div>
-
-      <hr class="hr-article">
-
-      <!-- 1.3.1 section-header -->
-      <div class="section-header">
-        <div class="section-header__title">
-          <h2>Other articles</h2>
-        </div>
-        <div class="section-header__text">
-          <p class="large">Want more? Discover other articles...</p>
-        </div>
-      </div>
-
-      <!-- 2.3.1 display grid (blog-container) -->
-      <div class="blog-container">
-        <a class="card-article" href="../blog/interaction-with-multidisciplinary-teams.html">
-          <div class="card-article__image">
-            <img src="../assets/images/articles/interaction-with-multidisciplinary-teams.png" alt="Article-image">
-          </div>
-          <div class="card-article__body">
-            <p class="large">Interaction with Multidisciplinary Teams</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">Ap 23</p>
-              </div>
-              <div class="tag-default">
-                <p class="small">Product design</p>
-              </div>
-            </div>
-            <p class="regular">Get to know the various roles that interact with design.</p>
-          </div>
-        </a>
-        <a class="card-article" href="../blog/the-influence-of-size-company.html">
-          <div class="card-article__image">
-            <img src="../assets/images/articles/the-influence-of-size-and-company.png" alt="Article-image">
-          </div>
-          <div class="card-article__body">
-            <p class="large">The Influence of Company Size</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">Mar 23</p>
-              </div>
-              <div class="tag-default">
-                <p class="small">Product design</p>
-              </div>
-            </div>
-            <p class="regular">Advantages - Disadvantages of Business Types.</p>
-          </div>
-        </a>
-        <a class="card-article" href="../blog/the-role-of-a-product-designer.html">
-          <div class="card-article__image">
-            <img src="../assets/images/articles/the-role-of-a-product-designer.png" alt="Article-image">
-          </div>
-          <div class="card-article__body">
-            <p class="large">The role of a product designer</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">Feb 23</p>
-              </div>
-              <div class="tag-default">
-                <p class="small">Product design</p>
-              </div>
-            </div>
-            <p class="regular">Tasks and responabilities on this role.</p>
-          </div>
-        </a>
-        <a class="card-article" href="../blog/user-experience-careers.html">
-          <div class="card-article__image">
-            <img src="../assets/images/articles/user-experience-careers.png" alt="Article-image">
-          </div>
-          <div class="card-article__body">
-            <p class="large">User experience careers</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">Oct 22</p>
-              </div>
-              <div class="tag-default">
-                <p class="small">Product design</p>
-              </div>
-            </div>
-            <p class="regular">Explore the role of UX designer and its various positions.</p>
-          </div>
-        </a>         
-      </div>
-
-    </section>
-
-    <!-- 2.1.8 button-progress -->
-    <div id="progress-button">
-      <span id="progress-value">
-        <i class="fa-solid fa-chevron-up"></i>
-      </span>
+      <a href="../pages/blog.html" class="button-terciary">See more</a>
     </div>
-  </main>
 
-  <!-- 1.1.3 footer -->
+    <!-- [grid-3] -->
+    <div class="grid-3">
+      <a class="card-article" href="../blog/the-role-of-a-product-designer.html">
+        <div class="card-article__image">
+          <img src="../assets/images/articles/the-role-of-a-product-designer.png" alt="Article-image">
+        </div>
+        <p class="large">The role of a product designer</p>
+        <p class="regular">Taks and responsabilities on this position.</p>
+        <div class="card-article__info">
+          <p class="small">8 min read</p>
+          <p class="small">Feb 22, 2023</p>
+        </div>
+      </a>
+      <a class="card-article" href="../blog/diferent-business-types.html">
+        <div class="card-article__image">
+          <img src="../assets/images/articles/diferent-business-types.png" alt="Article-image">
+        </div>
+        <p class="large">Diferent business types</p>
+        <p class="regular">The pros and cons of different business types in product design.</p>
+        <div class="card-article__info">
+          <p class="small">6 min read</p>
+          <p class="small">May 24, 2023</p>
+        </div>
+      </a>
+      <a class="card-article" href="../blog/interaction-with-multidisciplinary-teams.html">
+        <div class="card-article__image">
+          <img src="../assets/images/articles/interaction-with-multidisciplinary-teams.png" alt="Article-image">
+        </div>
+        <p class="large">Interaction with disciplinary teams</p>
+        <p class="regular">Get to know the roles that interact with design.</p>
+        <div class="card-article__info">
+          <p class="small">5 min read</p>
+          <p class="small">Jan 06, 2023</p>
+        </div>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- [progress-button] -->
+  <div id="progress-button">
+    <span id="progress-value">
+      <i class="fa-solid fa-chevron-up"></i>
+    </span>
+  </div>
+
+  <!-- [footer] -->
   <footer>
     <nav class="footer">
-      <a class="logo" href="../index.html"><img src="../assets/icons/logo.png" alt="logo-alejandro">
-        <div class="logo__name">
-          <h4>Alejandro</h4>
-          <p class="small">2.0</p>
-        </div>
-      </a>
+      <div class="footer__social">
+        <a class="button-social" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a class="button-social" href="mailto:alejandromorenomartin1990@gmail.com" target="_blank">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
       <p class="regular">Designing - 2024</p>
-      <p class="small">&copy; Alejandro Moreno</p>
+      <p class="regular">&copy; Alejandro Moreno</p>
     </nav>
   </footer>
 

@@ -12,7 +12,7 @@
 
 /* 1.2 Button - index-hero (Salto a sección) */
 
-document.addEventListener('DOMContentLoaded', function () {
+/*document.addEventListener('DOMContentLoaded', function () {
   // Función para manejar el clic en el enlace
   function scrollToSection() {
     const section = document.getElementById('step-section');
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
     event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
     scrollToSection();
   });
-});
+});*/
 
 /* ----------------------------------------------- */
 
@@ -140,7 +140,7 @@ function showTab(tabName) {
 
 /* 1.6 Carousel - carousel-project-hero */
 
-const track = document.querySelector('.carousel__track');
+/*const track = document.querySelector('.carousel__track');
 const slides = Array.from(track.children);
 const nextButton = document.querySelector('.carousel__button--right');
 const prevButton = document.querySelector('.carousel__button--left');
@@ -225,6 +225,74 @@ dotsNav.addEventListener('click', e => {
   moveToSlide(track, currentSlide, targetSlide);
   updateDots(currentDot, targetDot);
   hideShowArrows(slides, prevButton, nextButton, targetIndex);
-})
+}) */
 
 /* ----------------------------------------------- */
+
+/* [Table of content] */
+
+document.addEventListener('DOMContentLoaded', function () {
+  const links = document.querySelectorAll('.table-of-content__navigation-link');
+  const sections = document.querySelectorAll('.main-3__article-sections-section');
+  const offset = 160; // Offset for the top margin
+
+  const options = {
+    root: null, // Use the viewport as the root
+    rootMargin: `-${offset}px 0px -${window.innerHeight - offset - 1}px 0px`,
+    threshold: 0
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      const link = document.querySelector(`.table-of-content__navigation-link[href="#${entry.target.id}"]`);
+      if (entry.isIntersecting) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  }, options);
+
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+
+  links.forEach(link => {
+    link.addEventListener('click', function (event) {
+      event.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        const elementPosition = targetElement.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+});
+
+/* ----------------------------------------------- */
+
+/* [Share buttons] */
+
+const whatsapp = document.querySelector('.whatsapp');
+const twitter = document.querySelector('.twitter');
+
+const pageUrl = location.href;
+const message2 = 'Read this, it only takes a few minutes';
+
+const whatsappApi = `https://wa.me/?text=${pageUrl}. ${message2}`;
+const twitterApi = `https://twitter.com/intent/tweet?text=${pageUrl}. ${message2}`;
+
+whatsapp.addEventListener('click', () => {
+  window.open(url = whatsappApi, target='blank')
+});
+
+twitter.addEventListener('click', () => {
+  window.open(url = twitterApi, target='blank')
+});

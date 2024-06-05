@@ -3,27 +3,27 @@
 
 <head>
 
-  <!-- Metas -->
+  <!-- [metas] -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Language" content="en">
   <meta name="description"
     content="Explore the world of design through the lens of a passionate product designer. Delve into my portfolio, where I showcase impactful projects and share insights on design, web development, psychology, and productivity.">
 
-  <!-- Links -->
+  <!-- [links] -->
   <link rel="icon" href="../assets/icons/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/reset.css">
   <link rel="stylesheet" href="../assets/css/variables.css">
   <link rel="stylesheet" href="../assets/css/components.css">
 
-  <!-- Title -->
+  <!-- [title] -->
   <title>Alejandro Moreno - Product designer competencies</title>
 </head>
 
 <body>
 
-  <!-- 1.1.1 navbar -->
+  <!-- [navbar] -->
   <header>
     <nav class="navbar" id="navbar">
 
@@ -32,31 +32,30 @@
         <i class="fa-solid fa-bars"></i>
       </label>
 
-      <a class="logo" href="../index.html"><img src="../assets/icons/logo.png" alt="logo-alejandro">
+      <a class="logo" href="index.html"><img src="../assets/icons/logo.png" alt="logo-alejandro">
         <div class="logo__name">
-          <h4>Alejandro</h4>
+          <p class="large">Alejandro</p>
           <p class="small">2.0</p>
         </div>
       </a>
 
       <ul class="navbar__navigation">
-        <li class="navbar__item">
-          <a href="../index.html" class="navbar__link large">Home</a>
+        <li class="navbar__responsive">
+          <input type="checkbox" id="click">
+          <label for="click" class="navbar-button">
+            <i class="fa-solid fa-x"></i>
+          </label>
         </li>
         <li class="navbar__item">
-          <a href="../pages/about-me.html" class="navbar__link large">About me</a>
+          <a href="../index.html" class="navbar__link regular">Home</a>
         </li>
         <li class="navbar__item">
-          <a href="../pages/blog.html" class="navbar__link large active">Blog</a>
+          <a href="../pages/about-me-experience.html" class="navbar__link regular">About me</a>
         </li>
-        <li class="navbar__buttons">
-          <div class="button-secondary">
-            <a href="../assets/documents/alejandro-resume.pdf" class="label" target="_blank">Resume</a>
-          </div>
-          <div class="button-primary">
-            <a href="mailto:alejandromorenomartin1990@gmail.com" class="label" target="_blank">Contact</a>
-          </div>
+        <li class="navbar__item">
+          <a href="../pages/blog.html" class="navbar__link regular active">Blog</a>
         </li>
+
         <li class="navbar__social">
           <a class="button-social" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
             <i class="fa-brands fa-linkedin"></i>
@@ -73,239 +72,198 @@
     </nav>
   </header>
 
-  <!-- 1.1.2 latbar -->
-  <aside class="latbar">
-    <p class="small">&copy; Alejandro Moreno</p>
-    <p class="regular">Designing - 2024</p>
-    <div class="sidebar__social">
-      <a class="button-social" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
-        <i class="fa-brands fa-linkedin"></i>
+  <!-- [main] -->
+  <div>
+    <!-- [main-3__article-hero] -->
+    <div class="main-3__article-hero">
+
+      <!-- [main-3__article-hero-info] -->
+      <div class="main-3__article-hero-info">
+
+        <!-- [main-3__article-hero-info-title] -->
+        <div class="main-3__article-hero-info-title">
+          <div class="icon-emblem">
+            <i class="fa-solid fa-newspaper"></i>
+          </div>
+          <h4>Product designer competencies</h4>
+        </div>
+        <p class="regular">These are the main competencies a product designer should have.</p>
+
+        <!-- [main-3__article-author-share] -->
+        <div class="main-3__article-author-share">
+
+          <!-- [card-author] -->
+          <div class="card-author">
+            <div class="card-author__image-container">
+              <img class="card-author__image" src="../assets/images/alejandro-author.png" alt="author-image">
+            </div>
+            <div class="card-author__info">
+              <p class="regular">Alejandro Moreno</p>
+              <p class="small">8 min read - Sep 17, 2023</p>
+            </div>
+          </div>
+
+          <!-- [share-container] -->
+          <div class="share-container">
+            <p class="regular">Share</p>
+            <div class="share-container__buttons" id="share-buttons">
+              <a class="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+              <a class="twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- [article-image] -->
+        <img class="article-image" src="../assets/images/articles/product-designer-competencies.png"
+          alt="article-image">
+
+      </div>
+
+    </div>
+
+    <!-- [table-of-content] -->
+    <div class="table-of-content">
+      <a href="#section-1" class="table-of-content__navigation-link">
+        <p class="regular">UX & UI</p>
       </a>
-      <a class="button-social" href="https://github.com/kakomoma" target="_blank">
-        <i class="fa-brands fa-square-github"></i>
+      <a href="#section-2" class="table-of-content__navigation-link">
+        <p class="regular">Prototyping & Wireframing</p>
+      </a>
+      <a href="#section-3" class="table-of-content__navigation-link">
+        <p class="regular">Communication</p>
+      </a>
+      <a href="#section-4" class="table-of-content__navigation-link">
+        <p class="regular">Problem solving</p>
+      </a>
+      <a href="#section-5" class="table-of-content__navigation-link">
+        <p class="regular">Learning & Adaptability</p>
       </a>
     </div>
-  </aside>
 
-  <!-- 2.0.1 main-container -->
-  <main class="main-container">
-
-    <!-- 2.2.1 about-blog-articles-hero -->
-    <section class="about-blog-articles-hero">
-
-      <!-- 1.3.1 section-header -->
-      <div class="section-header">
-        <div class="section-header__title">
-          <h2>Blog - Product designer competencies</h2>
-        </div>
-        <div class="section-header__text">
-          <p class="large">These are the main competencies that a product designer should have.</p>
-        </div>
-        <div class="tags-container">
-          <div class="tag-default">
-            <p class="small">Mar 24</p>
-          </div>
-          <div class="tag-default">
-            <p class="small">Product design</p>
-          </div>
-        </div>
-        <div class="image-article">
-          <img src="../assets/images/articles/product-designer-competencies.png" alt="Image article">
-        </div>
+    <!-- [main-3__article-sections] -->
+    <div class="main-3__article-sections">
+      <div class="main-3__article-sections-section">
+        <p class="regular">In the ever-evolving field of product design, professionals must possess a diverse set of skills to create products that are not only functional but also delightful for users. A product designer's role involves blending creativity with technical expertise to solve user problems effectively. Here are the essential skills that every product designer should master to excel in their profession.
+        </p>
       </div>
-
-      <!-- 2.4.1 display flex (article-container) -->
-      <div class="article-container">       
-              
-        <div class="article-container__paragraph">
-          <p class="regular">It's important to note that most companies have their own competency frameworks based on
-            the different seniority levels of their designers. Companies aim for the growth of their designers so that
-            the better they are, the more value they can add to the company.</p>
+      <div id="section-1" class="main-3__article-sections-section">
+        <div class="main-3__article-section-header">
+          <p class="large">User Experience (UX) and User Interface (UI) Design</p>
         </div>
-        <div class="article-container__paragraph">
-          <h3>Craft</h3>
-          <p class="regular">Many times, we might think that what leads a designer to promotion is based on their
-            technical skills. While these are crucial, they are only part of the reasons that will propel you to the
-            next level.</p>
-          <h4>UI design</h4>
-          <ul class="ul-listas">
-            <li class="regular">Typography</li>
-            <li class="regular">Color</li>
-            <li class="regular">Iconography</li>
-            <li class="regular">Layout, visual hierarchy and composition</li>
-            <li class="regular">Grid</li>
-            <li class="regular">Motion</li>
-            <li class="regular">Grid systems</li>
-          </ul>
-          <h4>UX design</h4>
-          <ul class="ul-listas">
-            <li class="regular">Prototyping</li>
-            <li class="regular">User research</li>
-            <li class="regular">Design patterns</li>
-            <li class="regular">Define probelms</li>
-            <li class="regular">Information architecture</li>
-            <li class="regular">Accessibility</li>
-            <li class="regular">Work with data</li>
-          </ul>
-        </div>
-        <div class="article-container__paragraph">
-          <h3>Communication</h3>
-          <h4>Presenting</h4>
-          <p class="regular">In order to convey the reasons behind the decisions made, the designer must be able to
-            communicate these ideas to the rest of the team in an effective manner.</p>
-          <h4>Feedback</h4>
-          <p class="regular">To achieve higher quality and more effective results, designers must be capable of giving and receiving feedback.</p>          
-        </div>
-        <div class="article-container__paragraph">
-          <h3>Collaboration</h3>
-          <p class="regular">Here, it's important to know with whom, when, how, and why to collaborate. This is crucial both for building strong relationships and for the effectiveness of day-to-day work.</p>
-          <h4>Stakeholder managment</h4>
-          <p class="regular">It's the ability to keep everyone informed while building and maintaining good relationships with the team. It's part of the job to keep everyone updated on the things being done and make this information accessible.</p>
-          <h4>Interpersonal skills</h4>
-          <p class="regular">In order to build strong relationships and collaborate with teammates, designers must be fully aware, empathetic, treat others with respect and consideration, and have developed emotional intelligence.</p>
-          
-        </div>
-        <div class="article-container__paragraph">
-          <h3>Responsability</h3>          
-          <h4>Shipping</h4>
-          <ul class="ul-listas">
-            <li class="regular">Getting things done</li>
-            <li class="regular">Estimations and deadlines</li>
-            <li class="regular">Delegating</li>
-            <li class="regular">Balancing speed and quality</li>    
-            <li class="regular">General output</li>        
-          </ul>
-          <h4>Independence</h4>
-          <ul class="ul-listas">
-            <li class="regular">Dealing with ambiguity</li>
-            <li class="regular">Initiating work</li>
-            <li class="regular">Autonomy</li>                   
-          </ul>
-          
-        </div>
-        <div class="article-container__paragraph">
-          <h3>Strategy</h3>
-          <p class="regular">Designers must be aware of the company's strategic direction and contribute to achieving the set objectives. Similarly, they should understand the needs and goals, be aware of the business context, stay informed about the market trends, and work to incorporate those realities into their designs.</p>           
-        </div>
-        <div class="article-container__paragraph">
-          <h3>Mentorship</h3>
-          <p class="regular">Companies expect their designers to be a driving force for the people around them. In this way, you should not let any opportunity pass to teach or guide the people you work with and make their work better and more effective.</p>           
-        </div>
-        <div class="article-container__paragraph">
-          <h3>Leadership</h3>
-          <p class="regular">There are many ways in which a designer can develop leadership skills. We can attract talent, be a source of inspiration, organize effectively, solve problems, prioritize and delegate, recognize the work of others, and know how to let go of what is not beneficial.</p>           
-        </div>
-        <div class="article-container__paragraph">
-          <h3>Community</h3>
-          <p class="regular">Having the ability to think and act in line with the values and goals of the company, as well as inspiring this vision in others.</p>           
-        </div>        
+        <p class="regular">At the core of product design are UX and UI design skills. UX design focuses on understanding user needs, behaviors, and pain points to create products that provide a seamless and enjoyable experience. This involves conducting user research, creating personas, and mapping out user journeys. UI design, on the other hand, deals with the visual and interactive aspects of the product. A product designer must be proficient in tools like Sketch, Adobe XD, and Figma to create visually appealing and intuitive interfaces that enhance the user experience.
+        </p>
       </div>
-
-      <!-- 1.9.1 hr-article -->
-      <hr class="hr-article">
-
-      <!-- 1.3.1 section-header -->
-      <div class="section-header">
-        <div class="section-header__title">
-          <h2>Other articles</h2>
+      <div id="section-2" class="main-3__article-sections-section">
+        <div class="main-3__article-section-header">
+          <p class="large">Prototyping and Wireframing</p>
         </div>
-        <div class="section-header__text">
-          <p class="large">Want more? Discover other articles...</p>
+        <p class="regular">Translating ideas into tangible designs is a crucial part of the product design process. Prototyping and wireframing are essential skills that allow designers to visualize and test their concepts before development. Wireframes provide a basic structure, while prototypes bring these wireframes to life, enabling interaction and user testing. Mastery of prototyping tools helps designers iterate quickly and refine their ideas based on user feedback, ensuring the final product is both functional and user-friendly.
+        </p>
+      </div>
+      <div id="section-3" class="main-3__article-sections-section">
+        <div class="main-3__article-section-header">
+          <p class="large">Collaboration and Communication</p>
         </div>
+        <p class="regular">Product design is inherently collaborative. Designers must work closely with developers, product managers, marketers, and other stakeholders to bring a product to life. Strong communication skills are essential for articulating design concepts, defending design decisions, and integrating feedback from various team members. Effective collaboration ensures that the final product aligns with the broader goals of the team and meets user needs efficiently.
+        </p>
       </div>
-
-      <!-- 2.3.1 display grid (blog-container) -->
-      <div class="blog-container">
-        <a class="card-article" href="../blog/interaction-with-multidisciplinary-teams.html">
-          <div class="card-article__image">
-            <img src="../assets/images/articles/interaction-with-multidisciplinary-teams.png" alt="Article-image">
-          </div>
-          <div class="card-article__body">
-            <p class="large">Interaction with Multidisciplinary Teams</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">Ap 23</p>
-              </div>
-              <div class="tag-default">
-                <p class="small">Product design</p>
-              </div>
-            </div>
-            <p class="regular">Get to know the various roles that interact with design.</p>
-          </div>
-        </a>
-        <a class="card-article" href="../blog/the-influence-of-size-company.html">
-          <div class="card-article__image">
-            <img src="../assets/images/articles/the-influence-of-size-and-company.png" alt="Article-image">
-          </div>
-          <div class="card-article__body">
-            <p class="large">The Influence of Company Size</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">Mar 23</p>
-              </div>
-              <div class="tag-default">
-                <p class="small">Product design</p>
-              </div>
-            </div>
-            <p class="regular">Advantages - Disadvantages of Business Types.</p>
-          </div>
-        </a>
-        <a class="card-article" href="../blog/the-role-of-a-product-designer.html">
-          <div class="card-article__image">
-            <img src="../assets/images/articles/the-role-of-a-product-designer.png" alt="Article-image">
-          </div>
-          <div class="card-article__body">
-            <p class="large">The role of a product designer</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">Feb 23</p>
-              </div>
-              <div class="tag-default">
-                <p class="small">Product design</p>
-              </div>
-            </div>
-            <p class="regular">Tasks and responabilities on this role.</p>
-          </div>
-        </a>
-        <a class="card-article" href="../blog/user-experience-careers.html">
-          <div class="card-article__image">
-            <img src="../assets/images/articles/user-experience-careers.png" alt="Article-image">
-          </div>
-          <div class="card-article__body">
-            <p class="large">User experience careers</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">Oct 22</p>
-              </div>
-              <div class="tag-default">
-                <p class="small">Product design</p>
-              </div>
-            </div>
-            <p class="regular">Explore the role of UX designer and its various positions.</p>
-          </div>
-        </a>         
+      <div id="section-4" class="main-3__article-sections-section">
+        <div class="main-3__article-section-header">
+          <p class="large">Problem-Solving and Critical Thinking</p>
+        </div>
+        <p class="regular">Product designers are problem solvers at their core. They must identify user problems and develop innovative solutions through design. This requires critical thinking and a methodical approach to understanding problems, brainstorming ideas, and testing solutions. A successful designer can balance creative intuition with analytical reasoning to create practical and effective designs that address user pain points.
+        </p>
       </div>
-    </section>
-
-    <!-- 2.1.8 button-progress -->
-    <div id="progress-button">
-      <span id="progress-value">
-        <i class="fa-solid fa-chevron-up"></i>
-      </span>
+      <div id="section-5" class="main-3__article-sections-section">
+        <div class="main-3__article-section-header">
+          <p class="large">Continuous Learning and Adaptability</p>
+        </div>
+        <p class="regular">The field of product design is dynamic, with new tools, trends, and technologies emerging regularly. A successful product designer must be adaptable and committed to continuous learning. Staying updated with industry trends, attending workshops, and participating in design communities are vital for maintaining a competitive edge. By embracing new knowledge and adapting to changing demands, product designers can consistently deliver innovative and high-quality products that meet evolving user expectations.
+        </p>
+      </div>
+      <div class="main-3__article-sections-section">        
+        <p class="regular">In conclusion, a successful product designer combines UX and UI expertise, prototyping skills, strong communication, problem-solving abilities, and a commitment to continuous learning. By mastering these essential skills, product designers can create products that stand out in the market and provide exceptional user experiences.
+        </p>
+      </div>
     </div>
-  </main>
+  </div>
 
-  <!-- 1.1.3 footer -->
+  <!-- [main-3__article-others] -->
+  <section class="main-3__article-others">
+
+    <!-- [section-header] -->
+    <div class="section-header">
+      <div class="section-header__info">
+        <div class="section-header__title">
+          <h4>Other articles</h4>
+        </div>
+        <div class="section-header__text">
+          <p class="regular">Want more? Discover other articles...</p>
+        </div>
+      </div>
+      <a href="../pages/blog.html" class="button-terciary">See more</a>
+    </div>
+
+    <!-- [grid-3] -->
+    <div class="grid-3">
+      <a class="card-article" href="../blog/how-to-grow-as-a-product-designer.html">
+        <div class="card-article__image">
+          <img src="../assets/images/articles/how-to-grow-as-a-product-designer.png" alt="Article-image">
+        </div>
+        <p class="large">How to grow as a product designer</p>
+        <p class="regular">Learn about this concept and some of the best known ones.</p>
+        <div class="card-article__info">
+          <p class="small">5 min read</p>
+          <p class="small">Oct 10, 2023</p>
+        </div>
+      </a>
+      <a class="card-article" href="../blog/usability-test.html">
+        <div class="card-article__image">
+          <img src="../assets/images/articles/usability-test.png" alt="Article-image">
+        </div>
+        <p class="large">Usability test</p>
+        <p class="regular">Some tips to assist you in this task.</p>
+        <div class="card-article__info">
+          <p class="small">5 min read</p>
+          <p class="small">Nov 08, 2023</p>
+        </div>
+      </a>
+      <a class="card-article" href="../blog/less-is-more.html">
+        <div class="card-article__image">
+          <img src="../assets/images/articles/less-is-more.png" alt="Article-image">
+        </div>
+        <p class="large">Less is more</p>
+        <p class="regular">Small changes to solve problems.</p>
+        <div class="card-article__info">
+          <p class="small">6 min read</p>
+          <p class="small">Jan 17, 2024</p>
+        </div>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- [progress-button] -->
+  <div id="progress-button">
+    <span id="progress-value">
+      <i class="fa-solid fa-chevron-up"></i>
+    </span>
+  </div>
+
+  <!-- [footer] -->
   <footer>
     <nav class="footer">
-      <a class="logo" href="../index.html"><img src="../assets/icons/logo.png" alt="logo-alejandro">
-        <div class="logo__name">
-          <h4>Alejandro</h4>
-          <p class="small">2.0</p>
-        </div>
-      </a>
+      <div class="footer__social">
+        <a class="button-social" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a class="button-social" href="mailto:alejandromorenomartin1990@gmail.com" target="_blank">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
       <p class="regular">Designing - 2024</p>
-      <p class="small">&copy; Alejandro Moreno</p>
+      <p class="regular">&copy; Alejandro Moreno</p>
     </nav>
   </footer>
 

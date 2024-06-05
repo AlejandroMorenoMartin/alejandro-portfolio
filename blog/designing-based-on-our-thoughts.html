@@ -3,27 +3,27 @@
 
 <head>
 
-  <!-- Metas -->
+  <!-- [metas] -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Language" content="en">
   <meta name="description"
     content="Explore the world of design through the lens of a passionate product designer. Delve into my portfolio, where I showcase impactful projects and share insights on design, web development, psychology, and productivity.">
 
-  <!-- Links -->
+  <!-- [links] -->
   <link rel="icon" href="../assets/icons/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/reset.css">
   <link rel="stylesheet" href="../assets/css/variables.css">
   <link rel="stylesheet" href="../assets/css/components.css">
 
-  <!-- Title -->
+  <!-- [title] -->
   <title>Alejandro Moreno - Designing based on our thoughts</title>
 </head>
 
 <body>
 
-  <!-- 1.1.1 navbar -->
+  <!-- [navbar] -->
   <header>
     <nav class="navbar" id="navbar">
 
@@ -32,31 +32,30 @@
         <i class="fa-solid fa-bars"></i>
       </label>
 
-      <a class="logo" href="../index.html"><img src="../assets/icons/logo.png" alt="logo-alejandro">
+      <a class="logo" href="index.html"><img src="../assets/icons/logo.png" alt="logo-alejandro">
         <div class="logo__name">
-          <h4>Alejandro</h4>
+          <p class="large">Alejandro</p>
           <p class="small">2.0</p>
         </div>
       </a>
 
       <ul class="navbar__navigation">
-        <li class="navbar__item">
-          <a href="../index.html" class="navbar__link large">Home</a>
+        <li class="navbar__responsive">
+          <input type="checkbox" id="click">
+          <label for="click" class="navbar-button">
+            <i class="fa-solid fa-x"></i>
+          </label>
         </li>
         <li class="navbar__item">
-          <a href="../pages/about-me.html" class="navbar__link large">About me</a>
+          <a href="../index.html" class="navbar__link regular">Home</a>
         </li>
         <li class="navbar__item">
-          <a href="../pages/blog.html" class="navbar__link large active">Blog</a>
+          <a href="../pages/about-me-experience.html" class="navbar__link regular">About me</a>
         </li>
-        <li class="navbar__buttons">
-          <div class="button-secondary">
-            <a href="../assets/documents/alejandro-resume.pdf" class="label" target="_blank">Resume</a>
-          </div>
-          <div class="button-primary">
-            <a href="mailto:alejandromorenomartin1990@gmail.com" class="label" target="_blank">Contact</a>
-          </div>
+        <li class="navbar__item">
+          <a href="../pages/blog.html" class="navbar__link regular active">Blog</a>
         </li>
+
         <li class="navbar__social">
           <a class="button-social" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
             <i class="fa-brands fa-linkedin"></i>
@@ -73,202 +72,197 @@
     </nav>
   </header>
 
-  <!-- 1.1.2 latbar -->
-  <aside class="latbar">
-    <p class="small">&copy; Alejandro Moreno</p>
-    <p class="regular">Designing - 2024</p>
-    <div class="sidebar__social">
-      <a class="button-social" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
-      <a class="button-social" href="https://github.com/kakomoma" target="_blank">
-        <i class="fa-brands fa-square-github"></i>
-      </a>
-    </div>
-  </aside>
+  <!-- [main] -->
+  <div>
+    <!-- [main-3__article-hero] -->
+    <div class="main-3__article-hero">
 
-  <!-- 2.0.1 main-container -->
-  <main class="main-container">
+      <!-- [main-3__article-hero-info] -->
+      <div class="main-3__article-hero-info">
 
-    <!-- 2.2.1 about-blog-articles-hero -->
-    <section class="about-blog-articles-hero">
-
-      <!-- 1.3.1 section-header -->
-      <div class="section-header">
-        <div class="section-header__title">
-          <h2>Blog - Designing based on our thoughts</h2>
-        </div>
-        <div class="section-header__text">
-          <p class="large">How to use psychology to make better designs</p>
-        </div>
-        <div class="tags-container">
-          <div class="tag-default">
-            <p class="small">Apr 12</p>
+        <!-- [main-3__article-hero-info-title] -->
+        <div class="main-3__article-hero-info-title">
+          <div class="icon-emblem">
+            <i class="fa-solid fa-newspaper"></i>
           </div>
-          <div class="tag-default">
-            <p class="small">Product design</p>
+          <h4>Designing based on our thoughts</h4>
+        </div>
+        <p class="regular">How to use psychology to make better designs.</p>
+
+        <!-- [main-3__article-author-share] -->
+        <div class="main-3__article-author-share">
+
+          <!-- [card-author] -->
+          <div class="card-author">
+            <div class="card-author__image-container">
+              <img class="card-author__image" src="../assets/images/alejandro-author.png" alt="author-image">
+            </div>
+            <div class="card-author__info">
+              <p class="regular">Alejandro Moreno</p>
+              <p class="small">5 min read - Jan 28, 2024</p>
+            </div>
           </div>
+
+          <!-- [share-container] -->
+          <div class="share-container">
+            <p class="regular">Share</p>
+            <div class="share-container__buttons" id="share-buttons">
+              <a class="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+              <a class="twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+
         </div>
-        <div class="image-article">
-          <img src="../assets/images/articles/designing-based-on-our-thoughts.png" alt="Image article">
-        </div>
+
+        <!-- [article-image] -->
+        <img class="article-image" src="../assets/images/articles/designing-based-on-our-thoughts.png"
+          alt="article-image">
+
       </div>
 
-      <!-- 2.4.1 display flex (article-container) -->
-      <div class="article-container">
-        <div class="article-container__paragraph">
-          <p class="regular">The brain has more than 20 billion neurons. It is a very complex machine that we have not
-            yet finished understanding, but we already know some things about it.</p>
-          <p class="regular">Discover in this article, some of the existing scientific evidence and how to use that
-            information to make better designs.</p>
+    </div>
+
+    <!-- [table-of-content] -->
+    <div class="table-of-content">
+      <a href="#section-1" class="table-of-content__navigation-link">
+        <p class="regular">The brain</p>
+      </a>
+      <a href="#section-2" class="table-of-content__navigation-link">
+        <p class="regular">Processing power</p>
+      </a>
+      <a href="#section-3" class="table-of-content__navigation-link">
+        <p class="regular">Beliefs</p>
+      </a>
+      <a href="#section-4" class="table-of-content__navigation-link">
+        <p class="regular">Mental models</p>
+      </a>
+      <a href="#section-5" class="table-of-content__navigation-link">
+        <p class="regular">Conceptual models</p>
+      </a>
+    </div>
+
+    <!-- [main-3__article-sections] -->
+    <div class="main-3__article-sections">
+      <div id="section-1" class="main-3__article-sections-section">
+        <div class="main-3__article-section-header">
+          <p class="large">The brain</p>
         </div>
-        <div class="article-container__paragraph">
-          <h3>Our processing power is better with reduced information</h3>
-          <p class="regular">Giving the user too much information at once will produce a feeling of overwhelm that can
-            confuse him in his task. Spreading the information into small pieces that can be digested is often the best
-            option and results in greater user satisfaction.</p>
-          <p class="regular">Sometimes it is better if the user has to click more times, if this reduces his need to
-            think and assimilate the information received.</p>
+        <p class="regular">The brain has more than 20 billion neurons. It is a very complex machine that we have not
+          yet finished understanding, but we already know some things about it.</p>
+        <p class="regular">Discover in this article, some of the existing scientific evidence and how to use that
+          information to make better designs.</p>
+      </div>
+      <div id="section-2" class="main-3__article-sections-section">
+        <div class="main-3__article-section-header">
+          <p class="large">Processing power</p>
         </div>
-        <div class="article-container__paragraph">
-          <h3>Different mental processes, different energy requirements</h3>
-          <p class="regular">If you have ever wondered why it is easier to watch a video than to read an article, it is
-            because the visual load, applied to the visualization of the video, requires less effort and energy than the
-            one needed to read and understand an article, cognitive load.</p>
-          <p class="regular">When designing, think that users will want to do what they came here to do, in the way that
-            requires the least amount of energy possible.</p>
+        <p class="regular">Giving the user too much information at once will produce a feeling of overwhelm that can
+          confuse him in his task. Spreading the information into small pieces that can be digested is often the best
+          option and results in greater user satisfaction.</p>
+        <p class="regular">Sometimes it is better if the user has to click more times, if this reduces his need to
+          think and assimilate the information received.</p>
+      </div>
+      <div id="section-3" class="main-3__article-sections-section">
+        <div class="main-3__article-section-header">
+          <p class="large">Beliefs</p>
         </div>
-        <div class="article-container__paragraph">
-          <h3>Our mind is constantly wandering</h3>
-          <p class="regular">Depending on the activity we are doing, our mind can wander around 30-70% of the time. It usually happens that if we are performing a task that we control and have automated, our mind is more prone to wandering and we spend that time thinking about issues that have nothing to do with the task at hand.</p>
-          <p class="regular">It is necessary to indicate to the user where he is at every moment, so that if his mind wanders, he can easily see where he is, how to move forward or backward.</p>
-        </div>
-        <div class="article-container__paragraph">
-          <h3>Beliefs and behavior</h3>
-          <p class="regular">Cognitive dissonance appears when two ideas conflict. It is a feeling that causes us stress, controversy and discomfort and the solution is usually to let go of one of the ideas. </p>
+        <p class="regular">Cognitive dissonance appears when two ideas conflict. It is a feeling that causes us stress, controversy and discomfort and the solution is usually to let go of one of the ideas. </p>
           <p class="regular">It also happens that in many occasions we prefer to deny information that opposes a belief, instead of modifying the belief based on the new information.</p>
           <p class="regular">If you want to change your users' minds about something, start by provoking them to make a small change rather than asking them to make a big change or commitment.</p>
+      </div>
+      <div id="section-4" class="main-3__article-sections-section">
+        <div class="main-3__article-section-header">
+          <p class="large">Mental models</p>
         </div>
-        <div class="article-container__paragraph">
-          <h3>Mental models</h3>
-          <p class="regular">These are an accumulation of processes, memories and thoughts about how something works that allow us to direct our behavior, allow us to direct our attention and influence the way we solve problems.</p>
+        <p class="regular">These are an accumulation of processes, memories and thoughts about how something works that allow us to direct our behavior, allow us to direct our attention and influence the way we solve problems.</p>
           <p class="regular">We use mental models to try to predict the performance of a new app, software we have never interacted with or a sport we have not yet played.</p>
           <p class="regular">We must research our audience, so that we can understand what mental models govern them when they encounter or interact with our product.</p>
-        </div>
-        <div class="article-container__paragraph">
-          <h3>Conceptual models</h3>
-          <p class="regular">These are the representations of mental models about a given product. In design it is very important that the mental model and the conceptual model coincide or else the user will not understand the product well and will tend to reject it.</p>
-          <p class="regular">Creating positive and useful experiences is largely a matter of understanding the mental model of the users and matching it with the conceptual model you are designing.</p>          
-        </div>
       </div>
+      <div id="section-5" class="main-3__article-sections-section">
+        <div class="main-3__article-section-header">
+          <p class="large">Conceptual models</p>
+        </div>
+        <p class="regular">These are the representations of mental models about a given product. In design it is very important that the mental model and the conceptual model coincide or else the user will not understand the product well and will tend to reject it.</p>
+          <p class="regular">Creating positive and useful experiences is largely a matter of understanding the mental model of the users and matching it with the conceptual model you are designing.</p>
+      </div>
+    </div>
+  </div>
 
-      <!-- 1.9.1 hr-article -->
-      <hr class="hr-article">
+  <!-- [main-3__article-others] -->
+  <section class="main-3__article-others">
 
-      <!-- 1.3.1 section-header -->
-      <div class="section-header">
+    <!-- [section-header] -->
+    <div class="section-header">
+      <div class="section-header__info">
         <div class="section-header__title">
-          <h2>Other articles</h2>
+          <h4>Other articles</h4>
         </div>
         <div class="section-header__text">
-          <p class="large">Want more? Discover other articles...</p>
+          <p class="regular">Want more? Discover other articles...</p>
         </div>
       </div>
-
-      <!-- 2.3.1 display grid (blog-container) -->
-      <div class="blog-container">
-        <a class="card-article" href="../blog/usability-test.html">
-          <div class="card-article__image">
-            <img src="../assets/images/articles/usability-test.png" alt="Article-image">
-          </div>
-          <div class="card-article__body">
-            <p class="large">Usability test</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">Mar 24</p>
-              </div>
-              <div class="tag-default">
-                <p class="small">Research</p>
-              </div>
-            </div>
-            <p class="regular">Some tips to assist you in this task.</p>
-          </div>
-        </a>
-        <a class="card-article" href="../blog/how-to-grow-as-a-product-designer.html">
-          <div class="card-article__image">
-            <img src="../assets/images/articles/how-to-grow-as-a-product-designer.png" alt="Article-image">
-          </div>
-          <div class="card-article__body">
-            <p class="large">How to grow as a product designer</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">Mar 24</p>
-              </div>
-              <div class="tag-default">
-                <p class="small">Product design</p>
-              </div>
-            </div>
-            <p class="regular">Discover the areas you need to improve to advance in your career.</p>
-          </div>
-        </a>
-        <a class="card-article" href="../blog/product-designer-competencies.html">
-          <div class="card-article__image">
-            <img src="../assets/images/articles/product-designer-competencies.png" alt="Article-image">
-          </div>
-          <div class="card-article__body">
-            <p class="large">Product designer competencies</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">Mar 24</p>
-              </div>
-              <div class="tag-default">
-                <p class="small">Product design</p>
-              </div>
-            </div>
-            <p class="regular">These are the main competencies that a product designer should have.</p>
-          </div>
-        </a>
-        <a class="card-article" href="../blog/interaction-with-multidisciplinary-teams.html">
-          <div class="card-article__image">
-            <img src="../assets/images/articles/interaction-with-multidisciplinary-teams.png" alt="Article-image">
-          </div>
-          <div class="card-article__body">
-            <p class="large">Interaction with Multidisciplinary Teams</p>
-            <div class="tags-container">
-              <div class="tag-default">
-                <p class="small">Ap 23</p>
-              </div>
-              <div class="tag-default">
-                <p class="small">Product design</p>
-              </div>
-            </div>
-            <p class="regular">Get to know the various roles that interact with design.</p>
-          </div>
-        </a>
-
-      </div>
-
-    </section>
-
-    <!-- 2.1.8 button-progress -->
-    <div id="progress-button">
-      <span id="progress-value">
-        <i class="fa-solid fa-chevron-up"></i>
-      </span>
+      <a href="../pages/blog.html" class="button-terciary">See more</a>
     </div>
-  </main>
 
-  <!-- 1.1.3 footer -->
-  <footer>
-    <nav class="footer">
-      <a class="logo" href="../index.html"><img src="../assets/icons/logo.png" alt="logo-alejandro">
-        <div class="logo__name">
-          <h4>Alejandro</h4>
-          <p class="small">2.0</p>
+    <!-- [grid-3] -->
+    <div class="grid-3">
+      <a class="card-article" href="../blog/mental-models.html">
+        <div class="card-article__image">
+          <img src="../assets/images/articles/mental-models.png" alt="Article-image">
+        </div>
+        <p class="large">Mental models</p>
+        <p class="regular">Learn about this concept and some of the best known ones.</p>
+        <div class="card-article__info">
+          <p class="small">7 min read</p>
+          <p class="small">Feb 23, 2024</p>
         </div>
       </a>
+      <a class="card-article" href="../blog/tools-for-seeking-certainties.html">
+        <div class="card-article__image">
+          <img src="../assets/images/articles/tools-for-seeking-certainties.png" alt="Article-image">
+        </div>
+        <p class="large">Tools for seeking certainties</p>
+        <p class="regular">Get to know some of the tools used for data acquisition.</p>
+        <div class="card-article__info">
+          <p class="small">5 min read</p>
+          <p class="small">Apr 06, 2024</p>
+        </div>
+      </a>
+      <a class="card-article" href="../blog/product-development-life-cycle.html">
+        <div class="card-article__image">
+          <img src="../assets/images/articles/product-development-life-cycle.png" alt="Article-image">
+        </div>
+        <p class="large">Product development life cycle</p>
+        <p class="regular">Discover the stages in the creation of a product.</p>
+        <div class="card-article__info">
+          <p class="small">5 min read</p>
+          <p class="small">Dec 06, 2022</p>
+        </div>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- [progress-button] -->
+  <div id="progress-button">
+    <span id="progress-value">
+      <i class="fa-solid fa-chevron-up"></i>
+    </span>
+  </div>
+
+  <!-- [footer] -->
+  <footer>
+    <nav class="footer">
+      <div class="footer__social">
+        <a class="button-social" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a class="button-social" href="mailto:alejandromorenomartin1990@gmail.com" target="_blank">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
       <p class="regular">Designing - 2024</p>
-      <p class="small">&copy; Alejandro Moreno</p>
+      <p class="regular">&copy; Alejandro Moreno</p>
     </nav>
   </footer>
 
