@@ -1767,7 +1767,6 @@ input[type="checkbox"] {
 
 .article-image {
   width: 100%;
-  height: max-content;
 }
 
 /* [table-of-content] */
@@ -1778,11 +1777,11 @@ input[type="checkbox"] {
   top: 60px;
   display: flex;
   justify-content: space-between;
-  width: 800px;
+  width: 100%;
   margin: 0 auto;
   border-bottom: var(--bw-0) solid var(--neutral-500);
   border-top: var(--bw-0) solid var(--neutral-500);
-  background: var(--neutral-1000);
+  background: var(--neutral-900);
   padding: 12px 0;  
   gap: 12px;
 }
