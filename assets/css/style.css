@@ -66,7 +66,7 @@ h4 {
   line-height: var(--lh-small);
   font-weight: 400;
   letter-spacing: 0.125rem;
-  color: var(--neutral-400);  
+  color: var(--neutral-300);  
 }
 
 b {

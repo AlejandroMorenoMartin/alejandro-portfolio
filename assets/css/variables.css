@@ -49,10 +49,10 @@
   --fs-h1: 2.4rem;
   --fs-h2: 2.2rem;
   --fs-h3: 1.8rem;
-  --fs-h4: 1.4rem;
-  --fs-large: 1.2rem;
-  --fs-regular: 1rem;
-  --fs-small: 0.8rem;
+  --fs-h4: 1.6rem;
+  --fs-large: 1.3rem;
+  --fs-regular: 1.1rem;
+  --fs-small: .9rem;
 }
 
 @media (max-width: 1200px) {
