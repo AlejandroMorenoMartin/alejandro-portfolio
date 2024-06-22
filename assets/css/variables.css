@@ -46,47 +46,47 @@
 
 /* font-size */
 :root {
-  --fs-h1: 2.4rem;
-  --fs-h2: 2.2rem;
-  --fs-h3: 1.8rem;
-  --fs-h4: 1.6rem;
-  --fs-large: 1.3rem;
-  --fs-regular: 1.1rem;
-  --fs-small: .9rem;
+  --fs-h1: 3rem;
+  --fs-h2: 2.5rem;
+  --fs-h3: 2.25rem;
+  --fs-h4: 1.75rem;
+  --fs-large: 1.5rem;
+  --fs-regular: 1rem;
+  --fs-small: .75rem;
 }
 
 @media (max-width: 1200px) {
   :root {
-    --fs-h1: 1.8rem;
-    --fs-h2: 1.6rem;
-    --fs-h3: 1.4rem;
-    --fs-h4: 1.2rem;
-    --fs-large: 1rem;
-    --fs-regular: 0.8rem;
-    --fs-small: 0.6rem;
+    --fs-h1: 2.5rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 2rem;
+    --fs-h4: 1.5rem;
+    --fs-large: 1.25rem;
+    --fs-regular: 0.875rem;
+    --fs-small: 0.625rem;
   }
 }
 
 /* line-height */
 :root {
-  --lh-h1: 2.4rem;
-  --lh-h2: 2.4rem;
-  --lh-h3: 2rem;
-  --lh-h4: 2rem;
-  --lh-large: 1.6rem;
-  --lh-regular: 1.6rem;
-  --lh-small: 1.6rem;
+  --lh-h1: 3.625rem;
+  --lh-h2: 3rem;
+  --lh-h3: 2.625rem;
+  --lh-h4: 2.125rem;
+  --lh-large: 1.75rem;
+  --lh-regular: 1.5rem;
+  --lh-small: 1rem;
 }
 
 @media (max-width: 1200px) {
   :root {
-    --lh-h1: 3.25rem;
+    --lh-h1: 3rem;
     --lh-h2: 2.75rem;
     --lh-h3: 2.5rem;
     --lh-h4: 1.75rem;
     --lh-large: 1.5rem;
-    --lh-regular: 1.25rem;
-    --lh-small: 1rem;
+    --lh-regular: 1.125rem;
+    --lh-small: 0.75rem;
   }
 }
 

@@ -47,13 +47,6 @@ h4 {
   color: var(--white);
 }
 
-.label {
-  font-size: var(--fs-regular);
-  line-height: var(--lh-regular);
-  font-weight: 700;
-  letter-spacing: 0.125rem;
-}
-
 .regular {
   font-size: var(--fs-regular);
   line-height: var(--lh-regular);
