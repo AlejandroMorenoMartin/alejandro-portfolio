@@ -351,6 +351,7 @@ input[type="checkbox"] {
   width: fit-content;
   text-align: center;
   border-radius: var(--br-4);
+  transition: all 0.3s ease-in-out;
 }
 
 .button-primary p {
@@ -378,6 +379,7 @@ input[type="checkbox"] {
   width: fit-content;
   text-align: center;
   border-radius: var(--br-4);
+  transition: all 0.3s ease-in-out;
 }
 
 .button-secondary p {
@@ -407,6 +409,7 @@ input[type="checkbox"] {
   text-align: center;
   border-radius: var(--br-4);
   border: 0.25px solid var(--neutral-500);
+  transition: all 0.3s ease-in-out;
 }
 
 .button-terciary p {
@@ -414,6 +417,46 @@ input[type="checkbox"] {
 }
 
 .button-terciary:hover {
+  background-color: var(--neutral-700);
+  ;
+}
+
+/* [button-quaternary] */
+
+.button-quaternary {
+  padding: 6px 12px;
+  color: var(--neutral-200);
+  background-color: var(--neutral-1000);
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  border-radius: var(--br-4);
+  transition: all 0.3s ease-in-out;  
+}
+
+.button-quaternary:hover {
+  background-color: var(--neutral-800);
+  ;
+}
+
+/* [button-quinary] */
+
+.button-quinary {
+  padding: 6px 12px;
+  color: var(--neutral-200);
+  background-color: var(--neutral-900);
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  border-radius: var(--br-4);
+  transition: all 0.3s ease-in-out;  
+}
+
+.button-quinary:hover {
   background-color: var(--neutral-700);
   ;
 }
@@ -670,20 +713,11 @@ input[type="checkbox"] {
   height: auto;
 }
 
-.card-testimonial__header-info .fa-solid {
-  font-size: 12px;
-}
-
-.card-testimonial__header-info a,
-.fa-solid {
+.card-testimonial__header-info a {
   color: var(--primary-500);
 }
 
 .card-testimonial__header-info:hover a {
-  color: var(--primary-300);
-}
-
-.card-testimonial__header-info:hover .fa-solid {
   color: var(--primary-300);
 }
 
@@ -840,7 +874,14 @@ input[type="checkbox"] {
 }
 
 .card-education__header img {
-  width: 36px;
+  width: 24px;
+}
+
+.card-education .large {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .card-education .regular {
@@ -974,6 +1015,7 @@ input[type="checkbox"] {
 
 .icon-emblem i {
   font-size: 24px;
+  color: var(--primary-500);
 }
 
 .dialog-hover__card-skill {
@@ -1512,12 +1554,19 @@ input[type="checkbox"] {
   padding: 12px;
   border-radius: var(--br-4);
   gap: 12px;
-  background: var(--primary-500);
+  background: var(--neutral-900);
+  border: 0.25px solid var(--neutral-500);
 }
 
-.article-tip p {
-  color: var(--primary-1000);
-  font-weight: 600;
+.article-tip__header {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.article-tip__header i {
+  font-size: 16px;
+  color: var(--primary-500);
 }
 
 /* ----------------------------------------------- */
