@@ -1,116 +1,3 @@
-/* ESTRUCTURA CSS 
-
-1. Components
-
-  1.1 Navigation
-    1.1.1 navbar
-    1.1.2 latbar
-    1.1.3 footer
-    1.1.4 logo
-    1.1.5 copyright
-
-  1.2 Buttons
-    1.2.1 button-primary
-    1.2.2 button-secondary    
-    1.2.3 button-social    
-    1.2.6 button-progress
-    1.2.7 button-link
-
-  1.3 Headers
-    1.3.1 section-header
-    1.3.2 section-subheader
-    1.3.3 section-header__2
-
-  1.4 Tags
-    1.4.1 tag-default
-    1.4.2 tag-other
-
-  1.5 Cards
-    1.5.1 card-project
-    1.5.2 card-testimonial 
-    1.5.3 card-reading
-    1.5.4 card-experience
-    1.5.5 card-education        
-    1.5.8 card-color       
-    1.5.9 card-skill 
-    1.5.10 card-article 
-    1.5.11 card-storyboard
-
-  1.6 Scroller
-    1.6.1 scroller 
-  
-  1.7 Tabs
-    1.7.1 tab-container (about me page)   
-
-  1.8 Images
-    1.8.1 image-article
-    1.8.2 carousel
-    1.8.3 image-project
-    1.8.4 2-image
-
-  1.9 Line
-    1.9.1 hr-article 
-    1.9.2 hr-project 
-
-  1.10 Listas
-    1.10.1 ul-listas 
-    1.10.2 li-listas
-
-  1.11 Scrollbar (barra navegador)
-    1.11.1 scrollbar
-  
-  1.12 Selection (texto seleccionado)
-    1.12.1 selection
-
-  1.13 Table
-    1.13.1 table-wrapper 
-    
-  1.14 Links
-    1.14.1 link-external
-
-  1.15 Graphics
-    1.15.1 graphic-tattoo  
-
-  1.16 Docs
-    1.16.1 usability-test
-    
-2. Layout
-
-  2.0 Commun
-    2.0.1 main
-    2.0.2 main-section
-    2.0.3 main-2
-    2.0.4 grid-3
-    2.0.5 grid-container__4
-    2.0.6 grid-5
-    2.0.7 flex-container__1
-    2.0.8 main__project-hero
-
-  2.1 Index    
-    2.1.1 main-hero    
-    2.1.2 grid-3, 
-    skills-container, testimonial-container, readings-container, education-container)       
-
-  2.2 About me 
-    2.2.1 about-blog-articles-hero 
-    2.2.2 display flex (experience-container)
-
-  2.3 Blog
-    2.2.1 about-blog-articles-hero 
-    2.3.1 display grid (blog-container)
-   
-  2.4 Articles  
-    2.4.1 display flex (article-container)
-
-  2.5 Projects
-    2.5.1 project-hero
-    2.5.2 project-section
-    2.5.3 project-section--navigation
-
-/* ----------------- COMPONENTS ----------------- */
-
-/* NAVIGATION */
-
 /* navbar */
 
 .navbar {
@@ -423,17 +310,17 @@ input[type="checkbox"] {
 
 /* [button-quaternary] */
 
-.button-quaternary {
+.button-quaternary {  
   padding: 6px 12px;
   color: var(--neutral-200);
   background-color: var(--neutral-1000);
   transition: all 0.1s ease-in-out;
   cursor: pointer;
-  width: fit-content;
+  width: fit-content; 
   height: fit-content;
   text-align: center;
   border-radius: var(--br-4);
-  transition: all 0.3s ease-in-out;  
+  transition: all 0.3s ease-in-out; 
 }
 
 .button-quaternary:hover {
@@ -529,7 +416,6 @@ input[type="checkbox"] {
 
 .section-header {
   display: flex;
-  width: 100%;
   justify-content: space-between;
 }
 
@@ -539,14 +425,6 @@ input[type="checkbox"] {
   gap: 24px;
 }
 
-.section-header__title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  align-self: stretch;
-}
-
 .section-header__text {
   display: flex;
   padding: 12.5px 25px;
@@ -554,6 +432,7 @@ input[type="checkbox"] {
   align-self: stretch;
   border-radius: 4px 0px 0px 4px;
   border-left: 5px solid var(--primary-500);
+  width: 100%;
 }
 
 /* section-subheader */
@@ -1469,7 +1348,7 @@ input[type="checkbox"] {
   border-top: var(--bw-0) solid var(--neutral-500);
   background: var(--neutral-900);
   padding: 12px 0;
-  gap: 72px;
+  gap: 12px;
   z-index: 100;
   margin-top: 192px;
 }
@@ -1481,6 +1360,7 @@ input[type="checkbox"] {
   align-items: center;
   text-align: center;
   justify-content: center;
+  width: 100%;
 }
 
 .table-of-content__navigation-link.active {
