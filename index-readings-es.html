@@ -25,37 +25,50 @@
 
   <!-- [navbar] -->
   <header>
-    <nav class="navbar" id="navbar">
 
+    <nav class="mobile-navbar">
+      <a class="logo" href="index-es.html"><img src="/assets/icons/logo.png" alt="logo-alejandro">
+        <div class="logo__name">
+          <p class="large">Alejandro</p>
+          <p class="small">2.0</p>
+        </div>
+      </a>
       <input type="checkbox" id="click">
-      <label for="click" class="navbar-button">
+      <label for="click" class="mobile-navbar-button">
         <i class="fa-solid fa-bars"></i>
       </label>
+    </nav>
 
-      <a class="logo" href="index-es.html"><img src="assets/icons/logo.png" alt="logo-alejandro">
+    <nav class="desktop-navbar" id="desktop-navbar">
+
+      <a class="logo" href="index-es.html"><img src="/assets/icons/logo.png" alt="logo-alejandro">
         <div class="logo__name">
           <p class="large">Alejandro</p>
           <p class="small">2.0</p>
         </div>
       </a>
 
-      <ul class="navbar__navigation">       
-        <li class="navbar__item">
-          <a href="index-es.html" class="navbar__link regular active">Inicio</a>
+      <ul class="desktop-navbar__navigation">
+        <li class="desktop-navbar__item">
+          <a href="index-es.html" class="desktop-navbar__link regular active">Inicio</a>
         </li>
-        <li class="navbar__item">
-          <a href="pages/about-me-experience-es.html" class="navbar__link regular">Sobre mí</a>
+        <li class="desktop-navbar__item">
+          <a href="pages/about-me-experience-es.html" class="desktop-navbar__link regular">Sobre mí</a>
         </li>
-        <li class="navbar__item">
-          <a href="pages/blog-es.html" class="navbar__link regular">Blog</a>
-        </li>                
+        <li class="desktop-navbar__item">
+          <a href="pages/blog-es.html" class="desktop-navbar__link regular">Blog</a>
+        </li>
       </ul>
 
       <div class="language__selector">
         <img class="language__selector-icon" src="assets/icons/spain.png" alt="language icon">
-        <a href="geomites.html" class="language__selector-link-active" ><p class="regular">ES</p></a>
+        <a href="index-es.html" class="language__selector-link-active">
+          <p class="regular">ES</p>
+        </a>
         <div class="language__selector-divider"></div>
-        <a href="index.html" class=" language__selector-link" ><p class="regular">EN</p></a>                
+        <a href="index.html" class=" language__selector-link">
+          <p class="regular">EN</p>
+        </a>
       </div>
     </nav>
   </header>
