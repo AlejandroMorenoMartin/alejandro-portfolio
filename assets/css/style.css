@@ -39,7 +39,8 @@ h4 {
   color: var(--white);
 }
 
-.large, caption {
+.large,
+caption {
   font-size: var(--fs-large);
   line-height: var(--lh-large);
   font-weight: 600;
@@ -54,15 +55,19 @@ h4 {
   letter-spacing: 0.05rem;
 }
 
+.highlight {
+  color: var(--primary-500);
+}
+
 .small {
   font-size: var(--fs-small);
   line-height: var(--lh-small);
   font-weight: 400;
   letter-spacing: 0.125rem;
-  color: var(--neutral-200);  
+  color: var(--neutral-200);
 }
 
 b {
-  font-weight: 500;
+  font-weight: 800;
   color: var(--primary-500);
 }

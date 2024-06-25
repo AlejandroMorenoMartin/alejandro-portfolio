@@ -23,14 +23,23 @@
 
 <body>
 
-  <!-- [navbar] -->
+  <!-- [desktop-navbar] -->
   <header>
-    <nav class="navbar" id="navbar">
 
+    <nav class="mobile-navbar">
+      <a class="logo" href="index-es.html"><img src="/assets/icons/logo.png" alt="logo-alejandro">
+        <div class="logo__name">
+          <p class="large">Alejandro</p>
+          <p class="small">2.0</p>
+        </div>
+      </a>
       <input type="checkbox" id="click">
-      <label for="click" class="navbar-button">
+      <label for="click" class="mobile-navbar-button">
         <i class="fa-solid fa-bars"></i>
       </label>
+    </nav>
+
+    <nav class="desktop-navbar" id="desktop-navbar">      
 
       <a class="logo" href="index-es.html"><img src="/assets/icons/logo.png" alt="logo-alejandro">
         <div class="logo__name">
@@ -39,15 +48,15 @@
         </div>
       </a>
 
-      <ul class="navbar__navigation">       
-        <li class="navbar__item">
-          <a href="index-es.html" class="navbar__link regular active">Inicio</a>
+      <ul class="desktop-navbar__navigation">       
+        <li class="desktop-navbar__item">
+          <a href="index-es.html" class="desktop-navbar__link regular active">Inicio</a>
         </li>
-        <li class="navbar__item">
-          <a href="pages/about-me-experience-es.html" class="navbar__link regular">Sobre mí</a>
+        <li class="desktop-navbar__item">
+          <a href="pages/about-me-experience-es.html" class="desktop-navbar__link regular">Sobre mí</a>
         </li>
-        <li class="navbar__item">
-          <a href="pages/blog-es.html" class="navbar__link regular">Blog</a>
+        <li class="desktop-navbar__item">
+          <a href="pages/blog-es.html" class="desktop-navbar__link regular">Blog</a>
         </li>                
       </ul>
 
@@ -505,8 +514,9 @@
 
   <!-- [footer] -->
   <footer>
-    <nav class="footer">
-      <div class="footer__social">
+
+    <nav class="desktop-footer">
+      <div class="desktop-footer__frame desktop-footer__social">
         <a class="button-social" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
           <i class="fa-brands fa-linkedin"></i>
         </a>
@@ -514,10 +524,42 @@
           <i class="fa-solid fa-envelope"></i>
         </a>
       </div>
-      <p class="regular">Diseñando - 2024</p>
-      <p class="regular">&copy; Alejandro Moreno</p>
+      <div class="desktop-footer__frame">
+        <p class="regular">Diseñando - 2024</p>
+      </div>
+      <div class="desktop-footer__frame">
+        <p class="regular">&copy; Alejandro Moreno</p>
+      </div>
     </nav>
-  </footer>
+
+    <div class="mobile-footer">
+      <div class="mobile-footer__header">
+        <a class="logo" href="index.html"><img src="/assets/icons/logo.png" alt="logo-alejandro">
+          <div class="logo__name">
+            <p class="large">Alejandro</p>
+            <p class="small">2.0</p>
+          </div>
+        </a>
+        <div class="mobile-footer__frame mobile-footer__social">
+          <a class="button-social" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a class="button-social" href="mailto:alejandromorenomartin1990@gmail.com" target="_blank">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="mobile-footer__footer">
+        <div class="mobile-footer__footer-frame">
+          <p class="regular">Diseñando - 2024</p>
+        </div>
+        <div class="mobile-footer__footer-frame">
+          <p class="regular">&copy; Alejandro Moreno</p>
+        </div>
+      </div>
+    </div>
+
+  </footer> 
 
   <script src="/assets/js/main.js"></script>
   <script src="https://kit.fontawesome.com/35d35eeb85.js" crossorigin="anonymous"></script>
