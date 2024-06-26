@@ -25,38 +25,87 @@
 
   <!-- [navbar] -->
   <header>
-    <nav class="navbar" id="navbar">
-
-      <input type="checkbox" id="click">
-      <label for="click" class="navbar-button">
-        <i class="fa-solid fa-bars"></i>
-      </label>
-
-      <a class="logo" href="../index-es.html"><img src="/assets/icons/logo.png" alt="logo-alejandro">
-        <div class="logo__name">
-          <p class="large">Alejandro</p>
-          <p class="small">2.0</p>
-        </div>
-      </a>
-
-      <ul class="navbar__navigation">
-        <li class="navbar__item">
-          <a href="../index-es.html" class="navbar__link regular ">Inicio</a>
+    <nav>
+      <ul class="sidebar">
+        <ul class="sidebar-header">
+          <li><a class="logo" href="../index-es.html"><img src="../assets/icons/logo.png" alt="logo-alejandro">
+              <div class="logo__name">
+                <p class="large">Alejandro</p>
+                <p class="small">2.0</p>
+              </div>
+            </a></li>
+          <li onclick=hideSidebar()><a href=""><i class="fa-solid fa-xmark"></i></a></li>
+        </ul>
+        <ul class="sidebar__navigation">
+          <li class="navbar__item">
+            <a href="../index-es.html" class="navbar__link regular">Inicio</a>
+          </li>
+          <li class="navbar__item">
+            <a href="../pages/about-me-experience-es.html" class="navbar__link regular">Sobre mí</a>
+          </li>
+          <li class="navbar__item">
+            <a href="../pages/blog-es.html" class="navbar__link regular active">Blog</a>
+          </li>
+        </ul>
+        <li class="language__selector">
+          <img class="language__selector-icon" src="../assets/icons/spain.png" alt="language icon">
+          <a href="diferent-business-types-es.html" class=" language__selector-link-active">
+            <p class="regular">ES</p>
+          </a>
+          <div class="language__selector-divider"></div>
+          <a href="diferent-business-types.html" class="language__selector-link">
+            <p class="regular">EN</p>
+          </a>
         </li>
-        <li class="navbar__item">
-          <a href="../pages/about-me-experience-es.html" class="navbar__link regular">Sobre mí</a>
-        </li>
-        <li class="navbar__item">
-          <a href="../pages/blog-es.html" class="navbar__link regular active">Blog</a>
-        </li>
+        <ul class="sidebar-footer">
+          <li class="sidebar-footer__social">
+            <a class="button-social" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a class="button-social" href="mailto:alejandromorenomartin1990@gmail.com" target="_blank">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </li>
+          <li>
+            <p class="regular">Diseñando - 2024</p>
+          </li>
+          <li>
+            <p class="regular">&copy; Alejandro Moreno</p>
+          </li>
+        </ul>
+
       </ul>
 
-      <div class="language__selector">
-        <img class="language__selector-icon" src="../assets/icons/spain.png" alt="language icon">
-        <a href="diferent-business-types-es.html" class="language__selector-link-active" ><p class="regular">ES</p></a>
-        <div class="language__selector-divider"></div>
-        <a href="diferent-business-types.html" class=" language__selector-link" ><p class="regular">EN</p></a>                
-      </div>
+      <ul class="navbar">
+        <li><a class="logo" href="../index-es.html"><img src="../assets/icons/logo.png" alt="logo-alejandro">
+            <div class="logo__name">
+              <p class="large">Alejandro</p>
+              <p class="small">2.0</p>
+            </div>
+          </a></li>
+        <ul class="hideOnMobile navbar__navigation">
+          <li class="navbar__item">
+            <a href="../index-es.html" class="navbar__link regular">Inicio</a>
+          </li>
+          <li class="navbar__item">
+            <a href="../pages/about-me-experience-es.html" class="navbar__link regular">Sobre mí</a>
+          </li>
+          <li class="navbar__item">
+            <a href="../pages/blog-es.html" class="navbar__link regular active">Blog</a>
+          </li>
+        </ul>
+        <li class="language__selector">
+          <img class="language__selector-icon hideOnMobile" src="../assets/icons/spain.png" alt="language icon">
+          <a href="diferent-business-types-es.html" class=" language__selector-link-active hideOnMobile">
+            <p class="regular hideOnMobile">ES</p>
+          </a>
+          <div class="language__selector-divider hideOnMobile"></div>
+          <a href="diferent-business-types.html" class="language__selector-link hideOnMobile">
+            <p class="regular hideOnMobile">EN</p>
+          </a>
+        </li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+      </ul>
     </nav>
   </header>
 
@@ -237,21 +286,19 @@
 
     <!-- [section-header] -->
     <div class="section-header">
-      <div class="section-header__info">
-        <div class="section-header__title">
-          <h4>Otros artículos</h4>
-        </div>
-        <div class="section-header__text">
-          <p class="regular">¿Quieres más? Descubre otros artículos...</p>
-        </div>
+      <div class="section-header__header">
+        <h4>Otros artículos</h4>
+        <a href="../index-readings-es.html" class="button-quinary">
+          <p class="regular">Ver más</p>
+        </a>
       </div>
-      <a href="../pages/blog-es.html" class="button-quinary">
-        <p class="regular"></p>Ver más
-      </a>      
+      <div class="section-header__text">
+        <p class="regular">¿Quieres más? Descubre otros artículos...</p>
+      </div>
     </div>
 
-    <!-- [grid-3] -->
-    <div class="grid-3">
+    <!-- [main-section__projects] -->
+    <div class="main-section__projects">
       <a class="card-article" href="../blog/interaction-with-multidisciplinary-teams.html">
         <div class="card-article__image">
           <img src="../assets/images/articles/interaction-with-multidisciplinary-teams.png" alt="Article-image">

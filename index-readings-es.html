@@ -25,61 +25,97 @@
 
   <!-- [navbar] -->
   <header>
-
-    <nav class="mobile-navbar">
-      <a class="logo" href="index-es.html"><img src="/assets/icons/logo.png" alt="logo-alejandro">
-        <div class="logo__name">
-          <p class="large">Alejandro</p>
-          <p class="small">2.0</p>
-        </div>
-      </a>
-      <input type="checkbox" id="click">
-      <label for="click" class="mobile-navbar-button">
-        <i class="fa-solid fa-bars"></i>
-      </label>
-    </nav>
-
-    <nav class="desktop-navbar" id="desktop-navbar">
-
-      <a class="logo" href="index-es.html"><img src="/assets/icons/logo.png" alt="logo-alejandro">
-        <div class="logo__name">
-          <p class="large">Alejandro</p>
-          <p class="small">2.0</p>
-        </div>
-      </a>
-
-      <ul class="desktop-navbar__navigation">
-        <li class="desktop-navbar__item">
-          <a href="index-es.html" class="desktop-navbar__link regular active">Inicio</a>
+    <nav>
+      <ul class="sidebar">
+        <ul class="sidebar-header">
+          <li><a class="logo" href="index-es.html"><img src="/assets/icons/logo.png" alt="logo-alejandro">
+              <div class="logo__name">
+                <p class="large">Alejandro</p>
+                <p class="small">2.0</p>
+              </div>
+            </a></li>
+          <li onclick=hideSidebar()><a href=""><i class="fa-solid fa-xmark"></i></a></li>
+        </ul>
+        <ul class="sidebar__navigation">
+          <li class="navbar__item">
+            <a href="index-es.html" class="navbar__link regular active">Inicio</a>
+          </li>
+          <li class="navbar__item">
+            <a href="pages/about-me-experience-es.html" class="navbar__link regular">Sobre mí</a>
+          </li>
+          <li class="navbar__item">
+            <a href="pages/blog-es.html" class="navbar__link regular">Blog</a>
+          </li>
+        </ul>
+        <li class="language__selector">
+          <img class="language__selector-icon" src="/assets/icons/spain.png" alt="language icon">
+          <a href="index-readings-es.html" class=" language__selector-link-active">
+            <p class="regular">ES</p>
+          </a>
+          <div class="language__selector-divider"></div>
+          <a href="index-readings.html" class="language__selector-link">
+            <p class="regular">EN</p>
+          </a>
         </li>
-        <li class="desktop-navbar__item">
-          <a href="pages/about-me-experience-es.html" class="desktop-navbar__link regular">Sobre mí</a>
-        </li>
-        <li class="desktop-navbar__item">
-          <a href="pages/blog-es.html" class="desktop-navbar__link regular">Blog</a>
-        </li>
+        <ul class="sidebar-footer">
+          <li class="sidebar-footer__social">
+            <a class="button-social" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a class="button-social" href="mailto:alejandromorenomartin1990@gmail.com" target="_blank">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </li>
+          <li>
+            <p class="regular">Diseñando - 2024</p>
+          </li>
+          <li>
+            <p class="regular">&copy; Alejandro Moreno</p>
+          </li>
+        </ul>
+
       </ul>
 
-      <div class="language__selector">
-        <img class="language__selector-icon" src="assets/icons/spain.png" alt="language icon">
-        <a href="index-es.html" class="language__selector-link-active">
-          <p class="regular">ES</p>
-        </a>
-        <div class="language__selector-divider"></div>
-        <a href="index.html" class=" language__selector-link">
-          <p class="regular">EN</p>
-        </a>
-      </div>
+      <ul class="navbar">
+        <li><a class="logo" href="index-es.html"><img src="/assets/icons/logo.png" alt="logo-alejandro">
+            <div class="logo__name">
+              <p class="large">Alejandro</p>
+              <p class="small">2.0</p>
+            </div>
+          </a></li>
+        <ul class="hideOnMobile navbar__navigation">
+          <li class="navbar__item">
+            <a href="index-es.html" class="navbar__link regular active">Inicio</a>
+          </li>
+          <li class="navbar__item">
+            <a href="pages/about-me-experience-es.html" class="navbar__link regular">Sobre mí</a>
+          </li>
+          <li class="navbar__item">
+            <a href="pages/blog-es.html" class="navbar__link regular">Blog</a>
+          </li>
+        </ul>
+        <li class="language__selector">
+          <img class="language__selector-icon hideOnMobile" src="/assets/icons/spain.png" alt="language icon">
+          <a href="index-readings-es.html" class=" language__selector-link-active hideOnMobile">
+            <p class="regular hideOnMobile">ES</p>
+          </a>
+          <div class="language__selector-divider hideOnMobile"></div>
+          <a href="index-readings.html" class="language__selector-link hideOnMobile">
+            <p class="regular hideOnMobile">EN</p>
+          </a>
+        </li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+      </ul>
     </nav>
-  </header>
-
-  <!-- [main-2__image] -->
-  <div class="main-2__image">
-    <img class="main-2__image-img" src="assets/images/main-2__image.png" alt="image-hero">
-  </div>
+  </header>  
 
   <!-- [main-2] -->
   <main class="main-2">
+
+    <!-- [main-2__image] -->
+  <div class="main-2__image">
+    <img class="main-2__image-img" src="assets/images/main-2__image.png" alt="image-hero">
+  </div>
 
     <!-- [main-2__header] -->
     <div class="main-2__header">
@@ -100,8 +136,8 @@
         <p class="regular">Me encanta leer y aprender constantemente. Te dejo algunas de mis recomendaciones.</p>
       </div>
 
-      <!-- [grid-5] -->
-      <div class="grid-5">
+      <!-- [main-section__readings] -->
+      <div class="main-section__readings">
         <a class="card-reading" href="https://l1nq.com/Z8uF4" target="_blank">
           <div class="card-reading__image">
             <img src="assets/images/readings/the path to st.product designer.png" alt="book_image">

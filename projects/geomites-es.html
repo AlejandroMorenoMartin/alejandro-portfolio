@@ -30,38 +30,87 @@
 
   <!-- [navbar] -->
   <header>
-    <nav class="navbar" id="navbar">
-
-      <input type="checkbox" id="click">
-      <label for="click" class="navbar-button">
-        <i class="fa-solid fa-bars"></i>
-      </label>
-
-      <a class="logo" href="../index-es.html"><img src="/assets/icons/logo.png" alt="logo-alejandro">
-        <div class="logo__name">
-          <p class="large">Alejandro</p>
-          <p class="small">2.0</p>
-        </div>
-      </a>
-
-      <ul class="navbar__navigation">       
-        <li class="navbar__item">
-          <a href="../index-es.html" class="navbar__link regular active">Inicio</a>
+    <nav>
+      <ul class="sidebar">
+        <ul class="sidebar-header">
+          <li><a class="logo" href="../index-es.html"><img src="../assets/icons/logo.png" alt="logo-alejandro">
+              <div class="logo__name">
+                <p class="large">Alejandro</p>
+                <p class="small">2.0</p>
+              </div>
+            </a></li>
+          <li onclick=hideSidebar()><a href=""><i class="fa-solid fa-xmark"></i></a></li>
+        </ul>
+        <ul class="sidebar__navigation">
+          <li class="navbar__item">
+            <a href="../index-es.html" class="navbar__link regular active">Inicio</a>
+          </li>
+          <li class="navbar__item">
+            <a href="../pages/about-me-experience-es.html" class="navbar__link regular">Sobre mí</a>
+          </li>
+          <li class="navbar__item">
+            <a href="../pages/blog-es.html" class="navbar__link regular">Blog</a>
+          </li>
+        </ul>
+        <li class="language__selector">
+          <img class="language__selector-icon" src="../assets/icons/spain.png" alt="language icon">
+          <a href="geomites-es.html" class=" language__selector-link-active">
+            <p class="regular">ES</p>
+          </a>
+          <div class="language__selector-divider"></div>
+          <a href="geomites.html" class="language__selector-link">
+            <p class="regular">EN</p>
+          </a>
         </li>
-        <li class="navbar__item">
-          <a href="../pages/about-me-experience-es.html" class="navbar__link regular">Sobre mí</a>
-        </li>
-        <li class="navbar__item">
-          <a href="../pages/blog-es.html" class="navbar__link regular">Blog</a>
-        </li>                
+        <ul class="sidebar-footer">
+          <li class="sidebar-footer__social">
+            <a class="button-social" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a class="button-social" href="mailto:alejandromorenomartin1990@gmail.com" target="_blank">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </li>
+          <li>
+            <p class="regular">Diseñando - 2024</p>
+          </li>
+          <li>
+            <p class="regular">&copy; Alejandro Moreno</p>
+          </li>
+        </ul>
+
       </ul>
 
-      <div class="language__selector">
-        <img class="language__selector-icon" src="../assets/icons/spain.png" alt="language icon">
-        <a href="../projects/geomites-es.html" class="language__selector-link-active" ><p class="regular">ES</p></a>
-        <div class="language__selector-divider"></div>
-        <a href="../projects/geomites.html" class=" language__selector-link" ><p class="regular">EN</p></a>                
-      </div>
+      <ul class="navbar">
+        <li><a class="logo" href="../index-es.html"><img src="../assets/icons/logo.png" alt="logo-alejandro">
+            <div class="logo__name">
+              <p class="large">Alejandro</p>
+              <p class="small">2.0</p>
+            </div>
+          </a></li>
+        <ul class="hideOnMobile navbar__navigation">
+          <li class="navbar__item">
+            <a href="../index-es.html" class="navbar__link regular active">Inicio</a>
+          </li>
+          <li class="navbar__item">
+            <a href="../pages/about-me-experience-es.html" class="navbar__link regular">Sobre mí</a>
+          </li>
+          <li class="navbar__item">
+            <a href="../pages/blog-es.html" class="navbar__link regular">Blog</a>
+          </li>
+        </ul>
+        <li class="language__selector">
+          <img class="language__selector-icon hideOnMobile" src="../assets/icons/spain.png" alt="language icon">
+          <a href="geomites-es.html" class=" language__selector-link-active hideOnMobile">
+            <p class="regular hideOnMobile">ES</p>
+          </a>
+          <div class="language__selector-divider hideOnMobile"></div>
+          <a href="geomites.html" class="language__selector-link hideOnMobile">
+            <p class="regular hideOnMobile">EN</p>
+          </a>
+        </li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+      </ul>
     </nav>
   </header>
 
@@ -146,7 +195,9 @@
               <h4>Introducción</h4>
             </div>
             <div class="section-header__text">
-              <p class="regular">Geomites es un juego de estrategia móvil disponible en plataformas iOS y Android. La mecánica principal del juego implica que los jugadores manejen una variedad de personajes, cada uno con habilidades y destrezas únicas, que pueden mejorar con objetos para aumentar sus estadísticas.</p>
+              <p class="regular">Geomites es un juego de estrategia móvil disponible en plataformas iOS y Android. La
+                mecánica principal del juego implica que los jugadores manejen una variedad de personajes, cada uno con
+                habilidades y destrezas únicas, que pueden mejorar con objetos para aumentar sus estadísticas.</p>
             </div>
           </div>
         </div>
@@ -162,7 +213,11 @@
           <!-- [main__project-sections-section-subsection-info] -->
           <div class="main__project-sections-section-subsection-info">
             <h4>El proyecto</h4>
-            <p class="regular">Formo parte de un equipo dedicado que trabaja para dar vida a este proyecto. Como diseñador de productos, mi función abarcó el diseño de las interfaces de usuario, guiado por una extensa investigación de mercado sobre los principales juegos. Los jugadores pueden mejorar a estos personajes a través de dos modos de juego diferentes: batallas multijugador en línea contra otros jugadores y un modo historia offline que ofrece desafíos progresivos.
+            <p class="regular">Formo parte de un equipo dedicado que trabaja para dar vida a este proyecto. Como
+              diseñador de productos, mi función abarcó el diseño de las interfaces de usuario, guiado por una extensa
+              investigación de mercado sobre los principales juegos. Los jugadores pueden mejorar a estos personajes a
+              través de dos modos de juego diferentes: batallas multijugador en línea contra otros jugadores y un modo
+              historia offline que ofrece desafíos progresivos.
             </p>
           </div>
 
@@ -174,7 +229,10 @@
           <!-- [main__project-sections-section-subsection-info] -->
           <div class="main__project-sections-section-subsection-info">
             <h4>Metodología de trabajo</h4>
-            <p class="regular">Nuestro equipo utilizó la metodología ágil para garantizar un proceso de desarrollo flexible e iterativo. Estructuramos nuestro trabajo en sprints de dos semanas, cada uno con objetivos claramente definidos. Durante el sprint, colaboramos estrechamente, probando y haciendo iteraciones continuas en nuestro trabajo para lograr los mejores resultados de calidad.
+            <p class="regular">Nuestro equipo utilizó la metodología ágil para garantizar un proceso de desarrollo
+              flexible e iterativo. Estructuramos nuestro trabajo en sprints de dos semanas, cada uno con objetivos
+              claramente definidos. Durante el sprint, colaboramos estrechamente, probando y haciendo iteraciones
+              continuas en nuestro trabajo para lograr los mejores resultados de calidad.
             </p>
           </div>
 
@@ -274,7 +332,10 @@
           <!-- [main__project-sections-section-subsection-info] -->
           <div class="main__project-sections-section-subsection-info">
             <h4>Estilo visual</h4>
-            <p class="regular">El estilo visual de Geomites se caracteriza por colores vibrantes, líneas limpias y una estética cohesiva que atrae a nuestro público objetivo. El objetivo en este punto es definir la identidad visual de Geomites, asegurando que cada elemento, desde los personajes hasta los entornos, sea visualmente consistente y atractivo.
+            <p class="regular">El estilo visual de Geomites se caracteriza por colores vibrantes, líneas limpias y una
+              estética cohesiva que atrae a nuestro público objetivo. El objetivo en este punto es definir la identidad
+              visual de Geomites, asegurando que cada elemento, desde los personajes hasta los entornos, sea visualmente
+              consistente y atractivo.
             </p>
           </div>
 
@@ -295,7 +356,10 @@
           <!-- [main__project-sections-section-subsection-info] -->
           <div class="main__project-sections-section-subsection-info">
             <h4>Coherencia</h4>
-            <p class="regular">Establecimos un conjunto de directrices de diseño para asegurar uniformidad en todas las interfaces de usuario y elementos del juego. Estas directrices abarcaron tipografía, esquemas de color, iconografía y estructuras de diseño. Al adherirnos a estos estándares, creamos una experiencia de usuario fluida que se sintió intuitiva y consistente, reforzando la identidad de marca global de Geomites.
+            <p class="regular">Establecimos un conjunto de directrices de diseño para asegurar uniformidad en todas las
+              interfaces de usuario y elementos del juego. Estas directrices abarcaron tipografía, esquemas de color,
+              iconografía y estructuras de diseño. Al adherirnos a estos estándares, creamos una experiencia de usuario
+              fluida que se sintió intuitiva y consistente, reforzando la identidad de marca global de Geomites.
             </p>
           </div>
 
@@ -315,7 +379,9 @@
               <h4>Investigación</h4>
             </div>
             <div class="section-header__text">
-              <p class="regular">Antes de empezar a tomar decisiones que afectaran el diseño del producto, fui al mercado para ver qué estaban haciendo algunas de las mejores empresas y productos similares a lo que ofrece Geomites y cómo lo estaban haciendo.</p>
+              <p class="regular">Antes de empezar a tomar decisiones que afectaran el diseño del producto, fui al
+                mercado para ver qué estaban haciendo algunas de las mejores empresas y productos similares a lo que
+                ofrece Geomites y cómo lo estaban haciendo.</p>
             </div>
           </div>
         </div>
@@ -326,7 +392,10 @@
           <!-- [main__project-sections-section-subsection-info] -->
           <div class="main__project-sections-section-subsection-info">
             <h4>Estudiando a los mejores</h4>
-            <p class="regular">Para asegurarnos de que Geomites se destaque en el competitivo mercado de juegos móviles, realizamos un estudio exhaustivo de referencia de algunos de los juegos más exitosos en la industria. Al examinar estos títulos populares, identificamos elementos clave que contribuyen a su éxito, como la participación del usuario, el diseño visual y la mecánica de juego.
+            <p class="regular">Para asegurarnos de que Geomites se destaque en el competitivo mercado de juegos móviles,
+              realizamos un estudio exhaustivo de referencia de algunos de los juegos más exitosos en la industria. Al
+              examinar estos títulos populares, identificamos elementos clave que contribuyen a su éxito, como la
+              participación del usuario, el diseño visual y la mecánica de juego.
             </p>
           </div>
 
@@ -369,13 +438,17 @@
           <!-- [main__project-sections-section-subsection-info] -->
           <div class="main__project-sections-section-subsection-info">
             <h4>Patrones de diseño</h4>
-            <p class="regular">De nuestro estudio, extrajimos varios patrones de diseño que fueron consistentemente efectivos en los juegos más destacados. Por ejemplo, las interfaces intuitivas y amigables para el usuario de Clash Royale y Brawl Stars resaltaron la importancia de una navegación clara y controles accesibles. El sistema de progresión atractivo de Archero y las opciones únicas de personalización de personajes de Shakes and Fidget nos inspiraron a incorporar elementos similares en Geomites.
+            <p class="regular">De nuestro estudio, extrajimos varios patrones de diseño que fueron consistentemente
+              efectivos en los juegos más destacados. Por ejemplo, las interfaces intuitivas y amigables para el usuario
+              de Clash Royale y Brawl Stars resaltaron la importancia de una navegación clara y controles accesibles. El
+              sistema de progresión atractivo de Archero y las opciones únicas de personalización de personajes de
+              Shakes and Fidget nos inspiraron a incorporar elementos similares en Geomites.
             </p>
           </div>
 
-        </div>        
+        </div>
 
-      </div>    
+      </div>
 
       <!-- [main__project-sections-section] -->
       <div id="section-4" class="main__project-sections-section">
@@ -387,7 +460,10 @@
               <h4>Sistema de diseño</h4>
             </div>
             <div class="section-header__text">
-              <p class="regular">Para garantizar consistencia y eficiencia en nuestro proceso de diseño, creamos una biblioteca completa en Figma. Esta biblioteca incluía todos los componentes de diseño, como botones, iconos, paletas de colores y estilos de tipografía. Al utilizar una biblioteca centralizada en Figma, logramos mantener una apariencia cohesiva en todas las interfaces del juego.</p>
+              <p class="regular">Para garantizar consistencia y eficiencia en nuestro proceso de diseño, creamos una
+                biblioteca completa en Figma. Esta biblioteca incluía todos los componentes de diseño, como botones,
+                iconos, paletas de colores y estilos de tipografía. Al utilizar una biblioteca centralizada en Figma,
+                logramos mantener una apariencia cohesiva en todas las interfaces del juego.</p>
             </div>
           </div>
         </div>
@@ -571,7 +647,9 @@
           <!-- [main__project-sections-section-subsection-info] -->
           <div class="main__project-sections-section-subsection-info">
             <h4>Tipografía</h4>
-            <p class="regular">Seleccionamos la tipografía Greenze para establecer un estilo de texto consistente y visualmente atractivo en todo Geomites. Esta fuente fue elegida por su legibilidad y compatibilidad con el tema aventurero de nuestro juego.</p>
+            <p class="regular">Seleccionamos la tipografía Greenze para establecer un estilo de texto consistente y
+              visualmente atractivo en todo Geomites. Esta fuente fue elegida por su legibilidad y compatibilidad con el
+              tema aventurero de nuestro juego.</p>
           </div>
         </div>
 
@@ -581,7 +659,10 @@
           <!-- [main__project-sections-section-subsection-info] -->
           <div class="main__project-sections-section-subsection-info">
             <h4>Paleta de colores</h4>
-            <p class="regular">Nuestra paleta de colores consta de diez familias de colores: neutros, rojo, naranja, marrón, amarillo, turquesa, verde, violeta, azul y rosa. Estos colores han sido cuidadosamente seleccionados para evocar la atmósfera aventurera del juego y mejorar los elementos de la interfaz de usuario.
+            <p class="regular">Nuestra paleta de colores consta de diez familias de colores: neutros, rojo, naranja,
+              marrón, amarillo, turquesa, verde, violeta, azul y rosa. Estos colores han sido cuidadosamente
+              seleccionados para evocar la atmósfera aventurera del juego y mejorar los elementos de la interfaz de
+              usuario.
             </p>
           </div>
 
@@ -591,54 +672,54 @@
               <div class="card-color">
                 <div class="card-color__frame-6"></div>
                 <p class="small">Neutral-500</p>
-                <p class="small">7B7B7B</p>              
+                <p class="small">7B7B7B</p>
               </div>
               <div class="card-color">
                 <div class="card-color__frame-7"></div>
                 <p class="small">Red-500</p>
-                <p class="small">CE2727</p>              
+                <p class="small">CE2727</p>
               </div>
               <div class="card-color">
                 <div class="card-color__frame-8"></div>
                 <p class="small">Orange-500</p>
-                <p class="small">FF7518</p>              
+                <p class="small">FF7518</p>
               </div>
               <div class="card-color">
                 <div class="card-color__frame-9"></div>
                 <p class="small">Brown-500</p>
-                <p class="small">CAA72A</p>              
+                <p class="small">CAA72A</p>
               </div>
               <div class="card-color">
                 <div class="card-color__frame-10"></div>
                 <p class="small">Yellow-500</p>
-                <p class="small">FFEA00</p>              
+                <p class="small">FFEA00</p>
               </div>
             </div>
             <div class="main__project-sections-section-subsection-frame-2-frame">
               <div class="card-color">
                 <div class="card-color__frame-11"></div>
                 <p class="small">Turq-500</p>
-                <p class="small">2ABCCA</p>              
+                <p class="small">2ABCCA</p>
               </div>
               <div class="card-color">
                 <div class="card-color__frame-12"></div>
                 <p class="small">Green-500</p>
-                <p class="small">2ACA3D</p>              
+                <p class="small">2ACA3D</p>
               </div>
               <div class="card-color">
                 <div class="card-color__frame-13"></div>
                 <p class="small">Violet-500</p>
-                <p class="small">8A2ACA</p>              
+                <p class="small">8A2ACA</p>
               </div>
               <div class="card-color">
                 <div class="card-color__frame-14"></div>
                 <p class="small">Blue-500</p>
-                <p class="small">2A77CA</p>              
+                <p class="small">2A77CA</p>
               </div>
               <div class="card-color">
                 <div class="card-color__frame-15"></div>
                 <p class="small">Pink-500</p>
-                <p class="small">CA2A91</p>              
+                <p class="small">CA2A91</p>
               </div>
             </div>
           </div>
@@ -651,7 +732,10 @@
           <!-- [main__project-sections-section-subsection-info] -->
           <div class="main__project-sections-section-subsection-info">
             <h4>Iconos</h4>
-            <p class="regular">Desarrollamos una amplia gama de iconos personalizados para representar diversos elementos: objetos, Geomites, clases de edad, estadísticas de Geomite y habilidades pasivas resultantes de las habilidades de Geomite. Estos iconos contribuyen a una jugabilidad intuitiva y mejoran la experiencia visual general para los jugadores.
+            <p class="regular">Desarrollamos una amplia gama de iconos personalizados para representar diversos
+              elementos: objetos, Geomites, clases de edad, estadísticas de Geomite y habilidades pasivas resultantes de
+              las habilidades de Geomite. Estos iconos contribuyen a una jugabilidad intuitiva y mejoran la experiencia
+              visual general para los jugadores.
             </p>
           </div>
           <div class="icons-frame">
@@ -671,7 +755,9 @@
           <!-- [main__project-sections-section-subsection-info] -->
           <div class="main__project-sections-section-subsection-info">
             <h4>Componentes</h4>
-            <p class="regular">Nuestro sistema de diseño incluye varios componentes diseñados para características específicas del juego, como tablas de clasificación que muestran las posiciones de los jugadores en diferentes ligas y tarjetas que organizan información como puntos de dominio, posiciones y modos de juego.
+            <p class="regular">Nuestro sistema de diseño incluye varios componentes diseñados para características
+              específicas del juego, como tablas de clasificación que muestran las posiciones de los jugadores en
+              diferentes ligas y tarjetas que organizan información como puntos de dominio, posiciones y modos de juego.
             </p>
           </div>
 
@@ -682,7 +768,11 @@
           <!-- [main__project-sections-section-subsection-info] -->
           <div class="main__project-sections-section-subsection-info">
             <h4>Implementación sprint a sprint</h4>
-            <p class="regular">Para la implementación, utilizamos Figma para la colaboración en el diseño y React para el desarrollo. Cada sprint comenzaba con una revisión de los objetivos y prioridades de diseño. Los diseños se creaban y validaban usando Figma, con aportes de los miembros del equipo Marc y Aleix. Una vez finalizados los diseños, Marc y Aleix lideraban el proceso de desarrollo en React, implementando los diseños de manera iterativa.
+            <p class="regular">Para la implementación, utilizamos Figma para la colaboración en el diseño y React para
+              el desarrollo. Cada sprint comenzaba con una revisión de los objetivos y prioridades de diseño. Los
+              diseños se creaban y validaban usando Figma, con aportes de los miembros del equipo Marc y Aleix. Una vez
+              finalizados los diseños, Marc y Aleix lideraban el proceso de desarrollo en React, implementando los
+              diseños de manera iterativa.
             </p>
           </div>
 
@@ -712,7 +802,8 @@
               <h4>Algunos diseños finales</h4>
             </div>
             <div class="section-header__text">
-              <p class="regular">Con la estructura clara del contenido, organizo la arquitectura de la información para el sitio web. Se vería así:</p>
+              <p class="regular">Con la estructura clara del contenido, organizo la arquitectura de la información para
+                el sitio web. Se vería así:</p>
             </div>
           </div>
         </div>
@@ -728,7 +819,9 @@
           <!-- [main__project-sections-section-subsection-info] -->
           <div class="main__project-sections-section-subsection-info">
             <h4>Batalla 1 vs 1</h4>
-            <p class="regular">El primer ejemplo muestra la interfaz de batalla 1 vs 1 en Geomites. Esta pantalla está diseñada para proporcionar a los jugadores un diseño claro e intuitivo, asegurando que puedan gestionar fácilmente a sus personajes y participar en combates estratégicos.
+            <p class="regular">El primer ejemplo muestra la interfaz de batalla 1 vs 1 en Geomites. Esta pantalla está
+              diseñada para proporcionar a los jugadores un diseño claro e intuitivo, asegurando que puedan gestionar
+              fácilmente a sus personajes y participar en combates estratégicos.
             </p>
           </div>
 
@@ -740,7 +833,9 @@
           <!-- [main__project-sections-section-subsection-info] -->
           <div class="main__project-sections-section-subsection-info">
             <h4>Salón de entrenamiento</h4>
-            <p class="regular">Donde los jugadores pueden entrenar a sus personajes Geomites para mejorar sus habilidades y capacidades. Esta área del juego está diseñada para ser funcional y visualmente atractiva, ofreciendo a los jugadores una sensación de progresión y logro.
+            <p class="regular">Donde los jugadores pueden entrenar a sus personajes Geomites para mejorar sus
+              habilidades y capacidades. Esta área del juego está diseñada para ser funcional y visualmente atractiva,
+              ofreciendo a los jugadores una sensación de progresión y logro.
             </p>
           </div>
 
@@ -762,7 +857,9 @@
           <!-- [main__project-sections-section-subsection-info] -->
           <div class="main__project-sections-section-subsection-info">
             <h4>Tienda</h4>
-            <p class="regular">Donde los jugadores pueden intercambiar diamantes (dinero real) por recursos esenciales necesarios para la progresión del juego. La interfaz de la tienda está diseñada para ser amigable para el usuario y visualmente atractiva, animando a los jugadores a realizar compras.
+            <p class="regular">Donde los jugadores pueden intercambiar diamantes (dinero real) por recursos esenciales
+              necesarios para la progresión del juego. La interfaz de la tienda está diseñada para ser amigable para el
+              usuario y visualmente atractiva, animando a los jugadores a realizar compras.
             </p>
           </div>
 
@@ -774,7 +871,8 @@
           <!-- [main__project-sections-section-subsection-info] -->
           <div class="main__project-sections-section-subsection-info">
             <h4>Pantalla de carga</h4>
-            <p class="regular">La pantalla se utiliza para ofrecer consejos de juego a los jugadores. Está diseñada para ser informativa y atractiva, proporcionando útiles consejos y trucos de juego mientras el juego se carga.
+            <p class="regular">La pantalla se utiliza para ofrecer consejos de juego a los jugadores. Está diseñada para
+              ser informativa y atractiva, proporcionando útiles consejos y trucos de juego mientras el juego se carga.
             </p>
           </div>
 
@@ -797,7 +895,10 @@
               <h4>Aprendizajes</h4>
             </div>
             <div class="section-header__text">
-              <p class="regular">Trabajar en Geomites durante el último año ha sido una gran experiencia de aprendizaje. Este proyecto me ha enseñado mucho sobre el diseño y desarrollo de juegos. Además, tuve la oportunidad de trabajar de cerca con un equipo talentoso y aprender de sus habilidades e ideas. Durante este proyecto, mejoré mis habilidades y adquirí nuevas que me serán útiles en proyectos futuros.</p>
+              <p class="regular">Trabajar en Geomites durante el último año ha sido una gran experiencia de aprendizaje.
+                Este proyecto me ha enseñado mucho sobre el diseño y desarrollo de juegos. Además, tuve la oportunidad
+                de trabajar de cerca con un equipo talentoso y aprender de sus habilidades e ideas. Durante este
+                proyecto, mejoré mis habilidades y adquirí nuevas que me serán útiles en proyectos futuros.</p>
             </div>
           </div>
         </div>
@@ -832,21 +933,19 @@
 
       <!-- [section-header] -->
       <div class="section-header">
-        <div class="section-header__info">
-          <div class="section-header__title">
-            <h4>Proyectos</h4>
-          </div>
-          <div class="section-header__text">
-            <p class="regular">¿Quieres más? Descubre otros proyectos...</p>
-          </div>
+        <div class="section-header__header">
+          <h4>Otros proyectos</h4>
+          <a href="../index-projects-es.html" class="button-quinary">
+            <p class="regular">Ver más</p>
+          </a>
         </div>
-        <a href="../index-projects-es.html" class="button-quinary">
-          <p class="regular">Ver más</p>
-        </a>         
+        <div class="section-header__text">
+          <p class="regular">¿Quieres más? Descubre otros proyectos...</p>
+        </div>
       </div>
 
-      <!-- [grid-3] -->
-      <div class="grid-3">
+      <!-- [main-section__projects] -->
+      <div class="main-section__projects">
         <a class="card-project" href="../projects/senzo-studio-es.html" target="_blank">
           <div class="card-project__image">
             <img src="../assets/images/projects/senzo/cardproject-senzostudio.png" alt="Project-image">

@@ -30,38 +30,87 @@
 
   <!-- [navbar] -->
   <header>
-    <nav class="navbar" id="navbar">
-
-      <input type="checkbox" id="click">
-      <label for="click" class="navbar-button">
-        <i class="fa-solid fa-bars"></i>
-      </label>
-
-      <a class="logo" href="../index.html"><img src="/assets/icons/logo.png" alt="logo-alejandro">
-        <div class="logo__name">
-          <p class="large">Alejandro</p>
-          <p class="small">2.0</p>
-        </div>
-      </a>
-
-      <ul class="navbar__navigation">       
-        <li class="navbar__item">
-          <a href="../index.html" class="navbar__link regular active">Home</a>
+    <nav>
+      <ul class="sidebar">
+        <ul class="sidebar-header">
+          <li><a class="logo" href="../index.html"><img src="../assets/icons/logo.png" alt="logo-alejandro">
+              <div class="logo__name">
+                <p class="large">Alejandro</p>
+                <p class="small">2.0</p>
+              </div>
+            </a></li>
+          <li onclick=hideSidebar()><a href=""><i class="fa-solid fa-xmark"></i></a></li>
+        </ul>
+        <ul class="sidebar__navigation">
+          <li class="navbar__item">
+            <a href="../index.html" class="navbar__link regular">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="../pages/about-me-experience.html" class="navbar__link regular">About me</a>
+          </li>
+          <li class="navbar__item">
+            <a href="../pages/blog.html" class="navbar__link regular active">Blog</a>
+          </li>
+        </ul>
+        <li class="language__selector">
+          <img class="language__selector-icon" src="../assets/icons/england.png" alt="language icon">
+          <a href="geomites.html" class=" language__selector-link-active">
+            <p class="regular">EN</p>
+          </a>
+          <div class="language__selector-divider"></div>
+          <a href="geomites-es.html" class="language__selector-link">
+            <p class="regular">ES</p>
+          </a>
         </li>
-        <li class="navbar__item">
-          <a href="../pages/about-me-experience.html" class="navbar__link regular">About me</a>
-        </li>
-        <li class="navbar__item">
-          <a href="../pages/blog.html" class="navbar__link regular">Blog</a>
-        </li>                
+        <ul class="sidebar-footer">
+          <li class="sidebar-footer__social">
+            <a class="button-social" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a class="button-social" href="mailto:alejandromorenomartin1990@gmail.com" target="_blank">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </li>
+          <li>
+            <p class="regular">Designing - 2024</p>
+          </li>
+          <li>
+            <p class="regular">&copy; Alejandro Moreno</p>
+          </li>
+        </ul>
+
       </ul>
 
-      <div class="language__selector">
-        <img class="language__selector-icon" src="../assets/icons/england.png" alt="language icon">
-        <a href="../projects/geomites.html" class=" language__selector-link-active" ><p class="regular">EN</p></a>
-        <div class="language__selector-divider"></div>
-        <a href="../projects/geomites-es.html" class="language__selector-link" ><p class="regular">ES</p></a>        
-      </div>
+      <ul class="navbar">
+        <li><a class="logo" href="../index.html"><img src="../assets/icons/logo.png" alt="logo-alejandro">
+            <div class="logo__name">
+              <p class="large">Alejandro</p>
+              <p class="small">2.0</p>
+            </div>
+          </a></li>
+        <ul class="hideOnMobile navbar__navigation">
+          <li class="navbar__item">
+            <a href="../index.html" class="navbar__link regular">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="../pages/about-me-experience.html" class="navbar__link regular">About me</a>
+          </li>
+          <li class="navbar__item">
+            <a href="../pages/blog.html" class="navbar__link regular active">Blog</a>
+          </li>
+        </ul>
+        <li class="language__selector">
+          <img class="language__selector-icon hideOnMobile" src="../assets/icons/england.png" alt="language icon">
+          <a href="geomites.html" class=" language__selector-link-active hideOnMobile">
+            <p class="regular hideOnMobile">EN</p>
+          </a>
+          <div class="language__selector-divider hideOnMobile"></div>
+          <a href="geomites-es.html" class="language__selector-link hideOnMobile">
+            <p class="regular hideOnMobile">ES</p>
+          </a>
+        </li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+      </ul>
     </nav>
   </header>
 
@@ -397,9 +446,9 @@
             </p>
           </div>
 
-        </div>        
+        </div>
 
-      </div>    
+      </div>
 
       <!-- [main__project-sections-section] -->
       <div id="section-4" class="main__project-sections-section">
@@ -411,7 +460,10 @@
               <h4>Design system</h4>
             </div>
             <div class="section-header__text">
-              <p class="regular">To ensure consistency and efficiency in our design process, we created a comprehensive Figma library. This library included all the design components, such as buttons, icons, color palettes, and typography styles. By using a centralized Figma library, we were able to maintain a cohesive look and feel across all game interfaces.</p>
+              <p class="regular">To ensure consistency and efficiency in our design process, we created a comprehensive
+                Figma library. This library included all the design components, such as buttons, icons, color palettes,
+                and typography styles. By using a centralized Figma library, we were able to maintain a cohesive look
+                and feel across all game interfaces.</p>
             </div>
           </div>
         </div>
@@ -595,7 +647,9 @@
           <!-- [main__project-sections-section-subsection-info] -->
           <div class="main__project-sections-section-subsection-info">
             <h4>Typography</h4>
-            <p class="regular">We chose the Greenze typeface to establish a consistent and visually appealing text style throughout Geomites. This font was selected for its readability and compatibility with our game's adventurous theme.</p>
+            <p class="regular">We chose the Greenze typeface to establish a consistent and visually appealing text style
+              throughout Geomites. This font was selected for its readability and compatibility with our game's
+              adventurous theme.</p>
           </div>
         </div>
 
@@ -605,7 +659,9 @@
           <!-- [main__project-sections-section-subsection-info] -->
           <div class="main__project-sections-section-subsection-info">
             <h4>Color palette</h4>
-            <p class="regular">Our color palette consists of ten color families: neutral, red, orange, brown, yellow, turquoise, green, violet, blue, and pink. These colors are carefully selected to evoke the game's adventurous atmosphere and enhance user interface elements.
+            <p class="regular">Our color palette consists of ten color families: neutral, red, orange, brown, yellow,
+              turquoise, green, violet, blue, and pink. These colors are carefully selected to evoke the game's
+              adventurous atmosphere and enhance user interface elements.
             </p>
           </div>
 
@@ -615,54 +671,54 @@
               <div class="card-color">
                 <div class="card-color__frame-6"></div>
                 <p class="small">Neutral-500</p>
-                <p class="small">7B7B7B</p>              
+                <p class="small">7B7B7B</p>
               </div>
               <div class="card-color">
                 <div class="card-color__frame-7"></div>
                 <p class="small">Red-500</p>
-                <p class="small">CE2727</p>              
+                <p class="small">CE2727</p>
               </div>
               <div class="card-color">
                 <div class="card-color__frame-8"></div>
                 <p class="small">Orange-500</p>
-                <p class="small">FF7518</p>              
+                <p class="small">FF7518</p>
               </div>
               <div class="card-color">
                 <div class="card-color__frame-9"></div>
                 <p class="small">Brown-500</p>
-                <p class="small">CAA72A</p>              
+                <p class="small">CAA72A</p>
               </div>
               <div class="card-color">
                 <div class="card-color__frame-10"></div>
                 <p class="small">Yellow-500</p>
-                <p class="small">FFEA00</p>              
+                <p class="small">FFEA00</p>
               </div>
             </div>
             <div class="main__project-sections-section-subsection-frame-2-frame">
               <div class="card-color">
                 <div class="card-color__frame-11"></div>
                 <p class="small">Turq-500</p>
-                <p class="small">2ABCCA</p>              
+                <p class="small">2ABCCA</p>
               </div>
               <div class="card-color">
                 <div class="card-color__frame-12"></div>
                 <p class="small">Green-500</p>
-                <p class="small">2ACA3D</p>              
+                <p class="small">2ACA3D</p>
               </div>
               <div class="card-color">
                 <div class="card-color__frame-13"></div>
                 <p class="small">Violet-500</p>
-                <p class="small">8A2ACA</p>              
+                <p class="small">8A2ACA</p>
               </div>
               <div class="card-color">
                 <div class="card-color__frame-14"></div>
                 <p class="small">Blue-500</p>
-                <p class="small">2A77CA</p>              
+                <p class="small">2A77CA</p>
               </div>
               <div class="card-color">
                 <div class="card-color__frame-15"></div>
                 <p class="small">Pink-500</p>
-                <p class="small">CA2A91</p>              
+                <p class="small">CA2A91</p>
               </div>
             </div>
           </div>
@@ -675,7 +731,9 @@
           <!-- [main__project-sections-section-subsection-info] -->
           <div class="main__project-sections-section-subsection-info">
             <h4>Icons</h4>
-            <p class="regular">We developed a diverse range of custom icons to represent various items, Geomites, age classes, Geomite statistics, and passive abilities resulting from Geomite skills. These icons contribute to intuitive gameplay and enhance the overall visual experience for players.
+            <p class="regular">We developed a diverse range of custom icons to represent various items, Geomites, age
+              classes, Geomite statistics, and passive abilities resulting from Geomite skills. These icons contribute
+              to intuitive gameplay and enhance the overall visual experience for players.
             </p>
           </div>
           <div class="icons-frame">
@@ -695,7 +753,9 @@
           <!-- [main__project-sections-section-subsection-info] -->
           <div class="main__project-sections-section-subsection-info">
             <h4>Components</h4>
-            <p class="regular">Our design system includes various components tailored for specific game features, such as leaderboard tables showcasing player positions in different leagues and cards organizing information like mastery points, positions, and game modes.
+            <p class="regular">Our design system includes various components tailored for specific game features, such
+              as leaderboard tables showcasing player positions in different leagues and cards organizing information
+              like mastery points, positions, and game modes.
             </p>
           </div>
 
@@ -706,7 +766,10 @@
           <!-- [main__project-sections-section-subsection-info] -->
           <div class="main__project-sections-section-subsection-info">
             <h4>Sprint by sprint implementation</h4>
-            <p class="regular">For the implementation, we utilized Figma for design collaboration and React for development. Each sprint began with a review of design goals and priorities. Designs were created and validated using Figma, with input from team members Marc and Aleix. Once designs were finalized, Marc and Aleix led the development process in React, implementing the designs iteratively.
+            <p class="regular">For the implementation, we utilized Figma for design collaboration and React for
+              development. Each sprint began with a review of design goals and priorities. Designs were created and
+              validated using Figma, with input from team members Marc and Aleix. Once designs were finalized, Marc and
+              Aleix led the development process in React, implementing the designs iteratively.
             </p>
           </div>
 
@@ -736,7 +799,8 @@
               <h4>Some final designs</h4>
             </div>
             <div class="section-header__text">
-              <p class="regular">With the clear content structure, I arrange the information architecture for the website. It would look like this.</p>
+              <p class="regular">With the clear content structure, I arrange the information architecture for the
+                website. It would look like this.</p>
             </div>
           </div>
         </div>
@@ -751,8 +815,10 @@
 
           <!-- [main__project-sections-section-subsection-info] -->
           <div class="main__project-sections-section-subsection-info">
-            <h4>1 vs 1  battle</h4>
-            <p class="regular">The first example showcases the 1 vs 1 battle interface in Geomites. This screen is designed to provide players with a clear and intuitive layout, ensuring they can easily manage their characters and engage in strategic combat.
+            <h4>1 vs 1 battle</h4>
+            <p class="regular">The first example showcases the 1 vs 1 battle interface in Geomites. This screen is
+              designed to provide players with a clear and intuitive layout, ensuring they can easily manage their
+              characters and engage in strategic combat.
             </p>
           </div>
 
@@ -764,7 +830,9 @@
           <!-- [main__project-sections-section-subsection-info] -->
           <div class="main__project-sections-section-subsection-info">
             <h4>Training room</h4>
-            <p class="regular">Where players can train their Geomites characters to improve their skills and abilities. This area of the game is designed to be both functional and visually appealing, offering players a sense of progression and achievement.
+            <p class="regular">Where players can train their Geomites characters to improve their skills and abilities.
+              This area of the game is designed to be both functional and visually appealing, offering players a sense
+              of progression and achievement.
             </p>
           </div>
 
@@ -786,7 +854,9 @@
           <!-- [main__project-sections-section-subsection-info] -->
           <div class="main__project-sections-section-subsection-info">
             <h4>Shop</h4>
-            <p class="regular">Where players can exchange diamonds (real money) for essential resources needed for game progression. The store interface is designed to be user-friendly and visually engaging, encouraging players to make purchases.
+            <p class="regular">Where players can exchange diamonds (real money) for essential resources needed for game
+              progression. The store interface is designed to be user-friendly and visually engaging, encouraging
+              players to make purchases.
             </p>
           </div>
 
@@ -798,7 +868,8 @@
           <!-- [main__project-sections-section-subsection-info] -->
           <div class="main__project-sections-section-subsection-info">
             <h4>Loading Screen</h4>
-            <p class="regular">Which we use to provide game tips to players. This screen is designed to be informative and engaging, offering useful gameplay tips and tricks while the game loads.
+            <p class="regular">Which we use to provide game tips to players. This screen is designed to be informative
+              and engaging, offering useful gameplay tips and tricks while the game loads.
             </p>
           </div>
 
@@ -821,7 +892,10 @@
               <h4>Learnings</h4>
             </div>
             <div class="section-header__text">
-              <p class="regular">Working on Geomites over the past year has been a great learning experience. This project has taught me a lot about game design and development. I also got to work closely with a talented team and learned from their skills and ideas. During this project, I improved my skills and learned new ones that will help me in future projects.</p>
+              <p class="regular">Working on Geomites over the past year has been a great learning experience. This
+                project has taught me a lot about game design and development. I also got to work closely with a
+                talented team and learned from their skills and ideas. During this project, I improved my skills and
+                learned new ones that will help me in future projects.</p>
             </div>
           </div>
         </div>
@@ -856,20 +930,19 @@
 
       <!-- [section-header] -->
       <div class="section-header">
-        <div class="section-header__info">
-          <div class="section-header__title">
-            <h4>Projects</h4>
-          </div>
-          <div class="section-header__text">
-            <p class="regular">Want more? Discover other projects...</p>
-          </div>
+        <div class="section-header__header">
+          <h4>Other projects</h4>
+          <a href="../index-projects.html" class="button-quinary">
+            <p class="regular">See more</p>
+          </a>
         </div>
-        <a href="../index-projects.html" class="button-quinary">
-          <p class="regular">See more</p></a>        
+        <div class="section-header__text">
+          <p class="regular">Want more? Discover other projects...</p>
+        </div>
       </div>
 
-      <!-- [grid-3] -->
-      <div class="grid-3">
+      <!-- [main-section__projects] -->
+      <div class="main-section__projects">
         <a class="card-project" href="../projects/senzo-studio.html" target="_blank">
           <div class="card-project__image">
             <img src="../assets/images/projects/senzo/cardproject-senzostudio.png" alt="Project-image">
@@ -922,7 +995,7 @@
           </div>
           <p class="regular">Discover the process of creating my portfolio.</p>
           <p class="small">13 min read</p>
-        </a>        
+        </a>
       </div>
     </div>
   </main>

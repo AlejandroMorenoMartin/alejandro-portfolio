@@ -30,42 +30,87 @@
 
   <!-- [navbar] -->
   <header>
-    <nav class="navbar" id="navbar">
-
-      <input type="checkbox" id="click">
-      <label for="click" class="navbar-button">
-        <i class="fa-solid fa-bars"></i>
-      </label>
-
-      <a class="logo" href="../index-es.html"><img src="/assets/icons/logo.png" alt="logo-alejandro">
-        <div class="logo__name">
-          <p class="large">Alejandro</p>
-          <p class="small">2.0</p>
-        </div>
-      </a>
-
-      <ul class="navbar__navigation">
-        <li class="navbar__item">
-          <a href="../index-es.html" class="navbar__link regular active">Inicio</a>
+    <nav>
+      <ul class="sidebar">
+        <ul class="sidebar-header">
+          <li><a class="logo" href="../index-es.html"><img src="../assets/icons/logo.png" alt="logo-alejandro">
+              <div class="logo__name">
+                <p class="large">Alejandro</p>
+                <p class="small">2.0</p>
+              </div>
+            </a></li>
+          <li onclick=hideSidebar()><a href=""><i class="fa-solid fa-xmark"></i></a></li>
+        </ul>
+        <ul class="sidebar__navigation">
+          <li class="navbar__item">
+            <a href="../index-es.html" class="navbar__link regular active">Inicio</a>
+          </li>
+          <li class="navbar__item">
+            <a href="../pages/about-me-experience-es.html" class="navbar__link regular">Sobre mí</a>
+          </li>
+          <li class="navbar__item">
+            <a href="../pages/blog-es.html" class="navbar__link regular">Blog</a>
+          </li>
+        </ul>
+        <li class="language__selector">
+          <img class="language__selector-icon" src="../assets/icons/spain.png" alt="language icon">
+          <a href="portfolio-es.html" class=" language__selector-link-active">
+            <p class="regular">ES</p>
+          </a>
+          <div class="language__selector-divider"></div>
+          <a href="portfolio.html" class="language__selector-link">
+            <p class="regular">EN</p>
+          </a>
         </li>
-        <li class="navbar__item">
-          <a href="../pages/about-me-experience-es.html" class="navbar__link regular">Sobre mí</a>
-        </li>
-        <li class="navbar__item">
-          <a href="../pages/blog-es.html" class="navbar__link regular">Blog</a>
-        </li>
+        <ul class="sidebar-footer">
+          <li class="sidebar-footer__social">
+            <a class="button-social" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a class="button-social" href="mailto:alejandromorenomartin1990@gmail.com" target="_blank">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </li>
+          <li>
+            <p class="regular">Diseñando - 2024</p>
+          </li>
+          <li>
+            <p class="regular">&copy; Alejandro Moreno</p>
+          </li>
+        </ul>
+
       </ul>
 
-      <div class="language__selector">
-        <img class="language__selector-icon" src="../assets/icons/spain.png" alt="language icon">
-        <a href="../projects/portfolio-es.html" class="language__selector-link-active">
-          <p class="regular">ES</p>
-        </a>
-        <div class="language__selector-divider"></div>
-        <a href="../projects/portfolio.html" class=" language__selector-link">
-          <p class="regular">EN</p>
-        </a>
-      </div>
+      <ul class="navbar">
+        <li><a class="logo" href="../index-es.html"><img src="../assets/icons/logo.png" alt="logo-alejandro">
+            <div class="logo__name">
+              <p class="large">Alejandro</p>
+              <p class="small">2.0</p>
+            </div>
+          </a></li>
+        <ul class="hideOnMobile navbar__navigation">
+          <li class="navbar__item">
+            <a href="../index-es.html" class="navbar__link regular active">Inicio</a>
+          </li>
+          <li class="navbar__item">
+            <a href="../pages/about-me-experience-es.html" class="navbar__link regular">Sobre mí</a>
+          </li>
+          <li class="navbar__item">
+            <a href="../pages/blog-es.html" class="navbar__link regular">Blog</a>
+          </li>
+        </ul>
+        <li class="language__selector">
+          <img class="language__selector-icon hideOnMobile" src="../assets/icons/spain.png" alt="language icon">
+          <a href="portfolio-es.html" class=" language__selector-link-active hideOnMobile">
+            <p class="regular hideOnMobile">ES</p>
+          </a>
+          <div class="language__selector-divider hideOnMobile"></div>
+          <a href="portfolio.html" class="language__selector-link hideOnMobile">
+            <p class="regular hideOnMobile">EN</p>
+          </a>
+        </li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+      </ul>
     </nav>
   </header>
 
@@ -647,7 +692,8 @@
               <h4>Sistema de diseño</h4>
             </div>
             <div class="section-header__text">
-              <p class="regular">Después de diseñar y prototipar en Figma, organice el sistema de diseño para un correcto
+              <p class="regular">Después de diseñar y prototipar en Figma, organice el sistema de diseño para un
+                correcto
                 desarrollo web.</p>
             </div>
           </div>
@@ -856,7 +902,8 @@
           <!-- [main__project-sections-section-subsection-info] -->
           <div class="main__project-sections-section-subsection-info">
             <h4>Tipografía</h4>
-            <p class="regular">Poppins tiene un atractivo internacional y una estética moderna, garantiza una experiencia de usuario positiva en diversos dispositivos.
+            <p class="regular">Poppins tiene un atractivo internacional y una estética moderna, garantiza una
+              experiencia de usuario positiva en diversos dispositivos.
             </p>
           </div>
         </div>
@@ -896,7 +943,8 @@
           <!-- [main__project-sections-section-subsection-info] -->
           <div class="main__project-sections-section-subsection-info">
             <h4>Iconos</h4>
-            <p class="regular">Elaboro iconos cuidadosamente para mejorar la experiencia del usuario y garantizar la claridad en la navegación y funcionalidad.
+            <p class="regular">Elaboro iconos cuidadosamente para mejorar la experiencia del usuario y garantizar la
+              claridad en la navegación y funcionalidad.
             </p>
           </div>
           <img src="../assets/images/projects/portfolio/icon-frame.png" alt="icons">
@@ -913,7 +961,8 @@
           <!-- [main__project-sections-section-subsection-info] -->
           <div class="main__project-sections-section-subsection-info">
             <h4>Componentes</h4>
-            <p class="regular">Como parte del sistema de diseño, desarrollé los principales componentes utilizados en el proyecto. Abajo, presento el componente "tarjeta", utilizado para la visualización de varios proyectos.
+            <p class="regular">Como parte del sistema de diseño, desarrollé los principales componentes utilizados en el
+              proyecto. Abajo, presento el componente "tarjeta", utilizado para la visualización de varios proyectos.
             </p>
           </div>
 
@@ -931,8 +980,10 @@
             </div>
             <div class="section-header__text">
               <p class="regular">Con la creación de mi portfolio desde cero, pude aprender a desarrollar un
-                proyecto web, con diseño responsive, tanto desde el lado del diseño como del desarrollo. Esto me ha permitido
-                entender cómo realizar mi trabajo como diseñador de forma que pueda facilitar al máximo el trabajo del desarrollador.</p>
+                proyecto web, con diseño responsive, tanto desde el lado del diseño como del desarrollo. Esto me ha
+                permitido
+                entender cómo realizar mi trabajo como diseñador de forma que pueda facilitar al máximo el trabajo del
+                desarrollador.</p>
             </div>
           </div>
         </div>
@@ -967,20 +1018,19 @@
 
       <!-- [section-header] -->
       <div class="section-header">
-        <div class="section-header__info">
-          <div class="section-header__title">
-            <h4>Proyectos</h4>
-          </div>
-          <div class="section-header__text">
-            <p class="regular">¿Quieres más? Descubre otros proyectos...</p>
-          </div>
+        <div class="section-header__header">
+          <h4>Otros proyectos</h4>
+          <a href="../index-projects-es.html" class="button-quinary">
+            <p class="regular">Ver más</p>
+          </a>
         </div>
-        <a href="../index-projects-es.html" class="button-quinary">
-          <p class="regular">Ver más</p></a>        
+        <div class="section-header__text">
+          <p class="regular">¿Quieres más? Descubre otros proyectos...</p>
+        </div>
       </div>
 
-      <!-- [grid-3] -->
-      <div class="grid-3">
+      <!-- [main-section__projects] -->
+      <div class="main-section__projects">
         <a class="card-project" href="../projects/geomites-es.html" target="_blank">
           <div class="card-project__image">
             <img src="../assets/images/projects/geomites/cardproject-geomites.png" alt="Project-image">
@@ -996,7 +1046,7 @@
           </div>
           <p class="regular">Diseñando un videojuego para móviles, disponible en IOS y Android.</p>
           <p class="small">15 min lectura</p>
-        </a>        
+        </a>
 
         <a class="card-project" href="../projects/senzo-studio-es.html" target="_blank">
           <div class="card-project__image">
@@ -1021,7 +1071,8 @@
           </div>
           <div class="card-project__header">
             <div class="card-project__header-1">
-              <img src="../assets/images/projects/atipiko/icons/cardfavicon-atipikotours.png" alt="card-project__favicon">
+              <img src="../assets/images/projects/atipiko/icons/cardfavicon-atipikotours.png"
+                alt="card-project__favicon">
               <p class="large">Atipiko tours</p>
             </div>
             <div class="tag-default">
@@ -1085,7 +1136,7 @@
       </div>
     </div>
 
-  </footer> 
+  </footer>
 
   <script src="../assets/js/main.js"></script>
   <script src="https://kit.fontawesome.com/35d35eeb85.js" crossorigin="anonymous"></script>

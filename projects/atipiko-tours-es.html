@@ -25,38 +25,87 @@
 
   <!-- [navbar] -->
   <header>
-    <nav class="navbar" id="navbar">
-
-      <input type="checkbox" id="click">
-      <label for="click" class="navbar-button">
-        <i class="fa-solid fa-bars"></i>
-      </label>
-
-      <a class="logo" href="../index-es.html"><img src="/assets/icons/logo.png" alt="logo-alejandro">
-        <div class="logo__name">
-          <p class="large">Alejandro</p>
-          <p class="small">2.0</p>
-        </div>
-      </a>
-
-      <ul class="navbar__navigation">
-        <li class="navbar__item">
-          <a href="../index-es.html" class="navbar__link regular active">Inicio</a>
+    <nav>
+      <ul class="sidebar">
+        <ul class="sidebar-header">
+          <li><a class="logo" href="../index-es.html"><img src="../assets/icons/logo.png" alt="logo-alejandro">
+              <div class="logo__name">
+                <p class="large">Alejandro</p>
+                <p class="small">2.0</p>
+              </div>
+            </a></li>
+          <li onclick=hideSidebar()><a href=""><i class="fa-solid fa-xmark"></i></a></li>
+        </ul>
+        <ul class="sidebar__navigation">
+          <li class="navbar__item">
+            <a href="../index-es.html" class="navbar__link regular active">Inicio</a>
+          </li>
+          <li class="navbar__item">
+            <a href="../pages/about-me-experience-es.html" class="navbar__link regular">Sobre mí</a>
+          </li>
+          <li class="navbar__item">
+            <a href="../pages/blog-es.html" class="navbar__link regular">Blog</a>
+          </li>
+        </ul>
+        <li class="language__selector">
+          <img class="language__selector-icon" src="../assets/icons/spain.png" alt="language icon">
+          <a href="atipiko-tours-es.html" class=" language__selector-link-active">
+            <p class="regular">ES</p>
+          </a>
+          <div class="language__selector-divider"></div>
+          <a href="atipiko-tours.html" class="language__selector-link">
+            <p class="regular">EN</p>
+          </a>
         </li>
-        <li class="navbar__item">
-          <a href="../pages/about-me-experience-es.html" class="navbar__link regular">Sobre mí</a>
-        </li>
-        <li class="navbar__item">
-          <a href="../pages/blog-es.html" class="navbar__link regular">Blog</a>
-        </li>
+        <ul class="sidebar-footer">
+          <li class="sidebar-footer__social">
+            <a class="button-social" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a class="button-social" href="mailto:alejandromorenomartin1990@gmail.com" target="_blank">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </li>
+          <li>
+            <p class="regular">Diseñando - 2024</p>
+          </li>
+          <li>
+            <p class="regular">&copy; Alejandro Moreno</p>
+          </li>
+        </ul>
+
       </ul>
 
-      <div class="language__selector">
-        <img class="language__selector-icon" src="../assets/icons/spain.png" alt="language icon">
-        <a href="../projects/atipiko-tours-es.html" class="language__selector-link-active" ><p class="regular">ES</p></a>
-        <div class="language__selector-divider"></div>
-        <a href="../projects/atipiko-tours.html" class=" language__selector-link" ><p class="regular">EN</p></a>                
-      </div>
+      <ul class="navbar">
+        <li><a class="logo" href="../index-es.html"><img src="../assets/icons/logo.png" alt="logo-alejandro">
+            <div class="logo__name">
+              <p class="large">Alejandro</p>
+              <p class="small">2.0</p>
+            </div>
+          </a></li>
+        <ul class="hideOnMobile navbar__navigation">
+          <li class="navbar__item">
+            <a href="../index-es.html" class="navbar__link regular active">Inicio</a>
+          </li>
+          <li class="navbar__item">
+            <a href="../pages/about-me-experience-es.html" class="navbar__link regular">Sobre mí</a>
+          </li>
+          <li class="navbar__item">
+            <a href="../pages/blog-es.html" class="navbar__link regular">Blog</a>
+          </li>
+        </ul>
+        <li class="language__selector">
+          <img class="language__selector-icon hideOnMobile" src="../assets/icons/spain.png" alt="language icon">
+          <a href="atipiko-tours-es.html" class=" language__selector-link-active hideOnMobile">
+            <p class="regular hideOnMobile">ES</p>
+          </a>
+          <div class="language__selector-divider hideOnMobile"></div>
+          <a href="atipiko-tours.html" class="language__selector-link hideOnMobile">
+            <p class="regular hideOnMobile">EN</p>
+          </a>
+        </li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+      </ul>
     </nav>
   </header>
 
@@ -140,7 +189,9 @@
               <h4>Introducción</h4>
             </div>
             <div class="section-header__text">
-              <p class="regular">El proyecto implica diseñar y desarrollar un sitio web desde cero que satisfaga las necesidades de los clientes de Atipiko Tours e incluya el contenido y los elementos necesarios para que la empresa pueda ofrecer sus servicios. Hasta este momento, la empresa no tenía presencia digital.</p>
+              <p class="regular">El proyecto implica diseñar y desarrollar un sitio web desde cero que satisfaga las
+                necesidades de los clientes de Atipiko Tours e incluya el contenido y los elementos necesarios para que
+                la empresa pueda ofrecer sus servicios. Hasta este momento, la empresa no tenía presencia digital.</p>
             </div>
           </div>
         </div>
@@ -157,7 +208,8 @@
               <h4>Investigación</h4>
             </div>
             <div class="section-header__text">
-              <p class="regular">Con la investigación, pretendo abordar preguntas clave como quién es el usuario, cuáles son sus necesidades, quiénes son los competidores y qué están haciendo.</p>
+              <p class="regular">Con la investigación, pretendo abordar preguntas clave como quién es el usuario, cuáles
+                son sus necesidades, quiénes son los competidores y qué están haciendo.</p>
             </div>
           </div>
         </div>
@@ -168,7 +220,8 @@
           <!-- [main__project-sections-section-subsection-info] -->
           <div class="main__project-sections-section-subsection-info">
             <h4>Mapa de empatía</h4>
-            <p class="regular">María y Juan son dos clientes de Atipiko Tours. A continuación, se presentan los resultados de su análisis.
+            <p class="regular">María y Juan son dos clientes de Atipiko Tours. A continuación, se presentan los
+              resultados de su análisis.
             </p>
           </div>
 
@@ -198,7 +251,8 @@
           <!-- [main__project-sections-section-subsection-info] -->
           <div class="main__project-sections-section-subsection-info">
             <h4>Viaje de usario</h4>
-            <p class="regular">Me esfuerzo por comprender cómo el usuario interactúa con el producto y qué conocimientos puedo aplicar en el diseño posterior.
+            <p class="regular">Me esfuerzo por comprender cómo el usuario interactúa con el producto y qué conocimientos
+              puedo aplicar en el diseño posterior.
             </p>
           </div>
 
@@ -210,7 +264,8 @@
           <!-- [main__project-sections-section-subsection-info] -->
           <div class="main__project-sections-section-subsection-info">
             <h4>Competidores</h4>
-            <p class="regular">Estos son algunos de los principales competidores de Atipiko Tours. Realizo un análisis heurístico y de contenido para establecer un punto de partida.
+            <p class="regular">Estos son algunos de los principales competidores de Atipiko Tours. Realizo un análisis
+              heurístico y de contenido para establecer un punto de partida.
             </p>
           </div>
 
@@ -511,7 +566,8 @@
               <h4>Arquitectura de información</h4>
             </div>
             <div class="section-header__text">
-              <p class="regular">Con la estructura de contenido clara, organizo la arquitectura de la información para el sitio web. Se vería así.</p>
+              <p class="regular">Con la estructura de contenido clara, organizo la arquitectura de la información para
+                el sitio web. Se vería así.</p>
             </div>
           </div>
         </div>
@@ -653,7 +709,8 @@
               <h4>Sistema de diseño</h4>
             </div>
             <div class="section-header__text">
-              <p class="regular">Para dar consistencia al diseño y aplicar las mejores prácticas, desarrollé un sistema de diseño que se adaptaría a las necesidades del proyecto.</p>
+              <p class="regular">Para dar consistencia al diseño y aplicar las mejores prácticas, desarrollé un sistema
+                de diseño que se adaptaría a las necesidades del proyecto.</p>
             </div>
           </div>
         </div>
@@ -837,7 +894,8 @@
           <!-- [main__project-sections-section-subsection-info] -->
           <div class="main__project-sections-section-subsection-info">
             <h4>Tipografía</h4>
-            <p class="regular">Poppins tiene un atractivo internacional y una estética moderna, asegurando una experiencia de usuario positiva en diversos dispositivos.
+            <p class="regular">Poppins tiene un atractivo internacional y una estética moderna, asegurando una
+              experiencia de usuario positiva en diversos dispositivos.
             </p>
           </div>
         </div>
@@ -848,7 +906,8 @@
           <!-- [main__project-sections-section-subsection-info] -->
           <div class="main__project-sections-section-subsection-info">
             <h4>Paleta de colores</h4>
-            <p class="regular">El color primario es un vibrante y cálido tono de naranja. Emite energía, calidez y entusiasmo, lo que lo hace adecuado para crear elementos visuales llamativos y animados.
+            <p class="regular">El color primario es un vibrante y cálido tono de naranja. Emite energía, calidez y
+              entusiasmo, lo que lo hace adecuado para crear elementos visuales llamativos y animados.
             </p>
           </div>
 
@@ -881,7 +940,8 @@
           <!-- [main__project-sections-section-subsection-info] -->
           <div class="main__project-sections-section-subsection-info">
             <h4>Componentes</h4>
-            <p class="regular">Como parte del sistema de diseño, desarrollé los componentes principales utilizados en el proyecto. A continuación, presento el componente 'tarjeta', utilizado para mostrar diversos proyectos.
+            <p class="regular">Como parte del sistema de diseño, desarrollé los componentes principales utilizados en el
+              proyecto. A continuación, presento el componente 'tarjeta', utilizado para mostrar diversos proyectos.
             </p>
           </div>
 
@@ -942,7 +1002,8 @@
               <h4>Aprendizajes</h4>
             </div>
             <div class="section-header__text">
-              <p class="regular">Este proyecto me permitió trabajar mano a mano con el desarrollador. Además, fue una gran experiencia dar forma a las ideas que los dueños tenían pero no sabían cómo abordar.</p>
+              <p class="regular">Este proyecto me permitió trabajar mano a mano con el desarrollador. Además, fue una
+                gran experiencia dar forma a las ideas que los dueños tenían pero no sabían cómo abordar.</p>
             </div>
           </div>
         </div>
@@ -977,28 +1038,27 @@
 
       <!-- [section-header] -->
       <div class="section-header">
-        <div class="section-header__info">
-          <div class="section-header__title">
-            <h4>Proyectos</h4>
-          </div>
-          <div class="section-header__text">
-            <p class="regular">¿Quieres más? Descubre otros proyectos...</p>
-          </div>
+        <div class="section-header__header">
+          <h4>Otros proyectos</h4>
+          <a href="../index-projects-es.html" class="button-quinary">
+            <p class="regular">Ver más</p>
+          </a>
         </div>
-        <a href="../index-projects-es.html" class="button-quinary">
-          <p class="regular">Ver más</p>
-        </a>         
+        <div class="section-header__text">
+          <p class="regular">¿Quieres más? Descubre otros proyectos...</p>
+        </div>
       </div>
 
-      <!-- [grid-3] -->
-      <div class="grid-3">
+      <!-- [main-section__projects] -->
+      <div class="main-section__projects">
         <a class="card-project" href="../projects/tattoo-paradise-es.html" target="_blank">
           <div class="card-project__image">
             <img src="../assets/images/projects/tattoo/cardproject-tattooparadise.png" alt="Project-image">
           </div>
           <div class="card-project__header">
             <div class="card-project__header-1">
-              <img src="../assets/images/projects/tattoo/icons/cardfavicon-tattooparadise.png" alt="card-project__favicon">
+              <img src="../assets/images/projects/tattoo/icons/cardfavicon-tattooparadise.png"
+                alt="card-project__favicon">
               <p class="large">Tattoo paradise</p>
             </div>
             <div class="tag-default">
@@ -1095,7 +1155,7 @@
       </div>
     </div>
 
-  </footer> 
+  </footer>
 
   <script src="../assets/js/main.js"></script>
   <script src="https://kit.fontawesome.com/35d35eeb85.js" crossorigin="anonymous"></script>

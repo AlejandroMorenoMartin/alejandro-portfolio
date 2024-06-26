@@ -30,38 +30,87 @@
 
   <!-- [navbar] -->
   <header>
-    <nav class="navbar" id="navbar">
-
-      <input type="checkbox" id="click">
-      <label for="click" class="navbar-button">
-        <i class="fa-solid fa-bars"></i>
-      </label>
-
-      <a class="logo" href="../index.html"><img src="/assets/icons/logo.png" alt="logo-alejandro">
-        <div class="logo__name">
-          <p class="large">Alejandro</p>
-          <p class="small">2.0</p>
-        </div>
-      </a>
-
-      <ul class="navbar__navigation">       
-        <li class="navbar__item">
-          <a href="../index.html" class="navbar__link regular active">Home</a>
+    <nav>
+      <ul class="sidebar">
+        <ul class="sidebar-header">
+          <li><a class="logo" href="../index.html"><img src="../assets/icons/logo.png" alt="logo-alejandro">
+              <div class="logo__name">
+                <p class="large">Alejandro</p>
+                <p class="small">2.0</p>
+              </div>
+            </a></li>
+          <li onclick=hideSidebar()><a href=""><i class="fa-solid fa-xmark"></i></a></li>
+        </ul>
+        <ul class="sidebar__navigation">
+          <li class="navbar__item">
+            <a href="../index.html" class="navbar__link regular">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="../pages/about-me-experience.html" class="navbar__link regular">About me</a>
+          </li>
+          <li class="navbar__item">
+            <a href="../pages/blog.html" class="navbar__link regular active">Blog</a>
+          </li>
+        </ul>
+        <li class="language__selector">
+          <img class="language__selector-icon" src="../assets/icons/england.png" alt="language icon">
+          <a href="portfolio.html" class=" language__selector-link-active">
+            <p class="regular">EN</p>
+          </a>
+          <div class="language__selector-divider"></div>
+          <a href="portfolio-es.html" class="language__selector-link">
+            <p class="regular">ES</p>
+          </a>
         </li>
-        <li class="navbar__item">
-          <a href="../pages/about-me-experience.html" class="navbar__link regular">About me</a>
-        </li>
-        <li class="navbar__item">
-          <a href="../pages/blog.html" class="navbar__link regular">Blog</a>
-        </li>                
+        <ul class="sidebar-footer">
+          <li class="sidebar-footer__social">
+            <a class="button-social" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a class="button-social" href="mailto:alejandromorenomartin1990@gmail.com" target="_blank">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </li>
+          <li>
+            <p class="regular">Designing - 2024</p>
+          </li>
+          <li>
+            <p class="regular">&copy; Alejandro Moreno</p>
+          </li>
+        </ul>
+
       </ul>
 
-      <div class="language__selector">
-        <img class="language__selector-icon" src="../assets/icons/england.png" alt="language icon">
-        <a href="../projects/portfolio.html" class=" language__selector-link-active" ><p class="regular">EN</p></a>
-        <div class="language__selector-divider"></div>
-        <a href="../projects/portfolio-es.html" class="language__selector-link" ><p class="regular">ES</p></a>        
-      </div>
+      <ul class="navbar">
+        <li><a class="logo" href="../index.html"><img src="../assets/icons/logo.png" alt="logo-alejandro">
+            <div class="logo__name">
+              <p class="large">Alejandro</p>
+              <p class="small">2.0</p>
+            </div>
+          </a></li>
+        <ul class="hideOnMobile navbar__navigation">
+          <li class="navbar__item">
+            <a href="../index.html" class="navbar__link regular">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="../pages/about-me-experience.html" class="navbar__link regular">About me</a>
+          </li>
+          <li class="navbar__item">
+            <a href="../pages/blog.html" class="navbar__link regular active">Blog</a>
+          </li>
+        </ul>
+        <li class="language__selector">
+          <img class="language__selector-icon hideOnMobile" src="../assets/icons/england.png" alt="language icon">
+          <a href="portfolio.html" class=" language__selector-link-active hideOnMobile">
+            <p class="regular hideOnMobile">EN</p>
+          </a>
+          <div class="language__selector-divider hideOnMobile"></div>
+          <a href="portfolio-es.html" class="language__selector-link hideOnMobile">
+            <p class="regular hideOnMobile">ES</p>
+          </a>
+        </li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+      </ul>
     </nav>
   </header>
 
@@ -958,20 +1007,19 @@
 
       <!-- [section-header] -->
       <div class="section-header">
-        <div class="section-header__info">
-          <div class="section-header__title">
-            <h4>Projects</h4>
-          </div>
-          <div class="section-header__text">
-            <p class="regular">Want more? Discover other projects...</p>
-          </div>
+        <div class="section-header__header">
+          <h4>Other projects</h4>
+          <a href="../index-projects.html" class="button-quinary">
+            <p class="regular">See more</p>
+          </a>
         </div>
-        <a href="../index-projects.html" class="button-quinary">
-          <p class="regular">See more</p></a> 
+        <div class="section-header__text">
+          <p class="regular">Want more? Discover other projects...</p>
+        </div>
       </div>
 
-      <!-- [grid-3] -->
-      <div class="grid-3">
+      <!-- [main-section__projects] -->
+      <div class="main-section__projects">
         <a class="card-project" href="../projects/geomites.html" target="_blank">
           <div class="card-project__image">
             <img src="../assets/images/projects/geomites/cardproject-geomites.png" alt="Project-image">
@@ -987,7 +1035,7 @@
           </div>
           <p class="regular">In charge of designing a video game for Android and iOS platforms.</p>
           <p class="small">15 min read</p>
-        </a>       
+        </a>
 
         <a class="card-project" href="../projects/senzo-studio.html" target="_blank">
           <div class="card-project__image">
@@ -1012,7 +1060,8 @@
           </div>
           <div class="card-project__header">
             <div class="card-project__header-1">
-              <img src="../assets/images/projects/atipiko/icons/cardfavicon-atipikotours.png" alt="card-project__favicon">
+              <img src="../assets/images/projects/atipiko/icons/cardfavicon-atipikotours.png"
+                alt="card-project__favicon">
               <p class="large">Atipiko tours</p>
             </div>
             <div class="tag-default">
@@ -1022,7 +1071,7 @@
           <p class="regular">Design and development of a website for a travel agency.</p>
           <p class="small">15 min read</p>
         </a>
-       
+
       </div>
     </div>
   </main>
