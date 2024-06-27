@@ -2356,13 +2356,31 @@ tr td {
 .main__project-sections-section-subsection-authors {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+  gap: 12px;
   box-sizing: border-box;
   justify-content: center;
 }
 
 @media (max-width: 1200px) {
   .main__project-sections-section-subsection-authors {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+}
+
+.main__project-sections-section-subsection-authors-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .main__project-sections-section-subsection-authors-2 {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -2596,6 +2614,12 @@ tr td {
   flex-direction: column;
   gap: 12px;
   width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .main__project-sections-section-subsection-frame-frame {
+    flex-direction: row;
+  }
 }
 
 .main__project-sections-section-subsection-survey-frame {
@@ -2987,6 +3011,8 @@ tr td {
   gap: 24px;
 }
 
+/* ---------- */
+
 .info-2__frame {
   display: flex;
   flex-direction: column;
@@ -3025,6 +3051,21 @@ tr td {
   border: 1px solid var(--black);
   width: 100%;
 }
+
+@media (max-width: 1200px) {
+  .info-2__frame-2 {
+    flex: 0 0 90%;
+    scroll-snap-align: start;
+  }
+}
+
+.info-2__frame-2 img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* ---------- */
 
 .empty {
   width: 100%;
