@@ -1728,12 +1728,6 @@ tr td {
   width: 100%;
 }
 
-.design-decisions__image {
-  width: 75vw;
-  height: 75vh;
-  object-fit: contain;
-}
-
 /* ---------- */
 
 .link-external {
@@ -2568,7 +2562,7 @@ tr td {
 
 @media (max-width: 1200px) {
   .card-color {
-    flex: 0 0 50%;
+    flex: 0 0 40%;
     scroll-snap-align: start;
   }
 }
@@ -2816,10 +2810,20 @@ tr td {
   width: 100%;
 }
 
+/* ---------- */
+
 .coherence__image {
-  height: 80vh;
+  height: 75vh;
   object-fit: contain;
 }
+
+@media (max-width: 1200px) {
+  .coherence__image {
+    height: 100%;    
+  }
+}
+
+/* ---------- */
 
 .main__project-sections-section-subsection-userpersona-frame-3 {
   display: flex;
@@ -2903,7 +2907,34 @@ tr td {
   }
 }
 
-/* ---------- */ 
+/* ---------- */
+
+.icons-frame {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  gap: 12px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+@media (max-width: 1200px) {
+
+  .icons-frame {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+}
+
+.project-icon{
+  width: 48px;
+  height: 48px;
+}
+
+/* ---------- */
 
 @media (max-width: 1200px) {
   .main__project-sections-section-subsection-frame-2 {
@@ -2925,12 +2956,6 @@ tr td {
 }
 
 /* ---------- */
-
-.icons-frame {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
 
 .main__project-sections-section-subsection-3 {
   display: flex;
@@ -3100,21 +3125,6 @@ tr td {
     flex-direction: column;
     gap: 24px;
   }
-}
-
-.design-decisions__image {
-  width: 100%;
-}
-
-.design-decisions__image img {
-  width: 50%;
-  margin: 0 auto;
-  height: auto;
-}
-
-.design-decisions__image .lottie {
-  width: 50%;
-  margin: 0 auto;
 }
 
 .project-section--hero {

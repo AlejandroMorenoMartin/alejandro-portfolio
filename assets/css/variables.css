@@ -57,9 +57,9 @@
 
 @media (max-width: 1200px) {
   :root {
-    --fs-h1: 2.5rem;
-    --fs-h2: 2.25rem;
-    --fs-h3: 2rem;
+    --fs-h1: 2.25rem;
+    --fs-h2: 2rem;
+    --fs-h3: 1.75rem;
     --fs-h4: 1.5rem;
     --fs-large: 1rem;
     --fs-regular: 0.875rem;
