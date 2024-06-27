@@ -1,5 +1,3 @@
-/* ----------------- NAVIGATION ----------------- */
-
 /* 1.2 Button - index-hero (Salto a sección) */
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -23,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-/* ----------------------------------------------- */
+/* ----- Menu Sidebar ----- */
 
 function showSidebar(){
   const sidebar = document.querySelector('.sidebar')
@@ -35,9 +33,7 @@ function hideSidebar(){
   sidebar.style.display = 'none'
 }
 
-/* ----------------------------------------------- */
-
-/* 1.3 Button - progress bar (Barra de progreso y go top) */
+/* ----- Progress bar & go top ----- */
 
 let calcScrollValue = () => {
   let scrollProgress = document.getElementById("progress-button");
@@ -56,15 +52,13 @@ let calcScrollValue = () => {
     document.documentElement.scrollTop = 0;
   });
 
-  scrollProgress.style.background = `conic-gradient(var(--primary-500)${scrollValue}%, var(--neutral-500) ${scrollValue}%)`;
+  scrollProgress.style.background = `conic-gradient(var(--primary-500)${scrollValue}%, var(--neutral-600) ${scrollValue}%)`;
 };
 
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 
-/* ----------------------------------------------- */
-
-/* 1.4 Scroller - toolstack-scroller */
+/* ----- Toolstack - scroller ----- */
 
 const scrollers = document.querySelectorAll(".scroller");
 
@@ -106,10 +100,7 @@ function resumeAnimation(event) {
   scrollerInner.style.animationPlayState = "running";
 }
 
-/* ----------------------------------------------- */
-
-
-/* [Table of content - article] */
+/* ----- Table of content (Article) ----- */
 
 document.addEventListener('DOMContentLoaded', function () {
   const links = document.querySelectorAll('.table-of-content__navigation-link');
@@ -156,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-/* [Table of content - projects] */
+/* ----- Table of content (Projects) ----- */
 
 document.addEventListener('DOMContentLoaded', function () {
   const links = document.querySelectorAll('.table-of-content__navigation-link');
@@ -203,23 +194,21 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-/* ----------------------------------------------- */
-
-/* [Share buttons] */
+/* ----- Share buttons ----- */
 
 const whatsapp = document.querySelector('.whatsapp');
-const twitter = document.querySelector('.twitter');
+const linkedin = document.querySelector('.linkedin');
 
-const pageUrl = location.href;
-const message2 = 'Read this, it only takes a few minutes';
+const pageUrl = encodeURIComponent(location.href);
+const message2 = encodeURIComponent('Read this, it only takes a few minutes');
 
 const whatsappApi = `https://wa.me/?text=${pageUrl}. ${message2}`;
-const twitterApi = `https://twitter.com/intent/tweet?text=${pageUrl}. ${message2}`;
+const linkedinApi = `https://www.linkedin.com/sharing/share-offsite/?url=${pageUrl}&summary=${message2}`;
 
 whatsapp.addEventListener('click', () => {
-  window.open(url = whatsappApi, target='blank')
+  window.open(whatsappApi, '_blank');
 });
 
-twitter.addEventListener('click', () => {
-  window.open(url = twitterApi, target='blank')
+linkedin.addEventListener('click', () => {
+  window.open(linkedinApi, '_blank');
 });

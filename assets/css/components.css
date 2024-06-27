@@ -143,20 +143,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;
-}
-
-@media (max-width: 1200px) {
-  .footer {
-    margin-left: 0;
-    width: 100%;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 12px;
-    gap: 24px;
-  }
+  gap: 12px;
 }
 
 @media (max-width: 1200px) {
@@ -189,7 +176,7 @@
 
   .mobile-footer__social {
     display: flex;
-    gap: 24px;
+    gap: 12px;
   }
 
   .mobile-footer__footer {
@@ -385,15 +372,22 @@
   position: fixed;
   background: var(--neutral-1000);
   z-index: 1000;
-  bottom: 18%;
-  right: 6%;
+  bottom: 148px;
+  right: 96px;
   width: 48px;
   height: 48px;
   display: none;
   place-items: center;
   border-radius: 50%;
-  color: var(--neutral-100);
-  cursor: pointer;
+  color: var(--neutral-200);
+  cursor: pointer; 
+}
+
+@media (max-width: 1200px) {
+  #progress-button {    
+    bottom: 124px;
+    right: 24px;     
+  }
 }
 
 #progress-value {
@@ -408,7 +402,7 @@
 }
 
 #progress-value:hover {
-  background-color: var(--neutral-700);
+  background: var(--neutral-800);
 }
 
 /* ---------- */
@@ -1360,24 +1354,9 @@
   align-items: center;
 }
 
-.share-container {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-}
-
-@media (max-width: 1200px) {
-  .share-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-  }
-}
-
 .share-container__buttons {
   display: flex;
-  gap: 6px;
+  gap: 12px;
 }
 
 .share-container__buttons i {
@@ -2217,7 +2196,7 @@ tr td {
   width: 1200px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 24px;  
 }
 
 .main__project-hero-info-title {
