@@ -9,7 +9,7 @@
   <meta http-equiv="Content-Language" content="en">
   <meta name="description"
     content="Welcome to my portfolio. Here you will find relevant information about my background as a product designer and how it can impact people's lives..">
-  <meta name="theme-color" content="#EB8F3B"> 
+  <meta name="theme-color" content="#EB8F3B">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="#EB8F3B">
 
@@ -51,7 +51,6 @@
           </li>
         </ul>
         <li class="language__selector">
-          <img class="language__selector-icon" src="/assets/icons/england.png" alt="language icon">
           <a href="index.html" class=" language__selector-link-active">
             <p class="regular">EN</p>
           </a>
@@ -94,14 +93,13 @@
             <a href="index.html" class="navbar__link regular active">Home</a>
           </li>
           <li class="navbar__item">
-            <a href="pages/about-me-experience.html" class="navbar__link regular">About me</a>
+            <a href="pages/about-me-experience.html" class="navbar__link regular">Resume</a>
           </li>
           <li class="navbar__item">
             <a href="pages/blog.html" class="navbar__link regular">Blog</a>
           </li>
         </ul>
         <li class="language__selector">
-          <img class="language__selector-icon hideOnMobile" src="/assets/icons/england.png" alt="language icon">
           <a href="index.html" class=" language__selector-link-active hideOnMobile">
             <p class="regular hideOnMobile">EN</p>
           </a>
@@ -124,13 +122,24 @@
         <img src="/assets/images/alejandro-400-2.png" alt="alejandro-moreno">
       </div>
       <div class="main-hero__content">
-        <h2>I'm Alejandro, <b>product designer.</b></h2>
-        <p class="regular">Hey! - I'm passionate and dedicated to user experience to improve people's lives. I am self-taught and methodical in search of continuous improvement.
-        </p>        
-        <div class="button-primary">
-          <a href="#step-section" id="step-link">
-            <p class="regular">Let's begin</p>
-          </a>
+        <div class="main-hero__content-header">
+          <h1>I'm Alejandro Moreno</h1>
+          <h2>Product designer</h2>
+        </div>
+        <p class="regular">Hey! - I'm passionate and dedicated to user experience to improve people's lives. I am
+          self-taught and methodical in search of continuous improvement.
+        </p>
+        <div class="button-container">
+          <div class="button-primary">
+            <a href="#step-section" id="step-link">
+              <p class="regular">Let's begin</p>
+            </a>
+          </div>
+          <div class="button-terciary">
+            <a href="assets/documents/alejandroMoreno_resume.pdf" target="_blank">
+              <p class="regular">Resume PDF</p>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -159,7 +168,6 @@
           </div>
           <div class="card-project__header">
             <div class="card-project__header-1">
-              <img src="assets/images/projects/geomites/icons/cardfavicon-geomites.png" alt="card-project__favicon">
               <p class="large">Geomites</p>
             </div>
             <div class="tag-default">
@@ -175,7 +183,6 @@
           </div>
           <div class="card-project__header">
             <div class="card-project__header-1">
-              <img src="assets/images/projects/portfolio/cardfavicon-portfolio.png" alt="card-project__favicon">
               <p class="large">Portfolio</p>
             </div>
             <div class="tag-default">
@@ -191,7 +198,6 @@
           </div>
           <div class="card-project__header">
             <div class="card-project__header-1">
-              <img src="assets/images/projects/tattoo/icons/cardfavicon-tattooparadise.png" alt="card-project__favicon">
               <p class="large">Tattoo paradise</p>
             </div>
             <div class="tag-default">
@@ -202,6 +208,39 @@
           <p class="small">16 min read</p>
         </a>
       </div>
+    </section>
+
+    <!-- [main-section "toolstack"] -->
+    <section class="main-section">
+
+      <!-- [section-header] -->
+      <div class="section-header">
+        <div class="section-header__header">
+          <h4>Toolstack</h4>
+        </div>
+        <div class="section-header__text">
+          <p class="regular">As a designer, I strive to stay up-to-date on new technologies and tools.</p>
+        </div>
+      </div>
+
+      <!-- [scroller] -->
+      <div class="scroller">
+        <ul class="tag-list scroller__inner">
+          <li><img src="assets/icons/toolstack/figma.png" alt="toolstack icon"></li>
+          <li><img src="assets/icons/toolstack/sketch.png" alt="toolstack icon"></li>
+          <li><img src="assets/icons/toolstack/adobe-creative-suite.png" alt="toolstack icon"></li>
+          <li><img src="assets/icons/toolstack/framer.png" alt="toolstack icon"></li>
+          <li><img src="assets/icons/toolstack/webflow.png" alt="toolstack icon"></li>
+          <li><img src="assets/icons/toolstack/wordpress.png" alt="toolstack icon"></li>
+          <li><img src="assets/icons/toolstack/html.png" alt="toolstack icon"></li>
+          <li><img src="assets/icons/toolstack/css.png" alt="toolstack icon"></li>
+          <li><img src="assets/icons/toolstack/js.png" alt="toolstack icon"></li>
+          <li><img src="assets/icons/toolstack/axure.png" alt="toolstack icon"></li>
+          <li><img src="assets/icons/toolstack/asana.png" alt="toolstack icon"></li>
+          <li><img src="assets/icons/toolstack/Jira.png" alt="toolstack icon"></li>
+        </ul>
+      </div>
+
     </section>
 
     <!-- [main-section "skills"] -->
@@ -220,63 +259,40 @@
       <!-- [main-section__skills] -->
       <div class="main-section__skills">
         <div class="card-skill">
-          <p class="regular">Iterating</p>
+          <p class="regular">UX Research</p>
           <div class="icon-emblem">
-            <i class="fa-solid fa-rotate-left"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
           </div>
-          <div class="dialog-hover__card-skill">
-            <p class="regular">Craft compelling designs, iterating with precision to bring ideas to life
-              and enhance user experiences.</p>
+        </div>
+        <div class="card-skill">
+          <p class="regular">UX Design</p>
+          <div class="icon-emblem">
+            <i class="fa-solid fa-user"></i>
+          </div>
+        </div>
+        <div class="card-skill">
+          <p class="regular">UI Design</p>
+          <div class="icon-emblem">
+            <i class="fa-solid fa-pen-nib"></i>
+          </div>
+
+        </div>
+        <div class="card-skill">
+          <p class="regular">Wireframing</p>
+          <div class="icon-emblem">
+            <i class="fa-solid fa-crop-simple"></i>
           </div>
         </div>
         <div class="card-skill">
           <p class="regular">Prototyping</p>
           <div class="icon-emblem">
-            <i class="fa-solid fa-mobile"></i>
-          </div>
-          <div class="dialog-hover__card-skill">
-            <p class="regular">Transform concepts into interactive prototypes, fostering a tangible feel
-              for seamless user interactions.</p>
+            <i class="fa-solid fa-pen-to-square"></i>
           </div>
         </div>
         <div class="card-skill">
-          <p class="regular">Visual design</p>
+          <p class="regular">Problem solving</p>
           <div class="icon-emblem">
-            <i class="fa-solid fa-object-group"></i>
-          </div>
-          <div class="dialog-hover__card-skill">
-            <p class="regular">Infuse aesthetic appeal into interfaces, blending creativity and usability
-              to captivate users attention.</p>
-          </div>
-        </div>
-        <div class="card-skill">
-          <p class="regular">Interactions</p>
-          <div class="icon-emblem">
-            <i class="fa-solid fa-hand"></i>
-          </div>
-          <div class="dialog-hover__card-skill">
-            <p class="regular">Meticulously refine micro-interactions, ensuring every detail contributes to
-              a delightful user journey.</p>
-          </div>
-        </div>
-        <div class="card-skill">
-          <p class="regular">Design systems</p>
-          <div class="icon-emblem">
-            <i class="fa-solid fa-swatchbook"></i>
-          </div>
-          <div class="dialog-hover__card-skill">
-            <p class="regular">Architect cohesive design systems, promoting consistency and scalability for
-              a harmonized user experience.</p>
-          </div>
-        </div>
-        <div class="card-skill">
-          <p class="regular">Data structuring</p>
-          <div class="icon-emblem">
-            <i class="fa-solid fa-sitemap"></i>
-          </div>
-          <div class="dialog-hover__card-skill">
-            <p class="regular">Structure content strategically, creating intuitive information pathways
-              that enhance user navigation.</p>
+            <i class="fa-solid fa-exclamation"></i>
           </div>
         </div>
         <div class="card-skill">
@@ -284,74 +300,13 @@
           <div class="icon-emblem">
             <i class="fa-solid fa-comments"></i>
           </div>
-          <div class="dialog-hover__card-skill">
-            <p class="regular">I try to convey as accurately as possible my decision-making process and my
-              progress on a day-to-day basis.</p>
-          </div>
         </div>
         <div class="card-skill">
-          <p class="regular">Problem solving</p>
+          <p class="regular">Design system</p>
           <div class="icon-emblem">
-            <i class="fa-solid fa-lightbulb"></i>
-          </div>
-          <div class="dialog-hover__card-skill">
-            <p class="regular">I like to have an overview to be able to focus on specifics and propose
-              effective solutions.</p>
+            <i class="fa-solid fa-swatchbook"></i>
           </div>
         </div>
-        <div class="card-skill">
-          <p class="regular">Research</p>
-          <div class="icon-emblem">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-          <div class="dialog-hover__card-skill">
-            <p class="regular">I focus my work based on the objectivity obtained from thorough research and
-              compelling evidence.</p>
-          </div>
-        </div>
-        <div class="card-skill">
-          <p class="regular">Testing</p>
-          <div class="icon-emblem">
-            <i class="fa-solid fa-pen-to-square"></i>
-          </div>
-          <div class="dialog-hover__card-skill">
-            <p class="regular">Verify that the proposed designs are accepted, understood, and enjoyed by
-              users.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- [main-section "toolstack"] -->
-    <section class="main-section">
-
-      <!-- [section-header] -->
-      <div class="section-header">
-        <div class="section-header__header">
-          <h4>Toolstack</h4>
-        </div>
-        <div class="section-header__text">
-          <p class="regular">As a designer, I strive to stay up-to-date on new technologies and tools.</p>
-        </div>
-      </div>
-
-      <!-- [scroller] -->
-      <div class="scroller" data-speed="fast">
-        <ul class="scroller__list scroller__inner">
-          <li><img src="/assets/icons/toolstack/figma.png" alt="Figma"></li>
-          <li><img src="/assets/icons/toolstack/adobe-ilustrator.png" alt="Adobe ilustrator"></li>
-          <li><img src="/assets/icons/toolstack/html.png" alt="HTML"></li>
-          <li><img src="/assets/icons/toolstack/css.png" alt="CSS"></li>
-          <li><img src="/assets/icons/toolstack/js.png" alt="Javascript"></li>
-          <li><img src="/assets/icons/toolstack/mid-journey.png" alt="Midjourney"></li>
-          <li><img src="/assets/icons/toolstack/gpt.png" alt="Chat GPT"></li>
-          <li><img src="/assets/icons/toolstack/wordpress.png" alt="Wordpress"></li>
-          <li><img src="/assets/icons/toolstack/frame.png" alt="Framer"></li>
-          <li><img src="/assets/icons/toolstack/webflow.png" alt="Webflow"></li>
-          <li><img src="/assets/icons/toolstack/miro.png" alt="Miro"></li>
-          <li><img src="/assets/icons/toolstack/notion.png" alt="Notion"></li>
-          <li><img src="/assets/icons/toolstack/slack.png" alt="Slack"></li>
-        </ul>
       </div>
     </section>
 
@@ -370,98 +325,98 @@
 
       <!-- [main-section__testimonials] -->
       <div class="main-section__testimonials">
+
         <div class="card-testimonial">
-          <div class="card-testimonial__header">
-            <div class="card-testimonial__header-info">
-              <div class="card-testimonial__image">
-                <img src="/assets/images/testimonials/diego-40.png" alt="Diego Villaroel">
-              </div>
-              <div class="card-testimonial__header-info-title">
-                <p class="large">Diego Villaroel</p>
-                <p class="regular">Director of design at <a href="https://www.rappi.com" target="_blank">Rappi</a></p>
-              </div>
+          <img src="/assets/images/testimonials/diego-40.png" alt="Testimonial image">
+          <div class="card-testimonial__body">
+            <div class="card-testimonial__body-header">
+              <p class="large">Diego Villaroel</p>
+              <p class="regular">Director of product design</p>
+              <a href="https://play.google.com/store/apps/details?id=com.grability.rappi&hl=en">
+                <p class="small">Rappi</p>
+              </a>
             </div>
+            <p class="regular">“Alejandro has a self-taught and hard-working profile that makes him a real asset to any
+              design team. He adapts, learns and progresses very quickly in highly demanding environments”.</p>
+            <a class="button-social" href="https://www.linkedin.com/in/diego-villarroel-zaballos/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
           </div>
-          <p class="regular">“Alex has a self-taught and hard-working profile that makes him a real asset to any design
-            team. He adapts, learns and progresses very quickly in highly demanding environments”.</p>
-          <a class="button-social" href="https://www.linkedin.com/in/diego-villarroel-zaballos/" target="_blank">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
         </div>
+
         <div class="card-testimonial">
-          <div class="card-testimonial__header">
-            <div class="card-testimonial__header-info">
-              <div class="card-testimonial__image">
-                <img src="/assets/images/testimonials/luis-40.png" alt="Lluis Fortuny">
-              </div>
-              <div class="card-testimonial__header-info-title">
-                <p class="large">Lluis Fortuny</p>
-                <p class="regular">Graph. designer at <a href="https://zitrogames.com/" target="_blank">Zitro</a></p>
-              </div>
+          <img src="/assets/images/testimonials/luis-40.png" alt="Testimonial image">
+          <div class="card-testimonial__body">
+            <div class="card-testimonial__body-header">
+              <p class="large">Lluis Fortuny</p>
+              <p class="regular">Graphic designer</p>
+              <a href="https://zitrogames.com/">
+                <p class="small">Zitro games</p>
+              </a>
             </div>
+            <p class="regular">“Working with him has been very easy, and he has been very profesional in delivering what
+              has been requested”.</p>
+            <a class="button-social" href="https://www.linkedin.com/in/llu%C3%ADs-fortuny-marin-a76999186/"
+              target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
           </div>
-          <p class="regular">“Working with him has been very easy, and he has been very profesional in delivering what
-            has been requested”.</p>
-          <a class="button-social" href="https://www.linkedin.com/in/llu%C3%ADs-fortuny-marin-a76999186/"
-            target="_blank">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
         </div>
+
         <div class="card-testimonial">
-          <div class="card-testimonial__header">
-            <div class="card-testimonial__header-info">
-              <div class="card-testimonial__image">
-                <img src="/assets/images/testimonials/alvaro-40.png" alt="Álvaro Torrijos">
-              </div>
-              <div class="card-testimonial__header-info-title">
-                <p class="large">Álvaro Torrijos</p>
-                <p class="regular">Prod. designer at <a href="https://www.sisnet360.com/es" target="_blank">Sisnet</a>
-                </p>
-              </div>
+          <img src="/assets/images/testimonials/alvaro-40.png" alt="Testimonial image">
+          <div class="card-testimonial__body">
+            <div class="card-testimonial__body-header">
+              <p class="large">Álvaro Torrijos</p>
+              <p class="regular">Product designer</p>
+              <a href="https://www.prosegur.es/empresas/externalizacion/sisnet-360">
+                <p class="small">Sisnet</p>
+              </a>
             </div>
+            <p class="regular">“Attention to detail and ability to solve problems makes Alejandro a good partner to face
+              great challenges”.</p>
+            <a class="button-social" href="https://www.linkedin.com/in/%C3%A1lvaro-torrijos-herrera/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
           </div>
-          <p class="regular">“Attention to detail and ability to solve problems makes Alejandro a good partner to face
-            great challenges”.</p>
-          <a class="button-social" href="https://www.linkedin.com/in/%C3%A1lvaro-torrijos-herrera/" target="_blank">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
         </div>
+
         <div class="card-testimonial">
-          <div class="card-testimonial__header">
-            <div class="card-testimonial__header-info">
-              <div class="card-testimonial__image">
-                <img src="/assets/images/testimonials/ruben-40.png" alt="Rubén Hinarejos">
-              </div>
-              <div class="card-testimonial__header-info-title">
-                <p class="large">Rubén Hinarejos</p>
-                <p class="regular">CEO at <a href="https://senzostudio.com/" target="_blank">Senzo studio</a></p>
-              </div>
+          <img src="/assets/images/testimonials/ruben-40.png" alt="Testimonial image">
+          <div class="card-testimonial__body">
+            <div class="card-testimonial__body-header">
+              <p class="large">Rubén Hinarejos</p>
+              <p class="regular">CEO & Co-founder</p>
+              <a href="https://senzostudio.com/">
+                <p class="small">Senzo Studio</p>
+              </a>
             </div>
+            <p class="regular">"Conviction, effort, and camaraderie are notable in his approach, alongside his ability
+              to
+              solve issues".</p>
+            <a class="button-social" href="https://www.linkedin.com/in/rub%C3%A9n-hinarejos-guerra-b2365910b/"
+              target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
           </div>
-          <p class="regular">"Conviction, effort, and camaraderie are notable in his approach, alongside his ability to
-            solve issues".</p>
-          <a class="button-social" href="https://www.linkedin.com/in/rub%C3%A9n-hinarejos-guerra-b2365910b/"
-            target="_blank">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
         </div>
+
         <div class="card-testimonial">
-          <div class="card-testimonial__header">
-            <div class="card-testimonial__header-info">
-              <div class="card-testimonial__image">
-                <img src="/assets/images/testimonials/marc-40.png" alt="Marc Bernardo">
-              </div>
-              <div class="card-testimonial__header-info-title">
-                <p class="large">Marc Bernardo</p>
-                <p class="regular">Backend at <a href="https://www.bmat.com/" target="_blank">BMAT</a></p>
-              </div>
+          <img src="/assets/images/testimonials/marc-40.png" alt="Testimonial image">
+          <div class="card-testimonial__body">
+            <div class="card-testimonial__body-header">
+              <p class="large">Marc Bernardo</p>
+              <p class="regular">Back-end developer</p>
+              <a href="https://www.bmat.com/">
+                <p class="small">Bmat</p>
+              </a>
             </div>
+            <p class="regular">"Alejandro is a disciplined and dedicated person in the projects he decides to carry
+              out".</p>
+            <a class="button-social" href="https://www.linkedin.com/in/marc-bernardo-838757174/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
           </div>
-          <p class="regular">"Alejandro is a disciplined and dedicated person in the projects he decides to carry out".
-          </p>
-          <a class="button-social" href="https://www.linkedin.com/in/marc-bernardo-838757174/" target="_blank">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
         </div>
       </div>
     </section>
