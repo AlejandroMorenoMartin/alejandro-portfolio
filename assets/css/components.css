@@ -67,6 +67,16 @@
   .menu-button {
     display: block;
   }
+
+  .navbar > li {
+    flex: initial;
+  }
+  
+  .navbar > li:nth-child(1),
+  .navbar > li:nth-child(2) {
+    display: initial;
+    justify-content: initial;
+  }
 }
 
 /* ---------- */
@@ -157,7 +167,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
 }
 
 @media (max-width: 1200px) {
@@ -303,8 +313,7 @@
 
 .button-terciary {
   padding: 12px 24px;
-  color: var(--neutral-200);
-  background-color: var(--neutral-900);
+  color: var(--neutral-200);  
   transition: all 0.1s ease-in-out;
   cursor: pointer;
   width: fit-content;
@@ -318,7 +327,7 @@
 }
 
 .button-terciary:hover {
-  background-color: var(--neutral-800);
+  background-color: var(--neutral-900);
   ;
 }
 
@@ -518,9 +527,10 @@
   display: inline-flex;
   padding: 2px 8px;
   justify-content: center;
-  align-items: center;
-  background-color: var(--neutral-600);
-  border-radius: var(--br-4);
+  align-items: center;  
+  border-radius: var(--br-8);
+  background: var(--gray-1000);
+  border: var(--neutral-500) solid var(--bw-0);  
 }
 
 /* ---------- */
@@ -605,8 +615,8 @@
   width: 100%;
   display: flex;
   padding: 16px;  
-  gap: 16px;
-  background: var(--neutral-900);
+  gap: 16px;  
+  border: var(--neutral-500) solid var(--bw-0);
   border-radius: var(--br-8);
 }
 
@@ -629,6 +639,14 @@
 
 .card-testimonial:nth-child(1) {
   grid-column: span 2;
+}
+
+.card-testimonial a {
+  color: var(--primary-500);
+}
+
+.card-testimonial a:hover {
+  color: var(--primary-300);
 }
 
 @media (max-width: 1200px) {
@@ -711,8 +729,9 @@
 
 .card-experience {
   display: flex;
-  gap: 16px;
-  background: var(--neutral-900);
+  gap: 16px;  
+  border: var(--neutral-500) solid var(--bw-0);
+  border-radius: var(--br-8);
   padding: 16px;
 }
 
@@ -793,7 +812,7 @@
   align-items: flex-start;
   gap: 16px;
   padding: 16px;
-  background: var(--neutral-900);
+  border: var(--neutral-500) solid var(--bw-0);  
   border-radius: var(--br-8);
 }
 
@@ -979,15 +998,10 @@
 .card-skill {
   display: flex;
   padding: 12px;
-  border-radius: var(--br-4);
-  background: var(--neutral-800);
+  border-radius: var(--br-8);
+  border: var(--neutral-500) solid var(--bw-0);  
   align-items: center;
-  justify-content: space-between;
-  height: fit-content;
-  position: relative;
-  cursor: pointer;
-  transition: hover 0.3s ease-in-out;
-  width: 100%;
+  justify-content: space-between; 
 }
 
 @media (max-width: 1200px) {
@@ -1043,25 +1057,12 @@
   height: 100%;
 }
 
-.card-article .large {
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.card-article .regular {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.card-article__info {
+.card-article__header {
   display: flex;
-  width: 100%;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 4px;
 }
+
 
 @media (max-width: 1200px) {
   .card-article {
@@ -1908,8 +1909,7 @@ tr td {
 
 .main-hero__content-header {
   display: flex;
-  flex-direction: column;
-  gap: 16px;
+  flex-direction: column;  
 }
 
 @media (max-width: 1200px) {
