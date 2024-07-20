@@ -775,6 +775,13 @@
 
 /* ---------- */
 
+.main-section__other-projects {
+  display: flex;
+  gap: 16px;
+}
+
+/* ---------- */
+
 .language__selector {
   display: flex;
   gap: 12px;
@@ -982,7 +989,7 @@
   display: flex;
   flex-direction: column;
   gap: 48px;
-  padding: 48px calc((100% - 1200px) / 2);
+  padding: 48px calc((100% - 800px) / 2);
   width: 100%;
   margin: 0 auto;
 }
@@ -1012,23 +1019,9 @@
   }
 }
 
-.icon-emblem {
-  border-radius: var(--br-4);
-  border: var(--bw-0) solid var(--gray-700);
-  background: var(--gray-900);
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  height: 36px;
-  width: 36px;
-  aspect-ratio: 1 / 1;
-  box-sizing: border-box;
-  padding: 12px;
-}
-
-.icon-emblem i {
+.card-skill i {
   font-size: 24px;
-  color: var(--primary-500);
+  color: var(--neutral-200);
 }
 
 /* ---------- */
@@ -1432,41 +1425,45 @@
 .table-of-content {
   position: -webkit-sticky;
   position: sticky;
-  top: 60px;
+  top: 120px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  width: 100%;
-  margin: 0 auto;
-  border-bottom: var(--bw-0) solid var(--neutral-500);
-  border-top: var(--bw-0) solid var(--neutral-500);
-  background: var(--neutral-900);
-  padding: 12px 0;
-  gap: 12px;
+  width: 320px;
+  margin-left: 100px;
+  border: 0.25px solid var(--neutral-500);
+  border-radius: var(--br-8);  
   z-index: 100;
   margin-top: 24px;
 }
 
+.table-of-content .large {
+  display: flex;
+  padding: 16px;
+  border-bottom: 0.25px solid var(--neutral-500);
+}
+
 .table-of-content__navigation-link {
   display: flex;
-  color: var(--neutral-200);
-  flex-wrap: nowrap;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  width: 100%;
-  white-space: nowrap;
+  padding: 8px 16px;
+  color: var(--neutral-200);    
+  border-bottom: 0.25px solid var(--neutral-500);
+}
+
+.table-of-content__navigation-link:nth-last-child(1){
+  border-bottom: none;
 }
 
 .table-of-content__navigation-link.active {
-  color: var(--primary-500);
+  background: var(--neutral-900);  
 }
 
 .table-of-content__navigation-link.active:hover {
-  color: var(--primary-300);
+  background: var(--neutral-900);
 }
 
 .table-of-content__navigation-link:not(.active):hover {
-  color: var(--white);
+  background: var(--neutral-900);
 }
 
 @media (max-width: 1200px) {
@@ -2260,7 +2257,7 @@ tr td {
   display: flex;
   flex-direction: column;
   gap: 96px;
-  width: 1200px;
+  width: 800px;
   margin: 0 auto;
   position: relative;
 }
