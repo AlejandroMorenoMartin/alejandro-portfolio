@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
 
@@ -14,7 +14,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="#EB8F3B">
 
   <!-- [links] -->
-  <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/icons/navigation/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="stylesheet" href="/assets/css/reset.css">
   <link rel="stylesheet" href="/assets/css/variables.css">
@@ -26,517 +26,430 @@
 
 <body>
 
-  <!-- [navbar] -->
-  <header>
-    <nav>
-      <ul class="sidebar">
-        <ul class="sidebar-header">
-          <li><a class="logo" href="index.html"><img src="/assets/icons/logo.png" alt="logo-alejandro">
-              <div class="logo__name">
-                <p class="large">Alejandro</p>
-                <p class="small">2.0</p>
-              </div>
-            </a></li>
-          <li onclick=hideSidebar()><a href=""><i class="fa-solid fa-xmark"></i></a></li>
-        </ul>
-        <ul class="sidebar__navigation">
-          <li class="navbar__item">
-            <a href="index.html" class="navbar__link regular active">Home</a>
-          </li>
-          <li class="navbar__item">
-            <a href="pages/resume-experience.html" class="navbar__link regular">Resume</a>
-          </li>
-          <li class="navbar__item">
-            <a href="pages/blog.html" class="navbar__link regular">Blog</a>
-          </li>
-        </ul>
-        <li class="language__selector">
-          <a href="index.html" class=" language__selector-link-active">
-            <p class="regular">EN</p>
-          </a>
-          <div class="language__selector-divider"></div>
-          <a href="index-es.html" class="language__selector-link">
-            <p class="regular">ES</p>
-          </a>
-        </li>
-        <ul class="sidebar-footer">
-          <li class="sidebar-footer__social">
-            <a class="button-social whatsapp" href="https://wa.me/34618110583" target="_blank">
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
-            <a class="button-social" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a class="button-social" href="mailto:alejandromorenomartin1990@gmail.com" target="_blank">
-              <i class="fa-solid fa-envelope"></i>
-            </a>
-          </li>
-          <li>
-            <p class="regular">Designing - 2024</p>
-          </li>
-          <li>
-            <p class="regular">&copy; Alejandro Moreno</p>
-          </li>
-        </ul>
-
-      </ul>
-
-      <ul class="navbar">
-        <li><a class="logo" href="index.html"><img src="/assets/icons/logo.png" alt="logo-alejandro">
-            <div class="logo__name">
-              <p class="large">Alejandro</p>
-              <p class="small">2.0</p>
-            </div>
-          </a></li>
-        <ul class="hideOnMobile navbar__navigation">
-          <li class="navbar__item">
-            <a href="index.html" class="navbar__link regular active">Home</a>
-          </li>
-          <li class="navbar__item">
-            <a href="pages/resume-experience.html" class="navbar__link regular">Resume</a>
-          </li>
-          <li class="navbar__item">
-            <a href="pages/blog.html" class="navbar__link regular">Blog</a>
-          </li>
-        </ul>
-        <li class="language__selector">
-          <a href="index.html" class=" language__selector-link-active hideOnMobile">
-            <p class="regular hideOnMobile">EN</p>
-          </a>
-          <div class="language__selector-divider hideOnMobile"></div>
-          <a href="index-es.html" class="language__selector-link hideOnMobile">
-            <p class="regular hideOnMobile">ES</p>
-          </a>
-        </li>
-        <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
-      </ul>
-    </nav>
-  </header>
-
   <!-- [main] -->
   <main class="main">
 
-    <!-- [main-hero] -->
-    <section class="main-hero">
-      <div class="main-hero__img">
-        <img src="/assets/images/alejandro-400-2.png" alt="alejandro-moreno">
-      </div>
-      <div class="main-hero__content">
-        <div class="main-hero__content-header">
-          <h1>I'm Alejandro Moreno</h1>
-          <h2>Product designer</h2>
-        </div>
-        <p class="regular">Hey! - I'm passionate and dedicated to user experience to improve people's lives. I am
-          self-taught and methodical in search of continuous improvement.
-        </p>
-        <p class="regular">I consider myself an eternal learner and aspire to lead design teams that impact millions of
-          users.
-        </p>
-        <div class="button-container">
-          <div class="button-primary">
-            <a href="#step-section" id="step-link">
-              <p class="regular">Let's begin</p>
-            </a>
-          </div>
-          <div class="button-terciary">
-            <a href="assets/documents/alejandroMoreno_resume.pdf" target="_blank">
-              <p class="regular">Resume PDF</p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- [navBar] -->
+    <header>
+      <nav>
+        <ul class="navBar">
+          <li class="navBarFrame"><a href="index.html" alt="logoAlejandro" id="logoLink">
+              <svg class="logo" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M11.0044 29.7125L23.0381 6.83789H24.6898L45.3122 42.6954H35.4965L24.9257 24.5289H23.274L21.3392 29.7125H11.0044ZM8.07878 34.6109H24.5012L29.6451 42.8381H3.3125L8.07878 34.6109Z" />
+              </svg>
+            </a></li>
+          <li class="navBarFrame">
+            <ul class=" navBarNavigation">
+              <li class="navBarFrameLink active"><a href="#">
+                  <p class="regular" data-key="navBarFrameLink1"></p>
+                </a></li>
+              <li class="navBarFrameLink"><a href="#">
+                  <p class="regular" data-key="navBarFrameLink2"></p>
+                </a></li>
+              <li class="navBarFrameLink"><a href="#">
+                  <p class="regular" data-key="navBarFrameLink3"></p>
+                </a></li>
+              <li class="navBarFrameLink"><a href="#">
+                  <p class="regular" data-key="navBarFrameLink4"></p>
+                </a></li>
+            </ul>
+          </li>
+          <li class="navBarFrame">
+            <div class="frameFlexMedium switcherContainer">
 
-    <!-- [main-section "projects"] -->
-    <section id="step-section" class="main-section">
+              <input class="switcher languageSwitcher" id="switchLanguage" type="checkbox">
 
-      <!-- [section-header] -->
-      <div class="section-header">
-        <div class="section-header__header">
-          <h4>Projects</h4>
-          <a href="index-projects.html" class="button-quaternary">
-            <p class="regular">See more</p>
-          </a>
-        </div>
-        <div class="section-header__text">
-          <p class="regular">These are some of the projects I have worked on.</p>
-        </div>
-      </div>
+              <input class="switcher themeSwitcher" id="switchTheme" type="checkbox">
 
-      <!-- [main-section__projects] -->
-      <div class="main-section__projects">
-        <a class="card-project" href="projects/geomites.html" target="_blank">
-          <div class="card-project__image">
-            <img src="assets/images/projects/geomites/cardproject-geomites.png" alt="Project-image">
-          </div>
-          <div class="card-project__header">
-            <div class="card-project__header-1">
-              <p class="large">Geomites</p>
             </div>
-            <div class="tag-default">
-              <p class="regular">Mobile game</p>
-            </div>
-          </div>
-          <p class="regular">In charge of designing a video game for Android and iOS platforms.</p>
-          <p class="small">15 min read</p>
-        </a>
-        <a class="card-project" href="projects/portfolio.html" target="_blank">
-          <div class="card-project__image">
-            <img src="assets/images/projects/portfolio/cardproject-portfolio.png" alt="Project-image">
-          </div>
-          <div class="card-project__header">
-            <div class="card-project__header-1">
-              <p class="large">Portfolio</p>
-            </div>
-            <div class="tag-default">
-              <p class="regular">Responsive</p>
-            </div>
-          </div>
-          <p class="regular">Discover the process of creating my portfolio.</p>
-          <p class="small">13 min read</p>
-        </a>
-        <a class="card-project" href="projects/tattoo-paradise.html" target="_blank">
-          <div class="card-project__image">
-            <img src="assets/images/projects/tattoo/cardproject-tattooparadise.png" alt="Project-image">
-          </div>
-          <div class="card-project__header">
-            <div class="card-project__header-1">
-              <p class="large">Tattoo paradise</p>
-            </div>
-            <div class="tag-default">
-              <p class="regular">Mobile</p>
-            </div>
-          </div>
-          <p class="regular">Product to connect tattoo users with nearby studios and artists.</p>
-          <p class="small">16 min read</p>
-        </a>
-      </div>
-    </section>
-
-    <!-- [main-section "toolstack"] -->
-    <section class="main-section">
-
-      <!-- [section-header] -->
-      <div class="section-header">
-        <div class="section-header__header">
-          <h4>Toolstack</h4>
-        </div>
-        <div class="section-header__text">
-          <p class="regular">As a designer, I strive to stay up-to-date on new technologies and tools.</p>
-        </div>
-      </div>
-
-      <!-- [scroller] -->
-      <div class="scroller">
-        <ul class="tag-list scroller__inner">
-          <li><img src="assets/icons/toolstack/figma.png" alt="toolstack icon"></li>
-          <li><img src="assets/icons/toolstack/sketch.png" alt="toolstack icon"></li>
-          <li><img src="assets/icons/toolstack/adobe-creative-suite.png" alt="toolstack icon"></li>
-          <li><img src="assets/icons/toolstack/framer.png" alt="toolstack icon"></li>
-          <li><img src="assets/icons/toolstack/webflow.png" alt="toolstack icon"></li>
-          <li><img src="assets/icons/toolstack/wordpress.png" alt="toolstack icon"></li>
-          <li><img src="assets/icons/toolstack/html.png" alt="toolstack icon"></li>
-          <li><img src="assets/icons/toolstack/css.png" alt="toolstack icon"></li>
-          <li><img src="assets/icons/toolstack/js.png" alt="toolstack icon"></li>
-          <li><img src="assets/icons/toolstack/axure.png" alt="toolstack icon"></li>
-          <li><img src="assets/icons/toolstack/asana.png" alt="toolstack icon"></li>
-          <li><img src="assets/icons/toolstack/Jira.png" alt="toolstack icon"></li>
+          </li>
+          <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
         </ul>
-      </div>
+      </nav>
+    </header>
 
-    </section>
+    <div class="mainSections">
 
-    <!-- [main-section "skills"] -->
-    <section class="main-section">
+      <!-- [hero] -->
+      <div class="frameFlexMedium mainHero">
+        <hgroup class="svgAnimation">
+          <svg width="360" height="360" viewBox="0 0 360 360">
+            <defs>
+              <clipPath id="circleClip">
+                <circle cx="180" cy="180" r="180" />
+              </clipPath>
+            </defs>
+            <image href="assets/images/mainHeroImage.png" width="360" height="360" clip-path="url(#circleClip)" />
+            <circle cx="180" cy="180" r="180" />
+          </svg>
+        </hgroup>
 
-      <!-- [section-header] -->
-      <div class="section-header">
-        <div class="section-header__header">
-          <h4>Skills</h4>
-        </div>
-        <div class="section-header__text">
-          <p class="regular">These are the areas that empower me to engage in design.</p>
-        </div>
-      </div>
-
-      <!-- [main-section__skills] -->
-      <div class="main-section__skills">
-        <div class="card-skill">
-          <p class="regular">UX Research</p>
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        <div class="card-skill">
-          <p class="regular">UX Design</p>
-          <i class="fa-solid fa-user"></i>
-        </div>
-        <div class="card-skill">
-          <p class="regular">UI Design</p>
-          <i class="fa-solid fa-pen-nib"></i>
-        </div>
-        <div class="card-skill">
-          <p class="regular">Wireframing</p>
-          <i class="fa-solid fa-crop-simple"></i>
-        </div>
-        <div class="card-skill">
-          <p class="regular">Prototyping</p>
-          <i class="fa-solid fa-pen-to-square"></i>
-        </div>
-        <div class="card-skill">
-          <p class="regular">Problem solving</p>
-          <i class="fa-solid fa-brain"></i>
-        </div>
-        <div class="card-skill">
-          <p class="regular">Communication</p>
-          <i class="fa-solid fa-comments"></i>          
-        </div>
-        <div class="card-skill">
-          <p class="regular">Design system</p>
-          <i class="fa-solid fa-swatchbook"></i>          
-        </div>
-      </div>
-    </section>
-
-    <!-- [main-section "testimonials"] -->
-    <section class="main-section">
-
-      <!-- [section-header] -->
-      <div class="section-header">
-        <div class="section-header__header">
-          <h4>Testimonials</h4>
-        </div>
-        <div class="section-header__text">
-          <p class="regular">Throughout my career, I have collaborated with numerous individuals.</p>
-        </div>
-      </div>
-
-      <!-- [main-section__testimonials] -->
-      <div class="main-section__testimonials">
-
-        <div class="card-testimonial">
-          <img src="/assets/images/testimonials/diego-40.png" alt="Testimonial image">
-          <div class="card-testimonial__body">
-            <div class="card-testimonial__body-header">
-              <p class="large">Diego Villaroel</p>
-              <p class="regular">Director of product design</p>
-              <p class="small"><a href="https://about.rappi.com/" target="_blank">Rappi</a></p>
+        <div class="frameFlexColumnLarge">
+          <div class="frameFlexMedium">
+            <img id="greetingsIcon" class="greetingsIcon" alt="greetingIcon">
+            <div class="frameFlexColumnTiny">
+              <p class="small" id="currentTime"></p>
+              <p class="regular" id="greetingsText"></p>
             </div>
-            <p class="regular">“Alejandro has a self-taught and hard-working profile that makes him a real asset to any
-              design team. He adapts, learns and progresses very quickly in highly demanding environments”.</p>
-            <a class="button-social" href="https://www.linkedin.com/in/diego-villarroel-zaballos/" target="_blank">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
           </div>
-        </div>
-
-        <div class="card-testimonial">
-          <img src="/assets/images/testimonials/luis-40.png" alt="Testimonial image">
-          <div class="card-testimonial__body">
-            <div class="card-testimonial__body-header">
-              <p class="large">Lluis Fortuny</p>
-              <p class="regular">Graphic designer</p>
-              <p class="small"><a href="https://zitrogames.com/" target="_blank">Zitro games</a></p>
+          <div class="frameFlexColumnTiny">
+            <h1 data-key="mainHeroH1"></h1>
+            <div class="tagPosition">
+              <p data-key="mainHeroP1"></p>
             </div>
-            <p class="regular">“Working with him has been very easy, and he has been very profesional in delivering what
-              has been requested”.</p>
-            <a class="button-social" href="https://www.linkedin.com/in/llu%C3%ADs-fortuny-marin-a76999186/"
-              target="_blank">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
           </div>
-        </div>
-
-        <div class="card-testimonial">
-          <img src="/assets/images/testimonials/alvaro-40.png" alt="Testimonial image">
-          <div class="card-testimonial__body">
-            <div class="card-testimonial__body-header">
-              <p class="large">Álvaro Torrijos</p>
-              <p class="regular">Product designer</p>
-              <p class="small"><a href="https://www.prosegur.es/empresas/externalizacion/sisnet-360"
-                  target="_blank">Sisnet</a></p>
-            </div>
-            <p class="regular">“Attention to detail and ability to solve problems makes Alejandro a good partner to face
-              great challenges”.</p>
-            <a class="button-social" href="https://www.linkedin.com/in/%C3%A1lvaro-torrijos-herrera/" target="_blank">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
+          <div class="frameFlexColumnMedium">
+            <p class="regular" data-key="mainHeroP2"></p>
+            <p class="regular" data-key="mainHeroP3"></p>
           </div>
-        </div>
-
-        <div class="card-testimonial">
-          <img src="/assets/images/testimonials/ruben-40.png" alt="Testimonial image">
-          <div class="card-testimonial__body">
-            <div class="card-testimonial__body-header">
-              <p class="large">Rubén Hinarejos</p>
-              <p class="regular">CEO & Co-founder</p>
-              <p class="small"><a href="https://senzostudio.com/" target="_blank">Senzo Studio</a></p>
-            </div>
-            <p class="regular">"Conviction, effort, and camaraderie are notable in his approach, alongside his ability
-              to
-              solve issues".</p>
-            <a class="button-social" href="https://www.linkedin.com/in/rub%C3%A9n-hinarejos-guerra-b2365910b/"
-              target="_blank">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="card-testimonial">
-          <img src="/assets/images/testimonials/marc-40.png" alt="Testimonial image">
-          <div class="card-testimonial__body">
-            <div class="card-testimonial__body-header">
-              <p class="large">Marc Bernardo</p>
-              <p class="regular">Back-end developer</p>
-              <p class="small"><a href="https://www.bmat.com/" target="_blank">Bmat</a></p>
-            </div>
-            <p class="regular">"Alejandro is a disciplined and dedicated person in the projects he decides to carry
-              out".</p>
-            <a class="button-social" href="https://www.linkedin.com/in/marc-bernardo-838757174/" target="_blank">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- [main-section "readings"] -->
-    <section class="main-section">
-
-      <!-- [section-header] -->
-      <div class="section-header">
-        <div class="section-header__header">
-          <h4>Readings</h4>
-          <a href="index-readings.html" class="button-quaternary">
-            <p class="regular">See more</p>
+          <a id="stepLink" class="buttonPrimary">
+            <p class="regular" data-key="mainHeroButton"></p>
           </a>
         </div>
-        <div class="section-header__text">
-          <p class="regular">I love reading and learning new things. Here are some readings I can recommend to you.</p>
+      </div>
+
+      <!-- [projects] -->
+      <div id="stepSection" class="frameFlexColumnLarge">
+        <div class="sectionHeader">
+          <div class="frameFlexAuto">
+            <h3 data-key="indexSectionHeader1"></h3>
+            <a class="buttonTerciary">
+              <p class="regular" data-key="indexSectionHeaderButton"></p>
+            </a>
+          </div>
+          <div class="sectionHeaderText">
+            <p class="regular" data-key="indexSectionHeaderText1"></p>
+          </div>
+        </div>
+        <div class="frameFlexMedium gridThree">
+          <a class="cardProject">
+            <div class="frameFlexMedium">
+              <div class="tagNew">
+                <p class="regular" data-key="cardProjectGeomitesTag1"></p>
+              </div>
+              <div class="tag">
+                <p class="regular" data-key="cardProjectGeomitesTag2"></p>
+              </div>
+            </div>
+            <div class="cardProjectImageContainer">
+              <img class="cardProjectImage" src="assets/images/projects/geomites/cardProject__geomites.png"
+                alt="cardProjectImage">
+            </div>
+            <div class="frameFlexColumnTiny">
+              <p class="large">Geomites</p>
+              <p class="small" data-key="cardProjectGeomitesTime"></p>
+            </div>
+            <p class="regular" data-key="cardProjectGeomitesDescription"></p>
+          </a>
+          <a class="cardProject">
+            <div class="frameFlexMedium">
+              <div class="tag">
+                <p class="regular" data-key="cardProjectTattoParadiseTag1"></p>
+              </div>
+            </div>
+            <div class="cardProjectImageContainer">
+              <img class="cardProjectImage" src="assets/images/projects/tattooParadise/cardProject__tattooParadise.png"
+                alt="cardProjectImage">
+            </div>
+            <div class="frameFlexColumnTiny">
+              <p class="large">Tattoo paradise</p>
+              <p class="small" data-key="cardProjectTattoParadiseTime"></p>
+            </div>
+            <p class="regular" data-key="cardProjectTattoParadiseDescription"></p>
+          </a>
+          <a class="cardProject">
+            <div class="frameFlexMedium">
+              <div class="tag">
+                <p class="regular" data-key="cardProjectAtipikoToursTag1"></p>
+              </div>
+            </div>
+            <div class="cardProjectImageContainer">
+              <img class="cardProjectImage" src="assets/images/projects/atipikoTours/cardProject__atipikoTours.png"
+                alt="cardProjectImage">
+            </div>
+            <div class="frameFlexColumnTiny">
+              <p class="large">Atipiko Tours</p>
+              <p class="small" data-key="cardProjectAtipikoToursTime"></p>
+            </div>
+            <p class="regular" data-key="cardProjectAtipikoToursDescription"></p>
+          </a>
         </div>
       </div>
 
-      <!-- [main-section__readings] -->
-      <div class="main-section__readings">
-        <a class="card-reading" href="https://www.amazon.es/Path-Senior-Product-Designer-Actionable/dp/B0CG83BYWM"
-          target="_blank">
-          <div class="card-reading__image">
-            <img src="assets/images/readings/the path to st.product designer.png" alt="book_image">
+      <!-- [toolStack] -->
+      <div class="frameFlexColumnLarge">
+        <div class="sectionHeader">
+          <div class="frameFlexAuto">
+            <h3 data-key="indexSectionHeader2"></h3>
           </div>
-          <div class="card-reading__body">
-            <div class="card-reading__body-info">
-              <p class="large">The path to senior product designer</p>
-              <p class="regular">By Artiom Dashinsky</p>
-            </div>
-            <p class="small">286 pages</p>
+          <div class="sectionHeaderText">
+            <p class="regular" data-key="indexSectionHeaderText2"></p>
           </div>
-        </a>
-        <a class="card-reading" href="https://www.amazon.com/Solving-Product-Design-Exercises-Questions/dp/1977000428"
-          target="_blank">
-          <div class="card-reading__image">
-            <img src="assets/images/readings/solving product design exercises.png" alt="book_image">
-          </div>
-          <div class="card-reading__body">
-            <div class="card-reading__body-info">
-              <p class="large">Solving product design exercises</p>
-              <p class="regular">By Artiom Dashinsky</p>
-            </div>
-            <p class="small">171 pages</p>
-          </div>
-        </a>
-        <a class="card-reading"
-          href="https://www.amazon.com/Mental-Models-Exceptional-Decision-Making-Problem-Solving/dp/1093915684"
-          target="_blank">
-          <div class="card-reading__image">
-            <img src="assets/images/readings/mental models.png" alt="book_image">
-          </div>
-          <div class="card-reading__body">
-            <div class="card-reading__body-info">
-              <p class="large">Mental models</p>
-              <p class="regular">By Peter Hollins</p>
-            </div>
-            <p class="small">257 pages</p>
-          </div>
-        </a>
-        <a class="card-reading"
-          href=https://www.amazon.com/Making-Manager-What-Everyone-Looks/dp/0735219567/ref=sr_1_1?crid=21USMGJVJC6RT&dib=eyJ2IjoiMSJ9.QP3K-ZJj_mBsyUvNEPUdDfdEMwUe9RHqUykL9rsDhNoLDtP7mwhL1dO6g2hgxMdylWhgwGkk1Lci_MmmQs92yyfLorCztPJjFeGgdHwqXoV9UIol1o1bWNoy6sjNBKd1zHthR_PdR4YmOd_UbjKzCSbs-GAUflctJd9pfZE-e8DVEylHAbfwHsVd7Q9A4tON4IbpQFzah2-i8Pgd37i1dK1tNGcr4_EmnYcijeqaGIg.k-iW2jNVyC55jeWHQIbiWq1uPiGNGVL9OI9xGdimNF0&dib_tag=se&keywords=the+making+of+a+manager&qid=1716880227&s=books&sprefix=the+making+of+a+manager+%2Cstripbooks-intl-ship%2C153&sr=1-1
-          target="_blank">
-          <div class="card-reading__image">
-            <img src="assets/images/readings/the making of a manager.png" alt="book_image">
-          </div>
-          <div class="card-reading__body">
-            <div class="card-reading__body-info">
-              <p class="large">The making of a manager</p>
-              <p class="regular">By Julie Zhuo</p>
-            </div>
-            <p class="small">288 pages</p>
-          </div>
-        </a>
+        </div>
+        <div class="scroller" data-speed="fast">
+          <ul class="tagList scrollerInner">
+            <li><img src="assets/icons/toolstack/adobe-creative-suite.png" alt="scrollerIcon" class="scrollerIcon"></li>
+            <li><img src="assets/icons/toolstack/asana.png" alt="scrollerIcon" class="scrollerIcon"></li>
+            <li><img src="assets/icons/toolstack/axure.png" alt="scrollerIcon" class="scrollerIcon"></li>
+            <li><img src="assets/icons/toolstack/css.png" alt="scrollerIcon" class="scrollerIcon"></li>
+            <li><img src="assets/icons/toolstack/figma.png" alt="scrollerIcon" class="scrollerIcon"></li>
+            <li><img src="assets/icons/toolstack/framer.png" alt="scrollerIcon" class="scrollerIcon"></li>
+            <li><img src="assets/icons/toolstack/html.png" alt="scrollerIcon" class="scrollerIcon"></li>
+            <li><img src="assets/icons/toolstack/Jira.png" alt="scrollerIcon" class="scrollerIcon"></li>
+            <li><img src="assets/icons/toolstack/js.png" alt="scrollerIcon" class="scrollerIcon"></li>
+            <li><img src="assets/icons/toolstack/sketch.png" alt="scrollerIcon" class="scrollerIcon"></li>
+            <li><img src="assets/icons/toolstack/webflow.png" alt="scrollerIcon" class="scrollerIcon"></li>
+            <li><img src="assets/icons/toolstack/wordpress.png" alt="scrollerIcon" class="scrollerIcon"></li>
+            <li><img src="assets/icons/toolstack/adobe-creative-suite.png" alt="scrollerIcon" class="scrollerIcon"></li>
+            <li><img src="assets/icons/toolstack/asana.png" alt="scrollerIcon" class="scrollerIcon"></li>
+            <li><img src="assets/icons/toolstack/axure.png" alt="scrollerIcon" class="scrollerIcon"></li>
+            <li><img src="assets/icons/toolstack/css.png" alt="scrollerIcon" class="scrollerIcon"></li>
+            <li><img src="assets/icons/toolstack/figma.png" alt="scrollerIcon" class="scrollerIcon"></li>
+            <li><img src="assets/icons/toolstack/framer.png" alt="scrollerIcon" class="scrollerIcon"></li>
+            <li><img src="assets/icons/toolstack/html.png" alt="scrollerIcon" class="scrollerIcon"></li>
+            <li><img src="assets/icons/toolstack/Jira.png" alt="scrollerIcon" class="scrollerIcon"></li>
+            <li><img src="assets/icons/toolstack/js.png" alt="scrollerIcon" class="scrollerIcon"></li>
+            <li><img src="assets/icons/toolstack/sketch.png" alt="scrollerIcon" class="scrollerIcon"></li>
+            <li><img src="assets/icons/toolstack/webflow.png" alt="scrollerIcon" class="scrollerIcon"></li>
+            <li><img src="assets/icons/toolstack/wordpress.png" alt="scrollerIcon" class="scrollerIcon"></li>
+          </ul>
+        </div>
       </div>
-    </section>
 
-    <!-- [progress-button] -->
-    <div id="progress-button">
-      <span id="progress-value">
+      <!-- [skills] -->
+      <div class="frameFlexColumnLarge">
+        <div class="sectionHeader">
+          <div class="frameFlexAuto">
+            <h3 data-key="indexSectionHeader3"></h3>
+          </div>
+          <div class="sectionHeaderText">
+            <p class="regular" data-key="indexSectionHeaderText3"></p>
+          </div>
+        </div>
+        <div class="frameFlexMedium gridFour">
+          <div class="cardTextICon"><i class="fa-solid fa-magnifying-glass"></i>
+            <p class="regular" data-key="cardTextIcon1"></p>
+          </div>
+          <div class="cardTextICon"><i class="fa-solid fa-user"></i>
+            <p class="regular" data-key="cardTextIcon2"></p>
+          </div>
+          <div class="cardTextICon"><i class="fa-solid fa-pen-nib"></i>
+            <p class="regular" data-key="cardTextIcon3"></p>
+          </div>
+          <div class="cardTextICon"><i class="fa-solid fa-crop-simple"></i>
+            <p class="regular" data-key="cardTextIcon4"></p>
+          </div>
+          <div class="cardTextICon"><i class="fa-solid fa-pen-to-square"></i>
+            <p class="regular" data-key="cardTextIcon5"></p>
+          </div>
+          <div class="cardTextICon"><i class="fa-solid fa-brain"></i>
+            <p class="regular" data-key="cardTextIcon6"></p>
+          </div>
+          <div class="cardTextICon"><i class="fa-solid fa-comments"></i>
+            <p class="regular" data-key="cardTextIcon7"></p>
+          </div>
+          <div class="cardTextICon"><i class="fa-solid fa-pen-ruler"></i>
+            <p class="regular" data-key="cardTextIcon8"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- [testimonial] -->
+      <div class="frameFlexColumnLarge">
+        <div class="sectionHeader">
+          <div class="frameFlexAuto">
+            <h3 data-key="indexSectionHeader4"></h3>
+          </div>
+          <div class="sectionHeaderText">
+            <p class="regular" data-key="indexSectionHeaderText4"></p>
+          </div>
+        </div>
+        <div class="frameFlexMedium gridThree">
+          <div class="cardTestimonial">
+            <img src="assets/images/personas/imageDiego.png" alt="testimonialImage">
+            <div class="frameFlexColumnMedium">
+              <div class="frameFlexColumnTiny">
+                <p class="large">Diego Villaroel</p>
+                <p class="regular" data-key="cardTestimonial1Position"></p>
+                <a href="https://www.rappi.com/" class="link">
+                  <p class="small">Rappi</p>
+                </a>
+              </div>
+              <p class="regular" data-key="cardTestimonial1Description"></p>
+              <a href="https://www.linkedin.com/in/diego-villarroel-zaballos/" class="buttonIcon"><i
+                  class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="cardTestimonial">
+            <img src="assets/images/personas/imageMarc.png" alt="testimonialImage">
+            <div class="frameFlexColumnMedium">
+              <div class="frameFlexColumnTiny">
+                <p class="large">Marc Bernardo</p>
+                <p class="regular" data-key="cardTestimonial2Position"></p>
+                <a href="https://www.bmat.com/" class="link">
+                  <p class="small">BMAT</p>
+                </a>
+              </div>
+              <p class="regular" data-key="cardTestimonial2Description"></p>
+              <a href="https://www.linkedin.com/in/marc-bernardo-838757174/" class="buttonIcon"><i
+                  class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="cardTestimonial">
+            <img src="assets/images/personas/imageRuben.png" alt="testimonialImage">
+            <div class="frameFlexColumnMedium">
+              <div class="frameFlexColumnTiny">
+                <p class="large">Rubén Hinarejos</p>
+                <p class="regular" data-key="cardTestimonial3Position"></p>
+                <a href="https://senzostudio.com/" class="link">
+                  <p class="small">Senzo studio</p>
+                </a>
+              </div>
+              <p class="regular" data-key="cardTestimonial3Description"></p>
+              <a href="https://www.linkedin.com/in/rub%C3%A9n-hinarejos-guerra-b2365910b/" class="buttonIcon"><i
+                  class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="cardTestimonial">
+            <img src="assets/images/personas/imageAlvaro.png" alt="testimonialImage">
+            <div class="frameFlexColumnMedium">
+              <div class="frameFlexColumnTiny">
+                <p class="large">Álvaro Torrijos</p>
+                <p class="regular" data-key="cardTestimonial4Position"></p>
+                <a href="https://www.prosegur.es/empresas/externalizacion/sisnet-360" class="link">
+                  <p class="small">SISnet 360</p>
+                </a>
+              </div>
+              <p class="regular" data-key="cardTestimonial4Description"></p>
+              <a href="https://www.linkedin.com/in/%C3%A1lvaro-torrijos-herrera/" class="buttonIcon"><i
+                  class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="cardTestimonial">
+            <img src="assets/images/personas/imageLluis.png" alt="testimonialImage">
+            <div class="frameFlexColumnMedium">
+              <div class="frameFlexColumnTiny">
+                <p class="large">Lluís Fortuny</p>
+                <p class="regular" data-key="cardTestimonial5Position"></p>
+                <a href="https://zitrogames.com/" class="link">
+                  <p class="small">Zitro games</p>
+                </a>
+              </div>
+              <p class="regular" data-key="cardTestimonial5Description"></p>
+              <a href="https://www.linkedin.com/in/llu%C3%ADs-fortuny-marin-a76999186/" class="buttonIcon"><i
+                  class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- [readings] -->
+      <div id="stepSection" class="frameFlexColumnLarge">
+        <div class="sectionHeader">
+          <div class="frameFlexAuto">
+            <h3 data-key="indexSectionHeader5"></h3>
+            <a class="buttonTerciary">
+              <p class="regular" data-key="indexSectionHeaderButton"></p>
+            </a>
+          </div>
+          <div class="sectionHeaderText">
+            <p class="regular" data-key="indexSectionHeaderText5"></p>
+          </div>
+        </div>
+        <div class="frameFlexMedium gridThree">
+          <a class="cardReading"
+            href="https://www.amazon.com/Path-Senior-Product-Designer-Actionable/dp/B0CG83BYWM/ref=sr_1_1?crid=S9LNIO6S7JKZ&dib=eyJ2IjoiMSJ9.MXfXWZ4fc5_xnGP4J8_f72CDcIOtmK0-SNRBKADaqf_wt2luEwkqfH6gwwIYSsDKVUpnidlBhJA5oFQXKzkP4ip7xKn3k9wdxMjQ_rln59FzQxLO1Mm9KmEdz3-Xq9tdTdei2eCqJWjb04mzeIzkLg.pXSYYQkwcMGYJmZdUACQVhD4Pc-mheDTB2nTBPs1XkU&dib_tag=se&keywords=the+path+to+senior+product+designer&qid=1722622335&sprefix=the+path+to+senior%2Caps%2C183&sr=8-1"
+            target="_blank">
+            <div class="cardReadingImageContainer">
+              <img class="cardReadingImage" src="assets/images/readings/thePathToSeniorProductDesigner.png"
+                alt="readingImage">
+            </div>
+            <div class="frameFlexColumnMedium">
+              <div class="frameFlexColumnTiny">
+                <p class="large" data-key="cardReading1Title"></p>
+                <p class="regular" data-key="cardReading1Author"></p>
+              </div>
+              <p class="small" data-key="cardReading1Pages"></p>
+            </div>
+          </a>
+          <a class="cardReading"
+            href="https://www.amazon.com/Solving-Product-Design-Exercises-Questions/dp/1977000428/ref=sr_1_1?crid=3SK3HHHBOH3GA&dib=eyJ2IjoiMSJ9.sCDc9lhuH7VFsTrhMscAR3pYb8-hd2gYoYUzsdx2DkRib9hTBWkJ_YFJWx8qc43mzNnx4ZQ_S4HFy7Iznnj70aZ_LjtG4jm0Mc9QQTxKyHivSlErCgNv51nFKXZuTpKcmXGjWhT3M1hCVkyuIuS3s8jV95OpDmJ2pfqDEo_qRoOvL34QStvJsrra57LKl5_OACKXKAGR2vN2QaR6H8bbLkW6I_rUpFIxet6o_vGI_eU.VVaYZlSX8_qr_0XjxbOHtPdfJhk3LZdcpnJRuiWknO8&dib_tag=se&keywords=solving+product+design+exercises&qid=1722622373&sprefix=solbing+pr%2Caps%2C174&sr=8-1"
+            target="_blank">
+            <div class="cardReadingImageContainer">
+              <img class="cardReadingImage" src="assets/images/readings/solvingProductDesignExercises.png"
+                alt="readingImage">
+            </div>
+            <div class="frameFlexColumnMedium">
+              <div class="frameFlexColumnTiny">
+                <p class="large" data-key="cardReading2Title"></p>
+                <p class="regular" data-key="cardReading2Author"></p>
+              </div>
+              <p class="small" data-key="cardReading2Pages"></p>
+            </div>
+          </a>
+          <a class="cardReading"
+            href="https://www.amazon.com/Modelos-mentales-pensamiento-sobresalir-perfeccionar-ebook/dp/B096QKGB7B/ref=sr_1_1?crid=34PR8FLMWKCQL&dib=eyJ2IjoiMSJ9.DLL2PRNPebCaH9kBxRUc-HpBMgzpHQv8dghhrA14YwQ6GDysPWAj_VbvSiKHEjF5j4Cv7lf7V2XIu6nAWpx1AKrYROfrjNrIW_WBC1PPZO31I380nt1eSMw6Hb-n7eeNCFwJhjLrDLMPyFmR-w4AOt295qH3Y2dotx_8BYXkUCRLJGnU8YwyasrahwKqz6mg8hccfpnJV_n0vM3Le7nNhIyzW6bFe4YPYjJ4Rlkt87U.q71GV5bRCoBdygwWNsJ5m-KKRnYMSn19IBiPEDUCgjE&dib_tag=se&keywords=modelos+mentales&qid=1722622426&sprefix=modelos+mentale%2Caps%2C172&sr=8-1"
+            target="_blank">
+            <div class="cardReadingImageContainer">
+              <img class="cardReadingImage" src="assets/images/readings/mentalModels.png" alt="readingImage">
+            </div>
+            <div class="frameFlexColumnMedium">
+              <div class="frameFlexColumnTiny">
+                <p class="large" data-key="cardReading3Title"></p>
+                <p class="regular" data-key="cardReading3Author"></p>
+              </div>
+              <p class="small" data-key="cardReading3Pages"></p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- [progressButton] -->
+    <div id="progressButton">
+      <span id="progressValue">
         <i class="fa-solid fa-chevron-up"></i>
       </span>
     </div>
+
+
+    <!-- [footer] -->
+    <footer>
+      <div class="footerFrame">
+        <div class="buttonSecondary">
+          <p class="regular" data-key="footerButton1"></p>
+        </div>
+        <div class="buttonPrimary">
+          <p class="regular" data-key="footerButton2"></p>
+        </div>
+      </div>
+      <div class="footerFrame">
+        <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon" target="_blank"><i
+            class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
+            class="fa-solid fa-envelope"></i></a>
+      </div>
+      <div class="footerFrame">
+        <p class="small">Diseñando 2024</p>
+        <a href="index.html" alt="logoAlejandro" id="logoLink">
+          <svg class="logo" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M11.0044 29.7125L23.0381 6.83789H24.6898L45.3122 42.6954H35.4965L24.9257 24.5289H23.274L21.3392 29.7125H11.0044ZM8.07878 34.6109H24.5012L29.6451 42.8381H3.3125L8.07878 34.6109Z" />
+          </svg>
+        </a>
+        <div class="frameFlexMedium">
+          <i class="fa-solid fa-copyright"></i>
+          <p class="small">Alejandro Moreno</p>
+          <p class="small">3.0</p>
+        </div>
+      </div>
+    </footer>
+
   </main>
-
-  <!-- [footer] -->
-  <footer>
-
-    <nav class="desktop-footer">
-      <div class="desktop-footer__frame">
-        <p class="regular">Designing - 2024</p>
-      </div>
-
-      <div class="desktop-footer__frame desktop-footer__social">
-        <a class="button-social whatsapp" href="https://wa.me/34618110583" target="_blank">
-          <i class="fa-brands fa-whatsapp"></i>
-        </a>
-        <a class="button-social" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a class="button-social" href="mailto:alejandromorenomartin1990@gmail.com" target="_blank">
-          <i class="fa-solid fa-envelope"></i>
-        </a>
-      </div>
-
-      <div class="desktop-footer__frame">
-        <p class="regular">&copy; Alejandro Moreno</p>
-      </div>
-    </nav>
-
-    <div class="mobile-footer">
-      <div class="mobile-footer__header">
-        <a class="logo" href="index.html"><img src="/assets/icons/logo.png" alt="logo-alejandro">
-          <div class="logo__name">
-            <p class="large">Alejandro</p>
-            <p class="small">2.0</p>
-          </div>
-        </a>
-        <div class="mobile-footer__frame mobile-footer__social">
-          <a class="button-social whatsapp" href="https://wa.me/34618110583" target="_blank">
-            <i class="fa-brands fa-whatsapp"></i>
-          </a>
-          <a class="button-social" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a class="button-social" href="mailto:alejandromorenomartin1990@gmail.com" target="_blank">
-            <i class="fa-solid fa-envelope"></i>
-          </a>
-        </div>
-      </div>
-      <div class="mobile-footer__footer">
-        <div class="mobile-footer__footer-frame">
-          <p class="regular">Designing - 2024</p>
-        </div>
-        <div class="mobile-footer__footer-frame">
-          <p class="regular">&copy; Alejandro Moreno</p>
-        </div>
-      </div>
-    </div>
-
-  </footer>
 
   <script src="/assets/js/main.js"></script>
   <script src="https://kit.fontawesome.com/35d35eeb85.js" crossorigin="anonymous"></script>

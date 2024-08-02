@@ -8,11 +8,12 @@ body {
 }
 
 h1 {
+  font-family: var(--font-family-2);
   font-size: var(--fs-h1);
   line-height: var(--lh-h1);
   font-weight: 900;
   letter-spacing: 0;
-  color: var(--primary-500);
+  color: var(--primary-400);
 }
 
 h2 {
@@ -28,7 +29,7 @@ h3 {
   line-height: var(--lh-h3);
   font-weight: 700;
   letter-spacing: 0;
-  color: var(--white);
+  color: var(--white);  
 }
 
 h4 {
@@ -61,12 +62,9 @@ caption {
   line-height: var(--lh-regular);
   font-weight: 400;
   letter-spacing: 0.05rem;
+  color: var(--neutral-200);
 }
 
-.highlight {
-  font-weight: 800;
-  color: var(--primary-500);
-}
 
 .small {
   font-size: var(--fs-small);

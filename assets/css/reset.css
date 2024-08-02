@@ -2,7 +2,9 @@
 
 /* Reseteamos los margin y paddings de todas las etiquetas */
 
-* , *::before , *::after{
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   border: 0;
@@ -10,20 +12,27 @@
   vertical-align: baseline;
 }
 
-*::before , *::after{
+*::before,
+*::after {
   display: block;
 }
 
 /* Evitamos problemas con las imagenes */
 
-img , picture , video , iframe , figure{
-  max-width: 100%;  
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
   display: block;
   width: 100%;
   height: auto;
-  /* (Opcional) */ object-fit: cover;        
-  /* (Opcional) */ object-position: center center;
-  border-radius: var(--br-4); 
+  /* (Opcional) */
+  object-fit: cover;
+  /* (Opcional) */
+  object-position: center center;
+  border-radius: var(--br-4);
 }
 
 /* Reseteamos los enlaces para funcionar como cajas... */
@@ -31,8 +40,8 @@ img , picture , video , iframe , figure{
 a {
   display: block;
   text-decoration: none;
-  color:inherit;
-  font-size:inherit;
+  color: inherit;
+  font-size: inherit;
 }
 
 /* ... excepto los que se encuentran en párrafos */
@@ -55,9 +64,12 @@ html {
 
 /* Evitamos problemas con los pseudoelementos de quotes */
 
-blockquote:before, blockquote:after, q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
 
 /* (Opcional) Configuramos el texto que seleccionamos */
@@ -69,14 +81,18 @@ blockquote:before, blockquote:after, q:before, q:after {
 
 /* Nivelamos problemas de tipografías y colocación de formularios */
 
-form , textarea, select , button , label{
-    font-family: inherit;
-    font-size: inherit;
-    hyphens: auto;
-    background-color: transparent;
-    color:inherit;
-    display: block;
-    /* (Opcional) */ 
+form,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  /* (Opcional) */
 }
 
 /* Reseteamos las tablas */
@@ -87,20 +103,27 @@ form , textarea, select , button , label{
 
 /* Evitamos problemas con los SVG */
 
-svg{
-    width: 100%;
-    display: block;
-    fill: currentColor;
+svg {
+  display: block;
+  fill: currentColor;
+}
+
+span {
+  display: flex;
+  align-items: center;
 }
 
 /* Configuramos la tipografía para toda la web */
 
 body {
-  min-height  : 100vh;
-  font-size   : 100%;  
-  /* (Opcional) */ hyphens: auto;
-  /* (Opcional) */ font-smooth: always;
-  /* (Opcional) */ -webkit-font-smoothing: antialiased;
-  /* (Opcional) */ -moz-osx-font-smoothing: grayscale;  
+  min-height: 100vh;
+  font-size: 100%;
+  /* (Opcional) */
+  hyphens: auto;
+  /* (Opcional) */
+  font-smooth: always;
+  /* (Opcional) */
+  -webkit-font-smoothing: antialiased;
+  /* (Opcional) */
+  -moz-osx-font-smoothing: grayscale;
 }
-

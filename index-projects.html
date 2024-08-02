@@ -26,7 +26,7 @@
 
 <body>
 
-  <!-- [navbar] -->
+  <!-- [navBar] -->
   <header>
     <nav>
       <ul class="sidebar">
@@ -40,34 +40,34 @@
           <li onclick=hideSidebar()><a href=""><i class="fa-solid fa-xmark"></i></a></li>
         </ul>
         <ul class="sidebar__navigation">
-          <li class="navbar__item">
-            <a href="index.html" class="navbar__link regular active">Home</a>
+          <li class="navBar__item">
+            <a href="index.html" class="navBar__link regular ">Home</a>
           </li>
-          <li class="navbar__item">
-            <a href="pages/resume-experience.html" class="navbar__link regular">Resume</a>
+          <li class="navBar__item">
+            <a href="pages/resume-experience.html" class="navBar__link regular">Resume</a>
           </li>
-          <li class="navbar__item">
-            <a href="pages/blog.html" class="navbar__link regular">Blog</a>
+          <li class="navBar__item">
+            <a href="pages/blog.html" class="navBar__link regular">Blog</a>
           </li>
         </ul>
-        <li class="language__selector">          
-          <a href="index-projects.html" class=" language__selector-link-active">
+        <li class="language__selector">
+          <a href="index.html" class=" language__selector-link-active">
             <p class="regular">EN</p>
           </a>
           <div class="language__selector-divider"></div>
-          <a href="index-projects-es.html" class="language__selector-link">
+          <a href="index-es.html" class="language__selector-link">
             <p class="regular">ES</p>
           </a>
         </li>
         <ul class="sidebar-footer">
           <li class="sidebar-footer__social">
-            <a class="button-social whatsapp" href="https://wa.me/34618110583" target="_blank">
+            <a class="buttonSocial whatsapp" href="https://wa.me/34618110583" target="_blank">
               <i class="fa-brands fa-whatsapp"></i>
             </a>
-            <a class="button-social" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
+            <a class="buttonSocial" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
               <i class="fa-brands fa-linkedin"></i>
             </a>
-            <a class="button-social" href="mailto:alejandromorenomartin1990@gmail.com" target="_blank">
+            <a class="buttonSocial" href="mailto:alejandromorenomartin1990@gmail.com" target="_blank">
               <i class="fa-solid fa-envelope"></i>
             </a>
           </li>
@@ -81,44 +81,40 @@
 
       </ul>
 
-      <ul class="navbar">
-        <li><a class="logo" href="index.html"><img src="/assets/icons/logo.png" alt="logo-alejandro">
-            <div class="logo__name">
-              <p class="large">Alejandro</p>
-              <p class="small">2.0</p>
-            </div>
-          </a></li>
-        <ul class="hideOnMobile navbar__navigation">
-          <li class="navbar__item">
-            <a href="index.html" class="navbar__link regular active">Home</a>
-          </li>
-          <li class="navbar__item">
-            <a href="pages/resume-experience.html" class="navbar__link regular">Resume</a>
-          </li>
-          <li class="navbar__item">
-            <a href="pages/blog.html" class="navbar__link regular">Blog</a>
-          </li>
-        </ul>
-        <li class="language__selector">          
-          <a href="index-projects.html" class=" language__selector-link-active hideOnMobile">
-            <p class="regular hideOnMobile">EN</p>
-          </a>
-          <div class="language__selector-divider hideOnMobile"></div>
-          <a href="index-projects-es.html" class="language__selector-link hideOnMobile">
-            <p class="regular hideOnMobile">ES</p>
-          </a>
+      <ul class="navBar">
+        <li class="navBarFrame"><a class="navBarLogo" href="index.html"><img src="/assets/icons/logo.png"
+              alt="logo-alejandro"></li>
+        <li class="navBarFrame">
+          <ul class="hideOnMobile navBarNavigation">
+            <li class="navBarFrameLink"><a href="">
+                <p class="regular">Home</p>
+              </a></li>
+            <li class="navBarFrameLink"><a href="">
+                <p class="regular">Resume</p>
+              </a></li>
+            <li class="navBarFrameLink"><a href="">
+                <p class="regular">About</p>
+              </a></li>
+            <li class="navBarFrameLink"><a href="">
+                <p class="regular">Blog</p>
+              </a></li>
+          </ul>
         </li>
+        <li class="navBarFrame hideOnMobile">
+          <input id="switchLanguage" type="checkbox">
+        </li>
+
         <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- [main-2] -->
-  <main class="main-2">
+  <!-- [main] -->
+  <main class="main">
 
     <!-- [main-2__header] -->
     <div class="main-2__header">
-      <h2>Projects</h2>
+      <h3>Projects</h3>
     </div>
 
     <!-- [main-section__projects] -->
@@ -215,23 +211,25 @@
   <!-- [footer] -->
   <footer>
 
-    <nav class="desktop-footer">      
-      <div class="desktop-footer__frame">
+    <nav class="desktopFooter">
+      <div class="footerFrame">
         <p class="regular">Designing - 2024</p>
       </div>
-      <div class="desktop-footer__frame desktop-footer__social">
-        <a class="button-social whatsapp" href="https://wa.me/34618110583" target="_blank">
+
+      <div class="footerFrame">
+        <a class="buttonSocial" href="https://wa.me/34618110583" target="_blank">
           <i class="fa-brands fa-whatsapp"></i>
         </a>
-        <a class="button-social" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
+        <a class="buttonSocial" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
           <i class="fa-brands fa-linkedin"></i>
         </a>
-        <a class="button-social" href="mailto:alejandromorenomartin1990@gmail.com" target="_blank">
+        <a class="buttonSocial" href="mailto:alejandromorenomartin1990@gmail.com" target="_blank">
           <i class="fa-solid fa-envelope"></i>
         </a>
       </div>
-      <div class="desktop-footer__frame">
-        <p class="small">&copy; Alejandro Moreno</p>
+
+      <div class="footerFrame">
+        <p class="regular">&copy; Alejandro Moreno</p>
       </div>
     </nav>
 
@@ -244,13 +242,13 @@
           </div>
         </a>
         <div class="mobile-footer__frame mobile-footer__social">
-          <a class="button-social whatsapp" href="https://wa.me/34618110583" target="_blank">
+          <a class="buttonSocial whatsapp" href="https://wa.me/34618110583" target="_blank">
             <i class="fa-brands fa-whatsapp"></i>
           </a>
-          <a class="button-social" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
+          <a class="buttonSocial" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank">
             <i class="fa-brands fa-linkedin"></i>
           </a>
-          <a class="button-social" href="mailto:alejandromorenomartin1990@gmail.com" target="_blank">
+          <a class="buttonSocial" href="mailto:alejandromorenomartin1990@gmail.com" target="_blank">
             <i class="fa-solid fa-envelope"></i>
           </a>
         </div>
