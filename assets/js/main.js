@@ -1,78 +1,64 @@
 /* ----- SWITCHLANGUAGE ----- */
 
 document.addEventListener('DOMContentLoaded', () => {
-
-  const switchLanguage = document.getElementById('switchLanguage');
-
-  if (!switchLanguage) {
-    console.error('Element with id "switchLanguage" not found');
-  } else {
-    // Function to load JSON file
-    const loadLanguage = async (language) => {
-      try {
-        const response = await fetch(`language/${language}.json`);
-        if (!response.ok) {
-          throw new Error(`Could not load ${language} language file`);
-        }
-        const data = await response.json();
-        console.log(`Loaded ${language} language file`, data); // Debugging line
-        applyLanguage(data);
-      } catch (error) {
-        console.error('Error loading language file:', error);
+  // Función para cargar el archivo JSON de idioma
+  const loadLanguage = async (language) => {
+    try {
+      const response = await fetch(`language/${language}.json`);
+      if (!response.ok) {
+        throw new Error(`Could not load ${language} language file`);
       }
-    };
+      const data = await response.json();
+      console.log(`Loaded ${language} language file`, data); // Debugging line
+      applyLanguage(data);
+    } catch (error) {
+      console.error('Error loading language file:', error);
+    }
+  };
 
-    // Function to apply the language to the HTML
-    const applyLanguage = (languageData) => {
-      document.querySelectorAll('[data-key]').forEach(element => {
-        const key = element.getAttribute('data-key');
-        if (languageData[key]) {
-          element.textContent = languageData[key];
-          console.log(`Updated ${key} to ${languageData[key]}`); // Debugging line
-        } else {
-          console.warn(`Key "${key}" not found in language data`); // Debugging line
-        }
-      });
-    };
-
-    // Load default language (English)
-    loadLanguage('en');
-
-    // Add event listener to switch language based on checkbox state
-    switchLanguage.addEventListener('change', (event) => {
-      if (event.target.checked) {
-        loadLanguage('es'); // Load Spanish
+  // Función para aplicar el idioma al HTML
+  const applyLanguage = (languageData) => {
+    document.querySelectorAll('[data-key]').forEach(element => {
+      const key = element.getAttribute('data-key');
+      if (languageData[key]) {
+        element.textContent = languageData[key];
+        console.log(`Updated ${key} to ${languageData[key]}`); // Debugging line
       } else {
-        loadLanguage('en'); // Load English
+        console.warn(`Key "${key}" not found in language data`); // Debugging line
       }
     });
-  }
+  };
 
-  /* ----- SWITCHTHEME ----- */
+  // Cargar el idioma por defecto (inglés)
+  loadLanguage('en');
 
-  const switchTheme = document.getElementById('switchTheme');
+  // Añadir evento a todos los switchers de idioma
+  document.querySelectorAll('.languageSwitcher').forEach((switcher) => {
+    switcher.addEventListener('change', (event) => {
+      const newLanguage = event.target.checked ? 'es' : 'en';
+      loadLanguage(newLanguage);
+    });
+  });
 
-  if (!switchTheme) {
-    console.error('Element with id "switchTheme" not found');
-  } else {
-    // Function to apply the theme to the HTML
-    const applyTheme = (theme) => {
-      document.documentElement.setAttribute('data-theme', theme);
-      console.log(`Applied ${theme} theme`); // Debugging line
-    };
+  // Función para aplicar el tema al HTML
+  const applyTheme = (theme) => {
+    document.documentElement.setAttribute('data-theme', theme);
+    console.log(`Applied ${theme} theme`); // Debugging line
+  };
 
-    // Load theme from localStorage or default to 'dark'
-    const savedTheme = localStorage.getItem('theme') || 'dark';
-    applyTheme(savedTheme);
-    switchTheme.checked = savedTheme === 'dark';
+  // Cargar el tema desde localStorage o usar 'dark' por defecto
+  const savedTheme = localStorage.getItem('theme') || 'dark';
+  applyTheme(savedTheme);
 
-    // Add event listener to switch theme based on checkbox state
-    switchTheme.addEventListener('change', (event) => {
+  // Añadir evento a todos los switchers de tema
+  document.querySelectorAll('.themeSwitcher').forEach((switcher) => {
+    switcher.checked = savedTheme === 'dark';
+    switcher.addEventListener('change', (event) => {
       const newTheme = event.target.checked ? 'dark' : 'light';
       applyTheme(newTheme);
-      localStorage.setItem('theme', newTheme); // Save theme to localStorage
+      localStorage.setItem('theme', newTheme); // Guardar el tema en localStorage
     });
-  }
+  });
 });
 
 /* ----- GREETINGS ----- */
@@ -168,11 +154,14 @@ document.addEventListener('DOMContentLoaded', async () => {
   await updateGreeting();
 });
 
-// Maneja el cambio de idioma con el switcher
-document.getElementById('switchLanguage').addEventListener('change', (event) => {
-  const newLang = event.target.checked ? 'es' : 'en'; // Ajusta según tu lógica de idiomas
-  changeLanguage(newLang);
+// Maneja el cambio de idioma con los switchers
+document.querySelectorAll('.languageSwitcher').forEach((switcher) => {
+  switcher.addEventListener('change', (event) => {
+    const newLang = event.target.checked ? 'es' : 'en'; // Ajusta según tu lógica de idiomas
+    changeLanguage(newLang);
+  });
 });
+
 
 
 
@@ -199,15 +188,15 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-/* ----- Menu Sidebar ----- */
+/* ----- SIDEBARMENU ----- */
 
 function showSidebar() {
-  const sidebar = document.querySelector('.sidebar')
+  const sidebar = document.querySelector('.sideBar')
   sidebar.style.display = 'flex'
 }
 
 function hideSidebar() {
-  const sidebar = document.querySelector('.sidebar')
+  const sidebar = document.querySelector('.sideBar')
   sidebar.style.display = 'none'
 }
 

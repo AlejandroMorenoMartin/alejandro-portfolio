@@ -32,13 +32,77 @@
     <!-- [navBar] -->
     <header>
       <nav>
+        <ul class="sideBar">
+          <div class="sideBarHeader">
+            <a href="index.html" alt="logoAlejandro" id="logoLink">
+              <svg class="logo" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M11.0044 29.7125L23.0381 6.83789H24.6898L45.3122 42.6954H35.4965L24.9257 24.5289H23.274L21.3392 29.7125H11.0044ZM8.07878 34.6109H24.5012L29.6451 42.8381H3.3125L8.07878 34.6109Z" />
+              </svg></a>
+            <i class="fa-solid fa-xmark iconLarge" onclick=hideSidebar()></i>
+          </div>
+          <div class="sideBarBody">
+            <div class="frameFlexColumnSmall">
+              <img class="mainHeroImage" src="assets/images/mainHeroImage.png" alt="alejandroMoreno">
+              <div class="frameFlexColumnTiny">
+                <p class="large">Alejandro Moreno</p>
+                <p class="regular">Product designer</p>
+              </div>
+              <div class="frameFlexMedium">
+                <a href="https://wa.me/34618110583" class="buttonIcon iconDefault" target="_blank"><i
+                    class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon iconDefault"
+                  target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/kakomoma" class="buttonIcon iconDefault" target="_blank"><i
+                    class="fa-brands fa-github"></i></a>
+                <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon iconDefault" target="_blank"><i
+                    class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+            <div class="frameFlexColumnLarge">
+              <div class="sideBarFrameLink">
+                <i class="fa-solid fa-house iconDefault"></i>
+                <p class="regular">Inicio</p>
+              </div>
+              <div class="sideBarFrameLink">
+                <i class="fa-solid fa-file iconDefault"></i>
+                <p class="regular">Currículum</p>
+              </div>
+              <div class="sideBarFrameLink">
+                <i class="fa-solid fa-circle-info iconDefault"></i>
+                <p class="regular">Sobre mí</p>
+              </div>
+              <div class="sideBarFrameLink">
+                <i class="fa-solid fa-book iconDefault"></i>
+                <p class="regular">Blog</p>
+              </div>
+            </div>
+            <div class="frameFlexColumnMedium">
+              <div class="frameFlexMedium switcherContainer">
+                <input class="switcher languageSwitcher" type="checkbox">
+                <input class="switcher themeSwitcher" type="checkbox">
+              </div>
+            </div>
+            <div class="frameFlexAuto">
+              <p class="small">Diseñando 2024</p>
+              <div class="frameFlexSmall">
+                <i class="fa-solid fa-copyright iconDefault"></i>
+                <p class="small">Alejandro Moreno</p>
+                <p class="small">3.0</p>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </nav>
+
+      <nav>
         <ul class="navBar">
           <li class="navBarFrame"><a href="index.html" alt="logoAlejandro" id="logoLink">
               <svg class="logo" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M11.0044 29.7125L23.0381 6.83789H24.6898L45.3122 42.6954H35.4965L24.9257 24.5289H23.274L21.3392 29.7125H11.0044ZM8.07878 34.6109H24.5012L29.6451 42.8381H3.3125L8.07878 34.6109Z" />
-              </svg>
-            </a></li>
+              </svg></a>
+          </li>
           <li class="navBarFrame">
             <ul class=" navBarNavigation">
               <li class="navBarFrameLink active"><a href="#">
@@ -57,14 +121,12 @@
           </li>
           <li class="navBarFrame">
             <div class="frameFlexMedium switcherContainer">
-
-              <input class="switcher languageSwitcher" id="switchLanguage" type="checkbox">
-
-              <input class="switcher themeSwitcher" id="switchTheme" type="checkbox">
-
+              <input class="switcher languageSwitcher" type="checkbox">
+              <input class="switcher themeSwitcher" type="checkbox">
             </div>
+
           </li>
-          <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+          <li class="menuButton iconLarge" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
         </ul>
       </nav>
     </header>
@@ -72,28 +134,17 @@
     <div class="mainSections">
 
       <!-- [hero] -->
-      <div class="frameFlexMedium mainHero">
-        <hgroup class="svgAnimation">
-          <svg width="360" height="360" viewBox="0 0 360 360">
-            <defs>
-              <clipPath id="circleClip">
-                <circle cx="180" cy="180" r="180" />
-              </clipPath>
-            </defs>
-            <image href="assets/images/mainHeroImage.png" width="360" height="360" clip-path="url(#circleClip)" />
-            <circle cx="180" cy="180" r="180" />
-          </svg>
-        </hgroup>
-
+      <div class="frameFlexLarge mainHero">
+        <img class="mainHeroImage" src="assets/images/mainHeroImage.png" alt="alejandroMoreno">
         <div class="frameFlexColumnLarge">
           <div class="frameFlexMedium">
-            <img id="greetingsIcon" class="greetingsIcon" alt="greetingIcon">
+            <img id="greetingsIcon" class="greetingsIcon imageDefault" alt="greetingIcon">
             <div class="frameFlexColumnTiny">
               <p class="small" id="currentTime"></p>
               <p class="regular" id="greetingsText"></p>
             </div>
           </div>
-          <div class="frameFlexColumnTiny">
+          <div class="frameFlexColumnSmall">
             <h1 data-key="mainHeroH1"></h1>
             <div class="tagPosition">
               <p data-key="mainHeroP1"></p>
@@ -189,30 +240,30 @@
         </div>
         <div class="scroller" data-speed="fast">
           <ul class="tagList scrollerInner">
-            <li><img src="assets/icons/toolstack/adobe-creative-suite.png" alt="scrollerIcon" class="scrollerIcon"></li>
-            <li><img src="assets/icons/toolstack/asana.png" alt="scrollerIcon" class="scrollerIcon"></li>
-            <li><img src="assets/icons/toolstack/axure.png" alt="scrollerIcon" class="scrollerIcon"></li>
-            <li><img src="assets/icons/toolstack/css.png" alt="scrollerIcon" class="scrollerIcon"></li>
-            <li><img src="assets/icons/toolstack/figma.png" alt="scrollerIcon" class="scrollerIcon"></li>
-            <li><img src="assets/icons/toolstack/framer.png" alt="scrollerIcon" class="scrollerIcon"></li>
-            <li><img src="assets/icons/toolstack/html.png" alt="scrollerIcon" class="scrollerIcon"></li>
-            <li><img src="assets/icons/toolstack/Jira.png" alt="scrollerIcon" class="scrollerIcon"></li>
-            <li><img src="assets/icons/toolstack/js.png" alt="scrollerIcon" class="scrollerIcon"></li>
-            <li><img src="assets/icons/toolstack/sketch.png" alt="scrollerIcon" class="scrollerIcon"></li>
-            <li><img src="assets/icons/toolstack/webflow.png" alt="scrollerIcon" class="scrollerIcon"></li>
-            <li><img src="assets/icons/toolstack/wordpress.png" alt="scrollerIcon" class="scrollerIcon"></li>
-            <li><img src="assets/icons/toolstack/adobe-creative-suite.png" alt="scrollerIcon" class="scrollerIcon"></li>
-            <li><img src="assets/icons/toolstack/asana.png" alt="scrollerIcon" class="scrollerIcon"></li>
-            <li><img src="assets/icons/toolstack/axure.png" alt="scrollerIcon" class="scrollerIcon"></li>
-            <li><img src="assets/icons/toolstack/css.png" alt="scrollerIcon" class="scrollerIcon"></li>
-            <li><img src="assets/icons/toolstack/figma.png" alt="scrollerIcon" class="scrollerIcon"></li>
-            <li><img src="assets/icons/toolstack/framer.png" alt="scrollerIcon" class="scrollerIcon"></li>
-            <li><img src="assets/icons/toolstack/html.png" alt="scrollerIcon" class="scrollerIcon"></li>
-            <li><img src="assets/icons/toolstack/Jira.png" alt="scrollerIcon" class="scrollerIcon"></li>
-            <li><img src="assets/icons/toolstack/js.png" alt="scrollerIcon" class="scrollerIcon"></li>
-            <li><img src="assets/icons/toolstack/sketch.png" alt="scrollerIcon" class="scrollerIcon"></li>
-            <li><img src="assets/icons/toolstack/webflow.png" alt="scrollerIcon" class="scrollerIcon"></li>
-            <li><img src="assets/icons/toolstack/wordpress.png" alt="scrollerIcon" class="scrollerIcon"></li>
+            <li><img src="assets/icons/toolstack/adobe-creative-suite.png" alt="scrollerIcon" class="imageDefault"></li>
+            <li><img src="assets/icons/toolstack/asana.png" alt="scrollerIcon" class="imageDefault"></li>
+            <li><img src="assets/icons/toolstack/axure.png" alt="scrollerIcon" class="imageDefault"></li>
+            <li><img src="assets/icons/toolstack/css.png" alt="scrollerIcon" class="imageDefault"></li>
+            <li><img src="assets/icons/toolstack/figma.png" alt="scrollerIcon" class="imageDefault"></li>
+            <li><img src="assets/icons/toolstack/framer.png" alt="scrollerIcon" class="imageDefault"></li>
+            <li><img src="assets/icons/toolstack/html.png" alt="scrollerIcon" class="imageDefault"></li>
+            <li><img src="assets/icons/toolstack/Jira.png" alt="scrollerIcon" class="imageDefault"></li>
+            <li><img src="assets/icons/toolstack/js.png" alt="scrollerIcon" class="imageDefault"></li>
+            <li><img src="assets/icons/toolstack/sketch.png" alt="scrollerIcon" class="imageDefault"></li>
+            <li><img src="assets/icons/toolstack/webflow.png" alt="scrollerIcon" class="imageDefault"></li>
+            <li><img src="assets/icons/toolstack/wordpress.png" alt="scrollerIcon" class="imageDefault"></li>
+            <li><img src="assets/icons/toolstack/adobe-creative-suite.png" alt="scrollerIcon" class="imageDefault"></li>
+            <li><img src="assets/icons/toolstack/asana.png" alt="scrollerIcon" class="imageDefault"></li>
+            <li><img src="assets/icons/toolstack/axure.png" alt="scrollerIcon" class="imageDefault"></li>
+            <li><img src="assets/icons/toolstack/css.png" alt="scrollerIcon" class="imageDefault"></li>
+            <li><img src="assets/icons/toolstack/figma.png" alt="scrollerIcon" class="imageDefault"></li>
+            <li><img src="assets/icons/toolstack/framer.png" alt="scrollerIcon" class="imageDefault"></li>
+            <li><img src="assets/icons/toolstack/html.png" alt="scrollerIcon" class="imageDefault"></li>
+            <li><img src="assets/icons/toolstack/Jira.png" alt="scrollerIcon" class="imageDefault"></li>
+            <li><img src="assets/icons/toolstack/js.png" alt="scrollerIcon" class="imageDefault"></li>
+            <li><img src="assets/icons/toolstack/sketch.png" alt="scrollerIcon" class="imageDefault"></li>
+            <li><img src="assets/icons/toolstack/webflow.png" alt="scrollerIcon" class="imageDefault"></li>
+            <li><img src="assets/icons/toolstack/wordpress.png" alt="scrollerIcon" class="imageDefault"></li>
           </ul>
         </div>
       </div>
@@ -227,7 +278,7 @@
             <p class="regular" data-key="indexSectionHeaderText3"></p>
           </div>
         </div>
-        <div class="frameFlexMedium gridFour">
+        <div class="gridFour">
           <div class="cardTextICon"><i class="fa-solid fa-magnifying-glass"></i>
             <p class="regular" data-key="cardTextIcon1"></p>
           </div>
@@ -267,7 +318,7 @@
         </div>
         <div class="frameFlexMedium gridThree">
           <div class="cardTestimonial">
-            <img src="assets/images/personas/imageDiego.png" alt="testimonialImage">
+            <img src="assets/images/personas/imageDiego.png" alt="testimonialImage" class="imageDefault">
             <div class="frameFlexColumnMedium">
               <div class="frameFlexColumnTiny">
                 <p class="large">Diego Villaroel</p>
@@ -277,12 +328,12 @@
                 </a>
               </div>
               <p class="regular" data-key="cardTestimonial1Description"></p>
-              <a href="https://www.linkedin.com/in/diego-villarroel-zaballos/" class="buttonIcon"><i
+              <a href="https://www.linkedin.com/in/diego-villarroel-zaballos/" class="buttonIcon iconDefault"><i
                   class="fa-brands fa-linkedin"></i></a>
             </div>
           </div>
           <div class="cardTestimonial">
-            <img src="assets/images/personas/imageMarc.png" alt="testimonialImage">
+            <img src="assets/images/personas/imageMarc.png" alt="testimonialImage" class="imageDefault">
             <div class="frameFlexColumnMedium">
               <div class="frameFlexColumnTiny">
                 <p class="large">Marc Bernardo</p>
@@ -292,12 +343,12 @@
                 </a>
               </div>
               <p class="regular" data-key="cardTestimonial2Description"></p>
-              <a href="https://www.linkedin.com/in/marc-bernardo-838757174/" class="buttonIcon"><i
+              <a href="https://www.linkedin.com/in/marc-bernardo-838757174/" class="buttonIcon iconDefault"><i
                   class="fa-brands fa-linkedin"></i></a>
             </div>
           </div>
           <div class="cardTestimonial">
-            <img src="assets/images/personas/imageRuben.png" alt="testimonialImage">
+            <img src="assets/images/personas/imageRuben.png" alt="testimonialImage" class="imageDefault">
             <div class="frameFlexColumnMedium">
               <div class="frameFlexColumnTiny">
                 <p class="large">Rubén Hinarejos</p>
@@ -307,12 +358,12 @@
                 </a>
               </div>
               <p class="regular" data-key="cardTestimonial3Description"></p>
-              <a href="https://www.linkedin.com/in/rub%C3%A9n-hinarejos-guerra-b2365910b/" class="buttonIcon"><i
-                  class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/rub%C3%A9n-hinarejos-guerra-b2365910b/"
+                class="buttonIcon iconDefault"><i class="fa-brands fa-linkedin"></i></a>
             </div>
           </div>
           <div class="cardTestimonial">
-            <img src="assets/images/personas/imageAlvaro.png" alt="testimonialImage">
+            <img src="assets/images/personas/imageAlvaro.png" alt="testimonialImage" class="imageDefault">
             <div class="frameFlexColumnMedium">
               <div class="frameFlexColumnTiny">
                 <p class="large">Álvaro Torrijos</p>
@@ -322,12 +373,12 @@
                 </a>
               </div>
               <p class="regular" data-key="cardTestimonial4Description"></p>
-              <a href="https://www.linkedin.com/in/%C3%A1lvaro-torrijos-herrera/" class="buttonIcon"><i
+              <a href="https://www.linkedin.com/in/%C3%A1lvaro-torrijos-herrera/" class="buttonIcon iconDefault"><i
                   class="fa-brands fa-linkedin"></i></a>
             </div>
           </div>
           <div class="cardTestimonial">
-            <img src="assets/images/personas/imageLluis.png" alt="testimonialImage">
+            <img src="assets/images/personas/imageLluis.png" alt="testimonialImage" class="imageDefault">
             <div class="frameFlexColumnMedium">
               <div class="frameFlexColumnTiny">
                 <p class="large">Lluís Fortuny</p>
@@ -337,8 +388,8 @@
                 </a>
               </div>
               <p class="regular" data-key="cardTestimonial5Description"></p>
-              <a href="https://www.linkedin.com/in/llu%C3%ADs-fortuny-marin-a76999186/" class="buttonIcon"><i
-                  class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/llu%C3%ADs-fortuny-marin-a76999186/"
+                class="buttonIcon iconDefault"><i class="fa-brands fa-linkedin"></i></a>
             </div>
           </div>
         </div>
@@ -426,11 +477,13 @@
         </a>
       </div>
       <div class="footerFrame">
-        <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-        <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon" target="_blank"><i
-            class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
+        <a href="https://wa.me/34618110583" class="buttonIcon iconDefault" target="_blank"><i
+            class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon iconDefault"
+          target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/kakomoma" class="buttonIcon iconDefault" target="_blank"><i
+            class="fa-brands fa-github"></i></a>
+        <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon iconDefault" target="_blank"><i
             class="fa-solid fa-envelope"></i></a>
       </div>
       <div class="footerFrame">
@@ -442,7 +495,7 @@
           </svg>
         </a>
         <div class="frameFlexMedium">
-          <i class="fa-solid fa-copyright"></i>
+          <i class="fa-solid fa-copyright iconDefault"></i>
           <p class="small">Alejandro Moreno</p>
           <p class="small">3.0</p>
         </div>
