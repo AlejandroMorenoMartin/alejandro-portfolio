@@ -17,6 +17,19 @@
   display: block;
 }
 
+/* Saltos a seccion */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 10rem;
+}
+
+@media (max-width: 1200px) {
+  html {
+    scroll-padding: 5rem;   
+  }
+}
+
 /* Evitamos problemas con las imagenes */
 
 img,
@@ -92,16 +105,7 @@ label {
   background-color: transparent;
   color: inherit;
   display: block;
-  /* (Opcional) */
 }
-
-/* Reseteamos las tablas */
-/* table , tr , td, th {
-  border-collapse: collapse;
-  border-spacing: 0;
-} */
-
-/* Evitamos problemas con los SVG */
 
 svg {
   display: block;
@@ -113,17 +117,11 @@ span {
   align-items: center;
 }
 
-/* Configuramos la tipografía para toda la web */
-
 body {
   min-height: 100vh;
   font-size: 100%;
-  /* (Opcional) */
   hyphens: auto;
-  /* (Opcional) */
   font-smooth: always;
-  /* (Opcional) */
   -webkit-font-smoothing: antialiased;
-  /* (Opcional) */
   -moz-osx-font-smoothing: grayscale;
 }

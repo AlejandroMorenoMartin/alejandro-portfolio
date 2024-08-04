@@ -162,43 +162,24 @@ document.querySelectorAll('.languageSwitcher').forEach((switcher) => {
   });
 });
 
+/* ----- NAVIGATION ----- */
 
+const navBar = document.querySelector('.navBar');
+const navToggle = document.querySelector(".mobileNavToggle");
+const primaryNav = document.querySelector(".primaryNavigation");
 
+navToggle.addEventListener("click", () => {
+  const isVisible = primaryNav.hasAttribute("data-visible");
 
-/* ----- STEPSECTION ----- */
+  navToggle.setAttribute("aria-expanded", !isVisible);
+  primaryNav.toggleAttribute("data-visible");
+  navBar.toggleAttribute("data-overlay");
 
-document.addEventListener('DOMContentLoaded', function () {
-  // Función para manejar el clic en el enlace
-  function scrollToSection() {
-    const section = document.getElementById('stepSection');
-    const yOffset = -100; // Ajusta este valor según tus necesidades
-
-    // Obtener la posición de la sección
-    const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
-
-    // Desplazamiento suave
-    window.scrollTo({ top: y, behavior: 'smooth' });
-  }
-
-  // Agregar el evento de clic al enlace
-  const myLink = document.getElementById('stepLink');
-  myLink.addEventListener('click', function (event) {
-    event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
-    scrollToSection();
-  });
+  // Alternar la visibilidad de los iconos
+  navToggle.querySelector('.iconClose').style.display = isVisible ? 'none' : 'block';
+  navToggle.querySelector('.iconHamburger').style.display = isVisible ? 'block' : 'none';
 });
 
-/* ----- SIDEBARMENU ----- */
-
-function showSidebar() {
-  const sidebar = document.querySelector('.sideBar')
-  sidebar.style.display = 'flex'
-}
-
-function hideSidebar() {
-  const sidebar = document.querySelector('.sideBar')
-  sidebar.style.display = 'none'
-}
 
 /* ----- BUTTONPROGRESS ----- */
 
