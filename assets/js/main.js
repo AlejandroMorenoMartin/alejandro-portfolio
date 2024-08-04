@@ -167,6 +167,7 @@ document.querySelectorAll('.languageSwitcher').forEach((switcher) => {
 const navBar = document.querySelector('.navBar');
 const navToggle = document.querySelector(".mobileNavToggle");
 const primaryNav = document.querySelector(".primaryNavigation");
+const body = document.body;
 
 navToggle.addEventListener("click", () => {
   const isVisible = primaryNav.hasAttribute("data-visible");
@@ -178,7 +179,11 @@ navToggle.addEventListener("click", () => {
   // Alternar la visibilidad de los iconos
   navToggle.querySelector('.iconClose').style.display = isVisible ? 'none' : 'block';
   navToggle.querySelector('.iconHamburger').style.display = isVisible ? 'block' : 'none';
+
+  // Alternar la clase 'no-scroll' en el body
+  body.classList.toggle('no-scroll', !isVisible);
 });
+
 
 
 /* ----- BUTTONPROGRESS ----- */

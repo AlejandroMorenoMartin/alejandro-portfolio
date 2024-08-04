@@ -720,18 +720,22 @@
   .mobileNavToggle .iconClose {
     display: none;
   }
-  
+
   .mobileNavToggle .iconHamburger {
     display: block;
   }
-  
-  .primaryNavigation[data-visible] ~ .mobileNavToggle .iconClose {
+
+  .primaryNavigation[data-visible]~.mobileNavToggle .iconClose {
     display: block;
   }
-  
-  .primaryNavigation[data-visible] ~ .mobileNavToggle .iconHamburger {
+
+  .primaryNavigation[data-visible]~.mobileNavToggle .iconHamburger {
     display: none;
-  }  
+  }
+
+  .no-scroll {
+    overflow: hidden;
+  }
 }
 
 /* ---------- */
