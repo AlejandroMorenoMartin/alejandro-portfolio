@@ -184,8 +184,6 @@ navToggle.addEventListener("click", () => {
   body.classList.toggle('no-scroll', !isVisible);
 });
 
-
-
 /* ----- BUTTONPROGRESS ----- */
 
 let calcScrollValue = () => {

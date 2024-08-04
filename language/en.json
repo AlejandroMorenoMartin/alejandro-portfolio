@@ -14,7 +14,8 @@
   "mainHeroP1": "Product designer",
   "mainHeroP2": "Hey! - I'm passionate and dedicated to user experience to improve people's lives. I am self-taught and methodical in search of continuous improvement.",
   "mainHeroP3": "I see myself as a lifelong learner, almost obsessively passionate about the things I love.",
-  "mainHeroButton": "Let's begin",
+  "mainHeroButton1": "Let's begin",
+  "mainHeroButton2": "Contact",
 
   "indexSectionHeader1": "Projects",
   "indexSectionHeader2": "Toolstack",
@@ -32,14 +33,24 @@
 
   "cardProjectGeomitesTag1": "New",
   "cardProjectGeomitesTag2": "Videogame",
-  "cardProjectTattoParadiseTag1": "Responsive",
-  "cardProjectAtipikoToursTag1": "Responsive",
   "cardProjectGeomitesTime": "15 min read",
-  "cardProjectTattoParadiseTime": "16 min read",
-  "cardProjectAtipikoToursTime": "15 min read",
   "cardProjectGeomitesDescription": "In charge of the product design of a mobile videogame, available for Android and IOS.",
+
+  "cardProjectTattoParadiseTag1": "Responsive",
+  "cardProjectTattoParadiseTime": "16 min read",
   "cardProjectTattoParadiseDescription": "Designing a product to connect tattoo users with artists and studios.",
+
+  "cardProjectAtipikoToursTag1": "Responsive",
+  "cardProjectAtipikoToursTime": "15 min read",
   "cardProjectAtipikoToursDescription": "Improving a travel agency's online presence and branding.",
+
+  "cardProjectSenzoStudioTag1": "Responsive",
+  "cardProjectSenzoStudioTime": "15 min read",
+  "cardProjectSenzoStudioDescription": "Design and development of a website for a visual effects agency.",
+
+  "cardProjectPortfolioTag1": "Responsive",
+  "cardProjectPortfolioTime": "13 min read",
+  "cardProjectPortfolioDescription": "I tell you about the process of creating my portfolio.",
 
   "cardTextIcon1": "UX Research",
   "cardTextIcon2": "UX Design",
@@ -64,12 +75,67 @@
   "cardReading1Title": "The path to senior product designer",
   "cardReading1Author": "By Artiom Dashinsky",
   "cardReading1Pages": "300 pages",
-  "cardReading2Title": "The path to senior product designer",
+
+  "cardReading2Title": "Solving product design exercises",
   "cardReading2Author": "By Artiom Dashinsky",
   "cardReading2Pages": "171 pages",
-  "cardReading3Title": "The path to senior product designer",
+
+  "cardReading3Title": "Mental models",
   "cardReading3Author": "By Peter Hollins",
   "cardReading3Pages": "257 pages",
+
+  "cardReading4Title": "The making of a manager",
+  "cardReading4Author": "By Julie Zhuo",
+  "cardReading4Pages": "288 pages",
+
+  "cardReading5Title": "Seductive interaction design",
+  "cardReading5Author": "By Stephen P. Anderson",
+  "cardReading5Pages": "240 pages",
+
+  "cardReading6Title": "The design of everyday things",
+  "cardReading6Author": "By Don Norman",
+  "cardReading6Pages": "368 pages",
+
+  "cardReading7Title": "Don't make me think",
+  "cardReading7Author": "By Don Norman",
+  "cardReading7Pages": "216 pages",
+
+  "cardReading8Title": "About face",
+  "cardReading8Author": "By Alan Cooper",
+  "cardReading8Pages": "720 pages",
+
+  "cardReading9Title": "Getting things done",
+  "cardReading9Author": "By David Allen",
+  "cardReading9Pages": "352 pages",
+
+  "cardReading10Title": "The 7 habits of highly effective people",
+  "cardReading10Author": "By Stephen R.Covey",
+  "cardReading10Pages": "464 pages",
+
+  "cardReading11Title": "Atomic habits",
+  "cardReading11Author": "By James Clear",
+  "cardReading11Pages": "320 pages",
+
+  "cardReading12Title": "Deep work",
+  "cardReading12Author": "By Cal Newport",
+  "cardReading12Pages": "320 pages",
+
+  "cardReading13Title": "Chatter",
+  "cardReading13Author": "By Ethan Kross",
+  "cardReading13Pages": "288 pages",
+
+  "cardReading14Title": "Thinking fast and slow",
+  "cardReading14Author": "By Daniel Kahneman",
+  "cardReading14Pages": "512 pages",
+
+  "cardReading15Title": "Influence",
+  "cardReading15Author": "By Robert B. Cialdini",
+  "cardReading15Pages": "336 pages",
+
+  "cardReading16Title": "Predictably irrational",
+  "cardReading16Author": "By Dan Ariely",
+  "cardReading16Pages": "400 pages",
+
 
   "footerButton1": "Resume.pdf",
   "footerButton2": "Contact"

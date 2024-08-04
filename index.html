@@ -53,16 +53,13 @@
               </a></li>
           </ul>
         </nav>
-        <div class="frameFlexMedium switcherContainer ">
+        <div class="switcherContainer ">
           <input class="switcher languageSwitcher" type="checkbox">
           <input class="switcher themeSwitcher" type="checkbox">
         </div>
         <button class="mobileNavToggle " aria-controls="primaryNavigation" aria-expended="false">
           <i class="fa-solid fa-xmark iconDefault iconClose" aria-hidden="true"></i>
           <i class="fa-solid fa-bars iconDefault iconHamburger" aria-hidden="true"></i>
-          <span class="visuallyHidden">
-            <p class="large">Menu</p>
-          </span>
         </button>
       </div>
     </header>
@@ -92,9 +89,14 @@
             <p class="regular" data-key="mainHeroP2"></p>
             <p class="regular" data-key="mainHeroP3"></p>
           </div>
-          <a id="stepLink" class="buttonPrimary" href="#stepSection">
-            <p class="large" data-key="mainHeroButton"></p>
-          </a>
+          <div class="frameFlexMedium">
+            <a id="stepLink" class="buttonSecondary" href="#stepSection">
+              <p class="large" data-key="mainHeroButton1"></p>
+            </a>
+            <a href="#" class="buttonPrimary">
+              <p class="large" data-key="mainHeroButton2"></p>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -103,7 +105,7 @@
         <div class="sectionHeader">
           <div class="frameFlexAuto">
             <h3 data-key="indexSectionHeader1"></h3>
-            <a class="buttonTerciary">
+            <a href="projects.html" class="buttonTerciary">
               <p class="regular" data-key="indexSectionHeaderButton"></p>
             </a>
           </div>
@@ -296,8 +298,8 @@
                 </a>
               </div>
               <p class="regular" data-key="cardTestimonial3Description"></p>
-              <a href="https://www.linkedin.com/in/rub%C3%A9n-hinarejos-guerra-b2365910b/"
-                class="buttonIcon" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/rub%C3%A9n-hinarejos-guerra-b2365910b/" class="buttonIcon"
+                target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             </div>
           </div>
           <div class="cardTestimonial">
@@ -311,7 +313,8 @@
                 </a>
               </div>
               <p class="regular" data-key="cardTestimonial4Description"></p>
-              <a href="https://www.linkedin.com/in/%C3%A1lvaro-torrijos-herrera/" class="buttonIcon" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/%C3%A1lvaro-torrijos-herrera/" class="buttonIcon" target="_blank"><i
+                  class="fa-brands fa-linkedin"></i></a>
             </div>
           </div>
           <div class="cardTestimonial">
@@ -325,8 +328,8 @@
                 </a>
               </div>
               <p class="regular" data-key="cardTestimonial5Description"></p>
-              <a href="https://www.linkedin.com/in/llu%C3%ADs-fortuny-marin-a76999186/"
-                class="buttonIcon" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/llu%C3%ADs-fortuny-marin-a76999186/" class="buttonIcon"
+                target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             </div>
           </div>
         </div>
@@ -337,7 +340,7 @@
         <div class="sectionHeader">
           <div class="frameFlexAuto">
             <h3 data-key="indexSectionHeader5"></h3>
-            <a class="buttonTerciary">
+            <a href="readings.html" class="buttonTerciary">
               <p class="regular" data-key="indexSectionHeaderButton"></p>
             </a>
           </div>
@@ -409,21 +412,16 @@
         <a class="buttonSecondary" href="assets/documents/alejandroMoreno_resume.pdf" target="_blank">
           <p class="large" data-key="footerButton1"></p>
         </a>
-        <a href="#" class="buttonPrimary">
-          <p class="large" data-key="footerButton2"></p>
-        </a>
-      </div>
-      <div class="footerFrame">
-        <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
-            class="fa-brands fa-whatsapp"></i></a>
-        <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon"
-          target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
-            class="fa-brands fa-github"></i></a>
-        <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
-            class="fa-solid fa-envelope"></i></a>
-      </div>
-      <div class="footerFrame">
+        <div class="frameFlexMedium">
+          <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
+              class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon" target="_blank"><i
+              class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
+              class="fa-brands fa-github"></i></a>
+          <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
+              class="fa-solid fa-envelope"></i></a>
+        </div>
         <p class="small">Diseñando 2024</p>
         <a href="index.html" alt="logoAlejandro" id="logoLink">
           <svg class="logo" xmlns="http://www.w3.org/2000/svg">
@@ -436,7 +434,7 @@
           <p class="small">Alejandro Moreno</p>
           <p class="small">3.0</p>
         </div>
-      </div>
+      </div>     
     </footer>
 
   </main>
