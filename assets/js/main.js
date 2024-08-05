@@ -167,7 +167,6 @@ document.querySelectorAll('.languageSwitcher').forEach((switcher) => {
 const navBar = document.querySelector('.navBar');
 const navToggle = document.querySelector(".mobileNavToggle");
 const primaryNav = document.querySelector(".primaryNavigation");
-const body = document.body;
 
 navToggle.addEventListener("click", () => {
   const isVisible = primaryNav.hasAttribute("data-visible");
@@ -181,7 +180,40 @@ navToggle.addEventListener("click", () => {
   navToggle.querySelector('.iconHamburger').style.display = isVisible ? 'block' : 'none';
 
   // Alternar la clase 'no-scroll' en el body
-  body.classList.toggle('no-scroll', !isVisible);
+  document.body.classList.toggle('no-scroll', !isVisible);
+});
+
+/* ----- CONTACT FORM ----- */
+
+document.addEventListener('DOMContentLoaded', () => {
+  const contactForm = document.querySelector('.contactForm');
+  const openContactFormBtn = document.getElementById('openContactForm');
+  const closeContactFormBtn = document.getElementById('closeContactForm');
+  const overlay = document.querySelector('.overlay');
+  const body = document.body;
+
+  // Función para abrir el formulario
+  function openForm() {
+    contactForm.classList.add('open');
+    overlay.classList.add('show');
+    body.classList.add('no-scroll');
+  }
+
+  // Función para cerrar el formulario
+  function closeForm() {
+    contactForm.classList.remove('open');
+    overlay.classList.remove('show');
+    body.classList.remove('no-scroll');
+  }
+
+  // Abrir el formulario al hacer clic en el botón de apertura
+  openContactFormBtn.addEventListener('click', openForm);
+
+  // Cerrar el formulario al hacer clic en el botón de cierre
+  closeContactFormBtn.addEventListener('click', closeForm);
+
+  // Cerrar el formulario al hacer clic en la superposición
+  overlay.addEventListener('click', closeForm);
 });
 
 /* ----- BUTTONPROGRESS ----- */
@@ -203,11 +235,8 @@ let calcScrollValue = () => {
     document.documentElement.scrollTop = 0;
   });
 
-  scrollProgress.style.background = `conic-gradient(var(--primary-500)${scrollValue}%, var(--neutral-600) ${scrollValue}%)`;
+  scrollProgress.style.background = `conic-gradient(var(--primary-400)${scrollValue}%, var(--neutral-600) ${scrollValue}%)`;
 };
-
-window.onscroll = calcScrollValue;
-window.onload = calcScrollValue;
 
 /* ----- SCROLLER ----- */
 
@@ -256,5 +285,9 @@ whatsapp.addEventListener('click', () => {
 linkedin.addEventListener('click', () => {
   window.open(linkedinApi, '_blank');
 });
+
+/* ----- PRELOADINGPROGRESSBAR ----- */
+
+
 
 /* ----- ANIMATEDTEXT ----- */

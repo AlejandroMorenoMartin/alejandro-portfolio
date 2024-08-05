@@ -14,7 +14,7 @@
   "mainHeroP1": "Product designer",
   "mainHeroP2": "Hey! - I'm passionate and dedicated to user experience to improve people's lives. I am self-taught and methodical in search of continuous improvement.",
   "mainHeroP3": "I see myself as a lifelong learner, almost obsessively passionate about the things I love.",
-  "mainHeroButton1": "Let's begin",
+  "mainHeroButton1": "Take a look",
   "mainHeroButton2": "Contact",
 
   "indexSectionHeader1": "Projects",
@@ -30,6 +30,16 @@
   "indexSectionHeaderText5": "I love to read and learn new things. These are some of my latest readings.",
 
   "indexSectionHeaderButton": "See more",
+
+  "aboutPageTitle": "About",
+  "aboutPageText1":"Working for different companies and sectors has allowed me to understand that effective communication as well as close collaboration with other departments is key to good design. As a self-taught person, I learn everything I need to be more efficient in my work. Working for people and improving their lives through user experience is my passion.",
+  "aboutPageText2":"I am Alejandro Moreno, a product designer living in Spain and working remotely for any part of the world. I like to be between the objectives of the company and the users, making the design be in perfect balance and harmony between both.",
+  "aboutPageTitleParagraph1":"Present",
+  "aboutPageTextParagraph1":"I am currently in charge of the design of Geomites, a mobile video game developed for iOS and Android platforms that will soon be released. It is a personal project together with a team of designers and developers.",
+  "aboutPageTitleParagraph2":"Past",
+  "aboutPageTextParagraph2":"I co-founded Dako, a fresh pasta delivery service in Madrid. I lived in London, where I worked at Street Xo in the Soho district. When I returned from London, I started as a Marketing and Design Manager, a job that allowed me to begin my career as a product designer. Since then, I have developed projects as a freelancer and I have trained myself in web design and development and mobile applications.",
+  "aboutPageTitleParagraph3":"Hobbies",
+  "aboutPageTextParagraph3":"But it's not all work, I'm a healthy person and I like to practice all kinds of sports. I also like dancing, traveling, reading and spending time with my family, friends or meeting interesting people.",
 
   "cardProjectGeomitesTag1": "New",
   "cardProjectGeomitesTag2": "Videogame",
@@ -137,6 +147,14 @@
   "cardReading16Pages": "400 pages",
 
 
-  "footerButton1": "Resume.pdf",
-  "footerButton2": "Contact"
+  "footerButton1": "Resume",
+  "footerButton2": "Contact",
+
+  "contactFormTitle": "Get in touch",
+  "contactFormText": "You can contact me through social networks or if you prefer, leave me a message and I will get back to you as soon as possible.",
+  "contactFormName": "Your name",
+  "contactFormEmail": "Your email",
+  "contactFormMessage": "Your message",
+  "contactFormButton": "Submit"
+  
 }

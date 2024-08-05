@@ -14,7 +14,7 @@
   "mainHeroP1": "Diseñador de producto",
   "mainHeroP2": "¡Hola! - Soy un apasionado del diseño de interfaz de usuario y lo uso para mejorar la vida de las personas. Soy autodidacta y metódico en busca de la mejora continua.",
   "mainHeroP3": "Me considero a mi mismo como un eterno aprendiz, al borde de la obsesion por aquellas cosas que me apasionan.",
-  "mainHeroButton1": "Comencemos",
+  "mainHeroButton1": "Echa un vistazo",
   "mainHeroButton2": "Contacto",
 
   "indexSectionHeader1": "Proyectos",
@@ -30,6 +30,16 @@
   "indexSectionHeaderText5": "Me encanta leer y aprender cosas nuevas. Estas son algunas de mis últimas lecturas.",
 
    "indexSectionHeaderButton": "Ver más",
+
+  "aboutPageTitle": "Sobre mí",
+  "aboutPageText1":"Trabajar para diferentes compañias y sectores, me a permitido entender que la comunicacion efectiva asi como la colaboracion estrecha con el resto de departamentos es clave para un buen diseño. Como persona autodidacta, aprendo todo aquello que necesito para ser mas eficiente en mi trabajo. Trabajar para las personas y mejorar sus vidad a través de la experiencia de usuario es mi pasión.",
+  "aboutPageText2":"Soy Alejandro Moreno, diseñador de producto residente en España y trabajando en remoto para cualquier parte del mundo. Me gusta estar entre los objetivos de la empresa y los usuarios, haciendo que el diseño este en perfecto equilibrio y armonía entre ambos.",
+  "aboutPageTitleParagraph1":"Actualmente",
+  "aboutPageTextParagraph1":"Actualmente me encargo del diseño de Geomites, un videojuego para móviles desarrollado para plataformas iOS y Android que pronto saldrá al mercado. Es un proyecto personal junto a un equipo de diseñadores y desarrolladores.",
+  "aboutPageTitleParagraph2":"Anteriormente",
+  "aboutPageTextParagraph2":"Fui co-fundador de Dako, un delivery de pasta fresca en Madrid. Viví en Londres, donde trabajé en Street Xo en el barrio del Soho. A mi vuelta de Londres, comence como manager de Marketing y diseño, trabajo que me permitio comenzar mi carrera como diseñador de producto. Desde entonces he desarrollado proyectos como Freelance y me he formado por mi cuenta en el diseño y desarrollo web y aplicaciones moviles. ",
+  "aboutPageTitleParagraph3":"Aficiones",
+  "aboutPageTextParagraph3":"Pero no todo es trabajo, soy una persona sana y me gusta practicar todo tipo de deportes. Tambien me gusta bailar, viajar, leer y pasar tiempo con mi familia, amigos o conociendo a personas interesantes.",
 
   "cardProjectGeomitesTag1": "Nuevo",
   "cardProjectGeomitesTag2": "Videojuego",
@@ -136,6 +146,13 @@
   "cardReading16Author": "De Dan Ariely",
   "cardReading16Pages": "400 páginas",
 
-  "footerButton1": "CV.pdf",
-  "footerButton2": "Contacto"
+  "footerButton1": "CV",
+  "footerButton2": "Contacto",
+
+  "contactFormTitle": "Ponte en contacto",
+  "contactFormText": "Puedes contactarme a través de las redes sociales o si lo prefieres dejame un mensaje y te contestaré lo antes posible.",
+  "contactFormName": "Tu nombre",
+  "contactFormEmail": "Tu email",
+  "contactFormMessage": "Tu mensaje",
+  "contactFormButton": "Enviar"
 }

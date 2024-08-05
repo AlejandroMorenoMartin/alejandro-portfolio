@@ -44,9 +44,9 @@ h4 {
 caption {
   font-size: var(--fs-large);
   line-height: var(--lh-large);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0;
-  color: var(--white);
+  color: var(--neutral-100);
 }
 
 .regular-bold {

@@ -71,8 +71,8 @@
 @media (max-width: 1200px) {
   .mainHero {
     display: flex;
-    flex-direction: column;   
-    height: calc(95svh - 96px);   
+    flex-direction: column;
+    height: calc(95svh - 96px);
   }
 }
 
@@ -294,13 +294,18 @@
   font-size: 1.5rem;
 }
 
-#progressValue:hover {
-  background: var(--neutral-900);
+#progressButton:hover {
+  transform: translateY(-10%);
+  transition: transform .3s cubic-bezier(.62, -1.12, .53, 1.92);
 }
 
 #progressButton:active {
-  transform: scale(0.90);
+  transform: scale(0.95);
   transition: transform 0.1s;
+}
+
+#progressValue:hover {
+  background: var(--neutral-900);
 }
 
 /* ---------- */
@@ -308,26 +313,32 @@
 .buttonPrimary {
   display: flex;
   padding: 8px 16px;
+  gap: 8px;
   border-radius: var(--br-8);
   background: var(--primary-400);
-  width: 148px;
+  width: fit-content;
+  min-width: 148px;
   cursor: pointer;
   align-items: center;
   justify-content: center;
-  transition: all .3s cubic-bezier(.62, -1.12, .53, 1.92);
+  transition: transform .3s cubic-bezier(.62, -1.12, .53, 1.92);
 }
 
 .buttonPrimary p {
   color: var(--primary-1000);
 }
 
+.buttonPrimary i {
+  color: var(--neutral-100);
+}
+
 .buttonPrimary:hover {
-  background: var(--primary-200);
+  background: var(--primary-300);
   transform: translateY(-10%);
 }
 
 .buttonPrimary:active {
-  transform: scale(0.90);
+  transform: scale(0.95);
   transition: transform 0.1s;
 }
 
@@ -336,14 +347,26 @@
 .buttonSecondary {
   display: flex;
   padding: 8px 16px;
+  gap: 8px;
   border-radius: var(--br-8);
   border: 0.5px solid var(--neutral-600);
   background: var(--neutral-1000);
-  width: 148px;
+  min-width: 148px;
   cursor: pointer;
   align-items: center;
   justify-content: center;
-  transition: all .3s cubic-bezier(.62, -1.12, .53, 1.92);
+  transition: transform .3s cubic-bezier(.62, -1.12, .53, 1.92);
+}
+
+.buttonSecondary i {
+  font-size: 16px;
+  color: var(--neutral-100);
+}
+
+@media (max-width: 1200px) {
+  .buttonSecondary i {
+    font-size: 12px;
+  }
 }
 
 .buttonSecondary:hover {
@@ -352,7 +375,7 @@
 }
 
 .buttonSecondary:active {
-  transform: scale(0.90);
+  transform: scale(0.95);
   transition: transform 0.1s;
 }
 
@@ -362,12 +385,16 @@
   display: flex;
   gap: 8px;
   padding: 8px 16px;
+  gap: 8px;
   border-radius: var(--br-8);
   background: var(--neutral-1000);
-  width: fit-content;
   cursor: pointer;
   align-items: center;
   justify-content: center;
+}
+
+.buttonTerciary i {
+  color: var(--neutral-100);
 }
 
 .buttonTerciary:hover {
@@ -375,7 +402,7 @@
 }
 
 .buttonTerciary:active {
-  transform: scale(0.90);
+  transform: scale(0.95);
 }
 
 /* ---------- */
@@ -389,10 +416,13 @@
   color: var(--neutral-200);
   padding: .5rem;
   border-radius: var(--br-8);
+  cursor: pointer;
+  transition: transform .3s cubic-bezier(.62, -1.12, .53, 1.92);
 }
 
 .buttonIcon:hover {
   background: var(--neutral-900);
+  transform: translateY(-10%);
 }
 
 .buttonIcon:active {
@@ -425,7 +455,7 @@
   display: flex;
   border-radius: var(--br-8);
   border: 0.5px solid var(--primary-400);
-  padding: 4px 8px;
+  padding: 2px 4px;
   background: var(--primary-800);
   color: var(--primary-400);
   width: fit-content;
@@ -447,7 +477,7 @@
 .tag {
   display: flex;
   border-radius: var(--br-8);
-  padding: 4px 8px;
+  padding: 2px 4px;
   background: var(--neutral-700);
   width: fit-content;
   border: 0.5px solid var(--neutral-200);
@@ -460,7 +490,7 @@
 .tagNew {
   display: flex;
   border-radius: var(--br-8);
-  padding: 4px 8px;
+  padding: 2px 4px;
   background: var(--primary-800);
   width: fit-content;
   border: 0.5px solid var(--primary-400);
@@ -474,9 +504,123 @@
 
 
 
-/* ----- TEXT FIELDS ----- */
+/* ----- CONTACT FORM ----- */
+
+.contactForm {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  height: 90vh;
+  padding: 2rem;
+  border-radius: var(--br-8);
+  background: var(--neutral-1000);
+  box-shadow: 0 0 0.4rem var(--white);
+  z-index: 100;
+  display: none;
+  /* Oculto por defecto */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  /* Opacidad del fondo */
+  z-index: 99;
+  display: none;
+  /* Oculto por defecto */
+}
+
+.contactFormBody {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+}
+
+.contactInput {
+  width: 100%;
+  height: 3rem;
+  border-radius: var(--br-8);
+  border: 0.5px solid var(--neutral-600);
+  padding-left: 1rem;
+}
+
+.contactInput:focus {
+  border: 1px solid var(--neutral-200);
+}
+
+.contactInput::placeholder {
+  color: var(--neutral-400);
+}
+
+.contactFormBody textarea {
+  height: 6rem;
+  padding-top: 1rem;
+}
+
+.buttonClose {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  border-radius: var(--br-8);
+  padding: 1.5rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonClose:hover {
+  background: var(--neutral-900);
+}
+
+.contactFormBody .buttonClose {
+  position: absolute;
+  right: -1rem;
+  top: -1rem;
+}
+
+.contactForm.hidden {
+  display: none;
+}
+
+.contactForm.open {
+  display: block;
+}
+
+.overlay.show {
+  display: block;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
 
 
+@media (max-width: 1200px) {
+
+  .contactForm {
+    width: 80svw;
+  }
+
+  .contactInput {
+    height: 2rem;
+  }
+
+  .contactFormBody textarea {
+    height: 6rem;
+  }
+
+  .buttonClose {
+    width: 20px;
+    height: 20px;
+    padding: 1rem;
+  }
+}
 
 /* ----- CARDS ----- */
 
@@ -590,8 +734,8 @@
 
 @media (max-width: 1200px) {
 
-  .cardReadingImageContainer {    
-    height: 84px;    
+  .cardReadingImageContainer {
+    height: 84px;
   }
 }
 
@@ -684,7 +828,7 @@
     padding: 4rem;
     background: var(--neutral-1000);
     border-radius: var(--br-8);
-    box-shadow: 0 0 0.2rem var(--white);
+    box-shadow: 0 0 0.8rem var(--white);
   }
 
   .navBar[data-overlay]::before {
@@ -1051,6 +1195,9 @@ tr td {
   color: var(--primary-1000);
 }
 
+/* ----- PRELOADING PROGRESS BAR ----- */
+
+
 /* ----- IMAGES ----- */
 
 .logo {
@@ -1074,10 +1221,11 @@ tr td {
 
 @media (max-width: 1200px) {
   .mainHeroImageContainer {
-   max-height: 75%;
-   max-width: 75%;
+    max-height: 75%;
+    max-width: 75%;
   }
-  .mainHeroImage {      
+
+  .mainHeroImage {
     object-fit: contain;
   }
 }
@@ -1093,6 +1241,67 @@ tr td {
   .imageDefault {
     width: 36px;
     height: 36px;
+  }
+}
+
+/* ---------- */
+
+.aboutGallery {
+  min-height: 50svh;
+  --img-size: calc(100px - .5rem / 2);
+  display: grid;
+  gap: .5rem;
+  grid-template-columns: repeat(6, var(--img-size));
+  grid-template-rows: repeat(3, var(--img-size));
+  align-items: center;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+@media (max-width: 1200px) {
+  .aboutGallery {
+    margin-top: 2rem;
+  }
+}
+
+.aboutGalleryImage {
+  max-width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  grid-column: span 2;
+  border-radius: .5rem;
+  clip-path: path('M 80 20 C 100 0 100 0 120 20 C 140 40 160 60 180 80 C 200 100 200 100 180 120 C 160 140 140 160 120 180 C 100 200 100 200 80 180 C 60 160 40 140 20 120 C 0 100 0 100 20 80 Z');
+  transition:
+    filter 500ms,
+    clip-path 500ms;
+}
+
+.aboutGalleryImage:nth-of-type(4) {
+  grid-column: 2 / span 2;
+}
+
+.aboutGalleryImage:hover {
+  z-index: 100;
+  clip-path: path('M 0 0 C 100 0 100 0 200 0 C 200 50 200 50 200 80 C 200 100 200 100 200 120 C 200 150 200 150 200 200 C 100 200 100 200 0 200 C 0 150 0 150 0 120 C 0 100 0 100 0 80 Z');
+}
+
+.aboutGalleryImage:not(:hover) {
+  animation: zIndexHack 500ms;
+}
+
+.aboutGallery:hover>img {
+  filter: brightness(.5) saturate(.5);
+}
+
+.aboutGallery>img:hover {
+  filter: brightness(1) saturate(1.5);
+}
+
+@keyframes zIndexHack {
+
+  0%,
+  100% {
+    z-index: 10;
   }
 }
 
