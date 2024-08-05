@@ -1,3 +1,29 @@
+/* ----- TABCONTAINER ----- */
+
+document.addEventListener('DOMContentLoaded', function () {
+  const experienceContainer = document.getElementById('experienceContainer');
+  const educationContainer = document.getElementById('educationContainer');
+
+  document.querySelectorAll('.buttonTabComponent').forEach(tab => {
+    tab.addEventListener('click', function () {
+      // Remover la clase 'active' de todos los elementos
+      document.querySelectorAll('.buttonTabComponent').forEach(tab => tab.classList.remove('active'));
+
+      // Agregar la clase 'active' al elemento clicado
+      this.classList.add('active');
+
+      // Mostrar y ocultar contenedores según el botón activo
+      if (this.id === 'buttonTab1') {
+        experienceContainer.classList.remove('hidden');
+        educationContainer.classList.add('hidden');
+      } else if (this.id === 'buttonTab2') {
+        experienceContainer.classList.add('hidden');
+        educationContainer.classList.remove('hidden');
+      }
+    });
+  });
+});
+
 /* ----- SWITCHLANGUAGE ----- */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -291,3 +317,7 @@ linkedin.addEventListener('click', () => {
 
 
 /* ----- ANIMATEDTEXT ----- */
+
+
+
+

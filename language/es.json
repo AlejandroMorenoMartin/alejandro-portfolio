@@ -154,5 +154,41 @@
   "contactFormName": "Tu nombre",
   "contactFormEmail": "Tu email",
   "contactFormMessage": "Tu mensaje",
-  "contactFormButton": "Enviar"
+  "contactFormButton": "Enviar",
+
+  "resumeHeader": "Currículum",
+  "buttonTab1": "Experiencia",
+  "buttonTab2": "Educación",
+
+  "experienceCard1Title": "Diseñador de producto",
+  "experienceCard1Company": "Geomites - Autónomo",
+  "experienceCard1Date": "Mar 2023 - Hoy",
+  "experienceCard1Location": "España - Remoto",
+  "experienceCard1Description": "Junto a un equipo de diseñadores y desarrolladores, dirijo el diseño UX y UI de este proyecto, en el que desarrollamos un videojuego móvil para plataformas iOS y Android en un entorno ágil. Analizo a los líderes del mercado que ofrecen productos similares, investiguo a los usuarios potenciales y creo diseños de baja y alta fidelidad en Figma. Desarrollo un prototipo que me permite verificar las decisiones de diseño mediante pruebas de usabilidad y tests A/B. Ahora estamos en fase de desarrollo y colaboro con el equipo de desarrollo en la transición del prototipo a React. Por último, desarrollo un sistema de diseño que facilita el mantenimiento y las actualizaciones del producto.",
+  "experienceCard1Technologies": "Technologies: Figma - React - Adobe ilustrator - Microsoft azure - Miro",
+  "experienceCard1Skills": "Skills: Investigación UX - Esquematización - Prototipado - Diseño UX - Testeo de usuarios - Diseño UI - Diseño de videojuegos",
+  
+  "experienceCard2Title": "Diseñador de producto",
+  "experienceCard2Company": " - Freelance",
+  "experienceCard2Date": "Feb 2023 - Oct 2023",
+  "experienceCard2Location": "España - Remoto",
+  "experienceCard2Description": "Me contrataron junto a un desarrollador full-stack para diseñar y desarrollar un sitio web para una agencia de viajes. Realicé estudios y análisis de mercado, centrándome en los usuarios y los competidores. Creé wireframes de baja y alta fidelidad y realicé pruebas de usuario, iterando sobre los diseños en base a los comentarios recibidos. Mantuve una comunicación clara con el equipo de desarrollo para garantizar la aplicación efectiva de los diseños. Al finalizar el proyecto, la empresa consiguió una imagen de marca y un sitio web que aumentaron sus ventas en más de un 200%.",
+  "experienceCard2Technologies": "Technologies: Figma - Adobe photoshop - Miro - Hotjar - Google analytics",
+  "experienceCard2Skills": "Skills: Investigación UX - Diseño UX - Diseño UI - Diseño responsivo - Diseño de móvil - Desarrollo web",
+
+  "experienceCard3Title": "Diseñador de producto",
+  "experienceCard3Company": " - Freelance",
+  "experienceCard3Date": "Abr 2022 - Nov 2022",
+  "experienceCard3Location": "España - Remoto",
+  "experienceCard3Description": "Como freelance, me contrataron para diseñar y desarrollar un sitio web para un estudio de efectos visuales. Investigué las empresas líderes del mercado y definí el producto, creando flujos de usuario de baja a alta fidelidad. Realicé investigaciones y pruebas con los usuarios para garantizar que el contenido y el diseño fueran eficientes. Desarrollé el sitio web, asegurándome de que el producto final cumplía las expectativas tanto de las partes interesadas como de los usuarios. La empresa consiguió un aumento de más del 50% en las reservas de proyectos en comparación con el periodo anterior.",
+  "experienceCard3Technologies": "Technologies: Figma - Adobe ilustrator - Wordpress - Google analytics",
+  "experienceCard3Skills": "Skills: Investigación UX - Diseño UX - Diseño UI - Diseño responsivo - Diseño de móvil - Desarrollo web",
+
+  "experienceCard4Title": "Responsable de Marketing & Diseño ",
+  "experienceCard4Company": " - Contratado",
+  "experienceCard4Date": "Jul 2017 - Sep 2021",
+  "experienceCard4Location": "España - En oficina",
+  "experienceCard4Description": "Como empleado de una empresa de fabricación de maquinaria industrial, fui responsable de tareas de marketing y diseño. Gestioné el diseño y desarrollo de la página web de la empresa y dirigí campañas de posicionamiento SEO. Dirigí campañas de marketing en las redes sociales y organicé y desarrollé el diseño de varios productos necesarios para las operaciones de la empresa, incluidos catálogos, anuncios y documentos. También colaboré con las partes interesadas para organizar la estrategia de marketing y ventas.",
+  "experienceCard4Technologies": "Technologies:  Google drive - Microsoft suite - Adobe ilustrator - Adobe Photoshop - Google analytics - Wordpress - Hotja",
+  "experienceCard4Skills": "Skills: Negociación - Diseño gráfico - SEO - Estrategia - Marketing digital" 
 }

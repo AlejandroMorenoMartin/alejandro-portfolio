@@ -35,6 +35,7 @@
   .mainTwo {
     padding: 0px 12px 0px 12px;
     width: 100%;
+    gap: 32px;
   }
 }
 
@@ -87,72 +88,43 @@
 .frameFlexTiny {
   display: flex;
   gap: 0rem;
+  align-items: center;
 }
 
 .frameFlexSmall {
   display: flex;
   gap: 0.5rem;
-}
-
-@media (max-width: 1200px) {
-  .frameFlexSmall {
-    gap: 0.25rem;
-  }
+  align-items: center;
 }
 
 .frameFlexMedium {
   display: flex;
   gap: 1rem;
-}
-
-@media (max-width: 1200px) {
-  .frameFlexMedium {
-    gap: 0.5rem;
-  }
+  align-items: center;
 }
 
 .frameFlexLarge {
   display: flex;
   gap: 2rem;
-}
-
-@media (max-width: 1200px) {
-  .frameFlexLarge {
-    gap: 1rem;
-  }
+  align-items: center;
 }
 
 .frameFlexExtraLarge {
   display: flex;
   gap: 4rem;
-}
-
-@media (max-width: 1200px) {
-  .frameFlexExtraLarge {
-    gap: 2rem;
-  }
+  align-items: center;
 }
 
 .frameFlexMassive {
   display: flex;
   gap: 8rem;
-}
-
-@media (max-width: 1200px) {
-  .frameFlexMassive {
-    gap: 4rem;
-  }
+  align-items: center;
 }
 
 .frameFlexColossal {
   display: flex;
   gap: 16rem;
-}
-
-@media (max-width: 1200px) {
-  .frameFlexColossal {
-    gap: 8rem;
-  }
+  align-items: center;
 }
 
 /* ---------- */
@@ -179,12 +151,6 @@
   flex: 1;
 }
 
-@media (max-width: 1200px) {
-  .frameFlexColumnSmall {
-    gap: 0.25rem;
-  }
-}
-
 .frameFlexColumnMedium {
   display: flex;
   flex-direction: column;
@@ -192,11 +158,6 @@
   flex: 1;
 }
 
-@media (max-width: 1200px) {
-  .frameFlexColumnMedium {
-    gap: 0.5rem;
-  }
-}
 
 .frameFlexColumnLarge {
   display: flex;
@@ -206,8 +167,8 @@
 }
 
 @media (max-width: 1200px) {
-  .frameFlexColumnLarge {
-    gap: 1rem;
+  .frameFlexColumnLarge {    
+    gap: 1rem;    
   }
 }
 
@@ -219,8 +180,8 @@
 }
 
 @media (max-width: 1200px) {
-  .frameFlexColumnExtraLarge {
-    gap: 2rem;
+  .frameFlexColumnExtraLarge {    
+    gap: 2rem;    
   }
 }
 
@@ -232,8 +193,8 @@
 }
 
 @media (max-width: 1200px) {
-  .frameFlexColumnMassive {
-    gap: 4rem;
+  .frameFlexColumnMassive {    
+    gap: 4rem;    
   }
 }
 
@@ -245,9 +206,23 @@
 }
 
 @media (max-width: 1200px) {
-  .frameFlexColumnColossal {
-    gap: 8rem;
+  .frameFlexColumnColossal {    
+    gap: 8rem;    
   }
+}
+
+/* ---------- */
+
+.gridTwo {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(424px, 100%), 1fr));
+}
+
+/* ---------- */
+
+.hidden {
+  display: none;
 }
 
 /* ---------- */
@@ -427,6 +402,29 @@
 
 .buttonIcon:active {
   transform: scale(0.90);
+}
+
+/* ---------- */
+
+.buttonTab {
+  display: flex;
+  padding: 8px;
+  gap: 16px;
+  background: var(--neutral-800);
+  border-radius: var(--br-8);
+  align-items: center;
+  width: fit-content;
+}
+
+.buttonTabComponent {
+  display: flex;
+  padding: 8px 16px;  
+  border-radius: var(--br-8);
+  cursor: pointer; 
+}
+
+.buttonTabComponent.active {    
+  background: var(--neutral-900);   
 }
 
 /* ---------- */
@@ -640,17 +638,6 @@ body.no-scroll {
   background: var(--neutral-900);
 }
 
-@media (max-width: 1200px) {
-
-  .cardProject,
-  .cardTextIcon,
-  .cardTestimonial,
-  .cardReading {
-    gap: 8px;
-    padding: 8px;
-  }
-}
-
 .cardProjectImageContainer {
   border-radius: var(--br-8);
   border: 0.5px solid var(--neutral-800);
@@ -749,6 +736,17 @@ body.no-scroll {
 
 .cardReading:hover .cardReadingImageContainer .cardReadingImage {
   transform: scale(1.1);
+}
+
+/* ---------- */
+
+.cardExperience{
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  border-radius: var(--br-8);
+  border: 0.5px solid var(--neutral-600);
+  background: var(--neutral-1000);
 }
 
 

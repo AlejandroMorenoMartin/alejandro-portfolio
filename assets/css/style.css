@@ -52,9 +52,9 @@ caption {
 .regular-bold {
   font-size: var(--fs-regular);
   line-height: var(--lh-regular);
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.05rem;
-  color: var(--white);
+  color: var(--neutral-200);
 }
 
 .regular {
