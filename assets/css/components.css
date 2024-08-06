@@ -167,8 +167,8 @@
 }
 
 @media (max-width: 1200px) {
-  .frameFlexColumnLarge {    
-    gap: 1rem;    
+  .frameFlexColumnLarge {
+    gap: 1rem;
   }
 }
 
@@ -180,8 +180,8 @@
 }
 
 @media (max-width: 1200px) {
-  .frameFlexColumnExtraLarge {    
-    gap: 2rem;    
+  .frameFlexColumnExtraLarge {
+    gap: 2rem;
   }
 }
 
@@ -193,8 +193,8 @@
 }
 
 @media (max-width: 1200px) {
-  .frameFlexColumnMassive {    
-    gap: 4rem;    
+  .frameFlexColumnMassive {
+    gap: 4rem;
   }
 }
 
@@ -206,8 +206,8 @@
 }
 
 @media (max-width: 1200px) {
-  .frameFlexColumnColossal {    
-    gap: 8rem;    
+  .frameFlexColumnColossal {
+    gap: 8rem;
   }
 }
 
@@ -418,13 +418,13 @@
 
 .buttonTabComponent {
   display: flex;
-  padding: 8px 16px;  
+  padding: 8px 16px;
   border-radius: var(--br-8);
-  cursor: pointer; 
+  cursor: pointer;
 }
 
-.buttonTabComponent.active {    
-  background: var(--neutral-900);   
+.buttonTabComponent.active {
+  background: var(--neutral-900);
 }
 
 /* ---------- */
@@ -634,27 +634,30 @@ body.no-scroll {
 }
 
 .cardProject:hover,
-.cardReading:hover {
+.cardReading:hover,
+.cardArticle:hover {
   background: var(--neutral-900);
 }
 
 .cardProjectImageContainer {
   border-radius: var(--br-8);
-  border: 0.5px solid var(--neutral-800);
+  border: 0.5px solid var(--neutral-100);
   overflow: hidden;
 }
 
-.cardProjectImageContainer .cardProjectImage {
+.cardProjectImageContainer .cardProjectImage,
+.cardReadingImageContainer .cardReadingImage {
   border-radius: var(--br-8);
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 9;
   object-fit: cover;
   object-position: center;
   transition: 0.2s transform ease-in-out;
 }
 
-.cardProject:hover .cardProjectImageContainer .cardProjectImage {
+.cardProject:hover .cardProjectImageContainer .cardProjectImage,
+.cardReading:hover .cardReadingImageContainer .cardReadingImage,
+.cardArticle:hover .cardArticleImageContainer .cardArticleImage {
   transform: scale(1.05);
 }
 
@@ -712,7 +715,7 @@ body.no-scroll {
 }
 
 .cardReadingImageContainer {
-  width: auto;
+  width: 82px;
   height: 124px;
   border-radius: var(--br-8);
   border: 0.5px solid var(--neutral-100);
@@ -726,21 +729,9 @@ body.no-scroll {
   }
 }
 
-.cardReadingImageContainer .cardReadingImage {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: var(--br-8);
-  transition: 0.2s transform ease-in-out;
-}
-
-.cardReading:hover .cardReadingImageContainer .cardReadingImage {
-  transform: scale(1.1);
-}
-
 /* ---------- */
 
-.cardExperience{
+.cardExperience {
   display: flex;
   gap: 16px;
   padding: 16px;
@@ -749,6 +740,62 @@ body.no-scroll {
   background: var(--neutral-1000);
 }
 
+.cardExperience .frameFlexSmall {
+  align-items: flex-start;
+}
+
+/* ---------- */
+
+.cardEducation {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  border-radius: var(--br-8);
+  border: 0.5px solid var(--neutral-600);
+  background: var(--neutral-1000);
+}
+
+.cardEducation .buttonSecondary {
+  width: fit-content;
+}
+
+/* ---------- */
+
+.cardArticle {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  border-radius: var(--br-8);
+  border: 0.5px solid var(--neutral-600);
+  background: var(--neutral-1000);
+  justify-content: space-between;
+}
+
+.cardArticleImageContainer {
+  border-radius: var(--br-8);
+  border: 0.5px solid var(--neutral-100);
+  overflow: hidden;
+  max-height: 112px;
+  max-width: 148px;
+}
+
+@media (max-width: 1200px) {
+
+  .cardArticleImageContainer {
+    max-height: 72px;
+    max-width: 96px;
+  }
+}
+
+.cardArticleImageContainer .cardArticleImage {
+  border-radius: var(--br-8);
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.2s transform ease-in-out;
+}
 
 /* ----- NAVIGATION ----- */
 
@@ -951,7 +998,6 @@ input.themeSwitcher:hover::after {
 input.themeSwitcher:checked:after {
   content: "\f186";
   color: var(--neutral-200);
-  transform: translate(-50%, -50%) scaleX(100%) rotate(360deg);
 }
 
 /* ---------- */
@@ -1245,62 +1291,41 @@ tr td {
 /* ---------- */
 
 .aboutGallery {
-  min-height: 50svh;
-  --img-size: calc(100px - .5rem / 2);
   display: grid;
-  gap: .5rem;
-  grid-template-columns: repeat(6, var(--img-size));
-  grid-template-rows: repeat(3, var(--img-size));
-  align-items: center;
-  margin: auto;
-  margin-top: 4rem;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  height: fit-content;
+  gap: 1rem;
+
+  position: relative;
 }
 
 @media (max-width: 1200px) {
   .aboutGallery {
-    margin-top: 2rem;
+    grid-template-columns: 1fr;    
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));    
   }
 }
 
 .aboutGalleryImage {
-  max-width: 100%;
-  aspect-ratio: 1;
+  overflow: hidden;
+  padding: .5rem;
+  border-radius: var(--br-8);
+  border: 0.5px solid var(--neutral-600); 
+  transition: 0.2s transform ease-in-out; 
+}
+
+.aboutGalleryImage img {
+  aspect-ratio: 1; 
   object-fit: cover;
-  grid-column: span 2;
-  border-radius: .5rem;
-  clip-path: path('M 80 20 C 100 0 100 0 120 20 C 140 40 160 60 180 80 C 200 100 200 100 180 120 C 160 140 140 160 120 180 C 100 200 100 200 80 180 C 60 160 40 140 20 120 C 0 100 0 100 20 80 Z');
-  transition:
-    filter 500ms,
-    clip-path 500ms;
+  filter: brightness(50%) saturate(50%);
+  border-radius: var(--br-8);
+  transition: transform 0.2s ease-in-out; /* Asegúrate de que el img también tenga una transición */
 }
 
-.aboutGalleryImage:nth-of-type(4) {
-  grid-column: 2 / span 2;
-}
-
-.aboutGalleryImage:hover {
-  z-index: 100;
-  clip-path: path('M 0 0 C 100 0 100 0 200 0 C 200 50 200 50 200 80 C 200 100 200 100 200 120 C 200 150 200 150 200 200 C 100 200 100 200 0 200 C 0 150 0 150 0 120 C 0 100 0 100 0 80 Z');
-}
-
-.aboutGalleryImage:not(:hover) {
-  animation: zIndexHack 500ms;
-}
-
-.aboutGallery:hover>img {
-  filter: brightness(.5) saturate(.5);
-}
-
-.aboutGallery>img:hover {
-  filter: brightness(1) saturate(1.5);
-}
-
-@keyframes zIndexHack {
-
-  0%,
-  100% {
-    z-index: 10;
-  }
+.aboutGalleryImage:hover img {
+  transform: scale(1.05);
+  filter: brightness(100%) saturate(100%);
 }
 
 /* ----- ICONS ----- */

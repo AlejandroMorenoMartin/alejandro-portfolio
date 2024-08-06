@@ -144,29 +144,29 @@
 
 /* neutral */
 :root[data-theme="dark"] {
-  --neutral-100: #DAE5F2;
-  --neutral-200: #C3CDD9;
-  --neutral-300: #ACB5BF;
-  --neutral-400: #959DA6;
-  --neutral-500: #7E858C;
-  --neutral-600: #676D73;
-  --neutral-700: #505459;
-  --neutral-800: #393C40;
-  --neutral-900: #222426;
-  --neutral-1000: #0B0C0D;
+  --neutral-100: #E6ECF2;
+  --neutral-200: #CED3D9;
+  --neutral-300: #B6BABF;
+  --neutral-400: #9DA1A6;
+  --neutral-500: #85898C;
+  --neutral-600: #6D7073;
+  --neutral-700: #555759;
+  --neutral-800: #3D3E40;
+  --neutral-900: #3D3E40;
+  --neutral-1000: #0C0C0D;
 }
 
 :root[data-theme="light"] {
-  --neutral-1000: #DAE5F2;
-  --neutral-900: #C3CDD9;
-  --neutral-800: #ACB5BF;
-  --neutral-700: #959DA6;
-  --neutral-600: #7E858C;
-  --neutral-500: #676D73;
-  --neutral-400: #505459;
-  --neutral-300: #393C40;
-  --neutral-200: #222426;
-  --neutral-100: #0B0C0D;
+  --neutral-1000: #E6ECF2;
+  --neutral-900: #CED3D9;
+  --neutral-800: #B6BABF;
+  --neutral-700: #9DA1A6;
+  --neutral-600: #85898C;
+  --neutral-500: #6D7073;
+  --neutral-400: #555759;
+  --neutral-300: #3D3E40;
+  --neutral-200: #3D3E40;
+  --neutral-100: #0C0C0D;
 }
 
 /* primary */

@@ -12,8 +12,7 @@
 
   "mainHeroH1": "Soy Alejandro Moreno",
   "mainHeroP1": "Diseñador de producto",
-  "mainHeroP2": "¡Hola! - Soy un apasionado del diseño de interfaz de usuario y lo uso para mejorar la vida de las personas. Soy autodidacta y metódico en busca de la mejora continua.",
-  "mainHeroP3": "Me considero a mi mismo como un eterno aprendiz, al borde de la obsesion por aquellas cosas que me apasionan.",
+  "mainHeroP2": "¡Hola! - Soy un apasionado del diseño de interfaz de usuario y lo uso para mejorar la vida de las personas. Soy autodidacta y metódico en busca de la mejora continua.",  
   "mainHeroButton1": "Echa un vistazo",
   "mainHeroButton2": "Contacto",
 
@@ -164,31 +163,157 @@
   "experienceCard1Company": "Geomites - Autónomo",
   "experienceCard1Date": "Mar 2023 - Hoy",
   "experienceCard1Location": "España - Remoto",
-  "experienceCard1Description": "Junto a un equipo de diseñadores y desarrolladores, dirijo el diseño UX y UI de este proyecto, en el que desarrollamos un videojuego móvil para plataformas iOS y Android en un entorno ágil. Analizo a los líderes del mercado que ofrecen productos similares, investiguo a los usuarios potenciales y creo diseños de baja y alta fidelidad en Figma. Desarrollo un prototipo que me permite verificar las decisiones de diseño mediante pruebas de usabilidad y tests A/B. Ahora estamos en fase de desarrollo y colaboro con el equipo de desarrollo en la transición del prototipo a React. Por último, desarrollo un sistema de diseño que facilita el mantenimiento y las actualizaciones del producto.",
-  "experienceCard1Technologies": "Technologies: Figma - React - Adobe ilustrator - Microsoft azure - Miro",
-  "experienceCard1Skills": "Skills: Investigación UX - Esquematización - Prototipado - Diseño UX - Testeo de usuarios - Diseño UI - Diseño de videojuegos",
+  "experienceCard1Description": "Junto a un equipo de diseñadores y desarrolladores, dirijo el diseño UX y UI de este proyecto, en el que desarrollamos un videojuego móvil para plataformas iOS y Android en un entorno ágil. Analizo a los líderes del mercado que ofrecen productos similares, investiguo a los usuarios potenciales y creo diseños de baja y alta fidelidad en Figma. Desarrollo un prototipo que me permite verificar las decisiones de diseño mediante pruebas de usabilidad y tests A/B. Ahora estamos en fase de desarrollo y colaboro con el equipo de desarrollo en la transición del prototipo a React. Por último, desarrollo un sistema de diseño que facilita el mantenimiento y las actualizaciones del producto.", 
+  "experienceCard1TechnologiesTitle": "Tecnologías:",
+  "experienceCard1Technologies": "Figma - React - Adobe ilustrator - Microsoft azure - Miro",  
+  "experienceCard1SkillsTitle": "Habilidades:",
+  "experienceCard1Skills": "Investigación UX - Prototipado - Diseño UX - Testeo de usuarios - Diseño UI - Diseño de videojuegos",
   
   "experienceCard2Title": "Diseñador de producto",
   "experienceCard2Company": " - Freelance",
   "experienceCard2Date": "Feb 2023 - Oct 2023",
   "experienceCard2Location": "España - Remoto",
-  "experienceCard2Description": "Me contrataron junto a un desarrollador full-stack para diseñar y desarrollar un sitio web para una agencia de viajes. Realicé estudios y análisis de mercado, centrándome en los usuarios y los competidores. Creé wireframes de baja y alta fidelidad y realicé pruebas de usuario, iterando sobre los diseños en base a los comentarios recibidos. Mantuve una comunicación clara con el equipo de desarrollo para garantizar la aplicación efectiva de los diseños. Al finalizar el proyecto, la empresa consiguió una imagen de marca y un sitio web que aumentaron sus ventas en más de un 200%.",
-  "experienceCard2Technologies": "Technologies: Figma - Adobe photoshop - Miro - Hotjar - Google analytics",
-  "experienceCard2Skills": "Skills: Investigación UX - Diseño UX - Diseño UI - Diseño responsivo - Diseño de móvil - Desarrollo web",
+  "experienceCard2Description": "Me contrataron junto a un desarrollador full-stack para diseñar y desarrollar un sitio web para una agencia de viajes. Realicé estudios y análisis de mercado, centrándome en los usuarios y los competidores. Creé wireframes de baja y alta fidelidad y realicé pruebas de usuario, iterando sobre los diseños en base a los comentarios recibidos. Mantuve una comunicación clara con el equipo de desarrollo para garantizar la aplicación efectiva de los diseños. Al finalizar el proyecto, la empresa consiguió una imagen de marca y un sitio web que aumentaron sus ventas en más de un 200%.", 
+  "experienceCard2TechnologiesTitle": "Tecnologías:",
+  "experienceCard2Technologies": "Figma - Adobe photoshop - Miro - Hotjar - Google analytics",  
+  "experienceCard2SkillsTitle": "Habilidades:",
+  "experienceCard2Skills": "Investigación UX - Diseño UX - Diseño UI - Diseño responsivo - Diseño de móvil - Desarrollo web",
 
   "experienceCard3Title": "Diseñador de producto",
   "experienceCard3Company": " - Freelance",
   "experienceCard3Date": "Abr 2022 - Nov 2022",
   "experienceCard3Location": "España - Remoto",
-  "experienceCard3Description": "Como freelance, me contrataron para diseñar y desarrollar un sitio web para un estudio de efectos visuales. Investigué las empresas líderes del mercado y definí el producto, creando flujos de usuario de baja a alta fidelidad. Realicé investigaciones y pruebas con los usuarios para garantizar que el contenido y el diseño fueran eficientes. Desarrollé el sitio web, asegurándome de que el producto final cumplía las expectativas tanto de las partes interesadas como de los usuarios. La empresa consiguió un aumento de más del 50% en las reservas de proyectos en comparación con el periodo anterior.",
-  "experienceCard3Technologies": "Technologies: Figma - Adobe ilustrator - Wordpress - Google analytics",
-  "experienceCard3Skills": "Skills: Investigación UX - Diseño UX - Diseño UI - Diseño responsivo - Diseño de móvil - Desarrollo web",
+  "experienceCard3Description": "Como freelance, me contrataron para diseñar y desarrollar un sitio web para un estudio de efectos visuales. Investigué las empresas líderes del mercado y definí el producto, creando flujos de usuario de baja a alta fidelidad. Realicé investigaciones y pruebas con los usuarios para garantizar que el contenido y el diseño fueran eficientes. Desarrollé el sitio web, asegurándome de que el producto final cumplía las expectativas tanto de las partes interesadas como de los usuarios. La empresa consiguió un aumento de más del 50% en las reservas de proyectos en comparación con el periodo anterior.",  
+  "experienceCard3TechnologiesTitle": "Tecnologías:",
+  "experienceCard3Technologies": " Figma - Adobe ilustrator - Wordpress - Google analytics",  
+  "experienceCard3SkillsTitle": "Habilidades:",
+  "experienceCard3Skills": "Investigación UX - Diseño UX - Diseño UI - Diseño responsivo - Diseño de móvil - Desarrollo web",
 
   "experienceCard4Title": "Responsable de Marketing & Diseño ",
   "experienceCard4Company": " - Contratado",
   "experienceCard4Date": "Jul 2017 - Sep 2021",
   "experienceCard4Location": "España - En oficina",
   "experienceCard4Description": "Como empleado de una empresa de fabricación de maquinaria industrial, fui responsable de tareas de marketing y diseño. Gestioné el diseño y desarrollo de la página web de la empresa y dirigí campañas de posicionamiento SEO. Dirigí campañas de marketing en las redes sociales y organicé y desarrollé el diseño de varios productos necesarios para las operaciones de la empresa, incluidos catálogos, anuncios y documentos. También colaboré con las partes interesadas para organizar la estrategia de marketing y ventas.",
-  "experienceCard4Technologies": "Technologies:  Google drive - Microsoft suite - Adobe ilustrator - Adobe Photoshop - Google analytics - Wordpress - Hotja",
-  "experienceCard4Skills": "Skills: Negociación - Diseño gráfico - SEO - Estrategia - Marketing digital" 
+ "experienceCard4TechnologiesTitle": "Tecnologías:",
+  "experienceCard4Technologies": "Google drive - Microsoft suite - Adobe ilustrator - Adobe Photoshop - Google analytics - Wordpress - Hotjar",  
+  "experienceCard4SkillsTitle": "Habilidades:",
+  "experienceCard4Skills": "Negociación - Diseño gráfico - SEO - Estrategia - Marketing digital",
+
+  "cardEducation1Title": "Patrones de diseño de interfaz de usuario para el éxito del software",
+  "cardEducation1Date": "Ago 2022",
+  "cardEducation1ID": "ID: 118291-2022-710877",  
+  "cardEducation1Description": "La eficacia de los patrones de diseño de interfaz de usuario, haciendo hincapié en su selección, la organización del contenido para la usabilidad y las estrategias para minimizar el esfuerzo del usuario.",
+  "cardEducation1Button": "Ver credencial",
+
+  "cardEducation2Title": "Diseño visual: la guía definitiva",
+  "cardEducation2Date": "Ago 2022",
+  "cardEducation2ID": "ID: 118291-2022-710876",  
+  "cardEducation2Description": "Este curso explora los principios del buen diseño, enfatizando el uso efectivo de elementos visuales, la aplicación de la teoría del color y la importancia de la tipografía y los sistemas de cuadrícula para mejorar los resultados del diseño.",
+  "cardEducation2Button": "Ver credencial",
+
+  "cardEducation3Title": "Diseño emocional: cómo crear productos que le gusten a la gente",
+  "cardEducation3Date": "Jul 2022",
+  "cardEducation3ID": "ID: 118291-2022-710880",  
+  "cardEducation3Description": "Emoción y diseño, cómo afectan los factores humanos, experiencias emocionales positivas, qué es el “cerebro Triuno” y diseño visceral y reflexivo.",
+  "cardEducation3Button": "Ver credencial",
+
+  "cardEducation4Title": "Visualización de información",
+  "cardEducation4Date": "Jul 2022",
+  "cardEducation4ID": "ID: 118291-2022-710879",  
+  "cardEducation4Description": "Principios de visualización de información, técnicas efectivas y la interacción entre el ojo y el cerebro.",
+  "cardEducation4Button": "Ver credencial",
+
+  "cardEducation5Title": "Diseño para el siglo XXI con Don Norman",
+  "cardEducation5Date": "Jul 2022",
+  "cardEducation5ID": "ID: 118291-2022-710878",  
+  "cardEducation5Description": "Cómo resolver problemas globales, cómo podemos democratizar el diseño, cómo podemos aplicar el diseño centrado en el ser humano y cómo podemos ascender en una empresa.",
+  "cardEducation5Button": "Ver credencial",
+
+  "cardEducation6Title": "La interacción persona-ordenador",
+  "cardEducation6Date": "May 2022",
+  "cardEducation6ID": "ID: 118291-2022-692930",  
+  "cardEducation6Description": "Experiencia de usuario intuitiva, fidelización y rentabilidad del negocio y diseño de navegación y pantalla.",
+  "cardEducation6Button": "Ver credencial",
+
+  "cardEducation7Title": "Diseño de experiencia de usuario (UX) móvil",
+  "cardEducation7Date": "May 2022",
+  "cardEducation7ID": "ID: 118291-2022-692930",  
+  "cardEducation7Description": "Interfaces móviles, experiencia de usuario móvil, UI (Android e IOS), cómo evitar un mal diseño y estrategia de diseño UX.",
+  "cardEducation7Button": "Ver credencial",
+
+  "cardEducation8Title": "Psicología de la Gestalt y diseño web: la guía definitiva",
+  "cardEducation8Date": "Dic 2021",
+  "cardEducation8ID": "ID: 118291-2021-673634",  
+  "cardEducation8Description": "Consumidores y empresas, conceptos de diseño UX, diseño de experiencias, sprints de diseño, métodos de investigación UX y sesgos en el diseño UX.",
+  "cardEducation8Button": "Ver credencial",
+
+  "cardEducation9Title": "Investigación de usuarios: métodos y mejores prácticas",
+  "cardEducation9Date": "Dic 2021",
+  "cardEducation9ID": "ID: 118291-2021-673633",  
+  "cardEducation9Description": "Investigación cualitativa de usuarios, proceso de diseño, validación y sentido ético, pruebas de usabilidad y observación, cómo lidiar con los resultados y cómo tratar con clientes, jefes y partes interesadas.",
+  "cardEducation9Button": "Ver credencial",
+
+  "cardEducation10Title": "Fundamentos de la experiencia del usuario",
+  "cardEducation10Date": "Oct 2021",
+  "cardEducation10ID": "ID: BRYLdxFz",  
+  "cardEducation10Description": "Consumidores y empresas, conceptos de diseño UX, diseño de experiencias, sprints de diseño, métodos de investigación UX y sesgos en el diseño UX.",
+  "cardEducation10Button": "Ver credencial",
+
+  "cardEducation11Title": "HTML5 y CSS3 avanzados", 
+  "cardEducation11Date": "Mar 2021 - Jun 2021",
+  "cardEducation11ID": "ID: 4587-9579846",  
+  "cardEducation11Description": "Diseño Flexbox y Grid, diseño responsivo, animaciones y transiciones, selectores avanzados, prepositores CSS, propiedades CSS personalizadas, transformaciones y transiciones, filtros y sombras, sistemas de cuadrícula CSS y optimización del rendimiento.",
+  "cardEducation11Button": "Ver credencial",
+
+  "cardEducation12Title": "Grado en Marketing",
+
+  "cardEducation12Date": "Sep 2011 - Jul 2016",
+  "cardEducation12ID": "ID: 056A-022441",  
+  "cardEducation12Description": "Análisis y síntesis de datos, habilidades organizativas, de comunicación, económicas y de negocios, habilidades interdisciplinares y capacidad crítica.",
+  "cardEducation12Button": "Ver credencial",
+
+  "cardArticle1Title": "Herramientas para buscar certezas",  
+  "cardArticle1Info": "Abr 2024 | 10 min lectura",
+  "cardArticle1Description": "Explorando herramientas para garantizar la certeza en el diseño de productos.",
+
+  "cardArticle2Title": "Modelos mentales",  
+  "cardArticle2Info": "Feb 2024 | 7 min lectura",
+  "cardArticle2Description": "Conozca este concepto y algunos de los más conocidos.",
+
+  "cardArticle3Title": "Diseño basado en pensamientos",  
+  "cardArticle3Info": "Jan 2024 | 5 min lectura",
+  "cardArticle3Description": "Cómo utilizar la psicología para hacer mejores diseños.",
+
+  "cardArticle4Title": "Menos es más",  
+  "cardArticle4Info": "En 2024 | 6 min lectura",
+  "cardArticle4Description": "Pequeños cambios para solucionar problemas.",
+
+  "cardArticle5Title": "Test de usabilidad",  
+  "cardArticle5Info": "Nov 2023 | 5 min lectura",
+  "cardArticle5Description": "Algunos consejos para ayudarle en esta tarea.",
+
+  "cardArticle6Title": "Como crecer como diseñador de producto",  
+  "cardArticle6Info": "Oct 2023 | 5 min lectura",
+  "cardArticle6Description": "Descubre las áreas que necesitas mejorar para avanzar en tu carrera.",
+
+  "cardArticle7Title": "Competencias como diseñador de producto",  
+  "cardArticle7Info": "Sep 2023 | 8 min lectura",
+  "cardArticle7Description": "Estas son las competencias que un diseñador de producto debe tener.",
+
+  "cardArticle8Title": "Diferentes modelos de negocio",  
+  "cardArticle8Info": "May 2023 | 6 min lectura",
+  "cardArticle8Description": "Ventajas y desventajas de los diferentes modelos de negocio, desde la persepectiva del diseño de producto.",
+
+  "cardArticle9Title": "El rol como diseñador de producto",  
+  "cardArticle9Info": "Feb 2023 | 8 min lectura",
+  "cardArticle9Description": "Comprender las especializaciones clave en este rol.",
+
+  "cardArticle10Title": "Equipos multidisciplinares",  
+  "cardArticle10Info": "En 2023 | 5 min lectura",
+  "cardArticle10Description": "Conozca los diferentes roles que interactúan con el diseño.",
+
+  "cardArticle11Title": "El ciclo de vida del producto",  
+  "cardArticle11Info": "Dic 2022 | 5 min lectura",
+  "cardArticle11Description": "Descubre las etapas en la creación de un producto."
+  
 }
