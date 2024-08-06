@@ -27,7 +27,7 @@
 <body>
 
   <!-- [main] -->
-  <main class="main">    
+  <main class="main">
 
     <!-- [navBar] -->
     <header class="navBar">
@@ -39,21 +39,39 @@
           </svg></a>
         <nav class="primaryNavigation" id="primaryNavigation">
           <ul aria-label="Primary" role="list" class=" navBarNavigation">
-            <li class="navBarFrameLink active"><a href="index.html">
-                <p data-key="navBarFrameLink1"></p>
-              </a></li>
+            <li>
+              <h4 data-key="navBarFrameTitle" class="hideOnDesktop"></h4>
+            </li>
+            <div class="frameFlexLarge">
+              <li class="navBarFrameLink active"><a href="index.html">
+                  <p data-key="navBarFrameLink1"></p>
+                </a></li>
               <li class="navBarFrameLink"><a href="projects.html">
-                <p data-key="navBarFrameLink2"></p>
-              </a></li>
-            <li class="navBarFrameLink"><a href="resume.html">
-                <p data-key="navBarFrameLink3"></p>
-              </a></li>
-            <li class="navBarFrameLink"><a href="aboutMe.html">
-                <p data-key="navBarFrameLink4"></p>
-              </a></li>
-            <li class="navBarFrameLink"><a href="blog.html">
-                <p data-key="navBarFrameLink5"></p>
-              </a></li>
+                  <p data-key="navBarFrameLink2"></p>
+                </a></li>
+              <li class="navBarFrameLink"><a href="resume.html">
+                  <p data-key="navBarFrameLink3"></p>
+                </a></li>
+              <li class="navBarFrameLink"><a href="aboutMe.html">
+                  <p data-key="navBarFrameLink4"></p>
+                </a></li>
+              <li class="navBarFrameLink"><a href="blog.html">
+                  <p data-key="navBarFrameLink5"></p>
+                </a></li>
+            </div>
+            <li class="frameFlexMedium hideOnDesktop">
+              <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
+                  class="fa-brands fa-whatsapp"></i></a>
+              <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon"
+                target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
+                  class="fa-brands fa-github"></i></a>
+              <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
+                  class="fa-solid fa-envelope"></i></a>
+            </li>
+            <li><button type="button" class="openContactForm buttonPrimary hideOnDesktop">
+                <p class="regular-bold" data-key="mainHeroButton2"></p>
+              </button></li>
           </ul>
         </nav>
         <div class="switcherContainer ">
@@ -89,14 +107,14 @@
             </div>
           </div>
           <div class="frameFlexColumnMedium">
-            <p class="regular" data-key="mainHeroP2"></p>           
+            <p class="regular" data-key="mainHeroP2"></p>
           </div>
           <div class="frameFlexMedium">
             <a id="stepLink" class="buttonSecondary" href="#stepSection">
               <p class="regular-bold" data-key="mainHeroButton1"></p>
               <i class="fa-solid fa-arrow-down iconDefault"></i>
             </a>
-            <button type="button" id="openContactForm" class="buttonPrimary">
+            <button type="button" class="openContactForm buttonPrimary">
               <p class="regular-bold" data-key="mainHeroButton2"></p>
             </button>
           </div>
@@ -421,32 +439,39 @@
               class="fa-solid fa-envelope"></i></button>
         </div>
         <input type="hidden" name="access_key" value="a698f320-b8cf-4911-b13b-aaa1297e57b0">
-        <div class="frameFlexColumnTiny">
+        <div class="frameFlexColumnSmall">
           <p data-key="contactFormName" class="small"></p>
           <input type="name" name="name" class="contactInput" required>
         </div>
-        <div class="frameFlexColumnTiny">
+        <div class="frameFlexColumnSmall">
           <p data-key="contactFormEmail" class="small"></p>
           <input type="email" name="name" class="contactInput" required>
         </div>
-        <div class="frameFlexColumnTiny">
+        <div class="frameFlexColumnSmall">
           <p data-key="contactFormMessage" class="small"></p>
           <textarea type="message" name="message" class="contactInput" required></textarea>
         </div>
 
         <button type="submit" class="buttonPrimary">
-          <p data-key="contactFormButton" class="large"></p>
+          <p data-key="contactFormButton" class="regular-bold"></p>
         </button>
       </form>
     </div>
 
-     <!-- [progressButton] -->
-     <div id="progressButton">
-      <span id="progressValue">
-        <i class="fa-solid fa-chevron-up"></i>
-      </span>
-    </div>
-
+    <!-- [progressButton] -->
+    <button class="btn-toggle-round scroll-top js-scroll-top" type="button" title="Scroll to top">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up" width="24" height="24"
+        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <line x1="12" y1="5" x2="12" y2="19" />
+        <line x1="18" y1="11" x2="12" y2="5" />
+        <line x1="6" y1="11" x2="12" y2="5" />
+      </svg>
+      <svg class="progress-circle" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+    </button>
 
     <!-- [footer] -->
     <footer>

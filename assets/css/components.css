@@ -243,44 +243,53 @@
 
 /* ----- BUTTONS ----- */
 
-#progressButton {
+.scroll-top {
   position: fixed;
-  background: var(--neutral-1000);
-  z-index: 100;
-  bottom: 5%;
-  right: 5%;
-  width: 48px;
-  height: 48px;
-  display: none;
-  place-items: center;
-  border-radius: 50%;
-  color: var(--neutral-200);
+  z-index: 50;
+  padding: 0;
+  right: 2rem;
+  bottom: 2rem;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+  height: 46px;
+  width: 46px;
   cursor: pointer;
-}
-
-#progressValue {
-  display: grid;
-  height: calc(100% - 3px);
-  width: calc(100% - 3px);
-  background: var(--neutral-1000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
-  color: var(--regular-400);
-  place-items: center;
-  font-size: 1.5rem;
+  transition: all 0.4s ease;    
+  background-color: var(--neutral-1000);
 }
 
-#progressButton:hover {
-  transform: translateY(-10%);
-  transition: transform .3s cubic-bezier(.62, -1.12, .53, 1.92);
+
+.scroll-top .icon-tabler-arrow-up {
+  position: absolute;
+  stroke-width: 2px;
+  stroke: var(--neutral-200);
 }
 
-#progressButton:active {
-  transform: scale(0.95);
-  transition: transform 0.1s;
+.scroll-top {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
 }
 
-#progressValue:hover {
-  background: var(--neutral-900);
+.scroll-top.is-active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.scroll-top svg path {
+  fill: none;
+}
+
+.scroll-top svg.progress-circle path {
+  stroke: var(--primary-400);
+  stroke-width: 4;
+  transition: all 0.4s ease;
 }
 
 /* ---------- */
@@ -510,14 +519,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 50vw;
-  height: 90vh;
   padding: 2rem;
   border-radius: var(--br-8);
   background: var(--neutral-1000);
-  box-shadow: 0 0 0.4rem var(--white);
+  border: 0.5px solid var(--neutral-600);
   z-index: 100;
   display: none;
-  /* Oculto por defecto */
 }
 
 .overlay {
@@ -527,10 +534,8 @@
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.75);
-  /* Opacidad del fondo */
   z-index: 99;
   display: none;
-  /* Oculto por defecto */
 }
 
 .contactFormBody {
@@ -602,7 +607,7 @@ body.no-scroll {
 @media (max-width: 1200px) {
 
   .contactForm {
-    width: 80svw;
+    width: 90svw;
   }
 
   .contactInput {
@@ -854,6 +859,10 @@ body.no-scroll {
   position: fixed;
 }
 
+.hideOnDesktop {
+  display: none;
+}
+
 @media (max-width: 1200px) {
 
   .navBarContainer {
@@ -870,10 +879,10 @@ body.no-scroll {
     margin-top: 1rem;
     position: absolute;
     inset: 4rem 1rem auto;
-    padding: 4rem;
+    padding: 2rem;
     background: var(--neutral-1000);
     border-radius: var(--br-8);
-    box-shadow: 0 0 0.8rem var(--white);
+    border: 0.5px solid var(--neutral-600);
   }
 
   .navBar[data-overlay]::before {
@@ -887,6 +896,12 @@ body.no-scroll {
     display: grid;
     gap: 4rem;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navBarNavigation * {
+    width: 100%;
   }
 
   .primaryNavigation[data-visible] {
@@ -926,6 +941,18 @@ body.no-scroll {
 
   .no-scroll {
     overflow: hidden;
+  }
+
+  .hideOnDesktop {
+    display: flex;
+  }
+
+  h4.hideOnDesktop {
+    display: block;
+  }
+
+  .frameFlexLarge {
+    flex-direction: column;
   }
 }
 
@@ -1296,31 +1323,24 @@ tr td {
   width: 100%;
   height: fit-content;
   gap: 1rem;
-
   position: relative;
-}
-
-@media (max-width: 1200px) {
-  .aboutGallery {
-    grid-template-columns: 1fr;    
-    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));    
-  }
 }
 
 .aboutGalleryImage {
   overflow: hidden;
   padding: .5rem;
   border-radius: var(--br-8);
-  border: 0.5px solid var(--neutral-600); 
-  transition: 0.2s transform ease-in-out; 
+  border: 0.5px solid var(--neutral-600);
+  transition: 0.2s transform ease-in-out;
 }
 
 .aboutGalleryImage img {
-  aspect-ratio: 1; 
+  aspect-ratio: 1;
   object-fit: cover;
-  filter: brightness(50%) saturate(50%);
+  filter: brightness(75%) saturate(75%);
   border-radius: var(--br-8);
-  transition: transform 0.2s ease-in-out; /* Asegúrate de que el img también tenga una transición */
+  transition: transform 0.2s ease-in-out;
+  /* Asegúrate de que el img también tenga una transición */
 }
 
 .aboutGalleryImage:hover img {

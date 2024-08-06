@@ -1,8 +1,10 @@
 {
+  "navBarFrameTitle": "Menú",
   "navBarFrameLink1": "Inicio",
-  "navBarFrameLink2": "Currículum",
-  "navBarFrameLink3": "Sobre mí",
-  "navBarFrameLink4": "Blog",
+  "navBarFrameLink2": "Proyectos",
+  "navBarFrameLink3": "Currículum",
+  "navBarFrameLink4": "Sobre mí",
+  "navBarFrameLink5": "Blog",
 
   "greetingsMorning": "¡Buenos días!",
   "greetingsAfternoon": "¡Buenas tardes!",
@@ -13,7 +15,7 @@
   "mainHeroH1": "Soy Alejandro Moreno",
   "mainHeroP1": "Diseñador de producto",
   "mainHeroP2": "¡Hola! - Soy un apasionado del diseño de interfaz de usuario y lo uso para mejorar la vida de las personas. Soy autodidacta y metódico en busca de la mejora continua.",  
-  "mainHeroButton1": "Echa un vistazo",
+  "mainHeroButton1": "Portfolio",
   "mainHeroButton2": "Contacto",
 
   "indexSectionHeader1": "Proyectos",
@@ -31,7 +33,7 @@
    "indexSectionHeaderButton": "Ver más",
 
   "aboutPageTitle": "Sobre mí",
-  "aboutPageText1":"Trabajar para diferentes compañias y sectores, me a permitido entender que la comunicacion efectiva asi como la colaboracion estrecha con el resto de departamentos es clave para un buen diseño. Como persona autodidacta, aprendo todo aquello que necesito para ser mas eficiente en mi trabajo. Trabajar para las personas y mejorar sus vidad a través de la experiencia de usuario es mi pasión.",
+  "aboutPageText1":"Como persona autodidacta, aprendo todo aquello que necesito para ser mas eficiente en mi trabajo. Trabajar para las personas y mejorar sus vidad a través de la experiencia de usuario es mi pasión.",
   "aboutPageText2":"Soy Alejandro Moreno, diseñador de producto residente en España y trabajando en remoto para cualquier parte del mundo. Me gusta estar entre los objetivos de la empresa y los usuarios, haciendo que el diseño este en perfecto equilibrio y armonía entre ambos.",
   "aboutPageTitleParagraph1":"Actualmente",
   "aboutPageTextParagraph1":"Actualmente me encargo del diseño de Geomites, un videojuego para móviles desarrollado para plataformas iOS y Android que pronto saldrá al mercado. Es un proyecto personal junto a un equipo de diseñadores y desarrolladores.",

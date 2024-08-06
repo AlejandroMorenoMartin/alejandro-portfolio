@@ -39,21 +39,39 @@
           </svg></a>
         <nav class="primaryNavigation" id="primaryNavigation">
           <ul aria-label="Primary" role="list" class=" navBarNavigation">
-            <li class="navBarFrameLink"><a href="index.html">
-                <p data-key="navBarFrameLink1"></p>
-              </a></li>
-            <li class="navBarFrameLink active"><a href="projects.html">
-                <p data-key="navBarFrameLink2"></p>
-              </a></li>
-            <li class="navBarFrameLink"><a href="resume.html">
-                <p data-key="navBarFrameLink3"></p>
-              </a></li>
-            <li class="navBarFrameLink"><a href="aboutMe.html">
-                <p data-key="navBarFrameLink4"></p>
-              </a></li>
-            <li class="navBarFrameLink"><a href="blog.html">
-                <p data-key="navBarFrameLink5"></p>
-              </a></li>
+            <li>
+              <h4 data-key="navBarFrameTitle" class="hideOnDesktop"></h4>
+            </li>
+            <div class="frameFlexLarge">
+              <li class="navBarFrameLink"><a href="index.html">
+                  <p data-key="navBarFrameLink1"></p>
+                </a></li>
+              <li class="navBarFrameLink active"><a href="projects.html">
+                  <p data-key="navBarFrameLink2"></p>
+                </a></li>
+              <li class="navBarFrameLink"><a href="resume.html">
+                  <p data-key="navBarFrameLink3"></p>
+                </a></li>
+              <li class="navBarFrameLink"><a href="aboutMe.html">
+                  <p data-key="navBarFrameLink4"></p>
+                </a></li>
+              <li class="navBarFrameLink"><a href="blog.html">
+                  <p data-key="navBarFrameLink5"></p>
+                </a></li>
+            </div>
+            <li class="frameFlexMedium hideOnDesktop">
+              <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
+                  class="fa-brands fa-whatsapp"></i></a>
+              <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon"
+                target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
+                  class="fa-brands fa-github"></i></a>
+              <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
+                  class="fa-solid fa-envelope"></i></a>
+            </li>
+            <li><button type="button" class="openContactForm buttonPrimary hideOnDesktop">
+              <p class="regular-bold" data-key="mainHeroButton2"></p>
+            </button></li>
           </ul>
         </nav>
         <div class="switcherContainer ">
@@ -168,6 +186,45 @@
       <span id="progressValue">
         <i class="fa-solid fa-chevron-up"></i>
       </span>
+    </div>
+
+    <!-- [contactForm] -->
+    <div class="overlay hidden"></div>
+    <div class="contactForm hidden">
+      <form action="https://api.web3forms.com/submit" method="POST" class="contactFormBody">
+
+        <button type="button" class="buttonClose" id="closeContactForm"><i class="fa-solid fa-xmark iconDefault"
+            aria-hidden="true"></i></button>
+        <h4 data-key="contactFormTitle"></h4>
+        <p data-key="contactFormText" class="regular"></p>
+        <div class="frameFlexMedium">
+          <button type="button" href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
+              class="fa-brands fa-whatsapp"></i></button>
+          <button type="button" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon"
+            target="_blank"><i class="fa-brands fa-linkedin"></i></button>
+          <button type="button" href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
+              class="fa-brands fa-github"></i></button>
+          <button type="button" href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
+              class="fa-solid fa-envelope"></i></button>
+        </div>
+        <input type="hidden" name="access_key" value="a698f320-b8cf-4911-b13b-aaa1297e57b0">
+        <div class="frameFlexColumnSmall">
+          <p data-key="contactFormName" class="small"></p>
+          <input type="name" name="name" class="contactInput" required>
+        </div>
+        <div class="frameFlexColumnSmall">
+          <p data-key="contactFormEmail" class="small"></p>
+          <input type="email" name="name" class="contactInput" required>
+        </div>
+        <div class="frameFlexColumnSmall">
+          <p data-key="contactFormMessage" class="small"></p>
+          <textarea type="message" name="message" class="contactInput" required></textarea>
+        </div>
+
+        <button type="submit" class="buttonPrimary">
+          <p data-key="contactFormButton" class="regular-bold"></p>
+        </button>
+      </form>
     </div>
 
 

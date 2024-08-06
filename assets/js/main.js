@@ -213,7 +213,7 @@ navToggle.addEventListener("click", () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   const contactForm = document.querySelector('.contactForm');
-  const openContactFormBtn = document.getElementById('openContactForm');
+  const openContactFormBtns = document.querySelectorAll('.openContactForm');
   const closeContactFormBtn = document.getElementById('closeContactForm');
   const overlay = document.querySelector('.overlay');
   const body = document.body;
@@ -232,8 +232,8 @@ document.addEventListener('DOMContentLoaded', () => {
     body.classList.remove('no-scroll');
   }
 
-  // Abrir el formulario al hacer clic en el botón de apertura
-  openContactFormBtn.addEventListener('click', openForm);
+  // Abrir el formulario al hacer clic en los botones de apertura
+  openContactFormBtns.forEach(btn => btn.addEventListener('click', openForm));
 
   // Cerrar el formulario al hacer clic en el botón de cierre
   closeContactFormBtn.addEventListener('click', closeForm);
@@ -244,25 +244,62 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* ----- BUTTONPROGRESS ----- */
 
-let calcScrollValue = () => {
-  let scrollProgress = document.getElementById("progressButton");
-  let pos = document.documentElement.scrollTop;
-
-  let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  let scrollValue = Math.round((pos * 100) / calcHeight);
-
-  if (pos > 100) {
-    scrollProgress.style.display = "grid";
-  } else {
-    scrollProgress.style.display = "none";
+document.addEventListener('DOMContentLoaded', () => {
+  const scrollTopBtn = document.querySelector('.js-scroll-top');
+  if (scrollTopBtn) {
+    scrollTopBtn.onclick = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
   }
 
-  scrollProgress.addEventListener("click", () => {
-    document.documentElement.scrollTop = 0;
-  });
+  const offset = 100;
+  window.addEventListener(
+    'scroll',
+    function (event) {
+      const scrollPos = window.scrollY || document.documentElement.scrollTop;
+      if (scrollPos > offset) {
+        scrollTopBtn.classList.add('is-active');
+      } else {
+        scrollTopBtn.classList.remove('is-active');
+      }
+    },
+    false,
+  );
 
-  scrollProgress.style.background = `conic-gradient(var(--primary-400)${scrollValue}%, var(--neutral-600) ${scrollValue}%)`;
-};
+  const progressPath = document.querySelector('.progress-circle path');
+  if (progressPath) {
+    const pathLength = progressPath.getTotalLength();
+    progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+    progressPath.style.strokeDasharray = `${pathLength} ${pathLength}`;
+    progressPath.style.strokeDashoffset = pathLength;
+    progressPath.getBoundingClientRect();
+    progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+
+    const updateProgress = function() {
+      const scroll = window.scrollY || document.documentElement.scrollTop;
+
+      const docHeight = Math.max(
+        document.body.scrollHeight, document.documentElement.scrollHeight,
+        document.body.offsetHeight, document.documentElement.offsetHeight,
+        document.body.clientHeight, document.documentElement.clientHeight
+      );
+
+      const windowHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
+      const height = docHeight - windowHeight;
+      const progress = pathLength - (scroll * pathLength / height);
+      progressPath.style.strokeDashoffset = progress;
+    };
+
+    window.addEventListener('scroll', function(event) {
+      updateProgress();
+    });
+
+    // Call updateProgress initially to set the correct state
+    updateProgress();
+  }
+});
+
 
 /* ----- SCROLLER ----- */
 

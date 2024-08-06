@@ -1,4 +1,5 @@
 {
+  "navBarFrameTitle": "Menu",
   "navBarFrameLink1": "Home",
   "navBarFrameLink2": "Projects",
   "navBarFrameLink3": "Resume",
@@ -14,7 +15,7 @@
   "mainHeroH1": "I'm Alejandro Moreno",
   "mainHeroP1": "Product designer",
   "mainHeroP2": "Hey! - I'm passionate and dedicated to user experience to improve people's lives. I am self-taught and methodical in search of continuous improvement.",  
-  "mainHeroButton1": "Take a look",
+  "mainHeroButton1": "Portfolio",
   "mainHeroButton2": "Contact",
 
   "indexSectionHeader1": "Projects",
@@ -31,8 +32,8 @@
 
   "indexSectionHeaderButton": "See more",
 
-  "aboutPageTitle": "About",
-  "aboutPageText1":"Working for different companies and sectors has allowed me to understand that effective communication as well as close collaboration with other departments is key to good design. As a self-taught person, I learn everything I need to be more efficient in my work. Working for people and improving their lives through user experience is my passion.",
+  "aboutPageTitle": "About me",
+  "aboutPageText1":"As a self-taught person, I learn everything I need to be more efficient in my work. Working for people and improving their lives through user experience is my passion.",
   "aboutPageText2":"I am Alejandro Moreno, a product designer living in Spain and working remotely for any part of the world. I like to be between the objectives of the company and the users, making the design be in perfect balance and harmony between both.",
   "aboutPageTitleParagraph1":"Present",
   "aboutPageTextParagraph1":"I am currently in charge of the design of Geomites, a mobile video game developed for iOS and Android platforms that will soon be released. It is a personal project together with a team of designers and developers.",
