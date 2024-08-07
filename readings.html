@@ -32,10 +32,10 @@
     <!-- [navBar] -->
     <header class="navBar">
       <div class="navBarContainer">
-        <a href="index.html" alt="logoAlejandro" id="logoLink">
-          <svg class="logo" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M11.0044 29.7125L23.0381 6.83789H24.6898L45.3122 42.6954H35.4965L24.9257 24.5289H23.274L21.3392 29.7125H11.0044ZM8.07878 34.6109H24.5012L29.6451 42.8381H3.3125L8.07878 34.6109Z" />
+        <a href="index.html" alt="logoAlejandro" id="logoLink" viewBox="0 0 24 24">
+          <svg class="logo" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M5.65845 15.2752L11.6753 3.83789H12.5011L22.8124 21.7667H17.9045L12.6191 12.6834H11.7933L10.8258 15.2752H5.65845ZM4.19564 17.7244H12.4069L14.9788 21.838H1.8125L4.19564 17.7244Z"/>
           </svg></a>
         <nav class="primaryNavigation" id="primaryNavigation">
           <ul aria-label="Primary" role="list" class=" navBarNavigation">
@@ -323,14 +323,7 @@
 
       </div>
 
-    </div>
-
-    <!-- [progressButton] -->
-    <div id="progressButton">
-      <span id="progressValue">
-        <i class="fa-solid fa-chevron-up"></i>
-      </span>
-    </div>
+    </div>   
 
     <!-- [contactForm] -->
     <div class="overlay hidden"></div>
@@ -371,16 +364,29 @@
       </form>
     </div>
 
+    <!-- [progressButton] -->
+    <button class="btn-toggle-round scroll-top js-scroll-top" type="button" title="Scroll to top">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up" width="24" height="24"
+        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <line x1="12" y1="5" x2="12" y2="19" />
+        <line x1="18" y1="11" x2="12" y2="5" />
+        <line x1="6" y1="11" x2="12" y2="5" />
+      </svg>
+      <svg class="progress-circle" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+    </button>
 
     <!-- [footer] -->
     <footer>
       <div class="footerFrame">
-        <a href="index.html" alt="logoAlejandro" id="logoLink">
-          <svg class="logo" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M11.0044 29.7125L23.0381 6.83789H24.6898L45.3122 42.6954H35.4965L24.9257 24.5289H23.274L21.3392 29.7125H11.0044ZM8.07878 34.6109H24.5012L29.6451 42.8381H3.3125L8.07878 34.6109Z" />
-          </svg>
-        </a>
+        <a href="index.html" alt="logoAlejandro" id="logoLink" viewBox="0 0 24 24">
+          <svg class="logo" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M5.65845 15.2752L11.6753 3.83789H12.5011L22.8124 21.7667H17.9045L12.6191 12.6834H11.7933L10.8258 15.2752H5.65845ZM4.19564 17.7244H12.4069L14.9788 21.838H1.8125L4.19564 17.7244Z"/>
+          </svg></a>
         <a class="buttonSecondary" href="assets/documents/alejandroMoreno_resume.pdf" target="_blank">
           <p class="regular-bold" data-key="footerButton1"></p>
           <i class="fa-solid fa-download"></i>

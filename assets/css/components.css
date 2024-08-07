@@ -8,13 +8,13 @@
   width: 100%;
   align-items: top;
   justify-content: center;
-  gap: 148px;
+  gap: 196px;
 }
 
 @media (max-width: 1200px) {
   .main {
     justify-content: left;
-    gap: 96px;
+    gap: 72px;
   }
 }
 
@@ -23,18 +23,15 @@
 .mainTwo {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  width: 1200px;
+  width: min(85%, 1200px);  
   align-items: top;
   justify-content: left;
   gap: 64px;
-  margin: 0 auto;
+  margin-inline: auto;
 }
 
 @media (max-width: 1200px) {
-  .mainTwo {
-    padding: 0px 12px 0px 12px;
-    width: 100%;
+  .mainTwo {    
     gap: 32px;
   }
 }
@@ -44,36 +41,39 @@
 .mainSections {
   display: flex;
   flex-direction: column;
-  width: 1200px;
+  width: min(85%, 1200px);
   align-items: top;
   justify-content: center;
   gap: 192px;
-  margin: 0 auto;
+  margin-inline: auto;
 }
 
 @media (max-width: 1200px) {
-  .mainSections {
-    padding: 0px 12px 0px 12px;
-    gap: 124px;
-    width: 100%;
+  .mainSections {    
+    gap: 124px;    
   }
 }
 
 /* ---------- */
 
 .mainHero {
-  height: calc(100svh - 272px);
-  display: grid;
+  display: flex;
   gap: 2rem;
-  grid-template-columns: 1fr 2fr;
-  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
 }
 
-@media (max-width: 1200px) {
+.mainHero .frameFlexColumnLarge {
+  flex: 2;
+}
+
+@media (max-width: 420px) {
   .mainHero {
+    height: calc(100svh - 196px);
     display: flex;
     flex-direction: column;
-    height: calc(95svh - 96px);
+    margin-bottom: 10rem;
   }
 }
 
@@ -230,7 +230,7 @@
 .gridThree {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(min(386px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr));
 }
 
 /* ---------- */
@@ -259,7 +259,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transition: all 0.4s ease;    
+  transition: all 0.4s ease;
   background-color: var(--neutral-1000);
 }
 
@@ -416,13 +416,14 @@
 /* ---------- */
 
 .buttonTab {
-  display: flex;
-  padding: 8px;
-  gap: 16px;
-  background: var(--neutral-800);
-  border-radius: var(--br-8);
+  display: flex;  
+  gap: 16px;  
   align-items: center;
   width: fit-content;
+}
+
+.buttonTabComponent.active p {
+  color: var(--neutral-900);
 }
 
 .buttonTabComponent {
@@ -432,8 +433,12 @@
   cursor: pointer;
 }
 
-.buttonTabComponent.active {
+.buttonTabComponent:hover {
   background: var(--neutral-900);
+}
+
+.buttonTabComponent.active {
+  background: var(--neutral-100);
 }
 
 /* ---------- */
@@ -866,7 +871,7 @@ body.no-scroll {
 @media (max-width: 1200px) {
 
   .navBarContainer {
-    padding: 8px 16px;
+    padding: 8px 7.5%;
   }
 
   .menuButton {
@@ -1272,10 +1277,16 @@ tr td {
 /* ----- IMAGES ----- */
 
 .logo {
-  width: 48px;
+  width: 48px;  
   height: 48px;
-  fill: var(--primary-400);
-  transition: fill 0.3s ease;
+  fill: var(--primary-400);  
+}
+
+@media (max-width: 1200px) {
+  .logo {
+    width: 24px;  
+    height: 24px;    
+  }
 }
 
 .logo:hover {
@@ -1287,17 +1298,24 @@ tr td {
 .mainHeroImageContainer {
   background: var(--primary-400);
   padding: .25rem;
-  border-radius: 100%;
+  border-radius: var(--br-8);
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  aspect-ratio: 1;
+  flex: 1;
+}
+
+.mainHeroImage {
+  height: auto;
+  width: min(100%, 24rem);
+  object-fit: contain;
+  border-radius: var(--br-8);
 }
 
 @media (max-width: 1200px) {
-  .mainHeroImageContainer {
-    max-height: 75%;
-    max-width: 75%;
-  }
-
   .mainHeroImage {
-    object-fit: contain;
+    width: min(100%, 16rem);
   }
 }
 
