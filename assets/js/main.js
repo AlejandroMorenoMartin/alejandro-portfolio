@@ -330,25 +330,6 @@ function addAnimation() {
   });
 }
 
-/* ----- SHARE BUTTONS ----- */
-
-const whatsapp = document.querySelector('.whatsapp');
-const linkedin = document.querySelector('.linkedin');
-
-const pageUrl = encodeURIComponent(location.href);
-const message2 = encodeURIComponent('Read this, it only takes a few minutes');
-
-const whatsappApi = `https://wa.me/?text=${pageUrl}. ${message2}`;
-const linkedinApi = `https://www.linkedin.com/sharing/share-offsite/?url=${pageUrl}&summary=${message2}`;
-
-whatsapp.addEventListener('click', () => {
-  window.open(whatsappApi, '_blank');
-});
-
-linkedin.addEventListener('click', () => {
-  window.open(linkedinApi, '_blank');
-});
-
 /* ----- PRELOADINGPROGRESSBAR ----- */
 
 

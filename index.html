@@ -19,6 +19,9 @@
   <link rel="stylesheet" href="/assets/css/reset.css">
   <link rel="stylesheet" href="/assets/css/variables.css">
   <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
 
   <!-- [title] -->
   <title>Alejandro Moreno - Portfolio</title>
@@ -33,16 +36,17 @@
     <header class="navBar">
       <div class="navBarContainer">
         <a href="index.html" alt="logoAlejandro" id="logoLink" viewBox="0 0 24 24">
-          <svg class="logo" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M5.65845 15.2752L11.6753 3.83789H12.5011L22.8124 21.7667H17.9045L12.6191 12.6834H11.7933L10.8258 15.2752H5.65845ZM4.19564 17.7244H12.4069L14.9788 21.838H1.8125L4.19564 17.7244Z"/>
-          </svg></a>
+          <svg class="logo" viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M5.86048 20.6292L15.0291 2.83789H16.2875L32.0001 30.7269H24.5213L16.4673 16.5975H15.2089L13.7347 20.6292H5.86048ZM3.63149 24.439H16.144L20.0631 30.8379H0L3.63149 24.439Z" />
+          </svg>
+        </a>
         <nav class="primaryNavigation" id="primaryNavigation">
           <ul aria-label="Primary" role="list" class=" navBarNavigation">
             <li>
               <h4 data-key="navBarFrameTitle" class="hideOnDesktop"></h4>
             </li>
-            <div class="frameFlexLarge">
+            <ul class="navBarFrameNavigation">
               <li class="navBarFrameLink active"><a href="index.html">
                   <p data-key="navBarFrameLink1"></p>
                 </a></li>
@@ -58,8 +62,12 @@
               <li class="navBarFrameLink"><a href="blog.html">
                   <p data-key="navBarFrameLink5"></p>
                 </a></li>
-            </div>
-            <li class="frameFlexMedium hideOnDesktop">
+            </ul>
+            <li class="switcherContainer">
+              <input class="switcher languageSwitcher" type="checkbox">
+              <input class="switcher themeSwitcher" type="checkbox">
+            </li>
+            <li class="frameFlexSmall hideOnDesktop">
               <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
                   class="fa-brands fa-whatsapp"></i></a>
               <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon"
@@ -69,18 +77,14 @@
               <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
                   class="fa-solid fa-envelope"></i></a>
             </li>
-            <li><button type="button" class="openContactForm buttonPrimary hideOnDesktop">
-                <p class="regular-bold" data-key="mainHeroButton2"></p>
-              </button></li>
           </ul>
         </nav>
-        <div class="switcherContainer ">
-          <input class="switcher languageSwitcher" type="checkbox">
-          <input class="switcher themeSwitcher" type="checkbox">
-        </div>
-        <button class="mobileNavToggle " aria-controls="primaryNavigation" aria-expended="false">
-          <i class="fa-solid fa-xmark iconDefault iconClose" aria-hidden="true"></i>
-          <i class="fa-solid fa-bars iconDefault iconHamburger" aria-hidden="true"></i>
+        <button class="mobileNavToggle" aria-controls="primaryNavigation" aria-expanded="false">
+          <svg class="hambuger" viewbox="0 0 100 100" width="36">
+            <rect class="hamburgerLine topLine" width="80" height="10" x="10" y="25" rx="5"></rect>
+            <rect class="hamburgerLine middleLine" width="80" height="10" x="10" y="45" rx="5"></rect>
+            <rect class="hamburgerLine bottomLine" width="80" height="10" x="10" y="65" rx="5"></rect>
+          </svg>
         </button>
       </div>
     </header>
@@ -92,33 +96,29 @@
         <figure class="mainHeroImageContainer">
           <img class="mainHeroImage" src="assets/images/mainHeroImage.png" alt="alejandroMoreno">
         </figure>
-        <div class="frameFlexColumnLarge">
-          <div class="frameFlexMedium">
-            <img id="greetingsIcon" class="greetingsIcon imageDefault" alt="greetingIcon">
-            <div class="frameFlexColumnTiny">
-              <p class="small" id="currentTime"></p>
-              <p class="regular" id="greetingsText"></p>
-            </div>
+        <div class="frameFlexMedium">
+          <img id="greetingsIcon" class="greetingsIcon imageDefault" alt="greetingIcon">
+          <div class="frameFlexColumnTiny">
+            <p class="small" id="currentTime"></p>
+            <p class="regular" id="greetingsText"></p>
           </div>
-          <div class="frameFlexColumnSmall">
-            <h1 data-key="mainHeroH1"></h1>
-            <div class="tagPosition">
-              <p data-key="mainHeroP1"></p>
-            </div>
+        </div>
+        <div class="mainHeroTitle">
+          <h1 data-key="mainHeroH1"></h1>
+          <div class="tagPosition">
+            <p data-key="mainHeroP1"></p>
           </div>
-          <div class="frameFlexColumnMedium">
-            <p class="regular" data-key="mainHeroP2"></p>
-          </div>
-          <div class="frameFlexMedium">
-            <a id="stepLink" class="buttonSecondary" href="#stepSection">
-              <p class="regular-bold" data-key="mainHeroButton1"></p>
-              <i class="fa-solid fa-arrow-down iconDefault"></i>
-            </a>
-            <button type="button" class="openContactForm buttonPrimary">
-              <p class="regular-bold" data-key="mainHeroButton2"></p>
-            </button>
-          </div>
-        </div>       
+        </div>
+        <h4 data-key="mainHeroP2"></h4>
+        <div class="frameFlexMedium">
+          <a id="stepLink" class="buttonSecondary" href="#stepSection">
+            <p class="regular-bold" data-key="mainHeroButton1"></p>
+            <i class="fa-solid fa-arrow-down iconDefault"></i>
+          </a>
+          <button type="button" class="openContactForm buttonPrimary">
+            <p class="regular-bold" data-key="mainHeroButton2"></p>
+          </button>
+        </div>
       </div>
 
       <!-- [projects] -->
@@ -130,12 +130,14 @@
               <p class="regular" data-key="indexSectionHeaderButton"></p>
             </a>
           </div>
-          <div class="sectionHeaderText">
-            <p class="regular" data-key="indexSectionHeaderText1"></p>
-          </div>
+          <p class="regular" data-key="indexSectionHeaderText1"></p>
         </div>
-        <div class="frameFlexMedium gridThree">
-          <a class="cardProject">
+        <div class="gridThree">
+          <div class="cardProject">
+            <div class="cardProjectImageContainer">
+              <img class="cardProjectImage" src="assets/images/projects/geomites/cardProject__geomites.png"
+                alt="cardProjectImage">
+            </div>
             <div class="frameFlexMedium">
               <div class="tagNew">
                 <p class="regular" data-key="cardProjectGeomitesTag1"></p>
@@ -144,48 +146,57 @@
                 <p class="regular" data-key="cardProjectGeomitesTag2"></p>
               </div>
             </div>
-            <div class="cardProjectImageContainer">
-              <img class="cardProjectImage" src="assets/images/projects/geomites/cardProject__geomites.png"
-                alt="cardProjectImage">
-            </div>
             <div class="frameFlexColumnTiny">
               <p class="large">Geomites</p>
               <p class="small" data-key="cardProjectGeomitesTime"></p>
             </div>
             <p class="regular" data-key="cardProjectGeomitesDescription"></p>
-          </a>
-          <a class="cardProject">
+            <a href="#" class="buttonPrimary">
+              <p class="regular-bold" data-key="cardProjectButton"></p>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="cardProject">
+            <div class="cardProjectImageContainer">
+              <img class="cardProjectImage" src="assets/images/projects/tattooParadise/cardProject__tattooParadise.png"
+                alt="cardProjectImage">
+            </div>
             <div class="frameFlexMedium">
               <div class="tag">
                 <p class="regular" data-key="cardProjectTattoParadiseTag1"></p>
               </div>
-            </div>
-            <div class="cardProjectImageContainer">
-              <img class="cardProjectImage" src="assets/images/projects/tattooParadise/cardProject__tattooParadise.png"
-                alt="cardProjectImage">
             </div>
             <div class="frameFlexColumnTiny">
               <p class="large">Tattoo paradise</p>
               <p class="small" data-key="cardProjectTattoParadiseTime"></p>
             </div>
             <p class="regular" data-key="cardProjectTattoParadiseDescription"></p>
-          </a>
-          <a class="cardProject">
+            <a href="#" class="buttonPrimary">
+              <p class="regular-bold" data-key="cardProjectButton"></p>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="cardProject">
+            <div class="cardProjectImageContainer">
+              <img class="cardProjectImage" src="assets/images/projects/atipikoTours/cardProject__atipikoTours.png"
+                alt="cardProjectImage">
+            </div>
             <div class="frameFlexMedium">
               <div class="tag">
                 <p class="regular" data-key="cardProjectAtipikoToursTag1"></p>
               </div>
-            </div>
-            <div class="cardProjectImageContainer">
-              <img class="cardProjectImage" src="assets/images/projects/atipikoTours/cardProject__atipikoTours.png"
-                alt="cardProjectImage">
             </div>
             <div class="frameFlexColumnTiny">
               <p class="large">Atipiko Tours</p>
               <p class="small" data-key="cardProjectAtipikoToursTime"></p>
             </div>
             <p class="regular" data-key="cardProjectAtipikoToursDescription"></p>
-          </a>
+            <a href="#" class="buttonPrimary">
+              <p class="regular-bold" data-key="cardProjectButton"></p>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -195,9 +206,7 @@
           <div class="frameFlexAuto">
             <h3 data-key="indexSectionHeader2"></h3>
           </div>
-          <div class="sectionHeaderText">
-            <p class="regular" data-key="indexSectionHeaderText2"></p>
-          </div>
+          <p class="regular" data-key="indexSectionHeaderText2"></p>
         </div>
         <div class="scroller" data-speed="fast">
           <ul class="tagList scrollerInner">
@@ -235,11 +244,9 @@
           <div class="frameFlexAuto">
             <h3 data-key="indexSectionHeader3"></h3>
           </div>
-          <div class="sectionHeaderText">
-            <p class="regular" data-key="indexSectionHeaderText3"></p>
-          </div>
+          <p class="regular" data-key="indexSectionHeaderText3"></p>
         </div>
-        <div class="gridThree">
+        <div class="gridThreeOverFlow">
           <div class="cardTextICon"><i class="fa-solid fa-magnifying-glass"></i>
             <p class="regular" data-key="cardTextIcon1"></p>
           </div>
@@ -273,84 +280,72 @@
           <div class="frameFlexAuto">
             <h3 data-key="indexSectionHeader4"></h3>
           </div>
-          <div class="sectionHeaderText">
-            <p class="regular" data-key="indexSectionHeaderText4"></p>
-          </div>
+          <p class="regular" data-key="indexSectionHeaderText4"></p>
         </div>
-        <div class="frameFlexMedium gridThree">
+        <div class="gridThreeOverFlow">
           <div class="cardTestimonial">
-            <img src="assets/images/personas/imageDiego.png" alt="testimonialImage" class="imageDefault">
-            <div class="frameFlexColumnMedium">
+            <i class=" fa-solid fa-quote-left iconMedium"></i>
+            <p class="regular" data-key="cardTestimonial1Description"></p>
+            <div class="frameFlexSmall">
+              <img src="assets/images/personas/imageDiego.png" alt="testimonialImage" class="imageDefault">
               <div class="frameFlexColumnTiny">
                 <p class="large">Diego Villaroel</p>
-                <p class="regular" data-key="cardTestimonial1Position"></p>
-                <a href="https://www.rappi.com/" class="link">
-                  <p class="small">Rappi</p>
-                </a>
+                <p class="small" data-key="cardTestimonial1Position"></p>
+                <a href="https://www.rappi.com/" target="_blank"><span class="small link">Rappi</span></a>
               </div>
-              <p class="regular" data-key="cardTestimonial1Description"></p>
-              <button type="button" href="https://www.linkedin.com/in/diego-villarroel-zaballos/" class="buttonIcon"
-                target="_blank"><i class="fa-brands fa-linkedin"></i></button>
             </div>
           </div>
           <div class="cardTestimonial">
-            <img src="assets/images/personas/imageMarc.png" alt="testimonialImage" class="imageDefault">
-            <div class="frameFlexColumnMedium">
+            <i class=" fa-solid fa-quote-left iconMedium"></i>
+            <p class="regular" data-key="cardTestimonial2Description"></p>
+            <div class="frameFlexSmall">
+              <img src="assets/images/personas/imageMarc.png" alt="testimonialImage" class="imageDefault">
               <div class="frameFlexColumnTiny">
                 <p class="large">Marc Bernardo</p>
-                <p class="regular" data-key="cardTestimonial2Position"></p>
-                <a href="https://www.bmat.com/" class="link">
-                  <p class="small">BMAT</p>
+                <p class="small" data-key="cardTestimonial2Position"></p>
+                <a href="https://www.bmat.com/" target="_blank"><span class="small link">BMAT</span>
                 </a>
               </div>
-              <p class="regular" data-key="cardTestimonial2Description"></p>
-              <button type="button" href="https://www.linkedin.com/in/marc-bernardo-838757174/" class="buttonIcon"
-                target="_blank"><i class="fa-brands fa-linkedin"></i></button>
             </div>
           </div>
           <div class="cardTestimonial">
-            <img src="assets/images/personas/imageRuben.png" alt="testimonialImage" class="imageDefault">
-            <div class="frameFlexColumnMedium">
+            <i class=" fa-solid fa-quote-left iconMedium"></i>
+            <p class="regular" data-key="cardTestimonial3Description"></p>
+            <div class="frameFlexSmall">
+              <img src="assets/images/personas/imageRuben.png" alt="testimonialImage" class="imageDefault">
               <div class="frameFlexColumnTiny">
                 <p class="large">Rubén Hinarejos</p>
-                <p class="regular" data-key="cardTestimonial3Position"></p>
-                <a href="https://senzostudio.com/" class="link">
-                  <p class="small">Senzo studio</p>
+                <p class="small" data-key="cardTestimonial3Position"></p>
+                <a href="https://senzostudio.com/" target="_blank"><span class="small link">Senzo studio</span>
                 </a>
               </div>
-              <p class="regular" data-key="cardTestimonial3Description"></p>
-              <button type="button" href="https://www.linkedin.com/in/rub%C3%A9n-hinarejos-guerra-b2365910b/"
-                class="buttonIcon" target="_blank"><i class="fa-brands fa-linkedin"></i></button>
             </div>
           </div>
           <div class="cardTestimonial">
-            <img src="assets/images/personas/imageAlvaro.png" alt="testimonialImage" class="imageDefault">
-            <div class="frameFlexColumnMedium">
+            <i class=" fa-solid fa-quote-left iconMedium"></i>
+            <p class="regular" data-key="cardTestimonial3Description"></p>
+            <div class="frameFlexSmall">
+              <img src="assets/images/personas/imageAlvaro.png" alt="testimonialImage" class="imageDefault">
               <div class="frameFlexColumnTiny">
                 <p class="large">Álvaro Torrijos</p>
-                <p class="regular" data-key="cardTestimonial4Position"></p>
-                <a href="https://www.prosegur.es/empresas/externalizacion/sisnet-360" class="link">
-                  <p class="small">SISnet 360</p>
+                <p class="small" data-key="cardTestimonial3Position"></p>
+                <a href="https://www.prosegur.es/empresas/externalizacion/sisnet-360" target="_blank"><span
+                    class="small link">SISnet 360</span>
                 </a>
               </div>
-              <p class="regular" data-key="cardTestimonial4Description"></p>
-              <button type="button" href="https://www.linkedin.com/in/%C3%A1lvaro-torrijos-herrera/" class="buttonIcon"
-                target="_blank"><i class="fa-brands fa-linkedin"></i></button>
             </div>
           </div>
           <div class="cardTestimonial">
-            <img src="assets/images/personas/imageLluis.png" alt="testimonialImage" class="imageDefault">
-            <div class="frameFlexColumnMedium">
+            <i class=" fa-solid fa-quote-left iconMedium"></i>
+            <p class="regular" data-key="cardTestimonial3Description"></p>
+            <div class="frameFlexSmall">
+              <img src="assets/images/personas/imageLluis.png" alt="testimonialImage" class="imageDefault">
               <div class="frameFlexColumnTiny">
                 <p class="large">Lluís Fortuny</p>
-                <p class="regular" data-key="cardTestimonial5Position"></p>
-                <a href="https://zitrogames.com/" class="link">
-                  <p class="small">Zitro games</p>
+                <p class="small" data-key="cardTestimonial3Position"></p>
+                <a href="https://zitrogames.com/" target="_blank"><span class="small link">Zitro games</span>
                 </a>
               </div>
-              <p class="regular" data-key="cardTestimonial5Description"></p>
-              <button type="button" href="https://www.linkedin.com/in/llu%C3%ADs-fortuny-marin-a76999186/"
-                class="buttonIcon" target="_blank"><i class="fa-brands fa-linkedin"></i></button>
             </div>
           </div>
         </div>
@@ -365,14 +360,10 @@
               <p class="regular" data-key="indexSectionHeaderButton"></p>
             </a>
           </div>
-          <div class="sectionHeaderText">
-            <p class="regular" data-key="indexSectionHeaderText5"></p>
-          </div>
+          <p class="regular" data-key="indexSectionHeaderText5"></p>
         </div>
-        <div class="gridThree">
-          <a class="cardReading"
-            href="https://www.amazon.com/Path-Senior-Product-Designer-Actionable/dp/B0CG83BYWM/ref=sr_1_1?crid=S9LNIO6S7JKZ&dib=eyJ2IjoiMSJ9.MXfXWZ4fc5_xnGP4J8_f72CDcIOtmK0-SNRBKADaqf_wt2luEwkqfH6gwwIYSsDKVUpnidlBhJA5oFQXKzkP4ip7xKn3k9wdxMjQ_rln59FzQxLO1Mm9KmEdz3-Xq9tdTdei2eCqJWjb04mzeIzkLg.pXSYYQkwcMGYJmZdUACQVhD4Pc-mheDTB2nTBPs1XkU&dib_tag=se&keywords=the+path+to+senior+product+designer&qid=1722622335&sprefix=the+path+to+senior%2Caps%2C183&sr=8-1"
-            target="_blank">
+        <div class="gridThreeOverFlow">
+          <div class="cardReading">
             <div class="cardReadingImageContainer">
               <img class="cardReadingImage" src="assets/images/readings/thePathToSeniorProductDesigner.png"
                 alt="readingImage">
@@ -384,10 +375,9 @@
               </div>
               <p class="small" data-key="cardReading1Pages"></p>
             </div>
-          </a>
-          <a class="cardReading"
-            href="https://www.amazon.com/Solving-Product-Design-Exercises-Questions/dp/1977000428/ref=sr_1_1?crid=3SK3HHHBOH3GA&dib=eyJ2IjoiMSJ9.sCDc9lhuH7VFsTrhMscAR3pYb8-hd2gYoYUzsdx2DkRib9hTBWkJ_YFJWx8qc43mzNnx4ZQ_S4HFy7Iznnj70aZ_LjtG4jm0Mc9QQTxKyHivSlErCgNv51nFKXZuTpKcmXGjWhT3M1hCVkyuIuS3s8jV95OpDmJ2pfqDEo_qRoOvL34QStvJsrra57LKl5_OACKXKAGR2vN2QaR6H8bbLkW6I_rUpFIxet6o_vGI_eU.VVaYZlSX8_qr_0XjxbOHtPdfJhk3LZdcpnJRuiWknO8&dib_tag=se&keywords=solving+product+design+exercises&qid=1722622373&sprefix=solbing+pr%2Caps%2C174&sr=8-1"
-            target="_blank">
+          </div>
+
+          <div class="cardReading">
             <div class="cardReadingImageContainer">
               <img class="cardReadingImage" src="assets/images/readings/solvingProductDesignExercises.png"
                 alt="readingImage">
@@ -399,10 +389,8 @@
               </div>
               <p class="small" data-key="cardReading2Pages"></p>
             </div>
-          </a>
-          <a class="cardReading"
-            href="https://www.amazon.com/Modelos-mentales-pensamiento-sobresalir-perfeccionar-ebook/dp/B096QKGB7B/ref=sr_1_1?crid=34PR8FLMWKCQL&dib=eyJ2IjoiMSJ9.DLL2PRNPebCaH9kBxRUc-HpBMgzpHQv8dghhrA14YwQ6GDysPWAj_VbvSiKHEjF5j4Cv7lf7V2XIu6nAWpx1AKrYROfrjNrIW_WBC1PPZO31I380nt1eSMw6Hb-n7eeNCFwJhjLrDLMPyFmR-w4AOt295qH3Y2dotx_8BYXkUCRLJGnU8YwyasrahwKqz6mg8hccfpnJV_n0vM3Le7nNhIyzW6bFe4YPYjJ4Rlkt87U.q71GV5bRCoBdygwWNsJ5m-KKRnYMSn19IBiPEDUCgjE&dib_tag=se&keywords=modelos+mentales&qid=1722622426&sprefix=modelos+mentale%2Caps%2C172&sr=8-1"
-            target="_blank">
+          </div>
+          <div class="cardReading">
             <div class="cardReadingImageContainer">
               <img class="cardReadingImage" src="assets/images/readings/mentalModels.png" alt="readingImage">
             </div>
@@ -413,10 +401,10 @@
               </div>
               <p class="small" data-key="cardReading3Pages"></p>
             </div>
-          </a>
-
+          </div>
         </div>
       </div>
+
     </div>
 
     <!-- [contactForm] -->
@@ -424,7 +412,7 @@
     <div class="contactForm hidden">
       <form action="https://api.web3forms.com/submit" method="POST" class="contactFormBody">
 
-        <button type="button" class="buttonClose" id="closeContactForm"><i class="fa-solid fa-xmark iconDefault"
+        <button type="button" class="buttonClose" id="closeContactForm"><i class="fa-solid fa-xmark iconLarge"
             aria-hidden="true"></i></button>
         <h4 data-key="contactFormTitle"></h4>
         <p data-key="contactFormText" class="regular"></p>
@@ -475,33 +463,20 @@
 
     <!-- [footer] -->
     <footer>
-      <div class="footerFrame">
-        <a href="index.html" alt="logoAlejandro" id="logoLink" viewBox="0 0 24 24">
-          <svg class="logo" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M5.65845 15.2752L11.6753 3.83789H12.5011L22.8124 21.7667H17.9045L12.6191 12.6834H11.7933L10.8258 15.2752H5.65845ZM4.19564 17.7244H12.4069L14.9788 21.838H1.8125L4.19564 17.7244Z"/>
-          </svg></a>
-        <a class="buttonSecondary" href="assets/documents/alejandroMoreno_resume.pdf" target="_blank">
-          <p class="regular-bold" data-key="footerButton1"></p>
-          <i class="fa-solid fa-download"></i>
-        </a>
-        <div class="frameFlexMedium">
-          <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
-              class="fa-brands fa-whatsapp"></i></a>
-          <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon" target="_blank"><i
-              class="fa-brands fa-linkedin"></i></a>
-          <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
-              class="fa-brands fa-github"></i></a>
-          <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
-              class="fa-solid fa-envelope"></i></a>
-        </div>
-        <p class="small">Diseñando 2024</p>
-        <div class="frameFlexMedium">
-          <i class="fa-solid fa-copyright iconDefault"></i>
-          <p class="small">Alejandro Moreno</p>
-          <p class="small">3.0</p>
-        </div>
+      <a href="index.html" alt="logoAlejandro" id="logoLink" viewBox="0 0 24 24">
+        <svg class="logo" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M5.65845 15.2752L11.6753 3.83789H12.5011L22.8124 21.7667H17.9045L12.6191 12.6834H11.7933L10.8258 15.2752H5.65845ZM4.19564 17.7244H12.4069L14.9788 21.838H1.8125L4.19564 17.7244Z" />
+        </svg></a>
+      <div class="frameFlexMedium">
+        <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon" target="_blank"><i
+            class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
+            class="fa-solid fa-envelope"></i></a>
       </div>
+      <p class="small" data-key="footerText"></p></p>
     </footer>
 
   </main>

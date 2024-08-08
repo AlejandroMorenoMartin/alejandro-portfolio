@@ -14,7 +14,7 @@
 
   "mainHeroH1": "Soy Alejandro Moreno",
   "mainHeroP1": "Diseñador de producto",
-  "mainHeroP2": "¡Hola! - Soy un apasionado del diseño de interfaz de usuario y lo uso para mejorar la vida de las personas. Soy autodidacta y metódico en busca de la mejora continua.",  
+  "mainHeroP2": "Autodidacta y metódico en busca de la mejora continua.",  
   "mainHeroButton1": "Portfolio",
   "mainHeroButton2": "Contacto",
 
@@ -42,12 +42,14 @@
   "aboutPageTitleParagraph3":"Aficiones",
   "aboutPageTextParagraph3":"Pero no todo es trabajo, soy una persona sana y me gusta practicar todo tipo de deportes. Tambien me gusta bailar, viajar, leer y pasar tiempo con mi familia, amigos o conociendo a personas interesantes.",
 
+  "cardProjectButton": "View project",
+
   "cardProjectGeomitesTag1": "Nuevo",
   "cardProjectGeomitesTag2": "Videojuego",
   "cardProjectGeomitesTime": "15 min de lectura",
   "cardProjectGeomitesDescription": "A cargo del diseño de un videojuego para móviles en plataformas Android y iOS.",
 
-  "cardProjectTattoParadiseTag1": "Responsivo",
+  "cardProjectTattoParadiseTag1": "App",
   "cardProjectTattoParadiseTime": "16 min de lectura",
   "cardProjectTattoParadiseDescription": "Diseño de un producto para conectar a usuarios del tatuaje con artistas y estudios.",
 
@@ -83,7 +85,7 @@
   "cardTestimonial5Position": "Graphic designer",
   "cardTestimonial5Description": "“Trabajar con él ha sido muy fácil, y ha sido muy profesional en la entrega de lo que se ha solicitado”.",
 
-  "cardReading1Title": "El camino hacia diseñador de prodcuto senior",
+  "cardReading1Title": "El camino hacia diseñador de producto Sr.",
   "cardReading1Author": "De Artiom Dashinsky",
   "cardReading1Pages": "300 páginas",
 
@@ -95,7 +97,7 @@
   "cardReading3Author": "De Peter Hollins",
   "cardReading3Pages": "257 páginas",
 
-  "cardReading4Title": "Como se hace un manager",
+  "cardReading4Title": "Cómo se hace un manager",
   "cardReading4Author": "De Julie Zhuo",
   "cardReading4Pages": "288 páginas",
 
@@ -135,7 +137,7 @@
   "cardReading13Author": "De Ethan Kross",
   "cardReading13Pages": "288 páginas",
 
-  "cardReading14Title": "Piensa rápido piensa lento",
+  "cardReading14Title": "Piensa rápido, piensa lento",
   "cardReading14Author": "De Daniel Kahneman",
   "cardReading14Pages": "512 páginas",
 
@@ -147,8 +149,7 @@
   "cardReading16Author": "De Dan Ariely",
   "cardReading16Pages": "400 páginas",
 
-  "footerButton1": "CV",
-  "footerButton2": "Contacto",
+  "footerText": "Alejandro Moreno 3.0 | Designing 2024", 
 
   "contactFormTitle": "Ponte en contacto",
   "contactFormText": "Puedes contactarme a través de las redes sociales o si lo prefieres dejame un mensaje y te contestaré lo antes posible.",

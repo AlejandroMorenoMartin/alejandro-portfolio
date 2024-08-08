@@ -14,7 +14,7 @@
 
   "mainHeroH1": "I'm Alejandro Moreno",
   "mainHeroP1": "Product designer",
-  "mainHeroP2": "Hey! - I'm passionate and dedicated to user experience to improve people's lives. I am self-taught and methodical in search of continuous improvement.",  
+  "mainHeroP2": "Self-taught and methodical in search of continuous improvement.",  
   "mainHeroButton1": "Portfolio",
   "mainHeroButton2": "Contact",
 
@@ -42,12 +42,14 @@
   "aboutPageTitleParagraph3":"Hobbies",
   "aboutPageTextParagraph3":"But it's not all work, I'm a healthy person and I like to practice all kinds of sports. I also like dancing, traveling, reading and spending time with my family, friends or meeting interesting people.",
 
+  "cardProjectButton": "Ver proyecto",
+
   "cardProjectGeomitesTag1": "New",
   "cardProjectGeomitesTag2": "Videogame",
   "cardProjectGeomitesTime": "15 min read",
   "cardProjectGeomitesDescription": "In charge of the product design of a mobile videogame, available for Android and IOS.",
 
-  "cardProjectTattoParadiseTag1": "Responsive",
+  "cardProjectTattoParadiseTag1": "App",
   "cardProjectTattoParadiseTime": "16 min read",
   "cardProjectTattoParadiseDescription": "Designing a product to connect tattoo users with artists and studios.",
 
@@ -83,7 +85,7 @@
   "cardTestimonial5Position": "Graphic designer",
   "cardTestimonial5Description": "“Working with him has been very easy, and he has been very professional in delivering what has been requested”.",
 
-  "cardReading1Title": "The path to senior product designer",
+  "cardReading1Title": "The path to Sr. product designer",
   "cardReading1Author": "By Artiom Dashinsky",
   "cardReading1Pages": "300 pages",
 
@@ -148,8 +150,7 @@
   "cardReading16Pages": "400 pages",
 
 
-  "footerButton1": "Resume",
-  "footerButton2": "Contact",
+  "footerText": "Alejandro Moreno 3.0 | Diseñando 2024",
 
   "contactFormTitle": "Get in touch",
   "contactFormText": "You can contact me through social networks or if you prefer, leave me a message and I will get back to you as soon as possible.",

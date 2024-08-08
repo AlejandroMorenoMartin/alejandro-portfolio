@@ -8,12 +8,12 @@ body {
 }
 
 h1 {
-  font-family: var(--font-family-2);
+  font-family: var(--font-family);
   font-size: var(--fs-h1);
   line-height: var(--lh-h1);
   font-weight: 900;
   letter-spacing: 0;
-  color: var(--primary-400);
+  color: var(--primary-500);
 }
 
 h2 {

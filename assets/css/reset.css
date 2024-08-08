@@ -94,6 +94,7 @@ q:after {
 
 /* Nivelamos problemas de tipografías y colocación de formularios */
 
+
 form,
 textarea,
 select,
@@ -112,6 +113,7 @@ svg {
   display: block;
   fill: currentColor;
 }
+
 
 span {
   display: flex;
