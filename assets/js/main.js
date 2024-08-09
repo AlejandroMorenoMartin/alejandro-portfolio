@@ -329,13 +329,3 @@ function addAnimation() {
     });
   });
 }
-
-/* ----- PRELOADINGPROGRESSBAR ----- */
-
-
-
-/* ----- ANIMATEDTEXT ----- */
-
-
-
-
