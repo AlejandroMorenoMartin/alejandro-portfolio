@@ -192,7 +192,7 @@ document.querySelectorAll('.languageSwitcher').forEach((switcher) => {
 
 const navBar = document.querySelector('.navBar');
 const navToggle = document.querySelector(".mobileNavToggle");
-const primaryNav = document.querySelector(".primaryNavigation");
+const primaryNav = document.querySelector(".mobileNavigation");
 
 navToggle.addEventListener("click", () => {
   const isVisible = primaryNav.hasAttribute("data-visible");

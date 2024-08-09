@@ -4,27 +4,25 @@
   --font-family-2: 'Bungee Shade', sans-serif;
 
   /* font-size */
-  --fs-h1: clamp(2.6127rem, 2.4981rem + 0.5093vw, 2.861rem);
-  --fs-h2: clamp(2.1773rem, 2.1258rem + 0.2288vw, 2.2888rem);
-  --fs-h3: clamp(1.8144rem, 1.8067rem + 0.0342vw, 1.8311rem);
-  --fs-h4: clamp(1.4648rem, 1.5338rem + -0.0967vw, 1.512rem);
-  --fs-large: clamp(1.1719rem, 1.3007rem + -0.1808vw, 1.26rem);
-  --fs-regular: clamp(0.9375rem, 1.1019rem + -0.2308vw, 1.05rem);
-  --fs-small: clamp(0.75rem, 0.9327rem + -0.2564vw, 0.875rem);
+  --fs-h1: 3rem;
+  --fs-h2: 2.5rem;
+  --fs-h3: 2rem;
+  --fs-h4: 1.75rem;
+  --fs-large: 1.25rem;
+  --fs-regular: 1rem;
+  --fs-small: .75rem;
 
   /* line-height */
   --lh-h1: 3.6rem;
   --lh-h2: 3rem;
-  --lh-h3: 2.7rem;
+  --lh-h3: 2.4rem;
   --lh-h4: 2.1rem;
-  --lh-large: 1.8rem;
-  --lh-regular: 1.5rem;
-  --lh-small: 1.3rem;
-  --fs-specialOneLarge: 4.25rem;
-  --fs-specialOneRegular: 2rem;
+  --lh-large: 2rem;
+  --lh-regular: 1.6rem;
+  --lh-small: 1.5rem;  
 
   /* border-radius */
-  --br-8: 8px;
+  --br-8: 4px;
 
   /* border-width */
   --bw-0: 0.05rem;
@@ -36,15 +34,24 @@
 
 @media (max-width: 1200px) {
   :root {
-    --lh-h1: 2.6rem;
-    --lh-h2: 2.4rem;
-    --lh-h3: 2.2rem;
-    --lh-h4: 2rem;
+
+    /* font-size */
+    --fs-h1: 2rem;
+    --fs-h2: 1.75rem;
+    --fs-h3: 1.5rem;
+    --fs-h4: 1.25rem;
+    --fs-large: 1rem;
+    --fs-regular: .75rem;
+    --fs-small: .5rem;
+
+    /* line-height */
+    --lh-h1: 2.4rem;
+    --lh-h2: 2.1rem;
+    --lh-h3: 1.8rem;
+    --lh-h4: 1.5rem;
     --lh-large: 1.6rem;
-    --lh-regular: 1.6rem;
-    --lh-small: 1.3rem;
-    --fs-specialOneLarge: 3rem;
-    --fs-specialOneRegular: 1.2rem;
+    --lh-regular: 1.2rem;
+    --lh-small: 1rem;    
   }
 }
 
@@ -203,7 +210,7 @@
 }
 
 :root[data-theme="light"] {
-  
+
   /* basics */
   --black: #ffffff;
   --white: #000000;

@@ -6,6 +6,20 @@
   "navBarFrameLink4": "Sobre mí",
   "navBarFrameLink5": "Blog",
 
+  "languageContainerText": "Idioma",
+  "themeContainerText": "Tema",
+
+  "mobileNavigationSectionTitle1": "Menú",
+  "mobileNavigationPage1": "Inicio",
+  "mobileNavigationPage2": "Proyectos",
+  "mobileNavigationPage3": "Curríículum",
+  "mobileNavigationPage4": "Sobre mí",
+  "mobileNavigationPage5": "Blog",
+  "mobileNavigationSectionTitle2": "Ajustes",
+  "mobileNavigationOption1": "Idioma",
+  "mobileNavigationOption2": "Tema",
+  "mobileNavigationSectionTitle3": "Redes sociales",
+
   "greetingsMorning": "¡Buenos días!",
   "greetingsAfternoon": "¡Buenas tardes!",
   "greetingsEvening": "¡Buenas noches!",
@@ -49,9 +63,9 @@
   "cardProjectGeomitesTime": "15 min de lectura",
   "cardProjectGeomitesDescription": "A cargo del diseño de un videojuego para móviles en plataformas Android y iOS.",
 
-  "cardProjectTattoParadiseTag1": "App",
-  "cardProjectTattoParadiseTime": "16 min de lectura",
-  "cardProjectTattoParadiseDescription": "Diseño de un producto para conectar a usuarios del tatuaje con artistas y estudios.",
+  "cardProjectTattooParadiseTag1": "App",
+  "cardProjectTattooParadiseTime": "16 min de lectura",
+  "cardProjectTattooParadiseDescription": "Diseño de un producto para conectar a usuarios del tatuaje con artistas y estudios.",
 
   "cardProjectAtipikoToursTag1": "Responsivo",
   "cardProjectAtipikoToursTime": "15 min de lectura",

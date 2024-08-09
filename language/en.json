@@ -6,6 +6,20 @@
   "navBarFrameLink4": "About me",
   "navBarFrameLink5": "Blog",
 
+  "languageContainerText": "Language",
+  "themeContainerText": "Theme",
+
+  "mobileNavigationSectionTitle1": "Menu",
+  "mobileNavigationPage1": "Home",
+  "mobileNavigationPage2": "Projects",
+  "mobileNavigationPage3": "Resume",
+  "mobileNavigationPage4": "About me",
+  "mobileNavigationPage5": "Blog",
+  "mobileNavigationSectionTitle2": "Seetings",
+  "mobileNavigationOption1": "Language",
+  "mobileNavigationOption2": "Theme",
+  "mobileNavigationSectionTitle3": "Social media",  
+
   "greetingsMorning": "Good morning!",
   "greetingsAfternoon": "Good afternoon!",
   "greetingsEvening": "Good evening!",
@@ -49,9 +63,9 @@
   "cardProjectGeomitesTime": "15 min read",
   "cardProjectGeomitesDescription": "In charge of the product design of a mobile videogame, available for Android and IOS.",
 
-  "cardProjectTattoParadiseTag1": "App",
-  "cardProjectTattoParadiseTime": "16 min read",
-  "cardProjectTattoParadiseDescription": "Designing a product to connect tattoo users with artists and studios.",
+  "cardProjectTattooParadiseTag1": "App",
+  "cardProjectTattooParadiseTime": "16 min read",
+  "cardProjectTattooParadiseDescription": "Designing a product to connect tattoo users with artists and studios.",
 
   "cardProjectAtipikoToursTag1": "Responsive",
   "cardProjectAtipikoToursTime": "15 min read",
@@ -267,7 +281,7 @@
   "cardEducation12Description": "Data analysis and synthesis, organizational skills, communication, economic and business, interdisciplinary skills and critical capacity.",
   "cardEducation12Button": "Show credential",
 
-  "cardArticleButton": "Ver artículo",
+  "cardArticleButton": "View article",
   
   "cardArticle1Title": "Tools for seeking certainities",  
   "cardArticle1Info": "Apr 2024 | 10 min read",
