@@ -36,13 +36,14 @@
           <svg class="logo" viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M5.86048 20.6292L15.0291 2.83789H16.2875L32.0001 30.7269H24.5213L16.4673 16.5975H15.2089L13.7347 20.6292H5.86048ZM3.63149 24.439H16.144L20.0631 30.8379H0L3.63149 24.439Z" />
-          </svg> </a>
+          </svg>
+        </a>
         <nav class="primaryNavigation" id="primaryNavigation">
           <ul aria-label="Primary" role="list" class=" navBarNavigation">
             <li>
               <h4 data-key="navBarFrameTitle" class="hideOnDesktop"></h4>
             </li>
-            <div class="frameFlexLarge">
+            <ul class="navBarFrameNavigation">
               <li class="navBarFrameLink"><a href="index.html">
                   <p data-key="navBarFrameLink1"></p>
                 </a></li>
@@ -58,8 +59,12 @@
               <li class="navBarFrameLink"><a href="blog.html">
                   <p data-key="navBarFrameLink5"></p>
                 </a></li>
-            </div>
-            <li class="frameFlexMedium hideOnDesktop">
+            </ul>
+            <li class="switcherContainer">
+              <input class="switcher languageSwitcher" type="checkbox">
+              <input class="switcher themeSwitcher" type="checkbox">
+            </li>
+            <li class="frameFlexSmall hideOnDesktop">
               <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
                   class="fa-brands fa-whatsapp"></i></a>
               <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon"
@@ -69,18 +74,14 @@
               <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
                   class="fa-solid fa-envelope"></i></a>
             </li>
-            <li><button type="button" class="openContactForm buttonPrimary hideOnDesktop">
-                <p class="regular-bold" data-key="mainHeroButton2"></p>
-              </button></li>
           </ul>
         </nav>
-        <div class="switcherContainer ">
-          <input class="switcher languageSwitcher" type="checkbox">
-          <input class="switcher themeSwitcher" type="checkbox">
-        </div>
-        <button class="mobileNavToggle " aria-controls="primaryNavigation" aria-expended="false">
-          <i class="fa-solid fa-xmark iconDefault iconClose" aria-hidden="true"></i>
-          <i class="fa-solid fa-bars iconDefault iconHamburger" aria-hidden="true"></i>
+        <button class="mobileNavToggle" aria-controls="primaryNavigation" aria-expanded="false">
+          <svg class="hambuger" viewbox="0 0 100 100" width="36">
+            <rect class="hamburgerLine topLine" width="80" height="10" x="10" y="25" rx="5"></rect>
+            <rect class="hamburgerLine middleLine" width="80" height="10" x="10" y="45" rx="5"></rect>
+            <rect class="hamburgerLine bottomLine" width="80" height="10" x="10" y="65" rx="5"></rect>
+          </svg>
         </button>
       </div>
     </header>
@@ -104,23 +105,21 @@
       </div>
 
       <!-- [experience] -->
-      <div class="frameFlexColumnMedium" id="experienceContainer">
+      <div class="frameFlexColumnExtraLarge" id="experienceContainer">
         <div class="cardExperience">
-          <img class="imageDefault" src="assets/icons/experience/geomites.png" alt="cardExperienceImage">
-          <div class="frameFlexColumnMedium">
-            <div class="frameFlexColumnTiny">
-              <p data-key="experienceCard1Title" class="large"></p>
-              <p data-key="experienceCard1Company" class="regular"></p>
-              <p data-key="experienceCard1Date" class="small"></p>
-              <p data-key="experienceCard1Location" class="small"></p>
-            </div>
-            <p data-key="experienceCard1Description" class="regular"></p>
-            <p data-key="experienceCard1Technologies" class="regular"></p>
-            <p data-key="experienceCard1Skills" class="regular"></p>
+          <img class="imageExtraLarge" src="assets/icons/experience/geomites.png" alt="cardExperienceImage">
+          <div class="frameFlexColumnTiny">
+            <p data-key="experienceCard1Title" class="large"></p>
+            <p data-key="experienceCard1Company" class="regular"></p>
+            <p data-key="experienceCard1Date" class="small"></p>
+            <p data-key="experienceCard1Location" class="small"></p>
           </div>
+          <p data-key="experienceCard1Description" class="regular"></p>
+          <p data-key="experienceCard1Technologies" class="regular"></p>
+          <p data-key="experienceCard1Skills" class="regular"></p>
         </div>
         <div class="cardExperience">
-          <img class="imageDefault" src="assets/icons/experience/atipiko.png" alt="cardExperienceImage">
+          <img class="imageExtraLarge" src="assets/icons/experience/atipiko.png" alt="cardExperienceImage">
           <div class="frameFlexColumnMedium">
             <div class="frameFlexColumnTiny">
               <p data-key="experienceCard2Title" class="large"></p>
@@ -139,7 +138,7 @@
           </div>
         </div>
         <div class="cardExperience">
-          <img class="imageDefault" src="assets/icons/experience/senzostudio.png" alt="cardExperienceImage">
+          <img class="imageExtraLarge" src="assets/icons/experience/senzostudio.png" alt="cardExperienceImage">
           <div class="frameFlexColumnMedium">
             <div class="frameFlexColumnTiny">
               <p data-key="experienceCard3Title" class="large"></p>
@@ -158,7 +157,7 @@
           </div>
         </div>
         <div class="cardExperience">
-          <img class="imageDefault" src="assets/icons/experience/promam.png" alt="cardExperienceImage">
+          <img class="imageExtraLarge" src="assets/icons/experience/promam.png" alt="cardExperienceImage">
           <div class="frameFlexColumnMedium">
             <div class="frameFlexColumnTiny">
               <p data-key="experienceCard4Title" class="large"></p>
@@ -181,7 +180,7 @@
       <!-- [education] -->
       <div class="gridTwo hidden" id="educationContainer">
         <div class="cardEducation">
-          <img class="imageDefault" src="assets/icons/education/idf.png" alt="cardEducationImage">
+          <img class="imageExtraLarge" src="assets/icons/education/idf.png" alt="cardEducationImage">
           <div class="frameFlexColumnMedium">
             <div class="frameFlexColumnTiny">
               <p data-key="cardEducation1Title" class="large"></p>
@@ -194,11 +193,12 @@
             <p data-key="cardEducation1Description" class="regular"></p>
             <a target="_blank" href="assets/documents/ui-design-patterns.pdf" class="buttonSecondary">
               <p data-key="cardEducation1Button" class="regular-bold"></p>
+              <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
         </div>
         <div class="cardEducation">
-          <img class="imageDefault" src="assets/icons/education/idf.png" alt="cardEducationImage">
+          <img class="imageExtraLarge" src="assets/icons/education/idf.png" alt="cardEducationImage">
           <div class="frameFlexColumnMedium">
             <div class="frameFlexColumnTiny">
               <p data-key="cardEducation2Title" class="large"></p>
@@ -211,11 +211,12 @@
             <p data-key="cardEducation2Description" class="regular"></p>
             <a target="_blank" href="assets/documents/visual-design.pdf" class="buttonSecondary">
               <p data-key="cardEducation2Button" class="regular-bold"></p>
+              <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
         </div>
         <div class="cardEducation">
-          <img class="imageDefault" src="assets/icons/education/idf.png" alt="cardEducationImage">
+          <img class="imageExtraLarge" src="assets/icons/education/idf.png" alt="cardEducationImage">
           <div class="frameFlexColumnMedium">
             <div class="frameFlexColumnTiny">
               <p data-key="cardEducation3Title" class="large"></p>
@@ -228,11 +229,12 @@
             <p data-key="cardEducation3Description" class="regular"></p>
             <a target="_blank" href="assets/documents/emotional-design.pdf" class="buttonSecondary">
               <p data-key="cardEducation3Button" class="regular-bold"></p>
+              <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
         </div>
         <div class="cardEducation">
-          <img class="imageDefault" src="assets/icons/education/idf.png" alt="cardEducationImage">
+          <img class="imageExtraLarge" src="assets/icons/education/idf.png" alt="cardEducationImage">
           <div class="frameFlexColumnMedium">
             <div class="frameFlexColumnTiny">
               <p data-key="cardEducation4Title" class="large"></p>
@@ -245,11 +247,12 @@
             <p data-key="cardEducation4Description" class="regular"></p>
             <a target="_blank" href="assets/documents/information-visualization.pdf" class="buttonSecondary">
               <p data-key="cardEducation4Button" class="regular-bold"></p>
+              <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
         </div>
         <div class="cardEducation">
-          <img class="imageDefault" src="assets/icons/education/idf.png" alt="cardEducationImage">
+          <img class="imageExtraLarge" src="assets/icons/education/idf.png" alt="cardEducationImage">
           <div class="frameFlexColumnMedium">
             <div class="frameFlexColumnTiny">
               <p data-key="cardEducation5Title" class="large"></p>
@@ -262,11 +265,12 @@
             <p data-key="cardEducation5Description" class="regular"></p>
             <a target="_blank" href="assets/documents/design-21st-century.pdf" class="buttonSecondary">
               <p data-key="cardEducation5Button" class="regular-bold"></p>
+              <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
         </div>
         <div class="cardEducation">
-          <img class="imageDefault" src="assets/icons/education/idf.png" alt="cardEducationImage">
+          <img class="imageExtraLarge" src="assets/icons/education/idf.png" alt="cardEducationImage">
           <div class="frameFlexColumnMedium">
             <div class="frameFlexColumnTiny">
               <p data-key="cardEducation6Title" class="large"></p>
@@ -279,11 +283,12 @@
             <p data-key="cardEducation6Description" class="regular"></p>
             <a target="_blank" href="assets/documents/human-computer-interaction.pdf" class="buttonSecondary">
               <p data-key="cardEducation6Button" class="regular-bold"></p>
+              <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
         </div>
         <div class="cardEducation">
-          <img class="imageDefault" src="assets/icons/education/idf.png" alt="cardEducationImage">
+          <img class="imageExtraLarge" src="assets/icons/education/idf.png" alt="cardEducationImage">
           <div class="frameFlexColumnMedium">
             <div class="frameFlexColumnTiny">
               <p data-key="cardEducation7Title" class="large"></p>
@@ -296,11 +301,12 @@
             <p data-key="cardEducation7Description" class="regular"></p>
             <a target="_blank" href="assets/documents/mobile-ux.pdf" class="buttonSecondary">
               <p data-key="cardEducation7Button" class="regular-bold"></p>
+              <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
         </div>
         <div class="cardEducation">
-          <img class="imageDefault" src="assets/icons/education/idf.png" alt="cardEducationImage">
+          <img class="imageExtraLarge" src="assets/icons/education/idf.png" alt="cardEducationImage">
           <div class="frameFlexColumnMedium">
             <div class="frameFlexColumnTiny">
               <p data-key="cardEducation8Title" class="large"></p>
@@ -313,11 +319,12 @@
             <p data-key="cardEducation8Description" class="regular"></p>
             <a target="_blank" href="assets/documents/gestalt.pdf" class="buttonSecondary">
               <p data-key="cardEducation8Button" class="regular-bold"></p>
+              <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
         </div>
         <div class="cardEducation">
-          <img class="imageDefault" src="assets/icons/education/idf.png" alt="cardEducationImage">
+          <img class="imageExtraLarge" src="assets/icons/education/idf.png" alt="cardEducationImage">
           <div class="frameFlexColumnMedium">
             <div class="frameFlexColumnTiny">
               <p data-key="cardEducation9Title" class="large"></p>
@@ -330,11 +337,12 @@
             <p data-key="cardEducation9Description" class="regular"></p>
             <a target="_blank" href="assets/documents/user-research.pdf" class="buttonSecondary">
               <p data-key="cardEducation9Button" class="regular-bold"></p>
+              <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
         </div>
         <div class="cardEducation">
-          <img class="imageDefault" src="assets/icons/education/google.png" alt="cardEducationImage">
+          <img class="imageExtraLarge" src="assets/icons/education/google.png" alt="cardEducationImage">
           <div class="frameFlexColumnMedium">
             <div class="frameFlexColumnTiny">
               <p data-key="cardEducation10Title" class="large"></p>
@@ -347,11 +355,12 @@
             <p data-key="cardEducation10Description" class="regular"></p>
             <a target="_blank" href="assets/documents/ux-foundations.pdf" class="buttonSecondary">
               <p data-key="cardEducation10Button" class="regular-bold"></p>
+              <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
         </div>
         <div class="cardEducation">
-          <img class="imageDefault" src="assets/icons/education/udemy.png" alt="cardEducationImage">
+          <img class="imageExtraLarge" src="assets/icons/education/udemy.png" alt="cardEducationImage">
           <div class="frameFlexColumnMedium">
             <div class="frameFlexColumnTiny">
               <p data-key="cardEducation11Title" class="large"></p>
@@ -364,11 +373,12 @@
             <p data-key="cardEducation11Description" class="regular"></p>
             <a target="_blank" href="#" class="buttonSecondary">
               <p data-key="cardEducation11Button" class="regular-bold"></p>
+              <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
         </div>
         <div class="cardEducation">
-          <img class="imageDefault" src="assets/icons/education/urjc.png" alt="cardEducationImage">
+          <img class="imageExtraLarge" src="assets/icons/education/urjc.png" alt="cardEducationImage">
           <div class="frameFlexColumnMedium">
             <div class="frameFlexColumnTiny">
               <p data-key="cardEducation12Title" class="large"></p>
@@ -381,6 +391,7 @@
             <p data-key="cardEducation12Description" class="regular"></p>
             <a target="_blank" href="assets/documents/marketing.pdf" class="buttonSecondary">
               <p data-key="cardEducation12Button" class="regular-bold"></p>
+              <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
         </div>
@@ -392,7 +403,7 @@
     <div class="contactForm hidden">
       <form action="https://api.web3forms.com/submit" method="POST" class="contactFormBody">
 
-        <button type="button" class="buttonClose" id="closeContactForm"><i class="fa-solid fa-xmark iconDefault"
+        <button type="button" class="buttonClose" id="closeContactForm"><i class="fa-solid fa-xmark iconMedium"
             aria-hidden="true"></i></button>
         <h4 data-key="contactFormTitle"></h4>
         <p data-key="contactFormText" class="regular"></p>
@@ -443,33 +454,23 @@
 
     <!-- [footer] -->
     <footer>
-      <div class="footerFrame">
-        <a href="index.html" alt="logoAlejandro" id="logoLink" viewBox="0 0 24 24">
-          <svg class="logo" viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M5.86048 20.6292L15.0291 2.83789H16.2875L32.0001 30.7269H24.5213L16.4673 16.5975H15.2089L13.7347 20.6292H5.86048ZM3.63149 24.439H16.144L20.0631 30.8379H0L3.63149 24.439Z" />
-          </svg> </a>
-        <a class="buttonSecondary" href="assets/documents/alejandroMoreno_resume.pdf" target="_blank">
-          <p class="regular-bold" data-key="footerButton1"></p>
-          <i class="fa-solid fa-download"></i>
-        </a>
-        <div class="frameFlexMedium">
-          <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
-              class="fa-brands fa-whatsapp"></i></a>
-          <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon" target="_blank"><i
-              class="fa-brands fa-linkedin"></i></a>
-          <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
-              class="fa-brands fa-github"></i></a>
-          <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
-              class="fa-solid fa-envelope"></i></a>
-        </div>
-        <p class="small">Diseñando 2024</p>
-        <div class="frameFlexMedium">
-          <i class="fa-solid fa-copyright iconDefault"></i>
-          <p class="small">Alejandro Moreno</p>
-          <p class="small">3.0</p>
-        </div>
+      <a href="index.html" alt="logoAlejandro" id="logoLink" viewBox="0 0 24 24">
+        <svg class="logo" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M5.65845 15.2752L11.6753 3.83789H12.5011L22.8124 21.7667H17.9045L12.6191 12.6834H11.7933L10.8258 15.2752H5.65845ZM4.19564 17.7244H12.4069L14.9788 21.838H1.8125L4.19564 17.7244Z" />
+        </svg></a>
+      <div class="frameFlexMedium">
+        <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
+            class="fa-brands fa-whatsapp iconMedium"></i></a>
+        <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon" target="_blank"><i
+            class="fa-brands fa-linkedin iconMedium"></i></a>
+        <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
+            class="fa-brands fa-github iconMedium"></i></a>
+        <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
+            class="fa-solid fa-envelope iconMedium"></i></a>
       </div>
+      <p class="small" data-key="footerText"></p>
+      </p>
     </footer>
 
   </main>
