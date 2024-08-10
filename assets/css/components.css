@@ -250,6 +250,8 @@
     overflow-x: scroll;
     grid-auto-columns: 90%;
     scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
   }
 
   .gridThreeOverFlow>* {
@@ -276,6 +278,18 @@
 
   .gridFourOverFlow>* {
     scroll-snap-align: start;
+  }
+}
+
+/* ---------- */
+
+.otherArticles { 
+  padding: 0 calc((100% - 1200px) / 2);
+}
+
+@media (max-width: 1200px) {
+  .otherArticles { 
+    padding: 0 5%;
   }
 }
 
@@ -310,7 +324,7 @@
   width: 100%;
 }
 
-.frameFlexColumnTiny.lateralPadding {
+.frameFlexColumnSmall.lateralPadding {
   margin: 0 auto;
   padding: 0 calc((100% - 1200px) / 2);
   width: 100%;
@@ -345,13 +359,22 @@
   flex: 0 0 900px;
 }
 
+.articleTip {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: var(--br);
+  border: 0.5px solid var(--neutral-600);
+  padding: 1rem;
+}
+
 
 @media (max-width: 1200px) {
   .article {
-    gap: 2rem;
+    gap: 0rem;
   }
 
-  .frameFlexColumnTiny.lateralPadding {
+  .frameFlexColumnSmall.lateralPadding {
     padding: 0 5%;
   }
 
@@ -387,7 +410,8 @@
   background: var(--neutral-1000); 
   width: 100%; 
   max-width: 100vw;
-  padding: 1rem 0;  
+  padding: 1rem 0;
+  
 }
 
 .TOCContent {
@@ -401,7 +425,7 @@
 
   .tableOfContent {
     top: 3.5rem;
-    padding: 1rem 5%;
+    padding: 1.5rem 5%;
   }
 
   .TOCContent {
@@ -898,63 +922,6 @@ body.no-scroll {
 .cardProject:hover .cardProjectImageContainer .cardProjectImage,
 .cardReading:hover .cardReadingImageContainer .cardReadingImage {
   transform: scale(1.05);
-}
-
-.cardProject::after {
-  content: "View project";
-}
-
-.cardArticle::after {
-  content: "View article";
-}
-
-.cardProject::after,
-.cardArticle::after {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
-  color: var(--neutral-200);
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100%;
-  min-width: 100%;
-  z-index: 1;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  animation: pulse 1.5s linear infinite;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.4);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
-html[data-theme="dark"] .cardProject::after,
-html[data-theme="dark"] .cardArticle::after {
-  background-color: rgba(12, 12, 13, 0.90);
-}
-
-html[data-theme="light"] .cardProject::after,
-html[data-theme="light"] .cardArticle::after {
-  background-color: rgba(230, 236, 242, 0.90);
-}
-
-.cardProject:hover::after,
-.cardArticle:hover::after {
-  opacity: 1;
 }
 
 /* ---------- */
