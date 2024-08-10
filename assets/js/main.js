@@ -329,3 +329,66 @@ function addAnimation() {
     });
   });
 }
+
+/* ----- TABLE OF CONTENT ----- */
+
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll(".articleBodyContent > div[id]");
+  const tocLinks = document.querySelectorAll(".TOCContent a");
+  
+  // Convertir 10vh a píxeles
+  const offsetVH = 20; // Valor en vh que quieres usar
+  let offset = (window.innerHeight * offsetVH) / 100; // Convierte vh a píxeles
+
+  window.addEventListener("resize", () => {
+    // Recalcula el offset en caso de que el tamaño de la ventana cambie
+    offset = (window.innerHeight * offsetVH) / 100;
+  });
+
+  window.addEventListener("scroll", () => {
+    let currentSection = "";
+
+    sections.forEach((section, index) => {
+      const sectionTop = section.offsetTop - offset; // Ajustar la posición con el offset
+      const sectionHeight = section.offsetHeight;
+      const nextSectionTop = sections[index + 1] ? sections[index + 1].offsetTop - offset : Infinity;
+
+      if (pageYOffset >= sectionTop - sectionHeight / 3 && pageYOffset < nextSectionTop - sectionHeight / 3) {
+        currentSection = section.getAttribute("id");
+      }
+    });
+
+    tocLinks.forEach((link) => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === `#${currentSection}`) {
+        link.classList.add("active");
+
+        // Movimiento horizontal para centrar el enlace en el TOC
+        const linkOffsetLeft = link.offsetLeft;
+        const linkWidth = link.offsetWidth;
+        const tocContentWidth = document.querySelector('.TOCContent').offsetWidth;
+        
+        document.querySelector('.TOCContent').scrollTo({
+          left: linkOffsetLeft - (tocContentWidth / 2) + (linkWidth / 2),
+          behavior: 'smooth' // Hace que el desplazamiento sea suave
+        });
+      }
+    });
+  });
+
+  // Manejar clics en los enlaces del TOC
+  tocLinks.forEach(link => {
+    link.addEventListener('click', function (event) {
+      event.preventDefault(); // Prevenir el comportamiento de anclaje predeterminado
+
+      const targetId = this.getAttribute('href').substring(1); // Obtener el ID de la sección
+      const targetSection = document.getElementById(targetId);
+
+      // Desplazar la ventana hasta la sección con el offset adicional
+      window.scrollTo({
+        top: targetSection.offsetTop - offset,
+        behavior: 'smooth'
+      });
+    });
+  });
+});
