@@ -6,6 +6,11 @@
   "navBarFrameLink4": "About me",
   "navBarFrameLink5": "Blog",
 
+  "languageSwitch1": "English",
+  "languageSwitch2": "Spanish",
+  "themeSwitch1": "Light",
+  "themeSwitch2": "Dark",
+
   "languageContainerText": "Language",
   "themeContainerText": "Theme",
 
@@ -56,7 +61,8 @@
   "aboutPageTitleParagraph3":"Hobbies",
   "aboutPageTextParagraph3":"But it's not all work, I'm a healthy person and I like to practice all kinds of sports. I also like dancing, traveling, reading and spending time with my family, friends or meeting interesting people.",
 
-  "cardProjectButton": "View project",
+  "imageButtonProject": "View project",
+  "imageButtonArticle": "View article",
 
   "cardProjectGeomitesTag1": "New",
   "cardProjectGeomitesTag2": "Videogame",

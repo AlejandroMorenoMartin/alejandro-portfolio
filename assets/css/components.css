@@ -465,6 +465,35 @@
 
 /* ----- BUTTONS ----- */
 
+.switcherContainer {
+  background: var(--neutral-800);
+  border-radius: 100px;
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  min-width: fit-content;
+  gap: 12px;
+  padding: 2px 4px;
+}
+
+.switcherContainer input {
+  display: none;
+}
+
+.switcherContainer label {
+  display: block;
+  padding: 2px 4px;
+  border-radius: 100px;  
+  cursor: pointer; 
+}
+ 
+.switcherContainer label.active {
+  background: var(--neutral-700);
+  color: var(--primary-500);
+}
+
+/* ---------- */
+
 .mobileNavToggle .hamburgerLine {
   transition:
     y 300ms ease-in 300ms,
@@ -730,6 +759,30 @@ span.link {
   color: var(--primary-500);
 }
 
+/* ----- BUTTONIMAGE ----- */
+
+.buttonImage {
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  padding: .5rem 1rem;
+  border-radius: var(--br);
+  background: var(--neutral-200);
+  color: var(--neutral-800);
+  max-width: fit-content;
+  max-height: fit-content;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  z-index: 95;
+  transition: visibility 0.3s ease-in-out,  opacity 0.3s ease-in-out;
+}
+
+.buttonImage:hover { 
+  background: var(--primary-500);
+  color: var(--neutral-1000);
+}
+
 /* ----- TAGS ----- */
 
 .tagPosition {
@@ -898,16 +951,44 @@ body.no-scroll {
 
 .cardProject,
 .cardArticle {
-  display: Flex;
+  display: flex;
   flex-direction: column;
   gap: 16px;
   position: relative;
   cursor: pointer;
   overflow: hidden;
+  border-block-start: .25rem solid;
+  padding-block-start: .5rem;
+  border-image-source: linear-gradient(to left, var(--primary-500), var(--secondary-500));
+  border-image-slice: 1;
+}
+
+.cardProject:hover .buttonImage,
+.cardArticle:hover .buttonImage {
+  opacity: 1;
+  visibility: visible;
 }
 
 .cardProjectImageContainer {
-  overflow: hidden;
+  overflow: hidden; 
+}
+
+.cardProject::after,
+.cardArticle::after {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0); 
+  z-index: 0; 
+  transition: background 0.3s ease; 
+}
+
+.cardProject:hover::after,
+.cardArticle:hover::after{
+  background: rgba(12, 12, 13, .75); 
 }
 
 .cardProjectImageContainer .cardProjectImage,
@@ -922,14 +1003,6 @@ body.no-scroll {
 .cardProject:hover .cardProjectImageContainer .cardProjectImage,
 .cardReading:hover .cardReadingImageContainer .cardReadingImage {
   transform: scale(1.05);
-}
-
-/* ---------- */
-
-.linearFrame {
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(to left, var(--primary-500), var(--secondary-500));
 }
 
 /* ---------- */
@@ -1100,7 +1173,7 @@ body.no-scroll {
   }
 
   .navBarContainer {
-    padding: 4px 5%;
+    padding: 8px 5%;
   }
 
   .menuButton {
@@ -1164,7 +1237,7 @@ body.no-scroll {
     display: block;
     cursor: pointer;
     border: 0;
-    padding: 0.5rem;
+   
   }
 
   .hideOnDesktop {
@@ -1474,6 +1547,15 @@ tr td {
 
 /* ---------- */
 
+@keyframes rotateAndScale {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  100% {
+    transform: rotate(-5deg) scale(1.05);
+  }
+}
+
 .mainHeroImageContainer {
   background: linear-gradient(to left, var(--primary-500), var(--secondary-500));
   padding: .25rem;
@@ -1481,13 +1563,16 @@ tr td {
   aspect-ratio: 1;
   width: 16rem;
   height: 16rem;
+  /* Optional: Centering the image container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mainHeroImage {
   object-fit: contain;
   border-radius: var(--br);
-  transition: transform 0.3s ease-in-out;
-  transform: rotate(-5deg);
+  animation: rotateAndScale 2s forwards; /* 2s duration, play once */
 }
 
 @media (max-width: 1200px) {

@@ -6,6 +6,11 @@
   "navBarFrameLink4": "Sobre mí",
   "navBarFrameLink5": "Blog",
 
+  "languageSwitch1": "Inglés",
+  "languageSwitch2": "Español",
+  "themeSwitch1": "Claro",
+  "themeSwitch2": "Oscuro",
+
   "languageContainerText": "Idioma",
   "themeContainerText": "Tema",
 
@@ -44,7 +49,8 @@
   "indexSectionHeaderText4": "A lo largo de mi carrera, he colaborado con numerosas personas. Algunas de ellas se han ofrecido amablemente a ofrecer testimonios sobre mí en esta sección.",
   "indexSectionHeaderText5": "Me encanta leer y aprender cosas nuevas. Estas son algunas de mis últimas lecturas.",
 
-   "indexSectionHeaderButton": "Ver más",
+   "imageButtonProject": "Ver más",
+   "imageButtonArticle": "Ver artículo",
 
   "aboutPageTitle": "Sobre mí",
   "aboutPageText1":"Como persona autodidacta, aprendo todo aquello que necesito para ser mas eficiente en mi trabajo. Trabajar para las personas y mejorar sus vidad a través de la experiencia de usuario es mi pasión.",

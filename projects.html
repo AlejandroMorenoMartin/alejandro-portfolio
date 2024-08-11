@@ -58,16 +58,19 @@
                   <p data-key="navBarFrameLink5"></p>
                 </a></li>
             </ul>
-            <li class="switcherContainer">
-              <div class="frameFlexColumnTiny">
-                <p data-key="languageContainerText" class="small"></p>
-                <input class="switcher languageSwitcher" type="checkbox">
+            <li class="frameFlexMedium">
+              <div class="switcherContainer" id="languageSwitcherContainer">
+                <input type="checkbox" id="languageSwitch">
+                <label for="languageSwitch" data-state="en" data-key="languageSwitch1" class="small"></label>
+                <label for="languageSwitch" data-state="es" data-key="languageSwitch2" class="small"></label>
               </div>
-              <div class="frameFlexColumnTiny">
-                <p data-key="themeContainerText" class="small"></p>
-                <input class="switcher themeSwitcher" type="checkbox">
-              </div>              
+              <div class="switcherContainer" id="themeSwitcherContainer">
+                <input type="checkbox" id="themeSwitch">
+                <label for="themeSwitch" data-state="light" data-key="themeSwitch1" class="small"></label>
+                <label for="themeSwitch" data-state="dark" data-key="themeSwitch2" class="small"></label>
+              </div>
             </li>
+
         </nav>
         <nav class="mobileNavigation" id="primaryNavigation">
           <ul aria-label="Primary" role="list" class=" navBarNavigation">
@@ -93,17 +96,20 @@
                 </div>
               </div>
               <div class="frameFlexColumnLarge">
+
                 <p data-key="mobileNavigationSectionTitle2" class="regular"></p>
-                <div class="frameFlexColumnMedium">
-                  <div class="frameFlexPaddingBottom">
-                    <p data-key="mobileNavigationOption1" class="large"></p>
-                    <input class="switcher languageSwitcher" type="checkbox">
+                <li class="frameFlexMedium">
+                  <div class="switcherContainer" id="languageSwitcherContainer">
+                    <input type="checkbox" id="languageSwitch">
+                    <label for="languageSwitch" data-state="en" data-key="languageSwitch1" class="small"></label>
+                    <label for="languageSwitch" data-state="es" data-key="languageSwitch2" class="small"></label>
                   </div>
-                  <div class="frameFlexPaddingBottom">
-                    <p data-key="mobileNavigationOption2" class="large"></p>
-                    <input class="switcher themeSwitcher" type="checkbox">
+                  <div class="switcherContainer" id="themeSwitcherContainer">
+                    <input type="checkbox" id="themeSwitch">
+                    <label for="themeSwitch" data-state="light" data-key="themeSwitch1" class="small"></label>
+                    <label for="themeSwitch" data-state="dark" data-key="themeSwitch2" class="small"></label>
                   </div>
-                </div>
+                </li>
               </div>
               <div class="frameFlexColumnLarge frameFlexColumnLargePadding">
                 <p data-key="mobileNavigationSectionTitle3" class="regular"></p>
@@ -142,8 +148,7 @@
         </div>
       </div>
       <div class="gridThree">
-        <div class="cardProject">
-          <div class="linearFrame"></div>
+        <a class="cardProject">          
           <div class="cardProjectImageContainer">
             <img class="cardProjectImage" src="assets/images/projects/geomites/cardProject__geomites.png"
               alt="cardProjectImage">
@@ -160,13 +165,10 @@
             <p class="large">Geomites</p>
             <p class="small" data-key="cardProjectGeomitesTime"></p>
           </div>
-          <p class="regular" data-key="cardProjectGeomitesDescription"></p>
-          <a class="buttonPrimary" href="#">
-            <p class="regular-bold" data-key="cardProjectButton"></p>
-          </a>
-        </div>
-        <div class="cardProject">
-          <div class="linearFrame"></div>
+          <p class="regular" data-key="cardProjectGeomitesDescription"></p>  
+          <div class="buttonImage regular-bold" data-key="imageButtonProject"></div>        
+        </a>
+        <a class="cardProject">          
           <div class="cardProjectImageContainer">
             <img class="cardProjectImage" src="assets/images/projects/tattooParadise/cardProject__tattooParadise.png"
               alt="cardProjectImage">
@@ -180,13 +182,10 @@
             <p class="large">Tattoo paradise</p>
             <p class="small" data-key="cardProjectTattooParadiseTime"></p>
           </div>
-          <p class="regular" data-key="cardProjectTattooParadiseDescription"></p>
-          <a class="buttonPrimary" href="#">
-            <p class="regular-bold" data-key="cardProjectButton"></p>
-          </a>
-        </div>
-        <div class="cardProject">
-          <div class="linearFrame"></div>
+          <p class="regular" data-key="cardProjectTattooParadiseDescription"></p> 
+          <div class="buttonImage regular-bold" data-key="imageButtonProject"></div>         
+        </a>
+        <a class="cardProject">          
           <div class="cardProjectImageContainer">
             <img class="cardProjectImage" src="assets/images/projects/atipikoTours/cardProject__atipikoTours.png"
               alt="cardProjectImage">
@@ -201,12 +200,9 @@
             <p class="small" data-key="cardProjectAtipikoToursTime"></p>
           </div>
           <p class="regular" data-key="cardProjectAtipikoToursDescription"></p>
-          <a class="buttonPrimary" href="#">
-            <p class="regular-bold" data-key="cardProjectButton"></p>
-          </a>
-        </div>
-        <div class="cardProject">
-          <div class="linearFrame"></div>
+          <div class="buttonImage regular-bold" data-key="imageButtonProject"></div>          
+        </a>
+        <a class="cardProject">          
           <div class="cardProjectImageContainer">
             <img class="cardProjectImage" src="assets/images/projects/senzoStudio/cardProject__senzoStudio.png"
               alt="cardProjectImage">
@@ -220,13 +216,10 @@
             <p class="large">Senzo studio</p>
             <p class="small" data-key="cardProjectSenzoStudioTime"></p>
           </div>
-          <p class="regular" data-key="cardProjectSenzoStudioDescription"></p>
-          <a class="buttonPrimary" href="#">
-            <p class="regular-bold" data-key="cardProjectButton"></p>
-          </a>
-        </div>
-        <div class="cardProject">
-          <div class="linearFrame"></div>
+          <p class="regular" data-key="cardProjectSenzoStudioDescription"></p> 
+          <div class="buttonImage regular-bold" data-key="imageButtonProject"></div>         
+        </a>
+        <a class="cardProject">          
           <div class="cardProjectImageContainer">
             <img class="cardProjectImage" src="assets/images/projects/portfolio/cardProject__portfolio.png"
               alt="cardProjectImage">
@@ -241,10 +234,8 @@
             <p class="small" data-key="cardProjectPortfolioTime"></p>
           </div>
           <p class="regular" data-key="cardProjectPortfolioDescription"></p>
-          <a class="buttonPrimary" href="#">
-            <p class="regular-bold" data-key="cardProjectButton"></p>
-          </a>
-        </div>        
+          <div class="buttonImage regular-bold" data-key="imageButtonProject"></div>         
+        </a>        
       </div>
     </div>    
 

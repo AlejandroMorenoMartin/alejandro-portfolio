@@ -61,16 +61,19 @@
                   <p data-key="navBarFrameLink5"></p>
                 </a></li>
             </ul>
-            <li class="switcherContainer">
-              <div class="frameFlexColumnTiny">
-                <p data-key="languageContainerText" class="small"></p>
-                <input class="switcher languageSwitcher" type="checkbox">
+            <li class="frameFlexMedium">
+              <div class="switcherContainer" id="languageSwitcherContainer">
+                <input type="checkbox" id="languageSwitch">
+                <label for="languageSwitch" data-state="en" data-key="languageSwitch1" class="small"></label>
+                <label for="languageSwitch" data-state="es" data-key="languageSwitch2" class="small"></label>
               </div>
-              <div class="frameFlexColumnTiny">
-                <p data-key="themeContainerText" class="small"></p>
-                <input class="switcher themeSwitcher" type="checkbox">
+              <div class="switcherContainer" id="themeSwitcherContainer">
+                <input type="checkbox" id="themeSwitch">
+                <label for="themeSwitch" data-state="light" data-key="themeSwitch1" class="small"></label>
+                <label for="themeSwitch" data-state="dark" data-key="themeSwitch2" class="small"></label>
               </div>
             </li>
+
         </nav>
         <nav class="mobileNavigation" id="primaryNavigation">
           <ul aria-label="Primary" role="list" class=" navBarNavigation">
@@ -96,17 +99,20 @@
                 </div>
               </div>
               <div class="frameFlexColumnLarge">
+
                 <p data-key="mobileNavigationSectionTitle2" class="regular"></p>
-                <div class="frameFlexColumnMedium">
-                  <div class="frameFlexPaddingBottom">
-                    <p data-key="mobileNavigationOption1" class="large"></p>
-                    <input class="switcher languageSwitcher" type="checkbox">
+                <li class="frameFlexMedium">
+                  <div class="switcherContainer" id="languageSwitcherContainer">
+                    <input type="checkbox" id="languageSwitch">
+                    <label for="languageSwitch" data-state="en" data-key="languageSwitch1" class="small"></label>
+                    <label for="languageSwitch" data-state="es" data-key="languageSwitch2" class="small"></label>
                   </div>
-                  <div class="frameFlexPaddingBottom">
-                    <p data-key="mobileNavigationOption2" class="large"></p>
-                    <input class="switcher themeSwitcher" type="checkbox">
+                  <div class="switcherContainer" id="themeSwitcherContainer">
+                    <input type="checkbox" id="themeSwitch">
+                    <label for="themeSwitch" data-state="light" data-key="themeSwitch1" class="small"></label>
+                    <label for="themeSwitch" data-state="dark" data-key="themeSwitch2" class="small"></label>
                   </div>
-                </div>
+                </li>
               </div>
               <div class="frameFlexColumnLarge frameFlexColumnLargePadding">
                 <p data-key="mobileNavigationSectionTitle3" class="regular"></p>
@@ -226,6 +232,7 @@
               <p data-key="cardArticle9Info" class="small"></p>
             </div>
             <p data-key="cardArticle9Description" class="regular"></p>
+            <div class="buttonImage regular-bold" data-key="imageButtonArticle"></div>
           </a>
   
         </div>
@@ -238,6 +245,7 @@
               <p data-key="cardArticle8Info" class="small"></p>
             </div>
             <p data-key="cardArticle8Description" class="regular"></p>
+            <div class="buttonImage regular-bold" data-key="imageButtonArticle"></div>
           </a>
         </div>
   
@@ -249,6 +257,7 @@
               <p data-key="cardArticle7Info" class="small"></p>
             </div>
             <p data-key="cardArticle7Description" class="regular"></p>
+            <div class="buttonImage regular-bold" data-key="imageButtonArticle"></div>
           </a>
         </div>      
   

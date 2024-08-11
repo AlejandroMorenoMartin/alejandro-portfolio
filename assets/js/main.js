@@ -24,68 +24,80 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-/* ----- SWITCHLANGUAGE ----- */
+/* ----- LANGUAGE&THEME ----- */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Función para cargar el archivo JSON de idioma
-  const loadLanguage = async (language) => {
+  const languageSwitch = document.getElementById('languageSwitch');
+  const themeSwitch = document.getElementById('themeSwitch');
+
+  // Función para cargar las traducciones
+  const translate = async (lang) => {
     try {
-      const response = await fetch(`language/${language}.json`);
-      if (!response.ok) {
-        throw new Error(`Could not load ${language} language file`);
-      }
-      const data = await response.json();
-      console.log(`Loaded ${language} language file`, data); // Debugging line
-      applyLanguage(data);
+      const response = await fetch(`language/${lang}.json`);
+      const translations = await response.json();
+
+      // Traducir todos los elementos con atributo data-key
+      document.querySelectorAll('[data-key]').forEach((element) => {
+        const key = element.getAttribute('data-key');
+        if (translations[key]) {
+          element.textContent = translations[key];
+        }
+      });
+
+      // Actualizar la clase active en las etiquetas de idioma
+      updateLabels(document.querySelectorAll('#languageSwitcherContainer label'), lang);
     } catch (error) {
-      console.error('Error loading language file:', error);
+      console.error('Error loading translation file:', error);
     }
   };
 
-  // Función para aplicar el idioma al HTML
-  const applyLanguage = (languageData) => {
-    document.querySelectorAll('[data-key]').forEach(element => {
-      const key = element.getAttribute('data-key');
-      if (languageData[key]) {
-        element.textContent = languageData[key];
-        console.log(`Updated ${key} to ${languageData[key]}`); // Debugging line
+  // Función para actualizar el tema
+  const updateTheme = (theme) => {
+    document.documentElement.setAttribute('data-theme', theme);
+    // Actualizar la clase active en las etiquetas de tema
+    updateLabels(document.querySelectorAll('#themeSwitcherContainer label'), theme);
+  };
+
+  // Función para actualizar la clase active en las etiquetas
+  const updateLabels = (labels, activeState) => {
+    labels.forEach((label) => {
+      if (label.getAttribute('data-state') === activeState) {
+        label.classList.add('active');
       } else {
-        console.warn(`Key "${key}" not found in language data`); // Debugging line
+        label.classList.remove('active');
       }
     });
   };
 
-  // Cargar el idioma por defecto (inglés)
-  loadLanguage('en');
-
-  // Añadir evento a todos los switchers de idioma
-  document.querySelectorAll('.languageSwitcher').forEach((switcher) => {
-    switcher.addEventListener('change', (event) => {
-      const newLanguage = event.target.checked ? 'es' : 'en';
-      loadLanguage(newLanguage);
-    });
-  });
-
-  // Función para aplicar el tema al HTML
-  const applyTheme = (theme) => {
-    document.documentElement.setAttribute('data-theme', theme);
-    console.log(`Applied ${theme} theme`); // Debugging line
+  // Función para inicializar el idioma
+  const initLanguage = () => {
+    const lang = languageSwitch.checked ? 'es' : 'en';
+    translate(lang);
   };
 
-  // Cargar el tema desde localStorage o usar 'dark' por defecto
-  const savedTheme = localStorage.getItem('theme') || 'dark';
-  applyTheme(savedTheme);
+  // Función para inicializar el tema
+  const initTheme = () => {
+    const theme = themeSwitch.checked ? 'light' : 'dark';
+    updateTheme(theme);
+  };
 
-  // Añadir evento a todos los switchers de tema
-  document.querySelectorAll('.themeSwitcher').forEach((switcher) => {
-    switcher.checked = savedTheme === 'dark';
-    switcher.addEventListener('change', (event) => {
-      const newTheme = event.target.checked ? 'dark' : 'light';
-      applyTheme(newTheme);
-      localStorage.setItem('theme', newTheme); // Guardar el tema en localStorage
-    });
+  // Configurar el checkbox de idioma
+  languageSwitch.addEventListener('change', () => {
+    const lang = languageSwitch.checked ? 'es' : 'en';
+    translate(lang);
   });
+
+  // Configurar el checkbox de tema
+  themeSwitch.addEventListener('change', () => {
+    const theme = themeSwitch.checked ? 'light' : 'dark';
+    updateTheme(theme);
+  });
+
+  // Cargar idioma y tema inicial
+  initLanguage();
+  initTheme();
 });
+
 
 /* ----- GREETINGS ----- */
 
