@@ -73,3 +73,7 @@ caption {
   letter-spacing: 0.125rem;
   color: var(--neutral-500);
 }
+
+b { 
+  color: var(--white);
+}

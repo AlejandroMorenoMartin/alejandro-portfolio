@@ -404,3 +404,41 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+/* ----- CARD READING ----- */
+
+document.addEventListener('DOMContentLoaded', function() {
+  const cardReadings = document.querySelectorAll('.cardReading');
+  const frameReading = document.querySelector('.frameReading');
+
+  // Función para cerrar todas las tarjetas abiertas
+  function closeAllCards() {
+    cardReadings.forEach(cardReading => {
+      cardReading.classList.remove('active');
+      cardReading.querySelector('.cardReadingInfo').classList.remove('active');
+    });
+    frameReading.classList.remove('darkened');
+  }
+
+  // Añadir event listeners a cada tarjeta
+  cardReadings.forEach(cardReading => {
+    cardReading.addEventListener('click', function(event) {
+      // Prevenir el clic en el cardReading de propagarse al documento
+      event.stopPropagation();
+
+      // Cerrar todas las tarjetas antes de abrir la seleccionada
+      closeAllCards();
+
+      // Abrir la tarjeta clicada
+      this.classList.add('active');
+      this.querySelector('.cardReadingInfo').classList.add('active');
+      frameReading.classList.add('darkened');
+    });
+  });
+
+  // Añadir un event listener al documento para cerrar las tarjetas al hacer clic fuera
+  document.addEventListener('click', function() {
+    closeAllCards();
+  });
+});
+
