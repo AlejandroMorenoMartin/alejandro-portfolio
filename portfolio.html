@@ -20,6 +20,9 @@
   <link rel="stylesheet" href="/assets/css/reset.css">
   <link rel="stylesheet" href="/assets/css/variables.css">
   <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
 
   <!-- [title] -->
   <title>Alejandro Moreno - Portfolio</title>
@@ -45,7 +48,7 @@
               <li class="navBarFrameLink"><a href="index.html">
                   <p data-key="navBarFrameLink1"></p>
                 </a></li>
-              <li class="navBarFrameLink active"><a href="projects.html">
+              <li class="navBarFrameLink"><a href="projects.html">
                   <p data-key="navBarFrameLink2"></p>
                 </a></li>
               <li class="navBarFrameLink"><a href="resume.html">
@@ -81,7 +84,7 @@
                   <a href="index.html" class="frameFlexPaddingBottom">
                     <p data-key="mobileNavigationPage1" class="large"></p>
                   </a>
-                  <a href="projects.html" class="frameFlexPaddingBottom active">
+                  <a href="projects.html" class="frameFlexPaddingBottom">
                     <p data-key="mobileNavigationPage2" class="large"></p>
                   </a>
                   <a href="resume.html" class="frameFlexPaddingBottom">
@@ -139,105 +142,108 @@
       </div>
     </header>
 
-    <div class="mainTwo">
+    <article class="article">
 
-      <!-- [projects] -->
-      <div class="sectionHeader">
-        <div class="frameFlexAuto">
-          <h2 data-key="indexSectionHeader1"></h2>
+      <!-- [pageHeader] -->
+      <div class="frameFlexColumnLarge pageHeaderContainer">
+        <div class="frameFlexColumnSmall lateralPadding">
+          <p data-key="productDevelopmentLifeCyclePageHeaderDate" class="small"></p>
+          <p data-key="productDevelopmentLifeCyclePageHeaderDescription" class="regular"></p>
+        </div>
+        <div class="pageHeader">
+          <p data-key="productDevelopmentLifeCyclePageHeaderTitle"></p>
         </div>
       </div>
-      <div class="gridThree">
-        <a class="cardProject">          
-          <div class="cardProjectImageContainer">
-            <img class="cardProjectImage" src="assets/images/projects/geomites/cardProject__geomites.png"
-              alt="cardProjectImage">
+
+      <div class="articleBody">
+
+        <div class="articleBodyContent frameFlexColumnMassive">
+
+          <p data-key="productDevelopmentLifeCycleIntro" class="regular"></p>
+
+          <div id="Section1" class="frameFlexColumnMedium">
+            <h4 data-key="productDevelopmentLifeCycleParagraph1Title"></h4>
+            <p data-key="productDevelopmentLifeCycleParagraph1Text" class="regular"></p>
           </div>
-          <div class="frameFlexMedium">
-            <div class="tagNew">
-              <p class="regular" data-key="cardProjectGeomitesTag1"></p>
-            </div>
-            <div class="tag">
-              <p class="regular" data-key="cardProjectGeomitesTag2"></p>
-            </div>
+
+          <div id="Section2" class="frameFlexColumnMedium">
+            <h4 data-key="productDevelopmentLifeCycleParagraph2Title"></h4>
+            <p data-key="productDevelopmentLifeCycleParagraph2Text" class="regular"></p>
           </div>
-          <div class="frameFlexColumnTiny">
-            <p class="regular"><b>Geomites</b></p>
-            <p class="small" data-key="cardProjectGeomitesTime"></p>
+
+          <div id="Section3" class="frameFlexColumnMedium">
+            <h4 data-key="productDevelopmentLifeCycleParagraph3Title"></h4>
+            <p data-key="productDevelopmentLifeCycleParagraph3Text" class="regular"></p>
           </div>
-          <p class="regular" data-key="cardProjectGeomitesDescription"></p>  
-          <div class="buttonImage regular-bold" data-key="imageButtonProject"></div>        
-        </a>
-        <a class="cardProject">          
-          <div class="cardProjectImageContainer">
-            <img class="cardProjectImage" src="assets/images/projects/tattooParadise/cardProject__tattooParadise.png"
-              alt="cardProjectImage">
+
+          <div id="Section4" class="frameFlexColumnMedium">
+            <h4 data-key="productDevelopmentLifeCycleParagraph4Title"></h4>
+            <p data-key="productDevelopmentLifeCycleParagraph4Text" class="regular"></p>
           </div>
-          <div class="frameFlexMedium">
-            <div class="tag">
-              <p class="regular" data-key="cardProjectTattooParadiseTag1"></p>
-            </div>              
+
+          <p data-key="productDevelopmentLifeCycleConclusion" class="regular"></p>
+
+        </div>
+
+        <div class="tableOfContent">
+          <p data-key="TOCTitle" class="small"></p>
+          <div class="TOCContent">
+            <a href="#Section1" data-key="productDevelopmentLifeCycleTOC1" class="regular"></a>
+            <a href="#Section2" data-key="productDevelopmentLifeCycleTOC2" class="regular"></a>
+            <a href="#Section3" data-key="productDevelopmentLifeCycleTOC3" class="regular"></a>
+            <a href="#Section4" data-key="productDevelopmentLifeCycleTOC4" class="regular"></a>
           </div>
-          <div class="frameFlexColumnTiny">
-            <p class="regular"><b>Tattoo paradise</b></p>
-            <p class="small" data-key="cardProjectTattooParadiseTime"></p>
-          </div>
-          <p class="regular" data-key="cardProjectTattooParadiseDescription"></p> 
-          <div class="buttonImage regular-bold" data-key="imageButtonProject"></div>         
-        </a>
-        <a class="cardProject">          
-          <div class="cardProjectImageContainer">
-            <img class="cardProjectImage" src="assets/images/projects/atipikoTours/cardProject__atipikoTours.png"
-              alt="cardProjectImage">
-          </div>
-          <div class="frameFlexMedium">
-            <div class="tag">
-              <p class="regular" data-key="cardProjectAtipikoToursTag1"></p>
-            </div>              
-          </div>
-          <div class="frameFlexColumnTiny">
-            <p class="regular"><b>Atipiko tours</b></p>
-            <p class="small" data-key="cardProjectAtipikoToursTime"></p>
-          </div>
-          <p class="regular" data-key="cardProjectAtipikoToursDescription"></p>
-          <div class="buttonImage regular-bold" data-key="imageButtonProject"></div>          
-        </a>
-        <a class="cardProject">          
-          <div class="cardProjectImageContainer">
-            <img class="cardProjectImage" src="assets/images/projects/senzoStudio/cardProject__senzoStudio.png"
-              alt="cardProjectImage">
-          </div>
-          <div class="frameFlexMedium">
-            <div class="tag">
-              <p class="regular" data-key="cardProjectSenzoStudioTag1"></p>
-            </div>              
-          </div>
-          <div class="frameFlexColumnTiny">
-            <p class="regular"><b>Senzo studio</b></p>
-            <p class="small" data-key="cardProjectSenzoStudioTime"></p>
-          </div>
-          <p class="regular" data-key="cardProjectSenzoStudioDescription"></p> 
-          <div class="buttonImage regular-bold" data-key="imageButtonProject"></div>         
-        </a>
-        <a class="cardProject" href="portfolio.html">          
-          <div class="cardProjectImageContainer">
-            <img class="cardProjectImage" src="assets/images/projects/portfolio/cardProject__portfolio.png"
-              alt="cardProjectImage">
-          </div>
-          <div class="frameFlexMedium">
-            <div class="tag">
-              <p class="regular" data-key="cardProjectPortfolioTag1"></p>
-            </div>              
-          </div>
-          <div class="frameFlexColumnTiny">
-            <p class="regular"><b>Portfolio</b></p>
-            <p class="small" data-key="cardProjectPortfolioTime"></p>
-          </div>
-          <p class="regular" data-key="cardProjectPortfolioDescription"></p>
-          <div class="buttonImage regular-bold" data-key="imageButtonProject"></div>         
-        </a>        
+        </div>
+
       </div>
-    </div>    
+
+    </article>
+
+    <!-- [otherArticles] -->
+    <div class="frameFlexColumnExtraLarge otherArticles">
+      <div class="sectionHeader">
+        <div class="frameFlexAuto">
+          <h3 data-key="otherArticlesTitle"></h3>
+          <a href="blog.html" class="buttonTerciary">
+            <p class="regular" data-key="indexSectionHeaderButton"></p>
+          </a>
+        </div>
+        <p class="regular" data-key="otherArticlesText"></p>
+      </div>
+      <div class="gridThree">
+
+        <a class="cardArticle" href="multidisciplinaryTeams.html">
+          <div class="linearFrame"></div>
+          <div class="framFlexColumnTiny">
+            <p data-key="cardArticle10Title" class="large"></p>
+            <p data-key="cardArticle10Info" class="small"></p>
+          </div>
+          <p data-key="cardArticle10Description" class="regular"></p>
+          <div class="buttonImage regular-bold" data-key="imageButtonArticle"></div>
+        </a>
+
+        <a class="cardArticle" href="theRoleOfAProductDesigner.html">
+          <div class="linearFrame"></div>
+          <div class="framFlexColumnTiny">
+            <p data-key="cardArticle9Title" class="large"></p>
+            <p data-key="cardArticle9Info" class="small"></p>
+          </div>
+          <p data-key="cardArticle9Description" class="regular"></p>
+          <div class="buttonImage regular-bold" data-key="imageButtonArticle"></div>
+        </a>
+
+        <a class="cardArticle" href="differentBusinessModels.html">
+          <div class="linearFrame"></div>
+          <div class="framFlexColumnTiny">
+            <p data-key="cardArticle8Title" class="large"></p>
+            <p data-key="cardArticle8Info" class="small"></p>
+          </div>
+          <p data-key="cardArticle8Description" class="regular"></p>
+          <div class="buttonImage regular-bold" data-key="imageButtonArticle"></div>
+        </a>
+
+      </div>
+    </div>
 
     <!-- [progressButton] -->
     <button class="btn-toggle-round scroll-top js-scroll-top" type="button" title="Scroll to top">
@@ -256,8 +262,8 @@
 
     <!-- [footer] -->
     <div id="footer"></div>
-
   </main>
+
 
   <script src="/assets/js/main.js"></script>
   <script src="/assets/js/components.js"></script>
