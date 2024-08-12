@@ -1,4 +1,5 @@
-// Function to load an HTML component into a specific div
+/* ----- FOOTER ----- */
+
 function loadComponent(componentId, filePath) {
   fetch(filePath)
       .then(response => response.text())
@@ -9,3 +10,9 @@ function loadComponent(componentId, filePath) {
 }
 
 loadComponent('footer', 'components/footer.html');
+
+
+/* ----- TABLEOFCONTENT ----- */
+
+
+  
