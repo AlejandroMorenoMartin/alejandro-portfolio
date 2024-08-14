@@ -49,6 +49,8 @@
   "indexSectionHeaderText4": "A lo largo de mi carrera, he colaborado con numerosas personas. Algunas de ellas se han ofrecido amablemente a ofrecer testimonios sobre mí en esta sección.",
   "indexSectionHeaderText5": "Me encanta leer y aprender cosas nuevas. Estas son algunas de mis últimas lecturas.",
 
+  "indexSectionHeaderButton": "Ver más",
+
    "imageButtonProject": "Ver más",
    "imageButtonArticle": "Ver artículo",
 
@@ -583,5 +585,100 @@
   "toolsForSeekingCertainitiesTOC2": "Test de usabilidad", 
   "toolsForSeekingCertainitiesTOC3": "Herramientas de prototipado", 
   "toolsForSeekingCertainitiesTOC4": "Analíticas & Mapas de calor",
-  "toolsForSeekingCertainitiesTOC5": "Plataformas de testeo A/B"
+  "toolsForSeekingCertainitiesTOC5": "Plataformas de testeo A/B",
+
+  "cardProjectChallenge": "Desafío",
+  "cardProjectRol": "Mi rol",
+  "cardProjectCronology": "Cronología",  
+  "cardProjectToolstack": "Herramientas",
+  
+  "cardProjectPortfolioChallenge": "Crea un portafolio personal desde cero utilizando Figma para el diseño y VS Code para el desarrollo.",
+  "cardProjectPortfolioRol": "Diseñador y desarrollador, encargado del diseño UX/UI y de la codificación.",
+  "cardProjectPortfolioCronology": "8 semanas",
+  "cardProjectPortfolioToolstack": "Figma, HTML5, CSS3, Javascript y ChatGPT",
+
+  "portfolioTOC1": "Introducción",
+  "portfolioTOC2": "Marco de trabajo",
+  "portfolioTOC3": "Sistema de diseño",
+  "portfolioTOC4": "Algunos diseños",
+  "portfolioTOC5": "Aprendizajes",  
+
+  "portfolioParagraph1Title": "Introducción",
+  "portfolioParagraph1Text": "Para este proyecto, utilizaré un marco de trabajo comúnmente empleado para la resolución de problemas de diseño. Utilizaré Figma para el aspecto del diseño y HTML, CSS y JavaScript para el desarrollo, junto con ChatGPT para el soporte. Con todo ello y con el objetivo de desarrollar desde cero, un portfolio que me permita dar a conocer mi perfil.",
+
+  "portfolioParagraph2Title": "Marco de trabajo",
+  "portfolioParagraph2Text": "Este marco utiliza 6 pasos para resolver el problema: por qué, quién, cuándo y dónde, qué, resolver y cómo.",
+
+  "portfolioSubParagraph1Title": "Objetivo",
+  "portfolioSubParagraph1Text": "Mi perfil profesional es una oportunidad para darme a conocer a través de internet, posicionándome como referente en el ámbito del diseño, y permitiendo una fácil colaboración y contacto con las partes interesadas.",
+
+  "portfolioSubParagraph2Title": "Objetivo",
+  "portfolioSubParagraph2Text": "¿Cuáles son las categorías de personas que tienen motivaciones significativamente diferentes para utilizar esta cartera?",
+
+  "portfolioSubParagraph3Title": "Contexto",
+
+  "cardTestimonial1Portfolio": "Recruiter",
+  "cardTestimonial2Portfolio": "Product designer",
+  "cardTestimonial3Portfolio": "Design lead",
+
+  "cardInsight1Title": "Cuándo",
+  "cardInsight1Text": "Los usuarios revisan portfolios cuando consideran contratar, buscando rápidamente proyectos que demuestren habilidades relevantes para una posición específica",
+  "cardInsight2Title": "Dónde",
+  "cardInsight2Text": "Se visualiza en oficinas, hogares o en movimiento, generalmente en dispositivos móviles o de escritorio, donde la accesibilidad y la claridad son clave.",
+  "cardInsight3Title": "Sensaciones",
+  "cardInsight3Text": "Los usuarios buscan inspiración y seguridad, sintiéndose atraídos por un diseño intuitivo, claro y estéticamente agradable que demuestre la competencia del diseñador.",
+  
+  "portfolioSubParagraph4Title": "Definiendo el producto",
+  "portfolioSubParagraph4Text": "El portafolio debe mostrar una organización y claridad excepcionales, garantizando la facilidad de lectura y comprensión, permitiendo a los usuarios ver lo que han venido a ver y poder contactar de una manera rápida y sencilla.",
+  
+  "portfolioSubParagraph5Title": "¿Cómo lo mido?",
+  "portfolioSubParagraph5Text": "Utilizaré los siguientes KPI para medir la eficacia de mi portfolio.",
+  "cardInsight4Title": "Tráfico del sitio web",
+  "cardInsight4Text": "Número de visitas mensuales.",
+  "cardInsight5Title": "Duración de la sesión",
+  "cardInsight5Text": "Hora de las visitas de los usuarios.",
+  "cardInsight6Title": "Tasa de conversión",
+  "cardInsight6Text": "Número de contacto del usuario.",
+  
+  "portfolioParagraph3Title": "Sistema de diseño",
+  "portfolioParagraph3Text": "Directrices completas para mantener la coherencia visual y funcional del diseño.",  
+  "portfolioSubParagraph6Title": "Tipografía",
+  "portfolioSubParagraph6Text": "Por su aspecto moderno, legibilidad, facilidad de uso, ventajas para la identidad de marca, accesibilidad y soporte multilingüe, decidí utilizar Montserrat como tipo de letra para el portfolio.",
+  "portfolioSubParagraph7Title": "Color",
+  "portfolioSubParagraph7Text": "Paleta de colores para una experiencia de usuario coherente y atractiva.",
+  "portfolioSubParagraph8Title": "Botones",
+  "portfolioSubParagraph8Text": "Estilos y comportamientos de botones para acciones claras y accesibles.",
+  "portfolioSubParagraph9Title": "Campos de entrada",
+  "portfolioSubParagraph9Text": "Diseño de campos de entrada para una interacción precisa y fácil de usar.",
+  "portfolioSubParagraph10Title": "Imágenes avatar",
+  "portfolioSubParagraph10Text": "Directrices para la representación y el estilo de las imágenes de perfil.",
+  "portfolioSubParagraph11Title": "Iconos",
+  "portfolioSubParagraph11Text": "Uso y estilo de iconos para una interfaz intuitiva y visualmente clara.",
+  "portfolioSubParagraph12Title": "Componentes",
+  "portfolioSubParagraph12Text": "Estructura y diseño de componentes reutilizables para una experiencia consistente y un desarrollo facilmente implementable y mantenible.",
+  "subSubsection1": "Primario -",
+  "subSubsection2": "Secundario -",
+  "subSubsection3": "Neutral -",
+  "subSubsection4": "Degradado primario",
+  "subSubsection5": "Primario",
+  "subSubsection6": "Secundario",
+  "subSubsection7": "Terciario",
+
+  "portfolioParagraph4Title": "Algunos diseños",
+  "portfolioParagraph4Text": "Aquí puedes ver algunos de los diseños finales.",
+  "someDesigns1Title": "Sección de bienvenida",
+  "someDesigns1Text": "El usuario, al aterrizar en el portfolio, debe entender de forma clara que es esta web, que puede hacer aquí y hacerse una idea de mi perfil antes de seguir navegando a cualquier otro lugar de la web. Además debe tener una navegación clara que le permita moverse entre las diferentes páginas.",
+  "someDesigns2Title": "Secciones de la home",
+  "someDesigns2Text": "En la página principal del portfolio existen diferentes secciones que permites al usuario ver las herramientas que manejo, las habilidades que me permiten desarrollar mi trabajo o algunos testimonios profesionales de personas con las que he trabajado.",
+  "someDesigns3Title": "Página de currículum",
+  "someDesigns3Text": "En esta página se pueden ver los desarrollos de mis últimos trabajos, así como algunos de los certificados más relevantes que poseo.",
+  "someDesigns4Title": "Blog",
+  "someDesigns4Text": "Como parte de mi trabajo de aprendizaje e investigación desarrollo un blog con artículos donde profundizo en conceptos de diseño UX / UI.",
+
+  "portfolioParagraph5Title": "Aprendizajes",
+  "portfolioParagraph5Text": "Con la creación de mi portfolio desde cero, he podido aprender a desarrollar un proyecto web, con diseño responsivo, tanto desde el lado del diseño como del desarrollo. Esto me ha permitido entender cómo realizar mi trabajo como diseñador de forma que pueda facilitar al máximo el trabajo del desarrollador.",
+  "learning1": "Responsivo",
+  "learning2": "Prototipado",
+  "learning3": "Diseño UX/UI",
+  "learning4": "Desarrollo web"
 }

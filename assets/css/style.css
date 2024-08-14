@@ -54,7 +54,7 @@ caption {
   line-height: var(--lh-regular);
   font-weight: 600;
   letter-spacing: 0.05rem;
-  color: var(--neutral-100);
+  color: var(--white);
 }
 
 .regular {
@@ -65,6 +65,9 @@ caption {
   color: var(--neutral-300);
 }
 
+.regular-red {
+  color: var(--red-500);
+}
 
 .small {
   font-size: var(--fs-small);
