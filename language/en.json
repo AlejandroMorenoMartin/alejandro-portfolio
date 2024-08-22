@@ -350,7 +350,10 @@
   "cardArticle11Description": "Discover the stages in the creation of a product.",
 
   "otherArticlesTitle": "Other articles",
-  "otherArticlesText": "Discover other artciles",
+  "otherArticlesText": "Discover other articles",
+
+  "otherProjectsTitle": "Other projects",
+  "otherProjectsText": "Discover other projects",
 
   "TOCTitle": "Index",
 
@@ -517,7 +520,7 @@
   "lessIsMoreParagraph3Title": "Small adjustments",
   "lessIsMoreParagraph3Text": "It will only require a few tests to prove its effectiveness. You can start by making a very simple and straightforward modification. If it doesn't work as expected, try a more comprehensive modification. If the modification still does not yield the desired results, consider a different approach.",  
   "lessIsMoreConclusion": "Always examine the consequences of modifications, as there are always repercussions, some of which may be unintended. Remain vigilant in monitoring these outcomes.",  
-  "lessIsMoreTOC1": "Usability problems", 
+  "lessIsMoreTOC1": "Define objectives", 
   "lessIsMoreTOC2": "Modify than redisgn", 
   "lessIsMoreTOC3": "Small adjustments",
 
