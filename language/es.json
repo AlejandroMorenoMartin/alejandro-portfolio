@@ -597,8 +597,8 @@
   
   "cardProjectPortfolioChallenge": "Crea un portafolio personal desde cero utilizando Figma para el diseño y VS Code para el desarrollo.",
   "cardProjectPortfolioRol": "Diseñador y desarrollador, encargado del diseño UX/UI y de la codificación.",
-  "cardProjectPortfolioCronology": "8 semanas",
-  "cardProjectPortfolioToolstack": "Figma, HTML5, CSS3, Javascript y ChatGPT",
+  "cardProjectPortfolioCronology": "8 semanas.",
+  "cardProjectPortfolioToolstack": "Figma, HTML5, CSS3, Javascript y ChatGPT.",
 
   "portfolioTOC1": "Introducción",
   "portfolioTOC2": "Marco de trabajo",
@@ -615,14 +615,17 @@
   "portfolioSubParagraph1Title": "Objetivo",
   "portfolioSubParagraph1Text": "Mi perfil profesional es una oportunidad para darme a conocer a través de internet, posicionándome como referente en el ámbito del diseño, y permitiendo una fácil colaboración y contacto con las partes interesadas.",
 
-  "portfolioSubParagraph2Title": "Objetivo",
+  "portfolioSubParagraph2Title": "Audiencia",
   "portfolioSubParagraph2Text": "¿Cuáles son las categorías de personas que tienen motivaciones significativamente diferentes para utilizar esta cartera?",
 
   "portfolioSubParagraph3Title": "Contexto",
 
-  "cardTestimonial1Portfolio": "Recruiter",
-  "cardTestimonial2Portfolio": "Product designer",
-  "cardTestimonial3Portfolio": "Design lead",
+  "cardTestimonial1PortfolioDescription": "Necesito encontrar un diseñador de productos cualificado para cubrir este puesto vacante.",
+  "cardTestimonial1PortfolioPosition": "Reclutador",
+  "cardTestimonial2PortfolioDescription": "Busco un diseñador con talento con el que colaborar.",
+  "cardTestimonial2PortfolioPosition": "Diseñador de producto",
+  "cardTestimonial3PortfolioDescription": "Necesito asegurarme de que este candidato tiene las aptitudes necesarias.",
+  "cardTestimonial3PortfolioPosition": "Jefe de diseño",
 
   "cardInsight1Title": "Cuándo",
   "cardInsight1Text": "Los usuarios revisan portfolios cuando consideran contratar, buscando rápidamente proyectos que demuestren habilidades relevantes para una posición específica",
@@ -659,9 +662,9 @@
   "portfolioSubParagraph11Text": "Uso y estilo de iconos para una interfaz intuitiva y visualmente clara.",
   "portfolioSubParagraph12Title": "Componentes",
   "portfolioSubParagraph12Text": "Estructura y diseño de componentes reutilizables para una experiencia consistente y un desarrollo facilmente implementable y mantenible.",
-  "subSubsection1": "Primario -",
-  "subSubsection2": "Secundario -",
-  "subSubsection3": "Neutral -",
+  "subSubsection1": "Primario",
+  "subSubsection2": "Secundario",
+  "subSubsection3": "Neutral",
   "subSubsection4": "Degradado primario",
   "subSubsection5": "Primario",
   "subSubsection6": "Secundario",
@@ -680,8 +683,53 @@
 
   "portfolioParagraph5Title": "Aprendizajes",
   "portfolioParagraph5Text": "Con la creación de mi portfolio desde cero, he podido aprender a desarrollar un proyecto web, con diseño responsivo, tanto desde el lado del diseño como del desarrollo. Esto me ha permitido entender cómo realizar mi trabajo como diseñador de forma que pueda facilitar al máximo el trabajo del desarrollador.",
-  "learning1": "Responsivo",
-  "learning2": "Prototipado",
-  "learning3": "Diseño UX/UI",
-  "learning4": "Desarrollo web"
+  "portfolioLearning1": "Responsivo",
+  "portfolioLearning2": "Prototipado",
+  "portfolioLearning3": "Diseño UX/UI",
+  "portfolioLearning4": "Desarrollo web",
+
+  "cardProjectSenzoStudioChallenge": "Capturar la esencia creativa de una agencia de VFX en una web funcional, equilibrando complejidad visual con usabilidad.",
+  "cardProjectSenzoStudioRol": "Diseñador y desarrollador, encargado del diseño UX/UI y del desarrollo.",
+  "cardProjectSenzoStudioCronology": "6 semanas.",
+  "cardProjectSenzoStudioToolstack": "Figma y Wordpress.",
+
+  "senzoStudioParagraph1Title": "Introducción",
+  "senzoStudioParagraph1Text": "Diseñé y desarrollé un sitio web para una agencia de efectos visuales, empezando por la investigación de usuarios y el análisis de la competencia. A continuación, creé una arquitectura de la información y un sistema de diseño completos, lo que dio como resultado un sitio web visualmente atractivo que muestra el trabajo de vanguardia de la agencia y ofrece una experiencia de usuario intuitiva.",
+
+  "senzoStudioParagraph2Title": "Investigación",
+  "senzoStudioParagraph2Text": "Comienzo el proyecto realizando una investigación. El objetivo es conocer a fondo el tipo de usuario, las empresas competidoras y el mercado en el que opera la empresa.",
+
+  "senzoStudioSubParagraph1Title": "Encuesta",
+  "senzoStudioSubParagraph1Text": "Tras analizar el tipo de usuario de Senzo Studio, preparé las siguientes preguntas.",
+
+  "senzoStudioSubParagraph2Title": "Información obtenida",
+  "senzoStudioSubParagraph2Text": "Tras formular las preguntas a los dos usuarios, extraje la siguiente información.",
+
+  "senzoStudioSubParagraph3Title": "User story map (Mario)",
+
+  "senzoStudioSubParagraph4Title": "User story map (Pedro)",
+
+  "senzoStudioSubParagraph5Title": "Competidores",
+  "senzoStudioSubParagraph5Text": "Estos son algunos de los principales competidores de Senzo studio.",
+
+  "senzoStudioSubParagraph6Title": "Evaluación heurística",
+  "senzoStudioSubParagraph6Text": "Identificación de problemas de usabilidad mediante principios de diseño reconocidos.",
+
+  "senzoStudioSubParagraph7Title": "Evaluación de contenido",
+  "senzoStudioSubParagraph7Text": "Análisis de contenido para asegurar relevancia, claridad y alineación con los objetivos.",
+
+  "senzoStudioSubParagraph8Title": "Clasificación de tarjetas",
+  "senzoStudioSubParagraph8Text": "Organización de la información basada en la lógica y expectativas del usuario.",
+
+  "senzoStudioParagraph3Title": "Sistema de diseño",
+  "senzoStudioParagraph3Text": "Estos son algunos de los elementos que forman parte del sistema de diseño de Senzo studio.",
+
+  "senzoStudioSubParagraph9Title": "Tipografía",
+  "senzoStudioSubParagraph9Text": "Elegí IBM Plex Sans por su legibilidad y versatilidad, logrando un diseño moderno y profesional alineado con la identidad del proyecto.",
+
+  "senzoStudioSubParagraph10Title": "Color",
+  "senzoStudioSubParagraph10Text": "Paleta de colores para una experiencia de usuario coherente y atractiva.",
+
+  "senzoStudioSubParagraph11Title": "Componentes",
+  "senzoStudioSubParagraph11Text": "Como parte del sistema de diseño, desarrollé los principales componentes utilizados en el proyecto. A continuación presento el componente «tarjeta», utilizado para la visualización de varios proyectos."
 }

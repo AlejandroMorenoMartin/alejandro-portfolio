@@ -596,8 +596,8 @@
   
   "cardProjectPortfolioChallenge": "Create a personal portfolio from scratch using Figma for design and VS Code for development.",
   "cardProjectPortfolioRol": "Designer and developer, in charge of UX/UI design and coding.",
-  "cardProjectPortfolioCronology": "8 weeks",
-  "cardProjectPortfolioToolstack": "Figma, HTML5, CSS3, Javascript and ChatGPT",
+  "cardProjectPortfolioCronology": "8 weeks.",
+  "cardProjectPortfolioToolstack": "Figma, HTML5, CSS3, Javascript and ChatGPT.",
 
   "portfolioTOC1": "Introduction",
   "portfolioTOC2": "Framework",
@@ -618,9 +618,12 @@
 
   "portfolioSubParagraph3Title": "Context",
 
-  "cardTestimonial1Portfolio": "Reclutador",
-  "cardTestimonial2Portfolio": "Diseñador de producto",
-  "cardTestimonial3Portfolio": "Jefe de diseño",
+  "cardTestimonial1PortfolioDescription": "I need to find a qualified product designer to fill this vacant position.",
+  "cardTestimonial1PortfolioPosition": "Recruiter",
+  "cardTestimonial2PortfolioDescription": "I am looking for a talented designer to collaborate with.",
+  "cardTestimonial2PortfolioPosition": "Product designer",
+  "cardTestimonial3PortfolioDescription": "I need to make sure that this candidate has the necessary skills.",
+  "cardTestimonial3PortfolioPosition": "Design Lead",
 
   "cardInsight1Title": "When",
   "cardInsight1Text": "Users review portfolios when considering hiring, quickly looking for projects that demonstrate skills relevant to a specific position.",
@@ -657,9 +660,9 @@
   "portfolioSubParagraph11Text": "Use and style of icons for an intuitive and visually clear interface.",
   "portfolioSubParagraph12Title": "Components",
   "portfolioSubParagraph12Text": "Reusable component structure and design for a consistent experience and easily deployable and maintainable development.",
-  "subSubsection1": "Primary -",
-  "subSubsection2": "Secondary -",
-  "subSubsection3": "Neutral -",
+  "subSubsection1": "Primary",
+  "subSubsection2": "Secondary",
+  "subSubsection3": "Neutral",
   "subSubsection4": "Primary gradient",
   "subSubsection5": "Primary",
   "subSubsection6": "Secondary",
@@ -678,8 +681,53 @@
 
   "portfolioParagraph5Title": "Learnings",
   "portfolioParagraph5Text": "With the creation of my portfolio from scratch, I have been able to learn how to develop a web project, with responsive design, both from the design and development side. This has allowed me to understand how to do my job as a designer in a way that can make the developer's job as easy as possible.",
-  "learning1": "Responsive",
-  "learning2": "Prototype",
-  "learning3": "UX/UI design",
-  "learning4": "Web devlopment"
+  "portfolioLearning1": "Responsive",
+  "portfolioLearning2": "Prototype",
+  "portfolioLearning3": "UX/UI design",
+  "portfolioLearning4": "Web devlopment",
+
+  "cardProjectSenzoStudioChallenge": "Capture the creative essence of a VFX agency in a functional website, balancing visual complexity with usability.",
+  "cardProjectSenzoStudioRol": "Designer and developer, in charge of UX/UI design and development.",
+  "cardProjectSenzoStudioCronology": "6 weeks.",
+  "cardProjectSenzoStudioToolstack": "Figma y Wordpress.",
+
+  "senzoStudioParagraph1Title": "Introduction",
+  "senzoStudioParagraph1Text": "I designed and developed a website for a VFX agency, starting with user research and competitive analysis. I then created a comprehensive information architecture and design system, resulting in a visually appealing website that showcases the agency's cutting-edge work and offers an intuitive user experience.",
+
+  "senzoStudioParagraph2Title": "Research",
+  "senzoStudioParagraph2Text": "I start the project by conducting research. The goal is to thoroughly understand the type of user, competing companies, and the market in which the company operates.",
+
+  "senzoStudioSubParagraph1Title": "Survey",
+  "senzoStudioSubParagraph1Text": "After analyzing the type of user for Senzo Studio, I prepared the following questions.",
+  
+  "senzoStudioSubParagraph2Title": "Insights",
+  "senzoStudioSubParagraph2Text": "After asking the questions to the two users, I extracted the following information.",
+
+  "senzoStudioSubParagraph3Title": "User story map (Mario)",
+
+  "senzoStudioSubParagraph4Title": "User story map (Pedro)",
+
+  "senzoStudioSubParagraph5Title": "Competitors",
+  "senzoStudioSubParagraph5Text": "These are some of Senzo studio's main competitors.",
+
+  "senzoStudioSubParagraph6Title": "Heuristic Evaluation",
+  "senzoStudioSubParagraph6Text": "Identification of usability issues using recognized design principles.",
+
+  "senzoStudioSubParagraph7Title": "Content Evaluation",
+  "senzoStudioSubParagraph7Text": "Analysis of content to ensure relevance, clarity, and alignment with objectives.",
+
+  "senzoStudioSubParagraph8Title": "Card Sorting",
+  "senzoStudioSubParagraph8Text": "Organizing information based on user logic and expectations.",
+
+  "senzoStudioParagraph3Title": "Design system",
+  "senzoStudioParagraph3Text": "These are some of the elements that are part of Senzo studio's design system.",
+
+  "senzoStudioSubParagraph9Title": "Typography",
+  "senzoStudioSubParagraph9Text": "I chose IBM Plex Sans for its readability and versatility, achieving a modern, professional design aligned with the project's identity.",
+
+  "senzoStudioSubParagraph10Title": "Color",
+  "senzoStudioSubParagraph10Text": "Color palette for a consistent and attractive user experience.",
+
+  "senzoStudioSubParagraph11Title": "Components",
+  "senzoStudioSubParagraph11Text": "As part of the design system, I developed the main components used in the project. Below, I present the 'card' component, utilized for the display of various projects."
 }

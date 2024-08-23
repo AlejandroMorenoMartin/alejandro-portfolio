@@ -199,23 +199,12 @@
   width: 100%;
 }
 
-@media (max-width: 1200px) {
-  .frameFlexColumnLarge {
-    gap: 1rem;
-  }
-}
-
 .frameFlexColumnExtraLarge {
   display: flex;
   flex-direction: column;
   gap: 4rem;
   flex: 1;
-}
-
-@media (max-width: 1200px) {
-  .frameFlexColumnExtraLarge {
-    gap: 2rem;
-  }
+  width: 100%;
 }
 
 .frameFlexColumnMassive {
@@ -223,12 +212,7 @@
   flex-direction: column;
   gap: 8rem;
   flex: 1;
-}
-
-@media (max-width: 1200px) {
-  .frameFlexColumnMassive {
-    gap: 4rem;
-  }
+  width: 100%;
 }
 
 .frameFlexColumnColossal {
@@ -236,9 +220,30 @@
   flex-direction: column;
   gap: 16rem;
   flex: 1;
+  width: 100%;
 }
 
 @media (max-width: 1200px) {
+  .frameFlexColumnSmall {
+    gap: 0.25rem;
+  }
+  
+  .frameFlexColumnMedium {
+    gap: 0.5rem;
+  }
+  
+  .frameFlexColumnLarge {
+    gap: 1rem;
+  }
+
+  .frameFlexColumnExtraLarge {
+    gap: 2rem;
+  }
+
+  .frameFlexColumnMassive {
+    gap: 4rem;
+  }
+
   .frameFlexColumnColossal {
     gap: 8rem;
   }
@@ -288,7 +293,7 @@
 .gridAutoTwo {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(min(112px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(96px, 100%), 1fr));
   grid-auto-rows: 1fr;
 }
 
@@ -512,7 +517,7 @@ html[data-theme="light"] .frameReading.darkened::before {
   }
 
   .pageHeader {
-    padding: 4rem 5%;
+    padding: 2rem 5%;
   }
 
   .pageHeader p {
@@ -544,7 +549,8 @@ html[data-theme="light"] .frameReading.darkened::before {
 
 @media (max-width: 1200px) {
   .articleInfo {
-    padding: 0 5%;
+    padding: 0 5%; 
+    grid-template-rows: 1fr .5fr;   
   }
 }
 
@@ -1530,12 +1536,6 @@ body.no-scroll {
   border: 2px solid var(--white);
 }
 
-.inputFieldTwo {}
-
-.inputFieldThree {}
-
-.inputFieldFour {}
-
 /* ----- NAVIGATION ----- */
 
 .navBarContainer {
@@ -1799,12 +1799,12 @@ footer .frameFlexColumnSmall {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--neutral-600);
+  background: var(--neutral-500);
   border-radius: 100px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--primary-700);
+  background: var(--primary-500);
 }
 
 @supports (scrollbar-color: red blue) {
