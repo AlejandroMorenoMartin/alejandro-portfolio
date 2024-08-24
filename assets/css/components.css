@@ -141,10 +141,10 @@
 
 .frameFlexDynamic {
   display: flex;
-  gap: 1rem;  
+  gap: 1rem;
 }
 
-.frameFlexDynamic>*{
+.frameFlexDynamic>* {
   flex: 1;
 }
 
@@ -227,11 +227,11 @@
   .frameFlexColumnSmall {
     gap: 0.25rem;
   }
-  
+
   .frameFlexColumnMedium {
     gap: 0.5rem;
   }
-  
+
   .frameFlexColumnLarge {
     gap: 1rem;
   }
@@ -256,7 +256,7 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;  
+  gap: 2rem;
 }
 
 @media (max-width: 1200px) {
@@ -491,7 +491,7 @@ html[data-theme="light"] .frameReading.darkened::before {
 }
 
 .articleBodyContent {
-  flex: 0 0 900px;  
+  flex: 0 0 900px;
   padding-top: 1rem;
 }
 
@@ -549,8 +549,8 @@ html[data-theme="light"] .frameReading.darkened::before {
 
 @media (max-width: 1200px) {
   .articleInfo {
-    padding: 0 5%; 
-    grid-template-rows: 1fr .5fr;   
+    padding: 0 5%;
+    grid-template-rows: 1fr .5fr;
   }
 }
 
@@ -589,6 +589,77 @@ html[data-theme="light"] .frameReading.darkened::before {
 .articleInfoFour>.frameFlexColumnSmall:first-of-type {
   border-right: 0.5px solid var(--neutral-600);
 }
+
+/* ----- TABLE ----- */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+}
+
+th,
+td {
+  padding: .5rem 1rem;
+  text-align: left;
+}
+
+th {
+  border-top: 0.5px solid var(--neutral-600);
+  border-bottom: 0.5px solid var(--neutral-600);
+}
+
+.tableCircle {
+  width: 12px;
+  height: 12px;
+  border-radius: 100px;
+}
+
+tr:nth-of-type(2n) {
+  background-color: var(--neutral-900);
+}
+
+@media (max-width: 1200px) {
+  .tableCircle {
+    width: 8px;
+    height: 8px;
+  }
+
+  th {
+    display: none;
+  }
+
+  td {
+    display: grid;
+    grid-template-columns: 15ch auto;
+    gap: 1rem;
+  }
+
+  td:first-child {
+    padding-top: 1rem;
+  }
+
+  td:last-child {
+    padding-bottom: 1rem;
+  }
+
+  td::before {
+    content: attr(data-cell) ": ";
+  }
+}
+
+.tableCircleGreen {
+  background-color: var(--green-500);
+}
+
+.tableCircleYellow {
+  background-color: var(--yellow-500);
+}
+
+.tableCircleRed {
+  background-color: var(--red-500);
+}
+
 
 /* ----- TABLE OF CONTENT ----- */
 
@@ -1523,6 +1594,37 @@ body.no-scroll {
   background: linear-gradient(to left, var(--primary-500), var(--secondary-500));
 }
 
+.colorRectangle32 {
+  background: #FF0A44;
+}
+
+/* ---------- */
+
+.cardQuestion {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: var(--br);
+  border: 0.5px solid var(--neutral-600);
+  align-items: center;
+  width: 100%;
+}
+
+/* ---------- */
+
+.cardCompetitor {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border: 0.5px solid var(--neutral-600);
+  border-radius: var(--br);
+  align-items: center;
+}
+
+.cardCompetitor img {
+  border-radius: var(--br);
+}
+
 /* ---------- */
 
 .inputField {
@@ -1948,6 +2050,22 @@ footer .frameFlexColumnSmall {
 
 /* ---------- */
 
+.mobileFrame img {
+  width: 75%;
+  height: auto;
+  display: block;
+  inset: 0;
+  margin: auto;
+}
+
+@media (max-width: 1200px) {
+  .mobileFrame img {
+    width: 100%;
+  }
+}
+
+/* ---------- */
+
 .aboutGallery {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -1974,6 +2092,45 @@ footer .frameFlexColumnSmall {
 .aboutGalleryImage:hover img {
   transform: scale(1.05);
   filter: brightness(100%) saturate(100%);
+}
+
+/* ---------- */
+
+.userStoryMap {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(60px, 1fr));
+  grid-template-rows: repeat(5, minmax(60px, 1fr));
+  gap: .5rem;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.userStoryMapItemSpecial {
+  display: flex;
+  align-items: flex-start;
+  padding: 0.5rem;
+  border-radius: var(--br);
+  border-left: 0.5px solid var(--primary-500);
+  border-right: 0.5px solid var(--primary-500);
+  border-bottom: 0.5px solid var(--primary-500);
+  border-top: 2px solid var(--primary-500);
+  box-sizing: border-box;
+}
+
+.userStoryMapItem {
+  display: flex;
+  align-items: flex-start;
+  padding: 0.5rem;
+  border-radius: var(--br);
+  border-left: 0.5px solid var(--neutral-600);
+  border-right: 0.5px solid var(--neutral-600);
+  border-bottom: 0.5px solid var(--neutral-600);
+  border-top: 2px solid var(--neutral-600);
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
 }
 
 /* ----- ICONS ----- */

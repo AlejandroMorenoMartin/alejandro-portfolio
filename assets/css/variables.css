@@ -185,16 +185,16 @@
   --blue-1000: #00050D;
 
   /* yellow */
-  --yellow-100: #FFFFF2;
-  --yellow-200: #FEFFC7;
-  --yellow-300: #F7FA78;
-  --yellow-400: #F3F56F;
-  --yellow-500: #E2E538;
-  --yellow-600: #CACD1C;
-  --yellow-700: #A2A50C;
-  --yellow-800: #7D8007;
-  --yellow-900: #424302;
-  --yellow-1000: #141401;
+  --yellow-100: #FFFEF2;
+  --yellow-200: #FFFBC7;
+  --yellow-300: #FAF178;
+  --yellow-400: #F5ED6F;
+  --yellow-500: #E5DA38;
+  --yellow-600: #CDC11C;
+  --yellow-700: #A59A0C;
+  --yellow-800: #807707;
+  --yellow-900: #433F02;
+  --yellow-1000: #141301;
 
   /* red */
   --red-100: #F7EBEB;

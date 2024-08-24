@@ -731,5 +731,75 @@
   "senzoStudioSubParagraph10Text": "Paleta de colores para una experiencia de usuario coherente y atractiva.",
 
   "senzoStudioSubParagraph11Title": "Componentes",
-  "senzoStudioSubParagraph11Text": "Como parte del sistema de diseño, desarrollé los principales componentes utilizados en el proyecto. A continuación presento el componente «tarjeta», utilizado para la visualización de varios proyectos."
+  "senzoStudioSubParagraph11Text": "Como parte del sistema de diseño, desarrollé los principales componentes utilizados en el proyecto. A continuación presento el componente «tarjeta», utilizado para la visualización de varios proyectos.",
+
+  "cardQuestion1SenzoStudio": "¿Cómo prevé utilizar el sitio web de Senzo Studio en su flujo de trabajo profesional dentro de la industria de los efectos visuales?",
+  "cardQuestion2SenzoStudio": "¿Puede describir tareas o actividades concretas para las que confiaría en el sitio web de Senzo Studio para mejorar su trabajo?",
+  "cardQuestion3SenzoStudio": "En su opinión, ¿cuáles son las principales funcionalidades o características que debe ofrecer el sitio web de un estudio de efectos visuales para satisfacer eficazmente sus necesidades?",
+  "cardQuestion4SenzoStudio": "¿Qué tipos de contenidos o recursos consideraría esenciales para que el sitio web de un estudio de efectos visuales sea una herramienta valiosa para los profesionales del sector?",
+  "cardQuestion5SenzoStudio": "Teniendo en cuenta tu papel y tus responsabilidades en la industria de los efectos visuales, ¿qué herramientas o funcionalidades específicas crees que deberían ser fácilmente accesibles en el sitio web de Senzo Studio para agilizar tus tareas?",
+
+  "cardTestimonial1SenzoStudioDescription": "Como estudiante de VFX, veo un gran potencial en este sitio web. Agradecería una sección de ofertas de empleo para poder solicitar trabajo aquí una vez que termine mis estudios.",
+  "cardTestimonial1SenzoStudioPosition": "Estudiante VFX",
+  "cardTestimonial2SenzoStudioDescription": "Disponer de una sección dedicada a mostrar sus proyectos nos ayudaría enormemente a considerar posibles colaboraciones y oportunidades de contratación.",
+  "cardTestimonial2SenzoStudioPosition": "CEO True Lights",
+
+  "senzoStudioTable1Header1": "A evaluar",
+  "senzoStudioTable1Header2": "MPC",
+  "senzoStudioTable1Header3": "Weta FX",
+  "senzoStudioTable1Header4": "Industrial",
+  "senzoStudioTable1Header5": "Squeeze",
+
+  "senzoStudioTable1Row1Header": "Experiencia de usuario",
+  "senzoStudioTable1Row2Header": "Facilidad de uso",
+  "senzoStudioTable1Row3Header": "Información clara",
+  "senzoStudioTable1Row4Header": "Apariencia",
+  "senzoStudioTable1Row5Header": "Marca",
+
+  "senzoStudioTable2Header1": "A evaluar",
+  "senzoStudioTable2Header2": "MPC",
+  "senzoStudioTable2Header3": "Weta FX",
+  "senzoStudioTable2Header4": "Industrial",
+  "senzoStudioTable2Header5": "Squeeze",
+
+  "senzoStudioTable2Row1Header": "Trabajo activo",
+  "senzoStudioTable2Row2Header": "Servicio de información",
+  "senzoStudioTable2Row3Header": "Reel",
+  "senzoStudioTable2Row4Header": "Formulario de contacto",
+  "senzoStudioTable2Row5Header": "Noticias",
+  "senzoStudioTable2Row6Header": "Liderazgo",
+
+  "senzoStudioTable3Header1": "Categoría",
+  "senzoStudioTable3Header2": "Tarjeta Nº",
+  "senzoStudioTable3Header3": "Acuerdo %",
+  "senzoStudioTable3Header4": "Frecuencia (Pers) ",
+
+  "senzoStudioTable3Row1Header": "Trabajo activo",
+  "senzoStudioTable3Row1Header1": "7",
+  "senzoStudioTable3Row1Header2": "87.5%",
+  "senzoStudioTable3Row1Header3": "8",
+
+  "senzoStudioTable3Row2Header": "Noticias",
+  "senzoStudioTable3Row2Header1": "5",
+  "senzoStudioTable3Row2Header2": "100%",
+  "senzoStudioTable3Row2Header3": "8",
+
+  "senzoStudioTable3Row3Header": "Liderazgo",
+  "senzoStudioTable3Row3Header1": "3",
+  "senzoStudioTable3Row3Header2": "65%",
+  "senzoStudioTable3Row3Header3": "8",
+
+  "senzoStudioParagraph5Title": "Aprendizajes",
+  "senzoStudioParagraph5Text": "Este fue mi primer proyecto como freelance profesional. Fue una forma excelente de poner en práctica todo lo que estaba aprendiendo y, al mismo tiempo, comprender las necesidades reales de las empresas y los usuarios.",
+
+  "senzoStudioLearning1": "Investigación de mercados",
+  "senzoStudioLearning2": "Validación de datos",
+  "senzoStudioLearning3": "Patrones de diseño",
+  "senzoStudioLearning4": "Prototipado",
+
+  "senzoStudioTOC1": "Introducción",
+  "senzoStudioTOC2": "Investigación",
+  "senzoStudioTOC3": "Sistema de diseño",
+  "senzoStudioTOC4": "Algunos diseños",
+  "senzoStudioTOC5": "Aprendizajes"
 }
