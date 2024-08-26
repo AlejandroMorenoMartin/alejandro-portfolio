@@ -299,7 +299,12 @@
 
 /* ---------- */
 
-
+.gridFiveFour {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1rem;   
+}
 
 /* ---------- */
 
@@ -1598,6 +1603,10 @@ body.no-scroll {
   background: #FF0A44;
 }
 
+.colorRectangle33 {
+  background: #FF800A;
+}
+
 /* ---------- */
 
 .cardQuestion {
@@ -1623,6 +1632,52 @@ body.no-scroll {
 
 .cardCompetitor img {
   border-radius: var(--br);
+}
+
+/* ---------- */
+
+.cardUserJourney {
+  display: flex;
+  width: 100%;  
+  border-radius: var(--br);
+  height: 96px;
+  align-items: center;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.cardUserJourneyGreen {
+  border: 0.25px solid var(--green-400);
+}
+
+.cardUserJourney p{
+  display: flex;
+  padding: 0.25rem 0.5rem;  
+  border-radius: var(--br);
+  font-weight: 700;
+}
+
+.cardUserJourneyGreen p{  
+  background: var(--green-400);
+  color: var(--green-1000);  
+}
+
+.cardUserJourneyYellow p{  
+  background: var(--yellow-400);
+  color: var(--yellow-1000);  
+}
+
+.cardUserJourneyRed p{  
+  background: var(--red-400);
+  color: var(--red-1000);  
+}
+
+.cardUserJourneyYellow {
+  border: 0.25px solid var(--yellow-400);
+}
+
+.cardUserJourneyRed {
+  border: 0.25px solid var(--red-400);
 }
 
 /* ---------- */
@@ -2069,7 +2124,6 @@ footer .frameFlexColumnSmall {
 .aboutGallery {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-
   width: 100%;
   height: fit-content;
   gap: 1rem;
@@ -2131,6 +2185,8 @@ footer .frameFlexColumnSmall {
   overflow: hidden;
   text-overflow: ellipsis;
   word-wrap: break-word;
+  flex: 1;
+  height: 112px;
 }
 
 /* ----- ICONS ----- */
