@@ -943,5 +943,133 @@
   "atipikoToursLearning1": "Mapas de empatía",
   "atipikoToursLearning2": "Mapas de usuario",
   "atipikoToursLearning3": "Diseño responsive",
-  "atipikoToursLearning4": "Implementación"
+  "atipikoToursLearning4": "Implementación",
+
+  "cardProjectTattooParadiseChallenge": "Crear una plataforma intuitiva que conecte a usuarios con artistas y estudios de tatuaje, facilitando la visualización de estilos y diseños, y mejorando la comunicación entre ambas partes.",
+  "cardProjectTattooParadiseRol": "Diseñador UX/UI.",
+  "cardProjectTattooParadiseCronology": "12 semanas.",
+  "cardProjectTattooParadiseToolstack": "Figma, Miro y Chat GPT.",
+
+  "tattooParadiseParagraph1Title": "Introducción",
+  "tattooParadiseParagraph1Text": "La plataforma permitirá a los usuarios explorar una amplia variedad de estilos y diseños, facilitando la búsqueda del tatuador ideal según sus preferencias. Además, la app ofrecerá una forma directa de contacto, mejorando la comunicación y experiencia tanto para los artistas como para los clientes.",  
+
+  "tattooParadiseParagraph2Title": "Propuesta de valor",
+  "tattooParadiseParagraph2Text": "A través de una interfaz intuitiva, los usuarios pueden explorar una vasta galería de estilos y diseños, encontrar tatuadores que se alineen con sus preferencias estéticas y contactarlos de manera directa y eficiente. Para los artistas, la plataforma ofrece una oportunidad única de visibilidad, permitiéndoles mostrar su trabajo a una audiencia más amplia y conectarse con clientes potenciales de forma sencilla y efectiva.",
+  
+  "tattooParadiseParagraph3Title": "Investigación",
+  "tattooParadiseParagraph3Text": "En esta investigación, analicé la situación del mercado, realicé un estudio de los dos principales productos disponibles en el mercado y examiné a los usuarios a través de mi propia investigación.",
+
+  "tattooParadiseSubParagraph1Title": "Mercado del tatuaje",
+  "tattooParadiseSubParagraph1Text": "Fortune Business Insights ha realizado un estudio sobre los ingresos generados por el sector en los últimos años y ha facilitado una previsión para los próximos 10 años. Los siguientes datos muestran el tamaño del mercado del tatuaje en Europa y su previsión hasta 2027 (miles de millones de USB). ", 
+
+  "tattooParadiseSubParagraph2Title": "Encuesta",
+  "tattooParadiseSubParagraph2Text": "¿Cuál es el principal problema a la hora de hacerse un tatuaje?",
+
+  "tattooParadiseSubParagraph3Title": "User persona",
+  "tattooParadiseSubParagraph3Text": "Con los datos obtenidos en la investigación, creo dos perfiles de usuario.",
+
+  "tattooParadiseSubParagraph4Title": "Competidores",
+  "tattooParadiseSubParagraph4Text": "En el momento del proyecto, los principales productos existentes en el mercado eran los siguientes.",
+
+  "tattooParadiseSubParagraph5Title": "Evaluación heurística",
+  "tattooParadiseSubParagraph5Text": "Identificación de problemas de usabilidad mediante principios de diseño reconocidos.",
+
+  "tattooParadiseSubParagraph6Title": "Prueba de usabilidad",
+  "tattooParadiseSubParagraph6Text": "Tras analizar al usuario y a los competidores existentes en el mercado, desarrollé un prototipo para realizar algunas pruebas y observar cómo interactuaban con él los usuarios reales.",
+
+  "tattooParadiseSurvey1": "Conciliación",
+  "tattooParadiseSurvey2": "Diseño",
+  "tattooParadiseSurvey3": "Artista",
+
+  "tattooParadiseCardTestimonial1GoalTitle": "Objetivos del usuario",
+  "tattooParadiseCardTestimonial1ActionTitle": "Primeras acciones",
+  "tattooParadiseCardTestimonial1Goal1Text": "Contacto con estudios y artistas",
+  "tattooParadiseCardTestimonial1Goal2Text": "Conocer los estilos de tatuaje",
+  "tattooParadiseCardTestimonial1Action1Text": "Registrarse en la aplicación",
+  "tattooParadiseCardTestimonial1Action2Text": "Buscar estudios y artistas cercanos",
+  "tattooParadiseCardTestimonial1Action3Text": "Conversación abierta con estudios y artistas",
+  "tattooParadiseCardTestimonial1Position": "Psicóloga",
+  "tattooParadiseCardTestimonial2Goal1Text": "Consejos para cuidar un tatuaje",
+  "tattooParadiseCardTestimonial2Goal2Text": "Descubra una gran variedad de estilos de tatuaje",
+  "tattooParadiseCardTestimonia2Action1Text": "Explorar estilos de tatuaje",
+  "tattooParadiseCardTestimonia2Action2Text": "Acceder a información sobre los cuidados posteriores al tatuaje",
+  "tattooParadiseCardTestimonia2Action3Text": "Guardar diseños favoritos",
+  "tattooParadiseCardTestimonial2Position": "Transportista",
+
+  "tattooParadiseTable1Header1": "A evaluar",
+  "tattooParadiseTable1Header2": "Tattodo",
+  "tattooParadiseTable1Header3": "Inkhunter",
+  "tattooParadiseTable1Row1Header": "Visibilidad del estado del sistema",
+  "tattooParadiseTable1Row2Header": "Correspondencia entre el sistema y el mundo real",
+  "tattooParadiseTable1Row3Header": "Control y libertad para el usuario",
+  "tattooParadiseTable1Row4Header": "Coherencia y normas",
+  "tattooParadiseTable1Row5Header": "Prevención de errores",
+  "tattooParadiseTable1Row6Header": "Reconocer más que recordar",
+  "tattooParadiseTable1Row7Header": "Flexibilidad y eficacia de uso",
+  "tattooParadiseTable1Row8Header": "Diseño estético y minimalista",
+  "tattooParadiseTable1Row9Header": "Recuperarse de los errores",
+  "tattooParadiseTable1Row10Header": "Ayuda y documentación",
+
+  "tattooParadisecardInsight1Title": "Objetivos",
+  "tattooParadisecardInsight1Text": "Determinar la viabilidad de las tareas proporcionadas, incluido el número de clics necesarios para completarlas, el tiempo de ejecución y obtener una comprensión general de cómo interactuaba el usuario con el producto.",
+  "tattooParadisecardInsight2Title": "Método",
+  "tattooParadisecardInsight2Text": "Dispuse una sala para observar y grabar la prueba, donde el usuario, sentado con el prototipo delante, realizaba las tareas propuestas que se le asignaban.",
+  "tattooParadisecardInsight3Title": "Participantes",
+  "tattooParadisecardInsight3Text": "Seleccioné a 5 individuos, usuarios de la industria del tatuaje con distintas edades y niveles de experiencia, para la observación y grabación de la prueba.",
+  "tattooParadisecardInsight4Title": "Tareas",
+  "tattooParadisecardInsight4Text": "Acceder a las opiniones de los estudios, activar todas las notificaciones, acceder a los diseños de los artistas, enviar una solicitud de contacto, valorar la aplicación, acceder a mis conversaciones, eliminar mi cuenta, acceder a los estilos de tatuaje, valorar un diseño, acceder a la guía de cuidados, cerrar sesión.",
+
+  "tattooParadiseTable2Header1": "Usuario",
+  "tattooParadiseTable2Header2": "Completado",
+  "tattooParadiseTable2Header3": "Clicks",
+  "tattooParadiseTable2Header4": "Tiempo",
+  "tattooParadiseTable2Header5": "Información",
+  "tattooParadiseTable2Row1Header": "Los usuarios tuvieron dificultades para completar las tareas de eliminación de cuenta y cierre de sesión.",
+  "tattooParadiseTable2Row2Header": "El usuario informó de un error ortográfico en el botón de envío, en la tarea de valorar la app.",
+  "tattooParadiseTable2Row3Header": "El usuario pensó que deberían estar en ajustes en lugar de en mi perfil.",
+  "tattooParadiseTable2Row4Header": "Se debe proporcionar un mejor contexto para la realización de la tarea 4.",
+  "tattooParadiseTable2Row5Header": "La función de desconexión es prescindible para el usuario.",
+
+  "tattooParadiseParagraph4Title": "Decisiones de diseño",
+  "tattooParadiseParagraph4Text": "Elevando la experiencia del tatuaje, este producto ofrece conocimiento centralizado, exploración inmersiva del estilo, conexiones artísticas directas, perspectivas de tendencias y participación de la comunidad, redefiniendo la forma en que los usuarios navegan e interactúan dentro de la dinámica cultura del tatuaje.",
+  "tattooParadisesomeDesigns1Title": "Interacción entre usuario y artista",
+  "tattooParadisesomeDesigns1Text": "Es de vital importancia que el producto permita una comunicación rápida entre usuarios y artistas. Esto facilitará diversos tipos de interacciones y abrirá diferentes oportunidades de negocio.",
+  "tattooParadisesomeDesigns2Title": "Acceso a estilos de tatuaje",
+  "tattooParadisesomeDesigns2Text": "El usuario tiene acceso a los diferentes estilos de tatuajes, así como a los diseños asociados a cada uno de ellos.",
+  "tattooParadisesomeDesigns3Title": "Guía de acceso a la asistencia",
+  "tattooParadisesomeDesigns3Text": "El usuario puede acceder a la guía de cuidados e higiene.",
+  "tattooParadisesomeDesigns4Title": "Inspiración en el diseño",
+  "tattooParadisesomeDesigns4Text": "El producto da acceso a una gran variedad de diseños en función de los distintos filtros.",
+
+  "tattooParadiseParagraph5Title": "Sistema de diseño",
+  "tattooParadiseParagraph5Text": "Comienzo el proyecto realizando una investigación. El objetivo es conocer a fondo el tipo de usuario, las empresas competidoras y el mercado en el que opera la empresa.",
+
+  "tattooParadiseSubParagraph7Title": "Tipografia",
+  "tattooParadiseSubParagraph7Text": "Poppins tiene un atractivo internacional y una estética moderna, y garantiza una experiencia de usuario positiva en diversos dispositivos.",
+
+  "tattooParadiseSubParagraph8Title": "Color",
+  "tattooParadiseSubParagraph8Text": "El color púrpura aumenta la participación del usuario, destaca los elementos clave y transmite creatividad y modernidad, por lo que es ideal para un diseño móvil destacado y dinámico.",
+
+  "tattooParadiseSubParagraph9Title": "Iconos",
+  "tattooParadiseSubParagraph9Text": "A continuación presento la colección de iconos utilizada en este proyecto.",
+
+  "tattooParadiseSubParagraph10Title": "Componentes",
+  "tattooParadiseSubParagraph10Text": "Como parte del sistema de diseño, desarrollé los principales componentes utilizados en el proyecto. A continuación presento el componente «tarjeta», utilizado para la visualización de varios proyectos.",
+
+  "tattooParadisecolorSubsection1": "Marca",
+  "tattooParadisecolorSubsection1Name": "marca - 500",
+
+  "tattooParadiseParagraph6Title": "Aprendizajes",
+  "tattooParadiseParagraph6Text": "Fue un proyecto en el que pude realizar un estudio de mercado en profundidad y tuve la oportunidad de observar en directo el comportamiento de los usuarios. En particular, me ayudó a aprender a empatizar con el usuario, a identificar en qué punto del flujo se atasca y a entender las razones que hay detrás.",
+  "tattooParadiseLearning1": "Análisis del comportamiento",
+  "tattooParadiseLearning2": "Pruebas de usabilidad",
+  "tattooParadiseLearning3": "Prototipado",
+  "tattooParadiseLearning4": "Imagen de marca",
+
+  "atipikoToursTOC1": "Introducción",
+  "atipikoToursTOC2": "Propuesta de valor",
+  "atipikoToursTOC3": "Investigación",
+  "atipikoToursTOC4": "Decisiones de diseño",
+  "atipikoToursTOC5": "Sistema de diseño",
+  "atipikoToursTOC6": "Aprendizajes"
 }

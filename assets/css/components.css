@@ -545,6 +545,68 @@ html[data-theme="light"] .frameReading.darkened::before {
 
 /* ---------- */
 
+.graphic p {
+  width: 112px;
+}
+
+.tattooMarketLine {
+  height: 1px;
+  background-color: var(--primary-500);  
+}
+
+.tattooMarketLine1 {
+  width: 75%;
+}
+
+.tattooMarketLine2 {
+  width: 70%;
+}
+
+.tattooMarketLine3 {
+  width: 65%;
+}
+
+.tattooMarketLine4 {
+  width: 60%;
+}
+
+.tattooMarketLine5 {
+  width: 55%;
+}
+
+.tattooMarketLine6 {
+  width: 50%;
+}
+
+.tattooMarketLine7 {
+  width: 45%;
+}
+
+.tattooMarketLine8 {
+  width: 40%;
+}
+
+.tattooMarketLine9 {
+  width: 35%;
+}
+
+.tattooMarketLine10 {
+  width: 30%;
+}
+
+.tattooMarketLine11 {
+  width: 8%;
+}
+
+.tattooMarketLine12 {
+  width: 34%;
+}
+
+.tattooMarketLine13 {
+  width: 58%;
+}
+/* ---------- */
+
 .articleInfo {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1606,6 +1668,11 @@ body.no-scroll {
 .colorRectangle33 {
   background: #FF800A;
 }
+
+.colorRectangle34 {
+  background: #A937DE;
+}
+
 
 /* ---------- */
 

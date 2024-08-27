@@ -382,5 +382,3 @@ document.addEventListener('DOMContentLoaded', function() {
     closeAllCards();
   });
 });
-
-
