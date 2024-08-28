@@ -303,12 +303,17 @@
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-template-rows: repeat(5, 1fr);
-  gap: 1rem;   
+  gap: 1rem;
 }
 
 /* ---------- */
 
-
+.gridAutoThree {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(148px, 100%), 1fr));
+  grid-auto-rows: 1fr;
+}
 
 /* ---------- */
 
@@ -318,7 +323,6 @@
   grid-template-rows: 1fr 1fr;
   gap: 1rem;
 }
-
 
 /* ---------- */
 
@@ -379,6 +383,22 @@
 
   .gridFourOverFlow>* {
     scroll-snap-align: start;
+  }
+}
+
+/* ---------- */
+
+.gridTeam {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .gridTwoAuto {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -551,7 +571,7 @@ html[data-theme="light"] .frameReading.darkened::before {
 
 .tattooMarketLine {
   height: 1px;
-  background-color: var(--primary-500);  
+  background-color: var(--primary-500);
 }
 
 .tattooMarketLine1 {
@@ -605,6 +625,7 @@ html[data-theme="light"] .frameReading.darkened::before {
 .tattooMarketLine13 {
   width: 58%;
 }
+
 /* ---------- */
 
 .articleInfo {
@@ -1673,6 +1694,46 @@ body.no-scroll {
   background: #A937DE;
 }
 
+.colorRectangle35 {
+  background: #2A77CA;
+}
+
+.colorRectangle36 {
+  background: #CE2727;
+}
+
+.colorRectangle37 {
+  background: #CAA72A;
+}
+
+.colorRectangle38 {
+  background: #CA2A91;
+}
+
+.colorRectangle39 {
+  background: #A937DE;
+}
+
+.colorRectangle40 {
+  background: #FFEA00;
+}
+
+.colorRectangle41 {
+  background: #2ABCCA;
+}
+
+.colorRectangle42 {
+  background: #2ACA3D;
+}
+
+.colorRectangle43 {
+  background: #7B7B7B;
+}
+
+.colorRectangle44 {
+  background: #FF7518;
+}
+
 
 /* ---------- */
 
@@ -1705,7 +1766,7 @@ body.no-scroll {
 
 .cardUserJourney {
   display: flex;
-  width: 100%;  
+  width: 100%;
   border-radius: var(--br);
   height: 96px;
   align-items: center;
@@ -1717,26 +1778,26 @@ body.no-scroll {
   border: 0.25px solid var(--green-400);
 }
 
-.cardUserJourney p{
+.cardUserJourney p {
   display: flex;
-  padding: 0.25rem 0.5rem;  
+  padding: 0.25rem 0.5rem;
   border-radius: var(--br);
   font-weight: 700;
 }
 
-.cardUserJourneyGreen p{  
+.cardUserJourneyGreen p {
   background: var(--green-400);
-  color: var(--green-1000);  
+  color: var(--green-1000);
 }
 
-.cardUserJourneyYellow p{  
+.cardUserJourneyYellow p {
   background: var(--yellow-400);
-  color: var(--yellow-1000);  
+  color: var(--yellow-1000);
 }
 
-.cardUserJourneyRed p{  
+.cardUserJourneyRed p {
   background: var(--red-400);
-  color: var(--red-1000);  
+  color: var(--red-1000);
 }
 
 .cardUserJourneyYellow {
@@ -2159,6 +2220,8 @@ footer .frameFlexColumnSmall {
   }
 }
 
+/* ---------- */
+
 .projectImageContainer {
   width: 100%;
   padding: 0px calc((100% - 1200px) / 2);
@@ -2241,6 +2304,7 @@ footer .frameFlexColumnSmall {
 
 .userStoryMapItem {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   padding: 0.5rem;
   border-radius: var(--br);
@@ -2251,9 +2315,78 @@ footer .frameFlexColumnSmall {
   box-sizing: border-box;
   overflow: hidden;
   text-overflow: ellipsis;
-  word-wrap: break-word;
   flex: 1;
   height: 112px;
+}
+
+/* ---------- */
+
+.workMethodologyItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  gap: 0.5rem;
+  border-radius: var(--br);
+  border-left: 0.5px solid var(--neutral-600);
+  border-right: 0.5px solid var(--neutral-600);
+  border-bottom: 0.5px solid var(--neutral-600);
+  border-top: 2px solid var(--neutral-600);
+  flex: 1;
+
+}
+
+.workMethodologyItemCircle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: var(--primary-400);
+  border-radius: 100px;
+}
+
+.workMethodologyItemCircle p {
+  color: var(--primary-1000);
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 1px;
+  background-color: var(--neutral-100);
+  position: relative;
+  align-self: center;
+}
+
+.arrow::before,
+.arrow::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.arrowRight {
+  justify-content: flex-end;
+}
+
+.arrowRight::after {
+  border-width: 8px 0 8px 8px;
+  border-color: transparent transparent transparent var(--neutral-100);
+  right: -8px;
+}
+
+.arrowLeft {
+  justify-content: flex-start;
+}
+
+.arrowLeft::before {
+  border-width: 8px 8px 8px 0;
+  border-color: transparent var(--neutral-100) transparent transparent;
+  left: -8px;
 }
 
 /* ----- ICONS ----- */
@@ -2328,14 +2461,14 @@ footer .frameFlexColumnSmall {
 
 .someDesignsImageContainer {
   flex: 1;
-  max-height: 580px;
-
+  max-height: 580px;    
 }
 
 .someDesignsImageContainer img {
   max-width: 280px;
   inset: 0;
   margin: auto;
+  height: 580px;
 }
 
 /* ----- TEST ----- */
