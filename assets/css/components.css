@@ -66,7 +66,8 @@
   display: flex;
   gap: 2rem;
   width: 100%;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   height: calc(100svh - 296px);
 }
 
@@ -80,7 +81,7 @@
     height: calc(100svh - 124px);
     display: flex;
     flex-direction: column;
-    margin-bottom: 5svh;
+    margin-bottom: 5svh;    
   }
 
   .mainHero .frameFlexColumnAuto {
@@ -1103,13 +1104,31 @@ tr:nth-of-type(2n) {
   background-size: 0% 2px;
   background-repeat: no-repeat;
   background-position: left 1.4em;
-  transition: background-size 0.2s;
-  font-style: italic;
+  transition: background-size 0.2s;  
 }
+
+.link p {
+  color: var(--primary-500);
+}
+
+p[data-key="experienceCardTechnologiesTitle"],
+p[data-key="experienceCardSkillsTitle"],
+p[data-key="experienceCard1TechnologiesText"],
+p[data-key="experienceCard1SkillsText"],
+p[data-key="experienceCard2TechnologiesText"],
+p[data-key="experienceCard2SkillsText"],
+p[data-key="experienceCard3TechnologiesText"],
+p[data-key="experienceCard3SkillsText"],
+p[data-key="experienceCard4TechnologiesText"],
+p[data-key="experienceCard4SkillsText"]
+ {
+    display: inline;   
+}
+
 
 .link:hover,
 .link:focus {
-  background-size: 100% 2px;
+  background-size: 100% 1px;
 }
 
 span.link {
@@ -2138,8 +2157,8 @@ footer .frameFlexColumnSmall {
   padding: .25rem;
   border-radius: var(--br);
   aspect-ratio: 1;
-  width: 16rem;
-  height: 16rem;
+  width: 20rem;
+  height: 20rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2153,6 +2172,12 @@ footer .frameFlexColumnSmall {
 }
 
 @media (max-width: 1200px) {
+  .mainHeroImageContainer {   
+    align-self: flex-start; 
+    width: 16rem;
+    height: 16rem;
+  }
+
   .mainHeroImage {
     width: min(100%, 16rem);
   }
@@ -2461,7 +2486,7 @@ footer .frameFlexColumnSmall {
 
 .someDesignsImageContainer {
   flex: 1;
-  max-height: 580px;    
+  max-height: 580px;
 }
 
 .someDesignsImageContainer img {
