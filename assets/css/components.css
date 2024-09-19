@@ -68,7 +68,7 @@
   width: 100%;
   align-items: center;
   justify-content: center;
-  height: calc(100svh - 296px);
+  height: calc(100svh - 296px); 
 }
 
 .mainHeroTitle {
@@ -1339,11 +1339,7 @@ body.no-scroll {
   gap: 16px;
   position: relative;
   cursor: pointer;
-  overflow: hidden;
-  border-block-start: .25rem solid;
-  padding-block-start: .5rem;
-  border-image-source: linear-gradient(to left, var(--primary-500), var(--secondary-500));
-  border-image-slice: 1;
+  overflow: hidden; 
 }
 
 .cardProject:hover .buttonImage,
@@ -1381,6 +1377,7 @@ body.no-scroll {
   object-fit: cover;
   object-position: center;
   transition: 0.2s transform ease-in-out;
+  border-radius: var(--br);
 }
 
 .cardProject:hover .cardProjectImageContainer .cardProjectImage,
@@ -2154,31 +2151,13 @@ footer .frameFlexColumnSmall {
   }
 }
 
-.mainHeroImageContainer {
-  background: linear-gradient(to left, var(--primary-500), var(--secondary-500));
-  padding: .25rem;
-  border-radius: var(--br);
-  aspect-ratio: 1;
-  width: 20rem;
-  height: 20rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .mainHeroImage {
   object-fit: contain;
   border-radius: var(--br);
-  animation: rotateAndScale 2s forwards;
-  /* 2s duration, play once */
+  width: 20rem;
 }
 
 @media (max-width: 1200px) {
-  .mainHeroImageContainer {   
-    align-self: flex-start; 
-    width: 16rem;
-    height: 16rem;
-  }
 
   .mainHeroImage {
     width: min(100%, 16rem);

@@ -31,8 +31,8 @@
   "timeFormatAM": "a.m.",
   "timeFormatPM": "p.m.",
 
-  "mainHeroH1": "Soy Alejandro Moreno",
-  "mainHeroP1": "Diseñador de producto",
+  "mainHeroH1": "Soy Alex, diseñador de producto.",
+  
   "mainHeroP2": "Autodidacta y metódico en busca de la mejora continua.",  
   "mainHeroButton1": "Portfolio",
   "mainHeroButton2": "Contacto",
@@ -41,13 +41,7 @@
   "indexSectionHeader2": "Herramientas",
   "indexSectionHeader3": "Habilidades",
   "indexSectionHeader4": "Testimonios",
-  "indexSectionHeader5": "Lecturas",
-
-  "indexSectionHeaderText1": "Estos son algunos de los proyectos que he realizado.",
-  "indexSectionHeaderText2": "Como diseñador, me esfuerzo por estar al día en el uso de herramientas y tecnologías. Estas son las que suelo utilizar.",
-  "indexSectionHeaderText3": "A través de estas habilidades puedo desarrollar mi trabajo como diseañdor.",
-  "indexSectionHeaderText4": "A lo largo de mi carrera, he colaborado con numerosas personas. Algunas de ellas se han ofrecido amablemente a ofrecer testimonios sobre mí en esta sección.",
-  "indexSectionHeaderText5": "Me encanta leer y aprender cosas nuevas. Estas son algunas de mis últimas lecturas.",
+  "indexSectionHeader5": "Lecturas",  
 
   "indexSectionHeaderButton": "Ver más",
 

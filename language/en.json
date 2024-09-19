@@ -31,8 +31,7 @@
   "timeFormatAM": "am",
   "timeFormatPM": "pm",
 
-  "mainHeroH1": "I'm Alejandro Moreno",
-  "mainHeroP1": "Product designer",
+  "mainHeroH1": "I'm Alex, product designer.",  
   "mainHeroP2": "Self-taught and methodical in search of continuous improvement.",  
   "mainHeroButton1": "Portfolio",
   "mainHeroButton2": "Contact",
@@ -41,13 +40,7 @@
   "indexSectionHeader2": "Toolstack",
   "indexSectionHeader3": "Skills",
   "indexSectionHeader4": "Testimonial",
-  "indexSectionHeader5": "Readings",
-
-  "indexSectionHeaderText1": "These are some of the projects I have worked on.",
-  "indexSectionHeaderText2": "As a designer, I strive to stay up to date with the tools and technologies I use. These are the ones I typically use.",
-  "indexSectionHeaderText3": "Through these skills I can develop my work as a designer.",
-  "indexSectionHeaderText4": "Throughout my career, I have collaborated with numerous individuals. Some of them have kindly offered to provide testimonials about me in this section.",
-  "indexSectionHeaderText5": "I love to read and learn new things. These are some of my latest readings.",
+  "indexSectionHeader5": "Readings", 
 
   "indexSectionHeaderButton": "See more",
 
