@@ -157,6 +157,13 @@
 
 /* ---------- */
 
+.frameFlexColumnNegative {
+  display: flex;
+  flex-direction: column;
+  gap: -2rem; 
+  width: 100%;
+}
+
 .frameFlexColumnAuto {
   display: flex;
   flex-direction: column;
