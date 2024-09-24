@@ -1374,7 +1374,7 @@ body.no-scroll {
 
 .cardProject:hover::after,
 .cardArticle:hover::after {
-  background: rgba(12, 12, 13, .75);
+  background: rgba(12, 12, 13, .5);
 }
 
 .cardProjectImageContainer .cardProjectImage,
