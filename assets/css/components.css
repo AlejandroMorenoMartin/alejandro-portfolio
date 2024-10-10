@@ -68,7 +68,7 @@
   width: 100%;
   align-items: center;
   justify-content: center;
-  height: calc(100svh - 296px); 
+  height: calc(100svh - 296px);
 }
 
 .mainHeroTitle {
@@ -81,7 +81,7 @@
     height: calc(100svh - 124px);
     display: flex;
     flex-direction: column;
-    margin-bottom: 5svh;    
+    margin-bottom: 5svh;
   }
 
   .mainHero .frameFlexColumnAuto {
@@ -160,7 +160,7 @@
 .frameFlexColumnNegative {
   display: flex;
   flex-direction: column;
-  gap: -2rem; 
+  gap: -2rem;
   width: 100%;
 }
 
@@ -1111,7 +1111,7 @@ tr:nth-of-type(2n) {
   background-size: 0% 2px;
   background-repeat: no-repeat;
   background-position: left 1.4em;
-  transition: background-size 0.2s;  
+  transition: background-size 0.2s;
 }
 
 .link p {
@@ -1127,9 +1127,8 @@ p[data-key="experienceCard2SkillsText"],
 p[data-key="experienceCard3TechnologiesText"],
 p[data-key="experienceCard3SkillsText"],
 p[data-key="experienceCard4TechnologiesText"],
-p[data-key="experienceCard4SkillsText"]
- {
-    display: inline;   
+p[data-key="experienceCard4SkillsText"] {
+  display: inline;
 }
 
 
@@ -1343,38 +1342,30 @@ body.no-scroll {
 .cardArticle {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  padding: 1rem;
+  gap: 1rem;
   position: relative;
   cursor: pointer;
-  overflow: hidden; 
+  overflow: hidden;
+  border-radius: var(--br);
 }
 
-.cardProject:hover .buttonImage,
-.cardArticle:hover .buttonImage {
-  opacity: 1;
-  visibility: visible;
+@media (max-width: 1200px) {
+
+  .cardProject,
+  .cardArticle {    
+    padding: 0rem;        
+  }
+}
+
+
+.cardProject:hover,
+.cardArticle:hover {
+  background: var(--neutral-900);
 }
 
 .cardProjectImageContainer {
   overflow: hidden;
-}
-
-.cardProject::after,
-.cardArticle::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0);
-  z-index: 0;
-  transition: background 0.3s ease;
-}
-
-.cardProject:hover::after,
-.cardArticle:hover::after {
-  background: rgba(12, 12, 13, .5);
 }
 
 .cardProjectImageContainer .cardProjectImage,
@@ -2022,10 +2013,9 @@ footer {
   border-top: 0.5px solid var(--neutral-600);
 }
 
-footer .frameFlexColumnSmall {
-  padding-bottom: 1rem;
-  border-bottom: 0.5px solid var(--neutral-600);
-  min-width: 100%;
+footer .frameFlexSmall {
+  width: 100%;
+  justify-content: space-between;
 }
 
 @media (max-width: 1200px) {

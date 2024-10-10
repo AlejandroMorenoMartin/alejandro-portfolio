@@ -13,6 +13,7 @@ h1 {
   line-height: var(--lh-h1);
   font-weight: 900;
   letter-spacing: 0;  
+  color: var(--white);
 }
 
 h2 {
