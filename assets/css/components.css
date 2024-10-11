@@ -420,28 +420,6 @@
   position: relative;
 }
 
-html[data-theme="dark"] .frameReading.darkened::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(12, 12, 13, 0.8);
-  z-index: 1;
-}
-
-html[data-theme="light"] .frameReading.darkened::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(230, 236, 242, 0.8);
-  z-index: 1;
-}
-
 /* ---------- */
 
 .otherArticles {
@@ -913,7 +891,6 @@ tr:nth-of-type(2n) {
   background: var(--neutral-900);
 }
 
-
 .scroll-top .icon-tabler-arrow-up {
   position: absolute;
   stroke-width: 2px;
@@ -1101,6 +1078,22 @@ tr:nth-of-type(2n) {
 
 .buttonTabComponent.active {
   background: var(--neutral-100);
+}
+
+/* ---------- */
+
+.buttonCircle {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 50px; 
+  height: 50px; 
+  background-color: #007bff; /* Color de fondo */
+  color: #fff; /* Color del icono */
+  border: none; /* Sin borde */
+  border-radius: 50%; /* Hace que el botón sea totalmente redondo */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  transition: background-color 0.3s; /* Transición suave */
 }
 
 /* ---------- */
@@ -1348,6 +1341,7 @@ body.no-scroll {
   cursor: pointer;
   overflow: hidden;
   border-radius: var(--br);
+  background: var(--neutral-900);
 }
 
 @media (max-width: 1200px) {
@@ -1358,10 +1352,16 @@ body.no-scroll {
   }
 }
 
+.cardArticle {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
 
 .cardProject:hover,
 .cardArticle:hover {
-  background: var(--neutral-900);
+  background: var(--neutral-800);
 }
 
 .cardProjectImageContainer {
@@ -1369,6 +1369,7 @@ body.no-scroll {
 }
 
 .cardProjectImageContainer .cardProjectImage,
+.cardArticleImageContainer .cardArticleImage,
 .cardReadingImageContainer .cardReadingImage {
   display: block;
   width: 100%;
@@ -1379,8 +1380,24 @@ body.no-scroll {
 }
 
 .cardProject:hover .cardProjectImageContainer .cardProjectImage,
+.cardArticle:hover .cardArticleImageContainer .cardArticleImage,
 .cardReading:hover .cardReadingImageContainer .cardReadingImage {
-  transform: scale(1.05);
+  transform: scale(1.025);
+}
+
+.cardReadingImage {
+  height: 160px;
+}
+
+/* ---------- */
+
+.cardReading {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  gap: 1rem;
+  border-radius: var(--br);
+  background: var(--neutral-900);
 }
 
 /* ---------- */
@@ -1429,74 +1446,6 @@ body.no-scroll {
 }
 
 /* ---------- */
-
-.cardReading {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 0.25rem;
-  border-radius: var(--br);
-  border-bottom: 0.5px solid var(--neutral-600);
-  max-width: 100%;
-  height: auto;
-  align-items: center;
-  justify-content: flex-start;
-  cursor: pointer;
-  width: 100%;
-}
-
-.cardReadingInfo {
-  width: 100%;
-  display: none;
-}
-
-.cardReading.active {
-  padding: 1rem;
-  border: 0.5px solid var(--neutral-600);
-  z-index: 2;
-}
-
-.cardReading.active .buttonInfo {
-  display: none;
-}
-
-.cardReadingInfo.active {
-  display: block;
-}
-
-.cardReading:last-child {
-  border-bottom: none;
-}
-
-.cardReadingImageContainer {
-  border-radius: var(--br);
-  overflow: hidden;
-  height: 48px;
-  width: 48px;
-}
-
-.cardReadingHeader {
-  display: flex;
-  align-items: center;
-}
-
-.cardReading .frameFlexSmall {
-  align-items: flex-start;
-  width: 100%;
-}
-
-.cardReading .buttonInfo {
-  border-radius: var(--br);
-  border: 0.5px solid var(--neutral-600);
-  padding: .5rem 1rem;
-  height: fit-content;
-  display: block;
-  background: var(--neutral-1000);
-}
-
-.cardReading .buttonInfo:hover {
-  background: var(--neutral-900);
-}
 
 /* ---------- */
 
@@ -1838,18 +1787,24 @@ body.no-scroll {
 }
 
 /* ----- NAVIGATION ----- */
+.navBar {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
 
 .navBarContainer {
   display: flex;
   position: fixed;
-  width: 100%;
-  padding: 8px calc((100% - 1200px) / 2);
+  width: 1200px;
+  padding: 1rem;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 0.5px solid var(--neutral-600);
   background-color: var(--neutral-1000);
+  border: 0.25px solid var(--neutral-600);
+  border-radius: var(--br);
   z-index: 90;
-  top: 0;
+  top: 1rem;
 }
 
 .navBarContainer a .logo,
