@@ -56,26 +56,38 @@
   "imageButtonProject": "View project",
   "imageButtonArticle": "View article",
 
+  "seeProjectButton": "See project",  
+
   "cardProjectGeomitesTag1": "New",
   "cardProjectGeomitesTag2": "Videogame",
-  "cardProjectGeomitesTime": "15 min read",
-  "cardProjectGeomitesDescription": "In charge of the product design of a mobile videogame, available for Android and IOS.",
+  "cardProjectGeomitesTime": "16 min read",
+  "cardProjectGeomitesTimeShort": "5 min read",
+  "cardProjectGeomitesTitle": "Designing and developing Geomites.",
+  "cardProjectGeomitesDescription": "A strategic indie game for competitive players.",  
 
   "cardProjectTattooParadiseTag1": "App",
   "cardProjectTattooParadiseTime": "16 min read",
-  "cardProjectTattooParadiseDescription": "Designing a product to connect tattoo users with artists and studios.",
+  "cardProjectTattooParadiseTimeShort": "5 min read",
+  "cardProjectTattooParadiseTitle": "Designing Tattoo paradise.",
+  "cardProjectTattooParadiseDescription": "A mobile app connecting tattoo artists and clients with ease.",
 
   "cardProjectAtipikoToursTag1": "Responsive",
   "cardProjectAtipikoToursTime": "15 min read",
-  "cardProjectAtipikoToursDescription": "Improving a travel agency's online presence and branding.",
+  "cardProjectAtipikoToursTimeShort": "5 min read",
+  "cardProjectAtipikoToursTitle": "Crafting Atipiko tours.",
+  "cardProjectAtipikoToursDescription": "A tailored web design and development for custom travel journeys.",
 
   "cardProjectSenzoStudioTag1": "Responsive",
   "cardProjectSenzoStudioTime": "15 min read",
-  "cardProjectSenzoStudioDescription": "Design and development of a website for a visual effects agency.",
+  "cardProjectSenzoStudioTimeShort": "5 min read",
+  "cardProjectSenzoStudioTitle": "Creating the online presence for Senzo studio.",
+  "cardProjectSenzoStudioDescription": "Custom product design for VFX artists.",
 
   "cardProjectPortfolioTag1": "Responsive",
   "cardProjectPortfolioTime": "13 min read",
-  "cardProjectPortfolioDescription": "I tell you about the process of creating my portfolio.",
+  "cardProjectPortfolioTimeShort": "5 min read",
+  "cardProjectPortfolioTitle": "Designing and coding my Portfolio.",
+  "cardProjectPortfolioDescription": "Showcasing product design skills and custom development.",
 
   "cardTextIcon1": "UX Research",
   "cardTextIcon2": "UX Design",
@@ -309,7 +321,7 @@
   "cardArticle7Description": "These are the main competencies a product designer should have.",
 
   "cardArticle8Title": "Different business models",  
-  "cardArticle8Info": "May 2023 | 6 min read",
+  "cardArticle8Info": "May 2023 | 10 min read",
   "cardArticle8Description": "Advantages and disadvantages among the different business models for product designers.",
 
   "cardArticle9Title": "The role of a product designer",  
@@ -332,9 +344,12 @@
 
   "TOCTitle": "Index",
 
+  "projectPageHeaderButtonBack": "BACK T0 PROJECTS",
+  "articlePageHeaderButtonBack": "BACK T0 ARTICLES",
+
   "productDevelopmentLifeCyclePageHeaderDate": "Dec 2022 | 5 min read",
   "productDevelopmentLifeCyclePageHeaderDescription": "Discover the stages in the creation of a product.",
-  "productDevelopmentLifeCyclePageHeaderTitle": "Product development life cycle",  
+  "productDevelopmentLifeCyclePageHeaderTitle": "Product development life cycle.",  
   "productDevelopmentLifeCycleIntro": "Developing a successful product involves a structured process that ensures ideas are effectively transformed into market-ready solutions. The product development cycle consists of several key phases: brainstorming, design, testing, and launch. Each phase plays a crucial role in shaping the final product. Here’s a closer look at each stage of this cycle.",
   "productDevelopmentLifeCycleParagraph1Title": "Brainstorming",
   "productDevelopmentLifeCycleParagraph1Text": "The development cycle begins with brainstorming. This phase is all about generating ideas and identifying potential solutions to user problems. It involves collaboration among team members, including designers, developers, marketers, and stakeholders. Techniques such as mind mapping, sketching, and collaborative workshops are often used to explore a wide range of ideas. The goal is to gather as many concepts as possible and then refine them into viable product ideas that align with the company’s goals and market needs.",
@@ -352,7 +367,7 @@
   
   "multidisciplinaryTeamsPageHeaderDate": "Jan 2023 | 5 min read",
   "multidisciplinaryTeamsPageHeaderDescription": "Get to know the various roles that interact with design.",
-  "multidisciplinaryTeamsPageHeaderTitle": "Multidisciplinary teams",  
+  "multidisciplinaryTeamsPageHeaderTitle": "Multidisciplinary teams.",  
   "multidisciplinaryTeamsIntro": "UX design is a highly collaborative field where designers typically work in multidisciplinary teams. These individuals often include engineers, researchers, project managers, leads, fellow designers, and others. Multidisciplinary teams come in different shapes and sizes, depending on the organization you work for. But, in general, as a designer, you'll have to collaborate with:",
   "multidisciplinaryTeamsParagraph1Title": "Engineers",
   "multidisciplinaryTeamsParagraph1Text": "They are responsible for translating your designs into functional experiences. They are invaluable when evaluating designs in terms of technical feasibility. Working efficiently with them is an essential step for the successful completion of projects.",
@@ -375,7 +390,7 @@
 
   "theRoleOfAProductDesignerPageHeaderDate": "Feb 2023 | 8 min read",
   "theRoleOfAProductDesignerPageHeaderDescription": "Understanding the key specializations on this role.",
-  "theRoleOfAProductDesignerPageHeaderTitle": "The role of a prodcut designer",  
+  "theRoleOfAProductDesignerPageHeaderTitle": "The role of a prodcut designer.",  
   "theRoleOfAProductDesignerIntro": "The field of product design is vast and varied, encompassing several specialized roles that cater to different aspects of the design process. Depending on their skills, interests, and career goals, product designers can pursue various paths, each with its unique focus and responsibilities. Here are five key roles in the product design industry: the generalist, the UX designer, the UI designer, the interaction designer, and the design researcher.",
   "theRoleOfAProductDesignerParagraph1Title": "Generalist",
   "theRoleOfAProductDesignerParagraph1Text": "A generalist, often found in smaller teams or startups, handles a broad spectrum of design tasks, from user research and creating personas to designing interfaces and prototyping. Generalists benefit from a wide range of skills and a holistic understanding of the design process, but they might find it challenging to master any one area due to their broad focus.",
@@ -393,9 +408,9 @@
   "theRoleOfAProductDesignerTOC4": "Interaction Designer",
   "theRoleOfAProductDesignerTOC5": "Design Researcher",
   
-  "differentBusinessModelsPageHeaderDate": "May 2023 | 6 min read",
+  "differentBusinessModelsPageHeaderDate": "May 2023 | 10 min read",
   "differentBusinessModelsPageHeaderDescription": "Advantages and disadvantages among the different business models for product designers.",
-  "differentBusinessModelsPageHeaderTitle": "Different business models",  
+  "differentBusinessModelsPageHeaderTitle": "Different business models.",  
   "differentBusinessModelsIntro": "The product design industry encompasses a variety of business types, each offering unique advantages and challenges. Understanding these differences can help designers choose the best path for their careers. Here, we explore the pros and cons of five major business types in the product design sector: startups, large companies, design agencies, advertising agencies, and freelancers.",
   "differentBusinessModelsParagraph1Title": "Startups",
   "articleTip1Title": "Advantages",
@@ -422,7 +437,7 @@
 
   "productDesignerCompetenciesPageHeaderDate": "Sep 2023 | 8 min read",
   "productDesignerCompetenciesPageHeaderDescription": "These are the main competencies a product designer should have.",
-  "productDesignerCompetenciesPageHeaderTitle": "Product designer competencies",  
+  "productDesignerCompetenciesPageHeaderTitle": "Product designer competencies.",  
   "productDesignerCompetenciesIntro": "In the ever-evolving field of product design, professionals must possess a diverse set of skills to create products that are not only functional but also delightful for users. A product designer's role involves blending creativity with technical expertise to solve user problems effectively. Here are the essential skills that every product designer should master to excel in their profession.",
   "productDesignerCompetenciesParagraph1Title": "UX & UI",
   "productDesignerCompetenciesParagraph1Text": "At the core of product design are UX and UI design skills. UX design focuses on understanding user needs, behaviors, and pain points to create products that provide a seamless and enjoyable experience. This involves conducting user research, creating personas, and mapping out user journeys. UI design, on the other hand, deals with the visual and interactive aspects of the product. A product designer must be proficient in tools like Sketch, Adobe XD, and Figma to create visually appealing and intuitive interfaces that enhance the user experience.",
@@ -443,7 +458,7 @@
 
   "howToGrowAsAProductDesignerPageHeaderDate": "Oct 2023 | 5 min read",
   "howToGrowAsAProductDesignerPageHeaderDescription": "Discover the areas you need to improve to advance in your career.",
-  "howToGrowAsAProductDesignerPageHeaderTitle": "How to grow as a product designer",   
+  "howToGrowAsAProductDesignerPageHeaderTitle": "How to grow as a product designer.",   
   "howToGrowAsAProductDesignerParagraph1Title": "The role",
   "howToGrowAsAProductDesignerParagraph1Text": "Product designers create solutions that address user needs. They consider market competition, user problems, feasibility, and business goals. Understand the day-to-day tasks of a product designer, from research to design execution.",
   "howToGrowAsAProductDesignerParagraph2Title": "Learn & Practice",
@@ -483,7 +498,7 @@
 
   "lessIsMorePageHeaderDate": "Jan 2024 | 5 min read",
   "lessIsMorePageHeaderDescription": "Small changes to solve problems.",
-  "lessIsMorePageHeaderTitle": "less is more",   
+  "lessIsMorePageHeaderTitle": "Less is more.",   
   "lessIsMoreParagraph1Title": "Define objectives",
   "lessIsMoreParagraph1Text1": "When you face problems in your product, small changes produce better solutions to the problems. When faced with such a situation you must ask yourself, what is the smallest change you could make in order to correct the detected problem? ",
   "lessIsMoreParagraph1Text2": "Often, people on the team will tend to want to eradicate the problem rather than make a quick fix that will allow the user to stop experiencing it. And it is not that eradicating the problem is a bad decision, but rather that in many cases it requires resources and time that are not available and the problem tends to become entrenched. That is why it is preferable to make a quick solution, that does not require great efforts and that allows that in a few hours or days it is solved, although it is not perfect.",
@@ -501,7 +516,7 @@
 
  "designingBasedOnOurThoughtsPageHeaderDate": "Jan 2024 | 5 min read",
   "designingBasedOnOurThoughtsPageHeaderDescription": "How to use psychology to make better designs.",
-  "designingBasedOnOurThoughtsPageHeaderTitle": "Designing based on our thouhts",   
+  "designingBasedOnOurThoughtsPageHeaderTitle": "Designing based on our thouhts.",   
   "designingBasedOnOurThoughtsParagraph1Title": "The brain",
   "designingBasedOnOurThoughtsParagraph1Text": "The brain has more than 20 billion neurons. It is a very complex machine that we have not yet finished understanding, but we already know some things about it. Discover in this article, some of the existing scientific evidence and how to use that information to make better designs.",  
   "designingBasedOnOurThoughtsParagraph2Title": "Processing power",
@@ -520,7 +535,7 @@
 
   "mentalModelsPageHeaderDate": "Feb 2024 | 7 min read",
   "mentalModelsPageHeaderDescription": "Learn about this concept and some of the best known ones.",
-  "mentalModelsPageHeaderTitle": "Mental models",  
+  "mentalModelsPageHeaderTitle": "Mental models.",  
   "mentalModelsIntro": "Mental models are applicable schemes that help us to interpret the environment, providing results. There are different mental models applicable to different situations. Users often take some of these mental models when interacting with our products. Knowing these models will help you to empathize with the user and to design in a more user-friendly way. Here are some of these models and their application in product design.",
   "mentalModelsParagraph1Title": "Do the important",
   "mentalModelsParagraph1Text": "What is important is what you can't stop doing, even if the benefit of doing it or the delivery date is not a short deadline. The urgent, on the other hand, is that which demands an immediate response and usually comes from the environment.",
@@ -543,10 +558,10 @@
   "mentalModelsTOC3": "External evaluation ", 
   "mentalModelsTOC4": "Murphy's law",
   "mentalModelsTOC5": "Pareto's principle",
-
-  "toolsForSeekingCertainitiesPageHeaderDate": "Apr 2024 | 10 min red",
+  
+  "toolsForSeekingCertainitiesPageHeaderDate": "Apr 2024 | 10 min read",
   "toolsForSeekingCertainitiesPageHeaderDescription": "Exploring tools for ensuring certainty in product design.",
-  "toolsForSeekingCertainitiesPageHeaderTitle": "Tools for seeking certanties",  
+  "toolsForSeekingCertainitiesPageHeaderTitle": "Tools for seeking certanties.",  
   "toolsForSeekingCertainitiesIntro": "In the fast-paced world of product design, leveraging the right tools is essential for gaining insights and ensuring certainty in design decisions. From user research to prototyping, various tools empower designers to validate assumptions, test ideas, and create user-centered products. Here are five key tools for ensuring certainty in product design.",
   "toolsForSeekingCertainitiesParagraph1Title": "User Interviews & Surveys",
   "toolsForSeekingCertainitiesParagraph1Text": "User interviews and surveys are invaluable tools for gathering qualitative and quantitative data directly from users. By asking open-ended questions and collecting feedback, designers can gain insights into user needs, preferences, and pain points. Conducting user interviews and surveys helps designers understand user behaviors and motivations, allowing them to validate assumptions and identify areas for improvement in the product. Insights gathered from interviews and surveys provide a solid foundation for making informed design decisions and ensuring that the product meets user needs effectively.",  

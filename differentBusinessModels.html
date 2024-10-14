@@ -37,7 +37,7 @@
     <header class="navBar">
       <div class="navBarContainer">
         <a href="index.html" alt="logoAlejandro" id="logoLink" viewBox="0 0 24 24">
-          <svg class="logo imageExtraLarge" viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg">
+          <svg class="logo imageLarge" viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M5.86048 20.6292L15.0291 2.83789H16.2875L32.0001 30.7269H24.5213L16.4673 16.5975H15.2089L13.7347 20.6292H5.86048ZM3.63149 24.439H16.144L20.0631 30.8379H0L3.63149 24.439Z" />
           </svg>
@@ -142,16 +142,21 @@
       </div>
     </header>
 
-    <article class="article">
+    <article class="article">     
 
       <!-- [pageHeader] -->
       <div class="frameFlexColumnLarge pageHeaderContainer">
-        <div class="frameFlexColumnSmall lateralPadding">
+        <div class="frameFlexColumnMedium padding">
+          <a class="buttonBack" href="blog.html">
+            <i class="fa-solid fa-arrow-left"></i>
+            <p data-key="articlePageHeaderButtonBack" class="regular"></p>
+          </a>
           <p data-key="differentBusinessModelsPageHeaderDate" class="small"></p>
-          <p data-key="differentBusinessModelsPageHeaderDescription" class="regular"></p>
+          <h1 data-key="differentBusinessModelsPageHeaderTitle"></h1>
+          <h4 data-key="differentBusinessModelsPageHeaderDescription"></h4>
         </div>
-        <div class="pageHeader">
-          <p data-key="differentBusinessModelsPageHeaderTitle"></p>
+        <div class="articleImageContainter">
+          <img src="assets/images/articles/diferent-business-models.png" alt="articleImage">
         </div>
       </div>
 
@@ -281,36 +286,44 @@
       </div>
       <div class="gridThree">
         
-          <a class="cardArticle" href="productDesignerCompetencies.html">
-            <div class="linearFrame"></div>
-            <div class="framFlexColumnTiny">
-              <p data-key="cardArticle7Title" class="large"></p>
-              <p data-key="cardArticle7Info" class="small"></p>
-            </div>
-            <p data-key="cardArticle7Description" class="regular"></p>
-            <div class="buttonImage regular-bold" data-key="imageButtonArticle"></div>
-          </a>
-        
-          <a class="cardArticle" href="howToGrowAsAProductDesigner.html">
-            <div class="linearFrame"></div>
-            <div class="framFlexColumnTiny">
-              <p data-key="cardArticle6Title" class="large"></p>
-              <p data-key="cardArticle6Info" class="small"></p>
-            </div>
-            <p data-key="cardArticle6Description" class="regular"></p>
-            <div class="buttonImage regular-bold" data-key="imageButtonArticle"></div>
-          </a>      
+          <!-- [productDesignerCompetencies] -->
+        <a class="cardArticle" href="productDesignerCompetencies.html">
+          <div class="cardArticleImageContainer">
+            <img class="cardArticleImage" src="assets/images/articles/product-designer-competencies.png" alt="articleImage">
+          </div>
+          <div class="framFlexColumnTiny">
+            <p data-key="cardArticle7Title" class="large"></p>
+            <p data-key="cardArticle7Info" class="small"></p>
+          </div>
+          <p data-key="cardArticle7Description" class="regular"></p>
+          <div class="buttonImage regular-bold" data-key="imageButtonArticle"></div>
+        </a>
 
-        
-          <a class="cardArticle" href="usabilityTest.html">
-            <div class="linearFrame"></div>
-            <div class="framFlexColumnTiny">
-              <p data-key="cardArticle5Title" class="large"></p>
-              <p data-key="cardArticle5Info" class="small"></p>
-            </div>
-            <p data-key="cardArticle5Description" class="regular"></p>
-            <div class="buttonImage regular-bold" data-key="imageButtonArticle"></div>
-          </a>
+        <!-- [howToGrowAsAP^roductDesigner] -->
+        <a class="cardArticle" href="howToGrowAsAProductDesigner.html">
+          <div class="cardArticleImageContainer">
+            <img class="cardArticleImage" src="assets/images/articles/how-to-grow-as-a-product-designer.png" alt="articleImage">
+          </div>
+          <div class="framFlexColumnTiny">
+            <p data-key="cardArticle6Title" class="large"></p>
+            <p data-key="cardArticle6Info" class="small"></p>
+          </div>
+          <p data-key="cardArticle6Description" class="regular"></p>
+          <div class="buttonImage regular-bold" data-key="imageButtonArticle"></div>
+        </a>
+
+        <!-- [usabilityTest] -->
+        <a class="cardArticle" href="usabilityTest.html">
+          <div class="cardArticleImageContainer">
+            <img class="cardArticleImage" src="assets/images/articles/usability-test.png" alt="articleImage">
+          </div>
+          <div class="framFlexColumnTiny">
+            <p data-key="cardArticle5Title" class="large"></p>
+            <p data-key="cardArticle5Info" class="small"></p>
+          </div>
+          <p data-key="cardArticle5Description" class="regular"></p>
+          <div class="buttonImage regular-bold" data-key="imageButtonArticle"></div>
+        </a>
 
       </div>
     </div>

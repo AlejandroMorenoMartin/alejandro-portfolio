@@ -37,7 +37,7 @@
     <header class="navBar">
       <div class="navBarContainer">
         <a href="index.html" alt="logoAlejandro" id="logoLink" viewBox="0 0 24 24">
-          <svg class="logo imageExtraLarge" viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg">
+          <svg class="logo imageLarge" viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M5.86048 20.6292L15.0291 2.83789H16.2875L32.0001 30.7269H24.5213L16.4673 16.5975H15.2089L13.7347 20.6292H5.86048ZM3.63149 24.439H16.144L20.0631 30.8379H0L3.63149 24.439Z" />
           </svg>
@@ -146,12 +146,17 @@
 
       <!-- [pageHeader] -->
       <div class="frameFlexColumnLarge pageHeaderContainer">
-        <div class="frameFlexColumnSmall lateralPadding">
+        <div class="frameFlexColumnMedium padding">
+          <a class="buttonBack" href="blog.html">
+            <i class="fa-solid fa-arrow-left"></i>
+            <p data-key="articlePageHeaderButtonBack" class="regular"></p>
+          </a>
           <p data-key="multidisciplinaryTeamsPageHeaderDate" class="small"></p>
-          <p data-key="multidisciplinaryTeamsPageHeaderDescription" class="regular"></p>
+          <h1 data-key="multidisciplinaryTeamsPageHeaderTitle"></h1>
+          <h4 data-key="multidisciplinaryTeamsPageHeaderDescription"></h4>
         </div>
-        <div class="pageHeader">
-          <p data-key="multidisciplinaryTeamsPageHeaderTitle"></p>
+        <div class="articleImageContainter">
+          <img src="assets/images/articles/multidisciplinary-teams.png" alt="articleImage">
         </div>
       </div>
 
@@ -211,6 +216,7 @@
 
     <!-- [otherArticles] -->
     <div class="frameFlexColumnExtraLarge otherArticles">
+
       <div class="sectionHeader">
         <div class="frameFlexAuto">
           <h3 data-key="otherArticlesTitle"></h3>
@@ -220,10 +226,14 @@
         </div>
         <p class="regular" data-key="otherArticlesText"></p>
       </div>
+
       <div class="gridThree">
 
+        <!-- [theRoleOfAProductDesigner] -->
         <a class="cardArticle" href="theRoleOfAProductDesigner.html">
-          <div class="linearFrame"></div>
+          <div class="cardArticleImageContainer">
+            <img class="cardArticleImage" src="assets/images/articles/the-role-of-a-product-designer.png" alt="articleImage">
+          </div>
           <div class="framFlexColumnTiny">
             <p data-key="cardArticle9Title" class="large"></p>
             <p data-key="cardArticle9Info" class="small"></p>
@@ -232,8 +242,11 @@
           <div class="buttonImage regular-bold" data-key="imageButtonArticle"></div>
         </a>
 
+        <!-- [differentBusinessModels] -->
         <a class="cardArticle" href="differentBusinessModels.html">
-          <div class="linearFrame"></div>
+          <div class="cardArticleImageContainer">
+            <img class="cardArticleImage" src="assets/images/articles/diferent-business-models.png" alt="articleImage">
+          </div>
           <div class="framFlexColumnTiny">
             <p data-key="cardArticle8Title" class="large"></p>
             <p data-key="cardArticle8Info" class="small"></p>
@@ -242,15 +255,18 @@
           <div class="buttonImage regular-bold" data-key="imageButtonArticle"></div>
         </a>
 
+        <!-- [productDesignerCompetencies] -->
         <a class="cardArticle" href="productDesignerCompetencies.html">
-          <div class="linearFrame"></div>
+          <div class="cardArticleImageContainer">
+            <img class="cardArticleImage" src="assets/images/articles/product-designer-competencies.png" alt="articleImage">
+          </div>
           <div class="framFlexColumnTiny">
             <p data-key="cardArticle7Title" class="large"></p>
             <p data-key="cardArticle7Info" class="small"></p>
           </div>
           <p data-key="cardArticle7Description" class="regular"></p>
           <div class="buttonImage regular-bold" data-key="imageButtonArticle"></div>
-        </a>
+        </a>        
 
       </div>
     </div>

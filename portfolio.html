@@ -37,7 +37,7 @@
     <header class="navBar">
       <div class="navBarContainer">
         <a href="index.html" alt="logoAlejandro" id="logoLink" viewBox="0 0 24 24">
-          <svg class="logo imageExtraLarge" viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg">
+          <svg class="logo imageLarge" viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M5.86048 20.6292L15.0291 2.83789H16.2875L32.0001 30.7269H24.5213L16.4673 16.5975H15.2089L13.7347 20.6292H5.86048ZM3.63149 24.439H16.144L20.0631 30.8379H0L3.63149 24.439Z" />
           </svg>
@@ -144,56 +144,54 @@
 
     <article class="article">
 
-      <!-- [pageHeader] -->
-      <div class="frameFlexColumnExtraLarge pageHeaderContainer">
-
-        <!-- [projectTitle] -->
-        <div class="pageHeader">
-          <p>Portfolio</p>
-        </div>
-
-        <!-- [projectIntro] -->
-        <div class="frameFlexColumnSmall padding">
-          <p class="small" data-key="cardProjectPortfolioTime"></p>
-          <p class="regular" data-key="cardProjectPortfolioDescription"></p>
+      <!-- [projectHeader] -->
+      <div class="projectHeader padding">
+        <div class="frameFlexColumnLarge">
+          <a class="buttonBack" href="projects.html">
+            <i class="fa-solid fa-arrow-left"></i>
+            <p data-key="projectPageHeaderButtonBack" class="regular"></p>
+          </a>
           <div class="tag">
             <p class="regular" data-key="cardProjectPortfolioTag1"></p>
-          </div>
+          </div>          
+          <p data-key="cardProjectPortfolioTime" class="small"></p>
+          <h1 data-key="cardProjectPortfolioTitle"></h1>
+          <h4 data-key="cardProjectPortfolioDescription"></h4>          
+          <a class="buttonPrimary" id="stepLink" href="#stepSection">
+            <p class="regular-bold" data-key="seeProjectButton"></p>
+          </a>
+        </div>
+        <div class="projectImageContainter1">
+          <img src="assets/images/projects/portfolio/portfolioImageHeader.png" alt="projectImage">
+        </div>
+      </div>
+
+      <!-- [projectInfo] -->
+      <div class="articleInfo" id="stepSection">
+
+        <div class="articleInfoOne">
+          <p class="regular-bold" data-key="cardProjectChallenge"></p>
+          <p class="regular" data-key="cardProjectPortfolioChallenge"></p>
         </div>
 
-        <!-- [projectImage] -->
-        <figure class="projectImageContainer">
-          <img src="assets/images/projects/portfolio/projectHero__image.png" alt="projectImage">
-        </figure>
+        <div class="articleInfoTwo">
+          <p class="regular-bold" data-key="cardProjectRol"></p>
+          <p class="regular" data-key="cardProjectPortfolioRol"></p>
+        </div>
 
+        <div class="articleInfoThree">
+          <p class="regular-bold" data-key="cardProjectCronology"></p>
+          <p class="regular" data-key="cardProjectPortfolioCronology"></p>
+        </div>
 
-        <!-- [projectInfo] -->
-        <div class="articleInfo">
-
-          <div class="articleInfoOne">
-            <p class="regular-bold" data-key="cardProjectChallenge"></p>
-            <p class="regular" data-key="cardProjectPortfolioChallenge"></p>
-          </div>
-
-          <div class="articleInfoTwo">
-            <p class="regular-bold" data-key="cardProjectRol"></p>
-            <p class="regular" data-key="cardProjectPortfolioRol"></p>
-          </div>
-
-          <div class="articleInfoThree">
-            <p class="regular-bold" data-key="cardProjectCronology"></p>
-            <p class="regular" data-key="cardProjectPortfolioCronology"></p>
-          </div>
-
-          <div class="articleInfoFour">
-            <p class="regular-bold" data-key="cardProjectToolstack"></p>
-            <p class="regular" data-key="cardProjectPortfolioToolstack"></p>
-          </div>
-
+        <div class="articleInfoFour">
+          <p class="regular-bold" data-key="cardProjectToolstack"></p>
+          <p class="regular" data-key="cardProjectPortfolioToolstack"></p>
         </div>
 
       </div>
-
+      
+      <!-- [articleBody] -->
       <div class="articleBody">
 
         <div class="articleBodyContent frameFlexColumnColossal">

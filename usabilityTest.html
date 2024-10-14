@@ -37,7 +37,7 @@
     <header class="navBar">
       <div class="navBarContainer">
         <a href="index.html" alt="logoAlejandro" id="logoLink" viewBox="0 0 24 24">
-          <svg class="logo imageExtraLarge" viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg">
+          <svg class="logo imageLarge" viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M5.86048 20.6292L15.0291 2.83789H16.2875L32.0001 30.7269H24.5213L16.4673 16.5975H15.2089L13.7347 20.6292H5.86048ZM3.63149 24.439H16.144L20.0631 30.8379H0L3.63149 24.439Z" />
           </svg>
@@ -146,12 +146,17 @@
 
       <!-- [pageHeader] -->
       <div class="frameFlexColumnLarge pageHeaderContainer">
-        <div class="frameFlexColumnSmall lateralPadding">
+        <div class="frameFlexColumnMedium padding">
+          <a class="buttonBack" href="blog.html">
+            <i class="fa-solid fa-arrow-left"></i>
+            <p data-key="articlePageHeaderButtonBack" class="regular"></p>
+          </a>
           <p data-key="usabilityTestPageHeaderDate" class="small"></p>
-          <p data-key="usabilityTestPageHeaderDescription" class="regular"></p>
+          <h1 data-key="usabilityTestPageHeaderTitle"></h1>
+          <h4 data-key="usabilityTestPageHeaderDescription"></h4>
         </div>
-        <div class="pageHeader">
-          <p data-key="usabilityTestPageHeaderTitle"></p>
+        <div class="articleImageContainter">
+          <img src="assets/images/articles/usability-test.png" alt="articleImage">
         </div>
       </div>
 
@@ -204,6 +209,7 @@
 
     <!-- [otherArticles] -->
     <div class="frameFlexColumnExtraLarge otherArticles">
+
       <div class="sectionHeader">
         <div class="frameFlexAuto">
           <h3 data-key="otherArticlesTitle"></h3>
@@ -213,9 +219,14 @@
         </div>
         <p class="regular" data-key="otherArticlesText"></p>
       </div>
-      <div class="gridThree">        
-        <a class="cardArticle" href="lessIsMore.html">
-          <div class="linearFrame"></div>
+
+      <div class="gridThree">   
+
+         <!-- [lessIsMore] -->
+         <a class="cardArticle" href="lessIsMore.html">
+          <div class="cardArticleImageContainer">
+            <img class="cardArticleImage" src="assets/images/articles/less-is-more.png" alt="articleImage">
+          </div>
           <div class="framFlexColumnTiny">
             <p data-key="cardArticle4Title" class="large"></p>
             <p data-key="cardArticle4Info" class="small"></p>
@@ -223,8 +234,12 @@
           <p data-key="cardArticle4Description" class="regular"></p>
           <div class="buttonImage regular-bold" data-key="imageButtonArticle"></div>
         </a>
+
+        <!-- [designingBasedOnOurThoughts] -->
         <a class="cardArticle" href="designingBasedOnOurThoughts.html">
-          <div class="linearFrame"></div>
+          <div class="cardArticleImageContainer">
+            <img class="cardArticleImage" src="assets/images/articles/designing-based-on-our-thoughts.png" alt="articleImage">
+          </div>
           <div class="framFlexColumnTiny">
             <p data-key="cardArticle3Title" class="large"></p>
             <p data-key="cardArticle3Info" class="small"></p>
@@ -232,15 +247,20 @@
           <p data-key="cardArticle3Description" class="regular"></p>
           <div class="buttonImage regular-bold" data-key="imageButtonArticle"></div>
         </a>
+
+        <!-- [mentalModels] -->
         <a class="cardArticle" href="mentalModels.html">
-          <div class="linearFrame"></div>
+          <div class="cardArticleImageContainer">
+            <img class="cardArticleImage" src="assets/images/articles/mental-models.png" alt="articleImage">
+          </div>
           <div class="framFlexColumnTiny">
             <p data-key="cardArticle2Title" class="large"></p>
             <p data-key="cardArticle2Info" class="small"></p>
           </div>
           <p data-key="cardArticle2Description" class="regular"></p>
           <div class="buttonImage regular-bold" data-key="imageButtonArticle"></div>
-        </a>
+        </a>        
+
       </div>
     </div>
 

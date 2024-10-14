@@ -62,23 +62,34 @@
   "cardProjectGeomitesTag1": "Nuevo",
   "cardProjectGeomitesTag2": "Videojuego",
   "cardProjectGeomitesTime": "15 min de lectura",
-  "cardProjectGeomitesDescription": "A cargo del diseño de un videojuego para móviles en plataformas Android y iOS.",
+  "cardProjectGeomitesTimeShort": "5 min de lectura",
+  "cardProjectGeomitesTitle": "Diseñando y desarrollando Geomites.",
+  "cardProjectGeomitesDescription": "Un juego indie estratégico para jugadores competitivos.",
+  
+  "seeProjectButton": "Ver proyecto", 
 
   "cardProjectTattooParadiseTag1": "App",
   "cardProjectTattooParadiseTime": "16 min de lectura",
-  "cardProjectTattooParadiseDescription": "Diseño de un producto para conectar a usuarios del tatuaje con artistas y estudios.",
+  "cardProjectTattooParadiseTimeShort": "5 min de lectura",
+  "cardProjectTattooParadiseTitle": "Diseñando Tattoo Paradise",
+  "cardProjectTattooParadiseDescription": "Una aplicación móvil que conecta fácilmente a tatuadores y clientes.",
 
   "cardProjectAtipikoToursTag1": "Responsivo",
   "cardProjectAtipikoToursTime": "15 min de lectura",
-  "cardProjectAtipikoToursDescription": "Mejorando el branding y la presencia en internet de una agencia de viajes.",
+  "cardProjectAtipikoToursShort": "5 min de lectura",
+  "cardProjectAtipikoTitle": "Construyendo Atipiko Tours",
+  "cardProjectAtipikoToursDescription": "Un diseño y desarrollo web a medida para viajes personalizados.",
 
   "cardProjectSenzoStudioTag1": "Responsivo",
   "cardProjectSenzoStudioTime": "15 min de lectura",
-  "cardProjectSenzoStudioDescription": "Diseño y desarrollo del sitio web de una agencia de efectos visuales.",
+  "cardProjectSenzoStudioTimeShort": "5 min de lectura",
+  "cardProjectSenzoStudioTitle": "Creando la presencia online de Senzo studio",
+  "cardProjectSenzoStudioDescription": "Diseño de producto personalizado para artistas de efectos visuales.",
 
   "cardProjectPortfolioTag1": "Responsivo",
   "cardProjectPortfolioTime": "13 min de lectura",
-  "cardProjectPortfolioDescription": "Te cuento el proceso de creación de mi portfolio.",
+  "cardProjectPortfolioTimeShort": "5 min de lectura",
+  "cardProjectPortfolioDescription": "Mostrando las capacidades de diseño y desarrollo a medida.",
 
   "cardTextIcon1": "Investigación UX",
   "cardTextIcon2": "Diseño UX",
@@ -313,7 +324,7 @@
   "cardArticle7Description": "Estas son las competencias que un diseñador de producto debe tener.",
 
   "cardArticle8Title": "Diferentes modelos de negocio",  
-  "cardArticle8Info": "May 2023 | 6 min lectura",
+  "cardArticle8Info": "May 2023 | 10 min lectura",
   "cardArticle8Description": "Ventajas y desventajas de los diferentes modelos de negocio, desde la persepectiva del diseño de producto.",
 
   "cardArticle9Title": "El rol como diseñador de producto",  
@@ -336,9 +347,12 @@
 
   "TOCTitle": "Índice",
 
+  "projectPageHeaderButtonBack": "VOLVER A PROYECTOS",
+  "articlePageHeaderButtonBack": "VOLVER A ARTÍCULOS",
+
   "productDevelopmentLifeCyclePageHeaderDate": "Dic 2022 | 5 min de lectura",
   "productDevelopmentLifeCyclePageHeaderDescription": "Descubre las etapas en la creación de un producto.",
-  "productDevelopmentLifeCyclePageHeaderTitle": "Ciclo de vida del prodcuto",
+  "productDevelopmentLifeCyclePageHeaderTitle": "Ciclo de vida del producto.",
   "productDevelopmentLifeCycleIntro": "El desarrollo de un producto exitoso implica un proceso estructurado que garantiza que las ideas se transformen de manera eficaz en soluciones listas para el mercado. El ciclo de desarrollo de un producto consta de varias fases clave: lluvia de ideas, diseño, prueba y lanzamiento. Cada fase desempeña un papel crucial en la conformación del producto final. A continuación, analizamos en detalle cada etapa de este ciclo.",
   "productDevelopmentLifeCycleParagraph1Title": "Lluvia de ideas",
   "productDevelopmentLifeCycleParagraph1Text": "El ciclo de desarrollo comienza con una lluvia de ideas. Esta fase consiste en generar ideas e identificar posibles soluciones a los problemas de los usuarios. Implica la colaboración entre los miembros del equipo, incluidos los diseñadores, desarrolladores, vendedores y partes interesadas. A menudo se utilizan técnicas como mapas mentales, bocetos y talleres colaborativos para explorar una amplia gama de ideas. El objetivo es reunir tantos conceptos como sea posible y luego refinarlos para convertirlos en ideas de productos viables que se alineen con los objetivos de la empresa y las necesidades del mercado.",
@@ -356,7 +370,7 @@
   
   "multidisciplinaryTeamsPageHeaderDate": "En 2023 | 5 min de lectura",
   "multidisciplinaryTeamsPageHeaderDescription": "Conozcan los diferentes roles que interactúan con el diseño.",
-  "multidisciplinaryTeamsPageHeaderTitle": "Equipos multidisciplinares",  
+  "multidisciplinaryTeamsPageHeaderTitle": "Equipos multidisciplinares.",  
   "multidisciplinaryTeamsIntro": "El diseño de UX es un campo altamente colaborativo en el que los diseñadores suelen trabajar en equipos multidisciplinarios. Estos individuos suelen incluir ingenieros, investigadores, gerentes de proyectos, líderes, colegas diseñadores y otros. Los equipos multidisciplinarios vienen en diferentes formas y tamaños, según la organización para la que trabajes. Pero, en general, como diseñador, tendrás que colaborar con:",
   "multidisciplinaryTeamsParagraph1Title": "Ingenieros",
   "multidisciplinaryTeamsParagraph1Text": "Son los responsables de traducir sus diseños en experiencias funcionales. Son de gran valor a la hora de evaluar los diseños en términos de viabilidad técnica. Trabajar de manera eficiente con ellos es un paso esencial para la finalización exitosa de los proyectos.",
@@ -379,7 +393,7 @@
 
   "theRoleOfAProductDesignerPageHeaderDate": "Feb 2023 | 8 min de lectura",
   "theRoleOfAProductDesignerPageHeaderDescription": "Conozcan los diferentes roles que interactúan con el diseño.",
-  "theRoleOfAProductDesignerPageHeaderTitle": "El rol como diseñador de producto",  
+  "theRoleOfAProductDesignerPageHeaderTitle": "El rol como diseñador de producto.",  
   "theRoleOfAProductDesignerIntro": "El campo del diseño de productos es amplio y variado, y abarca varios roles especializados que se ocupan de diferentes aspectos del proceso de diseño. Según sus habilidades, intereses y objetivos profesionales, los diseñadores de productos pueden seguir distintos caminos, cada uno con su enfoque y responsabilidades únicos. A continuación, se presentan cinco roles clave en la industria del diseño de productos: el generalista, el diseñador de UX, el diseñador de UI, el diseñador de interacción y el investigador de diseño.",
   "theRoleOfAProductDesignerParagraph1Title": "Generalista",
   "theRoleOfAProductDesignerParagraph1Text": "Un generalista, que suele trabajar en equipos más pequeños o en empresas emergentes, se encarga de una amplia gama de tareas de diseño, desde la investigación de usuarios y la creación de personajes hasta el diseño de interfaces y la creación de prototipos. Los generalistas se benefician de una amplia gama de habilidades y una comprensión holística del proceso de diseño, pero pueden encontrarles difícil dominar un área en particular debido a su amplio enfoque.",
@@ -397,9 +411,9 @@
   "theRoleOfAProductDesignerTOC4": "Diseñador de interacción",
   "theRoleOfAProductDesignerTOC5": "Diseñador investigador",
   
-  "differentBusinessModelsPageHeaderDate": "May 2023 | 6 min lectura",
+  "differentBusinessModelsPageHeaderDate": "May 2023 | 10 min lectura",
   "differentBusinessModelsPageHeaderDescription": "Estas son las principales competencias que debe tener un diseñador de producto.",
-  "differentBusinessModelsPageHeaderTitle": "Diferentes modelos de negocio",  
+  "differentBusinessModelsPageHeaderTitle": "Diferentes modelos de negocio.",  
   "differentBusinessModelsIntro": "El sector del diseño de productos abarca diversos tipos de negocio, cada uno de los cuales ofrece ventajas y retos únicos. Entender estas diferencias puede ayudar a los diseñadores a elegir el mejor camino para sus carreras. A continuación, analizamos los pros y los contras de los cinco principales tipos de empresas del sector del diseño de productos: startups, grandes empresas, agencias de diseño, agencias de publicidad y autónomos.",
   "differentBusinessModelsParagraph1Title": "Startups",
   "articleTip1Title": "Ventajas",
@@ -426,7 +440,7 @@
 
   "productDesignerCompetenciesPageHeaderDate": "Sep 2023 | 8 min de lectura",
   "productDesignerCompetenciesPageHeaderDescription": "Estas son las competencias que un diseñador de producto debe tener.",
-  "productDesignerCompetenciesPageHeaderTitle": "Competencias como diseñador",  
+  "productDesignerCompetenciesPageHeaderTitle": "Competencias como diseñador.",  
   "productDesignerCompetenciesIntro": "En el campo del diseño de productos, que está en constante evolución, los profesionales deben poseer un conjunto diverso de habilidades para crear productos que no solo sean funcionales, sino también agradables para los usuarios. El papel de un diseñador de productos implica combinar la creatividad con la experiencia técnica para resolver los problemas de los usuarios de manera eficaz. Estas son las habilidades esenciales que todo diseñador de productos debe dominar para sobresalir en su profesión.",
   "productDesignerCompetenciesParagraph1Title": "UX & UI",
   "productDesignerCompetenciesParagraph1Text": "En el centro del diseño de productos se encuentran las habilidades de diseño de UX y UI. El diseño de UX se centra en comprender las necesidades, los comportamientos y los puntos débiles de los usuarios para crear productos que proporcionen una experiencia fluida y agradable. Esto implica realizar una investigación de los usuarios, crear personajes y trazar un mapa de sus recorridos. El diseño de UI, por otro lado, se ocupa de los aspectos visuales e interactivos del producto. Un diseñador de productos debe dominar herramientas como Sketch, Adobe XD y Figma para crear interfaces visualmente atractivas e intuitivas que mejoren la experiencia del usuario.",
@@ -447,7 +461,7 @@
 
   "howToGrowAsAProductDesignerPageHeaderDate": "Oct 2023 | 5 min de lectura",
   "howToGrowAsAProductDesignerPageHeaderDescription": "Descubre las áreas que necesitas mejorar para avanzar en tu carrera.",
-  "howToGrowAsAProductDesignerPageHeaderTitle": "Cómo crecer como diseñador de prodcuto",  
+  "howToGrowAsAProductDesignerPageHeaderTitle": "Cómo crecer como diseñador de producto.",  
   "howToGrowAsAProductDesignerParagraph1Title": "El rol",
   "howToGrowAsAProductDesignerParagraph1Text": "Los diseñadores de productos crean soluciones que abordan las necesidades de los usuarios. Tienen en cuenta la competencia del mercado, los problemas de los usuarios, la viabilidad y los objetivos comerciales. Comprenda las tareas diarias de un diseñador de productos, desde la investigación hasta la ejecución del diseño.",
   "howToGrowAsAProductDesignerParagraph2Title": "Aprendizaje & Práctica",
@@ -466,7 +480,7 @@
 
   "usabilityTestPageHeaderDate": "Nov 2023 | 5 min de lectura",
   "usabilityTestPageHeaderDescription": "Algunos consejos para ayudarle en esta tarea.",
-  "usabilityTestPageHeaderTitle": "Test de usabilidad",
+  "usabilityTestPageHeaderTitle": "Test de usabilidad.",
   "usabilityTestIntro": "Las pruebas de usabilidad son un paso crucial en el proceso de diseño de productos, ya que permiten a los diseñadores identificar problemas de usabilidad, recopilar comentarios y mejorar iterativamente la experiencia del usuario. A continuación, se ofrecen algunos consejos para garantizar la eficacia de las pruebas de usabilidad.",  
   "usabilityTestParagraph1Title": "Definir objetivos",
   "usabilityTestParagraph1Text": "Para obtener comentarios significativos, contrate a un grupo diverso de participantes que represente a su público objetivo. Considere factores como la edad, el género, la experiencia técnica y la familiaridad con el dominio del producto. Contratar participantes con una variedad de antecedentes y experiencias ayudará a descubrir una gama más amplia de problemas de usabilidad y garantizará que su producto satisfaga a una base de usuarios diversa.",
@@ -486,7 +500,7 @@
 
   "lessIsMorePageHeaderDate": "En 2024 | 5 min de lectura",
   "lessIsMorePageHeaderDescription": "Pequeños cambios para solucionar problemas.",
-  "lessIsMorePageHeaderTitle": "Menos es más",   
+  "lessIsMorePageHeaderTitle": "Menos es más.",   
   "lessIsMoreParagraph1Title": "Problemas de usabilidad",
   "lessIsMoreParagraph1Text1": "Cuando se enfrenta a problemas en su producto, los pequeños cambios producen mejores soluciones a los problemas. Ante una situación de este tipo, debe preguntarse: ¿cuál es el cambio más pequeño que podría realizar para corregir el problema detectado?.",
   "lessIsMoreParagraph1Text2": "A menudo, las personas del equipo tenderán a querer erradicar el problema antes que hacer una solución rápida que permita al usuario dejar de experimentarlo. Y no es que erradicar el problema sea una mala decisión, sino que en muchos casos se requieren recursos y tiempo de los que no se dispone y el problema tiende a enquistarse. Por eso es preferible hacer una solución rápida, que no requiera grandes esfuerzos y que permita que en pocas horas o días esté solucionado, aunque no sea perfecto.",
@@ -504,7 +518,7 @@
 
   "designingBasedOnOurThoughtsPageHeaderDate": "En 2024 | 5 min de lectura",
   "designingBasedOnOurThoughtsPageHeaderDescription": "Cómo utilizar la psicología para hacer mejores diseños.",
-  "designingBasedOnOurThoughtsPageHeaderTitle": "Diseño basado en pensamientos",   
+  "designingBasedOnOurThoughtsPageHeaderTitle": "Diseño basado en pensamientos.",   
   "designingBasedOnOurThoughtsParagraph1Title": "El cerebro",
   "designingBasedOnOurThoughtsParagraph1Text": "El cerebro tiene más de 20 mil millones de neuronas. Es una máquina muy compleja que aún no hemos terminado de entender, pero ya sabemos algunas cosas sobre ella. Descubre en este artículo algunas de las evidencias científicas existentes y cómo utilizar esa información para realizar mejores diseños.",  
   "designingBasedOnOurThoughtsParagraph2Title": "Poder de procesamiento",
@@ -523,7 +537,7 @@
 
   "mentalModelsPageHeaderDate": "Feb 2024 | 7 min de lectura",
   "mentalModelsPageHeaderDescription": "Conozca este concepto y algunos de los más conocidos.",
-  "mentalModelsPageHeaderTitle": "Modelos mentales",  
+  "mentalModelsPageHeaderTitle": "Modelos mentales.",  
   "mentalModelsIntro": "Los modelos mentales son esquemas aplicables que nos ayudan a interpretar el entorno, aportando resultados. Existen diferentes modelos mentales aplicables a distintas situaciones. Los usuarios suelen adoptar algunos de estos modelos mentales a la hora de interactuar con nuestros productos. Conocer estos modelos te ayudará a empatizar con el usuario y a diseñar de una forma más amigable. A continuación, te mostramos algunos de estos modelos y su aplicación en el diseño de productos.",
   "mentalModelsParagraph1Title": "Haz lo importante",
   "mentalModelsParagraph1Text": "Lo importante es lo que no se puede dejar de hacer, aunque el beneficio de hacerlo o la fecha de entrega no sea un plazo corto. Lo urgente, en cambio, es aquello que demanda una respuesta inmediata y suele venir del entorno.",
@@ -549,7 +563,7 @@
 
   "toolsForSeekingCertainitiesPageHeaderDate": "Abr 2024 | 10 min de lectura",
   "toolsForSeekingCertainitiesPageHeaderDescription": "Explorando herramientas para garantizar la certeza en el diseño de productos.",
-  "toolsForSeekingCertainitiesPageHeaderTitle": "Herramientas para buscar certezas",  
+  "toolsForSeekingCertainitiesPageHeaderTitle": "Herramientas para buscar certezas.",  
   "toolsForSeekingCertainitiesIntro": "En el vertiginoso mundo del diseño de productos, es fundamental utilizar las herramientas adecuadas para obtener información y garantizar la certeza en las decisiones de diseño. Desde la investigación de usuarios hasta la creación de prototipos, existen diversas herramientas que permiten a los diseñadores validar suposiciones, probar ideas y crear productos centrados en el usuario. A continuación, se presentan cinco herramientas clave para garantizar la certeza en el diseño de productos.",
   "toolsForSeekingCertainitiesParagraph1Title": "Entrevistas & Encuestas",
   "toolsForSeekingCertainitiesParagraph1Text": "Las entrevistas y encuestas a usuarios son herramientas invaluables para recopilar datos cualitativos y cuantitativos directamente de los usuarios. Al hacer preguntas abiertas y recopilar comentarios, los diseñadores pueden obtener información sobre las necesidades, preferencias y problemas de los usuarios. Realizar entrevistas y encuestas a usuarios ayuda a los diseñadores a comprender los comportamientos y las motivaciones de los usuarios, lo que les permite validar suposiciones e identificar áreas de mejora en el producto. La información obtenida a partir de entrevistas y encuestas proporciona una base sólida para tomar decisiones de diseño informadas y garantizar que el producto satisfaga las necesidades de los usuarios de manera eficaz.",  
