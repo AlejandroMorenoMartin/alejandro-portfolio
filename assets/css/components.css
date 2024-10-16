@@ -1754,9 +1754,8 @@ body.no-scroll {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  background-color: rgba(12, 12, 13, 0.5);
-  backdrop-filter: blur(10px);
+  padding: 1rem;  
+  backdrop-filter: blur(100px);
   border-radius: var(--br);
   z-index: 90;
   top: 0;
