@@ -35,6 +35,7 @@
 
     <!-- [navBar] -->
     <header class="navBar">
+
       <div class="navBarContainer">
         <a href="index.html" alt="logoAlejandro" id="logoLink" viewBox="0 0 24 24">
           <svg class="logo imageLarge" viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg">
@@ -42,25 +43,19 @@
               d="M5.86048 20.6292L15.0291 2.83789H16.2875L32.0001 30.7269H24.5213L16.4673 16.5975H15.2089L13.7347 20.6292H5.86048ZM3.63149 24.439H16.144L20.0631 30.8379H0L3.63149 24.439Z" />
           </svg>
         </a>
-        <nav class="desktopNavigation" id="primaryNavigation">
-          <ul aria-label="Primary" role="list" class=" navBarNavigation">
-            <ul class="navBarFrameNavigation">
-              <li class="navBarFrameLink"><a href="index.html">
-                  <p data-key="navBarFrameLink1"></p>
-                </a></li>
-              <li class="navBarFrameLink"><a href="projects.html">
-                  <p data-key="navBarFrameLink2"></p>
-                </a></li>
-              <li class="navBarFrameLink"><a href="resume.html">
-                  <p data-key="navBarFrameLink3"></p>
-                </a></li>
-              <li class="navBarFrameLink"><a href="aboutMe.html">
-                  <p data-key="navBarFrameLink4"></p>
-                </a></li>
-              <li class="navBarFrameLink"><a href="blog.html">
-                  <p data-key="navBarFrameLink5"></p>
-                </a></li>
-            </ul>
+
+        <nav class="mobileNavigation" id="primaryNavigation">
+
+          <ul aria-label="Primary" role="list" class=" navBarNavigation frameFlexColumnExtraLarge">
+            <a href="index.html" class="frameFlexPaddingBottom">
+              <p data-key="mobileNavigationPage1" class="large"></p>
+            </a>
+            <a href="projects.html" class="frameFlexPaddingBottom active">
+              <p data-key="mobileNavigationPage2" class="large"></p>
+            </a>
+            <a href="resume.html" class="frameFlexPaddingBottom">
+              <p data-key="mobileNavigationPage3" class="large"></p>
+            </a>
             <li class="frameFlexMedium">
               <div class="switcherContainer" id="languageSwitcherContainer">
                 <input type="checkbox" id="languageSwitch">
@@ -73,64 +68,22 @@
                 <label for="themeSwitch" data-state="dark" data-key="themeSwitch2" class="small"></label>
               </div>
             </li>
-
-        </nav>
-        <nav class="mobileNavigation" id="primaryNavigation">
-          <ul aria-label="Primary" role="list" class=" navBarNavigation">
-            <div class="frameFlexColumnExtraLarge">
-              <div class="frameFlexColumnLarge">
-                <p data-key="mobileNavigationSectionTitle1" class="regular"></p>
-                <div class="frameFlexColumnMedium">
-                  <a href="index.html" class="frameFlexPaddingBottom">
-                    <p data-key="mobileNavigationPage1" class="large"></p>
-                  </a>
-                  <a href="projects.html" class="frameFlexPaddingBottom">
-                    <p data-key="mobileNavigationPage2" class="large"></p>
-                  </a>
-                  <a href="resume.html" class="frameFlexPaddingBottom">
-                    <p data-key="mobileNavigationPage3" class="large"></p>
-                  </a>
-                  <a href="aboutMe.html" class="frameFlexPaddingBottom">
-                    <p data-key="mobileNavigationPage4" class="large"></p>
-                  </a>
-                  <a href="blog.html" class="frameFlexPaddingBottom">
-                    <p data-key="mobileNavigationPage5" class="large"></p>
-                  </a>
-                </div>
-              </div>
-              <div class="frameFlexColumnLarge">
-
-                <p data-key="mobileNavigationSectionTitle2" class="regular"></p>
-                <li class="frameFlexMedium">
-                  <div class="switcherContainer" id="languageSwitcherContainer">
-                    <input type="checkbox" id="languageSwitch">
-                    <label for="languageSwitch" data-state="en" data-key="languageSwitch1" class="small"></label>
-                    <label for="languageSwitch" data-state="es" data-key="languageSwitch2" class="small"></label>
-                  </div>
-                  <div class="switcherContainer" id="themeSwitcherContainer">
-                    <input type="checkbox" id="themeSwitch">
-                    <label for="themeSwitch" data-state="light" data-key="themeSwitch1" class="small"></label>
-                    <label for="themeSwitch" data-state="dark" data-key="themeSwitch2" class="small"></label>
-                  </div>
-                </li>
-              </div>
-              <div class="frameFlexColumnLarge frameFlexColumnLargePadding">
-                <p data-key="mobileNavigationSectionTitle3" class="regular"></p>
-                <div class="frameFlexMedium">
-                  <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
-                      class="fa-brands fa-whatsapp iconLarge"></i></a>
-                  <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon"
-                    target="_blank"><i class="fa-brands fa-linkedin iconLarge"></i></a>
-                  <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
-                      class="fa-brands fa-github iconLarge"></i></a>
-                  <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
-                      class="fa-solid fa-envelope iconLarge"></i></a>
-                </div>
-              </div>
-              <p class="regular" data-key="footerText"></p>
+            <div class="frameFlexMedium">
+              <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
+                  class="fa-brands fa-whatsapp iconMedium"></i></a>
+              <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon"
+                target="_blank"><i class="fa-brands fa-linkedin iconMedium"></i></a>
+              <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
+                  class="fa-brands fa-github iconMedium"></i></a>
+              <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
+                  class="fa-solid fa-envelope iconMedium"></i></a>
             </div>
+
+            <p class="regular" data-key="footerText"></p>
           </ul>
+
         </nav>
+
         <button class="mobileNavToggle" aria-controls="primaryNavigation" aria-expanded="false">
           <svg class="hambuger" viewbox="0 0 100 100" width="36">
             <rect class="hamburgerLine topLine" width="80" height="10" x="10" y="25" rx="5"></rect>
@@ -138,8 +91,8 @@
             <rect class="hamburgerLine bottomLine" width="80" height="10" x="10" y="65" rx="5"></rect>
           </svg>
         </button>
-
       </div>
+
     </header>
 
     <article class="article">
@@ -147,7 +100,7 @@
       <!-- [projectHeader] -->
       <div class="projectHeader padding">
         <div class="frameFlexColumnLarge">
-          <a class="buttonBack" href="projects.html">
+          <a class="buttonSecondary" href="projects.html">
             <i class="fa-solid fa-arrow-left"></i>
             <p data-key="projectPageHeaderButtonBack" class="regular"></p>
           </a>
@@ -156,13 +109,10 @@
           </div>
           <p data-key="cardProjectAtipikoToursTime" class="small"></p>
           <h1 data-key="cardProjectAtipikoToursTitle"></h1>
-          <h4 data-key="cardProjectAtipikoToursDescription"></h4>
-          <a class="buttonPrimary" id="stepLink" href="#stepSection">
-            <p class="regular-bold" data-key="seeProjectButton"></p>
-          </a>
+          <h4 data-key="cardProjectAtipikoToursDescription"></h4>          
         </div>
         <div class="projectImageContainter1">
-          <img src="assets/images/projects/atipikoTours/atipikoToursImageHeader.png" alt="projectImage">
+          <img src="assets/images/projects/atipikoTours/atipikoToursImageHeader.webp" alt="projectImage">
         </div>
       </div>
 
@@ -225,7 +175,7 @@
               <div class="frameFlexColumnMedium">
 
                 <div class="frameFlexSmall">
-                  <img src="assets/images/personas/imageMaria.png" alt="testimonialImage" class="imageExtraLarge">
+                  <img src="assets/images/personas/imageMaria.webp" alt="testimonialImage" class="imageExtraLarge">
                   <div class="frameFlexColumnTiny">
                     <p class="regular"><b>Maria</b></p>
                     <p class="small" data-key="atipikoToursCardAuthor1"></p>
@@ -381,7 +331,7 @@
               <div class="frameFlexColumnMedium">
 
                 <div class="frameFlexSmall">
-                  <img src="assets/images/personas/imageJohn.png" alt="testimonialImage" class="imageExtraLarge">
+                  <img src="assets/images/personas/imageJohn.webp" alt="testimonialImage" class="imageExtraLarge">
                   <div class="frameFlexColumnTiny">
                     <p class="regular"><b>John</b></p>
                     <p class="small" data-key="atipikoToursCardAuthor2"></p>
@@ -545,10 +495,10 @@
               </div>
 
               <!-- [Maria's userJourney] -->
-              <div class="frameFlexColumnMedium">
+              <div class="frameFlexColumnLarge">
 
                 <div class="frameFlexSmall">
-                  <img src="assets/images/personas/imageMaria.png" alt="testimonialImage" class="imageExtraLarge">
+                  <img src="assets/images/personas/imageMaria.webp" alt="testimonialImage" class="imageExtraLarge">
                   <div class="frameFlexColumnTiny">
                     <p class="regular"><b>Maria</b></p>
                     <p class="small" data-key="atipikoToursCardAuthor1"></p>
@@ -639,10 +589,10 @@
               </div>
 
               <!-- [John's userJourney] -->
-              <div class="frameFlexColumnMedium">
+              <div class="frameFlexColumnLarge">
 
                 <div class="frameFlexSmall">
-                  <img src="assets/images/personas/imageJohn.png" alt="testimonialImage" class="imageExtraLarge">
+                  <img src="assets/images/personas/imageJohn.webp" alt="testimonialImage" class="imageExtraLarge">
                   <div class="frameFlexColumnTiny">
                     <p class="regular"><b>John</b></p>
                     <p class="small" data-key="atipikoToursCardAuthor2"></p>
@@ -745,25 +695,25 @@
               <div class="gridTwoAuto">
 
                 <div class="cardCompetitor">
-                  <img class="imageExtraLarge" src="assets/images/projects/atipikoTours/icons/competitors/huakai.png"
+                  <img class="imageExtraLarge" src="assets/images/projects/atipikoTours/icons/competitors/huakai.webp"
                     alt="competitorImage">
                   <p class="regular">Huakai</p>
                 </div>
 
                 <div class="cardCompetitor">
-                  <img class="imageExtraLarge" src="assets/images/projects/atipikoTours/icons/competitors/weroad.png"
+                  <img class="imageExtraLarge" src="assets/images/projects/atipikoTours/icons/competitors/weroad.webp"
                     alt="competitorImage">
                   <p class="regular">We road</p>
                 </div>
 
                 <div class="cardCompetitor">
-                  <img class="imageExtraLarge" src="assets/images/projects/atipikoTours/icons/competitors/terres.png"
+                  <img class="imageExtraLarge" src="assets/images/projects/atipikoTours/icons/competitors/terres.webp"
                     alt="competitorImage">
                   <p class="regular">Terres Llunyanes</p>
                 </div>
 
                 <div class="cardCompetitor">
-                  <img class="imageExtraLarge" src="assets/images/projects/atipikoTours/icons/competitors/trecking.png"
+                  <img class="imageExtraLarge" src="assets/images/projects/atipikoTours/icons/competitors/trecking.webp"
                     alt="competitorImage">
                   <p class="regular">Trekking aventura</p>
                 </div>
@@ -1130,7 +1080,7 @@
                 <div class="gridAutoTwo">
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium" src="assets/images/projects/atipikoTours/icons/atipikoToursIconArrow.png"
+                      <img class="imageMedium" src="assets/images/projects/atipikoTours/icons/atipikoToursIconArrow.webp"
                         alt="icon">
                     </div>
                     <p class="small">arrow</p>
@@ -1138,90 +1088,90 @@
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
                       <img class="imageMedium"
-                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconConversation1.png" alt="icon">
+                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconConversation1.webp" alt="icon">
                     </div>
                     <p class="small">conversation1</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
                       <img class="imageMedium"
-                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconConversation2.png" alt="icon">
+                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconConversation2.webp" alt="icon">
                     </div>
                     <p class="small">conversation2</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
                       <img class="imageMedium"
-                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconCopyright.png" alt="icon">
+                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconCopyright.webp" alt="icon">
                     </div>
                     <p class="small">copyright</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
                       <img class="imageMedium"
-                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconCamera.png" alt="icon">
+                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconCamera.webp" alt="icon">
                     </div>
                     <p class="small">camera</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
                       <img class="imageMedium"
-                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconClose1.png" alt="icon">
+                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconClose1.webp" alt="icon">
                     </div>
                     <p class="small">close1</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
                       <img class="imageMedium"
-                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconClose2.png" alt="icon">
+                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconClose2.webp" alt="icon">
                     </div>
                     <p class="small">close2</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
                       <img class="imageMedium"
-                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconDocument.png" alt="icon">
+                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconDocument.webp" alt="icon">
                     </div>
                     <p class="small">document</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
                       <img class="imageMedium"
-                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconFacebook.png" alt="icon">
+                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconFacebook.webp" alt="icon">
                     </div>
                     <p class="small">facebook</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
                       <img class="imageMedium"
-                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconInstagram.png" alt="icon">
+                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconInstagram.webp" alt="icon">
                     </div>
                     <p class="small">instagram</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
                       <img class="imageMedium"
-                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconLetter.png" alt="icon">
+                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconLetter.webp" alt="icon">
                     </div>
                     <p class="small">letter</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
                       <img class="imageMedium"
-                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconLocation.png" alt="icon">
+                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconLocation.webp" alt="icon">
                     </div>
                     <p class="small">location1</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
                       <img class="imageMedium"
-                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconLocation2.png" alt="icon">
+                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconLocation2.webp" alt="icon">
                     </div>
                     <p class="small">location2</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium" src="assets/images/projects/atipikoTours/icons/atipikoToursIconQuote.png"
+                      <img class="imageMedium" src="assets/images/projects/atipikoTours/icons/atipikoToursIconQuote.webp"
                         alt="icon">
                     </div>
                     <p class="small">quote</p>
@@ -1229,27 +1179,27 @@
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
                       <img class="imageMedium"
-                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconRefresh.png" alt="icon">
+                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconRefresh.webp" alt="icon">
                     </div>
                     <p class="small">refresh</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium" src="assets/images/projects/atipikoTours/icons/atipikoToursIconStar.png"
+                      <img class="imageMedium" src="assets/images/projects/atipikoTours/icons/atipikoToursIconStar.webp"
                         alt="icon">
                     </div>
                     <p class="small">star</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium" src="assets/images/projects/atipikoTours/icons/atipikoToursIconTick1.png"
+                      <img class="imageMedium" src="assets/images/projects/atipikoTours/icons/atipikoToursIconTick1.webp"
                         alt="icon">
                     </div>
                     <p class="small">tick1</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium" src="assets/images/projects/atipikoTours/icons/atipikoToursIconTick2.png"
+                      <img class="imageMedium" src="assets/images/projects/atipikoTours/icons/atipikoToursIconTick2.webp"
                         alt="icon">
                     </div>
                     <p class="small">tick2</p>
@@ -1257,21 +1207,21 @@
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
                       <img class="imageMedium"
-                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconTwitter.png" alt="icon">
+                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconTwitter.webp" alt="icon">
                     </div>
                     <p class="small">twitter</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
                       <img class="imageMedium"
-                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconYoutube.png" alt="icon">
+                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconYoutube.webp" alt="icon">
                     </div>
                     <p class="small">youtube</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
                       <img class="imageMedium"
-                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconWhatsapp.png" alt="icon">
+                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconWhatsapp.webp" alt="icon">
                     </div>
                     <p class="small">whatsapp</p>
                   </div>
@@ -1293,28 +1243,28 @@
                 <div class="gridAutoOne">
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="componentContainer">
-                      <img src="assets/images/projects/atipikoTours/components/atipikoToursComponentPeninsula.png"
+                      <img src="assets/images/projects/atipikoTours/components/atipikoToursComponentPeninsula.webp"
                         alt="component">
                     </div>
                     <p class="small">travelCardPeninsula</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="componentContainer">
-                      <img src="assets/images/projects/atipikoTours/components/atipikoToursComponentEgipto.png"
+                      <img src="assets/images/projects/atipikoTours/components/atipikoToursComponentEgipto.webp"
                         alt="component">
                     </div>
                     <p class="small">travelCardEgipto</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="componentContainer">
-                      <img src="assets/images/projects/atipikoTours/components/atipikoToursComponentIndia.png"
+                      <img src="assets/images/projects/atipikoTours/components/atipikoToursComponentIndia.webp"
                         alt="component">
                     </div>
                     <p class="small">travelCardIndia</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="componentContainer">
-                      <img src="assets/images/projects/atipikoTours/components/atipikoToursComponentFrancia.png"
+                      <img src="assets/images/projects/atipikoTours/components/atipikoToursComponentFrancia.webp"
                         alt="component">
                     </div>
                     <p class="small">travelCardFrancia</p>
@@ -1338,27 +1288,27 @@
             <div class="frameFlexColumnMassive">
 
               <figure>
-                <img src="assets/images/projects/atipikoTours/atipiko__laptopFrame1.png" alt="design1">
+                <img src="assets/images/projects/atipikoTours/atipiko__laptopFrame1.webp" alt="design1">
               </figure>
 
               <figure class="mobileFrame">
-                <img src="assets/images/projects/atipikoTours/atipiko__mobileFrame1.png" alt="design2">
+                <img src="assets/images/projects/atipikoTours/atipiko__mobileFrame1.webp" alt="design2">
               </figure>
 
               <figure>
-                <img src="assets/images/projects/atipikoTours/atipiko__laptopFrame2.png" alt="design3">
+                <img src="assets/images/projects/atipikoTours/atipiko__laptopFrame2.webp" alt="design3">
               </figure>
 
               <figure class="mobileFrame">
-                <img src="assets/images/projects/atipikoTours/atipiko__mobileFrame2.png" alt="design4">
+                <img src="assets/images/projects/atipikoTours/atipiko__mobileFrame2.webp" alt="design4">
               </figure>
 
               <figure>
-                <img src="assets/images/projects/atipikoTours/atipiko__laptopFrame3.png" alt="design5">
+                <img src="assets/images/projects/atipikoTours/atipiko__laptopFrame3.webp" alt="design5">
               </figure>
 
               <figure class="mobileFrame">
-                <img src="assets/images/projects/atipikoTours/atipiko__mobileFrame3.png" alt="design6">
+                <img src="assets/images/projects/atipikoTours/atipiko__mobileFrame3.webp" alt="design6">
               </figure>
 
             </div>
@@ -1428,7 +1378,7 @@
         <!-- [tattooParadise] -->
         <a class="cardProject" href="tattooParadise.html">
           <div class="cardProjectImageContainer">
-            <img class="cardProjectImage" src="assets/images/projects/tattooParadise/cardProject__tattooParadise.png"
+            <img class="cardProjectImage" src="assets/images/projects/tattooParadise/cardProject__tattooParadise.webp"
               alt="cardProjectImage">
           </div>
           <div class="frameFlexColumnTiny">
@@ -1446,7 +1396,7 @@
         <!-- [portfolio] -->
         <a class="cardProject" href="portfolio.html">
           <div class="cardProjectImageContainer">
-            <img class="cardProjectImage" src="assets/images/projects/portfolio/cardProject__portfolio.png"
+            <img class="cardProjectImage" src="assets/images/projects/portfolio/cardProject__portfolio.webp"
               alt="cardProjectImage">
           </div>
           <div class="frameFlexColumnTiny">
@@ -1464,7 +1414,7 @@
         <!-- [geomites] -->
         <a class="cardProject" href="geomites.html">
           <div class="cardProjectImageContainer">
-            <img class="cardProjectImage" src="assets/images/projects/geomites/cardProject__geomites.png"
+            <img class="cardProjectImage" src="assets/images/projects/geomites/cardProject__geomites.webp"
               alt="cardProjectImage">
           </div>
           <div class="frameFlexColumnTiny">

@@ -150,13 +150,13 @@ async function updateGreeting() {
 
   if (hours >= 6 && hours < 12) {
     greetingsKey = 'greetingsMorning';
-    imageSrc = 'assets/icons/greetings/morning.png';
+    imageSrc = 'assets/icons/greetings/morning.webp';
   } else if (hours >= 12 && hours < 20) {
     greetingsKey = 'greetingsAfternoon';
-    imageSrc = 'assets/icons/greetings/afternoon.png';
+    imageSrc = 'assets/icons/greetings/afternoon.webp';
   } else {
     greetingsKey = 'greetingsEvening';
-    imageSrc = 'assets/icons/greetings/evening.png';
+    imageSrc = 'assets/icons/greetings/evening.webp';
   }
 
   const greetingText = getTranslation(greetingsKey);

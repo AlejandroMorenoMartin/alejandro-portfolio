@@ -35,6 +35,7 @@
 
     <!-- [navBar] -->
     <header class="navBar">
+
       <div class="navBarContainer">
         <a href="index.html" alt="logoAlejandro" id="logoLink" viewBox="0 0 24 24">
           <svg class="logo imageLarge" viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg">
@@ -42,25 +43,19 @@
               d="M5.86048 20.6292L15.0291 2.83789H16.2875L32.0001 30.7269H24.5213L16.4673 16.5975H15.2089L13.7347 20.6292H5.86048ZM3.63149 24.439H16.144L20.0631 30.8379H0L3.63149 24.439Z" />
           </svg>
         </a>
-        <nav class="desktopNavigation" id="primaryNavigation">
-          <ul aria-label="Primary" role="list" class=" navBarNavigation">
-            <ul class="navBarFrameNavigation">
-              <li class="navBarFrameLink active"><a href="index.html">
-                  <p data-key="navBarFrameLink1"></p>
-                </a></li>
-              <li class="navBarFrameLink"><a href="projects.html">
-                  <p data-key="navBarFrameLink2"></p>
-                </a></li>
-              <li class="navBarFrameLink"><a href="resume.html">
-                  <p data-key="navBarFrameLink3"></p>
-                </a></li>
-              <li class="navBarFrameLink"><a href="aboutMe.html">
-                  <p data-key="navBarFrameLink4"></p>
-                </a></li>
-              <li class="navBarFrameLink"><a href="blog.html">
-                  <p data-key="navBarFrameLink5"></p>
-                </a></li>
-            </ul>
+
+        <nav class="mobileNavigation" id="primaryNavigation">
+
+          <ul aria-label="Primary" role="list" class=" navBarNavigation frameFlexColumnExtraLarge">
+            <a href="index.html" class="frameFlexPaddingBottom active">
+              <p data-key="mobileNavigationPage1" class="large"></p>
+            </a>
+            <a href="projects.html" class="frameFlexPaddingBottom">
+              <p data-key="mobileNavigationPage2" class="large"></p>
+            </a>
+            <a href="resume.html" class="frameFlexPaddingBottom">
+              <p data-key="mobileNavigationPage3" class="large"></p>
+            </a>
             <li class="frameFlexMedium">
               <div class="switcherContainer" id="languageSwitcherContainer">
                 <input type="checkbox" id="languageSwitch">
@@ -73,64 +68,22 @@
                 <label for="themeSwitch" data-state="dark" data-key="themeSwitch2" class="small"></label>
               </div>
             </li>
-
-        </nav>
-        <nav class="mobileNavigation" id="primaryNavigation">
-          <ul aria-label="Primary" role="list" class=" navBarNavigation">
-            <div class="frameFlexColumnExtraLarge">
-              <div class="frameFlexColumnLarge">
-                <p data-key="mobileNavigationSectionTitle1" class="regular"></p>
-                <div class="frameFlexColumnMedium">
-                  <a href="index.html" class="frameFlexPaddingBottom active">
-                    <p data-key="mobileNavigationPage1" class="large"></p>
-                  </a>
-                  <a href="projects.html" class="frameFlexPaddingBottom">
-                    <p data-key="mobileNavigationPage2" class="large"></p>
-                  </a>
-                  <a href="resume.html" class="frameFlexPaddingBottom">
-                    <p data-key="mobileNavigationPage3" class="large"></p>
-                  </a>
-                  <a href="aboutMe.html" class="frameFlexPaddingBottom">
-                    <p data-key="mobileNavigationPage4" class="large"></p>
-                  </a>
-                  <a href="blog.html" class="frameFlexPaddingBottom">
-                    <p data-key="mobileNavigationPage5" class="large"></p>
-                  </a>
-                </div>
-              </div>
-              <div class="frameFlexColumnLarge">
-
-                <p data-key="mobileNavigationSectionTitle2" class="regular"></p>
-                <li class="frameFlexMedium">
-                  <div class="switcherContainer" id="languageSwitcherContainer">
-                    <input type="checkbox" id="languageSwitch">
-                    <label for="languageSwitch" data-state="en" data-key="languageSwitch1" class="small"></label>
-                    <label for="languageSwitch" data-state="es" data-key="languageSwitch2" class="small"></label>
-                  </div>
-                  <div class="switcherContainer" id="themeSwitcherContainer">
-                    <input type="checkbox" id="themeSwitch">
-                    <label for="themeSwitch" data-state="light" data-key="themeSwitch1" class="small"></label>
-                    <label for="themeSwitch" data-state="dark" data-key="themeSwitch2" class="small"></label>
-                  </div>
-                </li>
-              </div>
-              <div class="frameFlexColumnLarge frameFlexColumnLargePadding">
-                <p data-key="mobileNavigationSectionTitle3" class="regular"></p>
-                <div class="frameFlexMedium">
-                  <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
-                      class="fa-brands fa-whatsapp iconLarge"></i></a>
-                  <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon"
-                    target="_blank"><i class="fa-brands fa-linkedin iconLarge"></i></a>
-                  <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
-                      class="fa-brands fa-github iconLarge"></i></a>
-                  <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
-                      class="fa-solid fa-envelope iconLarge"></i></a>
-                </div>
-              </div>
-              <p class="regular" data-key="footerText"></p>
+            <div class="frameFlexMedium">
+              <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
+                  class="fa-brands fa-whatsapp iconMedium"></i></a>
+              <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon"
+                target="_blank"><i class="fa-brands fa-linkedin iconMedium"></i></a>
+              <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
+                  class="fa-brands fa-github iconMedium"></i></a>
+              <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
+                  class="fa-solid fa-envelope iconMedium"></i></a>
             </div>
+
+            <p class="regular" data-key="footerText"></p>
           </ul>
+
         </nav>
+
         <button class="mobileNavToggle" aria-controls="primaryNavigation" aria-expanded="false">
           <svg class="hambuger" viewbox="0 0 100 100" width="36">
             <rect class="hamburgerLine topLine" width="80" height="10" x="10" y="25" rx="5"></rect>
@@ -138,15 +91,15 @@
             <rect class="hamburgerLine bottomLine" width="80" height="10" x="10" y="65" rx="5"></rect>
           </svg>
         </button>
-
       </div>
+
     </header>
 
     <div class="mainSections">
 
       <!-- [hero] -->
       <div class="mainHero">
-        <img class="mainHeroImage" src="assets/images/mainHeroImage.png" alt="alejandroMoreno">
+        <img class="mainHeroImage" src="assets/images/mainHeroImage.webp" alt="alejandroMoreno">
         <div class="frameFlexColumnLarge">
           <div class="frameFlexColumnMedium">
             <div class="frameFlexMedium">
@@ -160,7 +113,7 @@
             <h4 data-key="mainHeroP2"></h4>
           </div>
           <div class="frameFlexMedium">
-            <a id="stepLink" class="buttonTerciary" href="#stepSection">
+            <a id="stepLink" class="buttonSecondary" href="#stepSection">
               <p class="regular-bold" data-key="mainHeroButton1"></p>
               <i class="fa-solid fa-arrow-down iconMedium"></i>
             </a>
@@ -186,7 +139,7 @@
           <!-- [geomites] -->
           <a class="cardProject" href="geomites.html">
             <div class="cardProjectImageContainer">
-              <img class="cardProjectImage" src="assets/images/projects/geomites/cardProject__geomites.png"
+              <img class="cardProjectImage" src="assets/images/projects/geomites/cardProject__geomites.webp"
                 alt="cardProjectImage">
             </div>
             <div class="frameFlexColumnTiny">
@@ -207,7 +160,7 @@
           <!-- [tattoParadise] -->
           <a class="cardProject" href="tattooParadise.html">
             <div class="cardProjectImageContainer">
-              <img class="cardProjectImage" src="assets/images/projects/tattooParadise/cardProject__tattooParadise.png"
+              <img class="cardProjectImage" src="assets/images/projects/tattooParadise/cardProject__tattooParadise.webp"
                 alt="cardProjectImage">
             </div>
             <div class="frameFlexColumnTiny">
@@ -225,7 +178,7 @@
           <!-- [atipikoTours] -->
           <a class="cardProject" href="atipikoTours.html">
             <div class="cardProjectImageContainer">
-              <img class="cardProjectImage" src="assets/images/projects/atipikoTours/cardProject__atipikoTours.png"
+              <img class="cardProjectImage" src="assets/images/projects/atipikoTours/cardProject__atipikoTours.webp"
                 alt="cardProjectImage">
             </div>
             <div class="frameFlexColumnTiny">
@@ -251,32 +204,32 @@
         </div>
         <div class="scroller" data-speed="fast">
           <ul class="tagList scrollerInner">
-            <li><img src="assets/icons/toolstack/adobe-creative-suite.png" alt="scrollerIcon" class="imageExtraLarge">
+            <li><img src="assets/icons/toolstack/adobe-creative-suite.webp" alt="scrollerIcon" class="imageExtraLarge">
             </li>
-            <li><img src="assets/icons/toolstack/asana.png" alt="scrollerIcon" class="imageExtraLarge"></li>
-            <li><img src="assets/icons/toolstack/axure.png" alt="scrollerIcon" class="imageExtraLarge"></li>
-            <li><img src="assets/icons/toolstack/css.png" alt="scrollerIcon" class="imageExtraLarge"></li>
-            <li><img src="assets/icons/toolstack/figma.png" alt="scrollerIcon" class="imageExtraLarge"></li>
-            <li><img src="assets/icons/toolstack/framer.png" alt="scrollerIcon" class="imageExtraLarge"></li>
-            <li><img src="assets/icons/toolstack/html.png" alt="scrollerIcon" class="imageExtraLarge"></li>
-            <li><img src="assets/icons/toolstack/Jira.png" alt="scrollerIcon" class="imageExtraLarge"></li>
-            <li><img src="assets/icons/toolstack/js.png" alt="scrollerIcon" class="imageExtraLarge"></li>
-            <li><img src="assets/icons/toolstack/sketch.png" alt="scrollerIcon" class="imageExtraLarge"></li>
-            <li><img src="assets/icons/toolstack/webflow.png" alt="scrollerIcon" class="imageExtraLarge"></li>
-            <li><img src="assets/icons/toolstack/wordpress.png" alt="scrollerIcon" class="imageExtraLarge"></li>
-            <li><img src="assets/icons/toolstack/adobe-creative-suite.png" alt="scrollerIcon" class="imageExtraLarge">
+            <li><img src="assets/icons/toolstack/asana.webp" alt="scrollerIcon" class="imageExtraLarge"></li>
+            <li><img src="assets/icons/toolstack/axure.webp" alt="scrollerIcon" class="imageExtraLarge"></li>
+            <li><img src="assets/icons/toolstack/css.webp" alt="scrollerIcon" class="imageExtraLarge"></li>
+            <li><img src="assets/icons/toolstack/figma.webp" alt="scrollerIcon" class="imageExtraLarge"></li>
+            <li><img src="assets/icons/toolstack/framer.webp" alt="scrollerIcon" class="imageExtraLarge"></li>
+            <li><img src="assets/icons/toolstack/html.webp" alt="scrollerIcon" class="imageExtraLarge"></li>
+            <li><img src="assets/icons/toolstack/Jira.webp" alt="scrollerIcon" class="imageExtraLarge"></li>
+            <li><img src="assets/icons/toolstack/js.webp" alt="scrollerIcon" class="imageExtraLarge"></li>
+            <li><img src="assets/icons/toolstack/sketch.webp" alt="scrollerIcon" class="imageExtraLarge"></li>
+            <li><img src="assets/icons/toolstack/webflow.webp" alt="scrollerIcon" class="imageExtraLarge"></li>
+            <li><img src="assets/icons/toolstack/wordpress.webp" alt="scrollerIcon" class="imageExtraLarge"></li>
+            <li><img src="assets/icons/toolstack/adobe-creative-suite.webp" alt="scrollerIcon" class="imageExtraLarge">
             </li>
-            <li><img src="assets/icons/toolstack/asana.png" alt="scrollerIcon" class="imageExtraLarge"></li>
-            <li><img src="assets/icons/toolstack/axure.png" alt="scrollerIcon" class="imageExtraLarge"></li>
-            <li><img src="assets/icons/toolstack/css.png" alt="scrollerIcon" class="imageExtraLarge"></li>
-            <li><img src="assets/icons/toolstack/figma.png" alt="scrollerIcon" class="imageExtraLarge"></li>
-            <li><img src="assets/icons/toolstack/framer.png" alt="scrollerIcon" class="imageExtraLarge"></li>
-            <li><img src="assets/icons/toolstack/html.png" alt="scrollerIcon" class="imageExtraLarge"></li>
-            <li><img src="assets/icons/toolstack/Jira.png" alt="scrollerIcon" class="imageExtraLarge"></li>
-            <li><img src="assets/icons/toolstack/js.png" alt="scrollerIcon" class="imageExtraLarge"></li>
-            <li><img src="assets/icons/toolstack/sketch.png" alt="scrollerIcon" class="imageExtraLarge"></li>
-            <li><img src="assets/icons/toolstack/webflow.png" alt="scrollerIcon" class="imageExtraLarge"></li>
-            <li><img src="assets/icons/toolstack/wordpress.png" alt="scrollerIcon" class="imageExtraLarge"></li>
+            <li><img src="assets/icons/toolstack/asana.webp" alt="scrollerIcon" class="imageExtraLarge"></li>
+            <li><img src="assets/icons/toolstack/axure.webp" alt="scrollerIcon" class="imageExtraLarge"></li>
+            <li><img src="assets/icons/toolstack/css.webp" alt="scrollerIcon" class="imageExtraLarge"></li>
+            <li><img src="assets/icons/toolstack/figma.webp" alt="scrollerIcon" class="imageExtraLarge"></li>
+            <li><img src="assets/icons/toolstack/framer.webp" alt="scrollerIcon" class="imageExtraLarge"></li>
+            <li><img src="assets/icons/toolstack/html.webp" alt="scrollerIcon" class="imageExtraLarge"></li>
+            <li><img src="assets/icons/toolstack/Jira.webp" alt="scrollerIcon" class="imageExtraLarge"></li>
+            <li><img src="assets/icons/toolstack/js.webp" alt="scrollerIcon" class="imageExtraLarge"></li>
+            <li><img src="assets/icons/toolstack/sketch.webp" alt="scrollerIcon" class="imageExtraLarge"></li>
+            <li><img src="assets/icons/toolstack/webflow.webp" alt="scrollerIcon" class="imageExtraLarge"></li>
+            <li><img src="assets/icons/toolstack/wordpress.webp" alt="scrollerIcon" class="imageExtraLarge"></li>
           </ul>
         </div>
       </div>
@@ -330,7 +283,7 @@
           <div class="cardTestimonial">
             <p class="regular padding" data-key="cardTestimonial1Description"></p>
             <div class="frameFlexSmall">
-              <img src="assets/images/personas/imageDiego.png" alt="testimonialImage" class="imageExtraLarge">
+              <img src="assets/images/personas/imageDiego.webp" alt="testimonialImage" class="imageExtraLarge">
               <div class="frameFlexColumnTiny">
                 <p class="regular"><b>Diego Villaroel</b></p>
                 <p class="small" data-key="cardTestimonial1Position"></p>
@@ -340,7 +293,7 @@
           <div class="cardTestimonial">
             <p class="regular padding" data-key="cardTestimonial2Description"></p>
             <div class="frameFlexSmall">
-              <img src="assets/images/personas/imageMarc.png" alt="testimonialImage" class="imageExtraLarge">
+              <img src="assets/images/personas/imageMarc.webp" alt="testimonialImage" class="imageExtraLarge">
               <div class="frameFlexColumnTiny">
                 <p class="regular"><b>Marc Bernardo</b></p>
                 <p class="small" data-key="cardTestimonial2Position"></p>
@@ -351,7 +304,7 @@
           <div class="cardTestimonial">
             <p class="regular padding" data-key="cardTestimonial3Description"></p>
             <div class="frameFlexSmall">
-              <img src="assets/images/personas/imageRuben.png" alt="testimonialImage" class="imageExtraLarge">
+              <img src="assets/images/personas/imageRuben.webp" alt="testimonialImage" class="imageExtraLarge">
               <div class="frameFlexColumnTiny">
                 <p class="regular"><b>Rubén Hinarejos</b></p>
                 <p class="small" data-key="cardTestimonial3Position"></p>
@@ -361,7 +314,7 @@
           <div class="cardTestimonial">
             <p class="regular padding" data-key="cardTestimonial4Description"></p>
             <div class="frameFlexSmall">
-              <img src="assets/images/personas/imageAlvaro.png" alt="testimonialImage" class="imageExtraLarge">
+              <img src="assets/images/personas/imageAlvaro.webp" alt="testimonialImage" class="imageExtraLarge">
               <div class="frameFlexColumnTiny">
                 <p class="regular"><b>Álvaro Torrijos</b></p>
                 <p class="small" data-key="cardTestimonial4Position"></p>
@@ -371,7 +324,7 @@
           <div class="cardTestimonial">
             <p class="regular padding" data-key="cardTestimonial5Description"></p>
             <div class="frameFlexSmall">
-              <img src="assets/images/personas/imageLluis.png" alt="testimonialImage" class="imageExtraLarge">
+              <img src="assets/images/personas/imageLluis.webp" alt="testimonialImage" class="imageExtraLarge">
               <div class="frameFlexColumnTiny">
                 <p class="regular"><b>Lluís Fortuny</b></p>
                 <p class="small" data-key="cardTestimonial5Position"></p>
@@ -391,7 +344,7 @@
         <div class="gridTwo">
           <a class="cardReading">
             <div class="cardReadingImageContainer">
-              <img class="cardReadingImage" src="assets/images/readings/thePathToSeniorProductDesigner.png"
+              <img class="cardReadingImage" src="assets/images/readings/thePathToSeniorProductDesigner.webp"
                 alt="readingImage">
             </div>
             <div class="frameFlexColumnMedium">
@@ -405,7 +358,7 @@
           </a>
           <a class="cardReading">
             <div class="cardReadingImageContainer">
-              <img class="cardReadingImage" src="assets/images/readings/solvingProductDesignExercises.png"
+              <img class="cardReadingImage" src="assets/images/readings/solvingProductDesignExercises.webp"
                 alt="readingImage">
             </div>
             <div class="frameFlexColumnMedium">
@@ -419,8 +372,7 @@
           </a>
           <a class="cardReading">
             <div class="cardReadingImageContainer">
-              <img class="cardReadingImage" src="assets/images/readings/mentalModels.png"
-                alt="readingImage">
+              <img class="cardReadingImage" src="assets/images/readings/mentalModels.webp" alt="readingImage">
             </div>
             <div class="frameFlexColumnMedium">
               <div class="frameFlexColumnTiny">
@@ -433,13 +385,12 @@
           </a>
           <a class="cardReading">
             <div class="cardReadingImageContainer">
-              <img class="cardReadingImage" src="assets/images/readings/theMakingOfAManager.png"
-                alt="readingImage">
+              <img class="cardReadingImage" src="assets/images/readings/theMakingOfAManager.webp" alt="readingImage">
             </div>
             <div class="frameFlexColumnMedium">
               <div class="frameFlexColumnTiny">
                 <p class="regular-bold" data-key="cardReading4Title"></p>
-                <p class="regular" data-key="cardReadin41Author"></p>
+                <p class="regular" data-key="cardReading4Author"></p>
               </div>
               <p class="regular" data-key="cardReading4Info"></p>
               <p class="small" data-key="cardReading4Pages"></p>
@@ -447,7 +398,7 @@
           </a>
           <a class="cardReading">
             <div class="cardReadingImageContainer">
-              <img class="cardReadingImage" src="assets/images/readings/seductiveInteractionDesign.png"
+              <img class="cardReadingImage" src="assets/images/readings/seductiveInteractionDesign.webp"
                 alt="readingImage">
             </div>
             <div class="frameFlexColumnMedium">
@@ -461,7 +412,7 @@
           </a>
           <a class="cardReading">
             <div class="cardReadingImageContainer">
-              <img class="cardReadingImage" src="assets/images/readings/theDesignOfEveryDayThings.png"
+              <img class="cardReadingImage" src="assets/images/readings/theDesignOfEveryDayThings.webp"
                 alt="readingImage">
             </div>
             <div class="frameFlexColumnMedium">
@@ -475,8 +426,7 @@
           </a>
           <a class="cardReading">
             <div class="cardReadingImageContainer">
-              <img class="cardReadingImage" src="assets/images/readings/dontMakeMeThink.png"
-                alt="readingImage">
+              <img class="cardReadingImage" src="assets/images/readings/dontMakeMeThink.webp" alt="readingImage">
             </div>
             <div class="frameFlexColumnMedium">
               <div class="frameFlexColumnTiny">
@@ -489,8 +439,7 @@
           </a>
           <a class="cardReading">
             <div class="cardReadingImageContainer">
-              <img class="cardReadingImage" src="assets/images/readings/aboutFaceEssentials.png"
-                alt="readingImage">
+              <img class="cardReadingImage" src="assets/images/readings/aboutFaceEssentials.webp" alt="readingImage">
             </div>
             <div class="frameFlexColumnMedium">
               <div class="frameFlexColumnTiny">
@@ -503,8 +452,7 @@
           </a>
           <a class="cardReading">
             <div class="cardReadingImageContainer">
-              <img class="cardReadingImage" src="assets/images/readings/hooked.png"
-                alt="readingImage">
+              <img class="cardReadingImage" src="assets/images/readings/hooked.webp" alt="readingImage">
             </div>
             <div class="frameFlexColumnMedium">
               <div class="frameFlexColumnTiny">
@@ -517,8 +465,7 @@
           </a>
           <a class="cardReading">
             <div class="cardReadingImageContainer">
-              <img class="cardReadingImage" src="assets/images/readings/intuitiveDesign.png"
-                alt="readingImage">
+              <img class="cardReadingImage" src="assets/images/readings/intuitiveDesign.webp" alt="readingImage">
             </div>
             <div class="frameFlexColumnMedium">
               <div class="frameFlexColumnTiny">
@@ -531,7 +478,7 @@
           </a>
           <a class="cardReading">
             <div class="cardReadingImageContainer">
-              <img class="cardReadingImage" src="assets/images/readings/articulatingDesignDecisions.png"
+              <img class="cardReadingImage" src="assets/images/readings/articulatingDesignDecisions.webp"
                 alt="readingImage">
             </div>
             <div class="frameFlexColumnMedium">
@@ -545,7 +492,7 @@
           </a>
           <a class="cardReading">
             <div class="cardReadingImageContainer">
-              <img class="cardReadingImage" src="assets/images/readings/theUserExperienceTeamOfOne.png"
+              <img class="cardReadingImage" src="assets/images/readings/theUserExperienceTeamOfOne.webp"
                 alt="readingImage">
             </div>
             <div class="frameFlexColumnMedium">

@@ -35,6 +35,7 @@
 
     <!-- [navBar] -->
     <header class="navBar">
+
       <div class="navBarContainer">
         <a href="index.html" alt="logoAlejandro" id="logoLink" viewBox="0 0 24 24">
           <svg class="logo imageLarge" viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg">
@@ -42,25 +43,19 @@
               d="M5.86048 20.6292L15.0291 2.83789H16.2875L32.0001 30.7269H24.5213L16.4673 16.5975H15.2089L13.7347 20.6292H5.86048ZM3.63149 24.439H16.144L20.0631 30.8379H0L3.63149 24.439Z" />
           </svg>
         </a>
-        <nav class="desktopNavigation" id="primaryNavigation">
-          <ul aria-label="Primary" role="list" class=" navBarNavigation">
-            <ul class="navBarFrameNavigation">
-              <li class="navBarFrameLink"><a href="index.html">
-                  <p data-key="navBarFrameLink1"></p>
-                </a></li>
-              <li class="navBarFrameLink"><a href="projects.html">
-                  <p data-key="navBarFrameLink2"></p>
-                </a></li>
-              <li class="navBarFrameLink"><a href="resume.html">
-                  <p data-key="navBarFrameLink3"></p>
-                </a></li>
-              <li class="navBarFrameLink"><a href="aboutMe.html">
-                  <p data-key="navBarFrameLink4"></p>
-                </a></li>
-              <li class="navBarFrameLink"><a href="blog.html">
-                  <p data-key="navBarFrameLink5"></p>
-                </a></li>
-            </ul>
+
+        <nav class="mobileNavigation" id="primaryNavigation">
+
+          <ul aria-label="Primary" role="list" class=" navBarNavigation frameFlexColumnExtraLarge">
+            <a href="index.html" class="frameFlexPaddingBottom">
+              <p data-key="mobileNavigationPage1" class="large"></p>
+            </a>
+            <a href="projects.html" class="frameFlexPaddingBottom active">
+              <p data-key="mobileNavigationPage2" class="large"></p>
+            </a>
+            <a href="resume.html" class="frameFlexPaddingBottom">
+              <p data-key="mobileNavigationPage3" class="large"></p>
+            </a>
             <li class="frameFlexMedium">
               <div class="switcherContainer" id="languageSwitcherContainer">
                 <input type="checkbox" id="languageSwitch">
@@ -73,64 +68,22 @@
                 <label for="themeSwitch" data-state="dark" data-key="themeSwitch2" class="small"></label>
               </div>
             </li>
-
-        </nav>
-        <nav class="mobileNavigation" id="primaryNavigation">
-          <ul aria-label="Primary" role="list" class=" navBarNavigation">
-            <div class="frameFlexColumnExtraLarge">
-              <div class="frameFlexColumnLarge">
-                <p data-key="mobileNavigationSectionTitle1" class="regular"></p>
-                <div class="frameFlexColumnMedium">
-                  <a href="index.html" class="frameFlexPaddingBottom">
-                    <p data-key="mobileNavigationPage1" class="large"></p>
-                  </a>
-                  <a href="projects.html" class="frameFlexPaddingBottom">
-                    <p data-key="mobileNavigationPage2" class="large"></p>
-                  </a>
-                  <a href="resume.html" class="frameFlexPaddingBottom">
-                    <p data-key="mobileNavigationPage3" class="large"></p>
-                  </a>
-                  <a href="aboutMe.html" class="frameFlexPaddingBottom">
-                    <p data-key="mobileNavigationPage4" class="large"></p>
-                  </a>
-                  <a href="blog.html" class="frameFlexPaddingBottom">
-                    <p data-key="mobileNavigationPage5" class="large"></p>
-                  </a>
-                </div>
-              </div>
-              <div class="frameFlexColumnLarge">
-
-                <p data-key="mobileNavigationSectionTitle2" class="regular"></p>
-                <li class="frameFlexMedium">
-                  <div class="switcherContainer" id="languageSwitcherContainer">
-                    <input type="checkbox" id="languageSwitch">
-                    <label for="languageSwitch" data-state="en" data-key="languageSwitch1" class="small"></label>
-                    <label for="languageSwitch" data-state="es" data-key="languageSwitch2" class="small"></label>
-                  </div>
-                  <div class="switcherContainer" id="themeSwitcherContainer">
-                    <input type="checkbox" id="themeSwitch">
-                    <label for="themeSwitch" data-state="light" data-key="themeSwitch1" class="small"></label>
-                    <label for="themeSwitch" data-state="dark" data-key="themeSwitch2" class="small"></label>
-                  </div>
-                </li>
-              </div>
-              <div class="frameFlexColumnLarge frameFlexColumnLargePadding">
-                <p data-key="mobileNavigationSectionTitle3" class="regular"></p>
-                <div class="frameFlexMedium">
-                  <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
-                      class="fa-brands fa-whatsapp iconLarge"></i></a>
-                  <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon"
-                    target="_blank"><i class="fa-brands fa-linkedin iconLarge"></i></a>
-                  <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
-                      class="fa-brands fa-github iconLarge"></i></a>
-                  <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
-                      class="fa-solid fa-envelope iconLarge"></i></a>
-                </div>
-              </div>
-              <p class="regular" data-key="footerText"></p>
+            <div class="frameFlexMedium">
+              <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
+                  class="fa-brands fa-whatsapp iconMedium"></i></a>
+              <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon"
+                target="_blank"><i class="fa-brands fa-linkedin iconMedium"></i></a>
+              <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
+                  class="fa-brands fa-github iconMedium"></i></a>
+              <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
+                  class="fa-solid fa-envelope iconMedium"></i></a>
             </div>
+
+            <p class="regular" data-key="footerText"></p>
           </ul>
+
         </nav>
+
         <button class="mobileNavToggle" aria-controls="primaryNavigation" aria-expanded="false">
           <svg class="hambuger" viewbox="0 0 100 100" width="36">
             <rect class="hamburgerLine topLine" width="80" height="10" x="10" y="25" rx="5"></rect>
@@ -138,8 +91,8 @@
             <rect class="hamburgerLine bottomLine" width="80" height="10" x="10" y="65" rx="5"></rect>
           </svg>
         </button>
-
       </div>
+
     </header>
 
     <article class="article">
@@ -147,7 +100,7 @@
       <!-- [projectHeader] -->
       <div class="projectHeader padding">
         <div class="frameFlexColumnLarge">
-          <a class="buttonBack" href="projects.html">
+          <a class="buttonSecondary" href="projects.html">
             <i class="fa-solid fa-arrow-left"></i>
             <p data-key="projectPageHeaderButtonBack" class="regular"></p>
           </a>
@@ -156,13 +109,10 @@
           </div>          
           <p data-key="cardProjectPortfolioTime" class="small"></p>
           <h1 data-key="cardProjectPortfolioTitle"></h1>
-          <h4 data-key="cardProjectPortfolioDescription"></h4>          
-          <a class="buttonPrimary" id="stepLink" href="#stepSection">
-            <p class="regular-bold" data-key="seeProjectButton"></p>
-          </a>
+          <h4 data-key="cardProjectPortfolioDescription"></h4>             
         </div>
         <div class="projectImageContainter1">
-          <img src="assets/images/projects/portfolio/portfolioImageHeader.png" alt="projectImage">
+          <img src="assets/images/projects/portfolio/portfolioImageHeader.webp" alt="projectImage">
         </div>
       </div>
 
@@ -232,7 +182,7 @@
                 <div class="cardTestimonial">
                   <p class="regular padding" data-key="cardTestimonial1PortfolioDescription"></p>
                   <div class="frameFlexSmall">
-                    <img src="assets/images/personas/imageSarah.png" alt="testimonialImage" class="imageExtraLarge">
+                    <img src="assets/images/personas/imageSarah.webp" alt="testimonialImage" class="imageExtraLarge">
                     <div class="frameFlexColumnTiny">
                       <p class="regular"><b>Sarah Thompson</b></p>
                       <p class="small" data-key="cardTestimonial1PortfolioPosition"></p>
@@ -243,7 +193,7 @@
                 <div class="cardTestimonial">
                   <p class="regular padding" data-key="cardTestimonial2PortfolioDescription"></p>
                   <div class="frameFlexSmall">
-                    <img src="assets/images/personas/imageDavid.png" alt="testimonialImage" class="imageExtraLarge">
+                    <img src="assets/images/personas/imageDavid.webp" alt="testimonialImage" class="imageExtraLarge">
                     <div class="frameFlexColumnTiny">
                       <p class="regular"><b>David García</b></p>
                       <p class="small" data-key="cardTestimonial2PortfolioPosition"></p>
@@ -255,7 +205,7 @@
                 <div class="cardTestimonial">
                   <p class="regular padding" data-key="cardTestimonial3PortfolioDescription"></p>
                   <div class="frameFlexSmall">
-                    <img src="assets/images/personas/imageEmma.png" alt="testimonialImage" class="imageExtraLarge">
+                    <img src="assets/images/personas/imageEmma.webp" alt="testimonialImage" class="imageExtraLarge">
                     <div class="frameFlexColumnTiny">
                       <p class="regular"><b>Emma Williams</b></p>
                       <p class="small" data-key="cardTestimonial3PortfolioPosition"></p>
@@ -300,7 +250,7 @@
 
               <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                 <figure>
-                  <img src="assets/images/projects/portfolio/desktop-_body_.png" alt="desktopVersionImage">
+                  <img src="assets/images/projects/portfolio/desktop-_body_.webp" alt="desktopVersionImage">
                 </figure>
                 <p class="small" data-key="desktopVersionText"></p>
               </div>
@@ -704,6 +654,7 @@
                   </div>
 
                 </div>
+                
                 <div class="frameFlexColumnMedium">
                   <div class="subSubsection">
                     <p data-key="subSubsection6" class="large"></p>
@@ -736,6 +687,7 @@
                   </div>
 
                 </div>
+                
                 <div class="frameFlexColumnMedium">
                   <div class="subSubsection">
                     <p data-key="subSubsection7" class="large"></p>
@@ -850,8 +802,8 @@
 
               <div class="frameFlexColumnMedium">
                 <div class="frameFlexMedium">
-                  <img class="imageExtraLarge" src="assets/images/personas/imageMaria.png" alt="avatarDesktop">
-                  <img class="imageLarge" src="assets/images/personas/imageMaria.png" alt="avatarMobile">
+                  <img class="imageExtraLarge" src="assets/images/personas/imageMaria.webp" alt="avatarDesktop">
+                  <img class="imageLarge" src="assets/images/personas/imageMaria.webp" alt="avatarMobile">
                 </div>
                 <div class="frameFlexColumnTiny">
                   <p class="regular-bold">Images</p>
@@ -873,147 +825,147 @@
                 <div class="gridAutoTwo">
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconAE.png"
+                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconAE.webp"
                         alt="icon">
                     </div>
                     <p class="small">afterEffects</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconAtipiko.png"
+                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconAtipiko.webp"
                         alt="icon">
                     </div>
                     <p class="small">atipikoTours</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconCSS.png"
+                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconCSS.webp"
                         alt="icon">
                     </div>
                     <p class="small">CSS3</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconFigma.png"
+                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconFigma.webp"
                         alt="icon">
                     </div>
                     <p class="small">figma</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconFramer.png"
+                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconFramer.webp"
                         alt="icon">
                     </div>
                     <p class="small">framer</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconGeomites.png"
+                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconGeomites.webp"
                         alt="icon">
                     </div>
                     <p class="small">geomites</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconGoogle.png"
+                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconGoogle.webp"
                         alt="icon">
                     </div>
                     <p class="small">google</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconGPT.png"
+                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconGPT.webp"
                         alt="icon">
                     </div>
                     <p class="small">chatGPT</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconHTML.png"
+                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconHTML.webp"
                         alt="icon">
                     </div>
                     <p class="small">HTML5</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconIDF.png"
+                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconIDF.webp"
                         alt="icon">
                     </div>
                     <p class="small">IDF</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconJS.png"
+                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconJS.webp"
                         alt="icon">
                     </div>
                     <p class="small">JS</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconMiro.png"
+                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconMiro.webp"
                         alt="icon">
                     </div>
                     <p class="small">miro</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconNotion.png"
+                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconNotion.webp"
                         alt="icon">
                     </div>
                     <p class="small">notion</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconSenzo.png"
+                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconSenzo.webp"
                         alt="icon">
                     </div>
                     <p class="small">senzo</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconSlack.png"
+                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconSlack.webp"
                         alt="icon">
                     </div>
                     <p class="small">slack</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconTattoo.png"
+                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconTattoo.webp"
                         alt="icon">
                     </div>
                     <p class="small">tattoo</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconUdemy.png"
+                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconUdemy.webp"
                         alt="icon">
                     </div>
                     <p class="small">udemy</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconURJC.png"
+                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconURJC.webp"
                         alt="icon">
                     </div>
                     <p class="small">URJC</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconWebflow.png"
+                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconWebflow.webp"
                         alt="icon">
                     </div>
                     <p class="small">webflow</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconWordpress.png"
+                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconWordpress.webp"
                         alt="icon">
                     </div>
                     <p class="small">wordpress</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconGoogle.png"
+                      <img class="imageMedium" src="assets/images/projects/portfolio/icons/portfolioIconGoogle.webp"
                         alt="icon">
                     </div>
                     <p class="small">google</p>
@@ -1036,25 +988,25 @@
                 <div class="gridAutoOne">
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="componentContainer">
-                      <img src="assets/images/projects/portfolio/components/cardProject.png" alt="component">
+                      <img src="assets/images/projects/portfolio/components/cardProject.webp" alt="component">
                     </div>
                     <p class="small">cardProject</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="componentContainer">
-                      <img src="assets/images/projects/portfolio/components/cardExperience.png" alt="component">
+                      <img src="assets/images/projects/portfolio/components/cardExperience.webp" alt="component">
                     </div>
                     <p class="small">cardExperience</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="componentContainer">
-                      <img src="assets/images/projects/portfolio/components/cardUSerPersona.png" alt="component">
+                      <img src="assets/images/projects/portfolio/components/cardUSerPersona.webp" alt="component">
                     </div>
                     <p class="small">cardUserPersona</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="componentContainer">
-                      <img src="assets/images/projects/portfolio/components/cardTestimonial.png" alt="component">
+                      <img src="assets/images/projects/portfolio/components/cardTestimonial.webp" alt="component">
                     </div>
                     <p class="small">cardTestimonial</p>
                   </div>
@@ -1078,7 +1030,7 @@
               <!-- [welcomeSection] -->
               <div class="someDesignsFrame columnReverse">
                 <div class="someDesignsImageContainer">
-                  <img src="assets/images/projects/portfolio/someDesigns/someDesignsImage1.png" alt="someDesignsImage">
+                  <img src="assets/images/projects/portfolio/someDesigns/someDesignsImage1.webp" alt="someDesignsImage">
                 </div>
                 <div class="frameFlexColumnSmall">
                   <h4 data-key="someDesigns1Title"></h4>
@@ -1093,14 +1045,14 @@
                   <p class="regular" data-key="someDesigns2Text"></p>
                 </div>
                 <div class="someDesignsImageContainer">
-                  <img src="assets/images/projects/portfolio/someDesigns/someDesignsImage2.png" alt="someDesignsImage">
+                  <img src="assets/images/projects/portfolio/someDesigns/someDesignsImage2.webp" alt="someDesignsImage">
                 </div>
               </div>
 
               <!-- [resumePage] -->
               <div class="someDesignsFrame columnReverse">
                 <div class="someDesignsImageContainer">
-                  <img src="assets/images/projects/portfolio/someDesigns/someDesignsImage3.png" alt="someDesignsImage">
+                  <img src="assets/images/projects/portfolio/someDesigns/someDesignsImage3.webp" alt="someDesignsImage">
                 </div>
                 <div class="frameFlexColumnSmall">
                   <h4 data-key="someDesigns3Title"></h4>
@@ -1115,7 +1067,7 @@
                   <p class="regular" data-key="someDesigns4Text"></p>
                 </div>
                 <div class="someDesignsImageContainer">
-                  <img src="assets/images/projects/portfolio/someDesigns/someDesignsImage4.png" alt="someDesignsImage">
+                  <img src="assets/images/projects/portfolio/someDesigns/someDesignsImage4.webp" alt="someDesignsImage">
                 </div>
               </div>
             </div>
@@ -1187,7 +1139,7 @@
         <!-- [geomites] -->
         <a class="cardProject" href="geomites.html">
           <div class="cardProjectImageContainer">
-            <img class="cardProjectImage" src="assets/images/projects/geomites/cardProject__geomites.png"
+            <img class="cardProjectImage" src="assets/images/projects/geomites/cardProject__geomites.webp"
               alt="cardProjectImage">
           </div>
           <div class="frameFlexColumnTiny">
@@ -1208,7 +1160,7 @@
         <!-- [senzoStudio] -->
         <a class="cardProject" href="senzoStudio.html">
           <div class="cardProjectImageContainer">
-            <img class="cardProjectImage" src="assets/images/projects/senzoStudio/cardProject__senzoStudio.png"
+            <img class="cardProjectImage" src="assets/images/projects/senzoStudio/cardProject__senzoStudio.webp"
               alt="cardProjectImage">
           </div>
           <div class="frameFlexColumnTiny">
@@ -1226,7 +1178,7 @@
         <!-- [atipikoTours] -->
         <a class="cardProject" href="atipikoTours.html">
           <div class="cardProjectImageContainer">
-            <img class="cardProjectImage" src="assets/images/projects/atipikoTours/cardProject__atipikoTours.png"
+            <img class="cardProjectImage" src="assets/images/projects/atipikoTours/cardProject__atipikoTours.webp"
               alt="cardProjectImage">
           </div>
           <div class="frameFlexColumnTiny">
