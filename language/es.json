@@ -1,9 +1,4 @@
-{
-  "navBarFrameTitle": "Menú",
-  "navBarFrameLink1": "Inicio",
-  "navBarFrameLink2": "Proyectos",
-  "navBarFrameLink3": "Currículum",  
-
+{  
   "languageSwitch1": "Ing",
   "languageSwitch2": "Esp",
   "themeSwitch1": "Claro",
@@ -14,7 +9,7 @@
   
   "mobileNavigationPage1": "Inicio",
   "mobileNavigationPage2": "Proyectos",
-  "mobileNavigationPage3": "Curríículum",  
+  "mobileNavigationPage3": "Currículum",  
   "mobileNavigationOption1": "Idioma",
   "mobileNavigationOption2": "Tema",
 
@@ -103,7 +98,7 @@
 
   "cardReading2Title": "Ejercicios resueltos de diseño de producto",
   "cardReading2Author": "De Artiom Dashinsky",
-  "cardReading2Info": "Practica tus habilidades de diseño de productos y UX. Prepárate para tu próxima entrevista de trabajo.",
+  "cardReading2Info": "Practica tus habilidades de diseño y prepárate para tu próxima entrevista de trabajo.",
   "cardReading2Pages": "171 páginas",
 
   "cardReading3Title": "Modelos mentales",
@@ -113,7 +108,7 @@
 
   "cardReading4Title": "Cómo se hace un manager",
   "cardReading4Author": "De Julie Zhuo",
-  "cardReading4Info": "Enhorabuena, ¡eres directivo!. Después, la verdad desciende como la niebla: no sabes realmente lo que haces.",
+  "cardReading4Info": "Enhorabuena, ¡eres directivo!: no sabes realmente lo que haces.",
   "cardReading4Pages": "288 páginas",
 
   "cardReading5Title": "Diseño de interacción seductivo",
@@ -123,12 +118,12 @@
 
   "cardReading6Title": "El diseño de las cosas cotidianas",
   "cardReading6Author": "De Don Norman",
-  "cardReading6Info": "Uno de los grandes diseñadores del mundo comparte su visión de los principios fundamentales de un diseño grande y significativo.",
+  "cardReading6Info": "Uno de los grandes diseñadores del mundo comparte su visión de los principios fundamentales de diseño.",
   "cardReading6Pages": "368 pages",
 
   "cardReading7Title": "No me hagas pensar",
   "cardReading7Author": "De Don Norman",
-  "cardReading7Info": "La guía de Steve Krug le ayudará a comprender los principios de la navegación intuitiva y el diseño de la información.",
+  "cardReading7Info": "La guía de Steve Krug le ayudará a comprender los principios de la navegación intuitiva y el diseño.",
   "cardReading7Pages": "216 páginas",
 
   "cardReading8Title": "About face",
@@ -685,9 +680,9 @@
   "tattooParadiseCardTestimonial1Position": "Psicóloga",
   "tattooParadiseCardTestimonial2Goal1Text": "Consejos para cuidar un tatuaje",
   "tattooParadiseCardTestimonial2Goal2Text": "Descubra una gran variedad de estilos de tatuaje",
-  "tattooParadiseCardTestimonia2Action1Text": "Explorar estilos de tatuaje",
-  "tattooParadiseCardTestimonia2Action2Text": "Acceder a información sobre los cuidados posteriores al tatuaje",
-  "tattooParadiseCardTestimonia2Action3Text": "Guardar diseños favoritos",
+  "tattooParadiseCardTestimonial2Action1Text": "Explorar estilos de tatuaje",
+  "tattooParadiseCardTestimonial2Action2Text": "Acceder a información sobre los cuidados posteriores al tatuaje",
+  "tattooParadiseCardTestimonial2Action3Text": "Guardar diseños favoritos",
   "tattooParadiseCardTestimonial2Position": "Transportista",
 
   "tattooParadiseTable1Header1": "A evaluar",

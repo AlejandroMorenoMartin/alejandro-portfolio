@@ -1,9 +1,4 @@
 {
-  "navBarFrameTitle": "Menu",
-  "navBarFrameLink1": "Home",
-  "navBarFrameLink2": "Projects",
-  "navBarFrameLink3": "Resume",  
-
   "languageSwitch1": "Eng",
   "languageSwitch2": "Spa",
   "themeSwitch1": "Light",
@@ -111,7 +106,7 @@
 
   "cardReading4Title": "The making of a manager",
   "cardReading4Author": "By Julie Zhuo",
-  "cardReading4Info": "Congratulations, you're a manager!. After that the truth descends like a fog: you don't really know what you're doing.",
+  "cardReading4Info": "Congratulations, you're a manager!: you don't really know what you're doing.",
   "cardReading4Pages": "288 pages",
 
   "cardReading5Title": "Seductive interaction design",
@@ -121,12 +116,12 @@
 
   "cardReading6Title": "The design of everyday things",
   "cardReading6Author": "By Don Norman",
-  "cardReading6Info": "One of the world's great designers shares his vision of the fundamental principles of great and meaningful design.",
+  "cardReading6Info": "One of the world's great designers shares his vision of the principles of great design.",
   "cardReading6Pages": "368 pages",
 
   "cardReading7Title": "Don't make me think",
   "cardReading7Author": "By Don Norman",
-  "cardReading7Info": "Steve Krug's guide you to help understand the principles of intuitive navigation and information design.",
+  "cardReading7Info": "Steve Krug's guide you to help understand the principles of intuitive navigation and design.",
   "cardReading7Pages": "216 pages",
 
   "cardReading8Title": "About face",
@@ -738,9 +733,9 @@
   "tattooParadiseCardTestimonial1Position": "Psychologist",
   "tattooParadiseCardTestimonial2Goal1Text": "Guidelines on caring for a tattoo",
   "tattooParadiseCardTestimonial2Goal2Text": "Discover a variety of tattoo styles",
-  "tattooParadiseCardTestimonia2Action1Text": "Explore tattoo styles",
-  "tattooParadiseCardTestimonia2Action2Text": "Access post-tattoo care information",
-  "tattooParadiseCardTestimonia2Action3Text": "Save favorite designs",
+  "tattooParadiseCardTestimonial2Action1Text": "Explore tattoo styles",
+  "tattooParadiseCardTestimonial2Action2Text": "Access post-tattoo care information",
+  "tattooParadiseCardTestimonial2Action3Text": "Save favorite designs",
   "tattooParadiseCardTestimonial2Position": "Carrier",
 
   "tattooParadiseTable1Header1": "To evaluate",

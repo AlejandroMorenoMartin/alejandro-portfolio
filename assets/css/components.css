@@ -78,7 +78,7 @@
 
 @media (max-width: 1200px) {
   .mainHero {
-    height: calc(100svh - 360px);
+    height: calc(100svh - 124px);
     display: flex;
     flex-direction: column;
     margin-bottom: 5svh;
@@ -354,6 +354,14 @@
 
 /* ---------- */
 
+.gridTwoOverFlow {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(480px, 100%), 1fr));
+}
+
+/* ---------- */
+
 .gridThreeOverFlow {
   display: grid;
   gap: 1rem;
@@ -361,11 +369,13 @@
 }
 
 @media (max-width: 1200px) {
+
+  .gridTwoOverFlow,
   .gridThreeOverFlow {
     grid-template-columns: none;
     grid-auto-flow: column;
     overflow-x: scroll;
-    grid-auto-columns: 80%;
+    grid-auto-columns: 90%;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
@@ -902,8 +912,8 @@ tr:nth-of-type(2n) {
   gap: 8px;
   border-radius: var(--br);
   background: var(--primary-500);
-  width: fit-content;
-  min-width: 148px;
+  width: 100%;
+  max-width: 240px;
   cursor: pointer;
   align-items: center;
   justify-content: center;
@@ -937,12 +947,12 @@ tr:nth-of-type(2n) {
   border-radius: var(--br);
   border: 0.5px solid var(--neutral-600);
   background: var(--neutral-1000);
-  min-width: 148px;
+  max-width: 240px;
   cursor: pointer;
   align-items: center;
   justify-content: center;
   transition: transform .3s cubic-bezier(.62, -1.12, .53, 1.92);
-  width: fit-content;
+  width: 100%;
 }
 
 .buttonSecondary i {
@@ -970,14 +980,14 @@ tr:nth-of-type(2n) {
 .buttonTerciary {
   display: flex;
   gap: 8px;
-  padding: 8px 16px;
   gap: 8px;
   border-radius: var(--br);
   background: var(--neutral-1000);
   cursor: pointer;
   align-items: center;
   justify-content: center;
-  width: fit-content;
+  width: 100%;
+  max-width: 96px;
 }
 
 .buttonTerciary p {
@@ -1354,6 +1364,16 @@ body.no-scroll {
   gap: 1rem;
   border-radius: var(--br);
   background: var(--neutral-900);
+  justify-content: flex-start;
+}
+
+.cardReading .cardReadingImageContainer {
+  flex-basis: 15%;
+}
+
+.cardReading .cardReadingImageContainer img {
+  object-fit: cover;
+  height: auto;
 }
 
 /* ---------- */
@@ -1396,6 +1416,10 @@ body.no-scroll {
 
 
 @media (max-width: 1200px) {
+  .gridThreeOverFlow .cardTestimonial:first-child {
+    grid-column: span 1;
+  }
+
   .cardTestimonial:first-child {
     grid-column: auto;
   }
@@ -1754,7 +1778,7 @@ body.no-scroll {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;  
+  padding: 1rem;
   backdrop-filter: blur(100px);
   border-radius: var(--br);
   z-index: 90;
@@ -2115,9 +2139,14 @@ footer .frameFlexSmall {
 
 /* ---------- */
 
-.projectImageContainter1,
 .projectImageContainter2 {
   flex-basis: 40%;
+  height: auto;
+  overflow: hidden;
+}
+
+.projectImageContainter1 {
+  flex-basis: 60%;
   height: auto;
   overflow: hidden;
 }
@@ -2148,7 +2177,7 @@ footer .frameFlexSmall {
 @media (max-width: 1200px) {
   .projectHeader {
     flex-direction: column;
-    height: calc(100svh - 92px);    
+    height: calc(100svh - 92px);
   }
 
   .projectImageContainter1,
@@ -2157,7 +2186,7 @@ footer .frameFlexSmall {
   }
 
   .projectHeader>.frameFlexColumnLarge {
-    flex-basis: 50%;    
+    flex-basis: 50%;
   }
 }
 
