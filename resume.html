@@ -43,40 +43,50 @@
 
         <nav class="mobileNavigation" id="primaryNavigation">
 
-          <ul aria-label="Primary" role="list" class=" navBarNavigation frameFlexColumnExtraLarge">
-            <a href="index.html" class="frameFlexPaddingBottom">
-              <p data-key="mobileNavigationPage1" class="large"></p>
-            </a>
-            <a href="projects.html" class="frameFlexPaddingBottom">
-              <p data-key="mobileNavigationPage2" class="large"></p>
-            </a>
-            <a href="resume.html" class="frameFlexPaddingBottom active">
-              <p data-key="mobileNavigationPage3" class="large"></p>
-            </a>
-            <li class="frameFlexMedium">
-              <div class="switcherContainer" id="languageSwitcherContainer">
-                <input type="checkbox" id="languageSwitch">
-                <label for="languageSwitch" data-state="en" data-key="languageSwitch1" class="small"></label>
-                <label for="languageSwitch" data-state="es" data-key="languageSwitch2" class="small"></label>
-              </div>
-              <div class="switcherContainer" id="themeSwitcherContainer">
-                <input type="checkbox" id="themeSwitch">
-                <label for="themeSwitch" data-state="light" data-key="themeSwitch1" class="small"></label>
-                <label for="themeSwitch" data-state="dark" data-key="themeSwitch2" class="small"></label>
-              </div>
-            </li>
-            <div class="frameFlexMedium">
-              <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
-                  class="fa-brands fa-whatsapp iconMedium"></i></a>
-              <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon"
-                target="_blank"><i class="fa-brands fa-linkedin iconMedium"></i></a>
-              <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
-                  class="fa-brands fa-github iconMedium"></i></a>
-              <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
-                  class="fa-solid fa-envelope iconMedium"></i></a>
-            </div>
+          <ul aria-label="Primary" role="list" class=" navBarNavigation">
 
+            <div class="frameFlexColumnMedium">
+              <h4 data-key="navigationTitle"></h4>
+            </div>
+            <div class="frameFlexColumnMedium">
+              <p class="large" data-key="navigationSubtitle1"></p>
+              <div class="frameFlexColumnSmall">
+                <a href="index.html" class="page regular" data-key="navigationPage1"></a>
+                <a href="projects.html" class="page regular" data-key="navigationPage2"></a>
+                <a href="resume.html" class="page regular activa" data-key="navigationPage3"></a>
+              </div>
+            </div>
+            <div class="frameFlexColumnMedium">
+              <p class="large" data-key="navigationSubtitle2"></p>
+              <div class="frameFlexSmall switcherContainer" id="languageSwitcherContainer">
+                <input type="checkbox" id="languageSwitch">
+                <label for="languageSwitch" data-state="en" data-key="languageSwitch1" class="regular"></label>
+                <label for="languageSwitch" data-state="es" data-key="languageSwitch2" class="regular"></label>
+              </div>
+            </div>
+            <div class="frameFlexColumnMedium">
+              <p class="large" data-key="navigationSubtitle3"></p>
+              <div class="frameFelxSmall switcherContainer" id="themeSwitcherContainer">
+                <input type="checkbox" id="themeSwitch">
+                <label for="themeSwitch" data-state="light" data-key="themeSwitch1" class="regular"></label>
+                <label for="themeSwitch" data-state="dark" data-key="themeSwitch2" class="regular"></label>
+              </div>
+            </div>
+            <div class="frameFlexColumnMedium">
+              <p class="large" data-key="navigationSubtitle4"></p>
+              <div class="frameFlexMedium">
+                <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
+                    class="fa-brands fa-whatsapp iconMedium"></i></a>
+                <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon"
+                  target="_blank"><i class="fa-brands fa-linkedin iconMedium"></i></a>
+                <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
+                    class="fa-brands fa-github iconMedium"></i></a>
+                <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
+                    class="fa-solid fa-envelope iconMedium"></i></a>
+              </div>
+            </div>
             <p class="regular" data-key="footerText"></p>
+
           </ul>
 
         </nav>
@@ -103,10 +113,10 @@
 
       <div class="buttonTab">
         <div class="buttonTabComponent active" id="buttonTab1">
-          <p data-key="buttonTab1" class="regular-bold"></p>
+          <p data-key="buttonTab1" class="regular"></p>
         </div>
         <div class="buttonTabComponent " id="buttonTab2">
-          <p data-key="buttonTab2" class="regular-bold"></p>
+          <p data-key="buttonTab2" class="regular"></p>
         </div>
       </div>
 

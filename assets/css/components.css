@@ -231,32 +231,6 @@
   width: 100%;
 }
 
-@media (max-width: 1200px) {
-  .frameFlexColumnSmall {
-    gap: 0.25rem;
-  }
-
-  .frameFlexColumnMedium {
-    gap: 0.5rem;
-  }
-
-  .frameFlexColumnLarge {
-    gap: 1rem;
-  }
-
-  .frameFlexColumnExtraLarge {
-    gap: 2rem;
-  }
-
-  .frameFlexColumnMassive {
-    gap: 4rem;
-  }
-
-  .frameFlexColumnColossal {
-    gap: 8rem;
-  }
-}
-
 /* ---------- */
 
 .someDesignsFrame {
@@ -792,14 +766,9 @@ tr:nth-of-type(2n) {
 /* ----- BUTTONS ----- */
 
 .switcherContainer {
-  background: var(--neutral-900);
-  border-radius: 100px;
   position: relative;
-  display: inline-block;
-  align-items: center;
-  min-width: fit-content;
-  gap: 12px;
-  padding: 2px 4px;
+  display: flex;
+  gap: 1rem;
 }
 
 .switcherContainer input {
@@ -808,14 +777,17 @@ tr:nth-of-type(2n) {
 
 .switcherContainer label {
   display: block;
-  padding: 2px 4px;
-  border-radius: 100px;
+  padding: 0.5rem;
+  border-radius: var(--br);
   cursor: pointer;
 }
 
+.switcherContainer label:hover {
+  background: var(--neutral-900);
+}
+
 .switcherContainer label.active {
-  background: var(--neutral-1000);
-  color: var(--primary-500);
+  background: var(--neutral-600);
 }
 
 /* ---------- */
@@ -930,7 +902,7 @@ tr:nth-of-type(2n) {
 }
 
 .buttonPrimary:hover {
-  background: var(--primary-400);
+  background: var(--primary-600);
 }
 
 .buttonPrimary:active {
@@ -1041,18 +1013,13 @@ tr:nth-of-type(2n) {
 
 .buttonTab {
   display: flex;
-  gap: 16px;
+  gap: 1rem;
   align-items: center;
-  width: fit-content;
-}
-
-.buttonTabComponent.active p {
-  color: var(--neutral-900);
 }
 
 .buttonTabComponent {
   display: flex;
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   border-radius: var(--br);
   cursor: pointer;
 }
@@ -1062,7 +1029,7 @@ tr:nth-of-type(2n) {
 }
 
 .buttonTabComponent.active {
-  background: var(--neutral-100);
+  background: var(--neutral-600);
 }
 
 /* ---------- */
@@ -1090,7 +1057,7 @@ tr:nth-of-type(2n) {
 /* ---------- */
 
 .link p {
-  color: var(--primary-400);
+  color: var(--primary-500);
 }
 
 .link:hover p {
@@ -1351,15 +1318,11 @@ body.no-scroll {
   transform: scale(1.025);
 }
 
-.cardReadingImage {
-  height: 160px;
-}
-
 /* ---------- */
 
 .cardReading {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 1rem;
   gap: 1rem;
   border-radius: var(--br);
@@ -1368,12 +1331,13 @@ body.no-scroll {
 }
 
 .cardReading .cardReadingImageContainer {
-  flex-basis: 15%;
+  flex-basis: 7.5%;
 }
 
 .cardReading .cardReadingImageContainer img {
   object-fit: cover;
   height: auto;
+  border-radius: var(--br);
 }
 
 /* ---------- */
@@ -1795,15 +1759,6 @@ body.no-scroll {
   display: none;
 }
 
-.switcherContainer {
-  display: flex;
-  gap: 1rem;
-}
-
-.switcherContainer .frameFlexColumnTiny {
-  align-items: flex-start;
-}
-
 .mobileNavToggle {
   display: block;
   cursor: pointer;
@@ -1812,43 +1767,35 @@ body.no-scroll {
 
 .navBarNavigation {
   display: flex;
-  gap: 4rem;
+  flex-direction: column;
+  gap: 2rem;
   width: 100svw;
-  height: 100svh;
+  padding: 4rem 1rem;
   align-items: center;
-  padding: 10rem 0;
 
   background: var(--neutral-1000);
 }
 
-.navBarNavigation .frameFlexColumnLarge {
+.navBarNavigation .frameFlexColumnMedium {
+  padding-bottom: 2rem;
+  border-bottom: 0.25px solid var(--neutral-800);
   align-items: center;
 }
 
-.navBarFrameNavigation {
-  display: flex;
-  gap: 2rem;
+.navBarNavigation .frameFlexColumnSmall {
   align-items: center;
 }
 
-.navBarFrameLink {
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--neutral-200);
-  padding: 0.5rem;
-  border-radius: var(--br);
-  cursor: pointer;
-  letter-spacing: .075rem;
-  height: fit-content;
+.page:hover {
+  color: var(--white);
 }
 
-.navBarFrameLink:hover,
-.navBarFrameLink:focus {
-  background: var(--neutral-900);
-}
-
-.navBarFrameLink.active {
+.activa {
   color: var(--primary-500);
+}
+
+.activa:hover {
+  color: var(--primary-600);
 }
 
 .opened {
@@ -2019,7 +1966,7 @@ footer .frameFlexSmall {
 /* ----- IMAGES ----- */
 
 .logo {
-  fill: var(--primary-400);
+  fill: var(--primary-500);
 }
 
 

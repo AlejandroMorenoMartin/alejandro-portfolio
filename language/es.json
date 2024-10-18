@@ -1,17 +1,20 @@
 {  
-  "languageSwitch1": "Ing",
-  "languageSwitch2": "Esp",
+  "languageSwitch1": "Inglés",
+  "languageSwitch2": "Español",
   "themeSwitch1": "Claro",
   "themeSwitch2": "Oscuro",
 
   "languageContainerText": "Idioma",
   "themeContainerText": "Tema",
-  
-  "mobileNavigationPage1": "Inicio",
-  "mobileNavigationPage2": "Proyectos",
-  "mobileNavigationPage3": "Currículum",  
-  "mobileNavigationOption1": "Idioma",
-  "mobileNavigationOption2": "Tema",
+
+  "navigationTitle": "Menú",  
+  "navigationSubtitle1": "Páginas",
+  "navigationSubtitle2": "Idioma",
+  "navigationSubtitle3": "Tema",
+  "navigationSubtitle4": "Redes sociales",
+  "navigationPage1": "Inicio",
+  "navigationPage2": "Proyectos",
+  "navigationPage3": "Currículum",  
 
   "greetingsMorning": "¡Buenos días!",
   "greetingsAfternoon": "¡Buenas tardes!",
@@ -151,7 +154,7 @@
   "cardReading12Info": "Una guía completa e imprescindible para diseñadores de productos y UX.",
   "cardReading12Pages": "320 páginas",
 
-  "footerText": "Alejandro Moreno 3.0 | Designing 2024", 
+  "footerText": "Alejandro Moreno 3.0 | Diseñando 2024", 
 
   "contactFormTitle": "Ponte en contacto",
   "contactFormText": "Puedes contactarme a través de las redes sociales o si lo prefieres dejame un mensaje y te contestaré lo antes posible.",

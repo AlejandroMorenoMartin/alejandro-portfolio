@@ -8,7 +8,7 @@
   --fs-h2: 2.5rem;
   --fs-h3: 2rem;
   --fs-h4: 1.75rem;
-  --fs-large: 1.25rem;
+  --fs-large: 1.2rem;
   --fs-regular: 1rem;
   --fs-small: .75rem;
 
@@ -40,8 +40,8 @@
     --fs-h2: 1.8rem;
     --fs-h3: 1.6rem;
     --fs-h4: 1.4rem;
-    --fs-large: 1.25rem;
-    --fs-regular: .9rem;
+    --fs-large: 1.15rem;
+    --fs-regular: .85rem;
     --fs-small: .7rem;
 
     /* line-height */

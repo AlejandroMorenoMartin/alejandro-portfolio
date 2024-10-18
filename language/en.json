@@ -1,17 +1,20 @@
 {
-  "languageSwitch1": "Eng",
-  "languageSwitch2": "Spa",
+  "languageSwitch1": "English",
+  "languageSwitch2": "Spanish",
   "themeSwitch1": "Light",
   "themeSwitch2": "Dark",
 
   "languageContainerText": "Language",
   "themeContainerText": "Theme",
   
-  "mobileNavigationPage1": "Home",
-  "mobileNavigationPage2": "Projects",
-  "mobileNavigationPage3": "Resume",    
-  "mobileNavigationOption1": "Language",
-  "mobileNavigationOption2": "Theme",  
+  "navigationTitle": "Menu",  
+  "navigationSubtitle1": "Pages",
+  "navigationSubtitle2": "Language",
+  "navigationSubtitle3": "Theme",
+  "navigationSubtitle4": "Social media",
+  "navigationPage1": "Home",
+  "navigationPage2": "Projects",
+  "navigationPage3": "Resume",  
 
   "greetingsMorning": "Good morning!",
   "greetingsAfternoon": "Good afternoon!",
@@ -149,7 +152,7 @@
   "cardReading12Info": "A comprehensive and essential guide for UX and product designers.",
   "cardReading12Pages": "320 pages",
 
-  "footerText": "Alejandro Moreno 3.0 | Diseñando 2024",
+  "footerText": "Alejandro Moreno 3.0 | Designing 2024",
 
   "contactFormTitle": "Get in touch",
   "contactFormText": "You can contact me through social networks or if you prefer, leave me a message and I will get back to you as soon as possible.",

@@ -46,40 +46,50 @@
 
         <nav class="mobileNavigation" id="primaryNavigation">
 
-          <ul aria-label="Primary" role="list" class=" navBarNavigation frameFlexColumnExtraLarge">
-            <a href="index.html" class="frameFlexPaddingBottom active">
-              <p data-key="mobileNavigationPage1" class="large"></p>
-            </a>
-            <a href="projects.html" class="frameFlexPaddingBottom">
-              <p data-key="mobileNavigationPage2" class="large"></p>
-            </a>
-            <a href="resume.html" class="frameFlexPaddingBottom">
-              <p data-key="mobileNavigationPage3" class="large"></p>
-            </a>
-            <li class="frameFlexMedium">
-              <div class="switcherContainer" id="languageSwitcherContainer">
-                <input type="checkbox" id="languageSwitch">
-                <label for="languageSwitch" data-state="en" data-key="languageSwitch1" class="small"></label>
-                <label for="languageSwitch" data-state="es" data-key="languageSwitch2" class="small"></label>
-              </div>
-              <div class="switcherContainer" id="themeSwitcherContainer">
-                <input type="checkbox" id="themeSwitch">
-                <label for="themeSwitch" data-state="light" data-key="themeSwitch1" class="small"></label>
-                <label for="themeSwitch" data-state="dark" data-key="themeSwitch2" class="small"></label>
-              </div>
-            </li>
-            <div class="frameFlexMedium">
-              <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
-                  class="fa-brands fa-whatsapp iconMedium"></i></a>
-              <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon"
-                target="_blank"><i class="fa-brands fa-linkedin iconMedium"></i></a>
-              <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
-                  class="fa-brands fa-github iconMedium"></i></a>
-              <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
-                  class="fa-solid fa-envelope iconMedium"></i></a>
-            </div>
+          <ul aria-label="Primary" role="list" class=" navBarNavigation">
 
+            <div class="frameFlexColumnMedium">
+              <h4 data-key="navigationTitle"></h4>
+            </div>
+            <div class="frameFlexColumnMedium">
+              <p class="large" data-key="navigationSubtitle1"></p>
+              <div class="frameFlexColumnSmall">
+                <a href="index.html" class="page regular activa" data-key="navigationPage1"></a>
+                <a href="projects.html" class="page regular" data-key="navigationPage2"></a>
+                <a href="resume.html" class="page regular" data-key="navigationPage3"></a>
+              </div>
+            </div>
+            <div class="frameFlexColumnMedium">
+              <p class="large" data-key="navigationSubtitle2"></p>
+              <div class="frameFlexSmall switcherContainer" id="languageSwitcherContainer">
+                <input type="checkbox" id="languageSwitch">
+                <label for="languageSwitch" data-state="en" data-key="languageSwitch1" class="regular"></label>
+                <label for="languageSwitch" data-state="es" data-key="languageSwitch2" class="regular"></label>
+              </div>
+            </div>
+            <div class="frameFlexColumnMedium">
+              <p class="large" data-key="navigationSubtitle3"></p>
+              <div class="frameFelxSmall switcherContainer" id="themeSwitcherContainer">
+                <input type="checkbox" id="themeSwitch">
+                <label for="themeSwitch" data-state="light" data-key="themeSwitch1" class="regular"></label>
+                <label for="themeSwitch" data-state="dark" data-key="themeSwitch2" class="regular"></label>
+              </div>
+            </div>
+            <div class="frameFlexColumnMedium">
+              <p class="large" data-key="navigationSubtitle4"></p>
+              <div class="frameFlexMedium">
+                <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
+                    class="fa-brands fa-whatsapp iconMedium"></i></a>
+                <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon"
+                  target="_blank"><i class="fa-brands fa-linkedin iconMedium"></i></a>
+                <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
+                    class="fa-brands fa-github iconMedium"></i></a>
+                <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
+                    class="fa-solid fa-envelope iconMedium"></i></a>
+              </div>
+            </div>
             <p class="regular" data-key="footerText"></p>
+
           </ul>
 
         </nav>
@@ -143,7 +153,7 @@
                 alt="cardProjectImage">
             </div>
             <div class="frameFlexColumnTiny">
-              <p class="regular"><b>Geomites</b></p>
+              <p class="large">Geomites</p>
               <p class="small" data-key="cardProjectGeomitesTime"></p>
             </div>
             <p class="regular" data-key="cardProjectGeomitesDescription"></p>
@@ -164,7 +174,7 @@
                 alt="cardProjectImage">
             </div>
             <div class="frameFlexColumnTiny">
-              <p class="regular"><b>Tattoo paradise</b></p>
+              <p class="large">Tattoo paradise</p>
               <p class="small" data-key="cardProjectTattooParadiseTime"></p>
             </div>
             <p class="regular" data-key="cardProjectTattooParadiseDescription"></p>
@@ -182,7 +192,7 @@
                 alt="cardProjectImage">
             </div>
             <div class="frameFlexColumnTiny">
-              <p class="regular"><b>Atipiko tours</b></p>
+              <p class="large">Atipiko tours</p>
               <p class="small" data-key="cardProjectAtipikoToursTime"></p>
             </div>
             <p class="regular" data-key="cardProjectAtipikoToursDescription"></p>
@@ -343,167 +353,165 @@
         </div>
         <div class="gridTwoOverFlow">
           <a class="cardReading">
-            <div class="cardReadingImageContainer">
-              <img class="cardReadingImage" src="assets/images/readings/thePathToSeniorProductDesigner.webp"
-                alt="readingImage">
-            </div>
-            <div class="frameFlexColumnMedium">
+            <div class="frameFlexMedium">
+              <div class="cardReadingImageContainer">
+                <img class="cardReadingImage" src="assets/images/readings/thePathToSeniorProductDesigner.webp"
+                  alt="readingImage">
+              </div>
               <div class="frameFlexColumnTiny">
-                <p class="regular-bold" data-key="cardReading1Title"></p>
+                <p class="large" data-key="cardReading1Title"></p>
                 <p class="regular" data-key="cardReading1Author"></p>
               </div>
+            </div>
+            <div class="frameFlexColumnTiny">
               <p class="regular" data-key="cardReading1Info"></p>
               <p class="small" data-key="cardReading1Pages"></p>
             </div>
           </a>
           <a class="cardReading">
-            <div class="cardReadingImageContainer">
-              <img class="cardReadingImage" src="assets/images/readings/solvingProductDesignExercises.webp"
-                alt="readingImage">
-            </div>
-            <div class="frameFlexColumnMedium">
+            <div class="frameFlexMedium">
+              <div class="cardReadingImageContainer">
+                <img class="cardReadingImage" src="assets/images/readings/theMakingOfAManager.webp"
+                  alt="readingImage">
+              </div>
               <div class="frameFlexColumnTiny">
-                <p class="regular-bold" data-key="cardReading2Title"></p>
+                <p class="large" data-key="cardReading2Title"></p>
                 <p class="regular" data-key="cardReading2Author"></p>
               </div>
+            </div>
+            <div class="frameFlexColumnTiny">
               <p class="regular" data-key="cardReading2Info"></p>
               <p class="small" data-key="cardReading2Pages"></p>
             </div>
           </a>
           <a class="cardReading">
-            <div class="cardReadingImageContainer">
-              <img class="cardReadingImage" src="assets/images/readings/mentalModels.webp" alt="readingImage">
-            </div>
-            <div class="frameFlexColumnMedium">
+            <div class="frameFlexMedium">
+              <div class="cardReadingImageContainer">
+                <img class="cardReadingImage" src="assets/images/readings/seductiveInteractionDesign.webp"
+                  alt="readingImage">
+              </div>
               <div class="frameFlexColumnTiny">
-                <p class="regular-bold" data-key="cardReading3Title"></p>
+                <p class="large" data-key="cardReading3Title"></p>
                 <p class="regular" data-key="cardReading3Author"></p>
               </div>
+            </div>
+            <div class="frameFlexColumnTiny">
               <p class="regular" data-key="cardReading3Info"></p>
               <p class="small" data-key="cardReading3Pages"></p>
             </div>
           </a>
           <a class="cardReading">
-            <div class="cardReadingImageContainer">
-              <img class="cardReadingImage" src="assets/images/readings/theMakingOfAManager.webp" alt="readingImage">
-            </div>
-            <div class="frameFlexColumnMedium">
+            <div class="frameFlexMedium">
+              <div class="cardReadingImageContainer">
+                <img class="cardReadingImage" src="assets/images/readings/theDesignOfEveryDayThings.webp"
+                  alt="readingImage">
+              </div>
               <div class="frameFlexColumnTiny">
-                <p class="regular-bold" data-key="cardReading4Title"></p>
+                <p class="large" data-key="cardReading4Title"></p>
                 <p class="regular" data-key="cardReading4Author"></p>
               </div>
+            </div>
+            <div class="frameFlexColumnTiny">
               <p class="regular" data-key="cardReading4Info"></p>
               <p class="small" data-key="cardReading4Pages"></p>
             </div>
           </a>
           <a class="cardReading">
-            <div class="cardReadingImageContainer">
-              <img class="cardReadingImage" src="assets/images/readings/seductiveInteractionDesign.webp"
-                alt="readingImage">
-            </div>
-            <div class="frameFlexColumnMedium">
+            <div class="frameFlexMedium">
+              <div class="cardReadingImageContainer">
+                <img class="cardReadingImage" src="assets/images/readings/dontMakeMeThink.webp"
+                  alt="readingImage">
+              </div>
               <div class="frameFlexColumnTiny">
-                <p class="regular-bold" data-key="cardReading5Title"></p>
+                <p class="large" data-key="cardReading5Title"></p>
                 <p class="regular" data-key="cardReading5Author"></p>
               </div>
+            </div>
+            <div class="frameFlexColumnTiny">
               <p class="regular" data-key="cardReading5Info"></p>
               <p class="small" data-key="cardReading5Pages"></p>
             </div>
           </a>
           <a class="cardReading">
-            <div class="cardReadingImageContainer">
-              <img class="cardReadingImage" src="assets/images/readings/theDesignOfEveryDayThings.webp"
-                alt="readingImage">
-            </div>
-            <div class="frameFlexColumnMedium">
+            <div class="frameFlexMedium">
+              <div class="cardReadingImageContainer">
+                <img class="cardReadingImage" src="assets/images/readings/aboutFaceEssentials.webp"
+                  alt="readingImage">
+              </div>
               <div class="frameFlexColumnTiny">
-                <p class="regular-bold" data-key="cardReading6Title"></p>
+                <p class="large" data-key="cardReading6Title"></p>
                 <p class="regular" data-key="cardReading6Author"></p>
               </div>
+            </div>
+            <div class="frameFlexColumnTiny">
               <p class="regular" data-key="cardReading6Info"></p>
               <p class="small" data-key="cardReading6Pages"></p>
             </div>
           </a>
           <a class="cardReading">
-            <div class="cardReadingImageContainer">
-              <img class="cardReadingImage" src="assets/images/readings/dontMakeMeThink.webp" alt="readingImage">
-            </div>
-            <div class="frameFlexColumnMedium">
+            <div class="frameFlexMedium">
+              <div class="cardReadingImageContainer">
+                <img class="cardReadingImage" src="assets/images/readings/hooked.webp"
+                  alt="readingImage">
+              </div>
               <div class="frameFlexColumnTiny">
-                <p class="regular-bold" data-key="cardReading7Title"></p>
+                <p class="large" data-key="cardReading7Title"></p>
                 <p class="regular" data-key="cardReading7Author"></p>
               </div>
+            </div>
+            <div class="frameFlexColumnTiny">
               <p class="regular" data-key="cardReading7Info"></p>
               <p class="small" data-key="cardReading7Pages"></p>
             </div>
           </a>
           <a class="cardReading">
-            <div class="cardReadingImageContainer">
-              <img class="cardReadingImage" src="assets/images/readings/aboutFaceEssentials.webp" alt="readingImage">
-            </div>
-            <div class="frameFlexColumnMedium">
+            <div class="frameFlexMedium">
+              <div class="cardReadingImageContainer">
+                <img class="cardReadingImage" src="assets/images/readings/intuitiveDesign.webp"
+                  alt="readingImage">
+              </div>
               <div class="frameFlexColumnTiny">
-                <p class="regular-bold" data-key="cardReading8Title"></p>
+                <p class="large" data-key="cardReading8Title"></p>
                 <p class="regular" data-key="cardReading8Author"></p>
               </div>
+            </div>
+            <div class="frameFlexColumnTiny">
               <p class="regular" data-key="cardReading8Info"></p>
               <p class="small" data-key="cardReading8Pages"></p>
             </div>
           </a>
           <a class="cardReading">
-            <div class="cardReadingImageContainer">
-              <img class="cardReadingImage" src="assets/images/readings/hooked.webp" alt="readingImage">
-            </div>
-            <div class="frameFlexColumnMedium">
+            <div class="frameFlexMedium">
+              <div class="cardReadingImageContainer">
+                <img class="cardReadingImage" src="assets/images/readings/articulatingDesignDecisions.webp"
+                  alt="readingImage">
+              </div>
               <div class="frameFlexColumnTiny">
-                <p class="regular-bold" data-key="cardReading9Title"></p>
+                <p class="large" data-key="cardReading9Title"></p>
                 <p class="regular" data-key="cardReading9Author"></p>
               </div>
+            </div>
+            <div class="frameFlexColumnTiny">
               <p class="regular" data-key="cardReading9Info"></p>
               <p class="small" data-key="cardReading9Pages"></p>
             </div>
           </a>
           <a class="cardReading">
-            <div class="cardReadingImageContainer">
-              <img class="cardReadingImage" src="assets/images/readings/intuitiveDesign.webp" alt="readingImage">
-            </div>
-            <div class="frameFlexColumnMedium">
+            <div class="frameFlexMedium">
+              <div class="cardReadingImageContainer">
+                <img class="cardReadingImage" src="assets/images/readings/theUserExperienceTeamOfOne.webp"
+                  alt="readingImage">
+              </div>
               <div class="frameFlexColumnTiny">
-                <p class="regular-bold" data-key="cardReading10Title"></p>
+                <p class="large" data-key="cardReading10Title"></p>
                 <p class="regular" data-key="cardReading10Author"></p>
               </div>
+            </div>
+            <div class="frameFlexColumnTiny">
               <p class="regular" data-key="cardReading10Info"></p>
               <p class="small" data-key="cardReading10Pages"></p>
             </div>
-          </a>
-          <a class="cardReading">
-            <div class="cardReadingImageContainer">
-              <img class="cardReadingImage" src="assets/images/readings/articulatingDesignDecisions.webp"
-                alt="readingImage">
-            </div>
-            <div class="frameFlexColumnMedium">
-              <div class="frameFlexColumnTiny">
-                <p class="regular-bold" data-key="cardReading11Title"></p>
-                <p class="regular" data-key="cardReading11Author"></p>
-              </div>
-              <p class="regular" data-key="cardReading11Info"></p>
-              <p class="small" data-key="cardReading11Pages"></p>
-            </div>
-          </a>
-          <a class="cardReading">
-            <div class="cardReadingImageContainer">
-              <img class="cardReadingImage" src="assets/images/readings/theUserExperienceTeamOfOne.webp"
-                alt="readingImage">
-            </div>
-            <div class="frameFlexColumnMedium">
-              <div class="frameFlexColumnTiny">
-                <p class="regular-bold" data-key="cardReading12Title"></p>
-                <p class="regular" data-key="cardReading12Author"></p>
-              </div>
-              <p class="regular" data-key="cardReading12Info"></p>
-              <p class="small" data-key="cardReading12Pages"></p>
-            </div>
-          </a>
+          </a>          
         </div>
       </div>
 

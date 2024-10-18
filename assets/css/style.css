@@ -46,7 +46,7 @@ caption {
   line-height: var(--lh-large);
   font-weight: 700;
   letter-spacing: 0;
-  color: var(--neutral-100);
+  color: var(--white);
 }
 
 .regular-bold {
