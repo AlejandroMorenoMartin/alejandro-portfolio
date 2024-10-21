@@ -37,11 +37,15 @@
     <header class="navBar">
 
       <div class="navBarContainer">
-        <a href="index.html" alt="logoAlejandro" id="logoLink" viewBox="0 0 24 24">
-          <svg class="logo imageLarge" viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M5.86048 20.6292L15.0291 2.83789H16.2875L32.0001 30.7269H24.5213L16.4673 16.5975H15.2089L13.7347 20.6292H5.86048ZM3.63149 24.439H16.144L20.0631 30.8379H0L3.63149 24.439Z" />
+        <a href="index.html" alt="logoAlejandro" id="logoLink" viewBox="0 0 24 24" class="imageLarge">
+
+          <svg xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.144 24.1011H3.63149L0 30.5H20.0631L16.144 24.1011Z" fill="var(--primary-500)" />
+            <path
+              d="M15.029 2.5L5.86035 20.2913H13.7346L15.2087 16.2596H16.4672L24.5212 30.389H31.9999L16.2874 2.5H15.029Z"
+              fill="var(--neutral-100)" />
           </svg>
+
         </a>
 
         <nav class="mobileNavigation" id="primaryNavigation">
@@ -77,18 +81,21 @@
             </div>
             <div class="frameFlexColumnMedium">
               <p class="large" data-key="navigationSubtitle4"></p>
-              <div class="frameFlexMedium">
-                <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
-                    class="fa-brands fa-whatsapp iconMedium"></i></a>
-                <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon"
-                  target="_blank"><i class="fa-brands fa-linkedin iconMedium"></i></a>
-                <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
-                    class="fa-brands fa-github iconMedium"></i></a>
-                <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
-                    class="fa-solid fa-envelope iconMedium"></i></a>
+              <div class="frameFlexColumnSmall">
+                <div class="frameFlexMedium">
+                  <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
+                      class="fa-brands fa-whatsapp iconMedium"></i></a>
+                  <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon"
+                    target="_blank"><i class="fa-brands fa-linkedin iconMedium"></i></a>
+                  <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
+                      class="fa-brands fa-github iconMedium"></i></a>
+                  <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
+                      class="fa-solid fa-envelope iconMedium"></i></a>
+                </div>
+                <p class="regular" data-key="footerText"></p>
               </div>
             </div>
-            <p class="regular" data-key="footerText"></p>
+
 
           </ul>
 
@@ -111,18 +118,22 @@
       <div class="projectHeader padding">
         <div class="frameFlexColumnLarge">
           <a class="buttonSecondary" href="projects.html">
-            <i class="fa-solid fa-arrow-left"></i>
+            <i class="fa-solid fa-arrow-left iconMedium"></i>
             <p data-key="projectPageHeaderButtonBack" class="regular"></p>
           </a>
-          <div class="tag">
-            <p class="regular" data-key="cardProjectTattooParadiseTag1"></p>
+          <div class="frameFlexColumnSmall">
+            <div class="tag">
+              <p class="regular" data-key="cardProjectTattooParadiseTag1"></p>
+            </div>
+            <p data-key="cardProjectTattooParadiseTime" class="small"></p>
           </div>
-          <p data-key="cardProjectTattooParadiseTime" class="small"></p>
-          <h1 data-key="cardProjectTattooParadiseTitle"></h1>
-          <h4 data-key="cardProjectTattooParadiseDescription"></h4>          
+          <div class="frameFlexColumnSmall">
+            <h1 data-key="cardProjectTattooParadiseTitle"></h1>
+            <h4 data-key="cardProjectTattooParadiseDescription"></h4>
+          </div>
         </div>
-        <div class="projectImageContainter2">
-          <img src="assets/images/projects/tattooParadise/tattooParadiseImageHeader.webp" alt="projectImage">
+        <div class="projectImageContainter">
+          <img src="assets/images/projects/tattooParadise/headerImage.webp" alt="projectImage">
         </div>
       </div>
 
@@ -130,22 +141,22 @@
       <div class="articleInfo" id="stepSection">
 
         <div class="articleInfoOne">
-          <p class="regular-bold" data-key="cardProjectChallenge"></p>
+          <p class="large" data-key="cardProjectChallenge"></p>
           <p class="regular" data-key="cardProjectTattooParadiseChallenge"></p>
         </div>
 
         <div class="articleInfoTwo">
-          <p class="regular-bold" data-key="cardProjectRol"></p>
+          <p class="large" data-key="cardProjectRol"></p>
           <p class="regular" data-key="cardProjectTattooParadiseRol"></p>
         </div>
 
         <div class="articleInfoThree">
-          <p class="regular-bold" data-key="cardProjectCronology"></p>
+          <p class="large" data-key="cardProjectCronology"></p>
           <p class="regular" data-key="cardProjectTattooParadiseCronology"></p>
         </div>
 
         <div class="articleInfoFour">
-          <p class="regular-bold" data-key="cardProjectToolstack"></p>
+          <p class="large" data-key="cardProjectToolstack"></p>
           <p class="regular" data-key="cardProjectTattooParadiseToolstack"></p>
         </div>
 
@@ -157,7 +168,7 @@
         <div class="articleBodyContent frameFlexColumnColossal">
 
           <!-- [introduction] -->
-          <section id="Section1" class="frameFlexColumnMassive">
+          <section id="Section1" class="frameFlexColumnColossal">
             <div class="frameFlexColumnSmall">
               <h2 data-key="tattooParadiseParagraph1Title"></h2>
               <p data-key="tattooParadiseParagraph1Text" class="regular"></p>
@@ -165,7 +176,7 @@
           </section>
 
           <!-- [value propositon] -->
-          <section id="Section2" class="frameFlexColumnMassive">
+          <section id="Section2" class="frameFlexColumnColossal">
 
             <!-- [intro] -->
             <div class="frameFlexColumnSmall">
@@ -176,16 +187,16 @@
           </section>
 
           <!-- [research] -->
-          <section id="Section3" class="frameFlexColumnMassive">
-
-            <!-- [intro] -->
-            <div class="frameFlexColumnSmall">
-              <h2 data-key="tattooParadiseParagraph3Title"></h2>
-              <p data-key="tattooParadiseParagraph3Text" class="regular"></p>
-            </div>
+          <section id="Section3" class="frameFlexColumnColossal">
 
             <!-- [tatttoo market] -->
             <div class="frameFlexColumnLarge">
+
+              <!-- [intro] -->
+              <div class="frameFlexColumnSmall">
+                <h2 data-key="tattooParadiseParagraph3Title"></h2>
+                <p data-key="tattooParadiseParagraph3Text" class="regular"></p>
+              </div>
 
               <div class="frameFlexColumnSmall">
                 <h4 data-key="tattooParadiseSubParagraph1Title"></h4>
@@ -272,19 +283,18 @@
 
               <div class="frameFlexColumnSmall">
                 <h4 data-key="tattooParadiseSubParagraph3Title"></h4>
-                <p data-key="tattooParadiseSubParagraph3Text" class="regular"></p>
               </div>
 
               <div class="frameFlexDynamic">
 
                 <div class="cardTestimonial">
                   <div class="frameFlexColumTiny padding">
-                    <p data-key="tattooParadiseCardTestimonial1GoalTitle" class="regular-bold"></p>
+                    <p data-key="tattooParadiseCardTestimonial1GoalTitle" class="large"></p>
                     <p data-key="tattooParadiseCardTestimonial1Goal1Text" class="regular"></p>
                     <p data-key="tattooParadiseCardTestimonial1Goal2Text" class="regular"></p>
                   </div>
                   <div class="frameFlexColumTiny padding">
-                    <p data-key="tattooParadiseCardTestimonial1ActionTitle" class="regular-bold"></p>
+                    <p data-key="tattooParadiseCardTestimonial1ActionTitle" class="large"></p>
                     <p data-key="tattooParadiseCardTestimonial1Action1Text" class="regular"></p>
                     <p data-key="tattooParadiseCardTestimonial1Action2Text" class="regular"></p>
                     <p data-key="tattooParadiseCardTestimonial1Action3Text" class="regular"></p>
@@ -292,20 +302,20 @@
                   <div class="frameFlexSmall">
                     <img src="assets/images/personas/imageLidia.webp" alt="testimonialImage" class="imageExtraLarge">
                     <div class="frameFlexColumnTiny">
-                      <p class="regular"><b>Lidia Moreno</b></p>
-                      <p class="small" data-key="tattooParadiseCardTestimonial1Position"></p>
+                      <p class="large"><b>Lidia Moreno</b></p>
+                      <p class="regular" data-key="tattooParadiseCardTestimonial1Position"></p>
                     </div>
                   </div>
                 </div>
 
                 <div class="cardTestimonial">
                   <div class="frameFlexColumTiny padding">
-                    <p data-key="tattooParadiseCardTestimonial1GoalTitle" class="regular-bold"></p>
+                    <p data-key="tattooParadiseCardTestimonial1GoalTitle" class="large"></p>
                     <p data-key="tattooParadiseCardTestimonial2Goal1Text" class="regular"></p>
                     <p data-key="tattooParadiseCardTestimonial2Goal2Text" class="regular"></p>
                   </div>
                   <div class="frameFlexColumTiny padding">
-                    <p data-key="tattooParadiseCardTestimonial1ActionTitle" class="regular-bold"></p>
+                    <p data-key="tattooParadiseCardTestimonial1ActionTitle" class="large"></p>
                     <p data-key="tattooParadiseCardTestimonial2Action1Text" class="regular"></p>
                     <p data-key="tattooParadiseCardTestimonial2Action2Text" class="regular"></p>
                     <p data-key="tattooParadiseCardTestimonial2Action3Text" class="regular"></p>
@@ -313,8 +323,8 @@
                   <div class="frameFlexSmall">
                     <img src="assets/images/personas/imageFran.webp" alt="testimonialImage" class="imageExtraLarge">
                     <div class="frameFlexColumnTiny">
-                      <p class="regular"><b>Fran Vázquez</b></p>
-                      <p class="small" data-key="tattooParadiseCardTestimonial2Position"></p>
+                      <p class="large"><b>Fran Vázquez</b></p>
+                      <p class="regular" data-key="tattooParadiseCardTestimonial2Position"></p>
                     </div>
                   </div>
                 </div>
@@ -328,7 +338,6 @@
 
               <div class="frameFlexColumnSmall">
                 <h4 data-key="tattooParadiseSubParagraph4Title"></h4>
-                <p data-key="tattooParadiseSubParagraph4Text" class="regular"></p>
               </div>
 
               <div class="gridTwoAuto">
@@ -354,7 +363,6 @@
 
               <div class="frameFlexColumnSmall">
                 <h4 data-key="tattooParadiseSubParagraph5Title"></h4>
-                <p data-key="tattooParadiseSubParagraph5Text" class="regular"></p>
               </div>
 
               <table>
@@ -481,24 +489,23 @@
 
               <div class="frameFlexColumnSmall">
                 <h4 data-key="tattooParadiseSubParagraph6Title"></h4>
-                <p data-key="tattooParadiseSubParagraph6Text" class="regular"></p>
               </div>
 
               <div class="frameFlexColumnMedium">
                 <div class="cardInsight">
-                  <p class="regular-bold" data-key="tattooParadisecardInsight1Title"></p>
+                  <p class="large" data-key="tattooParadisecardInsight1Title"></p>
                   <p class="regular" data-key="tattooParadisecardInsight1Text"></p>
                 </div>
                 <div class="cardInsight">
-                  <p class="regular-bold" data-key="tattooParadisecardInsight2Title"></p>
+                  <p class="large" data-key="tattooParadisecardInsight2Title"></p>
                   <p class="regular" data-key="tattooParadisecardInsight2Text"></p>
                 </div>
                 <div class="cardInsight">
-                  <p class="regular-bold" data-key="tattooParadisecardInsight3Title"></p>
+                  <p class="large" data-key="tattooParadisecardInsight3Title"></p>
                   <p class="regular" data-key="tattooParadisecardInsight3Text"></p>
                 </div>
                 <div class="cardInsight">
-                  <p class="regular-bold" data-key="tattooParadisecardInsight4Title"></p>
+                  <p class="large" data-key="tattooParadisecardInsight4Title"></p>
                   <p class="regular" data-key="tattooParadisecardInsight4Text"></p>
                 </div>
               </div>
@@ -621,7 +628,7 @@
           </section>
 
           <!-- [design decisions] -->
-          <section id="Section4" class="frameFlexColumnMassive">
+          <section id="Section4" class="frameFlexColumnLarge">
 
             <!-- [intro] -->
             <div class="frameFlexColumnSmall">
@@ -630,13 +637,12 @@
             </div>
 
             <!-- [designs] -->
-            <div class="frameFlexColumnMassive">
+            <div class="frameFlexColumnLarge">
 
               <!-- [interaction] -->
               <div class="someDesignsFrame columnReverse">
                 <div class="someDesignsImageContainer">
-                  <img src="assets/images/projects/tattooParadise/designDecisions/designDecision 1.webp"
-                    alt="someDesignsImage">
+                  <img src="assets/images/projects/tattooParadise/designDecisions-1.webp" alt="someDesignsImage">
                 </div>
                 <div class="frameFlexColumnSmall">
                   <h4 data-key="tattooParadiseSomeDesigns1Title"></h4>
@@ -651,16 +657,14 @@
                   <p class="regular" data-key="tattooParadiseSomeDesigns2Text"></p>
                 </div>
                 <div class="someDesignsImageContainer">
-                  <img src="assets/images/projects/tattooParadise/designDecisions/designDecision 2.webp"
-                    alt="someDesignsImage">
+                  <img src="assets/images/projects/tattooParadise/designDecisions-2.webp" alt="someDesignsImage">
                 </div>
               </div>
 
               <!-- [guide] -->
               <div class="someDesignsFrame columnReverse">
                 <div class="someDesignsImageContainer">
-                  <img src="assets/images/projects/tattooParadise/designDecisions/designDecision 3.webp"
-                    alt="someDesignsImage">
+                  <img src="assets/images/projects/tattooParadise/designDecisions-3.webp" alt="someDesignsImage">
                 </div>
                 <div class="frameFlexColumnSmall">
                   <h4 data-key="tattooParadiseSomeDesigns3Title"></h4>
@@ -675,8 +679,7 @@
                   <p class="regular" data-key="tattooParadiseSomeDesigns4Text"></p>
                 </div>
                 <div class="someDesignsImageContainer">
-                  <img src="assets/images/projects/tattooParadise/designDecisions/designDecision 4.webp"
-                    alt="someDesignsImage">
+                  <img src="assets/images/projects/tattooParadise/designDecisions-4.webp" alt="someDesignsImage">
                 </div>
               </div>
             </div>
@@ -684,16 +687,15 @@
           </section>
 
           <!-- [design system] -->
-          <section id="Section5" class="frameFlexColumnMassive">
-
-            <!-- [intro] -->
-            <div class="frameFlexColumnSmall">
-              <h2 data-key="tattooParadiseParagraph5Title"></h2>
-              <p data-key="tattooParadiseParagraph5Text" class="regular"></p>
-            </div>
+          <section id="Section5" class="frameFlexColumnColossal">
 
             <!-- [typography] -->
             <div class="frameFlexColumnLarge">
+
+              <!-- [intro] -->
+              <div class="frameFlexColumnSmall">
+                <h2 data-key="tattooParadiseParagraph5Title"></h2>
+              </div>
 
               <div class="frameFlexColumnSmall">
                 <h4 data-key="tattooParadiseSubParagraph7Title"></h4>
@@ -704,27 +706,27 @@
 
                 <div class="gridAutoOne">
                   <div class="cardTypography">
-                    <p class="regular-bold">Heading 1</p>
+                    <p class="large">Heading 1</p>
                     <p class="regular">Poppins</p>
                     <p class="small">48px / line Auto</p>
                   </div>
                   <div class="cardTypography">
-                    <p class="regular-bold">Heading 2</p>
+                    <p class="large">Heading 2</p>
                     <p class="regular">Poppins</p>
                     <p class="small">40px / line Auto</p>
                   </div>
                   <div class="cardTypography">
-                    <p class="regular-bold">Large</p>
+                    <p class="large">Large</p>
                     <p class="regular">Poppins</p>
                     <p class="small">20px / line Auto</p>
                   </div>
                   <div class="cardTypography">
-                    <p class="regular-bold">Regular</p>
+                    <p class="large">Regular</p>
                     <p class="regular">Poppins</p>
                     <p class="small">16px / line Auto</p>
                   </div>
                   <div class="cardTypography">
-                    <p class="regular-bold">Small</p>
+                    <p class="large">Small</p>
                     <p class="regular">Poppins</p>
                     <p class="small">12px / line Auto</p>
                   </div>
@@ -739,7 +741,6 @@
 
               <div class="frameFlexColumnSmall">
                 <h4 data-key="tattooParadiseSubParagraph8Title"></h4>
-                <p data-key="tattooParadiseSubParagraph8Text" class="regular"></p>
               </div>
 
               <div class="frameFlexColumnLarge">
@@ -751,7 +752,7 @@
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle34"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold" data-key="tattooParadisecolorSubsection1Name"></div>
+                        <div class="regular" data-key="tattooParadisecolorSubsection1Name"></div>
                         <p class="small">#A937DE</p>
                       </div>
                     </div>
@@ -768,7 +769,7 @@
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle25"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold" data-key="atipikoTourcolorSubsection2Name"></div>
+                        <div class="regular" data-key="atipikoTourcolorSubsection2Name"></div>
                         <p class="small">#B6BABF</p>
                       </div>
                     </div>
@@ -783,7 +784,6 @@
 
               <div class="frameFlexColumnSmall">
                 <h4 data-key="tattooParadiseSubParagraph9Title"></h4>
-                <p data-key="tattooParadiseSubParagraph9Text" class="regular"></p>
               </div>
 
               <div class="frameFlexColumnMedium">
@@ -953,7 +953,8 @@
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="componentContainer">
-                      <img src="assets/images/projects/tattooParadise/components/componentTattooParadiseTraditional.webp"
+                      <img
+                        src="assets/images/projects/tattooParadise/components/componentTattooParadiseTraditional.webp"
                         alt="component">
                     </div>
                     <p class="small">cardTraditional</p>
@@ -1027,15 +1028,7 @@
     <div class="frameFlexColumnLarge otherArticles">
 
       <!-- [intro] -->
-      <div class="sectionHeader">
-        <div class="frameFlexAuto">
-          <h2 data-key="otherProjectsTitle"></h2>
-          <a href="projects.html" class="buttonTerciary">
-            <p class="regular" data-key="indexSectionHeaderButton"></p>
-          </a>
-        </div>
-        <p class="regular" data-key="otherProjectsText"></p>
-      </div>
+      <h2 data-key="otherProjectsTitle"></h2>      
 
       <!-- [projects] -->
       <div class="gridThree">
@@ -1043,33 +1036,36 @@
         <!-- [portfolio] -->
         <a class="cardProject" href="portfolio.html">
           <div class="cardProjectImageContainer">
-            <img class="cardProjectImage" src="assets/images/projects/portfolio/cardProject__portfolio.webp"
-              alt="cardProjectImage">
+            <img src="assets/images/projects/portfolio/headerImage.webp" alt="imageContainer">
           </div>
-          <div class="frameFlexColumnTiny">
-            <p class="large">Portfolio</p>
-            <p class="small" data-key="cardProjectPortfolioTime"></p>
+          <div class="frameFlexColumnSmall">
+            <div class="frameFlexColumnTiny">
+              <p class="large">Portfolio</p>
+              <p class="small" data-key="cardProjectPortfolioTime"></p>
+            </div>
+            <p class="regular" data-key="cardProjectPortfolioDescription"></p>
           </div>
-          <p class="regular" data-key="cardProjectPortfolioDescription"></p>
-          <div class="frameFlexMedium">
+          <div class="frameFlexSmall">
             <div class="tag">
               <p class="regular" data-key="cardProjectPortfolioTag1"></p>
             </div>
           </div>
+          <i class="fa-solid fa-arrow-right iconMedium"></i>
         </a>
 
         <!-- [geomites] -->
         <a class="cardProject" href="geomites.html">
           <div class="cardProjectImageContainer">
-            <img class="cardProjectImage" src="assets/images/projects/geomites/cardProject__geomites.webp"
-              alt="cardProjectImage">
+            <img src="assets/images/projects/geomites/headerImage.webp" alt="imageContainer">
           </div>
-          <div class="frameFlexColumnTiny">
-            <p class="large">Geomites</p>
-            <p class="small" data-key="cardProjectGeomitesTime"></p>
+          <div class="frameFlexColumnSmall">
+            <div class="frameFlexColumnTiny">
+              <p class="large">Geomites</p>
+              <p class="small" data-key="cardProjectGeomitesTime"></p>
+            </div>
+            <p class="regular" data-key="cardProjectGeomitesDescription"></p>
           </div>
-          <p class="regular" data-key="cardProjectGeomitesDescription"></p>
-          <div class="frameFlexMedium">
+          <div class="frameFlexSmall">
             <div class="tagNew">
               <p class="regular" data-key="cardProjectGeomitesTag1"></p>
             </div>
@@ -1077,24 +1073,27 @@
               <p class="regular" data-key="cardProjectGeomitesTag2"></p>
             </div>
           </div>
+          <i class="fa-solid fa-arrow-right iconMedium"></i>
         </a>
 
         <!-- [senzoStudio] -->
         <a class="cardProject" href="senzoStudio.html">
           <div class="cardProjectImageContainer">
-            <img class="cardProjectImage" src="assets/images/projects/senzoStudio/cardProject__senzoStudio.webp"
-              alt="cardProjectImage">
+            <img src="assets/images/projects/senzoStudio/headerImage.webp" alt="imageContainer">
           </div>
-          <div class="frameFlexColumnTiny">
-            <p class="large">Senzo studio</p>
-            <p class="small" data-key="cardProjectSenzoStudioTime"></p>
+          <div class="frameFlexColumnSmall">
+            <div class="frameFlexColumnTiny">
+              <p class="large">Senzo studio</p>
+              <p class="small" data-key="cardProjectSenzoStudioTime"></p>
+            </div>
+            <p class="regular" data-key="cardProjectSenzoStudioDescription"></p>
           </div>
-          <p class="regular" data-key="cardProjectSenzoStudioDescription"></p>
-          <div class="frameFlexMedium">
+          <div class="frameFlexSmall">
             <div class="tag">
               <p class="regular" data-key="cardProjectSenzoStudioTag1"></p>
             </div>
           </div>
+          <i class="fa-solid fa-arrow-right iconMedium"></i>
         </a>
 
       </div>

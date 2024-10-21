@@ -37,11 +37,15 @@
     <header class="navBar">
 
       <div class="navBarContainer">
-        <a href="index.html" alt="logoAlejandro" id="logoLink" viewBox="0 0 24 24">
-          <svg class="logo imageLarge" viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M5.86048 20.6292L15.0291 2.83789H16.2875L32.0001 30.7269H24.5213L16.4673 16.5975H15.2089L13.7347 20.6292H5.86048ZM3.63149 24.439H16.144L20.0631 30.8379H0L3.63149 24.439Z" />
+        <a href="index.html" alt="logoAlejandro" id="logoLink" viewBox="0 0 24 24" class="imageLarge">
+
+          <svg xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.144 24.1011H3.63149L0 30.5H20.0631L16.144 24.1011Z" fill="var(--primary-500)" />
+            <path
+              d="M15.029 2.5L5.86035 20.2913H13.7346L15.2087 16.2596H16.4672L24.5212 30.389H31.9999L16.2874 2.5H15.029Z"
+              fill="var(--neutral-100)" />
           </svg>
+
         </a>
 
         <nav class="mobileNavigation" id="primaryNavigation">
@@ -77,18 +81,21 @@
             </div>
             <div class="frameFlexColumnMedium">
               <p class="large" data-key="navigationSubtitle4"></p>
-              <div class="frameFlexMedium">
-                <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
-                    class="fa-brands fa-whatsapp iconMedium"></i></a>
-                <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon"
-                  target="_blank"><i class="fa-brands fa-linkedin iconMedium"></i></a>
-                <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
-                    class="fa-brands fa-github iconMedium"></i></a>
-                <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
-                    class="fa-solid fa-envelope iconMedium"></i></a>
+              <div class="frameFlexColumnSmall">
+                <div class="frameFlexMedium">
+                  <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
+                      class="fa-brands fa-whatsapp iconMedium"></i></a>
+                  <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon"
+                    target="_blank"><i class="fa-brands fa-linkedin iconMedium"></i></a>
+                  <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
+                      class="fa-brands fa-github iconMedium"></i></a>
+                  <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
+                      class="fa-solid fa-envelope iconMedium"></i></a>
+                </div>
+                <p class="regular" data-key="footerText"></p>
               </div>
             </div>
-            <p class="regular" data-key="footerText"></p>
+
 
           </ul>
 
@@ -111,18 +118,22 @@
       <div class="projectHeader padding">
         <div class="frameFlexColumnLarge">
           <a class="buttonSecondary" href="projects.html">
-            <i class="fa-solid fa-arrow-left"></i>
+            <i class="fa-solid fa-arrow-left iconMedium"></i>
             <p data-key="projectPageHeaderButtonBack" class="regular"></p>
           </a>
-          <div class="tag">
-            <p class="regular" data-key="cardProjectAtipikoToursTag1"></p>
+          <div class="frameFlexColumnSmall">
+            <div class="tag">
+              <p class="regular" data-key="cardProjectAtipikoToursTag1"></p>
+            </div>
+            <p data-key="cardProjectAtipikoToursTime" class="small"></p>
           </div>
-          <p data-key="cardProjectAtipikoToursTime" class="small"></p>
-          <h1 data-key="cardProjectAtipikoToursTitle"></h1>
-          <h4 data-key="cardProjectAtipikoToursDescription"></h4>          
+          <div class="frameFlexColumnSmall">
+            <h1 data-key="cardProjectAtipikoToursTitle"></h1>
+            <h4 data-key="cardProjectAtipikoToursDescription"></h4>
+          </div>
         </div>
-        <div class="projectImageContainter1">
-          <img src="assets/images/projects/atipikoTours/atipikoToursImageHeader.webp" alt="projectImage">
+        <div class="projectImageContainter">
+          <img src="assets/images/projects/atipikoTours/headerImage.webp" alt="projectImage">
         </div>
       </div>
 
@@ -130,22 +141,22 @@
       <div class="articleInfo" id="stepSection">
 
         <div class="articleInfoOne">
-          <p class="regular-bold" data-key="cardProjectChallenge"></p>
+          <p class="large" data-key="cardProjectChallenge"></p>
           <p class="regular" data-key="cardProjectAtipikoToursChallenge"></p>
         </div>
 
         <div class="articleInfoTwo">
-          <p class="regular-bold" data-key="cardProjectRol"></p>
+          <p class="large" data-key="cardProjectRol"></p>
           <p class="regular" data-key="cardProjectAtipikoToursRol"></p>
         </div>
 
         <div class="articleInfoThree">
-          <p class="regular-bold" data-key="cardProjectCronology"></p>
+          <p class="large" data-key="cardProjectCronology"></p>
           <p class="regular" data-key="cardProjectAtipikoToursCronology"></p>
         </div>
 
         <div class="articleInfoFour">
-          <p class="regular-bold" data-key="cardProjectToolstack"></p>
+          <p class="large" data-key="cardProjectToolstack"></p>
           <p class="regular" data-key="cardProjectAtipikoToursToolstack"></p>
         </div>
 
@@ -165,229 +176,172 @@
           </section>
 
           <!-- [research] -->
-          <section id="Section2" class="frameFlexColumnMassive">
-
-            <!-- [intro] -->
-            <div class="frameFlexColumnSmall">
-              <h2 data-key="atipikoToursParagraph2Title"></h2>
-              <p data-key="atipikoToursParagraph2Text" class="regular"></p>
-            </div>
+          <section id="Section2" class="frameFlexColumnColossal">
 
             <!-- [empathy map] -->
             <div class="frameFlexColumnLarge">
+
+              <!-- [intro] -->
+              <div class="frameFlexColumnSmall">
+                <h2 data-key="atipikoToursParagraph2Title"></h2>
+                <p data-key="atipikoToursParagraph2Text" class="regular"></p>
+              </div>
 
               <div class="frameFlexColumnSmall">
                 <h4 data-key="atipikoToursSubParagraph1Title"></h4>
                 <p data-key="atipikoToursSubParagraph1Text" class="regular"></p>
               </div>
 
-              <!-- [Maria's empathy map] -->
-              <div class="frameFlexColumnMedium">
+              <div class="frameFlexColumnExtraLarge">
 
-                <div class="frameFlexSmall">
-                  <img src="assets/images/personas/imageMaria.webp" alt="testimonialImage" class="imageExtraLarge">
-                  <div class="frameFlexColumnTiny">
-                    <p class="regular"><b>Maria</b></p>
-                    <p class="small" data-key="atipikoToursCardAuthor1"></p>
+                <!-- [Maria's empathy map] -->
+                <div class="frameFlexColumnLarge">
+
+                  <div class="frameFlexSmall">
+                    <img src="assets/images/personas/imageMaria.webp" alt="testimonialImage" class="imageExtraLarge">
+                    <div class="frameFlexColumnTiny">
+                      <p class="large">Maria</p>
+                      <p class="regular" data-key="atipikoToursCardAuthor1"></p>
+                    </div>
                   </div>
-                </div>
 
-                <div class="frameFlexLarge">
+                  <div class="frameFlexLarge columnReverse">
 
-                  <div class="frameFlexColumnSmall">
+                    <div class="frameFlexColumnSmall">
 
-                    <p data-key="atipikoToursEmpathyMapTitle1" class="regular-bold"></p>
+                      <p data-key="atipikoToursEmpathyMapTitle1" class="regular-bold"></p>
 
-                    <div class="frameFlexSmall">
+                      <div class="frameFlexSmall">
 
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote1" class="small"></p>
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote1" class="small"></p>
+                        </div>
+
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote2" class="small"></p>
+                        </div>
+
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote3" class="small"></p>
+                        </div>
+
                       </div>
 
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote2" class="small"></p>
-                      </div>
+                    </div>
 
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote3" class="small"></p>
+                    <div class="frameFlexColumnSmall">
+
+                      <p data-key="atipikoToursEmpathyMapTitle2" class="regular-bold"></p>
+
+                      <div class="frameFlexSmall">
+
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote4" class="small"></p>
+                        </div>
+
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote5" class="small"></p>
+                        </div>
+
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote6" class="small"></p>
+                        </div>
+
                       </div>
 
                     </div>
 
                   </div>
 
-                  <div class="frameFlexColumnSmall">
+                  <div class="frameFlexLarge columnReverse">
 
-                    <p data-key="atipikoToursEmpathyMapTitle2" class="regular-bold"></p>
+                    <div class="frameFlexColumnSmall">
 
-                    <div class="frameFlexSmall">
+                      <p data-key="atipikoToursEmpathyMapTitle3" class="regular-bold"></p>
 
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote4" class="small"></p>
+                      <div class="frameFlexSmall">
+
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote7" class="small"></p>
+                        </div>
+
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote8" class="small"></p>
+                        </div>
+
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote9" class="small"></p>
+                        </div>
+
                       </div>
 
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote5" class="small"></p>
-                      </div>
+                    </div>
 
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote6" class="small"></p>
+                    <div class="frameFlexColumnSmall">
+
+                      <p data-key="atipikoToursEmpathyMapTitle4" class="regular-bold"></p>
+
+                      <div class="frameFlexSmall">
+
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote10" class="small"></p>
+                        </div>
+
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote11" class="small"></p>
+                        </div>
+
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote12" class="small"></p>
+                        </div>
+
                       </div>
 
                     </div>
 
                   </div>
 
-                </div>
+                  <div class="frameFlexLarge columnReverse">
 
-                <div class="frameFlexLarge">
+                    <div class="frameFlexColumnSmall">
 
-                  <div class="frameFlexColumnSmall">
+                      <p data-key="atipikoToursEmpathyMapTitle5" class="regular-bold"></p>
 
-                    <p data-key="atipikoToursEmpathyMapTitle3" class="regular-bold"></p>
+                      <div class="frameFlexSmall">
 
-                    <div class="frameFlexSmall">
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote13" class="small"></p>
+                        </div>
 
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote7" class="small"></p>
-                      </div>
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote14" class="small"></p>
+                        </div>
 
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote8" class="small"></p>
-                      </div>
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote15" class="small"></p>
+                        </div>
 
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote9" class="small"></p>
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="frameFlexColumnSmall">
-
-                    <p data-key="atipikoToursEmpathyMapTitle4" class="regular-bold"></p>
-
-                    <div class="frameFlexSmall">
-
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote10" class="small"></p>
-                      </div>
-
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote11" class="small"></p>
-                      </div>
-
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote12" class="small"></p>
                       </div>
 
                     </div>
+                    <div class="frameFlexColumnSmall hiddenFlex">
 
-                  </div>
+                      <p data-key="atipikoToursEmpathyMapTitle5" class="regular-bold"></p>
 
-                </div>
+                      <div class="frameFlexSmall">
 
-                <div class="frameFlexLarge">
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote13" class="small"></p>
+                        </div>
 
-                  <div class="frameFlexColumnSmall">
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote14" class="small"></p>
+                        </div>
 
-                    <p data-key="atipikoToursEmpathyMapTitle5" class="regular-bold"></p>
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote15" class="small"></p>
+                        </div>
 
-                    <div class="frameFlexSmall">
-
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote13" class="small"></p>
-                      </div>
-
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote14" class="small"></p>
-                      </div>
-
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote15" class="small"></p>
-                      </div>
-
-                    </div>
-
-                  </div>
-                  <div class="frameFlexColumnSmall visibility">
-
-                    <p data-key="atipikoToursEmpathyMapTitle5" class="regular-bold"></p>
-
-                    <div class="frameFlexSmall">
-
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote13" class="small"></p>
-                      </div>
-
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote14" class="small"></p>
-                      </div>
-
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote15" class="small"></p>
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-              <!-- [John's empathy map] -->
-              <div class="frameFlexColumnMedium">
-
-                <div class="frameFlexSmall">
-                  <img src="assets/images/personas/imageJohn.webp" alt="testimonialImage" class="imageExtraLarge">
-                  <div class="frameFlexColumnTiny">
-                    <p class="regular"><b>John</b></p>
-                    <p class="small" data-key="atipikoToursCardAuthor2"></p>
-                  </div>
-                </div>
-
-                <div class="frameFlexLarge">
-
-                  <div class="frameFlexColumnSmall">
-
-                    <p data-key="atipikoToursEmpathyMapTitle1" class="regular-bold"></p>
-
-                    <div class="frameFlexSmall">
-
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote16" class="small"></p>
-                      </div>
-
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote17" class="small"></p>
-                      </div>
-
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote18" class="small"></p>
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="frameFlexColumnSmall">
-
-                    <p data-key="atipikoToursEmpathyMapTitle2" class="regular-bold"></p>
-
-                    <div class="frameFlexSmall">
-
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote19" class="small"></p>
-                      </div>
-
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote20" class="small"></p>
-                      </div>
-
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote21" class="small"></p>
                       </div>
 
                     </div>
@@ -396,46 +350,155 @@
 
                 </div>
 
-                <div class="frameFlexLarge">
+                <!-- [John's empathy map] -->
+                <div class="frameFlexColumnLarge">
 
-                  <div class="frameFlexColumnSmall">
+                  <div class="frameFlexSmall">
+                    <img src="assets/images/personas/imageJohn.webp" alt="testimonialImage" class="imageExtraLarge">
+                    <div class="frameFlexColumnTiny">
+                      <p class="large">John</p>
+                      <p class="regular" data-key="atipikoToursCardAuthor2"></p>
+                    </div>
+                  </div>
 
-                    <p data-key="atipikoToursEmpathyMapTitle3" class="regular-bold"></p>
+                  <div class="frameFlexLarge columnReverse">
 
-                    <div class="frameFlexSmall">
+                    <div class="frameFlexColumnSmall">
 
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote22" class="small"></p>
+                      <p data-key="atipikoToursEmpathyMapTitle1" class="regular-bold"></p>
+
+                      <div class="frameFlexSmall">
+
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote16" class="small"></p>
+                        </div>
+
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote17" class="small"></p>
+                        </div>
+
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote18" class="small"></p>
+                        </div>
+
                       </div>
 
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote23" class="small"></p>
-                      </div>
+                    </div>
 
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote24" class="small"></p>
+                    <div class="frameFlexColumnSmall">
+
+                      <p data-key="atipikoToursEmpathyMapTitle2" class="regular-bold"></p>
+
+                      <div class="frameFlexSmall">
+
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote19" class="small"></p>
+                        </div>
+
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote20" class="small"></p>
+                        </div>
+
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote21" class="small"></p>
+                        </div>
+
                       </div>
 
                     </div>
 
                   </div>
 
-                  <div class="frameFlexColumnSmall">
+                  <div class="frameFlexLarge columnReverse">
 
-                    <p data-key="atipikoToursEmpathyMapTitle4" class="regular-bold"></p>
+                    <div class="frameFlexColumnSmall">
 
-                    <div class="frameFlexSmall">
+                      <p data-key="atipikoToursEmpathyMapTitle3" class="regular-bold"></p>
 
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote25" class="small"></p>
+                      <div class="frameFlexSmall">
+
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote22" class="small"></p>
+                        </div>
+
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote23" class="small"></p>
+                        </div>
+
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote24" class="small"></p>
+                        </div>
+
                       </div>
 
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote26" class="small"></p>
+                    </div>
+
+                    <div class="frameFlexColumnSmall">
+
+                      <p data-key="atipikoToursEmpathyMapTitle4" class="regular-bold"></p>
+
+                      <div class="frameFlexSmall">
+
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote25" class="small"></p>
+                        </div>
+
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote26" class="small"></p>
+                        </div>
+
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote27" class="small"></p>
+                        </div>
+
                       </div>
 
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote27" class="small"></p>
+                    </div>
+
+                  </div>
+
+                  <div class="frameFlexLarge columnReverse">
+
+                    <div class="frameFlexColumnSmall">
+
+                      <p data-key="atipikoToursEmpathyMapTitle5" class="regular-bold"></p>
+
+                      <div class="frameFlexSmall">
+
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote28" class="small"></p>
+                        </div>
+
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote29" class="small"></p>
+                        </div>
+
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote30" class="small"></p>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="frameFlexColumnSmall hiddenFlex">
+
+                      <p data-key="atipikoToursEmpathyMapTitle5" class="regular-bold"></p>
+
+                      <div class="frameFlexSmall">
+
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote28" class="small"></p>
+                        </div>
+
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote29" class="small"></p>
+                        </div>
+
+                        <div class="userStoryMapItem">
+                          <p data-key="atipikoToursNote30" class="small"></p>
+                        </div>
+
                       </div>
 
                     </div>
@@ -443,60 +506,11 @@
                   </div>
 
                 </div>
-
-                <div class="frameFlexLarge">
-
-                  <div class="frameFlexColumnSmall">
-
-                    <p data-key="atipikoToursEmpathyMapTitle5" class="regular-bold"></p>
-
-                    <div class="frameFlexSmall">
-
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote28" class="small"></p>
-                      </div>
-
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote29" class="small"></p>
-                      </div>
-
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote30" class="small"></p>
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="frameFlexColumnSmall visibility">
-
-                    <p data-key="atipikoToursEmpathyMapTitle5" class="regular-bold"></p>
-
-                    <div class="frameFlexSmall">
-
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote28" class="small"></p>
-                      </div>
-
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote29" class="small"></p>
-                      </div>
-
-                      <div class="userStoryMapItem">
-                        <p data-key="atipikoToursNote30" class="small"></p>
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                </div>
-
               </div>
 
             </div>
 
-            <!-- [user nourney] -->
+            <!-- [user journey] -->
             <div class="frameFlexColumnLarge">
 
               <div class="frameFlexColumnSmall">
@@ -510,52 +524,48 @@
                 <div class="frameFlexSmall">
                   <img src="assets/images/personas/imageMaria.webp" alt="testimonialImage" class="imageExtraLarge">
                   <div class="frameFlexColumnTiny">
-                    <p class="regular"><b>Maria</b></p>
-                    <p class="small" data-key="atipikoToursCardAuthor1"></p>
+                    <p class="large">Maria</p>
+                    <p class="regular" data-key="atipikoToursCardAuthor1"></p>
                   </div>
                 </div>
 
 
                 <div class="gridFiveFour">
 
-                  <div class="frameFlexColumnSmall">
-                    <p data-key="atipikoToursUserJourneyTitle1" class="regular-bold"></p>
-                    <p data-key="atipikoToursUserJourneyText1" class="regular"></p>
+                  <div class="frameFlexColumnTiny">
+                    <p data-key="atipikoToursUserJourneyTitle1" class="small"></p>
                   </div>
 
-                  <div class="frameFlexColumnSmall">
-                    <p data-key="atipikoToursUserJourneyTitle2" class="regular-bold"></p>
-                    <p data-key="atipikoToursUserJourneyText2" class="regular"></p>
+                  <div class="frameFlexColumnTiny">
+                    <p data-key="atipikoToursUserJourneyTitle2" class="small"></p>
                   </div>
 
-                  <div class="frameFlexColumnSmall">
-                    <p data-key="atipikoToursUserJourneyTitle3" class="regular-bold"></p>
-                    <p data-key="atipikoToursUserJourneyText3" class="regular"></p>
+                  <div class="frameFlexColumnTiny">
+                    <p data-key="atipikoToursUserJourneyTitle3" class="small"></p>
                   </div>
 
-                  <div class="frameFlexColumnSmall">
-                    <p data-key="atipikoToursUserJourneyTitle4" class="regular-bold"></p>
-                    <p data-key="atipikoToursUserJourneyText4" class="regular"></p>
+                  <div class="frameFlexColumnTiny">
+                    <p data-key="atipikoToursUserJourneyTitle4" class="small"></p>
                   </div>
 
                   <div class="cardUserJourney cardUserJourneyGreen">
-                    <p data-key="atipikoToursCardUserJourney1" class="small"></p>
+                    <p data-key="atipikoToursCardUserJourney1"></p>
                   </div>
 
                   <div class="cardUserJourney cardUserJourneyGreen">
-                    <p data-key="atipikoToursCardUserJourney2" class="small"></p>
+                    <p data-key="atipikoToursCardUserJourney2"></p>
                   </div>
 
                   <div class="cardUserJourney cardUserJourneyGreen">
-                    <p data-key="atipikoToursCardUserJourney3" class="small"></p>
+                    <p data-key="atipikoToursCardUserJourney3"></p>
                   </div>
 
                   <div class="cardUserJourney cardUserJourneyGreen">
-                    <p data-key="atipikoToursCardUserJourney4" class="small"></p>
+                    <p data-key="atipikoToursCardUserJourney4"></p>
                   </div>
 
                   <div class="cardUserJourney cardUserJourneyYellow">
-                    <p data-key="atipikoToursCardUserJourney5" class="small"></p>
+                    <p data-key="atipikoToursCardUserJourney5"></p>
                   </div>
 
                   <div class="cardUserJourney cardUserJourneyYellow">
@@ -563,7 +573,7 @@
                   </div>
 
                   <div class="cardUserJourney cardUserJourneyYellow">
-                    <p data-key="atipikoToursCardUserJourney6" class="small"></p>
+                    <p data-key="atipikoToursCardUserJourney6"></p>
                   </div>
 
                   <div class="cardUserJourney cardUserJourneyYellow">
@@ -575,7 +585,7 @@
                   </div>
 
                   <div class="cardUserJourney cardUserJourneyRed">
-                    <p data-key="atipikoToursCardUserJourney7" class="small"></p>
+                    <p data-key="atipikoToursCardUserJourney7"></p>
                   </div>
 
                   <div class="cardUserJourney cardUserJourneyRed">
@@ -584,15 +594,7 @@
 
                   <div class="cardUserJourney cardUserJourneyRed">
 
-                  </div>
-
-                  <p data-key="atipikoToursUserJourneyText5" class="regular"></p>
-
-                  <p data-key="atipikoToursUserJourneyText6" class="regular"></p>
-
-                  <p data-key="atipikoToursUserJourneyText7" class="regular"></p>
-
-                  <p data-key="atipikoToursUserJourneyText8" class="regular"></p>
+                  </div>                  
 
                 </div>
 
@@ -604,8 +606,8 @@
                 <div class="frameFlexSmall">
                   <img src="assets/images/personas/imageJohn.webp" alt="testimonialImage" class="imageExtraLarge">
                   <div class="frameFlexColumnTiny">
-                    <p class="regular"><b>John</b></p>
-                    <p class="small" data-key="atipikoToursCardAuthor2"></p>
+                    <p class="large">John</p>
+                    <p class="regular" data-key="atipikoToursCardAuthor2"></p>
                   </div>
                 </div>
 
@@ -613,23 +615,19 @@
                 <div class="gridFiveFour">
 
                   <div class="frameFlexColumnSmall">
-                    <p data-key="atipikoToursUserJourneyTitle1" class="regular-bold"></p>
-                    <p data-key="atipikoToursUserJourneyText1" class="regular"></p>
+                    <p data-key="atipikoToursUserJourneyTitle1" class="small"></p>
                   </div>
 
                   <div class="frameFlexColumnSmall">
-                    <p data-key="atipikoToursUserJourneyTitle2" class="regular-bold"></p>
-                    <p data-key="atipikoToursUserJourneyText2" class="regular"></p>
+                    <p data-key="atipikoToursUserJourneyTitle2" class="small"></p>
                   </div>
 
                   <div class="frameFlexColumnSmall">
-                    <p data-key="atipikoToursUserJourneyTitle3" class="regular-bold"></p>
-                    <p data-key="atipikoToursUserJourneyText3" class="regular"></p>
+                    <p data-key="atipikoToursUserJourneyTitle3" class="small"></p>
                   </div>
 
                   <div class="frameFlexColumnSmall">
-                    <p data-key="atipikoToursUserJourneyTitle4" class="regular-bold"></p>
-                    <p data-key="atipikoToursUserJourneyText4" class="regular"></p>
+                    <p data-key="atipikoToursUserJourneyTitle4" class="small"></p>
                   </div>
 
                   <div class="cardUserJourney cardUserJourneyGreen">
@@ -678,15 +676,7 @@
 
                   <div class="cardUserJourney cardUserJourneyRed">
 
-                  </div>
-
-                  <p data-key="atipikoToursUserJourneyText5" class="regular"></p>
-
-                  <p data-key="atipikoToursUserJourneyText6" class="regular"></p>
-
-                  <p data-key="atipikoToursUserJourneyText7" class="regular"></p>
-
-                  <p data-key="atipikoToursUserJourneyText8" class="regular"></p>
+                  </div>                  
 
                 </div>
 
@@ -699,7 +689,6 @@
 
               <div class="frameFlexColumnSmall">
                 <h4 data-key="atipikoToursSubParagraph3Title"></h4>
-                <p data-key="atipikoToursSubParagraph3Text" class="regular"></p>
               </div>
 
               <div class="gridTwoAuto">
@@ -737,26 +726,25 @@
 
               <div class="frameFlexColumnSmall">
                 <h4 data-key="atipikoToursSubParagraph4Title"></h4>
-                <p data-key="atipikoToursSubParagraph4Text" class="regular"></p>
               </div>
 
               <table>
 
                 <tr>
                   <th>
-                    <p class="regular-bold" data-key="atipikoToursTable1Header1"></p>
+                    <p class="large" data-key="atipikoToursTable1Header1"></p>
                   </th>
                   <th>
-                    <p class="regular-bold" data-key="atipikoToursTable1Header2"></p>
+                    <p class="large" data-key="atipikoToursTable1Header2"></p>
                   </th>
                   <th>
-                    <p class="regular-bold" data-key="atipikoToursTable1Header3"></p>
+                    <p class="large" data-key="atipikoToursTable1Header3"></p>
                   </th>
                   <th>
-                    <p class="regular-bold" data-key="atipikoToursTable1Header4"></p>
+                    <p class="large" data-key="atipikoToursTable1Header4"></p>
                   </th>
                   <th>
-                    <p class="regular-bold" data-key="atipikoToursTable1Header5"></p>
+                    <p class="large" data-key="atipikoToursTable1Header5"></p>
                   </th>
                 </tr>
 
@@ -850,26 +838,25 @@
 
               <div class="frameFlexColumnSmall">
                 <h4 data-key="atipikoToursSubParagraph5Title"></h4>
-                <p data-key="atipikoToursSubParagraph5Text" class="regular"></p>
               </div>
 
               <table>
 
                 <tr>
                   <th>
-                    <p class="regular-bold" data-key="atipikoToursTable2Header1"></p>
+                    <p class="large" data-key="atipikoToursTable2Header1"></p>
                   </th>
                   <th>
-                    <p class="regular-bold" data-key="atipikoToursTable2Header2"></p>
+                    <p class="large" data-key="atipikoToursTable2Header2"></p>
                   </th>
                   <th>
-                    <p class="regular-bold" data-key="atipikoToursTable2Header3"></p>
+                    <p class="large" data-key="atipikoToursTable2Header3"></p>
                   </th>
                   <th>
-                    <p class="regular-bold" data-key="atipikoToursTable2Header4"></p>
+                    <p class="large" data-key="atipikoToursTable2Header4"></p>
                   </th>
                   <th>
-                    <p class="regular-bold" data-key="atipikoToursTable2Header5"></p>
+                    <p class="large" data-key="atipikoToursTable2Header5"></p>
                   </th>
                 </tr>
 
@@ -979,52 +966,51 @@
           </section>
 
           <!-- [design system] -->
-          <section id="Section3" class="frameFlexColumnMassive">
-
-            <!-- [intro] -->
-            <div class="frameFlexColumnSmall">
-              <h2 data-key="senzoStudioParagraph3Title"></h2>
-              <p data-key="senzoStudioParagraph3Text" class="regular"></p>
-            </div>
+          <section id="Section3" class="frameFlexColumnColossal">
 
             <!-- [typography] -->
             <div class="frameFlexColumnLarge">
 
+              <!-- [intro] -->
               <div class="frameFlexColumnSmall">
-                <h4 data-key="senzoStudioSubParagraph9Title"></h4>
-                <p data-key="senzoStudioSubParagraph9Text" class="regular"></p>
+                <h2 data-key="atipikoToursParagraph3Title"></h2>
+              </div>
+
+              <div class="frameFlexColumnSmall">
+                <h4 data-key="atipikoToursSubParagraph6Title"></h4>
+                <p data-key="atipikoToursSubParagraph6Text" class="regular"></p>
               </div>
 
               <div class="frameFlexColumnMedium">
 
                 <div class="gridAutoOne">
                   <div class="cardTypography">
-                    <p class="regular-bold">Heading 1</p>
+                    <p class="large">Heading 1</p>
                     <p class="regular">Poppins</p>
                     <p class="small">48px / line Auto</p>
                   </div>
                   <div class="cardTypography">
-                    <p class="regular-bold">Heading 2</p>
+                    <p class="large">Heading 2</p>
                     <p class="regular">Poppins</p>
                     <p class="small">40px / line Auto</p>
                   </div>
                   <div class="cardTypography">
-                    <p class="regular-bold">Heading 3</p>
+                    <p class="large">Heading 3</p>
                     <p class="regular">Poppins</p>
                     <p class="small">32px / line Auto</p>
                   </div>
                   <div class="cardTypography">
-                    <p class="regular-bold">Large</p>
+                    <p class="large">Large</p>
                     <p class="regular">Poppins</p>
                     <p class="small">20px / line Auto</p>
                   </div>
                   <div class="cardTypography">
-                    <p class="regular-bold">Regular</p>
+                    <p class="large">Regular</p>
                     <p class="regular">Poppins</p>
                     <p class="small">16px / line Auto</p>
                   </div>
                   <div class="cardTypography">
-                    <p class="regular-bold">Small</p>
+                    <p class="large">Small</p>
                     <p class="regular">Poppins</p>
                     <p class="small">12px / line Auto</p>
                   </div>
@@ -1051,7 +1037,7 @@
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle33"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold" data-key="atipikoTourcolorSubsection1Name"></div>
+                        <div class="regular" data-key="atipikoTourcolorSubsection1Name"></div>
                         <p class="small">#FF800A</p>
                       </div>
                     </div>
@@ -1068,7 +1054,7 @@
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle25"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold" data-key="atipikoTourcolorSubsection2Name"></div>
+                        <div class="regular" data-key="atipikoTourcolorSubsection2Name"></div>
                         <p class="small">#B6BABF</p>
                       </div>
                     </div>
@@ -1083,15 +1069,14 @@
 
               <div class="frameFlexColumnSmall">
                 <h4 data-key="portfolioSubParagraph11Title"></h4>
-                <p data-key="portfolioSubParagraph11Text" class="regular"></p>
               </div>
 
               <div class="frameFlexColumnMedium">
                 <div class="gridAutoTwo">
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium" src="assets/images/projects/atipikoTours/icons/atipikoToursIconArrow.webp"
-                        alt="icon">
+                      <img class="imageMedium"
+                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconArrow.webp" alt="icon">
                     </div>
                     <p class="small">arrow</p>
                   </div>
@@ -1181,8 +1166,8 @@
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium" src="assets/images/projects/atipikoTours/icons/atipikoToursIconQuote.webp"
-                        alt="icon">
+                      <img class="imageMedium"
+                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconQuote.webp" alt="icon">
                     </div>
                     <p class="small">quote</p>
                   </div>
@@ -1202,15 +1187,15 @@
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium" src="assets/images/projects/atipikoTours/icons/atipikoToursIconTick1.webp"
-                        alt="icon">
+                      <img class="imageMedium"
+                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconTick1.webp" alt="icon">
                     </div>
                     <p class="small">tick1</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium" src="assets/images/projects/atipikoTours/icons/atipikoToursIconTick2.webp"
-                        alt="icon">
+                      <img class="imageMedium"
+                        src="assets/images/projects/atipikoTours/icons/atipikoToursIconTick2.webp" alt="icon">
                     </div>
                     <p class="small">tick2</p>
                   </div>
@@ -1286,42 +1271,36 @@
           </section>
 
           <!-- [some designs] -->
-          <section id="Section4" class="frameFlexColumnSmall">
+          <section id="Section4" class="frameFlexColumnLarge">
 
             <!-- [intro] -->
             <div class="frameFlexColumnSmall">
               <h2 data-key="portfolioParagraph4Title"></h2>
-              <p data-key="portfolioParagraph4Text" class="regular"></p>
             </div>
 
-            <!-- [designs] -->
-            <div class="frameFlexColumnMassive">
+            <figure>
+              <img src="assets/images/projects/atipikoTours/desktopSomeDesigns-1.webp" alt="design1">
+            </figure>
 
-              <figure>
-                <img src="assets/images/projects/atipikoTours/atipiko__laptopFrame1.webp" alt="design1">
-              </figure>
+            <figure class="mobileFrame">
+              <img src="assets/images/projects/atipikoTours/mobileSomeDesigns-1.webp" alt="design2">
+            </figure>
 
-              <figure class="mobileFrame">
-                <img src="assets/images/projects/atipikoTours/atipiko__mobileFrame1.webp" alt="design2">
-              </figure>
+            <figure>
+              <img src="assets/images/projects/atipikoTours/desktopSomeDesigns-2.webp" alt="design3">
+            </figure>
 
-              <figure>
-                <img src="assets/images/projects/atipikoTours/atipiko__laptopFrame2.webp" alt="design3">
-              </figure>
+            <figure class="mobileFrame">
+              <img src="assets/images/projects/atipikoTours/mobileSomeDesigns-2.webp" alt="design4">
+            </figure>
 
-              <figure class="mobileFrame">
-                <img src="assets/images/projects/atipikoTours/atipiko__mobileFrame2.webp" alt="design4">
-              </figure>
+            <figure>
+              <img src="assets/images/projects/atipikoTours/desktopSomeDesigns-3.webp" alt="design5">
+            </figure>
 
-              <figure>
-                <img src="assets/images/projects/atipikoTours/atipiko__laptopFrame3.webp" alt="design5">
-              </figure>
-
-              <figure class="mobileFrame">
-                <img src="assets/images/projects/atipikoTours/atipiko__mobileFrame3.webp" alt="design6">
-              </figure>
-
-            </div>
+            <figure class="mobileFrame">
+              <img src="assets/images/projects/atipikoTours/mobileSomeDesigns-3.webp" alt="design6">
+            </figure>
 
           </section>
 
@@ -1372,67 +1351,64 @@
     <div class="frameFlexColumnLarge otherArticles">
 
       <!-- [intro] -->
-      <div class="sectionHeader">
-        <div class="frameFlexAuto">
-          <h2 data-key="otherProjectsTitle"></h2>
-          <a href="projects.html" class="buttonTerciary">
-            <p class="regular" data-key="indexSectionHeaderButton"></p>
-          </a>
-        </div>
-        <p class="regular" data-key="otherProjectsText"></p>
-      </div>
+      <h2 data-key="otherProjectsTitle"></h2>
 
       <!-- [projects] -->
       <div class="gridThree">
 
-        <!-- [tattooParadise] -->
+        <!-- [tattoParadise] -->
         <a class="cardProject" href="tattooParadise.html">
           <div class="cardProjectImageContainer">
-            <img class="cardProjectImage" src="assets/images/projects/tattooParadise/cardProject__tattooParadise.webp"
-              alt="cardProjectImage">
+            <img src="assets/images/projects/tattooParadise/headerImage.webp" alt="imageContainer">
           </div>
-          <div class="frameFlexColumnTiny">
-            <p class="large">Tattoo paradise</p>
-            <p class="small" data-key="cardProjectTattooParadiseTime"></p>
+          <div class="frameFlexColumnSmall">
+            <div class="frameFlexColumnTiny">
+              <p class="large">Tattoo paradise</p>
+              <p class="small" data-key="cardProjectTattooParadiseTime"></p>
+            </div>
+            <p class="regular" data-key="cardProjectTattooParadiseDescription"></p>
           </div>
-          <p class="regular" data-key="cardProjectTattooParadiseDescription"></p>
-          <div class="frameFlexMedium">
+          <div class="frameFlexSmall">
             <div class="tag">
               <p class="regular" data-key="cardProjectTattooParadiseTag1"></p>
             </div>
           </div>
+          <i class="fa-solid fa-arrow-right iconMedium"></i>
         </a>
 
         <!-- [portfolio] -->
         <a class="cardProject" href="portfolio.html">
           <div class="cardProjectImageContainer">
-            <img class="cardProjectImage" src="assets/images/projects/portfolio/cardProject__portfolio.webp"
-              alt="cardProjectImage">
+            <img src="assets/images/projects/portfolio/headerImage.webp" alt="imageContainer">
           </div>
-          <div class="frameFlexColumnTiny">
-            <p class="large">Portfolio</p>
-            <p class="small" data-key="cardProjectPortfolioTime"></p>
+          <div class="frameFlexColumnSmall">
+            <div class="frameFlexColumnTiny">
+              <p class="large">Portfolio</p>
+              <p class="small" data-key="cardProjectPortfolioTime"></p>
+            </div>
+            <p class="regular" data-key="cardProjectPortfolioDescription"></p>
           </div>
-          <p class="regular" data-key="cardProjectPortfolioDescription"></p>
-          <div class="frameFlexMedium">
+          <div class="frameFlexSmall">
             <div class="tag">
               <p class="regular" data-key="cardProjectPortfolioTag1"></p>
             </div>
           </div>
+          <i class="fa-solid fa-arrow-right iconMedium"></i>
         </a>
 
         <!-- [geomites] -->
         <a class="cardProject" href="geomites.html">
           <div class="cardProjectImageContainer">
-            <img class="cardProjectImage" src="assets/images/projects/geomites/cardProject__geomites.webp"
-              alt="cardProjectImage">
+            <img src="assets/images/projects/geomites/headerImage.webp" alt="imageContainer">
           </div>
-          <div class="frameFlexColumnTiny">
-            <p class="large">Geomites</p>
-            <p class="small" data-key="cardProjectGeomitesTime"></p>
+          <div class="frameFlexColumnSmall">
+            <div class="frameFlexColumnTiny">
+              <p class="large">Geomites</p>
+              <p class="small" data-key="cardProjectGeomitesTime"></p>
+            </div>
+            <p class="regular" data-key="cardProjectGeomitesDescription"></p>
           </div>
-          <p class="regular" data-key="cardProjectGeomitesDescription"></p>
-          <div class="frameFlexMedium">
+          <div class="frameFlexSmall">
             <div class="tagNew">
               <p class="regular" data-key="cardProjectGeomitesTag1"></p>
             </div>
@@ -1440,6 +1416,7 @@
               <p class="regular" data-key="cardProjectGeomitesTag2"></p>
             </div>
           </div>
+          <i class="fa-solid fa-arrow-right iconMedium"></i>
         </a>
 
       </div>

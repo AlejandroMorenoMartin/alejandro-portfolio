@@ -21,7 +21,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding: 8rem;
+  scroll-padding: 6rem;
 }
 
 @media (max-width: 1200px) {

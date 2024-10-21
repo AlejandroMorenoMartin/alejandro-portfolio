@@ -37,11 +37,15 @@
     <header class="navBar">
 
       <div class="navBarContainer">
-        <a href="index.html" alt="logoAlejandro" id="logoLink" viewBox="0 0 24 24">
-          <svg class="logo imageLarge" viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M5.86048 20.6292L15.0291 2.83789H16.2875L32.0001 30.7269H24.5213L16.4673 16.5975H15.2089L13.7347 20.6292H5.86048ZM3.63149 24.439H16.144L20.0631 30.8379H0L3.63149 24.439Z" />
+        <a href="index.html" alt="logoAlejandro" id="logoLink" viewBox="0 0 24 24" class="imageLarge">
+
+          <svg xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.144 24.1011H3.63149L0 30.5H20.0631L16.144 24.1011Z" fill="var(--primary-500)" />
+            <path
+              d="M15.029 2.5L5.86035 20.2913H13.7346L15.2087 16.2596H16.4672L24.5212 30.389H31.9999L16.2874 2.5H15.029Z"
+              fill="var(--neutral-100)" />
           </svg>
+
         </a>
 
         <nav class="mobileNavigation" id="primaryNavigation">
@@ -77,18 +81,21 @@
             </div>
             <div class="frameFlexColumnMedium">
               <p class="large" data-key="navigationSubtitle4"></p>
-              <div class="frameFlexMedium">
-                <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
-                    class="fa-brands fa-whatsapp iconMedium"></i></a>
-                <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon"
-                  target="_blank"><i class="fa-brands fa-linkedin iconMedium"></i></a>
-                <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
-                    class="fa-brands fa-github iconMedium"></i></a>
-                <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
-                    class="fa-solid fa-envelope iconMedium"></i></a>
+              <div class="frameFlexColumnSmall">
+                <div class="frameFlexMedium">
+                  <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
+                      class="fa-brands fa-whatsapp iconMedium"></i></a>
+                  <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon"
+                    target="_blank"><i class="fa-brands fa-linkedin iconMedium"></i></a>
+                  <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
+                      class="fa-brands fa-github iconMedium"></i></a>
+                  <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
+                      class="fa-solid fa-envelope iconMedium"></i></a>
+                </div>
+                <p class="regular" data-key="footerText"></p>
               </div>
             </div>
-            <p class="regular" data-key="footerText"></p>
+
 
           </ul>
 
@@ -111,18 +118,22 @@
       <div class="projectHeader padding">
         <div class="frameFlexColumnLarge">
           <a class="buttonSecondary" href="projects.html">
-            <i class="fa-solid fa-arrow-left"></i>
+            <i class="fa-solid fa-arrow-left iconMedium"></i>
             <p data-key="projectPageHeaderButtonBack" class="regular"></p>
           </a>
-          <div class="tag">
-            <p class="regular" data-key="cardProjectPortfolioTag1"></p>
-          </div>          
-          <p data-key="cardProjectPortfolioTime" class="small"></p>
-          <h1 data-key="cardProjectPortfolioTitle"></h1>
-          <h4 data-key="cardProjectPortfolioDescription"></h4>             
+          <div class="frameFlexColumnSmall">
+            <div class="tag">
+              <p class="regular" data-key="cardProjectPortfolioTag1"></p>
+            </div>
+            <p data-key="cardProjectPortfolioTime" class="small"></p>
+          </div>
+          <div class="frameFlexColumnSmall">
+            <h1 data-key="cardProjectPortfolioTitle"></h1>
+            <h4 data-key="cardProjectPortfolioDescription"></h4>
+          </div>
         </div>
-        <div class="projectImageContainter1">
-          <img src="assets/images/projects/portfolio/portfolioImageHeader.webp" alt="projectImage">
+        <div class="projectImageContainter">
+          <img src="assets/images/projects/portfolio/headerImage.webp" alt="projectImage">
         </div>
       </div>
 
@@ -130,34 +141,34 @@
       <div class="articleInfo" id="stepSection">
 
         <div class="articleInfoOne">
-          <p class="regular-bold" data-key="cardProjectChallenge"></p>
+          <p class="large" data-key="cardProjectChallenge"></p>
           <p class="regular" data-key="cardProjectPortfolioChallenge"></p>
         </div>
 
         <div class="articleInfoTwo">
-          <p class="regular-bold" data-key="cardProjectRol"></p>
+          <p class="large" data-key="cardProjectRol"></p>
           <p class="regular" data-key="cardProjectPortfolioRol"></p>
         </div>
 
         <div class="articleInfoThree">
-          <p class="regular-bold" data-key="cardProjectCronology"></p>
+          <p class="large" data-key="cardProjectCronology"></p>
           <p class="regular" data-key="cardProjectPortfolioCronology"></p>
         </div>
 
         <div class="articleInfoFour">
-          <p class="regular-bold" data-key="cardProjectToolstack"></p>
+          <p class="large" data-key="cardProjectToolstack"></p>
           <p class="regular" data-key="cardProjectPortfolioToolstack"></p>
         </div>
 
       </div>
-      
+
       <!-- [articleBody] -->
       <div class="articleBody">
 
         <div class="articleBodyContent frameFlexColumnColossal">
 
           <!-- [introduction] -->
-          <section id="Section1" class="frameFlexColumnMassive">
+          <section id="Section1" class="frameFlexColumnColossal">
             <div class="frameFlexColumnSmall">
               <h2 data-key="portfolioParagraph1Title"></h2>
               <p data-key="portfolioParagraph1Text" class="regular"></p>
@@ -165,18 +176,22 @@
           </section>
 
           <!-- [framework] -->
-          <section id="Section2" class="frameFlexColumnMassive">
-
-            <!-- [intro] -->
-            <div class="frameFlexColumnSmall">
-              <h2 data-key="portfolioParagraph2Title"></h2>
-              <p data-key="portfolioParagraph2Text" class="regular"></p>
-            </div>
+          <section id="Section2" class="frameFlexColumnColossal">
 
             <!-- [goal] -->
-            <div class="frameFlexColumnSmall">
-              <h4 data-key="portfolioSubParagraph1Title"></h4>
-              <p data-key="portfolioSubParagraph1Text" class="regular"></p>
+            <div class="frameFlexColumnLarge">
+
+              <!-- [intro] -->
+              <div class="frameFlexColumnSmall">
+                <h2 data-key="portfolioParagraph2Title"></h2>
+                <p data-key="portfolioParagraph2Text" class="regular"></p>
+              </div>
+
+              <div class="frameFlexColumnSmall">
+                <h4 data-key="portfolioSubParagraph1Title"></h4>
+                <p data-key="portfolioSubParagraph1Text" class="regular"></p>
+              </div>
+
             </div>
 
             <!-- [audience] -->
@@ -235,15 +250,15 @@
 
               <div class="frameFlexDynamic">
                 <div class="cardInsight">
-                  <p class="regular-bold" data-key="cardInsight1Title"></p>
+                  <p class="large" data-key="cardInsight1Title"></p>
                   <p class="regular" data-key="cardInsight1Text"></p>
                 </div>
                 <div class="cardInsight">
-                  <p class="regular-bold" data-key="cardInsight2Title"></p>
+                  <p class="large" data-key="cardInsight2Title"></p>
                   <p class="regular" data-key="cardInsight2Text"></p>
                 </div>
                 <div class="cardInsight">
-                  <p class="regular-bold" data-key="cardInsight3Title"></p>
+                  <p class="large" data-key="cardInsight3Title"></p>
                   <p class="regular" data-key="cardInsight3Text"></p>
                 </div>
               </div>
@@ -260,7 +275,7 @@
 
               <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                 <figure>
-                  <img src="assets/images/projects/portfolio/desktop-_body_.webp" alt="desktopVersionImage">
+                  <img src="assets/images/projects/portfolio/definingTheProduct.webp" alt="desktopVersionImage">
                 </figure>
                 <p class="small" data-key="desktopVersionText"></p>
               </div>
@@ -277,15 +292,15 @@
 
               <div class="frameFlexDynamic">
                 <div class="cardInsight">
-                  <p class="regular-bold" data-key="cardInsight4Title"></p>
+                  <p class="large" data-key="cardInsight4Title"></p>
                   <p class="regular" data-key="cardInsight4Text"></p>
                 </div>
                 <div class="cardInsight">
-                  <p class="regular-bold" data-key="cardInsight5Title"></p>
+                  <p class="large" data-key="cardInsight5Title"></p>
                   <p class="regular" data-key="cardInsight5Text"></p>
                 </div>
                 <div class="cardInsight">
-                  <p class="regular-bold" data-key="cardInsight6Title"></p>
+                  <p class="large" data-key="cardInsight6Title"></p>
                   <p class="regular" data-key="cardInsight6Text"></p>
                 </div>
               </div>
@@ -294,16 +309,15 @@
           </section>
 
           <!-- [design system] -->
-          <section id="Section3" class="frameFlexColumnMassive">
-
-            <!-- [intro] -->
-            <div class="frameFlexColumnLarge">
-              <h2 data-key="portfolioParagraph3Title"></h2>
-              <p data-key="portfolioParagraph3Text" class="regular"></p>
-            </div>
+          <section id="Section3" class="frameFlexColumnColossal">
 
             <!-- [typography] -->
             <div class="frameFlexColumnLarge">
+
+              <!-- [intro] -->
+              <div class="frameFlexColumnSmall">
+                <h2 data-key="portfolioParagraph3Title"></h2>
+              </div>
 
               <div class="frameFlexColumnSmall">
                 <h4 data-key="portfolioSubParagraph6Title"></h4>
@@ -314,17 +328,17 @@
 
                 <div class="gridAutoOne">
                   <div class="cardTypography">
-                    <p class="regular-bold">Heading 1</p>
+                    <p class="large">Heading 1</p>
                     <p class="regular">Montserrat</p>
                     <p class="small">2.986rem / line 60px</p>
                   </div>
                   <div class="cardTypography">
-                    <p class="regular-bold">Heading 2</p>
+                    <p class="large">Heading 2</p>
                     <p class="regular">Montserrat</p>
                     <p class="small">2.488rem / line 56px</p>
                   </div>
                   <div class="cardTypography">
-                    <p class="regular-bold">Heading 3</p>
+                    <p class="large">Heading 3</p>
                     <p class="regular">Montserrat</p>
                     <p class="small">1.728rem / line 32px</p>
                   </div>
@@ -334,7 +348,7 @@
                     <p class="small">1.2rem / line 28px</p>
                   </div>
                   <div class="cardTypography">
-                    <p class="regular-bold">Large</p>
+                    <p class="large">Large</p>
                     <p class="regular">Montserrat</p>
                     <p class="small">1rem / line 28px</p>
                   </div>
@@ -359,7 +373,6 @@
 
               <div class="frameFlexColumnSmall">
                 <h4 data-key="portfolioSubParagraph7Title"></h4>
-                <p data-key="portfolioSubParagraph7Text" class="regular"></p>
               </div>
 
               <div class="frameFlexColumnLarge">
@@ -371,70 +384,70 @@
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle1"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold">100</div>
+                        <div class="regular">100</div>
                         <p class="small">#E5AC73</p>
                       </div>
                     </div>
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle2"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold">200</div>
+                        <div class="regular">200</div>
                         <p class="small">#E5A15C</p>
                       </div>
                     </div>
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle3"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold">300</div>
+                        <div class="regular">300</div>
                         <p class="small">#E59545</p>
                       </div>
                     </div>
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle4"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold">400</div>
+                        <div class="regular">400</div>
                         <p class="small">#E58A2E</p>
                       </div>
                     </div>
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle5"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold">500</div>
+                        <div class="regular">500</div>
                         <p class="small">#E57E17</p>
                       </div>
                     </div>
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle6"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold">600</div>
+                        <div class="regular">600</div>
                         <p class="small">#CC7014</p>
                       </div>
                     </div>
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle7"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold">700</div>
+                        <div class="regular">700</div>
                         <p class="small">#B26212</p>
                       </div>
                     </div>
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle8"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold">800</div>
+                        <div class="regular">800</div>
                         <p class="small">#99540F</p>
                       </div>
                     </div>
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle9"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold">900</div>
+                        <div class="regular">900</div>
                         <p class="small">#80460D</p>
                       </div>
                     </div>
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle10"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold">1000</div>
+                        <div class="regular">1000</div>
                         <p class="small">#66380A</p>
                       </div>
                     </div>
@@ -451,70 +464,70 @@
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle11"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold">100</div>
+                        <div class="regular">100</div>
                         <p class="small">#E573C9</p>
                       </div>
                     </div>
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle12"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold">200</div>
+                        <div class="regular">200</div>
                         <p class="small">#E55CC3</p>
                       </div>
                     </div>
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle13"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold">300</div>
+                        <div class="regular">300</div>
                         <p class="small">#E545BD</p>
                       </div>
                     </div>
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle14"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold">400</div>
+                        <div class="regular">400</div>
                         <p class="small">#E52EB8</p>
                       </div>
                     </div>
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle15"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold">500</div>
+                        <div class="regular">500</div>
                         <p class="small">#E517B2</p>
                       </div>
                     </div>
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle16"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold">600</div>
+                        <div class="regular">600</div>
                         <p class="small">#CC1495</p>
                       </div>
                     </div>
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle17"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold">700</div>
+                        <div class="regular">700</div>
                         <p class="small">#B2128A</p>
                       </div>
                     </div>
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle18"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold">800</div>
+                        <div class="regular">800</div>
                         <p class="small">#990F77</p>
                       </div>
                     </div>
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle19"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold">900</div>
+                        <div class="regular">900</div>
                         <p class="small">#800D63</p>
                       </div>
                     </div>
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle20"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold">1000</div>
+                        <div class="regular">1000</div>
                         <p class="small">#660A4F</p>
                       </div>
                     </div>
@@ -531,70 +544,70 @@
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle21"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold">100</div>
+                        <div class="regular">100</div>
                         <p class="small">#E6ECF2</p>
                       </div>
                     </div>
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle22"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold">200</div>
+                        <div class="regular">200</div>
                         <p class="small">#DADFE5</p>
                       </div>
                     </div>
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle23"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold">300</div>
+                        <div class="regular">300</div>
                         <p class="small">#CED3D9</p>
                       </div>
                     </div>
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle24"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold">400</div>
+                        <div class="regular">400</div>
                         <p class="small">#C2C7CC</p>
                       </div>
                     </div>
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle25"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold">500</div>
+                        <div class="regular">500</div>
                         <p class="small">#B6BABF</p>
                       </div>
                     </div>
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle26"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold">600</div>
+                        <div class="regular">600</div>
                         <p class="small">#3D3E40</p>
                       </div>
                     </div>
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle27"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold">700</div>
+                        <div class="regular">700</div>
                         <p class="small">#303233</p>
                       </div>
                     </div>
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle28"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold">800</div>
+                        <div class="regular">800</div>
                         <p class="small">#242526</p>
                       </div>
                     </div>
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle29"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold">900</div>
+                        <div class="regular">900</div>
                         <p class="small">#18191A</p>
                       </div>
                     </div>
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle30"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold">1000</div>
+                        <div class="regular">1000</div>
                         <p class="small">#0C0C0D</p>
                       </div>
                     </div>
@@ -611,7 +624,7 @@
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle31"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold">500</div>
+                        <div class="regular">500</div>
                         <p class="small">#E57E17 - #E517B2</p>
                       </div>
                     </div>
@@ -627,7 +640,6 @@
 
               <div class="frameFlexColumnSmall">
                 <h4 data-key="portfolioSubParagraph8Title"></h4>
-                <p data-key="portfolioSubParagraph8Text" class="regular"></p>
               </div>
 
               <div class="frameFlexColumnLarge">
@@ -664,7 +676,7 @@
                   </div>
 
                 </div>
-                
+
                 <div class="frameFlexColumnMedium">
                   <div class="subSubsection">
                     <p data-key="subSubsection6" class="large"></p>
@@ -690,39 +702,6 @@
                           <div class="frameFlexColumnTiny">
                             <p class="regular-bold">Secondary Button - Icon</p>
                             <p class="small">Padding 1rem / Gap 1rem / Border .5rem </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-                
-                <div class="frameFlexColumnMedium">
-                  <div class="subSubsection">
-                    <p data-key="subSubsection7" class="large"></p>
-                  </div>
-                  <div class="frameFlexColumnSmall">
-                    <div class="gridAutoOne">
-                      <div class="frameFlexColumnSmall">
-                        <div class="frameFlexColumnMedium">
-                          <div class="buttonTerciary">
-                            <p class="regular-bold">Button</p>
-                          </div>
-                          <div class="frameFlexColumnTiny">
-                            <p class="regular-bold">Terciary Button</p>
-                            <p class="small">Padding 1rem / Gap 1rem </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="frameFlexColumnSmall">
-                        <div class="frameFlexColumnMedium">
-                          <div class="buttonTerciary">
-                            <p class="regular-bold">Button</p><i class="fa-solid fa-arrow-right"></i>
-                          </div>
-                          <div class="frameFlexColumnTiny">
-                            <p class="regular-bold">Terciary Button - Icon</p>
-                            <p class="small">Padding 1rem / Gap 1rem </p>
                           </div>
                         </div>
                       </div>
@@ -816,7 +795,7 @@
                   <img class="imageLarge" src="assets/images/personas/imageMaria.webp" alt="avatarMobile">
                 </div>
                 <div class="frameFlexColumnTiny">
-                  <p class="regular-bold">Images</p>
+                  <p class="regular">Images</p>
                   <p class="small">48px * 48px / 24px * 24px</p>
                 </div>
               </div>
@@ -828,7 +807,6 @@
 
               <div class="frameFlexColumnSmall">
                 <h4 data-key="portfolioSubParagraph11Title"></h4>
-                <p data-key="portfolioSubParagraph11Text" class="regular"></p>
               </div>
 
               <div class="frameFlexColumnMedium">
@@ -1031,7 +1009,6 @@
             <!-- [intro] -->
             <div class="frameFlexColumnSmall">
               <h2 data-key="portfolioParagraph4Title"></h2>
-              <p data-key="portfolioParagraph4Text" class="regular"></p>
             </div>
 
             <!-- [designs] -->
@@ -1040,7 +1017,7 @@
               <!-- [welcomeSection] -->
               <div class="someDesignsFrame columnReverse">
                 <div class="someDesignsImageContainer">
-                  <img src="assets/images/projects/portfolio/someDesigns/someDesignsImage1.webp" alt="someDesignsImage">
+                  <img src="assets/images/projects/portfolio/someDesigns-1.webp" alt="someDesignsImage">
                 </div>
                 <div class="frameFlexColumnSmall">
                   <h4 data-key="someDesigns1Title"></h4>
@@ -1055,14 +1032,14 @@
                   <p class="regular" data-key="someDesigns2Text"></p>
                 </div>
                 <div class="someDesignsImageContainer">
-                  <img src="assets/images/projects/portfolio/someDesigns/someDesignsImage2.webp" alt="someDesignsImage">
+                  <img src="assets/images/projects/portfolio/someDesigns-2.webp" alt="someDesignsImage">
                 </div>
               </div>
 
               <!-- [resumePage] -->
               <div class="someDesignsFrame columnReverse">
                 <div class="someDesignsImageContainer">
-                  <img src="assets/images/projects/portfolio/someDesigns/someDesignsImage3.webp" alt="someDesignsImage">
+                  <img src="assets/images/projects/portfolio/someDesigns-3.webp" alt="someDesignsImage">
                 </div>
                 <div class="frameFlexColumnSmall">
                   <h4 data-key="someDesigns3Title"></h4>
@@ -1077,7 +1054,7 @@
                   <p class="regular" data-key="someDesigns4Text"></p>
                 </div>
                 <div class="someDesignsImageContainer">
-                  <img src="assets/images/projects/portfolio/someDesigns/someDesignsImage4.webp" alt="someDesignsImage">
+                  <img src="assets/images/projects/portfolio/someDesigns-4.webp" alt="someDesignsImage">
                 </div>
               </div>
             </div>
@@ -1133,15 +1110,7 @@
     <div class="frameFlexColumnLarge otherArticles">
 
       <!-- [intro] -->
-      <div class="sectionHeader">
-        <div class="frameFlexAuto">
-          <h2 data-key="otherProjectsTitle"></h2>
-          <a href="projects.html" class="buttonTerciary">
-            <p class="regular" data-key="indexSectionHeaderButton"></p>
-          </a>
-        </div>
-        <p class="regular" data-key="otherProjectsText"></p>
-      </div>
+      <h2 data-key="otherProjectsTitle"></h2>
 
       <!-- [projects] -->
       <div class="gridThree">
@@ -1149,15 +1118,16 @@
         <!-- [geomites] -->
         <a class="cardProject" href="geomites.html">
           <div class="cardProjectImageContainer">
-            <img class="cardProjectImage" src="assets/images/projects/geomites/cardProject__geomites.webp"
-              alt="cardProjectImage">
+            <img src="assets/images/projects/geomites/headerImage.webp" alt="imageContainer">
           </div>
-          <div class="frameFlexColumnTiny">
-            <p class="large">Geomites</p>
-            <p class="small" data-key="cardProjectGeomitesTime"></p>
+          <div class="frameFlexColumnSmall">
+            <div class="frameFlexColumnTiny">
+              <p class="large">Geomites</p>
+              <p class="small" data-key="cardProjectGeomitesTime"></p>
+            </div>
+            <p class="regular" data-key="cardProjectGeomitesDescription"></p>
           </div>
-          <p class="regular" data-key="cardProjectGeomitesDescription"></p>          
-          <div class="frameFlexMedium">
+          <div class="frameFlexSmall">
             <div class="tagNew">
               <p class="regular" data-key="cardProjectGeomitesTag1"></p>
             </div>
@@ -1165,42 +1135,47 @@
               <p class="regular" data-key="cardProjectGeomitesTag2"></p>
             </div>
           </div>
+          <i class="fa-solid fa-arrow-right iconMedium"></i>
         </a>
 
         <!-- [senzoStudio] -->
         <a class="cardProject" href="senzoStudio.html">
           <div class="cardProjectImageContainer">
-            <img class="cardProjectImage" src="assets/images/projects/senzoStudio/cardProject__senzoStudio.webp"
-              alt="cardProjectImage">
+            <img src="assets/images/projects/senzoStudio/headerImage.webp" alt="imageContainer">
           </div>
-          <div class="frameFlexColumnTiny">
-            <p class="large">Senzo studio</p>
-            <p class="small" data-key="cardProjectSenzoStudioTime"></p>
+          <div class="frameFlexColumnSmall">
+            <div class="frameFlexColumnTiny">
+              <p class="large">Senzo studio</p>
+              <p class="small" data-key="cardProjectSenzoStudioTime"></p>
+            </div>
+            <p class="regular" data-key="cardProjectSenzoStudioDescription"></p>
           </div>
-          <p class="regular" data-key="cardProjectSenzoStudioDescription"></p>          
-          <div class="frameFlexMedium">
+          <div class="frameFlexSmall">
             <div class="tag">
               <p class="regular" data-key="cardProjectSenzoStudioTag1"></p>
             </div>
           </div>
+          <i class="fa-solid fa-arrow-right iconMedium"></i>
         </a>
 
         <!-- [atipikoTours] -->
         <a class="cardProject" href="atipikoTours.html">
           <div class="cardProjectImageContainer">
-            <img class="cardProjectImage" src="assets/images/projects/atipikoTours/cardProject__atipikoTours.webp"
-              alt="cardProjectImage">
+            <img src="assets/images/projects/atipikoTours/headerImage.webp" alt="imageContainer">
           </div>
-          <div class="frameFlexColumnTiny">
-            <p class="large">Atipiko tours</p>
-            <p class="small" data-key="cardProjectAtipikoToursTime"></p>
+          <div class="frameFlexColumnSmall">
+            <div class="frameFlexColumnTiny">
+              <p class="large">Atipiko tours</p>
+              <p class="small" data-key="cardProjectAtipikoToursTime"></p>
+            </div>
+            <p class="regular" data-key="cardProjectAtipikoToursDescription"></p>
           </div>
-          <p class="regular" data-key="cardProjectAtipikoToursDescription"></p>          
-          <div class="frameFlexMedium">
+          <div class="frameFlexSmall">
             <div class="tag">
               <p class="regular" data-key="cardProjectAtipikoToursTag1"></p>
             </div>
           </div>
+          <i class="fa-solid fa-arrow-right iconMedium"></i>
         </a>
 
       </div>

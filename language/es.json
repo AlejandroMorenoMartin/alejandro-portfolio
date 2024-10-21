@@ -276,11 +276,10 @@
   "cardEducation12Button": "Ver credencial",
 
   "otherProjectsTitle": "Otros proyectos",
-  "otherProjectsText": "Descubre otros proyectos",
 
   "TOCTitle": "Índice",
 
-  "projectPageHeaderButtonBack": "VOLVER A PROYECTOS",  
+  "projectPageHeaderButtonBack": "Volver a proyectos",  
 
   "cardProjectChallenge": "Desafío",
   "cardProjectRol": "Mi rol",
@@ -288,7 +287,7 @@
   "cardProjectToolstack": "Herramientas",
   
   "cardProjectPortfolioChallenge": "Crea un portafolio personal desde cero utilizando Figma para el diseño y VS Code para el desarrollo.",
-  "cardProjectPortfolioRol": "Diseñador y desarrollador, encargado del diseño UX/UI y de la codificación.",
+  "cardProjectPortfolioRol": "Diseñador de producto y desarrollador web.",
   "cardProjectPortfolioCronology": "8 semanas.",
   "cardProjectPortfolioToolstack": "Figma, HTML5, CSS3, Javascript y ChatGPT.",
 
@@ -299,7 +298,7 @@
   "portfolioTOC5": "Aprendizajes",  
 
   "portfolioParagraph1Title": "Introducción",
-  "portfolioParagraph1Text": "Para este proyecto, utilizaré un marco de trabajo comúnmente empleado para la resolución de problemas de diseño. Utilizaré Figma para el aspecto del diseño y HTML, CSS y JavaScript para el desarrollo, junto con ChatGPT para el soporte. Con todo ello y con el objetivo de desarrollar desde cero, un portfolio que me permita dar a conocer mi perfil.",
+  "portfolioParagraph1Text": "En este proyecto usaré un marco común para resolver problemas de diseño. Utilizaré Figma para el diseño y HTML, CSS y JavaScript para el desarrollo, con soporte de ChatGPT, para crear un portfolio desde cero que muestre mi perfil.",
 
   "portfolioParagraph2Title": "Marco de trabajo",
   "portfolioParagraph2Text": "Este marco utiliza 6 pasos para resolver el problema: por qué, quién, cuándo y dónde, qué, resolver y cómo.",
@@ -320,14 +319,14 @@
   "cardTestimonial3PortfolioPosition": "Jefe de diseño",
 
   "cardInsight1Title": "Cuándo",
-  "cardInsight1Text": "Los usuarios revisan portfolios cuando consideran contratar, buscando rápidamente proyectos que demuestren habilidades relevantes para una posición específica",
+  "cardInsight1Text": "Los usuarios revisan portfolios buscando proyectos que muestren habilidades relevantes para una posición.",
   "cardInsight2Title": "Dónde",
-  "cardInsight2Text": "Se visualiza en oficinas, hogares o en movimiento, generalmente en dispositivos móviles o de escritorio, donde la accesibilidad y la claridad son clave.",
+  "cardInsight2Text": "Se visualiza en oficinas, hogares o en movimiento, en móviles o escritorio, donde la accesibilidad es clave.",
   "cardInsight3Title": "Sensaciones",
-  "cardInsight3Text": "Los usuarios buscan inspiración y seguridad, sintiéndose atraídos por un diseño intuitivo, claro y estéticamente agradable que demuestre la competencia del diseñador.",
+  "cardInsight3Text": "Los usuarios buscan inspiración en un diseño intuitivo, claro y atractivo que demuestre competencia.",
   
   "portfolioSubParagraph4Title": "Definiendo el producto",
-  "portfolioSubParagraph4Text": "El portafolio debe mostrar una organización y claridad excepcionales, garantizando la facilidad de lectura y comprensión, permitiendo a los usuarios ver lo que han venido a ver y poder contactar de una manera rápida y sencilla.",
+  "portfolioSubParagraph4Text": "El portafolio debe exhibir organización y claridad excepcionales, facilitando la lectura y comprensión para que los usuarios puedan ver lo que buscan y contactar fácilmente.",
   
   "portfolioSubParagraph5Title": "¿Cómo lo mido?",
   "portfolioSubParagraph5Text": "Utilizaré los siguientes KPI para medir la eficacia de mi portfolio.",
@@ -339,19 +338,17 @@
   "cardInsight6Text": "Número de contacto del usuario.",
   
   "portfolioParagraph3Title": "Sistema de diseño",
-  "portfolioParagraph3Text": "Directrices completas para mantener la coherencia visual y funcional del diseño.",  
+   
   "portfolioSubParagraph6Title": "Tipografía",
   "portfolioSubParagraph6Text": "Por su aspecto moderno, legibilidad, facilidad de uso, ventajas para la identidad de marca, accesibilidad y soporte multilingüe, decidí utilizar Montserrat como tipo de letra para el portfolio.",
-  "portfolioSubParagraph7Title": "Color",
-  "portfolioSubParagraph7Text": "Paleta de colores para una experiencia de usuario coherente y atractiva.",
-  "portfolioSubParagraph8Title": "Botones",
-  "portfolioSubParagraph8Text": "Estilos y comportamientos de botones para acciones claras y accesibles.",
+  "portfolioSubParagraph7Title": "Color",  
+  "portfolioSubParagraph8Title": "Botones", 
   "portfolioSubParagraph9Title": "Campos de entrada",
   "portfolioSubParagraph9Text": "Diseño de campos de entrada para una interacción precisa y fácil de usar.",
   "portfolioSubParagraph10Title": "Imágenes avatar",
   "portfolioSubParagraph10Text": "Directrices para la representación y el estilo de las imágenes de perfil.",
   "portfolioSubParagraph11Title": "Iconos",
-  "portfolioSubParagraph11Text": "Uso y estilo de iconos para una interfaz intuitiva y visualmente clara.",
+  
   "portfolioSubParagraph12Title": "Componentes",
   "portfolioSubParagraph12Text": "Estructura y diseño de componentes reutilizables para una experiencia consistente y un desarrollo facilmente implementable y mantenible.",
   "subSubsection1": "Primario",
@@ -362,8 +359,7 @@
   "subSubsection6": "Secundario",
   "subSubsection7": "Terciario",
 
-  "portfolioParagraph4Title": "Algunos diseños",
-  "portfolioParagraph4Text": "Aquí puedes ver algunos de los diseños finales.",
+  "portfolioParagraph4Title": "Algunos diseños",  
   "someDesigns1Title": "Sección de bienvenida",
   "someDesigns1Text": "El usuario, al aterrizar en el portfolio, debe entender de forma clara que es esta web, que puede hacer aquí y hacerse una idea de mi perfil antes de seguir navegando a cualquier otro lugar de la web. Además debe tener una navegación clara que le permita moverse entre las diferentes páginas.",
   "someDesigns2Title": "Secciones de la home",
@@ -374,7 +370,7 @@
   "someDesigns4Text": "Como parte de mi trabajo de aprendizaje e investigación desarrollo un blog con artículos donde profundizo en conceptos de diseño UX / UI.",
 
   "portfolioParagraph5Title": "Aprendizajes",
-  "portfolioParagraph5Text": "Con la creación de mi portfolio desde cero, he podido aprender a desarrollar un proyecto web, con diseño responsivo, tanto desde el lado del diseño como del desarrollo. Esto me ha permitido entender cómo realizar mi trabajo como diseñador de forma que pueda facilitar al máximo el trabajo del desarrollador.",
+  "portfolioParagraph5Text": "Al crear mi portfolio desde cero, aprendí a desarrollar un proyecto web responsivo, entendiendo mejor cómo facilitar el trabajo del desarrollador.",
   "portfolioLearning1": "Responsivo",
   "portfolioLearning2": "Prototipado",
   "portfolioLearning3": "Diseño UX/UI",
@@ -386,50 +382,42 @@
   "cardProjectSenzoStudioToolstack": "Figma y Wordpress.",
 
   "senzoStudioParagraph1Title": "Introducción",
-  "senzoStudioParagraph1Text": "Diseñé y desarrollé un sitio web para una agencia de efectos visuales, empezando por la investigación de usuarios y el análisis de la competencia. A continuación, creé una arquitectura de la información y un sistema de diseño completos, lo que dio como resultado un sitio web visualmente atractivo que muestra el trabajo de vanguardia de la agencia y ofrece una experiencia de usuario intuitiva.",
+  "senzoStudioParagraph1Text": "En este proyecto, diseñé y desarrollé el sitio web de una agencia de efectos visuales. Tras investigar a los usuarios y analizar la competencia, creé una arquitectura de la información y un sistema de diseño cohesivo, logrando un sitio web que destaca el trabajo de la agencia con una experiencia de usuario intuitiva y atractiva.",
 
   "senzoStudioParagraph2Title": "Investigación",
   "senzoStudioParagraph2Text": "Comienzo el proyecto realizando una investigación. El objetivo es conocer a fondo el tipo de usuario, las empresas competidoras y el mercado en el que opera la empresa.",
 
   "senzoStudioSubParagraph1Title": "Encuesta",
-  "senzoStudioSubParagraph1Text": "Tras analizar el tipo de usuario de Senzo Studio, preparé las siguientes preguntas.",
 
-  "senzoStudioSubParagraph2Title": "Información obtenida",
-  "senzoStudioSubParagraph2Text": "Tras formular las preguntas a los dos usuarios, extraje la siguiente información.",
+  "senzoStudioSubParagraph2Title": "Información obtenida",  
 
   "senzoStudioSubParagraph3Title": "User story map (Mario)",
 
   "senzoStudioSubParagraph4Title": "User story map (Pedro)",
 
   "senzoStudioSubParagraph5Title": "Competidores",
-  "senzoStudioSubParagraph5Text": "Estos son algunos de los principales competidores de Senzo studio.",
 
   "senzoStudioSubParagraph6Title": "Evaluación heurística",
-  "senzoStudioSubParagraph6Text": "Identificación de problemas de usabilidad mediante principios de diseño reconocidos.",
 
   "senzoStudioSubParagraph7Title": "Evaluación de contenido",
-  "senzoStudioSubParagraph7Text": "Análisis de contenido para asegurar relevancia, claridad y alineación con los objetivos.",
 
   "senzoStudioSubParagraph8Title": "Clasificación de tarjetas",
-  "senzoStudioSubParagraph8Text": "Organización de la información basada en la lógica y expectativas del usuario.",
 
-  "senzoStudioParagraph3Title": "Sistema de diseño",
-  "senzoStudioParagraph3Text": "Estos son algunos de los elementos que forman parte del sistema de diseño de Senzo studio.",
+  "senzoStudioParagraph3Title": "Sistema de diseño",  
 
   "senzoStudioSubParagraph9Title": "Tipografía",
   "senzoStudioSubParagraph9Text": "Elegí IBM Plex Sans por su legibilidad y versatilidad, logrando un diseño moderno y profesional alineado con la identidad del proyecto.",
 
   "senzoStudioSubParagraph10Title": "Color",
-  "senzoStudioSubParagraph10Text": "Paleta de colores para una experiencia de usuario coherente y atractiva.",
+  "senzoStudioSubParagraph10Text": "El color primario es un tono naranja vibrante y cálido. Desprende energía, calidez y entusiasmo, por lo que es adecuado para crear elementos visuales llamativos y llenos de vida.",
 
   "senzoStudioSubParagraph11Title": "Componentes",
   "senzoStudioSubParagraph11Text": "Como parte del sistema de diseño, desarrollé los principales componentes utilizados en el proyecto. A continuación presento el componente «tarjeta», utilizado para la visualización de varios proyectos.",
 
-  "cardQuestion1SenzoStudio": "¿Cómo prevé utilizar el sitio web de Senzo Studio en su flujo de trabajo profesional dentro de la industria de los efectos visuales?",
-  "cardQuestion2SenzoStudio": "¿Puede describir tareas o actividades concretas para las que confiaría en el sitio web de Senzo Studio para mejorar su trabajo?",
-  "cardQuestion3SenzoStudio": "En su opinión, ¿cuáles son las principales funcionalidades o características que debe ofrecer el sitio web de un estudio de efectos visuales para satisfacer eficazmente sus necesidades?",
-  "cardQuestion4SenzoStudio": "¿Qué tipos de contenidos o recursos consideraría esenciales para que el sitio web de un estudio de efectos visuales sea una herramienta valiosa para los profesionales del sector?",
-  "cardQuestion5SenzoStudio": "Teniendo en cuenta tu papel y tus responsabilidades en la industria de los efectos visuales, ¿qué herramientas o funcionalidades específicas crees que deberían ser fácilmente accesibles en el sitio web de Senzo Studio para agilizar tus tareas?",
+  "cardQuestion1SenzoStudio": "¿Cómo prevé utilizar el sitio web de Senzo Studio en su flujo de trabajo profesional?",
+  "cardQuestion2SenzoStudio": "¿Puede describir tareas o actividades concretas que realizaria en el sitio web de Senzo studio?",
+  "cardQuestion3SenzoStudio": "¿Cuáles son las principales funcionalidades o características que debe ofrecer el sitio web?",
+  "cardQuestion4SenzoStudio": "¿Qué tipos de contenidos o recursos consideraría esenciales?",
 
   "cardTestimonial1SenzoStudioDescription": "Como estudiante de VFX, veo un gran potencial en este sitio web. Agradecería una sección de ofertas de empleo para poder solicitar trabajo aquí una vez que termine mis estudios.",
   "cardTestimonial1SenzoStudioPosition": "Estudiante VFX",
@@ -495,8 +483,8 @@
   "senzoStudioTOC4": "Algunos diseños",
   "senzoStudioTOC5": "Aprendizajes",
 
-  "cardProjectAtipikoToursChallenge": "Diseñar y desarrollar la web de una agencia de viajes. El desarrollo fue llevado a cabo por un desarrollador back-end.",
-  "cardProjectAtipikoToursRol": "Diseñador UX/UI.",
+  "cardProjectAtipikoToursChallenge": "Diseñar y desarrollar la web de una agencia de viajes.",
+  "cardProjectAtipikoToursRol": "Diseñador de producto.",
   "cardProjectAtipikoToursCronology": "10 semanas.",
   "cardProjectAtipikoToursToolstack": "Figma y Chat GPT.",
 
@@ -512,14 +500,11 @@
   "atipikoToursSubParagraph2Title": "Mapa de usuario ",
   "atipikoToursSubParagraph2Text": "Me esfuerzo por comprender cómo interactúa el usuario con el producto y qué conocimientos puedo aplicar en el diseño posterior.",
 
-  "atipikoToursSubParagraph3Title": "Competidores",
-  "atipikoToursSubParagraph3Text": "Estos son algunos de los principales competidores de Atipiko Tours.",
+  "atipikoToursSubParagraph3Title": "Competidores",  
 
-  "atipikoToursSubParagraph4Title": "Evaluación heruística",
-  "atipikoToursSubParagraph4Text": "Identificación de problemas de usabilidad mediante principios de diseño reconocidos.",
+  "atipikoToursSubParagraph4Title": "Evaluación heruística",  
 
-  "atipikoToursSubParagraph5Title": "Evaluación de contenidos",
-  "atipikoToursSubParagraph5Text": "Análisis de contenido para asegurar relevancia, claridad y alineación con los objetivos.",
+  "atipikoToursSubParagraph5Title": "Evaluación de contenidos",  
 
   "atipikoToursCardAuthor1": "Azafata de vuelo",
   "atipikoToursCardAuthor2": "Ingeniero industrial",
@@ -564,16 +549,7 @@
   "atipikoToursUserJourneyTitle1": "Investigación",
   "atipikoToursUserJourneyTitle2": "Selección",
   "atipikoToursUserJourneyTitle3": "Reserva",
-  "atipikoToursUserJourneyTitle4": "Post-compra",
-
-  "atipikoToursUserJourneyText1": "María busca opciones de vuelo que se ajusten a sus deseos.",
-  "atipikoToursUserJourneyText2": "María compara precios y busca la mejor oferta.",
-  "atipikoToursUserJourneyText3": "María espera una experiencia de reserva sin contratiempos.",
-  "atipikoToursUserJourneyText4": "María espera recibir la confirmación y los detalles del viaje.",
-  "atipikoToursUserJourneyText5": "“Espero encontrar un vuelo asequible.”",
-  "atipikoToursUserJourneyText6": "“¿Este vuelo tiene buenas conexiones?”.",
-  "atipikoToursUserJourneyText7": "“Espero que el proceso de reserva sea rápido”.",
-  "atipikoToursUserJourneyText8": "“¿Dónde está mi email de confirmación?”.",
+  "atipikoToursUserJourneyTitle4": "Post", 
 
   "atipikoToursCardUserJourney1": "Éxtasis",
   "atipikoToursCardUserJourney2": "Ayuda",
@@ -625,10 +601,17 @@
   "atipikoToursTable2Row5Header": "Sección (FAQ)",
   "atipikoToursTable2Row6Header": "Cálculo de costes",
 
+  "atipikoToursParagraph3Title": "Sistema de diseño",
+  "atipikoToursSubParagraph6Title": "Tipografía",
+  "atipikoToursSubParagraph6Text": "Poppins tiene un atractivo internacional y una estética moderna, y garantiza una experiencia de usuario positiva en diversos dispositivos.",
+
   "atipikoTourcolorSubsection1": "Marca",
   "atipikoTourcolorSubsection1Name": "marca - 500",
   "atipikoTourcolorSubsection2": "Neutral",
   "atipikoTourcolorSubsection2Name": "neutral - 500",
+
+  "atipikoToursSubParagraph7Title": "Componentes",
+  "atipikoToursSubParagraph7Text": "Uno de los aspectos más cruciales de este proyecto es la posibilidad que tiene el usuario de realizar reservas a través de la página web. Para facilitarlo, y a través de estas tarjetas, ponemos a su disposición el catálogo de viajes que ofrece Atipiko Tours.",
 
   "atipikoToursParagraph5Title": "Aprendizajes",
   "atipikoToursParagraph5Text": "Este proyecto me permitió trabajar en estrecha colaboración con el promotor del proyecto. Además, fue una gran experiencia dar forma a las ideas que los propietarios tenían pero no estaban seguros de cómo enfocar.",
@@ -643,13 +626,13 @@
   "cardProjectTattooParadiseToolstack": "Figma, Miro y Chat GPT.",
 
   "tattooParadiseParagraph1Title": "Introducción",
-  "tattooParadiseParagraph1Text": "La plataforma permitirá a los usuarios explorar una amplia variedad de estilos y diseños, facilitando la búsqueda del tatuador ideal según sus preferencias. Además, la app ofrecerá una forma directa de contacto, mejorando la comunicación y experiencia tanto para los artistas como para los clientes.",  
+  "tattooParadiseParagraph1Text": "La plataforma permitirá explorar diversos estilos y diseños, facilitando la búsqueda del tatuador ideal. También ofrecerá contacto directo, mejorando la experiencia de artistas y clientes.",  
 
   "tattooParadiseParagraph2Title": "Propuesta de valor",
-  "tattooParadiseParagraph2Text": "A través de una interfaz intuitiva, los usuarios pueden explorar una vasta galería de estilos y diseños, encontrar tatuadores que se alineen con sus preferencias estéticas y contactarlos de manera directa y eficiente. Para los artistas, la plataforma ofrece una oportunidad única de visibilidad, permitiéndoles mostrar su trabajo a una audiencia más amplia y conectarse con clientes potenciales de forma sencilla y efectiva.",
+  "tattooParadiseParagraph2Text": "Los usuarios pueden explorar una galería de estilos, encontrar tatuadores afines y contactarlos directamente. Para los artistas, la plataforma brinda visibilidad, permitiendo mostrar su trabajo y conectarse con clientes de manera efectiva.",
   
   "tattooParadiseParagraph3Title": "Investigación",
-  "tattooParadiseParagraph3Text": "En esta investigación, analicé la situación del mercado, realicé un estudio de los dos principales productos disponibles en el mercado y examiné a los usuarios a través de mi propia investigación.",
+  "tattooParadiseParagraph3Text": "En esta investigación, analicé el mercado, estudié los dos principales productos disponibles y examiné a los usuarios mediante investigación propia.",
 
   "tattooParadiseSubParagraph1Title": "Mercado del tatuaje",
   "tattooParadiseSubParagraph1Text": "Fortune Business Insights ha realizado un estudio sobre los ingresos generados por el sector en los últimos años y ha facilitado una previsión para los próximos 10 años. Los siguientes datos muestran el tamaño del mercado del tatuaje en Europa y su previsión hasta 2027 (miles de millones de USB). ", 
@@ -657,17 +640,13 @@
   "tattooParadiseSubParagraph2Title": "Encuesta",
   "tattooParadiseSubParagraph2Text": "¿Cuál es el principal problema a la hora de hacerse un tatuaje?",
 
-  "tattooParadiseSubParagraph3Title": "User persona",
-  "tattooParadiseSubParagraph3Text": "Con los datos obtenidos en la investigación, creo dos perfiles de usuario.",
+  "tattooParadiseSubParagraph3Title": "User persona",  
 
-  "tattooParadiseSubParagraph4Title": "Competidores",
-  "tattooParadiseSubParagraph4Text": "En el momento del proyecto, los principales productos existentes en el mercado eran los siguientes.",
+  "tattooParadiseSubParagraph4Title": "Competidores",  
 
-  "tattooParadiseSubParagraph5Title": "Evaluación heurística",
-  "tattooParadiseSubParagraph5Text": "Identificación de problemas de usabilidad mediante principios de diseño reconocidos.",
+  "tattooParadiseSubParagraph5Title": "Evaluación heurística",  
 
-  "tattooParadiseSubParagraph6Title": "Prueba de usabilidad",
-  "tattooParadiseSubParagraph6Text": "Tras analizar al usuario y a los competidores existentes en el mercado, desarrollé un prototipo para realizar algunas pruebas y observar cómo interactuaban con él los usuarios reales.",
+  "tattooParadiseSubParagraph6Title": "Prueba de usabilidad",  
 
   "tattooParadiseSurvey1": "Conciliación",
   "tattooParadiseSurvey2": "Diseño",
@@ -723,7 +702,7 @@
   "tattooParadiseTable2Row5Header": "La función de desconexión es prescindible para el usuario.",
 
   "tattooParadiseParagraph4Title": "Decisiones de diseño",
-  "tattooParadiseParagraph4Text": "Elevando la experiencia del tatuaje, este producto ofrece conocimiento centralizado, exploración inmersiva del estilo, conexiones artísticas directas, perspectivas de tendencias y participación de la comunidad, redefiniendo la forma en que los usuarios navegan e interactúan dentro de la dinámica cultura del tatuaje.",
+  "tattooParadiseParagraph4Text": "Es crucial que el producto permita una comunicación rápida entre usuarios y artistas, facilitando interacciones y generando oportunidades de negocio.",
   "tattooParadiseSomeDesigns1Title": "Interacción entre usuario y artista",
   "tattooParadiseSomeDesigns1Text": "Es de vital importancia que el producto permita una comunicación rápida entre usuarios y artistas. Esto facilitará diversos tipos de interacciones y abrirá diferentes oportunidades de negocio.",
   "tattooParadiseSomeDesigns2Title": "Acceso a estilos de tatuaje",
@@ -733,17 +712,14 @@
   "tattooParadiseSomeDesigns4Title": "Inspiración en el diseño",
   "tattooParadiseSomeDesigns4Text": "El producto da acceso a una gran variedad de diseños en función de los distintos filtros.",
 
-  "tattooParadiseParagraph5Title": "Sistema de diseño",
-  "tattooParadiseParagraph5Text": "Comienzo el proyecto realizando una investigación. El objetivo es conocer a fondo el tipo de usuario, las empresas competidoras y el mercado en el que opera la empresa.",
+  "tattooParadiseParagraph5Title": "Sistema de diseño",  
 
   "tattooParadiseSubParagraph7Title": "Tipografia",
   "tattooParadiseSubParagraph7Text": "Poppins tiene un atractivo internacional y una estética moderna, y garantiza una experiencia de usuario positiva en diversos dispositivos.",
 
-  "tattooParadiseSubParagraph8Title": "Color",
-  "tattooParadiseSubParagraph8Text": "El color púrpura aumenta la participación del usuario, destaca los elementos clave y transmite creatividad y modernidad, por lo que es ideal para un diseño móvil destacado y dinámico.",
+  "tattooParadiseSubParagraph8Title": "Color",  
 
-  "tattooParadiseSubParagraph9Title": "Iconos",
-  "tattooParadiseSubParagraph9Text": "A continuación presento la colección de iconos utilizada en este proyecto.",
+  "tattooParadiseSubParagraph9Title": "Iconos",  
 
   "tattooParadiseSubParagraph10Title": "Componentes",
   "tattooParadiseSubParagraph10Text": "Como parte del sistema de diseño, desarrollé los principales componentes utilizados en el proyecto. A continuación presento el componente «tarjeta», utilizado para la visualización de varios proyectos.",
@@ -752,7 +728,7 @@
   "tattooParadisecolorSubsection1Name": "marca - 500",
 
   "tattooParadiseParagraph6Title": "Aprendizajes",
-  "tattooParadiseParagraph6Text": "Fue un proyecto en el que pude realizar un estudio de mercado en profundidad y tuve la oportunidad de observar en directo el comportamiento de los usuarios. En particular, me ayudó a aprender a empatizar con el usuario, a identificar en qué punto del flujo se atasca y a entender las razones que hay detrás.",
+  "tattooParadiseParagraph6Text": "En este proyecto, realicé un estudio de mercado en profundidad y observé el comportamiento de los usuarios. Aprendí a empatizar con ellos, identificar bloqueos en el flujo y entender sus causas.",
   "tattooParadiseLearning1": "Análisis del comportamiento",
   "tattooParadiseLearning2": "Pruebas de usabilidad",
   "tattooParadiseLearning3": "Prototipado",
@@ -765,47 +741,44 @@
   "atipikoToursTOC5": "Sistema de diseño",
   "atipikoToursTOC6": "Aprendizajes",
 
-  "cardProjectGeomitesChallenge": "Mantener una coherencia visual y de experiencia en el juego, alineando el trabajo de diferentes disciplinas y bajo una visión unificada de diseño.",
-  "cardProjectGeomitesRol": "Diseñador UX/UI.",
+  "cardProjectGeomitesChallenge": "Crear una experiencia de juego intuitiva, utilizable y deseable para nuestros jugadores.",
+  "cardProjectGeomitesRol": "Diseñador de prodcuto.",
   "cardProjectGeomitesCronology": "12 meses.",
   "cardProjectGeomitesToolstack": "Figma, Adobe Ilustrator, Adobe Photoshop, Azure DevOps, Miro y DALL-E.",
 
   "geomitesParagraph1Title": "Introducción",
-  "geomitesParagraph1Text": "Geomites es un juego de estrategia para móviles disponible en las plataformas iOS y Android. La mecánica principal del juego consiste en que los jugadores manejen una serie de personajes, cada uno con habilidades y destrezas únicas, que pueden potenciarse con objetos para mejorar sus estadísticas.",
+  "geomitesParagraph1Text": "Geomites es un juego indie de estrategia para móviles, disponible en iOS y Android. Los jugadores manejan personajes con habilidades únicas que pueden mejorarse con objetos.",
   "geomitesSubParagraph1Title": "El proyecto",
-  "geomitesSubParagraph1Text": "El año pasado formé parte de un equipo dedicado a dar vida a este proyecto. Como diseñador de productos, mi papel ha consistido en diseñar las interfaces de usuario, guiándome por un exhaustivo estudio de mercado de los principales juegos. Los jugadores pueden subir de nivel a estos personajes a través de dos modos de juego diferentes: batallas multijugador online contra otros jugadores y un modo historia offline que ofrece retos progresivos.",
+  "geomitesSubParagraph1Text": "Como diseñador de productos, formo parte del equipo que ha dado vida a este proyecto, diseñando las interfaces tras un exhaustivo estudio de mercado. Los jugadores pueden subir de nivel en batallas multijugador online y en un modo historia offline con desafíos progresivos.",
   "geomitesSubParagraph2Title": "Metodología de trabajo",
-  "geomitesSubParagraph2Text": "Nuestro equipo utilizó la metodología Agile para garantizar un proceso de desarrollo flexible e iterativo. Estructuramos nuestro trabajo en sprints de dos semanas, cada uno con objetivos claramente definidos.",
+  "geomitesSubParagraph2Text": "Nuestro equipo utilizó la metodología Agile, estructurando el trabajo en sprints de dos semanas con objetivos definidos.",
   "geomitesSubParagraph3Title": "El equipo",
   "geomitesSubParagraph3Text": "Geomites es un equipo talentoso y diverso, con un objetivo único de presentar el proyecto en el mercado y hacerlo accesible y disfrutable para la mayor cantidad de usuarios posibles.",
   "geomitesParagraph2Title": "Bases de diseño",
   "geomitesParagraph2Text": "En este punto reforzamos la línea visual y la coherencia del proyecto.",
   "geomitesSubParagraph4Title": "Estilo visual",
-  "geomitesSubParagraph4Text": "El estilo visual de Geomites se caracteriza por colores vibrantes, líneas limpias y una estética cohesiva que atrae a nuestro público objetivo. El objetivo en este punto es definir la identidad visual de Geomites, asegurándonos de que cada elemento desde los personajes hasta los entornos sea visualmente coherente y atractivo.",
+  "geomitesSubParagraph4Text": "El estilo visual de Geomites se caracteriza por colores vibrantes y una estética cohesiva. Buscamos definir una identidad visual coherente y atractiva para personajes y entornos.",
   "geomitesSubParagraph5Title": "Coherencia",
-  "geomitesSubParagraph5Text": "Establecimos una serie de directrices de diseño para garantizar la uniformidad en todas las interfaces de usuario y elementos del juego. Estas directrices abarcaban la tipografía, los esquemas de color, la iconografía y las estructuras de diseño. Al ceñirnos a estas normas, creamos una experiencia de usuario fluida, intuitiva y coherente, que reforzaba la identidad global de la marca Geomites.",
+  "geomitesSubParagraph5Text": "Establecimos directrices de diseño para asegurar uniformidad en las interfaces del juego, abarcando tipografía, colores, iconografía y diseño, creando una experiencia de usuario fluida y coherente.",
   "geomitesParagraph3Title": "Investigación",
-  "geomitesParagraph3Text": "Antes de empezar a tomar decisiones que afectaban al diseño del producto, fui al mercado para ver qué hacían y cómo lo hacían algunas de las mejores empresas y productos que se parecen al producto que ofrece Geomites.",
+  "geomitesParagraph3Text": "Antes de tomar decisiones de diseño, investigué qué hacían las mejores empresas y productos similares a Geomites.",
   "geomitesSubParagraph6Title": "Estudiando a los mejores",
-  "geomitesSubParagraph6Text": "Para asegurarnos de que Geomites destaca en el competitivo mercado de los juegos para móviles, realizamos un exhaustivo estudio comparativo de algunos de los juegos con más éxito del sector. Al examinar estos populares títulos, identificamos los elementos clave que contribuyen a su éxito, como el compromiso del usuario, el diseño visual y la mecánica de juego.",
+  "geomitesSubParagraph6Text": "Para destacar en el mercado de juegos móviles, realizamos un estudio comparativo de juegos exitosos, identificando elementos clave como compromiso del usuario, diseño y mecánica.",
   "geomitesSubParagraph7Title": "Patrones de diseño",
-  "geomitesSubParagraph7Text": "De nuestro estudio comparativo extrajimos varios patrones de diseño que resultaron eficaces en los principales juegos. Por ejemplo, las interfaces intuitivas y fáciles de usar de Clash Royale y Brawl Stars destacaron la importancia de una navegación clara y unos controles accesibles. El atractivo sistema de progresión de Archero y las opciones únicas de personalización de personajes de Shakes y Fidget nos inspiraron para incorporar elementos similares a Geomites.",
+  "geomitesSubParagraph7Text": "Extrajimos patrones de diseño eficaces de juegos exitosos. Las interfaces intuitivas de Clash Royale y Brawl Stars enfatizaron la navegación clara, y el sistema de progresión de Archero nos inspiró para Geomites.",
   "geomitesParagraph4Title": "Sistema de diseño",
-  "geomitesParagraph4Text": "Para garantizar la coherencia y la eficacia de nuestro proceso de diseño, creamos una completa biblioteca Figma. Esta biblioteca incluía todos los componentes de diseño, como botones, iconos, paletas de colores y estilos tipográficos. Al utilizar una biblioteca Figma centralizada, pudimos mantener un aspecto coherente en todas las interfaces del juego.",
+  "geomitesParagraph4Text": "Creamos una biblioteca Figma que incluía componentes de diseño como botones, iconos y paletas de colores, garantizando coherencia en todas las interfaces.",
   "geomitesSubParagraph8Title": "Tipografía",
-  "geomitesSubParagraph8Text": "Elegimos el tipo de letra Greenze para establecer un estilo de texto coherente y visualmente atractivo en todo Geomites. Elegimos este tipo de letra por su legibilidad y compatibilidad con el tema aventurero de nuestro juego.",
-  "geomitesSubParagraph9Title": "Color",
-  "geomitesSubParagraph9Text": "Nuestra paleta de colores consta de diez familias cromáticas: neutro, rojo, naranja, marrón, amarillo, turquesa, verde, violeta, azul y rosa. Estos colores se han seleccionado cuidadosamente para evocar la atmósfera aventurera del juego y realzar los elementos de la interfaz de usuario.",
-  "geomitesSubParagraph10Title": "Iconos",
-  "geomitesSubParagraph10Text": "El proyecto requería que los iconos tuviesen muy buena calidad y una ejecución tal que permitiese entender a los jugadores el significado de los conceptos a los que estos acompañan, por lo tanto, requiere de una excelente ejecución artística.",
+  "geomitesSubParagraph8Text": "Elegimos la fuente Greenze por su legibilidad y compatibilidad con el tema aventurero de Geomites, estableciendo un estilo de texto atractivo.",
+  "geomitesSubParagraph9Title": "Color",  
+  "geomitesSubParagraph10Title": "Iconos",  
   "geomitesSubParagraph11Title": "Componentes",
   "geomitesSubParagraph11Text": "El edificio fortaleza permite a los jugadores almacenar tanto sus geomitas como los objetos y pasivos que equipan. En este componente diseñé el edificio con diferentes pestañas y botones que permiten realizar búsquedas filtradas.",
   "geomitesSubParagraph12Title": "Ejecución sprint a sprint",
-  "geomitesSubParagraph12Text": "Para la implementación, utilizamos Figma para la colaboración en el diseño y React para el desarrollo. Cada sprint comenzó con una revisión de los objetivos y prioridades de diseño. Los diseños se crearon y validaron utilizando Figma, con la aportación de los miembros del equipo Marc y Aleix. Una vez finalizados los diseños, Marc y Aleix dirigieron el proceso de desarrollo en React, implementando los diseños de forma iterativa.",
-  "geomitesParagraph5Title": "Algunos diseños",
-  "geomitesParagraph5Text": "Aqui hay algunos ejemplos de pantallas finales implementadas por el equipo de desarrollo.",
+  "geomitesSubParagraph12Text": "Utilizamos Figma para la colaboración en el diseño y React para el desarrollo. Cada sprint comenzó con una revisión de objetivos y se validaron los diseños con el equipo.",
+  "geomitesParagraph5Title": "Algunos diseños",  
   "geomitesParagraph6Title": "Aprendizajes",
-  "geomitesParagraph6Text": "Trabajar en Geomites durante el último año ha sido una gran experiencia de aprendizaje. Este proyecto me ha enseñado mucho sobre diseño y desarrollo de juegos. También he podido trabajar codo con codo con un equipo de gran talento y aprender de sus habilidades e ideas. Durante este proyecto, mejoré mis habilidades y aprendí otras nuevas que me ayudarán en futuros proyectos.",
+  "geomitesParagraph6Text": "Trabajar en Geomites ha sido una gran experiencia de aprendizaje, mejorando mis habilidades y permitiéndome colaborar con un talentoso equipo y aprender de sus ideas.",
 
   "geomitesColorSubsection1": "Azul",
   "geomitesColorSubsection2": "Rojo",
@@ -832,13 +805,13 @@
   "geomitesTeamPosition5": "Desarrollador back-end",
 
   "geomitesSomeDesigns1Title": "Batalla 1 vs 1",
-  "geomitesSomeDesigns1Text": "El primer ejemplo muestra la interfaz de batalla 1 contra 1 en Geomites. Esta pantalla está diseñada para ofrecer a los jugadores un diseño claro e intuitivo que les permita gestionar fácilmente a sus personajes y participar en combates estratégicos.",
+  "geomitesSomeDesigns1Text": "El primer ejemplo muestra la interfaz de batalla 1 contra 1 en Geomites, diseñada para permitir a los jugadores gestionar fácilmente sus personajes en combates estratégicos.",
   "geomitesSomeDesigns2Title": "Salón de entrenamiento",
-  "geomitesSomeDesigns2Text": "Donde los jugadores pueden entrenar a sus personajes Geomites para mejorar sus habilidades y destrezas. Esta área del juego está diseñada para ser funcional y visualmente atractiva, ofreciendo a los jugadores una sensación de progresión y logro.",
+  "geomitesSomeDesigns2Text": "Los jugadores pueden entrenar a sus personajes para mejorar habilidades en un área funcional y visualmente atractiva, ofreciendo sensación de progresión.",
   "geomitesSomeDesigns3Title": "Tienda",
-  "geomitesSomeDesigns3Text": "Donde los jugadores pueden canjear diamantes (dinero real) por recursos esenciales necesarios para la progresión del juego. La interfaz de la tienda está diseñada para ser fácil de usar y visualmente atractiva, animando a los jugadores a realizar compras.",
+  "geomitesSomeDesigns3Text": "Los jugadores pueden canjear diamantes por recursos esenciales en una interfaz de tienda fácil de usar y visualmente atractiva que fomenta compras.",
   "geomitesSomeDesigns4Title": "Pantallas de carga",
-  "geomitesSomeDesigns4Text": "Que utilizamos para ofrecer consejos de juego a los jugadores. Esta pantalla está diseñada para ser informativa y atractiva, ofreciendo consejos y trucos de juego útiles mientras se carga el juego.",
+  "geomitesSomeDesigns4Text": "Usamos esta pantalla para ofrecer consejos de juego informativos y atractivos mientras se carga el juego.",
 
   "geomitesLearning1": "Metodología Agile",
   "geomitesLearning2": "Diseño de interfaces",

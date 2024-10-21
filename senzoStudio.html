@@ -37,11 +37,15 @@
     <header class="navBar">
 
       <div class="navBarContainer">
-        <a href="index.html" alt="logoAlejandro" id="logoLink" viewBox="0 0 24 24">
-          <svg class="logo imageLarge" viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M5.86048 20.6292L15.0291 2.83789H16.2875L32.0001 30.7269H24.5213L16.4673 16.5975H15.2089L13.7347 20.6292H5.86048ZM3.63149 24.439H16.144L20.0631 30.8379H0L3.63149 24.439Z" />
+        <a href="index.html" alt="logoAlejandro" id="logoLink" viewBox="0 0 24 24" class="imageLarge">
+
+          <svg xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.144 24.1011H3.63149L0 30.5H20.0631L16.144 24.1011Z" fill="var(--primary-500)" />
+            <path
+              d="M15.029 2.5L5.86035 20.2913H13.7346L15.2087 16.2596H16.4672L24.5212 30.389H31.9999L16.2874 2.5H15.029Z"
+              fill="var(--neutral-100)" />
           </svg>
+
         </a>
 
         <nav class="mobileNavigation" id="primaryNavigation">
@@ -77,18 +81,21 @@
             </div>
             <div class="frameFlexColumnMedium">
               <p class="large" data-key="navigationSubtitle4"></p>
-              <div class="frameFlexMedium">
-                <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
-                    class="fa-brands fa-whatsapp iconMedium"></i></a>
-                <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon"
-                  target="_blank"><i class="fa-brands fa-linkedin iconMedium"></i></a>
-                <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
-                    class="fa-brands fa-github iconMedium"></i></a>
-                <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
-                    class="fa-solid fa-envelope iconMedium"></i></a>
+              <div class="frameFlexColumnSmall">
+                <div class="frameFlexMedium">
+                  <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
+                      class="fa-brands fa-whatsapp iconMedium"></i></a>
+                  <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon"
+                    target="_blank"><i class="fa-brands fa-linkedin iconMedium"></i></a>
+                  <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
+                      class="fa-brands fa-github iconMedium"></i></a>
+                  <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
+                      class="fa-solid fa-envelope iconMedium"></i></a>
+                </div>
+                <p class="regular" data-key="footerText"></p>
               </div>
             </div>
-            <p class="regular" data-key="footerText"></p>
+
 
           </ul>
 
@@ -111,18 +118,22 @@
       <div class="projectHeader padding">
         <div class="frameFlexColumnLarge">
           <a class="buttonSecondary" href="projects.html">
-            <i class="fa-solid fa-arrow-left"></i>
+            <i class="fa-solid fa-arrow-left iconMedium"></i>
             <p data-key="projectPageHeaderButtonBack" class="regular"></p>
           </a>
-          <div class="tag">
-            <p class="regular" data-key="cardProjectSenzoStudioTag1"></p>
+          <div class="frameFlexColumnSmall">
+            <div class="tag">
+              <p class="regular" data-key="cardProjectSenzoStudioTag1"></p>
+            </div>
+            <p data-key="cardProjectSenzoStudioTime" class="small"></p>
           </div>
-          <p data-key="cardProjectSenzoStudioTime" class="small"></p>
-          <h1 data-key="cardProjectSenzoStudioTitle"></h1>
-          <h4 data-key="cardProjectSenzoStudioDescription"></h4>          
+          <div class="frameFlexColumnSmall">
+            <h1 data-key="cardProjectSenzoStudioTitle"></h1>
+            <h4 data-key="cardProjectSenzoStudioDescription"></h4>
+          </div>
         </div>
-        <div class="projectImageContainter1">
-          <img src="assets/images/projects/senzoStudio/senzoStudioImageHeader.webp" alt="projectImage">
+        <div class="projectImageContainter">
+          <img src="assets/images/projects/senzoStudio/headerImage.webp" alt="projectImage">
         </div>
       </div>
 
@@ -130,22 +141,22 @@
       <div class="articleInfo" id="stepSection">
 
         <div class="articleInfoOne">
-          <p class="regular-bold" data-key="cardProjectChallenge"></p>
+          <p class="large" data-key="cardProjectChallenge"></p>
           <p class="regular" data-key="cardProjectSenzoStudioChallenge"></p>
         </div>
 
         <div class="articleInfoTwo">
-          <p class="regular-bold" data-key="cardProjectRol"></p>
+          <p class="large" data-key="cardProjectRol"></p>
           <p class="regular" data-key="cardProjectSenzoStudioRol"></p>
         </div>
 
         <div class="articleInfoThree">
-          <p class="regular-bold" data-key="cardProjectCronology"></p>
+          <p class="large" data-key="cardProjectCronology"></p>
           <p class="regular" data-key="cardProjectSenzoStudioCronology"></p>
         </div>
 
         <div class="articleInfoFour">
-          <p class="regular-bold" data-key="cardProjectToolstack"></p>
+          <p class="large" data-key="cardProjectToolstack"></p>
           <p class="regular" data-key="cardProjectSenzoStudioToolstack"></p>
         </div>
 
@@ -157,28 +168,27 @@
         <div class="articleBodyContent frameFlexColumnColossal">
 
           <!-- [introduction] -->
-          <section id="Section1" class="frameFlexColumnMassive">
-            <div class="frameFlexColumnSmall">
-              <h2 data-key="senzoStudioParagraph1Title"></h2>
-              <p data-key="senzoStudioParagraph1Text" class="regular"></p>
-            </div>
-          </section>
+          <div id="Section1" class="frameFlexColumnSmall">
+            <h2 data-key="senzoStudioParagraph1Title"></h2>
+            <p data-key="senzoStudioParagraph1Text" class="regular"></p>
+          </div>
 
           <!-- [research] -->
-          <section id="Section2" class="frameFlexColumnMassive">
+          <section id="Section2" class="frameFlexColumnColossal">
 
-            <!-- [intro] -->
-            <div class="frameFlexColumnSmall">
-              <h2 data-key="senzoStudioParagraph2Title"></h2>
-              <p data-key="senzoStudioParagraph2Text" class="regular"></p>
-            </div>
+
 
             <!-- [survey] -->
             <div class="frameFlexColumnLarge">
 
+              <!-- [intro] -->
+              <div class="frameFlexColumnSmall">
+                <h2 data-key="senzoStudioParagraph2Title"></h2>
+                <p data-key="senzoStudioParagraph2Text" class="regular"></p>
+              </div>
+
               <div class="frameFlexColumnSmall">
                 <h4 data-key="senzoStudioSubParagraph1Title"></h4>
-                <p data-key="senzoStudioSubParagraph1Text" class="regular"></p>
               </div>
 
               <div class="frameFlexColumnMedium">
@@ -199,10 +209,6 @@
                   <i class="fa-solid fa-angle-right"></i>
                   <p class="regular" data-key="cardQuestion4SenzoStudio"></p>
                 </div>
-                <div class="cardQuestion">
-                  <i class="fa-solid fa-angle-right"></i>
-                  <p class="regular" data-key="cardQuestion5SenzoStudio"></p>
-                </div>
 
               </div>
 
@@ -213,7 +219,6 @@
 
               <div class="frameFlexColumnSmall">
                 <h4 data-key="senzoStudioSubParagraph2Title"></h4>
-                <p data-key="senzoStudioSubParagraph2Text" class="regular"></p>
               </div>
 
               <div class="frameFlexDynamic">
@@ -253,79 +258,79 @@
 
               <div class="userStoryMap">
                 <div class="userStoryMapItemSpecial">
-                  <p class="small" data-key="userStoryMap1Item1"></p>
+                  <p data-key="userStoryMap1Item1"></p>
                 </div>
                 <div class="userStoryMapItem visibility">
-                  <p class="small" data-key="userStoryMap1Item2"></p>
+                  <p data-key="userStoryMap1Item2"></p>
                 </div>
                 <div class="userStoryMapItem visibility">
-                  <p class="small" data-key="userStoryMap1Item3"></p>
+                  <p data-key="userStoryMap1Item3"></p>
                 </div>
                 <div class="userStoryMapItem visibility">
-                  <p class="small" data-key="userStoryMap1Item4"></p>
+                  <p data-key="userStoryMap1Item4"></p>
                 </div>
                 <div class="userStoryMapItem visibility">
-                  <p class="small" data-key="userStoryMap1Item5"></p>
+                  <p data-key="userStoryMap1Item5"></p>
                 </div>
                 <div class="userStoryMapItem">
-                  <p class="small" data-key="userStoryMap1Item6"></p>
+                  <p data-key="userStoryMap1Item6"></p>
                 </div>
                 <div class="userStoryMapItem visibility">
-                  <p class="small" data-key="userStoryMap1Item7"></p>
+                  <p data-key="userStoryMap1Item7"></p>
                 </div>
                 <div class="userStoryMapItem">
-                  <p class="small" data-key="userStoryMap1Item8"></p>
+                  <p data-key="userStoryMap1Item8"></p>
                 </div>
                 <div class="userStoryMapItem visibility">
-                  <p class="small" data-key="userStoryMap1Item9"></p>
+                  <p data-key="userStoryMap1Item9"></p>
                 </div>
                 <div class="userStoryMapItem visibility">
-                  <p class="small" data-key="userStoryMap1Item10"></p>
+                  <p data-key="userStoryMap1Item10"></p>
                 </div>
                 <div class="userStoryMapItem">
-                  <p class="small" data-key="userStoryMap1Item11"></p>
+                  <p data-key="userStoryMap1Item11"></p>
                 </div>
                 <div class="userStoryMapItem">
-                  <p class="small" data-key="userStoryMap1Item12"></p>
+                  <p data-key="userStoryMap1Item12"></p>
                 </div>
                 <div class="userStoryMapItem">
-                  <p class="small" data-key="userStoryMap1Item13"></p>
+                  <p data-key="userStoryMap1Item13"></p>
                 </div>
                 <div class="userStoryMapItem">
-                  <p class="small" data-key="userStoryMap1Item14"></p>
+                  <p data-key="userStoryMap1Item14"></p>
                 </div>
                 <div class="userStoryMapItem">
-                  <p class="small" data-key="userStoryMap1Item15"></p>
+                  <p data-key="userStoryMap1Item15"></p>
                 </div>
                 <div class="userStoryMapItem">
-                  <p class="small" data-key="userStoryMap1Item16"></p>
+                  <p data-key="userStoryMap1Item16"></p>
                 </div>
                 <div class="userStoryMapItem">
-                  <p class="small" data-key="userStoryMap1Item17"></p>
+                  <p data-key="userStoryMap1Item17"></p>
                 </div>
                 <div class="userStoryMapItem">
-                  <p class="small" data-key="userStoryMap1Item18"></p>
+                  <p data-key="userStoryMap1Item18"></p>
                 </div>
                 <div class="userStoryMapItem">
-                  <p class="small" data-key="userStoryMap1Item19"></p>
+                  <p data-key="userStoryMap1Item19"></p>
                 </div>
                 <div class="userStoryMapItem">
-                  <p class="small" data-key="userStoryMap1Item20"></p>
+                  <p data-key="userStoryMap1Item20"></p>
                 </div>
                 <div class="userStoryMapItem">
-                  <p class="small" data-key="userStoryMap1Item21"></p>
+                  <p data-key="userStoryMap1Item21"></p>
                 </div>
                 <div class="userStoryMapItem">
-                  <p class="small" data-key="userStoryMap1Item22"></p>
+                  <p data-key="userStoryMap1Item22"></p>
                 </div>
                 <div class="userStoryMapItem">
-                  <p class="small" data-key="userStoryMap1Item23"></p>
+                  <p data-key="userStoryMap1Item23"></p>
                 </div>
                 <div class="userStoryMapItem visibility">
-                  <p class="small" data-key="userStoryMap1Item24"></p>
+                  <p data-key="userStoryMap1Item24"></p>
                 </div>
                 <div class="userStoryMapItem">
-                  <p class="small" data-key="userStoryMap1Item25"></p>
+                  <p data-key="userStoryMap1Item25"></p>
                 </div>
               </div>
 
@@ -340,79 +345,79 @@
 
               <div class="userStoryMap">
                 <div class="userStoryMapItemSpecial">
-                  <p class="small" data-key="userStoryMap2Item1"></p>
+                  <p data-key="userStoryMap2Item1"></p>
                 </div>
                 <div class="userStoryMapItem visibility">
-                  <p class="small" data-key="userStoryMap2Item2"></p>
+                  <p data-key="userStoryMap2Item2"></p>
                 </div>
                 <div class="userStoryMapItem visibility">
-                  <p class="small" data-key="userStoryMap2Item3"></p>
+                  <p data-key="userStoryMap2Item3"></p>
                 </div>
                 <div class="userStoryMapItem visibility">
-                  <p class="small" data-key="userStoryMap2Item4"></p>
+                  <p data-key="userStoryMap2Item4"></p>
                 </div>
                 <div class="userStoryMapItem visibility">
-                  <p class="small" data-key="userStoryMap2Item5"></p>
+                  <p data-key="userStoryMap2Item5"></p>
                 </div>
                 <div class="userStoryMapItem">
-                  <p class="small" data-key="userStoryMap2Item6"></p>
+                  <p data-key="userStoryMap2Item6"></p>
                 </div>
                 <div class="userStoryMapItem visibility">
-                  <p class="small" data-key="userStoryMap2Item7"></p>
+                  <p data-key="userStoryMap2Item7"></p>
                 </div>
                 <div class="userStoryMapItem">
-                  <p class="small" data-key="userStoryMap2Item8"></p>
+                  <p data-key="userStoryMap2Item8"></p>
                 </div>
                 <div class="userStoryMapItem visibility">
-                  <p class="small" data-key="userStoryMap2Item9"></p>
+                  <p data-key="userStoryMap2Item9"></p>
                 </div>
                 <div class="userStoryMapItem">
-                  <p class="small" data-key="userStoryMap2Item10"></p>
+                  <p data-key="userStoryMap2Item10"></p>
                 </div>
                 <div class="userStoryMapItem">
-                  <p class="small" data-key="userStoryMap2Item11"></p>
+                  <p data-key="userStoryMap2Item11"></p>
                 </div>
                 <div class="userStoryMapItem">
-                  <p class="small" data-key="userStoryMap2Item12"></p>
+                  <p data-key="userStoryMap2Item12"></p>
                 </div>
                 <div class="userStoryMapItem">
-                  <p class="small" data-key="userStoryMap2Item13"></p>
+                  <p data-key="userStoryMap2Item13"></p>
                 </div>
                 <div class="userStoryMapItem">
-                  <p class="small" data-key="userStoryMap2Item14"></p>
+                  <p data-key="userStoryMap2Item14"></p>
                 </div>
                 <div class="userStoryMapItem">
-                  <p class="small" data-key="userStoryMap2Item15"></p>
+                  <p data-key="userStoryMap2Item15"></p>
                 </div>
                 <div class="userStoryMapItem">
-                  <p class="small" data-key="userStoryMap2Item16"></p>
+                  <p data-key="userStoryMap2Item16"></p>
                 </div>
                 <div class="userStoryMapItem">
-                  <p class="small" data-key="userStoryMap2Item17"></p>
+                  <p data-key="userStoryMap2Item17"></p>
                 </div>
                 <div class="userStoryMapItem">
-                  <p class="small" data-key="userStoryMap2Item18"></p>
+                  <p data-key="userStoryMap2Item18"></p>
                 </div>
                 <div class="userStoryMapItem">
-                  <p class="small" data-key="userStoryMap2Item19"></p>
+                  <p data-key="userStoryMap2Item19"></p>
                 </div>
                 <div class="userStoryMapItem">
-                  <p class="small" data-key="userStoryMap2Item20"></p>
+                  <p data-key="userStoryMap2Item20"></p>
                 </div>
                 <div class="userStoryMapItem">
-                  <p class="small" data-key="userStoryMap2Item21"></p>
+                  <p data-key="userStoryMap2Item21"></p>
                 </div>
                 <div class="userStoryMapItem">
-                  <p class="small" data-key="userStoryMap2Item22"></p>
+                  <p data-key="userStoryMap2Item22"></p>
                 </div>
                 <div class="userStoryMapItem visibility">
-                  <p class="small" data-key="userStoryMap2Item23"></p>
+                  <p data-key="userStoryMap2Item23"></p>
                 </div>
                 <div class="userStoryMapItem visibility">
-                  <p class="small" data-key="userStoryMap2Item24"></p>
+                  <p data-key="userStoryMap2Item24"></p>
                 </div>
                 <div class="userStoryMapItem">
-                  <p class="small" data-key="userStoryMap2Item25"></p>
+                  <p data-key="userStoryMap2Item25"></p>
                 </div>
               </div>
 
@@ -423,7 +428,6 @@
 
               <div class="frameFlexColumnSmall">
                 <h4 data-key="senzoStudioSubParagraph5Title"></h4>
-                <p data-key="senzoStudioSubParagraph5Text" class="regular"></p>
               </div>
 
               <div class="gridTwoAuto">
@@ -434,8 +438,8 @@
                   <p class="regular">MPC</p>
                 </div>
                 <div class="cardCompetitor">
-                  <img class="imageExtraLarge" src="assets/images/projects/senzoStudio/icons/competitors/industrial.webp"
-                    alt="competitorImage">
+                  <img class="imageExtraLarge"
+                    src="assets/images/projects/senzoStudio/icons/competitors/industrial.webp" alt="competitorImage">
                   <p class="regular">Industrial</p>
                 </div>
                 <div class="cardCompetitor">
@@ -458,26 +462,25 @@
 
               <div class="frameFlexColumnSmall">
                 <h4 data-key="senzoStudioSubParagraph6Title"></h4>
-                <p data-key="senzoStudioSubParagraph6Text" class="regular"></p>
               </div>
 
               <table>
 
                 <tr>
                   <th>
-                    <p class="regular-bold" data-key="senzoStudioTable1Header1"></p>
+                    <p class="large" data-key="senzoStudioTable1Header1"></p>
                   </th>
                   <th>
-                    <p class="regular-bold" data-key="senzoStudioTable1Header2"></p>
+                    <p class="large" data-key="senzoStudioTable1Header2"></p>
                   </th>
                   <th>
-                    <p class="regular-bold" data-key="senzoStudioTable1Header3"></p>
+                    <p class="large" data-key="senzoStudioTable1Header3"></p>
                   </th>
                   <th>
-                    <p class="regular-bold" data-key="senzoStudioTable1Header4"></p>
+                    <p class="large" data-key="senzoStudioTable1Header4"></p>
                   </th>
                   <th>
-                    <p class="regular-bold" data-key="senzoStudioTable1Header5"></p>
+                    <p class="large" data-key="senzoStudioTable1Header5"></p>
                   </th>
                 </tr>
 
@@ -571,26 +574,25 @@
 
               <div class="frameFlexColumnSmall">
                 <h4 data-key="senzoStudioSubParagraph7Title"></h4>
-                <p data-key="senzoStudioSubParagraph7Text" class="regular"></p>
               </div>
 
               <table>
 
                 <tr>
                   <th>
-                    <p class="regular-bold" data-key="senzoStudioTable2Header1"></p>
+                    <p class="large" data-key="senzoStudioTable2Header1"></p>
                   </th>
                   <th>
-                    <p class="regular-bold" data-key="senzoStudioTable2Header2"></p>
+                    <p class="large" data-key="senzoStudioTable2Header2"></p>
                   </th>
                   <th>
-                    <p class="regular-bold" data-key="senzoStudioTable2Header3"></p>
+                    <p class="large" data-key="senzoStudioTable2Header3"></p>
                   </th>
                   <th>
-                    <p class="regular-bold" data-key="senzoStudioTable2Header4"></p>
+                    <p class="large" data-key="senzoStudioTable2Header4"></p>
                   </th>
                   <th>
-                    <p class="regular-bold" data-key="senzoStudioTable2Header5"></p>
+                    <p class="large" data-key="senzoStudioTable2Header5"></p>
                   </th>
                 </tr>
 
@@ -702,16 +704,15 @@
 
               <div class="frameFlexColumnSmall">
                 <h4 data-key="senzoStudioSubParagraph8Title"></h4>
-                <p data-key="senzoStudioSubParagraph8Text" class="regular"></p>
               </div>
 
               <table>
 
                 <tr>
-                  <th class="regular-bold" data-key="senzoStudioTable3Header1"></th>
-                  <th class="regular-bold" data-key="senzoStudioTable3Header2"></th>
-                  <th class="regular-bold" data-key="senzoStudioTable3Header3"></th>
-                  <th class="regular-bold" data-key="senzoStudioTable3Header4"></th>
+                  <th class="large" data-key="senzoStudioTable3Header1"></th>
+                  <th class="large" data-key="senzoStudioTable3Header2"></th>
+                  <th class="large" data-key="senzoStudioTable3Header3"></th>
+                  <th class="large" data-key="senzoStudioTable3Header4"></th>
                 </tr>
 
                 <tr>
@@ -742,16 +743,15 @@
           </section>
 
           <!-- [design system] -->
-          <section id="Section3" class="frameFlexColumnMassive">
-
-            <!-- [intro] -->
-            <div class="frameFlexColumnSmall">
-              <h2 data-key="senzoStudioParagraph3Title"></h2>
-              <p data-key="senzoStudioParagraph3Text" class="regular"></p>
-            </div>
+          <section id="Section3" class="frameFlexColumnColossal">
 
             <!-- [typography] -->
             <div class="frameFlexColumnLarge">
+
+              <!-- [intro] -->
+              <div class="frameFlexColumnSmall">
+                <h2 data-key="senzoStudioParagraph3Title"></h2>                
+              </div>
 
               <div class="frameFlexColumnSmall">
                 <h4 data-key="senzoStudioSubParagraph9Title"></h4>
@@ -762,32 +762,32 @@
 
                 <div class="gridAutoOne">
                   <div class="cardTypography">
-                    <p class="regular-bold">Heading 1</p>
+                    <p class="large">Heading 1</p>
                     <p class="regular">IBM Plex Sand</p>
                     <p class="small">48px / line Auto</p>
                   </div>
                   <div class="cardTypography">
-                    <p class="regular-bold">Heading 2</p>
+                    <p class="large">Heading 2</p>
                     <p class="regular">IBM Plex Sand</p>
                     <p class="small">40px / line Auto</p>
                   </div>
                   <div class="cardTypography">
-                    <p class="regular-bold">Heading 3</p>
+                    <p class="large">Heading 3</p>
                     <p class="regular">IBM Plex Sand</p>
                     <p class="small">32px / line Auto</p>
                   </div>
                   <div class="cardTypography">
-                    <p class="regular-bold">Large</p>
+                    <p class="large">Large</p>
                     <p class="regular">IBM Plex Sand</p>
                     <p class="small">20px / line Auto</p>
                   </div>
                   <div class="cardTypography">
-                    <p class="regular-bold">Regular</p>
+                    <p class="large">Regular</p>
                     <p class="regular">IBM Plex Sand</p>
                     <p class="small">16px / line Auto</p>
                   </div>
                   <div class="cardTypography">
-                    <p class="regular-bold">Small</p>
+                    <p class="large">Small</p>
                     <p class="regular">IBM Plex Sand</p>
                     <p class="small">12px / line Auto</p>
                   </div>
@@ -801,8 +801,7 @@
             <div class="frameFlexColumnLarge">
 
               <div class="frameFlexColumnSmall">
-                <h4 data-key="senzoStudioSubParagraph10Title"></h4>
-                <p data-key="senzoStudioSubParagraph10Text" class="regular"></p>
+                <h4 data-key="senzoStudioSubParagraph10Title"></h4>                
               </div>
 
               <div class="frameFlexColumnLarge">
@@ -814,7 +813,7 @@
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle32"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold" data-key="colorSubsection1Name"></div>
+                        <div class="regular" data-key="colorSubsection1Name"></div>
                         <p class="small">#FF0A44</p>
                       </div>
                     </div>
@@ -831,7 +830,7 @@
                     <div class="cardColor">
                       <div class="colorRectangle colorRectangle25"></div>
                       <div class="frameFlexColumnTiny">
-                        <div class="regular-bold" data-key="colorSubsection2Name"></div>
+                        <div class="regular" data-key="colorSubsection2Name"></div>
                         <p class="small">#B6BABF</p>
                       </div>
                     </div>
@@ -886,7 +885,7 @@
           </section>
 
           <!-- [some designs] -->
-          <section id="Section4" class="frameFlexColumnSmall">
+          <section id="Section4" class="frameFlexColumnLarge">
 
             <!-- [intro] -->
             <div class="frameFlexColumnSmall">
@@ -894,34 +893,29 @@
               <p data-key="portfolioParagraph4Text" class="regular"></p>
             </div>
 
-            <!-- [designs] -->
-            <div class="frameFlexColumnMassive">
+            <figure>
+              <img src="assets/images/projects/senzoStudio/desktopSomeDesigns-1.webp" alt="design1">
+            </figure>
 
-              <figure>
-                <img src="assets/images/projects/senzoStudio/senzo__laptopFrame1.webp" alt="design1">
-              </figure>
+            <figure class="mobileFrame">
+              <img src="assets/images/projects/senzoStudio/mobileSomeDesigns-1.webp" alt="design2">
+            </figure>
 
-              <figure class="mobileFrame">
-                <img src="assets/images/projects/senzoStudio/senzo__mobileFrame1.webp" alt="design2">
-              </figure>
+            <figure>
+              <img src="assets/images/projects/senzoStudio/desktopSomeDesigns-2.webp" alt="design3">
+            </figure>
 
-              <figure>
-                <img src="assets/images/projects/senzoStudio/senzo__laptopFrame2.webp" alt="design3">
-              </figure>
+            <figure class="mobileFrame">
+              <img src="assets/images/projects/senzoStudio/mobileSomeDesigns-2.webp" alt="design4">
+            </figure>
 
-              <figure class="mobileFrame">
-                <img src="assets/images/projects/senzoStudio/senzo__mobileFrame2.webp" alt="design4">
-              </figure>
+            <figure>
+              <img src="assets/images/projects/senzoStudio/desktopSomeDesigns-3.webp" alt="design5">
+            </figure>
 
-              <figure>
-                <img src="assets/images/projects/senzoStudio/senzo__laptopFrame3.webp" alt="design5">
-              </figure>
-
-              <figure class="mobileFrame">
-                <img src="assets/images/projects/senzoStudio/senzo__mobileFrame3.webp" alt="design6">
-              </figure>
-
-            </div>
+            <figure class="mobileFrame">
+              <img src="assets/images/projects/senzoStudio/mobileSomeDesigns-3.webp" alt="design6">
+            </figure>
 
           </section>
 
@@ -972,15 +966,7 @@
     <div class="frameFlexColumnLarge otherArticles">
 
       <!-- [intro] -->
-      <div class="sectionHeader">
-        <div class="frameFlexAuto">
-          <h2 data-key="otherProjectsTitle"></h2>
-          <a href="projects.html" class="buttonTerciary">
-            <p class="regular" data-key="indexSectionHeaderButton"></p>
-          </a>
-        </div>
-        <p class="regular" data-key="otherProjectsText"></p>
-      </div>
+      <h2 data-key="otherProjectsTitle"></h2>      
 
       <!-- [projects] -->
       <div class="gridThree">
@@ -988,55 +974,61 @@
         <!-- [atipikoTours] -->
         <a class="cardProject" href="atipikoTours.html">
           <div class="cardProjectImageContainer">
-            <img class="cardProjectImage" src="assets/images/projects/atipikoTours/cardProject__atipikoTours.webp"
-              alt="cardProjectImage">
+            <img src="assets/images/projects/atipikoTours/headerImage.webp" alt="imageContainer">
           </div>
-          <div class="frameFlexColumnTiny">
-            <p class="large">Atipiko tours</p>
-            <p class="small" data-key="cardProjectAtipikoToursTime"></p>
+          <div class="frameFlexColumnSmall">
+            <div class="frameFlexColumnTiny">
+              <p class="large">Atipiko tours</p>
+              <p class="small" data-key="cardProjectAtipikoToursTime"></p>
+            </div>
+            <p class="regular" data-key="cardProjectAtipikoToursDescription"></p>
           </div>
-          <p class="regular" data-key="cardProjectAtipikoToursDescription"></p>
-          <div class="frameFlexMedium">
+          <div class="frameFlexSmall">
             <div class="tag">
               <p class="regular" data-key="cardProjectAtipikoToursTag1"></p>
             </div>
           </div>
+          <i class="fa-solid fa-arrow-right iconMedium"></i>
         </a>
 
         <!-- [portfolio] -->
         <a class="cardProject" href="portfolio.html">
           <div class="cardProjectImageContainer">
-            <img class="cardProjectImage" src="assets/images/projects/portfolio/cardProject__portfolio.webp"
-              alt="cardProjectImage">
+            <img src="assets/images/projects/portfolio/headerImage.webp" alt="imageContainer">
           </div>
-          <div class="frameFlexColumnTiny">
-            <p class="large">Portfolio</p>
-            <p class="small" data-key="cardProjectPortfolioTime"></p>
+          <div class="frameFlexColumnSmall">
+            <div class="frameFlexColumnTiny">
+              <p class="large">Portfolio</p>
+              <p class="small" data-key="cardProjectPortfolioTime"></p>
+            </div>
+            <p class="regular" data-key="cardProjectPortfolioDescription"></p>
           </div>
-          <p class="regular" data-key="cardProjectPortfolioDescription"></p>
-          <div class="frameFlexMedium">
+          <div class="frameFlexSmall">
             <div class="tag">
               <p class="regular" data-key="cardProjectPortfolioTag1"></p>
             </div>
           </div>
+          <i class="fa-solid fa-arrow-right iconMedium"></i>
         </a>
 
-        <!-- [tattooParadise] -->
+        <!-- [tattoParadise] -->
         <a class="cardProject" href="tattooParadise.html">
           <div class="cardProjectImageContainer">
-            <img class="cardProjectImage" src="assets/images/projects/tattooParadise/cardProject__tattooParadise.webp"
-              alt="cardProjectImage">
+            <img src="assets/images/projects/tattooParadise/headerImage.webp" alt="imageContainer">
           </div>
-          <div class="frameFlexColumnTiny">
-            <p class="large">Tattoo paradise</p>
-            <p class="small" data-key="cardProjectTattooParadiseTime"></p>
+          <div class="frameFlexColumnSmall">
+            <div class="frameFlexColumnTiny">
+              <p class="large">Tattoo paradise</p>
+              <p class="small" data-key="cardProjectTattooParadiseTime"></p>
+            </div>
+            <p class="regular" data-key="cardProjectTattooParadiseDescription"></p>
           </div>
-          <p class="regular" data-key="cardProjectTattooParadiseDescription"></p>
-          <div class="frameFlexMedium">
+          <div class="frameFlexSmall">
             <div class="tag">
               <p class="regular" data-key="cardProjectTattooParadiseTag1"></p>
             </div>
           </div>
+          <i class="fa-solid fa-arrow-right iconMedium"></i>
         </a>
 
       </div>

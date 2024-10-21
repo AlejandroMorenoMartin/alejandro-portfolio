@@ -34,11 +34,15 @@
     <header class="navBar">
 
       <div class="navBarContainer">
-        <a href="index.html" alt="logoAlejandro" id="logoLink" viewBox="0 0 24 24">
-          <svg class="logo imageLarge" viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M5.86048 20.6292L15.0291 2.83789H16.2875L32.0001 30.7269H24.5213L16.4673 16.5975H15.2089L13.7347 20.6292H5.86048ZM3.63149 24.439H16.144L20.0631 30.8379H0L3.63149 24.439Z" />
+        <a href="index.html" alt="logoAlejandro" id="logoLink" viewBox="0 0 24 24" class="imageLarge">
+
+          <svg xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.144 24.1011H3.63149L0 30.5H20.0631L16.144 24.1011Z" fill="var(--primary-500)" />
+            <path
+              d="M15.029 2.5L5.86035 20.2913H13.7346L15.2087 16.2596H16.4672L24.5212 30.389H31.9999L16.2874 2.5H15.029Z"
+              fill="var(--neutral-100)" />
           </svg>
+
         </a>
 
         <nav class="mobileNavigation" id="primaryNavigation">
@@ -74,18 +78,21 @@
             </div>
             <div class="frameFlexColumnMedium">
               <p class="large" data-key="navigationSubtitle4"></p>
-              <div class="frameFlexMedium">
-                <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
-                    class="fa-brands fa-whatsapp iconMedium"></i></a>
-                <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon"
-                  target="_blank"><i class="fa-brands fa-linkedin iconMedium"></i></a>
-                <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
-                    class="fa-brands fa-github iconMedium"></i></a>
-                <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
-                    class="fa-solid fa-envelope iconMedium"></i></a>
+              <div class="frameFlexColumnSmall">
+                <div class="frameFlexMedium">
+                  <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
+                      class="fa-brands fa-whatsapp iconMedium"></i></a>
+                  <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon"
+                    target="_blank"><i class="fa-brands fa-linkedin iconMedium"></i></a>
+                  <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
+                      class="fa-brands fa-github iconMedium"></i></a>
+                  <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
+                      class="fa-solid fa-envelope iconMedium"></i></a>
+                </div>
+                <p class="regular" data-key="footerText"></p>
               </div>
             </div>
-            <p class="regular" data-key="footerText"></p>
+
 
           </ul>
 
@@ -116,15 +123,16 @@
         <!-- [geomites] -->
         <a class="cardProject" href="geomites.html">
           <div class="cardProjectImageContainer">
-            <img class="cardProjectImage" src="assets/images/projects/geomites/cardProject__geomites.webp"
-              alt="cardProjectImage">
+            <img src="assets/images/projects/geomites/headerImage.webp" alt="imageContainer">
           </div>
-          <div class="frameFlexColumnTiny">
-            <p class="large">Geomites</p>
-            <p class="small" data-key="cardProjectGeomitesTime"></p>
+          <div class="frameFlexColumnSmall">
+            <div class="frameFlexColumnTiny">
+              <p class="large">Geomites</p>
+              <p class="small" data-key="cardProjectGeomitesTime"></p>
+            </div>
+            <p class="regular" data-key="cardProjectGeomitesDescription"></p>
           </div>
-          <p class="regular" data-key="cardProjectGeomitesDescription"></p>
-          <div class="frameFlexMedium">
+          <div class="frameFlexSmall">
             <div class="tagNew">
               <p class="regular" data-key="cardProjectGeomitesTag1"></p>
             </div>
@@ -132,78 +140,87 @@
               <p class="regular" data-key="cardProjectGeomitesTag2"></p>
             </div>
           </div>
+          <i class="fa-solid fa-arrow-right iconMedium"></i>
         </a>
 
-        <!-- [tattooParadise] -->
+        <!-- [tattoParadise] -->
         <a class="cardProject" href="tattooParadise.html">
           <div class="cardProjectImageContainer">
-            <img class="cardProjectImage" src="assets/images/projects/tattooParadise/cardProject__tattooParadise.webp"
-              alt="cardProjectImage">
+            <img src="assets/images/projects/tattooParadise/headerImage.webp" alt="imageContainer">
           </div>
-          <div class="frameFlexColumnTiny">
-            <p class="large">Tattoo paradise</p>
-            <p class="small" data-key="cardProjectTattooParadiseTime"></p>
+          <div class="frameFlexColumnSmall">
+            <div class="frameFlexColumnTiny">
+              <p class="large">Tattoo paradise</p>
+              <p class="small" data-key="cardProjectTattooParadiseTime"></p>
+            </div>
+            <p class="regular" data-key="cardProjectTattooParadiseDescription"></p>
           </div>
-          <p class="regular" data-key="cardProjectTattooParadiseDescription"></p>
-          <div class="frameFlexMedium">
+          <div class="frameFlexSmall">
             <div class="tag">
               <p class="regular" data-key="cardProjectTattooParadiseTag1"></p>
             </div>
           </div>
+          <i class="fa-solid fa-arrow-right iconMedium"></i>
         </a>
 
         <!-- [atipikoTours] -->
         <a class="cardProject" href="atipikoTours.html">
           <div class="cardProjectImageContainer">
-            <img class="cardProjectImage" src="assets/images/projects/atipikoTours/cardProject__atipikoTours.webp"
-              alt="cardProjectImage">
+            <img src="assets/images/projects/atipikoTours/headerImage.webp" alt="imageContainer">
           </div>
-          <div class="frameFlexColumnTiny">
-            <p class="large">Atipiko tours</p>
-            <p class="small" data-key="cardProjectAtipikoToursTime"></p>
+          <div class="frameFlexColumnSmall">
+            <div class="frameFlexColumnTiny">
+              <p class="large">Atipiko tours</p>
+              <p class="small" data-key="cardProjectAtipikoToursTime"></p>
+            </div>
+            <p class="regular" data-key="cardProjectAtipikoToursDescription"></p>
           </div>
-          <p class="regular" data-key="cardProjectAtipikoToursDescription"></p>
-          <div class="frameFlexMedium">
+          <div class="frameFlexSmall">
             <div class="tag">
               <p class="regular" data-key="cardProjectAtipikoToursTag1"></p>
             </div>
           </div>
+          <i class="fa-solid fa-arrow-right iconMedium"></i>
         </a>
 
         <!-- [senzoStudio] -->
         <a class="cardProject" href="senzoStudio.html">
           <div class="cardProjectImageContainer">
-            <img class="cardProjectImage" src="assets/images/projects/senzoStudio/cardProject__senzoStudio.webp"
-              alt="cardProjectImage">
+            <img src="assets/images/projects/senzoStudio/headerImage.webp" alt="imageContainer">
           </div>
-          <div class="frameFlexColumnTiny">
-            <p class="large">Senzo studio</p>
-            <p class="small" data-key="cardProjectSenzoStudioTime"></p>
+          <div class="frameFlexColumnSmall">
+            <div class="frameFlexColumnTiny">
+              <p class="large">Senzo studio</p>
+              <p class="small" data-key="cardProjectSenzoStudioTime"></p>
+            </div>
+            <p class="regular" data-key="cardProjectSenzoStudioDescription"></p>
           </div>
-          <p class="regular" data-key="cardProjectSenzoStudioDescription"></p>
-          <div class="frameFlexMedium">
+          <div class="frameFlexSmall">
             <div class="tag">
               <p class="regular" data-key="cardProjectSenzoStudioTag1"></p>
             </div>
           </div>
+          <i class="fa-solid fa-arrow-right iconMedium"></i>
         </a>
 
         <!-- [portfolio] -->
         <a class="cardProject" href="portfolio.html">
           <div class="cardProjectImageContainer">
-            <img class="cardProjectImage" src="assets/images/projects/portfolio/cardProject__portfolio.webp"
-              alt="cardProjectImage">
+            <img src="assets/images/projects/portfolio/headerImage.webp" alt="imageContainer">
           </div>
-          <div class="frameFlexColumnTiny">
-            <p class="large">Portfolio</p>
-            <p class="small" data-key="cardProjectPortfolioTime"></p>
+          <div class="frameFlexColumnSmall">
+            <div class="frameFlexColumnTiny">
+              <p class="large">Portfolio</p>
+              <p class="small" data-key="cardProjectPortfolioTime"></p>
+            </div>
+            <p class="regular" data-key="cardProjectPortfolioDescription"></p>
           </div>
-          <p class="regular" data-key="cardProjectPortfolioDescription"></p>
-          <div class="frameFlexMedium">
+          <div class="frameFlexSmall">
             <div class="tag">
               <p class="regular" data-key="cardProjectPortfolioTag1"></p>
             </div>
           </div>
+          <i class="fa-solid fa-arrow-right iconMedium"></i>
         </a>
 
       </div>

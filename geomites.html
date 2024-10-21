@@ -37,11 +37,15 @@
     <header class="navBar">
 
       <div class="navBarContainer">
-        <a href="index.html" alt="logoAlejandro" id="logoLink" viewBox="0 0 24 24">
-          <svg class="logo imageLarge" viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M5.86048 20.6292L15.0291 2.83789H16.2875L32.0001 30.7269H24.5213L16.4673 16.5975H15.2089L13.7347 20.6292H5.86048ZM3.63149 24.439H16.144L20.0631 30.8379H0L3.63149 24.439Z" />
+        <a href="index.html" alt="logoAlejandro" id="logoLink" viewBox="0 0 24 24" class="imageLarge">
+
+          <svg xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.144 24.1011H3.63149L0 30.5H20.0631L16.144 24.1011Z" fill="var(--primary-500)" />
+            <path
+              d="M15.029 2.5L5.86035 20.2913H13.7346L15.2087 16.2596H16.4672L24.5212 30.389H31.9999L16.2874 2.5H15.029Z"
+              fill="var(--neutral-100)" />
           </svg>
+
         </a>
 
         <nav class="mobileNavigation" id="primaryNavigation">
@@ -77,18 +81,21 @@
             </div>
             <div class="frameFlexColumnMedium">
               <p class="large" data-key="navigationSubtitle4"></p>
-              <div class="frameFlexMedium">
-                <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
-                    class="fa-brands fa-whatsapp iconMedium"></i></a>
-                <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon"
-                  target="_blank"><i class="fa-brands fa-linkedin iconMedium"></i></a>
-                <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
-                    class="fa-brands fa-github iconMedium"></i></a>
-                <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
-                    class="fa-solid fa-envelope iconMedium"></i></a>
+              <div class="frameFlexColumnSmall">
+                <div class="frameFlexMedium">
+                  <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
+                      class="fa-brands fa-whatsapp iconMedium"></i></a>
+                  <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon"
+                    target="_blank"><i class="fa-brands fa-linkedin iconMedium"></i></a>
+                  <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
+                      class="fa-brands fa-github iconMedium"></i></a>
+                  <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
+                      class="fa-solid fa-envelope iconMedium"></i></a>
+                </div>
+                <p class="regular" data-key="footerText"></p>
               </div>
             </div>
-            <p class="regular" data-key="footerText"></p>
+
 
           </ul>
 
@@ -111,23 +118,27 @@
       <div class="projectHeader padding">
         <div class="frameFlexColumnLarge">
           <a class="buttonSecondary" href="projects.html">
-            <i class="fa-solid fa-arrow-left"></i>
+            <i class="fa-solid fa-arrow-left iconMedium"></i>
             <p data-key="projectPageHeaderButtonBack" class="regular"></p>
           </a>
-          <div class="frameFlexMedium">
-            <div class="tagNew">
-              <p class="regular" data-key="cardProjectGeomitesTag1"></p>
+          <div class="frameFlexColumnSmall">
+            <div class="frameFlexSmall">
+              <div class="tagNew">
+                <p class="regular" data-key="cardProjectGeomitesTag1"></p>
+              </div>
+              <div class="tag">
+                <p class="regular" data-key="cardProjectGeomitesTag2"></p>
+              </div>
             </div>
-            <div class="tag">
-              <p class="regular" data-key="cardProjectGeomitesTag2"></p>
-            </div>
+            <p data-key="cardProjectGeomitesTime" class="small"></p>
           </div>
-          <p data-key="cardProjectGeomitesTime" class="small"></p>
-          <h1 data-key="cardProjectGeomitesTitle"></h1>
-          <h4 data-key="cardProjectGeomitesDescription"></h4>
+          <div class="frameFlexColumnSmall">
+            <h1 data-key="cardProjectGeomitesTitle"></h1>
+            <h4 data-key="cardProjectGeomitesDescription"></h4>
+          </div>
         </div>
-        <div class="projectImageContainter2">
-          <img src="assets/images/projects/geomites/geomitesImageHeader.webp" alt="projectImage">
+        <div class="projectImageContainter">
+          <img src="assets/images/projects/geomites/headerImage.webp" alt="projectImage">
         </div>
       </div>
 
@@ -135,22 +146,22 @@
       <div class="articleInfo" id="stepSection">
 
         <div class="articleInfoOne">
-          <p class="regular-bold" data-key="cardProjectChallenge"></p>
+          <p class="large" data-key="cardProjectChallenge"></p>
           <p class="regular" data-key="cardProjectGeomitesChallenge"></p>
         </div>
 
         <div class="articleInfoTwo">
-          <p class="regular-bold" data-key="cardProjectRol"></p>
+          <p class="large" data-key="cardProjectRol"></p>
           <p class="regular" data-key="cardProjectGeomitesRol"></p>
         </div>
 
         <div class="articleInfoThree">
-          <p class="regular-bold" data-key="cardProjectCronology"></p>
+          <p class="large" data-key="cardProjectCronology"></p>
           <p class="regular" data-key="cardProjectGeomitesCronology"></p>
         </div>
 
         <div class="articleInfoFour">
-          <p class="regular-bold" data-key="cardProjectToolstack"></p>
+          <p class="large" data-key="cardProjectToolstack"></p>
           <p class="regular" data-key="cardProjectGeomitesToolstack"></p>
         </div>
 
@@ -162,7 +173,7 @@
         <div class="articleBodyContent frameFlexColumnColossal">
 
           <!-- [introduction] -->
-          <section id="Section1" class="frameFlexColumnMassive">
+          <section id="Section1" class="frameFlexColumnColossal">
 
             <!-- [intro] -->
             <div class="frameFlexColumnSmall">
@@ -249,40 +260,40 @@
                 <div class="cardCompetitor">
                   <img class="imageExtraLarge" src="assets/images/personas/imageMarc.webp" alt="competitorImage">
                   <div class="frameFlexColumnTiny">
-                    <p class="regular-bold">Marc Bernardo</p>
-                    <p class="small" data-key="geomitesTeamPosition1"></p>
+                    <p class="large">Marc Bernardo</p>
+                    <p class="regular" data-key="geomitesTeamPosition1"></p>
                   </div>
                 </div>
 
                 <div class="cardCompetitor">
                   <img class="imageExtraLarge" src="assets/images/personas/imageAlejandro.webp" alt="competitorImage">
                   <div class="frameFlexColumnTiny">
-                    <p class="regular-bold">Alejandro Moreno</p>
-                    <p class="small" data-key="geomitesTeamPosition2"></p>
+                    <p class="large">Alejandro Moreno</p>
+                    <p class="regular" data-key="geomitesTeamPosition2"></p>
                   </div>
                 </div>
 
                 <div class="cardCompetitor">
                   <img class="imageExtraLarge" src="assets/images/personas/imageLluis.webp" alt="competitorImage">
                   <div class="frameFlexColumnTiny">
-                    <p class="regular-bold">Lluís Fortuny</p>
-                    <p class="small" data-key="geomitesTeamPosition3"></p>
+                    <p class="large">Lluís Fortuny</p>
+                    <p class="regular" data-key="geomitesTeamPosition3"></p>
                   </div>
                 </div>
 
                 <div class="cardCompetitor">
                   <img class="imageExtraLarge" src="assets/images/personas/imageJosep.webp" alt="competitorImage">
                   <div class="frameFlexColumnTiny">
-                    <p class="regular-bold">Josep María</p>
-                    <p class="small" data-key="geomitesTeamPosition4"></p>
+                    <p class="large">Josep María</p>
+                    <p class="regular" data-key="geomitesTeamPosition4"></p>
                   </div>
                 </div>
 
                 <div class="cardCompetitor">
                   <img class="imageExtraLarge" src="assets/images/personas/imageAleix.webp" alt="competitorImage">
                   <div class="frameFlexColumnTiny">
-                    <p class="regular-bold">Aleix Bernardo</p>
-                    <p class="small" data-key="geomitesTeamPosition5"></p>
+                    <p class="large">Aleix Bernardo</p>
+                    <p class="regular" data-key="geomitesTeamPosition5"></p>
                   </div>
                 </div>
 
@@ -293,16 +304,16 @@
           </section>
 
           <!-- [design basis] -->
-          <section id="Section2" class="frameFlexColumnMassive">
-
-            <!-- [intro] -->
-            <div class="frameFlexColumnSmall">
-              <h2 data-key="geomitesParagraph2Title"></h2>
-              <p data-key="geomitesParagraph2Text" class="regular"></p>
-            </div>
+          <section id="Section2" class="frameFlexColumnColossal">
 
             <!-- [visual style] -->
             <div class="frameFlexColumnLarge">
+
+              <!-- [intro] -->
+              <div class="frameFlexColumnSmall">
+                <h2 data-key="geomitesParagraph2Title"></h2>
+                <p data-key="geomitesParagraph2Text" class="regular"></p>
+              </div>
 
               <div class="frameFlexColumnSmall">
                 <h4 data-key="geomitesSubParagraph4Title"></h4>
@@ -328,16 +339,16 @@
           </section>
 
           <!-- [research] -->
-          <section id="Section3" class="frameFlexColumnMassive">
-
-            <!-- [intro] -->
-            <div class="frameFlexColumnSmall">
-              <h2 data-key="geomitesParagraph3Title"></h2>
-              <p data-key="geomitesParagraph3Text" class="regular"></p>
-            </div>
+          <section id="Section3" class="frameFlexColumnColossal">
 
             <!-- [studying the best] -->
             <div class="frameFlexColumnLarge">
+
+              <!-- [intro] -->
+              <div class="frameFlexColumnSmall">
+                <h2 data-key="geomitesParagraph3Title"></h2>
+                <p data-key="geomitesParagraph3Text" class="regular"></p>
+              </div>
 
               <div class="frameFlexColumnSmall">
                 <h4 data-key="geomitesSubParagraph6Title"></h4>
@@ -389,16 +400,16 @@
           </section>
 
           <!-- [design system] -->
-          <section id="Section4" class="frameFlexColumnMassive">
-
-            <!-- [intro] -->
-            <div class="frameFlexColumnSmall">
-              <h2 data-key="geomitesParagraph4Title"></h2>
-              <p data-key="geomitesParagraph4Text" class="regular"></p>
-            </div>
+          <section id="Section4" class="frameFlexColumnColossal">
 
             <!-- [typography] -->
             <div class="frameFlexColumnLarge">
+
+              <!-- [intro] -->
+              <div class="frameFlexColumnSmall">
+                <h2 data-key="geomitesParagraph4Title"></h2>
+                <p data-key="geomitesParagraph4Text" class="regular"></p>
+              </div>
 
               <div class="frameFlexColumnSmall">
                 <h4 data-key="geomitesSubParagraph8Title"></h4>
@@ -409,32 +420,32 @@
 
                 <div class="gridAutoOne">
                   <div class="cardTypography">
-                    <p class="regular-bold">Heading 1</p>
+                    <p class="large">Heading 1</p>
                     <p class="regular">Greenze</p>
                     <p class="small">48px / line 72px</p>
                   </div>
                   <div class="cardTypography">
-                    <p class="regular-bold">Heading 2</p>
+                    <p class="large">Heading 2</p>
                     <p class="regular">Greenze</p>
                     <p class="small">40px / line 56px</p>
                   </div>
                   <div class="cardTypography">
-                    <p class="regular-bold">Large</p>
+                    <p class="large">Large</p>
                     <p class="regular">Greenze</p>
                     <p class="small">32px / line 36px</p>
                   </div>
                   <div class="cardTypography">
-                    <p class="regular-bold">Medium</p>
+                    <p class="large">Medium</p>
                     <p class="regular">Greenze</p>
                     <p class="small">20px / line 32px</p>
                   </div>
                   <div class="cardTypography">
-                    <p class="regular-bold">Regular</p>
+                    <p class="large">Regular</p>
                     <p class="regular">Greenze</p>
                     <p class="small">16px / line 24px</p>
                   </div>
                   <div class="cardTypography">
-                    <p class="regular-bold">Small</p>
+                    <p class="large">Small</p>
                     <p class="regular">Greenze</p>
                     <p class="small">12px / line 20px</p>
                   </div>
@@ -448,8 +459,7 @@
             <div class="frameFlexColumnLarge">
 
               <div class="frameFlexColumnSmall">
-                <h4 data-key="geomitesSubParagraph9Title"></h4>
-                <p data-key="geomitesSubParagraph9Text" class="regular"></p>
+                <h4 data-key="geomitesSubParagraph9Title"></h4>                
               </div>
 
               <div class="gridAutoThree">
@@ -602,8 +612,7 @@
             <div class="frameFlexColumnLarge">
 
               <div class="frameFlexColumnSmall">
-                <h4 data-key="geomitesSubParagraph10Title"></h4>
-                <p data-key="geomitesSubParagraph10Text" class="regular"></p>
+                <h4 data-key="geomitesSubParagraph10Title"></h4>                
               </div>
 
               <div class="frameFlexColumnMedium">
@@ -820,12 +829,11 @@
           </section>
 
           <!-- [some designs] -->
-          <section id="Section5" class="frameFlexColumnMassive">
+          <section id="Section5" class="frameFlexColumnLarge">
 
             <!-- [intro] -->
             <div class="frameFlexColumnSmall">
-              <h2 data-key="geomitesParagraph5Title"></h2>
-              <p data-key="geomitesParagraph5Text" class="regular"></p>
+              <h2 data-key="geomitesParagraph5Title"></h2>              
             </div>
 
             <!-- [designs] -->
@@ -834,7 +842,7 @@
               <!-- [battle 1vs1] -->
               <div class="someDesignsFrame columnReverse">
                 <div class="someDesignsImageContainer">
-                  <img src="assets/images/projects/geomites/geomites__design1.webp" alt="someDesignsImage">
+                  <img src="assets/images/projects/geomites/someDesigns-1.webp" alt="someDesignsImage">
                 </div>
                 <div class="frameFlexColumnSmall">
                   <h4 data-key="geomitesSomeDesigns1Title"></h4>
@@ -849,14 +857,14 @@
                   <p class="regular" data-key="geomitesSomeDesigns2Text"></p>
                 </div>
                 <div class="someDesignsImageContainer">
-                  <img src="assets/images/projects/geomites/geomites__design2.webp" alt="someDesignsImage">
+                  <img src="assets/images/projects/geomites/someDesigns-2.webp" alt="someDesignsImage">
                 </div>
               </div>
 
               <!-- [shop] -->
               <div class="someDesignsFrame columnReverse">
                 <div class="someDesignsImageContainer">
-                  <img src="assets/images/projects/geomites/geomites__design3.webp" alt="someDesignsImage">
+                  <img src="assets/images/projects/geomites/someDesigns-3.webp" alt="someDesignsImage">
                 </div>
                 <div class="frameFlexColumnSmall">
                   <h4 data-key="geomitesSomeDesigns3Title"></h4>
@@ -871,7 +879,7 @@
                   <p class="regular" data-key="geomitesSomeDesigns4Text"></p>
                 </div>
                 <div class="someDesignsImageContainer">
-                  <img src="assets/images/projects/geomites/geomites__design4.webp" alt="someDesignsImage">
+                  <img src="assets/images/projects/geomites/someDesigns-4.webp" alt="someDesignsImage">
                 </div>
               </div>
             </div>
@@ -925,15 +933,7 @@
     <div class="frameFlexColumnLarge otherArticles">
 
       <!-- [intro] -->
-      <div class="sectionHeader">
-        <div class="frameFlexAuto">
-          <h2 data-key="otherProjectsTitle"></h2>
-          <a href="projects.html" class="buttonTerciary">
-            <p class="regular" data-key="indexSectionHeaderButton"></p>
-          </a>
-        </div>
-        <p class="regular" data-key="otherProjectsText"></p>
-      </div>
+      <h2 data-key="otherProjectsTitle"></h2>     
 
       <!-- [projects] -->
       <div class="gridThree">
@@ -941,55 +941,61 @@
         <!-- [senzoStudio] -->
         <a class="cardProject" href="senzoStudio.html">
           <div class="cardProjectImageContainer">
-            <img class="cardProjectImage" src="assets/images/projects/senzoStudio/cardProject__senzoStudio.webp"
-              alt="cardProjectImage">
+            <img src="assets/images/projects/senzoStudio/headerImage.webp" alt="imageContainer">
           </div>
-          <div class="frameFlexColumnTiny">
-            <p class="large">Senzo studio</p>
-            <p class="small" data-key="cardProjectSenzoStudioTime"></p>
+          <div class="frameFlexColumnSmall">
+            <div class="frameFlexColumnTiny">
+              <p class="large">Senzo studio</p>
+              <p class="small" data-key="cardProjectSenzoStudioTime"></p>
+            </div>
+            <p class="regular" data-key="cardProjectSenzoStudioDescription"></p>
           </div>
-          <p class="regular" data-key="cardProjectSenzoStudioDescription"></p>
-          <div class="frameFlexMedium">
+          <div class="frameFlexSmall">
             <div class="tag">
               <p class="regular" data-key="cardProjectSenzoStudioTag1"></p>
             </div>
           </div>
+          <i class="fa-solid fa-arrow-right iconMedium"></i>
         </a>
 
         <!-- [atipikoTours] -->
         <a class="cardProject" href="atipikoTours.html">
           <div class="cardProjectImageContainer">
-            <img class="cardProjectImage" src="assets/images/projects/atipikoTours/cardProject__atipikoTours.webp"
-              alt="cardProjectImage">
+            <img src="assets/images/projects/atipikoTours/headerImage.webp" alt="imageContainer">
           </div>
-          <div class="frameFlexColumnTiny">
-            <p class="large">Atipiko tours</p>
-            <p class="small" data-key="cardProjectAtipikoToursTime"></p>
+          <div class="frameFlexColumnSmall">
+            <div class="frameFlexColumnTiny">
+              <p class="large">Atipiko tours</p>
+              <p class="small" data-key="cardProjectAtipikoToursTime"></p>
+            </div>
+            <p class="regular" data-key="cardProjectAtipikoToursDescription"></p>
           </div>
-          <p class="regular" data-key="cardProjectAtipikoToursDescription"></p>
-          <div class="frameFlexMedium">
+          <div class="frameFlexSmall">
             <div class="tag">
               <p class="regular" data-key="cardProjectAtipikoToursTag1"></p>
             </div>
           </div>
+          <i class="fa-solid fa-arrow-right iconMedium"></i>
         </a>
 
         <!-- [portfolio] -->
         <a class="cardProject" href="portfolio.html">
           <div class="cardProjectImageContainer">
-            <img class="cardProjectImage" src="assets/images/projects/portfolio/cardProject__portfolio.webp"
-              alt="cardProjectImage">
+            <img src="assets/images/projects/portfolio/headerImage.webp" alt="imageContainer">
           </div>
-          <div class="frameFlexColumnTiny">
-            <p class="large">Portfolio</p>
-            <p class="small" data-key="cardProjectPortfolioTime"></p>
+          <div class="frameFlexColumnSmall">
+            <div class="frameFlexColumnTiny">
+              <p class="large">Portfolio</p>
+              <p class="small" data-key="cardProjectPortfolioTime"></p>
+            </div>
+            <p class="regular" data-key="cardProjectPortfolioDescription"></p>
           </div>
-          <p class="regular" data-key="cardProjectPortfolioDescription"></p>
-          <div class="frameFlexMedium">
+          <div class="frameFlexSmall">
             <div class="tag">
               <p class="regular" data-key="cardProjectPortfolioTag1"></p>
             </div>
           </div>
+          <i class="fa-solid fa-arrow-right iconMedium"></i>
         </a>
 
       </div>

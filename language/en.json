@@ -273,11 +273,10 @@
   "cardEducation12Button": "Show credential",
 
   "otherProjectsTitle": "Other projects",
-  "otherProjectsText": "Discover other projects",
 
   "TOCTitle": "Index",
 
-  "projectPageHeaderButtonBack": "BACK T0 PROJECTS",  
+  "projectPageHeaderButtonBack": "Back to projects",  
 
   "cardProjectChallenge": "Challenge",
   "cardProjectRol": "My role",
@@ -285,7 +284,7 @@
   "cardProjectToolstack": "Toolstack",
   
   "cardProjectPortfolioChallenge": "Create a personal portfolio from scratch using Figma for design and VS Code for development.",
-  "cardProjectPortfolioRol": "Designer and developer, in charge of UX/UI design and coding.",
+  "cardProjectPortfolioRol": "Product designer and web developer.",
   "cardProjectPortfolioCronology": "8 weeks.",
   "cardProjectPortfolioToolstack": "Figma, HTML5, CSS3, Javascript and ChatGPT.",
 
@@ -296,7 +295,7 @@
   "portfolioTOC5": "Learnings",  
 
   "portfolioParagraph1Title": "Introduction",
-  "portfolioParagraph1Text": "For this project, I will use a framework commonly employed for solving design problems. I will use Figma for the design aspect and HTML, CSS and JavaScript for development, along with ChatGPT for support. With all of this and with the goal of developing from scratch, a portfolio that will allow me to make my profile known.",
+  "portfolioParagraph1Text": "In this project I will use a common framework to solve design problems. I will use Figma for design and HTML, CSS and JavaScript for development, with ChatGPT support, to create a portfolio from scratch to showcase my profile.",
 
   "portfolioParagraph2Title": "Framework",
   "portfolioParagraph2Text": "This framework uses 6 steps to solve the problem: why, who, when and where, what, solve and how.",
@@ -316,14 +315,14 @@
   "cardTestimonial3PortfolioPosition": "Design Lead",
 
   "cardInsight1Title": "When",
-  "cardInsight1Text": "Users review portfolios when considering hiring, quickly looking for projects that demonstrate skills relevant to a specific position.",
+  "cardInsight1Text": "Users review portfolios looking for projects that show relevant skills for a position.",
   "cardInsight2Title": "Where",
-  "cardInsight2Text": "It is displayed in offices, homes or on the move, usually on mobile or desktop devices, where accessibility and clarity are key.",
+  "cardInsight2Text": "It is displayed in offices, homes or on the move, on mobile or desktop, where accessibility is key.",
   "cardInsight3Title": "Sensations",
-  "cardInsight3Text": "Users are looking for inspiration and reassurance, attracted by an intuitive, clear and aesthetically pleasing design that demonstrates the designer's competence.",
+  "cardInsight3Text": "Users look for inspiration in an intuitive, clear and attractive design that demonstrates competence.",
 
   "portfolioSubParagraph4Title": "Defining the product",
-  "portfolioSubParagraph4Text": "The portfolio must show exceptional organization and clarity, ensuring ease of reading and understanding, allowing users to see what they have come to see and to be able to make contact quickly and easily.",
+  "portfolioSubParagraph4Text": "The portfolio should exhibit exceptional organisation and clarity, making it easy to read and understand so that users can easily see what they are looking for and make contact.",
   
   "portfolioSubParagraph5Title": "How do I measure it?",
   "portfolioSubParagraph5Text": "I will use the following KPIs to measure the effectiveness of my portfolio.",
@@ -335,19 +334,17 @@
   "cardInsight6Text": "User's contact number.",
   
   "portfolioParagraph3Title": "Design system",
-  "portfolioParagraph3Text": "Complete guidelines for maintaining visual and functional consistency of design.",
+  
   "portfolioSubParagraph6Title": "Typography",
   "portfolioSubParagraph6Text": "Because of its modern look, legibility, ease of use, advantages for brand identity, accessibility and multilingual support, I decided to use Montserrat as the typeface for the portfolio.",
-  "portfolioSubParagraph7Title": "Color",
-  "portfolioSubParagraph7Text": "Color palette for a consistent and attractive user experience.",
-  "portfolioSubParagraph8Title": "Buttons",
-  "portfolioSubParagraph8Text": "Button styles and behaviors for clear and accessible actions.",
+  "portfolioSubParagraph7Title": "Color",  
+  "portfolioSubParagraph8Title": "Buttons",  
   "portfolioSubParagraph9Title": "Input fields",
   "portfolioSubParagraph9Text": "Design of input fields for accurate and user-friendly interaction.",
   "portfolioSubParagraph10Title": "Avatar images",
   "portfolioSubParagraph10Text": "Guidelines for the representation and style of profile pictures.",
   "portfolioSubParagraph11Title": "Icons",
-  "portfolioSubParagraph11Text": "Use and style of icons for an intuitive and visually clear interface.",
+  
   "portfolioSubParagraph12Title": "Components",
   "portfolioSubParagraph12Text": "Reusable component structure and design for a consistent experience and easily deployable and maintainable development.",
   "subSubsection1": "Primary",
@@ -358,8 +355,7 @@
   "subSubsection6": "Secondary",
   "subSubsection7": "Terciary",
 
-  "portfolioParagraph4Title": "Some designs",
-  "portfolioParagraph4Text": "Complete guidelines for maintaining visual and functional consistency of design.",
+  "portfolioParagraph4Title": "Some designs",  
   "someDesigns1Title": "Welcome section",
   "someDesigns1Text": "The user, when landing on the portfolio, must clearly understand what this website is, what he can do here and get an idea of my profile before continuing to navigate to any other place on the web. It must also have a clear navigation that allows them to move between the different pages.",
   "someDesigns2Title": "Home sections",
@@ -370,7 +366,7 @@
   "someDesigns4Text": "As part of my learning and research work I develop a blog with articles where I delve into UX / UI design concepts.",
 
   "portfolioParagraph5Title": "Learnings",
-  "portfolioParagraph5Text": "With the creation of my portfolio from scratch, I have been able to learn how to develop a web project, with responsive design, both from the design and development side. This has allowed me to understand how to do my job as a designer in a way that can make the developer's job as easy as possible.",
+  "portfolioParagraph5Text": "By creating my portfolio from scratch, I learned how to develop a responsive web project, understanding better how to facilitate the developer's work.",
   "portfolioLearning1": "Responsive",
   "portfolioLearning2": "Prototype",
   "portfolioLearning3": "UX/UI design",
@@ -382,50 +378,42 @@
   "cardProjectSenzoStudioToolstack": "Figma y Wordpress.",
 
   "senzoStudioParagraph1Title": "Introduction",
-  "senzoStudioParagraph1Text": "I designed and developed a website for a VFX agency, starting with user research and competitive analysis. I then created a comprehensive information architecture and design system, resulting in a visually appealing website that showcases the agency's cutting-edge work and offers an intuitive user experience.",
+  "senzoStudioParagraph1Text": "In this project, I designed and developed the website for a visual effects agency. After researching users and analysing the competition, I created a cohesive information architecture and design system, achieving a website that highlights the agency's work with an intuitive and engaging user experience.",
 
   "senzoStudioParagraph2Title": "Research",
   "senzoStudioParagraph2Text": "I start the project by conducting research. The goal is to thoroughly understand the type of user, competing companies, and the market in which the company operates.",
 
   "senzoStudioSubParagraph1Title": "Survey",
-  "senzoStudioSubParagraph1Text": "After analyzing the type of user for Senzo Studio, I prepared the following questions.",
   
-  "senzoStudioSubParagraph2Title": "Insights",
-  "senzoStudioSubParagraph2Text": "After asking the questions to the two users, I extracted the following information.",
+  "senzoStudioSubParagraph2Title": "Insights",  
 
   "senzoStudioSubParagraph3Title": "User story map (Mario)",
 
   "senzoStudioSubParagraph4Title": "User story map (Pedro)",
 
   "senzoStudioSubParagraph5Title": "Competitors",
-  "senzoStudioSubParagraph5Text": "These are some of Senzo studio's main competitors.",
 
-  "senzoStudioSubParagraph6Title": "Heuristic Evaluation",
-  "senzoStudioSubParagraph6Text": "Identification of usability issues using recognized design principles.",
+  "senzoStudioSubParagraph6Title": "Heuristic Evaluation",  
 
   "senzoStudioSubParagraph7Title": "Content Evaluation",
-  "senzoStudioSubParagraph7Text": "Analysis of content to ensure relevance, clarity, and alignment with objectives.",
 
   "senzoStudioSubParagraph8Title": "Card Sorting",
-  "senzoStudioSubParagraph8Text": "Organizing information based on user logic and expectations.",
 
   "senzoStudioParagraph3Title": "Design system",
-  "senzoStudioParagraph3Text": "These are some of the elements that are part of Senzo studio's design system.",
 
   "senzoStudioSubParagraph9Title": "Typography",
   "senzoStudioSubParagraph9Text": "I chose IBM Plex Sans for its readability and versatility, achieving a modern, professional design aligned with the project's identity.",
 
   "senzoStudioSubParagraph10Title": "Color",
-  "senzoStudioSubParagraph10Text": "Color palette for a consistent and attractive user experience.",
-
+  "senzoStudioSubParagraph10Text": "The primary color is a vibrant, warm shade of orange. It exudes energy, warmth and enthusiasm, making it suitable for creating eye-catching and lively visual elements.",
+  
   "senzoStudioSubParagraph11Title": "Components",
   "senzoStudioSubParagraph11Text": "As part of the design system, I developed the main components used in the project. Below, I present the 'card' component, utilized for the display of various projects.",
 
-  "cardQuestion1SenzoStudio": "How do you anticipate using Senzo Studio's website in your professional workflow within the VFX industry?",
-  "cardQuestion2SenzoStudio": "Can you describe specific tasks or activities for which you would rely on Senzo Studio's website to enhance your work?",
-  "cardQuestion3SenzoStudio": "In your opinion, what are the key functionalities or features that a VFX studio's website should offer to cater to your needs effectively?",
-  "cardQuestion4SenzoStudio": "What types of content or resources would you consider essential for a VFX studio's website to provide in order to be a valuable tool for professionals in the field?",
-  "cardQuestion5SenzoStudio": "Considering your role and responsibilities in the VFX industry, what specific tools or functionalities do you believe should be easily accessible on the Senzo Studio website to streamline your tasks?",
+  "cardQuestion1SenzoStudio": "How do you envisage using the Senzo Studio website in your professional workflow?",
+  "cardQuestion2SenzoStudio": "Can you describe specific tasks or activities you would perform on the Senzo studio website?",
+  "cardQuestion3SenzoStudio": "What are the main functionalities or features that the website should offer?",
+  "cardQuestion4SenzoStudio": "What types of content or resources would you consider essential?",
 
   "cardTestimonial1SenzoStudioDescription": "As a VFX student, I see great potential in this website. I would appreciate a job offers section so I can apply for jobs here once I finish my studies.",
   "cardTestimonial1SenzoStudioPosition": "VFX student",
@@ -548,8 +536,8 @@
   "senzoStudioTOC4": "Some designs",
   "senzoStudioTOC5": "Learnings",
   
-  "cardProjectAtipikoToursChallenge": "Design and development of a travel agency website. The development was carried out by a back-end developer.",
-  "cardProjectAtipikoToursRol": "UX/UI designer.",
+  "cardProjectAtipikoToursChallenge": "Design and development of a travel agency website.",
+  "cardProjectAtipikoToursRol": "Product designer.",
   "cardProjectAtipikoToursCronology": "10 weeks.",
   "cardProjectAtipikoToursToolstack": "Figma and Chat GPT.",
 
@@ -565,15 +553,12 @@
   "atipikoToursSubParagraph2Title": "User journey",
   "atipikoToursSubParagraph2Text": "I strive to understand how the user interacts with the product and what knowledge I can apply in the subsequent design.",
 
-  "atipikoToursSubParagraph3Title": "Competitors",
-  "atipikoToursSubParagraph3Text": "These are some of Atipiko Tours' main competitors.",
+  "atipikoToursSubParagraph3Title": "Competitors",  
 
-  "atipikoToursSubParagraph4Title": "Heuristic evaluation",
-  "atipikoToursSubParagraph4Text": "Identification of usability issues using recognized design principles.",
+  "atipikoToursSubParagraph4Title": "Heuristic evaluation", 
 
   "atipikoToursSubParagraph5Title": "Content evaluation",
-  "atipikoToursSubParagraph5Text": "Analysis of content to ensure relevance, clarity, and alignment with objectives.",
-
+  
   "atipikoToursCardAuthor1": "Flight attendant",
   "atipikoToursCardAuthor2": "Industrial engineer",
 
@@ -616,17 +601,8 @@
 
   "atipikoToursUserJourneyTitle1": "Research",
   "atipikoToursUserJourneyTitle2": "Selection",
-  "atipikoToursUserJourneyTitle3": "Reservation",
-  "atipikoToursUserJourneyTitle4": "Post-purchased",
-
-  "atipikoToursUserJourneyText1": "Maria is looking for flight options that suit her wishes.",
-  "atipikoToursUserJourneyText2": "Maria compares prices and looks for the best deal.",
-  "atipikoToursUserJourneyText3": "Maria is looking forward to a smooth booking experience.",
-  "atipikoToursUserJourneyText4": "Maria is waiting for confirmation and details of the trip.",
-  "atipikoToursUserJourneyText5": "“I hope to find an affordable flight”.",
-  "atipikoToursUserJourneyText6": "“Does this flight have good connections?”.",
-  "atipikoToursUserJourneyText7": "“I hope the booking process will be quick”.",
-  "atipikoToursUserJourneyText8": "“Where is my confirmation email?”.",
+  "atipikoToursUserJourneyTitle3": "Book",
+  "atipikoToursUserJourneyTitle4": "Post",    
 
   "atipikoToursCardUserJourney1": "Ecstasy",
   "atipikoToursCardUserJourney2": "Help",
@@ -678,10 +654,17 @@
   "atipikoToursTable2Row5Header": "(FAQ) Section",
   "atipikoToursTable2Row6Header": "Cost calculators",
 
+  "atipikoToursParagraph3Title": "Design system",
+  "atipikoToursSubParagraph6Title": "Typography",
+  "atipikoToursSubParagraph6Text": "Poppins has an international appeal and modern aesthetics, it ensures a positive user experience across diverse devices.",
+
   "atipikoTourcolorSubsection1": "Brand",
   "atipikoTourcolorSubsection1Name": "brand - 500",
   "atipikoTourcolorSubsection2": "Neutral",
   "atipikoTourcolorSubsection2Name": "neutral - 500",
+
+  "atipikoToursSubParagraph7Title": "Components",
+  "atipikoToursSubParagraph7Text": "One of the most crucial aspects of this project is the user's ability to make reservations through the website. To facilitate this, and through these cards, we provide you with the catalog of trips offered by Atipiko Tours.",
 
   "atipikoToursParagraph5Title": "Learnings",
   "atipikoToursParagraph5Text": "This project allowed me to work closely with the project developer. Furthermore, it was a great experience to shape the ideas that the owners had but were unsure how to approach.",
@@ -696,13 +679,13 @@
   "cardProjectTattooParadiseToolstack": "Figma, Miro and Chat GPT.",
 
   "tattooParadiseParagraph1Title": "Introduction",
-  "tattooParadiseParagraph1Text": "The platform will allow users to explore a wide variety of styles and designs, making it easier to find the ideal tattoo artist according to their preferences. In addition, the app will offer a direct form of contact, improving the communication and experience for both artists and customers.",
+  "tattooParadiseParagraph1Text": "The platform will allow you to explore different styles and designs, making it easier to find the ideal tattoo artist. It will also offer direct contact, enhancing the experience for artists and customers.",
 
   "tattooParadiseParagraph2Title": "Value proposition",
-  "tattooParadiseParagraph2Text": "Through an intuitive interface, users can browse a vast gallery of styles and designs, find tattoo artists that align with their aesthetic preferences and contact them directly and efficiently. For artists, the platform offers a unique opportunity for visibility, allowing them to showcase their work to a wider audience and connect with potential clients easily and effectively.",
+  "tattooParadiseParagraph2Text": "Users can browse a gallery of styles, find like-minded tattoo artists and contact them directly. For artists, the platform provides visibility, allowing them to showcase their work and connect with clients effectively.",
 
   "tattooParadiseParagraph3Title": "Research",
-  "tattooParadiseParagraph3Text": "In this investigation, I analyzed the market situation, conducted a study of the two main products available in the market, and examined the users through my own research.",
+  "tattooParadiseParagraph3Text": "In this research, I analysed the market, studied the two main products available and examined the users through my own research.",
 
   "tattooParadiseSubParagraph1Title": "Tattoo market",
   "tattooParadiseSubParagraph1Text": "Fortune Business Insights conducted a study on the revenues generated by the sector over the past few years and provided a forecast for the next 10 years. The following data shows the size of the tattoo market in Europe and its forecast up to 2027 (USB Billion).",
@@ -710,17 +693,13 @@
   "tattooParadiseSubParagraph2Title": "Survey",
   "tattooParadiseSubParagraph2Text": "What is the main problem you face when getting a tattoo?",
 
-  "tattooParadiseSubParagraph3Title": "User persona",
-  "tattooParadiseSubParagraph3Text": "With the data obtained from the research, I create two user profiles.",
+  "tattooParadiseSubParagraph3Title": "User persona",  
 
-  "tattooParadiseSubParagraph4Title": "Competitors",
-  "tattooParadiseSubParagraph4Text": "At the time of the project, the main products on the market were as follows.",
+  "tattooParadiseSubParagraph4Title": "Competitors",  
 
-  "tattooParadiseSubParagraph5Title": "Heuristic evaluation",
-  "tattooParadiseSubParagraph5Text": "Identification of usability issues using recognized design principles.",
+  "tattooParadiseSubParagraph5Title": "Heuristic evaluation",  
 
-  "tattooParadiseSubParagraph6Title": "Usability test",
-  "tattooParadiseSubParagraph6Text": "After analyzing the user and existing competitors in the market, I developed a prototype to conduct some tests and observe how real users interacted with it.",
+  "tattooParadiseSubParagraph6Title": "Usability test",  
   
   "tattooParadiseSurvey1": "Work life",
   "tattooParadiseSurvey2": "Design",
@@ -776,9 +755,9 @@
   "tattooParadiseTable2Row5Header": "The disconnection function is dispensable to the user.",
 
   "tattooParadiseParagraph4Title": "Design decisions",
-  "tattooParadiseParagraph4Text": "Elevating the tattoo experience, this product offers centralized knowledge, immersive style exploration, direct artistic connections, trend insights, and community engagement, redefining how users navigate and interact within the dynamic tattoo culture.",
+  "tattooParadiseParagraph4Text": "This product enhances the tattoo experience by offering centralised knowledge, style exploration, direct connections, trends and community engagement, redefining how users interact with tattoo culture.",
   "tattooParadiseSomeDesigns1Title": "User and artist interaction",
-  "tattooParadiseSomeDesigns1Text": "It is of vital importance that the product enables swift communication between users and artists. This will facilitate various types of interactions and open up different business opportunities.",
+  "tattooParadiseSomeDesigns1Text": "It is crucial that the product enables rapid communication between users and artists, facilitating interactions and generating business opportunities.",
   "tattooParadiseSomeDesigns2Title": "Access to tattoo styles",
   "tattooParadiseSomeDesigns2Text": "The user has access to the different styles of tattoos, as well as to the designs associated with each one of them.",
   "tattooParadiseSomeDesigns3Title": "Access to care guide",
@@ -786,17 +765,14 @@
   "tattooParadiseSomeDesigns4Title": "Design inspiration",
   "tattooParadiseSomeDesigns4Text": "The product gives access to a variety of designs depending on different filters.",
 
-  "tattooParadiseParagraph5Title": "Design system",
-  "tattooParadiseParagraph5Text": "I start the project by conducting research. The goal is to thoroughly understand the type of user, competing companies, and the market in which the company operates.",
+  "tattooParadiseParagraph5Title": "Design system",  
 
   "tattooParadiseSubParagraph7Title": "Typography",
   "tattooParadiseSubParagraph7Text": "Poppins has an international appeal and modern aesthetics, it ensures a positive user experience across diverse devices.",
 
-  "tattooParadiseSubParagraph8Title": "Color",
-  "tattooParadiseSubParagraph8Text": "Purple increases user engagement, highlights key elements and conveys creativity and modernity, making it ideal for prominent and dynamic mobile design.",
+  "tattooParadiseSubParagraph8Title": "Color",  
 
-  "tattooParadiseSubParagraph9Title": "Icons",
-  "tattooParadiseSubParagraph9Text": "Below is the collection of icons used in this project.",
+  "tattooParadiseSubParagraph9Title": "Icons",  
 
   "tattooParadiseSubParagraph10Title": "Components",
   "tattooParadiseSubParagraph10Text": "As part of the design system, I developed the main components used in the project. Below I present the “card” component, used for the visualization of the different tattoo styles.",
@@ -805,7 +781,7 @@
   "tattooParadisecolorSubsection1Name": "brand - 500",
 
   "tattooParadiseParagraph6Title": "Learnings",
-  "tattooParadiseParagraph6Text": "This was a project where I could conduct in-depth market research and had the opportunity to observe user behavior live. It particularly helped me learn how to empathize with the user, pinpoint where in the flow they get stuck, and understand the reasons behind it.",
+  "tattooParadiseParagraph6Text": "In this project, I conducted in-depth market research and observed user behaviour. I learned to empathise with them, identify blockages in the flow and understand their causes.",
   "tattooParadiseLearning1": "Behavioral analysis",
   "tattooParadiseLearning2": "Usability testing",
   "tattooParadiseLearning3": "Prototyping",
@@ -818,47 +794,44 @@
   "atipikoToursTOC5": "Design system",
   "atipikoToursTOC6": "Learnings",
 
-  "cardProjectGeomitesChallenge": "Maintain visual and experiential coherence in the game, aligning the work of different disciplines and under a unified design vision.",
-  "cardProjectGeomitesRol": "UX/UI designer.",
+  "cardProjectGeomitesChallenge": "Create an intuitive, usable and desirable gaming experience for our players.",
+  "cardProjectGeomitesRol": "Product designer.",
   "cardProjectGeomitesCronology": "12 months.",
   "cardProjectGeomitesToolstack": "Figma, Adobe Ilustrator, Adobe Photoshop, Azure DevOps, Miro and DALL-E.",
 
   "geomitesParagraph1Title": "Introduction",
-  "geomitesParagraph1Text": "Geomites is a mobile strategy game available on both iOS and Android platforms. The game's core mechanics involve players managing a variety of characters, each with unique abilities and skills, which can be enhanced with items to improve their statistics.",
+  "geomitesParagraph1Text": "Geomites is an indie mobile strategy game, available on iOS and Android. Players control characters with unique abilities that can be upgraded with items.",
   "geomitesSubParagraph1Title": "The project",
-  "geomitesSubParagraph1Text": "Over the past year, I have been part of a dedicated team working to bring this project to life. As the Product Designer, my role encompassed the design of the user interfaces, guided by extensive market research into leading games. Players can level up these characters through two different game modes: online multiplayer battles against other players and an offline story mode that offers progressive challenges.",
+  "geomitesSubParagraph1Text": "As a product designer, I'm part of the team that brought this project to life, designing the interfaces after extensive market research. Players can level up in online multiplayer battles and an offline story mode with progressive challenges.",
   "geomitesSubParagraph2Title": "Work methodology",
-  "geomitesSubParagraph2Text": "Our team utilized the Agile methodology to ensure a flexible and iterative development process. We structured our work into two-week sprints, each with clearly defined objectives. ",
+  "geomitesSubParagraph2Text": "Our team used Agile methodology, structuring the work in two-week sprints with defined objectives.",
   "geomitesSubParagraph3Title": "The team",
   "geomitesSubParagraph3Text": "Geomites is a talented and diverse team, with a single goal of bringing the project to market and making it accessible and enjoyable for as many users as possible.",
   "geomitesParagraph2Title": "Basis of design",
   "geomitesParagraph2Text": "At this point we reinforce the visual line and the coherence of the project.",
   "geomitesSubParagraph4Title": "Visual style",
-  "geomitesSubParagraph4Text": "The visual style of Geomites is characterized by vibrant colors, clean lines, and a cohesive aesthetic that appeals to our target audience. The objective in this point is defining the visual identity of Geomites, ensuring that every element—from characters to environments—was visually consistent and appealing.",
+  "geomitesSubParagraph4Text": "Geomites' visual style is characterised by vibrant colours and a cohesive aesthetic. We sought to define a coherent and appealing visual identity for characters and environments.",
   "geomitesSubParagraph5Title": "Coherence",
-  "geomitesSubParagraph5Text": "We established a set of design guidelines to ensure uniformity across all user interfaces and game elements. These guidelines covered typography, color schemes, iconography, and layout structures. By adhering to these standards, we created a seamless user experience that felt intuitive and consistent, reinforcing the overall brand identity of Geomites.",
+  "geomitesSubParagraph5Text": "We established design guidelines to ensure uniformity in the game's interfaces, encompassing typography, colours, iconography and layout, creating a fluid and coherent user experience.",
   "geomitesParagraph3Title": "Research",
-  "geomitesParagraph3Text": "Before I started making decisions affecting product design, I went to the market to see what some of the best companies and products that resemble the product Geomites offers were doing and how they were doing it.",
+  "geomitesParagraph3Text": "Before making design decisions, I researched what the best companies and products similar to Geomites were doing.",
   "geomitesSubParagraph6Title": "Studying the best",
-  "geomitesSubParagraph6Text": "To ensure Geomites stands out in the competitive mobile gaming market, we conducted an extensive benchmark study of some of the most successful games in the industry. By examining these popular titles, we identified key elements that contribute to their success, such as user engagement, visual design, and gameplay mechanics. ",
+  "geomitesSubParagraph6Text": "To stand out in the mobile games market, we conducted a comparative study of successful games, identifying key elements such as user engagement, design and mechanics.",
   "geomitesSubParagraph7Title": "Design patterns",
-  "geomitesSubParagraph7Text": "From our benchmark study, we extracted several design patterns that were consistently effective across the top games. For instance, the intuitive and user-friendly interfaces of Clash Royale and Brawl Stars highlighted the importance of clear navigation and accessible controls. Archero's engaging progression system and Shakes and Fidget's unique character customization options inspired us to incorporate similar elements into Geomites.",
+  "geomitesSubParagraph7Text": "We extracted effective design patterns from successful games. The intuitive interfaces of Clash Royale and Brawl Stars emphasised clear navigation, and Archero's progression system inspired us for Geomites.",
   "geomitesParagraph4Title": "Design system",
-  "geomitesParagraph4Text": "To ensure consistency and efficiency in our design process, we created a comprehensive Figma library. This library included all the design components, such as buttons, icons, color palettes, and typography styles. By using a centralized Figma library, we were able to maintain a cohesive look and feel across all game interfaces.",
+  "geomitesParagraph4Text": "We chose the Greenze font for its legibility and compatibility with the adventurous Geomites theme, establishing an attractive text style.",
   "geomitesSubParagraph8Title": "Typography",
   "geomitesSubParagraph8Text": "We chose the Greenze typeface to establish a consistent and visually appealing text style throughout Geomites. We chose this typeface for its legibility and compatibility with the adventurous theme of our game.",
-  "geomitesSubParagraph9Title": "Color",
-  "geomitesSubParagraph9Text": "Our colour palette consists of ten colour families: neutral, red, orange, brown, brown, yellow, turquoise, green, violet, blue and pink. These colours have been carefully selected to evoke the adventurous atmosphere of the game and enhance the user interface elements.",
-  "geomitesSubParagraph10Title": "Icons",
-  "geomitesSubParagraph10Text": "The project required the icons to have a very good quality and an execution that would allow players to understand the meaning of the concepts they accompany, thus requiring excellent artistic execution.",
+  "geomitesSubParagraph9Title": "Color",  
+  "geomitesSubParagraph10Title": "Icons",  
   "geomitesSubParagraph11Title": "Components",
   "geomitesSubParagraph11Text": "The fortress building allows players to store both their geomites and the items and passives they equip. In this component I designed the building with different tabs and buttons that allow filtered searches.",
   "geomitesSubParagraph12Title": "Sprint by sprint implementation",
-  "geomitesSubParagraph12Text": "For the implementation, we utilized Figma for design collaboration and React for development. Each sprint began with a review of design goals and priorities. Designs were created and validated using Figma, with input from team members Marc and Aleix. Once designs were finalized, Marc and Aleix led the development process in React, implementing the designs iteratively.",
-  "geomitesParagraph5Title": "Some designs",
-  "geomitesParagraph5Text": "Here are some examples of final screens implemented by the development team.",
+  "geomitesSubParagraph12Text": "We used Figma for design collaboration and React for development. Each sprint started with a review of objectives and the designs were validated with the team.",
+  "geomitesParagraph5Title": "Some designs",  
   "geomitesParagraph6Title": "Learnings",
-  "geomitesParagraph6Text": "Working on Geomites over the past year has been a great learning experience. This project has taught me a lot about game design and development. I also got to work closely with a talented team and learned from their skills and ideas. During this project, I improved my skills and learned new ones that will help me in future projects.",
+  "geomitesParagraph6Text": "Working at Geomites has been a great learning experience, enhancing my skills and allowing me to collaborate with a talented team and learn from their ideas.",
 
   "geomitesColorSubsection1": "Blue",
   "geomitesColorSubsection2": "Red",
@@ -885,13 +858,13 @@
   "geomitesTeamPosition5": "Back-end developer",
 
   "geomitesSomeDesigns1Title": "1 vs 1  battle",
-  "geomitesSomeDesigns1Text": "The first example showcases the 1 vs 1 battle interface in Geomites. This screen is designed to provide players with a clear and intuitive layout, ensuring they can easily manage their characters and engage in strategic combat.",
+  "geomitesSomeDesigns1Text": "The first example shows the 1-on-1 battle interface in Geomites, designed to allow players to easily manage their characters in strategic combat.",
   "geomitesSomeDesigns2Title": "Training room",
-  "geomitesSomeDesigns2Text": "Where players can train their Geomites characters to improve their skills and abilities. This area of the game is designed to be both functional and visually appealing, offering players a sense of progression and achievement.",
+  "geomitesSomeDesigns2Text": "Players can train their characters to improve skills in a functional and visually appealing area, offering a sense of progression.",
   "geomitesSomeDesigns3Title": "Shop",
-  "geomitesSomeDesigns3Text": "Where players can exchange diamonds (real money) for essential resources needed for game progression. The store interface is designed to be user-friendly and visually engaging, encouraging players to make purchases.",
+  "geomitesSomeDesigns3Text": "Players can redeem diamonds for essential resources in an easy-to-use and visually appealing shop interface that encourages shopping.",
   "geomitesSomeDesigns4Title": "Loading screen",
-  "geomitesSomeDesigns4Text": "Which we use to provide game tips to players. This screen is designed to be informative and engaging, offering useful gameplay tips and tricks while the game loads.",
+  "geomitesSomeDesigns4Text": "We use this screen to provide informative and engaging game tips while the game is loading.",
 
   "geomitesLearning1": "Agile methodology",
   "geomitesLearning2": "User interface design",
