@@ -34,109 +34,33 @@
   <main class="main">
 
     <!-- [navBar] -->
-    <header class="navBar">
-
-      <div class="navBarContainer">
-        <a href="index.html" alt="logoAlejandro" id="logoLink" viewBox="0 0 24 24" class="imageLarge">
-
-          <svg xmlns="http://www.w3.org/2000/svg">
-            <path d="M16.144 24.1011H3.63149L0 30.5H20.0631L16.144 24.1011Z" fill="var(--primary-500)" />
-            <path
-              d="M15.029 2.5L5.86035 20.2913H13.7346L15.2087 16.2596H16.4672L24.5212 30.389H31.9999L16.2874 2.5H15.029Z"
-              fill="var(--neutral-100)" />
-          </svg>
-
-        </a>
-
-        <nav class="mobileNavigation" id="primaryNavigation">
-
-          <ul aria-label="Primary" role="list" class=" navBarNavigation">
-
-            <div class="frameFlexColumnMedium">
-              <h4 data-key="navigationTitle"></h4>
-            </div>
-            <div class="frameFlexColumnMedium">
-              <p class="large" data-key="navigationSubtitle1"></p>
-              <div class="frameFlexColumnSmall">
-                <a href="index.html" class="page regular activa" data-key="navigationPage1"></a>
-                <a href="projects.html" class="page regular" data-key="navigationPage2"></a>
-                <a href="resume.html" class="page regular" data-key="navigationPage3"></a>
-              </div>
-            </div>
-            <div class="frameFlexColumnMedium">
-              <p class="large" data-key="navigationSubtitle2"></p>
-              <div class="frameFlexSmall switcherContainer" id="languageSwitcherContainer">
-                <input type="checkbox" id="languageSwitch">
-                <label for="languageSwitch" data-state="en" data-key="languageSwitch1" class="regular"></label>
-                <label for="languageSwitch" data-state="es" data-key="languageSwitch2" class="regular"></label>
-              </div>
-            </div>
-            <div class="frameFlexColumnMedium">
-              <p class="large" data-key="navigationSubtitle3"></p>
-              <div class="frameFelxSmall switcherContainer" id="themeSwitcherContainer">
-                <input type="checkbox" id="themeSwitch">
-                <label for="themeSwitch" data-state="light" data-key="themeSwitch1" class="regular"></label>
-                <label for="themeSwitch" data-state="dark" data-key="themeSwitch2" class="regular"></label>
-              </div>
-            </div>
-            <div class="frameFlexColumnMedium">
-              <p class="large" data-key="navigationSubtitle4"></p>
-              <div class="frameFlexColumnSmall">
-                <div class="frameFlexMedium">
-                  <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
-                      class="fa-brands fa-whatsapp iconMedium"></i></a>
-                  <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon"
-                    target="_blank"><i class="fa-brands fa-linkedin iconMedium"></i></a>
-                  <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
-                      class="fa-brands fa-github iconMedium"></i></a>
-                  <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
-                      class="fa-solid fa-envelope iconMedium"></i></a>
-                </div>
-                <p class="regular" data-key="footerText"></p>
-              </div>
-            </div>
-
-
-          </ul>
-
-        </nav>
-
-        <button class="mobileNavToggle" aria-controls="primaryNavigation" aria-expanded="false">
-          <svg class="hambuger" viewbox="0 0 100 100" width="36">
-            <rect class="hamburgerLine topLine" width="80" height="10" x="10" y="25" rx="5"></rect>
-            <rect class="hamburgerLine middleLine" width="80" height="10" x="10" y="45" rx="5"></rect>
-            <rect class="hamburgerLine bottomLine" width="80" height="10" x="10" y="65" rx="5"></rect>
-          </svg>
-        </button>
-      </div>
-
-    </header>
+    <div id="navBarContainer"></div>
 
     <div class="mainSections">
 
       <!-- [hero] -->
       <div class="mainHero">
         <div class="frameFlexColumnMedium">
-          <div class="frameFlexColumnTiny">
+          <div class="frameFlexColumnTiny" id="animation1">
             <p class="small" id="currentTime"></p>
             <p class="regular" id="greetingsText"></p>
           </div>
-          <div class="frameFlexColumnSmall">
+          <div class="frameFlexColumnSmall" id="animation2">
             <h1 data-key="mainHeroH1"></h1>
             <h4 data-key="mainHeroP2"></h4>
           </div>
-          <button type="button" class="openContactForm buttonPrimary">
+          <button type="button" class="openContactForm buttonPrimary" id="animation4">
             <p class="regular-bold" data-key="mainHeroButton2"></p>
           </button>
         </div>
-        <img class="mainHeroImage" src="assets/images/index/mainHeroImage.webp" alt="alejandroMoreno">
+        <img class="mainHeroImage" src="assets/images/index/mainHeroImage.webp" alt="alejandroMoreno" id="animation3">
       </div>
 
       <!-- [projects] -->
       <div id="stepSection" class="frameFlexColumnLarge">
         <div class="sectionHeader">
           <div class="frameFlexAuto">
-            <h3 data-key="indexSectionHeader1"></h3>
+            <h3 data-key="indexSectionHeader1" class="animationTitle"></h3>
             <a href="projects.html" class="buttonSecondary">
               <p class="regular" data-key="indexSectionHeaderButton"></p>
             </a>
@@ -145,67 +69,13 @@
         <div class="gridThree">
 
           <!-- [geomites] -->
-          <a class="cardProject" href="geomites.html">
-            <div class="cardProjectImageContainer">
-              <img src="assets/images/projects/geomites/headerImage.webp" alt="imageContainer">
-            </div>
-            <div class="frameFlexColumnSmall">
-              <div class="frameFlexColumnTiny">
-                <p class="large">Geomites</p>
-                <p class="small" data-key="cardProjectGeomitesTime"></p>
-              </div>
-              <p class="regular" data-key="cardProjectGeomitesDescription"></p>
-            </div>
-            <div class="frameFlexSmall">
-              <div class="tagNew">
-                <p class="regular" data-key="cardProjectGeomitesTag1"></p>
-              </div>
-              <div class="tag">
-                <p class="regular" data-key="cardProjectGeomitesTag2"></p>
-              </div>
-            </div>
-            <i class="fa-solid fa-arrow-right iconMedium"></i>
-          </a>
+          <div id="cardGeomites"></div>
 
           <!-- [tattoParadise] -->
-          <a class="cardProject" href="tattooParadise.html">
-            <div class="cardProjectImageContainer">
-              <img src="assets/images/projects/tattooParadise/headerImage.webp" alt="imageContainer">
-            </div>
-            <div class="frameFlexColumnSmall">
-              <div class="frameFlexColumnTiny">
-                <p class="large">Tattoo paradise</p>
-                <p class="small" data-key="cardProjectTattooParadiseTime"></p>
-              </div>
-              <p class="regular" data-key="cardProjectTattooParadiseDescription"></p>
-            </div>
-            <div class="frameFlexSmall">
-              <div class="tag">
-                <p class="regular" data-key="cardProjectTattooParadiseTag1"></p>
-              </div>
-            </div>
-            <i class="fa-solid fa-arrow-right iconMedium"></i>
-          </a>
+          <div id="cardTattooParadise"></div>
 
           <!-- [atipikoTours] -->
-          <a class="cardProject" href="atipikoTours.html">
-            <div class="cardProjectImageContainer">
-              <img src="assets/images/projects/atipikoTours/headerImage.webp" alt="imageContainer">
-            </div>
-            <div class="frameFlexColumnSmall">
-              <div class="frameFlexColumnTiny">
-                <p class="large">Atipiko tours</p>
-                <p class="small" data-key="cardProjectAtipikoToursTime"></p>
-              </div>
-              <p class="regular" data-key="cardProjectAtipikoToursDescription"></p>
-            </div>
-            <div class="frameFlexSmall">
-              <div class="tag">
-                <p class="regular" data-key="cardProjectAtipikoToursTag1"></p>
-              </div>
-            </div>
-            <i class="fa-solid fa-arrow-right iconMedium"></i>
-          </a>
+          <div id="cardAtipikoTours"></div>
         </div>
       </div>
 
@@ -213,7 +83,7 @@
       <div class="frameFlexColumnLarge">
         <div class="sectionHeader">
           <div class="frameFlexAuto">
-            <h3 data-key="indexSectionHeader2"></h3>
+            <h3 data-key="indexSectionHeader2" class="animationTitle"></h3>
           </div>
         </div>
         <div class="scroller" data-speed="fast">
@@ -226,7 +96,7 @@
             <li><img src="assets/icons/toolstack/figma.webp" alt="scrollerIcon" class="imageExtraLarge"></li>
             <li><img src="assets/icons/toolstack/framer.webp" alt="scrollerIcon" class="imageExtraLarge"></li>
             <li><img src="assets/icons/toolstack/html.webp" alt="scrollerIcon" class="imageExtraLarge"></li>
-            <li><img src="assets/icons/toolstack/Jira.webp" alt="scrollerIcon" class="imageExtraLarge"></li>
+            <li><img src="assets/icons/toolstack/jira.webp" alt="scrollerIcon" class="imageExtraLarge"></li>
             <li><img src="assets/icons/toolstack/js.webp" alt="scrollerIcon" class="imageExtraLarge"></li>
             <li><img src="assets/icons/toolstack/sketch.webp" alt="scrollerIcon" class="imageExtraLarge"></li>
             <li><img src="assets/icons/toolstack/webflow.webp" alt="scrollerIcon" class="imageExtraLarge"></li>
@@ -252,7 +122,7 @@
       <div class="frameFlexColumnLarge">
         <div class="sectionHeader">
           <div class="frameFlexAuto">
-            <h3 data-key="indexSectionHeader3"></h3>
+            <h3 data-key="indexSectionHeader3" class="animationTitle"></h3>
           </div>
         </div>
         <div class="gridThreeOverFlow">
@@ -290,7 +160,7 @@
       <div class="frameFlexColumnLarge">
         <div class="sectionHeader">
           <div class="frameFlexAuto">
-            <h3 data-key="indexSectionHeader4"></h3>
+            <h3 data-key="indexSectionHeader4" class="animationTitle"></h3>
           </div>
         </div>
         <div class="gridThreeOverFlow">
@@ -352,7 +222,7 @@
       <div id="stepSection" class="frameFlexColumnLarge">
         <div class="sectionHeader">
           <div class="frameFlexAuto">
-            <h3 data-key="indexSectionHeader5"></h3>
+            <h3 data-key="indexSectionHeader5" class="animationTitle"></h3>
           </div>
         </div>
         <div class="gridTwoOverFlow">
@@ -521,42 +391,7 @@
 
     <!-- [contactForm] -->
     <div class="overlay hidden"></div>
-    <div class="contactForm hidden">
-      <form action="https://api.web3forms.com/submit" method="POST" class="contactFormBody">
-
-        <button type="button" class="buttonClose" id="closeContactForm"><i class="fa-solid fa-xmark iconMedium"
-            aria-hidden="true"></i></button>
-        <h4 data-key="contactFormTitle"></h4>
-        <p data-key="contactFormText" class="regular"></p>
-        <div class="frameFlexMedium">
-          <button type="button" href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
-              class="fa-brands fa-whatsapp iconMedium"></i></button>
-          <button type="button" href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon"
-            target="_blank"><i class="fa-brands fa-linkedin iconMedium"></i></button>
-          <button type="button" href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
-              class="fa-brands fa-github iconMedium"></i></button>
-          <button type="button" href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
-              class="fa-solid fa-envelope iconMedium"></i></button>
-        </div>
-        <input type="hidden" name="access_key" value="a698f320-b8cf-4911-b13b-aaa1297e57b0">
-        <div class="frameFlexColumnSmall">
-          <p data-key="contactFormName" class="small"></p>
-          <input type="name" name="name" class="contactInput" required>
-        </div>
-        <div class="frameFlexColumnSmall">
-          <p data-key="contactFormEmail" class="small"></p>
-          <input type="email" name="name" class="contactInput" required>
-        </div>
-        <div class="frameFlexColumnSmall">
-          <p data-key="contactFormMessage" class="small"></p>
-          <textarea type="message" name="message" class="contactInput" required></textarea>
-        </div>
-
-        <button type="submit" class="buttonPrimary">
-          <p data-key="contactFormButton" class="regular-bold"></p>
-        </button>
-      </form>
-    </div>
+    <div id="contactFormContainer"></div>
 
     <!-- [progressButton] -->
     <button class="btn-toggle-round scroll-top js-scroll-top" type="button" title="Scroll to top">

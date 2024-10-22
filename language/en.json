@@ -19,8 +19,8 @@
   "greetingsMorning": "Good morning!",
   "greetingsAfternoon": "Good afternoon!",
   "greetingsEvening": "Good evening!",
-  "timeFormatAM": "am",
-  "timeFormatPM": "pm",
+  "timeFormatAM": "AM",
+  "timeFormatPM": "PM",
 
   "mainHeroH1": "I'm Alex, product designer.",  
   "mainHeroP2": "Self-taught and methodical in search of continuous improvement.",  

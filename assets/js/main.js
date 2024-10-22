@@ -24,81 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-/* ----- LANGUAGE&THEME ----- */
-
-document.addEventListener('DOMContentLoaded', () => {
-  const languageSwitch = document.getElementById('languageSwitch');
-  const themeSwitch = document.getElementById('themeSwitch');
-
-  // Función para cargar las traducciones
-  const translate = async (lang) => {
-    try {
-      const response = await fetch(`language/${lang}.json`);
-      const translations = await response.json();
-
-      // Traducir todos los elementos con atributo data-key
-      document.querySelectorAll('[data-key]').forEach((element) => {
-        const key = element.getAttribute('data-key');
-        if (translations[key]) {
-          element.textContent = translations[key];
-        }
-      });
-
-      // Actualizar la clase active en las etiquetas de idioma
-      updateLabels(document.querySelectorAll('#languageSwitcherContainer label'), lang);
-    } catch (error) {
-      console.error('Error loading translation file:', error);
-    }
-  };
-
-  // Función para actualizar el tema
-  const updateTheme = (theme) => {
-    document.documentElement.setAttribute('data-theme', theme);
-    // Actualizar la clase active en las etiquetas de tema
-    updateLabels(document.querySelectorAll('#themeSwitcherContainer label'), theme);
-  };
-
-  // Función para actualizar la clase active en las etiquetas
-  const updateLabels = (labels, activeState) => {
-    labels.forEach((label) => {
-      if (label.getAttribute('data-state') === activeState) {
-        label.classList.add('active');
-      } else {
-        label.classList.remove('active');
-      }
-    });
-  };
-
-  // Función para inicializar el idioma
-  const initLanguage = () => {
-    const lang = languageSwitch.checked ? 'es' : 'en';
-    translate(lang);
-  };
-
-  // Función para inicializar el tema
-  const initTheme = () => {
-    const theme = themeSwitch.checked ? 'light' : 'dark';
-    updateTheme(theme);
-  };
-
-  // Configurar el checkbox de idioma
-  languageSwitch.addEventListener('change', () => {
-    const lang = languageSwitch.checked ? 'es' : 'en';
-    translate(lang);
-  });
-
-  // Configurar el checkbox de tema
-  themeSwitch.addEventListener('change', () => {
-    const theme = themeSwitch.checked ? 'light' : 'dark';
-    updateTheme(theme);
-  });
-
-  // Cargar idioma y tema inicial
-  initLanguage();
-  initTheme();
-});
-
-
 /* ----- GREETINGS ----- */
 
 // Variable para almacenar las traducciones cargadas
@@ -112,6 +37,7 @@ function getCurrentLanguage() {
 // Función para establecer el idioma actual
 function setCurrentLanguage(lang) {
   localStorage.setItem('language', lang);
+  console.log(`Idioma establecido: ${lang}`); // Verificar qué idioma se establece
 }
 
 // Función para cargar las traducciones desde un archivo JSON
@@ -120,6 +46,7 @@ async function loadTranslations(lang) {
     const response = await fetch(`language/${lang}.json`);
     if (!response.ok) throw new Error(`Failed to load translations for ${lang}`);
     translations[lang] = await response.json();
+    console.log(`Traducciones cargadas para ${lang}`, translations[lang]); // Verificar que las traducciones se carguen correctamente
   } catch (error) {
     console.error(error);
   }
@@ -128,7 +55,9 @@ async function loadTranslations(lang) {
 // Función para obtener una traducción
 function getTranslation(key) {
   const lang = getCurrentLanguage();
-  return translations[lang][key] || key;
+  const translation = translations[lang] ? translations[lang][key] : key;
+  console.log(`Traducción obtenida para ${key}: ${translation}`); // Verificar qué traducción se obtiene
+  return translation;
 }
 
 // Función para actualizar el saludo basado en la hora y el idioma
@@ -146,22 +75,18 @@ async function updateGreeting() {
   document.getElementById('currentTime').innerHTML = timeString;
 
   let greetingsKey;
-  let imageSrc;
 
   if (hours >= 6 && hours < 12) {
     greetingsKey = 'greetingsMorning';
-    imageSrc = 'assets/icons/greetings/morning.webp';
   } else if (hours >= 12 && hours < 20) {
     greetingsKey = 'greetingsAfternoon';
-    imageSrc = 'assets/icons/greetings/afternoon.webp';
   } else {
     greetingsKey = 'greetingsEvening';
-    imageSrc = 'assets/icons/greetings/evening.webp';
   }
 
   const greetingText = getTranslation(greetingsKey);
   document.getElementById('greetingsText').innerHTML = greetingText;
-  document.getElementById('greetingsIcon').src = imageSrc;
+  console.log(`Saludo actualizado: ${greetingText}`); // Verificar qué saludo se actualiza
 }
 
 // Función para actualizar las traducciones en la página
@@ -200,59 +125,6 @@ document.querySelectorAll('.languageSwitcher').forEach((switcher) => {
   });
 });
 
-/* ----- NAVIGATION ----- */
-
-const navBar = document.querySelector('.navBar');
-const navToggle = document.querySelector(".mobileNavToggle");
-const primaryNav = document.querySelector(".mobileNavigation");
-
-navToggle.addEventListener("click", () => {
-  const isVisible = primaryNav.hasAttribute("data-visible");
-
-  navToggle.setAttribute("aria-expanded", !isVisible);
-  primaryNav.toggleAttribute("data-visible");
-  navBar.toggleAttribute("data-overlay");
-
-  // Alternar la visibilidad de los iconos
-  navToggle.querySelector('.iconClose').style.display = isVisible ? 'none' : 'block';
-  navToggle.querySelector('.iconHamburger').style.display = isVisible ? 'block' : 'none';
-
-  // Alternar la clase 'no-scroll' en el body
-  document.body.classList.toggle('no-scroll', !isVisible);
-});
-
-/* ----- CONTACT FORM ----- */
-
-document.addEventListener('DOMContentLoaded', () => {
-  const contactForm = document.querySelector('.contactForm');
-  const openContactFormBtns = document.querySelectorAll('.openContactForm');
-  const closeContactFormBtn = document.getElementById('closeContactForm');
-  const overlay = document.querySelector('.overlay');
-  const body = document.body;
-
-  // Función para abrir el formulario
-  function openForm() {
-    contactForm.classList.add('open');
-    overlay.classList.add('show');
-    body.classList.add('no-scroll');
-  }
-
-  // Función para cerrar el formulario
-  function closeForm() {
-    contactForm.classList.remove('open');
-    overlay.classList.remove('show');
-    body.classList.remove('no-scroll');
-  }
-
-  // Abrir el formulario al hacer clic en los botones de apertura
-  openContactFormBtns.forEach(btn => btn.addEventListener('click', openForm));
-
-  // Cerrar el formulario al hacer clic en el botón de cierre
-  closeContactFormBtn.addEventListener('click', closeForm);
-
-  // Cerrar el formulario al hacer clic en la superposición
-  overlay.addEventListener('click', closeForm);
-});
 
 /* ----- BUTTONPROGRESS ----- */
 
@@ -287,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
     progressPath.getBoundingClientRect();
     progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
 
-    const updateProgress = function() {
+    const updateProgress = function () {
       const scroll = window.scrollY || document.documentElement.scrollTop;
 
       const docHeight = Math.max(
@@ -303,7 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
       progressPath.style.strokeDashoffset = progress;
     };
 
-    window.addEventListener('scroll', function(event) {
+    window.addEventListener('scroll', function (event) {
       updateProgress();
     });
 
@@ -345,40 +217,29 @@ function addAnimation() {
 /* ----- TABLE OF CONTENT ----- */
 
 
+/* ANIMACIÓN HEADERS */
 
-/* ----- CARD READING ----- */
+document.addEventListener('DOMContentLoaded', () => {
+  const animationTitles = document.querySelectorAll('.animationTitle');
 
-document.addEventListener('DOMContentLoaded', function() {
-  const cardReadings = document.querySelectorAll('.cardReading');
-  const frameReading = document.querySelector('.frameReading');
+  const checkVisibility = (element) => {
+    const rect = element.getBoundingClientRect();
+    const inViewport = rect.top >= 0 && rect.bottom <= window.innerHeight;
 
-  // Función para cerrar todas las tarjetas abiertas
-  function closeAllCards() {
-    cardReadings.forEach(cardReading => {
-      cardReading.classList.remove('active');
-      cardReading.querySelector('.cardReadingInfo').classList.remove('active');
-    });
-    frameReading.classList.remove('darkened');
-  }
+    if (inViewport) {
+      element.classList.add('slide-up-fade-in');
+      // Elimina el listener una vez que la animación se haya activado
+      window.removeEventListener('scroll', () => checkVisibility(element));
+    }
+  };
 
-  // Añadir event listeners a cada tarjeta
-  cardReadings.forEach(cardReading => {
-    cardReading.addEventListener('click', function(event) {
-      // Prevenir el clic en el cardReading de propagarse al documento
-      event.stopPropagation();
+  const handleScroll = () => {
+    animationTitles.forEach((title) => checkVisibility(title));
+  };
 
-      // Cerrar todas las tarjetas antes de abrir la seleccionada
-      closeAllCards();
-
-      // Abrir la tarjeta clicada
-      this.classList.add('active');
-      this.querySelector('.cardReadingInfo').classList.add('active');
-      frameReading.classList.add('darkened');
-    });
-  });
-
-  // Añadir un event listener al documento para cerrar las tarjetas al hacer clic fuera
-  document.addEventListener('click', function() {
-    closeAllCards();
-  });
+  // Agrega el event listener de scroll
+  window.addEventListener('scroll', handleScroll);
+  // Ejecuta la función al cargar la página en caso de que algún elemento ya esté visible
+  handleScroll();
 });
+

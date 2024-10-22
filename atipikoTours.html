@@ -34,83 +34,7 @@
   <main class="main">
 
     <!-- [navBar] -->
-    <header class="navBar">
-
-      <div class="navBarContainer">
-        <a href="index.html" alt="logoAlejandro" id="logoLink" viewBox="0 0 24 24" class="imageLarge">
-
-          <svg xmlns="http://www.w3.org/2000/svg">
-            <path d="M16.144 24.1011H3.63149L0 30.5H20.0631L16.144 24.1011Z" fill="var(--primary-500)" />
-            <path
-              d="M15.029 2.5L5.86035 20.2913H13.7346L15.2087 16.2596H16.4672L24.5212 30.389H31.9999L16.2874 2.5H15.029Z"
-              fill="var(--neutral-100)" />
-          </svg>
-
-        </a>
-
-        <nav class="mobileNavigation" id="primaryNavigation">
-
-          <ul aria-label="Primary" role="list" class=" navBarNavigation">
-
-            <div class="frameFlexColumnMedium">
-              <h4 data-key="navigationTitle"></h4>
-            </div>
-            <div class="frameFlexColumnMedium">
-              <p class="large" data-key="navigationSubtitle1"></p>
-              <div class="frameFlexColumnSmall">
-                <a href="index.html" class="page regular" data-key="navigationPage1"></a>
-                <a href="projects.html" class="page regular" data-key="navigationPage2"></a>
-                <a href="resume.html" class="page regular" data-key="navigationPage3"></a>
-              </div>
-            </div>
-            <div class="frameFlexColumnMedium">
-              <p class="large" data-key="navigationSubtitle2"></p>
-              <div class="frameFlexSmall switcherContainer" id="languageSwitcherContainer">
-                <input type="checkbox" id="languageSwitch">
-                <label for="languageSwitch" data-state="en" data-key="languageSwitch1" class="regular"></label>
-                <label for="languageSwitch" data-state="es" data-key="languageSwitch2" class="regular"></label>
-              </div>
-            </div>
-            <div class="frameFlexColumnMedium">
-              <p class="large" data-key="navigationSubtitle3"></p>
-              <div class="frameFelxSmall switcherContainer" id="themeSwitcherContainer">
-                <input type="checkbox" id="themeSwitch">
-                <label for="themeSwitch" data-state="light" data-key="themeSwitch1" class="regular"></label>
-                <label for="themeSwitch" data-state="dark" data-key="themeSwitch2" class="regular"></label>
-              </div>
-            </div>
-            <div class="frameFlexColumnMedium">
-              <p class="large" data-key="navigationSubtitle4"></p>
-              <div class="frameFlexColumnSmall">
-                <div class="frameFlexMedium">
-                  <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
-                      class="fa-brands fa-whatsapp iconMedium"></i></a>
-                  <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon"
-                    target="_blank"><i class="fa-brands fa-linkedin iconMedium"></i></a>
-                  <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
-                      class="fa-brands fa-github iconMedium"></i></a>
-                  <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
-                      class="fa-solid fa-envelope iconMedium"></i></a>
-                </div>
-                <p class="regular" data-key="footerText"></p>
-              </div>
-            </div>
-
-
-          </ul>
-
-        </nav>
-
-        <button class="mobileNavToggle" aria-controls="primaryNavigation" aria-expanded="false">
-          <svg class="hambuger" viewbox="0 0 100 100" width="36">
-            <rect class="hamburgerLine topLine" width="80" height="10" x="10" y="25" rx="5"></rect>
-            <rect class="hamburgerLine middleLine" width="80" height="10" x="10" y="45" rx="5"></rect>
-            <rect class="hamburgerLine bottomLine" width="80" height="10" x="10" y="65" rx="5"></rect>
-          </svg>
-        </button>
-      </div>
-
-    </header>
+    <div id="navBarContainer"></div>
 
     <article class="article">
 
@@ -170,7 +94,7 @@
           <!-- [introduction] -->
           <section id="Section1" class="frameFlexColumnMassive">
             <div class="frameFlexColumnSmall">
-              <h2 data-key="atipikoToursParagraph1Title"></h2>
+              <h2 data-key="atipikoToursParagraph1Title" class="animationTitle"></h2>
               <p data-key="atipikoToursParagraph1Text" class="regular"></p>
             </div>
           </section>
@@ -183,7 +107,7 @@
 
               <!-- [intro] -->
               <div class="frameFlexColumnSmall">
-                <h2 data-key="atipikoToursParagraph2Title"></h2>
+                <h2 data-key="atipikoToursParagraph2Title" class="animationTitle"></h2>
                 <p data-key="atipikoToursParagraph2Text" class="regular"></p>
               </div>
 
@@ -973,7 +897,7 @@
 
               <!-- [intro] -->
               <div class="frameFlexColumnSmall">
-                <h2 data-key="atipikoToursParagraph3Title"></h2>
+                <h2 data-key="atipikoToursParagraph3Title" class="animationTitle"></h2>
               </div>
 
               <div class="frameFlexColumnSmall">
@@ -1075,147 +999,147 @@
                 <div class="gridAutoTwo">
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium"
+                      <img class="imageExtraLarge"
                         src="assets/images/projects/atipikoTours/icons/atipikoToursIconArrow.webp" alt="icon">
                     </div>
                     <p class="small">arrow</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium"
+                      <img class="imageExtraLarge"
                         src="assets/images/projects/atipikoTours/icons/atipikoToursIconConversation1.webp" alt="icon">
                     </div>
                     <p class="small">conversation1</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium"
+                      <img class="imageExtraLarge"
                         src="assets/images/projects/atipikoTours/icons/atipikoToursIconConversation2.webp" alt="icon">
                     </div>
                     <p class="small">conversation2</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium"
+                      <img class="imageExtraLarge"
                         src="assets/images/projects/atipikoTours/icons/atipikoToursIconCopyright.webp" alt="icon">
                     </div>
                     <p class="small">copyright</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium"
+                      <img class="imageExtraLarge"
                         src="assets/images/projects/atipikoTours/icons/atipikoToursIconCamera.webp" alt="icon">
                     </div>
                     <p class="small">camera</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium"
+                      <img class="imageExtraLarge"
                         src="assets/images/projects/atipikoTours/icons/atipikoToursIconClose1.webp" alt="icon">
                     </div>
                     <p class="small">close1</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium"
+                      <img class="imageExtraLarge"
                         src="assets/images/projects/atipikoTours/icons/atipikoToursIconClose2.webp" alt="icon">
                     </div>
                     <p class="small">close2</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium"
+                      <img class="imageExtraLarge"
                         src="assets/images/projects/atipikoTours/icons/atipikoToursIconDocument.webp" alt="icon">
                     </div>
                     <p class="small">document</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium"
+                      <img class="imageExtraLarge"
                         src="assets/images/projects/atipikoTours/icons/atipikoToursIconFacebook.webp" alt="icon">
                     </div>
                     <p class="small">facebook</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium"
+                      <img class="imageExtraLarge"
                         src="assets/images/projects/atipikoTours/icons/atipikoToursIconInstagram.webp" alt="icon">
                     </div>
                     <p class="small">instagram</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium"
+                      <img class="imageExtraLarge"
                         src="assets/images/projects/atipikoTours/icons/atipikoToursIconLetter.webp" alt="icon">
                     </div>
                     <p class="small">letter</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium"
+                      <img class="imageExtraLarge"
                         src="assets/images/projects/atipikoTours/icons/atipikoToursIconLocation.webp" alt="icon">
                     </div>
                     <p class="small">location1</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium"
+                      <img class="imageExtraLarge"
                         src="assets/images/projects/atipikoTours/icons/atipikoToursIconLocation2.webp" alt="icon">
                     </div>
                     <p class="small">location2</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium"
+                      <img class="imageExtraLarge"
                         src="assets/images/projects/atipikoTours/icons/atipikoToursIconQuote.webp" alt="icon">
                     </div>
                     <p class="small">quote</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium"
+                      <img class="imageExtraLarge"
                         src="assets/images/projects/atipikoTours/icons/atipikoToursIconRefresh.webp" alt="icon">
                     </div>
                     <p class="small">refresh</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium" src="assets/images/projects/atipikoTours/icons/atipikoToursIconStar.webp"
+                      <img class="imageExtraLarge" src="assets/images/projects/atipikoTours/icons/atipikoToursIconStar.webp"
                         alt="icon">
                     </div>
                     <p class="small">star</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium"
+                      <img class="imageExtraLarge"
                         src="assets/images/projects/atipikoTours/icons/atipikoToursIconTick1.webp" alt="icon">
                     </div>
                     <p class="small">tick1</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium"
+                      <img class="imageExtraLarge"
                         src="assets/images/projects/atipikoTours/icons/atipikoToursIconTick2.webp" alt="icon">
                     </div>
                     <p class="small">tick2</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium"
+                      <img class="imageExtraLarge"
                         src="assets/images/projects/atipikoTours/icons/atipikoToursIconTwitter.webp" alt="icon">
                     </div>
                     <p class="small">twitter</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium"
+                      <img class="imageExtraLarge"
                         src="assets/images/projects/atipikoTours/icons/atipikoToursIconYoutube.webp" alt="icon">
                     </div>
                     <p class="small">youtube</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageMedium"
+                      <img class="imageExtraLarge"
                         src="assets/images/projects/atipikoTours/icons/atipikoToursIconWhatsapp.webp" alt="icon">
                     </div>
                     <p class="small">whatsapp</p>
@@ -1275,7 +1199,7 @@
 
             <!-- [intro] -->
             <div class="frameFlexColumnSmall">
-              <h2 data-key="portfolioParagraph4Title"></h2>
+              <h2 data-key="portfolioParagraph4Title" class="animationTitle"></h2>
             </div>
 
             <figure>
@@ -1307,7 +1231,7 @@
           <!-- [learnings] -->
           <section id="Section5" class="frameFlexColumnLarge">
             <div class="frameFlexColumnSmall">
-              <h2 data-key="atipikoToursParagraph5Title"></h2>
+              <h2 data-key="atipikoToursParagraph5Title" class="animationTitle"></h2>
               <p data-key="atipikoToursParagraph5Text" class="regular"></p>
             </div>
             <div class="gridTwoAuto">
@@ -1351,73 +1275,19 @@
     <div class="frameFlexColumnLarge otherArticles">
 
       <!-- [intro] -->
-      <h2 data-key="otherProjectsTitle"></h2>
+      <h2 data-key="otherProjectsTitle" class="animationTitle"></h2>
 
       <!-- [projects] -->
       <div class="gridThree">
 
         <!-- [tattoParadise] -->
-        <a class="cardProject" href="tattooParadise.html">
-          <div class="cardProjectImageContainer">
-            <img src="assets/images/projects/tattooParadise/headerImage.webp" alt="imageContainer">
-          </div>
-          <div class="frameFlexColumnSmall">
-            <div class="frameFlexColumnTiny">
-              <p class="large">Tattoo paradise</p>
-              <p class="small" data-key="cardProjectTattooParadiseTime"></p>
-            </div>
-            <p class="regular" data-key="cardProjectTattooParadiseDescription"></p>
-          </div>
-          <div class="frameFlexSmall">
-            <div class="tag">
-              <p class="regular" data-key="cardProjectTattooParadiseTag1"></p>
-            </div>
-          </div>
-          <i class="fa-solid fa-arrow-right iconMedium"></i>
-        </a>
+        <div id="cardTattooParadise"></div>
 
         <!-- [portfolio] -->
-        <a class="cardProject" href="portfolio.html">
-          <div class="cardProjectImageContainer">
-            <img src="assets/images/projects/portfolio/headerImage.webp" alt="imageContainer">
-          </div>
-          <div class="frameFlexColumnSmall">
-            <div class="frameFlexColumnTiny">
-              <p class="large">Portfolio</p>
-              <p class="small" data-key="cardProjectPortfolioTime"></p>
-            </div>
-            <p class="regular" data-key="cardProjectPortfolioDescription"></p>
-          </div>
-          <div class="frameFlexSmall">
-            <div class="tag">
-              <p class="regular" data-key="cardProjectPortfolioTag1"></p>
-            </div>
-          </div>
-          <i class="fa-solid fa-arrow-right iconMedium"></i>
-        </a>
+        <div id="cardPortfolio"></div>
 
         <!-- [geomites] -->
-        <a class="cardProject" href="geomites.html">
-          <div class="cardProjectImageContainer">
-            <img src="assets/images/projects/geomites/headerImage.webp" alt="imageContainer">
-          </div>
-          <div class="frameFlexColumnSmall">
-            <div class="frameFlexColumnTiny">
-              <p class="large">Geomites</p>
-              <p class="small" data-key="cardProjectGeomitesTime"></p>
-            </div>
-            <p class="regular" data-key="cardProjectGeomitesDescription"></p>
-          </div>
-          <div class="frameFlexSmall">
-            <div class="tagNew">
-              <p class="regular" data-key="cardProjectGeomitesTag1"></p>
-            </div>
-            <div class="tag">
-              <p class="regular" data-key="cardProjectGeomitesTag2"></p>
-            </div>
-          </div>
-          <i class="fa-solid fa-arrow-right iconMedium"></i>
-        </a>
+        <div id="cardGeomites"></div>
 
       </div>
     </div>

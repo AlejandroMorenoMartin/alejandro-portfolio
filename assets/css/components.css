@@ -832,7 +832,7 @@ tr {
 }
 
 .mobileNavToggle:hover {
-  background: var(--neutral-900);
+  background: var(--neutral-950);
 }
 
 .mobileNavToggle .hamburgerLine {
@@ -875,7 +875,6 @@ tr {
   bottom: 2rem;
   opacity: 1;
   visibility: visible;
-  transform: translateY(0px);
   height: 46px;
   width: 46px;
   cursor: pointer;
@@ -883,12 +882,12 @@ tr {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
   background-color: var(--neutral-1000);
 }
 
 .scroll-top:hover {
-  background: var(--neutral-900);
+  background: var(--neutral-950);
 }
 
 .scroll-top .icon-tabler-arrow-up {
@@ -939,7 +938,7 @@ tr {
 }
 
 .buttonPrimary:hover {
-  background: var(--primary-600);
+  background: var(--primary-700);
 }
 
 .buttonPrimary:active {
@@ -952,7 +951,7 @@ tr {
 }
 
 .buttonPrimary:hover i {
-  transform: translateX(10%);  
+  transform: translateX(10%);
 }
 
 /* ---------- */
@@ -999,7 +998,7 @@ tr {
 }
 
 .buttonIcon:hover {
-  background: var(--neutral-900);
+  background: var(--neutral-950);
 }
 
 .buttonIcon:active {
@@ -1160,7 +1159,7 @@ span.link {
   padding: 2rem;
   border-radius: var(--br);
   background: var(--neutral-1000);
-  border: 0.5px solid var(--neutral-600);
+  border: 0.25px solid var(--neutral-800);
   z-index: 100;
   display: none;
 }
@@ -1171,7 +1170,7 @@ span.link {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.9);
   z-index: 99;
   display: none;
 }
@@ -1181,7 +1180,6 @@ span.link {
   flex-direction: column;
   gap: 1rem;
   position: relative;
-
 }
 
 .contactInput {
@@ -1217,7 +1215,7 @@ span.link {
 }
 
 .buttonClose:hover {
-  background: var(--neutral-900);
+  background: var(--neutral-950);
 }
 
 .contactFormBody .buttonClose {
@@ -2102,12 +2100,27 @@ footer .frameFlexSmall {
 
 /* ---------- */
 
-.mobileFrame {
+.mobileFrame img {
+  width: 37.5%;
+}
+
+.mobileFrame2 img {
+  width: 50%;
+}
+
+.mobileFrame3 img {
+  width: 80%;
+}
+
+.mobileFrame,
+.mobileFrame2,
+.mobileFrame3 {
   height: 80svh;
 }
 
-.mobileFrame img {
-  width: 37.5%;
+.mobileFrame img,
+.mobileFrame2 img,
+.mobileFrame3 img {
   height: auto;
   display: block;
   align-items: center;
@@ -2117,7 +2130,10 @@ footer .frameFlexSmall {
 }
 
 @media (max-width: 1200px) {
-  .mobileFrame img {
+
+  .mobileFrame img,
+  .mobileFrame2 img,
+  .mobileFrame3 img {
     width: 100%;
   }
 }
@@ -2335,4 +2351,17 @@ footer .frameFlexSmall {
   inset: 0;
   margin: auto;
   height: 580px;
+}
+
+/* ---------- */
+
+.animationTitle {
+  opacity: 0; /* Comienza invisible */
+  transform: translateY(40px); /* Comienza desde abajo */
+  transition: opacity 0.5s ease-in, transform 0.5s ease-in; /* Transiciones de opacidad y transformación */
+}
+
+.animationTitle.slide-up-fade-in {
+  opacity: 1; /* Se vuelve visible */
+  transform: translateY(0); /* Vuelve a su posición normal */
 }
