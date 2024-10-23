@@ -10,8 +10,7 @@
   "navigationTitle": "Menu",  
   "navigationSubtitle1": "Pages",
   "navigationSubtitle2": "Language",
-  "navigationSubtitle3": "Theme",
-  "navigationSubtitle4": "Social media",
+  "navigationSubtitle3": "Theme",  
   "navigationPage1": "Home",
   "navigationPage2": "Projects",
   "navigationPage3": "Resume",  
@@ -152,7 +151,8 @@
   "cardReading12Info": "A comprehensive and essential guide for UX and product designers.",
   "cardReading12Pages": "320 pages",
 
-  "footerText": "Alejandro Moreno 3.0 | Designing 2024",
+  "footerText1": "Share this page",
+  "footerText2": "Alejandro Moreno 3.0 | Designing 2024",
 
   "contactFormTitle": "Get in touch",
   "contactFormText": "You can contact me through social networks or if you prefer, leave me a message and I will get back to you as soon as possible.",

@@ -34,7 +34,7 @@
   <main class="main">
 
     <!-- [navBar] -->
-    <div id="navBarContainer"></div>
+    <header id="navBarContainer" class="navBar"></header>
 
     <article class="article">
 
@@ -94,7 +94,7 @@
           <!-- [introduction] -->
           <section id="Section1" class="frameFlexColumnColossal">
             <div class="frameFlexColumnSmall">
-              <h2 data-key="portfolioParagraph1Title" class="animationTitle"></h2>
+              <h3 data-key="portfolioParagraph1Title" class="animationTitle"></h3>
               <p data-key="portfolioParagraph1Text" class="regular"></p>
             </div>
           </section>
@@ -107,7 +107,7 @@
 
               <!-- [intro] -->
               <div class="frameFlexColumnSmall">
-                <h2 data-key="portfolioParagraph2Title" class="animationTitle"></h2>
+                <h3 data-key="portfolioParagraph2Title" class="animationTitle"></h3>
                 <p data-key="portfolioParagraph2Text" class="regular"></p>
               </div>
 
@@ -240,7 +240,7 @@
 
               <!-- [intro] -->
               <div class="frameFlexColumnSmall">
-                <h2 data-key="portfolioParagraph3Title" class="animationTitle"></h2>
+                <h3 data-key="portfolioParagraph3Title" class="animationTitle"></h3>
               </div>
 
               <div class="frameFlexColumnSmall">
@@ -744,8 +744,8 @@
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageExtraLarge" src="assets/images/projects/portfolio/icons/portfolioIconAtipiko.webp"
-                        alt="icon">
+                      <img class="imageExtraLarge"
+                        src="assets/images/projects/portfolio/icons/portfolioIconAtipiko.webp" alt="icon">
                     </div>
                     <p class="small">atipikoTours</p>
                   </div>
@@ -772,8 +772,8 @@
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageExtraLarge" src="assets/images/projects/portfolio/icons/portfolioIconGeomites.webp"
-                        alt="icon">
+                      <img class="imageExtraLarge"
+                        src="assets/images/projects/portfolio/icons/portfolioIconGeomites.webp" alt="icon">
                     </div>
                     <p class="small">geomites</p>
                   </div>
@@ -863,15 +863,15 @@
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageExtraLarge" src="assets/images/projects/portfolio/icons/portfolioIconWebflow.webp"
-                        alt="icon">
+                      <img class="imageExtraLarge"
+                        src="assets/images/projects/portfolio/icons/portfolioIconWebflow.webp" alt="icon">
                     </div>
                     <p class="small">webflow</p>
                   </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="iconContainer">
-                      <img class="imageExtraLarge" src="assets/images/projects/portfolio/icons/portfolioIconWordpress.webp"
-                        alt="icon">
+                      <img class="imageExtraLarge"
+                        src="assets/images/projects/portfolio/icons/portfolioIconWordpress.webp" alt="icon">
                     </div>
                     <p class="small">wordpress</p>
                   </div>
@@ -903,7 +903,7 @@
                       <img src="assets/images/projects/portfolio/components/cardProject.webp" alt="component">
                     </div>
                     <p class="small">cardProject</p>
-                  </div>                  
+                  </div>
                   <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                     <div class="componentContainer">
                       <img src="assets/images/projects/portfolio/components/cardUSerPersona.webp" alt="component">
@@ -932,7 +932,7 @@
 
             <!-- [intro] -->
             <div class="frameFlexColumnSmall">
-              <h2 data-key="portfolioParagraph4Title" class="animationTitle"></h2>
+              <h3 data-key="portfolioParagraph4Title" class="animationTitle"></h3>
             </div>
 
             <!-- [designs] -->
@@ -988,7 +988,7 @@
           <section id="Section5" class="frameFlexColumnLarge">
 
             <div class="frameFlexColumnSmall">
-              <h2 data-key="portfolioParagraph5Title" class="animationTitle"></h2>
+              <h3 data-key="portfolioParagraph5Title" class="animationTitle"></h3>
               <p data-key="portfolioParagraph5Text" class="regular"></p>
             </div>
 
@@ -1015,15 +1015,10 @@
 
         </div>
 
+        <!-- [table of content] -->
         <div class="tableOfContent">
           <p data-key="TOCTitle" class="small"></p>
-          <div class="TOCContent">
-            <a href="#Section1" data-key="portfolioTOC1" class="regular"></a>
-            <a href="#Section2" data-key="portfolioTOC2" class="regular"></a>
-            <a href="#Section3" data-key="portfolioTOC3" class="regular"></a>
-            <a href="#Section4" data-key="portfolioTOC4" class="regular"></a>
-            <a href="#Section5" data-key="portfolioTOC5" class="regular"></a>
-          </div>
+          <div class="TOCContent" id="toc"></div>
         </div>
 
       </div>
@@ -1067,7 +1062,8 @@
     </button>
 
     <!-- [footer] -->
-    <div id="footer"></div>
+    <footer id="footer" class="footer"></footer>
+
   </main>
 
   <script src="/assets/js/main.js"></script>

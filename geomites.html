@@ -34,7 +34,7 @@
   <main class="main">
 
     <!-- [navBar] -->
-    <div id="navBarContainer"></div>
+    <header id="navBarContainer" class="navBar"></header>
 
     <article class="article">
 
@@ -59,7 +59,7 @@
           <div class="frameFlexColumnSmall">
             <h1 data-key="cardProjectGeomitesTitle"></h1>
             <h4 data-key="cardProjectGeomitesDescription"></h4>
-          </div>          
+          </div>
         </div>
         <div class="projectImageContainter">
           <img src="assets/images/projects/geomites/headerImage.webp" alt="projectImage">
@@ -101,7 +101,7 @@
 
             <!-- [intro] -->
             <div class="frameFlexColumnSmall">
-              <h2 data-key="geomitesParagraph1Title" class="animationTitle"></h2>
+              <h3 data-key="geomitesParagraph1Title" class="animationTitle"></h3>
               <p data-key="geomitesParagraph1Text" class="regular"></p>
             </div>
 
@@ -235,7 +235,7 @@
 
               <!-- [intro] -->
               <div class="frameFlexColumnSmall">
-                <h2 data-key="geomitesParagraph2Title" class="animationTitle"></h2>
+                <h3 data-key="geomitesParagraph2Title" class="animationTitle"></h3>
                 <p data-key="geomitesParagraph2Text" class="regular"></p>
               </div>
 
@@ -272,7 +272,7 @@
 
               <!-- [intro] -->
               <div class="frameFlexColumnSmall">
-                <h2 data-key="geomitesParagraph3Title" class="animationTitle"></h2>
+                <h3 data-key="geomitesParagraph3Title" class="animationTitle"></h3>
                 <p data-key="geomitesParagraph3Text" class="regular"></p>
               </div>
 
@@ -335,7 +335,7 @@
 
               <!-- [intro] -->
               <div class="frameFlexColumnSmall">
-                <h2 data-key="geomitesParagraph4Title" class="animationTitle"></h2>
+                <h3 data-key="geomitesParagraph4Title" class="animationTitle"></h3>
                 <p data-key="geomitesParagraph4Text" class="regular"></p>
               </div>
 
@@ -764,7 +764,7 @@
 
             <!-- [intro] -->
             <div class="frameFlexColumnSmall">
-              <h2 data-key="geomitesParagraph5Title" class="animationTitle"></h2>
+              <h3 data-key="geomitesParagraph5Title" class="animationTitle"></h3>
             </div>
 
             <!-- [designs] -->
@@ -820,7 +820,7 @@
           <!-- [learnings] -->
           <section id="Section6" class="frameFlexColumnLarge">
             <div class="frameFlexColumnSmall">
-              <h2 data-key="geomitesParagraph6Title" class="animationTitle"></h2>
+              <h3 data-key="geomitesParagraph6Title" class="animationTitle"></h3>
               <p data-key="geomitesParagraph6Text" class="regular"></p>
             </div>
             <div class="gridTwoAuto">
@@ -845,17 +845,12 @@
 
         </div>
 
+        <!-- [table of content] -->
         <div class="tableOfContent">
           <p data-key="TOCTitle" class="small"></p>
-          <div class="TOCContent">
-            <a href="#Section1" data-key="geomitesTOC1" class="regular"></a>
-            <a href="#Section2" data-key="geomitesTOC2" class="regular"></a>
-            <a href="#Section3" data-key="geomitesTOC3" class="regular"></a>
-            <a href="#Section4" data-key="geomitesTOC4" class="regular"></a>
-            <a href="#Section5" data-key="geomitesTOC5" class="regular"></a>
-            <a href="#Section6" data-key="geomitesTOC6" class="regular"></a>
-          </div>
+          <div class="TOCContent" id="toc"></div>
         </div>
+
 
       </div>
     </article>
@@ -897,7 +892,8 @@
     </button>
 
     <!-- [footer] -->
-    <div id="footer"></div>
+    <footer id="footer" class="footer"></footer>
+
   </main>
 
   <script src="/assets/js/main.js"></script>

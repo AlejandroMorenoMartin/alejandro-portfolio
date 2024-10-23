@@ -214,8 +214,6 @@ function addAnimation() {
   });
 }
 
-/* ----- TABLE OF CONTENT ----- */
-
 
 /* ANIMACIÓN HEADERS */
 
@@ -242,4 +240,3 @@ document.addEventListener('DOMContentLoaded', () => {
   // Ejecuta la función al cargar la página en caso de que algún elemento ya esté visible
   handleScroll();
 });
-
