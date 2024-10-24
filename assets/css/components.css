@@ -737,11 +737,13 @@ tr {
   flex-direction: column;
   position: sticky;
   flex: 1;
-  top: 5rem;
+  top: 6rem;
   width: 100%;
   max-width: 100vw;
-  padding: 1rem 0;
-  background: var(--neutral-1000);
+  padding: .25rem;
+  background: var(--neutral-950);
+  border: 0.25px solid var(--neutral-800);
+  border-radius: var(--br);
 }
 
 .TOCContent {
@@ -754,8 +756,10 @@ tr {
 @media (max-width: 1200px) {
 
   .tableOfContent {
-    top: 3.25rem;
-    padding: 1rem 5%;
+    top: 3.75rem;
+    padding: 1rem .5%;
+    border-radius: 0px;
+    border: none;
     border-bottom: 0.25px solid var(--neutral-800);
   }
 
@@ -786,7 +790,7 @@ tr {
 }
 
 .tableOfContent .TOCContent>*:hover {
-  background: var(--neutral-950);
+  background: var(--neutral-900);
 }
 
 .tableOfContent .TOCContent>*.active {
@@ -813,18 +817,17 @@ tr {
   padding: 0.5rem;
   border-radius: var(--br);
   cursor: pointer;
-  border: 0.25px solid var(--neutral-800);
+  background: var(--neutral-900);
+  font-weight: bold;
 }
 
 .switcherContainer label:hover {
-  background: var(--neutral-900);
+  background: var(--neutral-800);
 }
 
 .switcherContainer label.active {
-  background: var(--neutral-900);
-  color: var(--neutral-300);
-  font-weight: bold;
-  border: 0.25px solid var(--neutral-300);
+  background: var(--primary-500);
+  color: var(--primary-1000);  
 }
 
 /* ---------- */
@@ -1023,22 +1026,23 @@ tr {
   padding: 0.5rem;
   border-radius: var(--br);
   cursor: pointer;
-  border: 0.25px solid var(--neutral-800);
-}
-
-.buttonTabComponent:hover {
   background: var(--neutral-950);
 }
 
-.buttonTabComponent.active {
+.buttonTabComponent p {
+  font-weight: bold;
+}
+
+.buttonTabComponent:hover {
   background: var(--neutral-900);
-  border: 0.25px solid var(--neutral-300);
+}
+
+.buttonTabComponent.active {
+  background: var(--primary-500);
 }
 
 .buttonTabComponent.active p {
-  color: var(--neutral-300);
-  color: var(--neutral-300);
-  font-weight: bold;
+  color: var(--neutral-1000);
 }
 
 /* ---------- */
@@ -1694,12 +1698,12 @@ body.no-scroll {
   justify-content: space-between;
   align-items: center;
   padding: .5rem;
-  background: var(--neutral-950); 
+  background: var(--neutral-950);
   border-bottom: 0.25px solid var(--neutral-800);
   z-index: 90;
   top: 0;
   left: 0;
-  opacity: 1;  
+  opacity: 1;
 }
 
 .navBar a .logo,
@@ -1792,12 +1796,13 @@ h4.hideOnDesktop {
 
 footer {
   display: flex;
-  flex-direction: row;  
+  flex-direction: row;
   width: 100%;
-  padding: .5rem;  
+  padding: .5rem;
   border-top: 0.25px solid var(--neutral-800);
   background: var(--neutral-950);
   position: fixed;
+  justify-content: space-between;
   bottom: 0;
   left: 0;
 }
@@ -1943,7 +1948,7 @@ footer {
 
 /* ---------- */
 
-.logo {  
+.logo {
   height: 36px;
   width: 36px;
 }
@@ -2053,7 +2058,7 @@ footer {
   width: 100%;
   height: 75svh;
   align-items: center;
-  gap: 1rem;  
+  gap: 1rem;
 }
 
 @media (max-width: 1200px) {
@@ -2305,18 +2310,14 @@ footer {
 
 /* ---------- */
 
-.animationTitle {
+h2,
+h4 {
   opacity: 0;
-  /* Comienza invisible */
-  transform: translateY(40px);
-  /* Comienza desde abajo */
-  transition: opacity 0.5s ease-in, transform 0.5s ease-in;
-  /* Transiciones de opacidad y transformación */
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-.animationTitle.slide-up-fade-in {
+.visible {
   opacity: 1;
-  /* Se vuelve visible */
   transform: translateY(0);
-  /* Vuelve a su posición normal */
 }

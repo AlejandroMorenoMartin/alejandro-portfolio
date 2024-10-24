@@ -217,26 +217,34 @@ function addAnimation() {
 
 /* ANIMACIÓN HEADERS */
 
-document.addEventListener('DOMContentLoaded', () => {
-  const animationTitles = document.querySelectorAll('.animationTitle');
+document.addEventListener("DOMContentLoaded", function() {
+  // Selecciona todas las etiquetas h2 y h4
+  const headings = document.querySelectorAll("h2, h4");
 
-  const checkVisibility = (element) => {
+  // Función para verificar si el elemento está visible en el viewport
+  function isInViewport(element) {
     const rect = element.getBoundingClientRect();
-    const inViewport = rect.top >= 0 && rect.bottom <= window.innerHeight;
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
 
-    if (inViewport) {
-      element.classList.add('slide-up-fade-in');
-      // Elimina el listener una vez que la animación se haya activado
-      window.removeEventListener('scroll', () => checkVisibility(element));
-    }
-  };
+  // Función que maneja el scroll y aplica las clases cuando corresponda
+  function handleScroll() {
+    headings.forEach(heading => {
+      if (isInViewport(heading)) {
+        heading.classList.add("visible");
+      }
+    });
+  }
 
-  const handleScroll = () => {
-    animationTitles.forEach((title) => checkVisibility(title));
-  };
+  // Escuchar el evento scroll
+  window.addEventListener("scroll", handleScroll);
 
-  // Agrega el event listener de scroll
-  window.addEventListener('scroll', handleScroll);
-  // Ejecuta la función al cargar la página en caso de que algún elemento ya esté visible
+  // Llamar a la función de scroll una vez para verificar al cargar la página
   handleScroll();
 });
+
