@@ -7,14 +7,14 @@ const footer = document.querySelector('.footer');
 const tableOfContent = document.querySelector('.tableOfContent'); // Verificamos si existe
 
 // Función para manejar el evento de scroll
-window.onscroll = function() {
+window.onscroll = function () {
     let currentScrollPosition = window.pageYOffset;
 
     if (previousScrollPosition > currentScrollPosition) {
         // Si el usuario hace scroll hacia arriba
         navBar.style.transform = "translateY(0)"; // Vuelve a la posición original
         footer.style.transform = "translateY(0)"; // Vuelve a la posición original
-        
+
         // Si existe la tabla de contenido, también la movemos
         if (tableOfContent) {
             tableOfContent.style.transform = "translateY(0)";
@@ -23,7 +23,7 @@ window.onscroll = function() {
         // Si el usuario hace scroll hacia abajo
         navBar.style.transform = "translateY(-68px)"; // Se desplaza hacia arriba
         footer.style.transform = "translateY(58px)";  // Se desplaza hacia abajo
-        
+
         // Si existe la tabla de contenido, también la movemos
         if (tableOfContent) {
             tableOfContent.style.transform = "translateY(-68px)";
@@ -35,10 +35,10 @@ window.onscroll = function() {
 };
 
 // Estilos CSS recomendados para la transición suave
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     navBar.style.transition = "transform 0.6s ease";
     footer.style.transition = "transform 0.6s ease";
-    
+
     // Si existe la tabla de contenido, le aplicamos la transición también
     if (tableOfContent) {
         tableOfContent.style.transition = "transform 0.6s ease";
@@ -252,7 +252,7 @@ document.addEventListener('DOMContentLoaded', loadContactForm);
 
 /* TABLE OF CONTENT */
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const toc = document.getElementById('toc');
     const sections = document.querySelectorAll('section'); // Selecciona todas las secciones
 
@@ -292,11 +292,3 @@ document.addEventListener("DOMContentLoaded", function() {
         })
         .catch(error => console.error('Error al cargar el archivo JSON:', error));
 });
-
-
-
-
-
-
-  
-

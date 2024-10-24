@@ -26,7 +26,7 @@ html {
 
 @media (max-width: 1200px) {
   html {
-    scroll-padding: 6rem;   
+    scroll-padding: 6rem;
   }
 }
 
@@ -60,7 +60,15 @@ a {
 /* ... excepto los que se encuentran en párrafos */
 
 p a {
-  display: inline;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  /* Permite romper palabras largas en cualquier parte */
+  word-wrap: break-word;
+  /* Para navegadores más antiguos */
+  word-break: normal;
+  /* Evita romper palabras de forma brusca */
+  hyphens: manual;
+  word-break: break-word;
 }
 
 /* Quitamos los puntos de los <li> */
