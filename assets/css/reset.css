@@ -59,7 +59,11 @@ a {
 
 /* ... excepto los que se encuentran en párrafos */
 
-p a {
+p,
+h1,
+h2,
+h3,
+h4 {
   white-space: normal;
   overflow-wrap: anywhere;
   /* Permite romper palabras largas en cualquier parte */

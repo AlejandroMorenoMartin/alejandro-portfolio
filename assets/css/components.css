@@ -757,29 +757,29 @@ tr {
 .TOCContent {
   display: flex;
   flex-direction: column;
+  overflow-x: auto;  
   width: 100%;
-  overflow-x: auto;
 }
 
 @media (max-width: 1200px) {
 
   .tableOfContent {
     top: 3.75rem;
-    padding: 1rem .5%;
+    padding: 1rem 0.5%;
     border-radius: 0px;
     border: none;
     border-bottom: 0.25px solid var(--neutral-800);
   }
 
   .TOCContent {
-    overflow-x: auto;
     flex-direction: row;
     scroll-behavior: smooth;
     flex-wrap: nowrap;
     white-space: nowrap;
-    gap: 2rem;
+    gap: 0.25rem;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
+    overflow-x: auto;
   }
 
   .TOCContent>* {
@@ -1084,7 +1084,7 @@ tr {
 }
 
 .link:hover p {
-  color: var(--primary-600);
+  color: var(--primary-300);
 }
 
 p[data-key="experienceCardTechnologiesTitle"],
@@ -1695,14 +1695,14 @@ body.no-scroll {
 /* ---------- */
 
 .inputField {
-  width: 148px;
-  height: 36px;
-  border: 0.5px solid var(--neutral-600);
+  width: 124px;
+  height: 24px;
+  border: 0.25px solid var(--neutral-600);
   border-radius: var(--br);
 }
 
 .inputFieldOne {
-  border: 2px solid var(--white);
+  border: 1px solid var(--white);
 }
 
 /* ----- NAVIGATION ----- */
@@ -2184,27 +2184,13 @@ footer {
 
 /* ---------- */
 
-.workMethodologyItem {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 1rem;
-  gap: 1rem;
-  border-radius: var(--br);
-  border-left: 0.5px solid var(--neutral-600);
-  border-right: 0.5px solid var(--neutral-600);
-  border-bottom: 0.5px solid var(--neutral-600);
-  border-top: 2px solid var(--neutral-600);
-  flex: 1;
-}
-
 .workMethodologyItemCircle {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 28px;
   height: 28px;
-  background: var(--primary-400);
+  background: var(--primary-500);
   border-radius: 100px;
 }
 

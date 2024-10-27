@@ -13,13 +13,9 @@
   "navigationSubtitle3": "Tema",  
   "navigationPage1": "Inicio",
   "navigationPage2": "Proyectos",
-  "navigationPage3": "Currículum",  
+  "navigationPage3": "Currículum", 
 
-  "greetingsMorning": "¡Buenos días!",
-  "greetingsAfternoon": "¡Buenas tardes!",
-  "greetingsEvening": "¡Buenas noches!",
-  "timeFormatAM": "AM",
-  "timeFormatPM": "PM",
+  "currentLocation": "Madrid, España",
 
   "mainHeroH1": "Soy Alex, diseñador de producto.",
   
@@ -405,6 +401,10 @@
   "senzoStudioSubParagraph8Title": "Clasificación de tarjetas",
 
   "senzoStudioParagraph3Title": "Sistema de diseño",  
+
+  "senzoStudioParagraph4Title": "Algunos diseños",
+
+  "atipikoToursParagraph4Title": "Algunos diseños",
 
   "senzoStudioSubParagraph9Title": "Tipografía",
   "senzoStudioSubParagraph9Text": "Elegí IBM Plex Sans por su legibilidad y versatilidad, logrando un diseño moderno y profesional alineado con la identidad del proyecto.",

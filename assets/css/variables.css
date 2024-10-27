@@ -4,7 +4,7 @@
   --font-family-2: 'Bungee Shade', sans-serif;
 
   /* font-size */
-  --fs-h1: 3rem;
+  --fs-h1: 4rem;
   --fs-h2: 2.5rem;
   --fs-h3: 2rem;
   --fs-h4: 1.5rem;
@@ -13,8 +13,8 @@
   --fs-small: .75rem;
 
   /* line-height */
-  --lh-h1: 3.6rem;
-  --lh-h2: 3rem;
+  --lh-h1: 4.2rem;
+  --lh-h2: 3.2rem;
   --lh-h3: 2.4rem;
   --lh-h4: 2.1rem;
   --lh-large: 2rem;
@@ -36,7 +36,7 @@
   :root {
 
     /* font-size */
-    --fs-h1: 2rem;
+    --fs-h1: 2.15rem;
     --fs-h2: 1.8rem;
     --fs-h3: 1.6rem;
     --fs-h4: 1.4rem;

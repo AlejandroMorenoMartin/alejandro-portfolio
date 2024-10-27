@@ -26,103 +26,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /* ----- GREETINGS ----- */
 
-// Variable para almacenar las traducciones cargadas
-let translations = {};
+document.addEventListener('DOMContentLoaded', function () {
+  // Obtener el elemento donde se mostrará la hora
+  const currentTimeElement = document.getElementById('currentTime');
 
-// Función para obtener el idioma actual
-function getCurrentLanguage() {
-  return localStorage.getItem('language') || 'en'; // Valor por defecto 'en'
-}
-
-// Función para establecer el idioma actual
-function setCurrentLanguage(lang) {
-  localStorage.setItem('language', lang);
-  console.log(`Idioma establecido: ${lang}`); // Verificar qué idioma se establece
-}
-
-// Función para cargar las traducciones desde un archivo JSON
-async function loadTranslations(lang) {
-  try {
-    const response = await fetch(`language/${lang}.json`);
-    if (!response.ok) throw new Error(`Failed to load translations for ${lang}`);
-    translations[lang] = await response.json();
-    console.log(`Traducciones cargadas para ${lang}`, translations[lang]); // Verificar que las traducciones se carguen correctamente
-  } catch (error) {
-    console.error(error);
-  }
-}
-
-// Función para obtener una traducción
-function getTranslation(key) {
-  const lang = getCurrentLanguage();
-  const translation = translations[lang] ? translations[lang][key] : key;
-  console.log(`Traducción obtenida para ${key}: ${translation}`); // Verificar qué traducción se obtiene
-  return translation;
-}
-
-// Función para actualizar el saludo basado en la hora y el idioma
-async function updateGreeting() {
-  const dt = new Date();
-  let hours = dt.getHours();
-  const minutes = dt.getMinutes();
-  const ampmKey = hours >= 12 ? 'timeFormatPM' : 'timeFormatAM';
-  const ampm = getTranslation(ampmKey);
-
-  const formattedHours = hours % 12 || 12;
-  const formattedMinutes = minutes < 10 ? '0' + minutes : minutes;
-  const timeString = `[${formattedHours}:${formattedMinutes} ${ampm}]`;
-
-  document.getElementById('currentTime').innerHTML = timeString;
-
-  let greetingsKey;
-
-  if (hours >= 6 && hours < 12) {
-    greetingsKey = 'greetingsMorning';
-  } else if (hours >= 12 && hours < 20) {
-    greetingsKey = 'greetingsAfternoon';
-  } else {
-    greetingsKey = 'greetingsEvening';
+  // Función para actualizar la hora
+  function updateTime() {
+      const now = new Date();
+      const options = { hour: '2-digit', minute: '2-digit', hour12: true };
+      currentTimeElement.textContent = now.toLocaleString([], options); // Solo mostrar la hora
   }
 
-  const greetingText = getTranslation(greetingsKey);
-  document.getElementById('greetingsText').innerHTML = greetingText;
-  console.log(`Saludo actualizado: ${greetingText}`); // Verificar qué saludo se actualiza
-}
+  // Actualizar la hora al cargar la página
+  updateTime();
 
-// Función para actualizar las traducciones en la página
-async function updateTranslations() {
-  const lang = getCurrentLanguage();
-  if (!translations[lang]) {
-    await loadTranslations(lang);
-  }
-
-  const elements = document.querySelectorAll('[data-key]');
-  elements.forEach((element) => {
-    const key = element.getAttribute('data-key');
-    element.innerHTML = getTranslation(key);
-  });
-}
-
-// Función para cambiar el idioma
-async function changeLanguage(lang) {
-  setCurrentLanguage(lang);
-  await updateTranslations();
-  await updateGreeting();
-}
-
-// Inicializa la página con el idioma actual
-document.addEventListener('DOMContentLoaded', async () => {
-  await loadTranslations(getCurrentLanguage());
-  await updateTranslations();
-  await updateGreeting();
-});
-
-// Maneja el cambio de idioma con los switchers
-document.querySelectorAll('.languageSwitcher').forEach((switcher) => {
-  switcher.addEventListener('change', (event) => {
-    const newLang = event.target.checked ? 'es' : 'en'; // Ajusta según tu lógica de idiomas
-    changeLanguage(newLang);
-  });
+  // Opcional: Actualizar la hora cada minuto
+  setInterval(updateTime, 60000); // 60000 ms = 1 minuto
 });
 
 
