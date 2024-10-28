@@ -15,7 +15,7 @@
 @media (max-width: 1200px) {
   .main {
     justify-content: left;
-    gap: 96px;
+    gap: 48px;
     padding: 6rem 0rem;
   }
 }
@@ -271,8 +271,10 @@
 
 .gridAuto {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(0, 136px)); /* Cada elemento tendrá un máximo de 148px */
-  gap: 1rem; /* Espacio entre los elementos */
+  grid-template-columns: repeat(auto-fill, minmax(0, 136px));
+  /* Cada elemento tendrá un máximo de 148px */
+  gap: 1rem;
+  /* Espacio entre los elementos */
 }
 
 /* ---------- */
@@ -757,7 +759,7 @@ tr {
 .TOCContent {
   display: flex;
   flex-direction: column;
-  overflow-x: auto;  
+  overflow-x: auto;
   width: 100%;
 }
 
@@ -2074,10 +2076,12 @@ footer {
   height: 75svh;
   align-items: center;
   gap: 1rem;
+  position: relative;
 }
 
 @media (max-width: 1200px) {
   .projectHeader {
+    padding-top: 64px;
     flex-direction: column;
   }
 
@@ -2119,7 +2123,7 @@ footer {
 
 @media (max-width: 1200px) {
 
-  .mobileFrame {   
+  .mobileFrame {
     width: 50%;
   }
 
@@ -2332,3 +2336,68 @@ h4 {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ---------- */
+
+.breadCrumbs {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.breadCrumbs .frameFlexSmall {
+  display: flex;
+  flex-direction: row;
+  border-left: 3px solid var(--neutral-300);
+  padding-left: 12px;
+  border-radius: var(--br);
+}
+
+/* ---------- */
+
+.typewriter p {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  width: 0;            /* Oculta inicialmente */
+  opacity: 0;          /* Oculta inicialmente */
+  animation: typing 5s steps(60, end) forwards, fadeIn 0s forwards;
+}
+
+/* La primera animación comienza inmediatamente */
+.typewriter1 p {
+  animation-delay: 0.5s, 0.5s;
+}
+
+/* La segunda animación comienza después de la primera (5s) */
+.typewriter2 p {
+  animation-delay: 2s, 2s;
+}
+
+/* La tercera animación comienza después de la segunda (10s) */
+.typewriter3 p {
+  animation-delay: 3s, 3s;
+}
+
+/* Efecto de escritura */
+@keyframes typing {
+  from {
+    width: 0;
+    opacity: 1;       /* Aparece al comenzar la animación */
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Efecto para hacer visible el texto al comenzar la animación */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
