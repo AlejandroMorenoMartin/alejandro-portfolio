@@ -1780,24 +1780,38 @@ body.no-scroll {
 
 .mobileNavigation {
   position: fixed;
-  top: -100%;
-  left: 0;
+  top: 0;
+  right: -100%;
   background: var(--neutral-950);
-  width: 100%;
-  min-height: 100svh;
-  transition: top 1.25s cubic-bezier(0.8, 0, 0.2, 1), opacity 1.25s ease-in-out;
+  width: 25%;
+  height: 100svh;
+  transition: right 1.25s cubic-bezier(0.8, 0, 0.2, 1), opacity 1.25s ease-in-out;
   z-index: 98;
   opacity: 0;
   pointer-events: none;
 }
 
-
+@media (max-width: 1200px) {
+  .mobileNavigation {   
+    width: 75%;  
+  }
+}
 
 .mobileNavigation[data-visible] {
-  top: 0;
+  right: 0;
+  bottom: 0;
   opacity: 1;
   pointer-events: auto;
 }
+
+.mainSections {
+  transition: filter 1.25s ease;
+}
+
+body:has(.mobileNavigation[data-visible]) .mainSections {
+  filter: blur(10px);
+}
+
 
 .frameFlexPaddingBottom.active p {
   color: var(--primary-500)
