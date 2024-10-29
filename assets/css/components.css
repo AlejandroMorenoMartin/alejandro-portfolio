@@ -1054,7 +1054,7 @@ tr {
 }
 
 .buttonTabComponent.active p {
-  color: var(--neutral-1000);
+  color: var(--neutral-100);
 }
 
 /* ---------- */
