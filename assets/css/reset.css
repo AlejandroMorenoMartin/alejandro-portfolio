@@ -75,6 +75,15 @@ h4 {
   word-break: break-word;
 }
 
+th p {
+  white-space: nowrap;
+}
+
+th {
+  min-width: 100px; /* Ajusta el valor según el contenido */
+}
+
+
 /* Quitamos los puntos de los <li> */
 
 li {
