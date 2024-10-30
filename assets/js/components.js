@@ -58,17 +58,17 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 });
 
-function initializeNavigation() {
-    activateCurrentPage();
-    initializeSwitchers();
-    setupMobileNavToggle();
-}
-
 function activateCurrentPage() {
     const currentPage = window.location.pathname.split('/').pop();
     document.querySelectorAll('.navBarNavigation a').forEach(link => {
         link.classList.toggle('activa', link.getAttribute('href') === currentPage);
     });
+}
+
+function initializeNavigation() {
+    activateCurrentPage();
+    initializeSwitchers();
+    setupMobileNavToggle();
 }
 
 function initializeSwitchers() {

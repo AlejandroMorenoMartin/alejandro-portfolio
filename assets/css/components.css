@@ -1043,6 +1043,7 @@ tr {
 
 .buttonTabComponent p {
   font-weight: bold;
+  color: var(--neutral-100);
 }
 
 .buttonTabComponent:hover {
@@ -1054,7 +1055,7 @@ tr {
 }
 
 .buttonTabComponent.active p {
-  color: var(--neutral-100);
+  color: var(--primary-1000);
 }
 
 /* ---------- */
@@ -1802,6 +1803,10 @@ body.no-scroll {
   bottom: 0;
   opacity: 1;
   pointer-events: auto;
+}
+
+.mobileNavigation .frameFlexSmall {
+  justify-content: flex-start;
 }
 
 .mainSections {
