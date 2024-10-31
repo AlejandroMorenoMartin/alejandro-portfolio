@@ -61,9 +61,11 @@ document.addEventListener('DOMContentLoaded', function () {
 function activateCurrentPage() {
     const currentPage = window.location.pathname.split('/').pop();
     document.querySelectorAll('.navBarNavigation a').forEach(link => {
-        link.classList.toggle('activa', link.getAttribute('href') === currentPage);
+        const href = link.getAttribute('href');
+        link.classList.toggle('activa', href.includes(currentPage));
     });
 }
+
 
 function initializeNavigation() {
     activateCurrentPage();
