@@ -146,29 +146,4 @@ document.addEventListener("DOMContentLoaded", () => {
   
     // Añade cada sección al observador
     sections.forEach(section => observer.observe(section));
-  });
-
-/* CARDSPROJECTS */
-
-document.addEventListener('DOMContentLoaded', () => {
-    // Función para cargar una tarjeta de proyecto desde un archivo HTML
-    const loadProjectCard = async (filePath, containerId) => {
-        try {
-            const response = await fetch(filePath);
-            const htmlContent = await response.text();
-            document.getElementById(containerId).innerHTML = htmlContent;
-        } catch (error) {
-            console.error('Error loading project card:', error);
-        }
-    };
-
-    // Cargar tarjetas de proyecto dinámicamente
-    loadProjectCard('components/cards/projects/cardGeomites.html', 'cardGeomites');
-    loadProjectCard('components/cards/projects/cardAtipikoTours.html', 'cardAtipikoTours');
-    loadProjectCard('components/cards/projects/cardTattooParadise.html', 'cardTattooParadise');
-    loadProjectCard('components/cards/projects/cardPortfolio.html', 'cardPortfolio');
-    loadProjectCard('components/cards/projects/cardSenzoStudio.html', 'cardSenzoStudio');
-});
-
-
-  
+  });  
