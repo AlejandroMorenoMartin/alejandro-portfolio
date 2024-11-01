@@ -1,27 +1,11 @@
 /* ----- NAVBAR ----- */
 
 document.addEventListener('DOMContentLoaded', function () {
-    fetch('components/navigation/navBar.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('navBarContainer').innerHTML = data;
-
-            initializeNavigation();
-        });
+    initializeNavigation(); // Inicializar la navegación sin cargar el navBar
 });
 
-function activateCurrentPage() {
-    const currentPage = window.location.pathname.split('/').pop();
-    document.querySelectorAll('.navBarNavigation a').forEach(link => {
-        const href = link.getAttribute('href');
-        link.classList.toggle('activa', href.includes(currentPage));
-    });
-}
-
 function initializeNavigation() {
-    activateCurrentPage();
     initializeSwitchers();
-    setupMobileNavToggle();
 }
 
 function initializeSwitchers() {
@@ -95,19 +79,74 @@ function initializeSwitchers() {
     loadPreferences();
 }
 
-function setupMobileNavToggle() {
-    const navToggle = document.querySelector(".mobileNavToggle");
-    const primaryNav = document.querySelector(".mobileNavigation");
-    const navBar = document.querySelector('.navBar');
+/* TABLE OF CONTENT */
 
-    navToggle.addEventListener("click", () => {
-        const isVisible = primaryNav.hasAttribute("data-visible");
-        navToggle.setAttribute("aria-expanded", !isVisible);
-        primaryNav.toggleAttribute("data-visible");
-        navBar.toggleAttribute("data-overlay");
-        document.body.classList.toggle('no-scroll', !isVisible);
+document.addEventListener("DOMContentLoaded", () => {
+    const tocLinks = document.querySelectorAll('.tableOfContentLinks a');
+    const sections = document.querySelectorAll('section');
+    const tocContainer = document.querySelector('.tableOfContentLinks');
+    const tableOfContent = document.querySelector('.tableOfContent');
+  
+    // Función para eliminar la clase active de todos los enlaces
+    function removeActiveClasses() {
+      tocLinks.forEach(link => link.classList.remove('active'));
+    }
+  
+    // Función para desplazar el contenedor de enlaces al margen izquierdo
+    function scrollToActiveLink(activeLink) {
+      const linkOffset = activeLink.offsetLeft;
+      tocContainer.scrollTo({
+        left: linkOffset,
+        behavior: 'smooth' // Desplazamiento suave
+      });
+    }
+  
+    // IntersectionObserver para observar cada sección
+    const observer = new IntersectionObserver((entries) => {
+      let closestSection = null;
+      let minDistance = Number.POSITIVE_INFINITY;
+  
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const distanceFromTop = Math.abs(entry.boundingClientRect.top);
+          if (distanceFromTop < minDistance) {
+            minDistance = distanceFromTop;
+            closestSection = entry.target;
+          }
+        }
+      });
+  
+      if (closestSection) {
+        removeActiveClasses();
+        const activeLink = document.querySelector(`.tableOfContentLinks a[href="#${closestSection.id}"]`);
+        if (activeLink) {
+          activeLink.classList.add('active');
+          scrollToActiveLink(activeLink); // Desplaza el contenedor de enlaces
+        }
+      }
+  
+      // Mostrar u ocultar el tableOfContent según la clase active
+      const hasActiveLink = Array.from(tocLinks).some(link => link.classList.contains("active"));
+      if (hasActiveLink) {
+        tableOfContent.style.transform = "translateY(0)";
+        tableOfContent.style.opacity = "1";
+      } else {
+        tableOfContent.style.transform = "translateY(-100%)";
+        tableOfContent.style.opacity = "0";
+      }
+    }, {
+      root: null,
+      threshold: 0.1
     });
-}
+  
+    // Inicialmente, oculta tableOfContent
+    tableOfContent.style.transform = "translateY(-100%)";
+    tableOfContent.style.opacity = "0";
+    tableOfContent.style.transition = "transform 0.5s ease, opacity 0.5s ease";
+  
+    // Añade cada sección al observador
+    sections.forEach(section => observer.observe(section));
+  });
 
 /* CARDSPROJECTS */
 
@@ -132,60 +171,4 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-/* ----- FOOTER ----- */
-
-function loadComponent(componentId, filePath) {
-    fetch(filePath)
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById(componentId).innerHTML = data;
-        })
-        .catch(error => console.error('Error loading the component:', error));
-}
-
-loadComponent('footer', 'components/navigation/footer.html');
-
-/* ----- CONTACTFORM ----- */
-
-function loadContactForm() {
-    fetch('components/forms/contactForm.html')
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById('contactFormContainer').innerHTML = html;
-
-            // Una vez cargado el formulario, asigna los event listeners
-            const contactForm = document.querySelector('.contactForm');
-            const closeContactFormBtn = document.getElementById('closeContactForm');
-            const overlay = document.querySelector('.overlay');
-            const body = document.body;
-
-            // Función para abrir el formulario
-            function openForm() {
-                contactForm.classList.add('open');
-                overlay.classList.add('show');
-                body.classList.add('no-scroll');
-            }
-
-            // Función para cerrar el formulario
-            function closeForm() {
-                contactForm.classList.remove('open');
-                overlay.classList.remove('show');
-                body.classList.remove('no-scroll');
-            }
-
-            // Abrir el formulario al hacer clic en los botones de apertura
-            document.querySelectorAll('.openContactForm').forEach(btn => {
-                btn.addEventListener('click', openForm);
-            });
-
-            // Cerrar el formulario al hacer clic en el botón de cierre
-            closeContactFormBtn.addEventListener('click', closeForm);
-
-            // Cerrar el formulario al hacer clic en la superposición
-            overlay.addEventListener('click', closeForm);
-        })
-        .catch(error => console.error('Error loading contact form:', error));
-}
-
-// Llama a la función para cargar el formulario cuando el DOM esté listo
-document.addEventListener('DOMContentLoaded', loadContactForm); 
+  

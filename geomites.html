@@ -33,25 +33,49 @@
   <!-- [main] -->
   <main class="main">
 
-    <!-- [navBar] -->
-    <header id="navBarContainer" class="navBar"></header>
+    <!-- [header] -->
+    <header class="headerContainer">
 
-    <!-- [table of content] -->
-    <div class="tableOfContent">
-      <div class="tableOfContentLinks">
-        <a href="#section1" data-key="geomitesParagraph1Title" class="regular"></a>
-        <a href="#section2" data-key="geomitesParagraph2Title" class="regular"></a>
-        <a href="#section3" data-key="geomitesParagraph3Title" class="regular"></a>
-        <a href="#section4" data-key="geomitesParagraph4Title" class="regular"></a>
-        <a href="#section5" data-key="geomitesParagraph5Title" class="regular"></a>
-        <a href="#section6" data-key="geomitesParagraph6Title" class="regular"></a>
+      <!-- [navBar] -->
+      <div class="navBar">
+
+        <a href="index.html" alt="logoAlejandro" id="logoLink" viewBox="0 0 24 24" class="logo">
+
+          <img src="/assets/icons/navigation/favicon.webp" alt="logo">
+
+        </a>
+
+        <div class="frameFlexSmall">
+          <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
+              class="fa-brands fa-whatsapp iconMedium"></i></a>
+          <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon" target="_blank"><i
+              class="fa-brands fa-linkedin iconMedium"></i></a>
+          <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
+              class="fa-brands fa-github iconMedium"></i></a>
+          <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
+              class="fa-solid fa-envelope iconMedium"></i></a>
+        </div>
+
       </div>
-    </div>
+
+      <!-- [table of content] -->
+      <div class="tableOfContent">
+        <div class="tableOfContentLinks">
+          <a href="#section1" data-key="geomitesParagraph1Title" class="regular"></a>
+          <a href="#section2" data-key="geomitesParagraph2Title" class="regular"></a>
+          <a href="#section3" data-key="geomitesParagraph3Title" class="regular"></a>
+          <a href="#section4" data-key="geomitesParagraph4Title" class="regular"></a>
+          <a href="#section5" data-key="geomitesParagraph5Title" class="regular"></a>
+          <a href="#section6" data-key="geomitesParagraph6Title" class="regular"></a>
+        </div>
+      </div>
+
+    </header>
 
     <article class="mainSections">
 
       <!-- [hero] -->
-      <section class="projectHero">
+      <section id="section0" class="projectHero">
 
         <!-- [projectHeader] -->
         <div class="projectHeader">
@@ -98,16 +122,16 @@
       <!-- [introduction] -->
       <section id="section1" class="frameFlexColumnColossal">
 
-        <!-- [intro] -->
-        <div class="frameFlexColumnSmall">
-          <h2 data-key="geomitesParagraph1Title"></h2>
-          <p data-key="geomitesParagraph1Text" class="regular"></p>
-        </div>
 
         <!-- [the project] -->
         <div class="frameFlexColumnLarge">
 
           <!-- [intro] -->
+          <div class="frameFlexColumnSmall">
+            <h2 data-key="geomitesParagraph1Title"></h2>
+            <p data-key="geomitesParagraph1Text" class="regular"></p>
+          </div>
+
           <div class="frameFlexColumnSmall">
             <h4 data-key="geomitesSubParagraph1Title"></h4>
             <p data-key="geomitesSubParagraph1Text" class="regular"></p>
@@ -641,7 +665,7 @@
           </div>
 
           <div class="frameFlexColumnMedium">
-            <div class="gridAutoTwo">
+            <div class="gridAutoThree">
               <div class="frameFlexColumnTiny frameFlexColumnTinyCenter">
                 <div class="componentContainer">
                   <img src="assets/images/projects/geomites/components/componentGeomitesTable1.webp" alt="component">
@@ -819,7 +843,22 @@
     </button>
 
     <!-- [footer] -->
-    <footer id="footer" class="footer"></footer>
+    <footer class="footer">
+      <!-- [language] -->
+      <div class="frameFlexSmall switcherContainer" id="languageSwitcherContainer">
+        <input type="checkbox" id="languageSwitch">
+        <label for="languageSwitch" data-state="en" data-key="languageSwitch1" class="regular"></label>
+        <label for="languageSwitch" data-state="es" data-key="languageSwitch2" class="regular"></label>
+      </div>
+
+      <!-- [theme] -->
+      <div class="frameFlexSmall switcherContainer" id="themeSwitcherContainer">
+        <input type="checkbox" id="themeSwitch">
+        <label for="themeSwitch" data-state="light" data-key="themeSwitch1" class="regular"></label>
+        <label for="themeSwitch" data-state="dark" data-key="themeSwitch2" class="regular"></label>
+      </div>
+
+    </footer>
 
   </main>
 
