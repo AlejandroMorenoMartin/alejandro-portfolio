@@ -46,6 +46,15 @@
   width: 100%;
   align-items: center;
   justify-content: center;
+  height: 90dvh;
+  margin-top: -12rem;
+}
+
+@media (max-width: 1200px) {
+  .mainHero {   
+    height: 80dvh;
+    margin-top: -4rem;
+  }
 }
 
 .mainHeroTitle {
@@ -1615,26 +1624,23 @@ body.no-scroll {
 
 .tableOfContent {
   display: flex;
-  position: absolute;
-  top: 3.6rem;
   width: 100%;
   padding: 1rem;
   border-bottom: 0.25px solid var(--neutral-800);
   background: var(--neutral-1000);
-  margin: 0 auto;
   overflow: hidden;
   opacity: 0;
   transform: translateY(-100%);
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-  z-index: 9800; 
+  z-index: 9800;
 }
 
 .tableOfContentLinks {
   display: flex;
-  gap: 1rem;   
+  gap: 1rem;
   overflow-x: auto;
-  white-space: nowrap;  
-  scrollbar-width: none;  
+  white-space: nowrap;
+  scrollbar-width: none;
   position: relative;
 }
 
@@ -1654,7 +1660,7 @@ body.no-scroll {
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     overflow-x: auto;
-  }     
+  }
 }
 
 .tableOfContentLinks a {
@@ -1692,8 +1698,8 @@ footer {
 }
 
 @media (max-width: 1200px) {
-  footer {   
-    width: 100%;    
+  footer {
+    width: 100%;
   }
 }
 
