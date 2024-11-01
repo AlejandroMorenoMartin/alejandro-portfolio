@@ -32,9 +32,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Función para actualizar la hora
   function updateTime() {
-      const now = new Date();
-      const options = { hour: '2-digit', minute: '2-digit', hour12: true };
-      currentTimeElement.textContent = now.toLocaleString([], options); // Solo mostrar la hora
+    const now = new Date();
+    const options = { hour: '2-digit', minute: '2-digit', hour12: true };
+    currentTimeElement.textContent = now.toLocaleString([], options); // Solo mostrar la hora
   }
 
   // Actualizar la hora al cargar la página
@@ -133,37 +133,99 @@ function addAnimation() {
   });
 }
 
+/* SALTO A LA SECCIÓN */
 
-/* ANIMACIÓN HEADERS */
+document.querySelectorAll('.tableOfContent a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function(event) {
+      event.preventDefault();
 
-document.addEventListener("DOMContentLoaded", function() {
-  // Selecciona todas las etiquetas h2 y h4
-  const headings = document.querySelectorAll("h2, h4");
+      // Obtener el ID de la sección
+      const targetId = this.getAttribute("href").substring(1);
+      const targetElement = document.querySelector(`#${targetId} h2`);
 
-  // Función para verificar si el elemento está visible en el viewport
-  function isInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  }
+      if (targetElement) {
+          // Obtener la posición actual de la tabla de contenido y restar el offset
+          const tableOfContentOffset = document.querySelector('.tableOfContent').getBoundingClientRect().bottom;
+          const offset = 64; // 2rem es igual a 32px
 
-  // Función que maneja el scroll y aplica las clases cuando corresponda
-  function handleScroll() {
-    headings.forEach(heading => {
-      if (isInViewport(heading)) {
-        heading.classList.add("visible");
+          // Calcular la posición de destino en relación a la posición de .tableOfContent
+          const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - tableOfContentOffset - offset;
+
+          // Hacer scroll a la posición calculada
+          window.scrollTo({
+              top: targetPosition,
+              behavior: "smooth"
+          });
       }
-    });
-  }
-
-  // Escuchar el evento scroll
-  window.addEventListener("scroll", handleScroll);
-
-  // Llamar a la función de scroll una vez para verificar al cargar la página
-  handleScroll();
+  });
 });
+
+
+/* TABLE OF CONTENT */
+
+/* TABLE OF CONTENT */
+
+// Selecciona los enlaces dentro de TOCContent y las secciones del artículo
+const tocLinks = document.querySelectorAll('.tableOfContent a');
+const sections = document.querySelectorAll('section');
+const tocContainer = document.querySelector('.tableOfContentLinks');
+
+// Función para eliminar la clase active de todos los enlaces
+function removeActiveClasses() {
+  tocLinks.forEach(link => link.classList.remove('active'));
+}
+
+// Función para hacer scroll horizontal
+function scrollToActiveLink(activeLink) {
+  const linkRect = activeLink.getBoundingClientRect();
+  const tocRect = tocContainer.getBoundingClientRect();
+
+  // Calcula la posición del enlace activo dentro del contenedor TOC
+  const scrollLeft = linkRect.left - tocRect.left + tocContainer.scrollLeft;
+
+  // Desplaza el contenedor TOC horizontalmente para mantener el enlace activo visible
+  tocContainer.scrollTo({
+    left: scrollLeft,
+    behavior: 'smooth' // Opcional: para un desplazamiento suave
+  });
+}
+
+// Usa IntersectionObserver para observar cada sección
+const observer = new IntersectionObserver((entries) => {
+  let closestSection = null;
+  let minDistance = Number.POSITIVE_INFINITY;
+
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // Calcula la distancia desde la parte superior del viewport
+      const distanceFromTop = Math.abs(entry.boundingClientRect.top);
+
+      // Selecciona la sección más cercana a la parte superior
+      if (distanceFromTop < minDistance) {
+        minDistance = distanceFromTop;
+        closestSection = entry.target;
+      }
+    }
+  });
+
+  if (closestSection) {
+    // Elimina todas las clases active y añade solo a la sección más cercana
+    removeActiveClasses();
+    const activeLink = document.querySelector(`.tableOfContent a[href="#${closestSection.id}"]`);
+    if (activeLink) {
+      activeLink.classList.add('active');
+      scrollToActiveLink(activeLink); // Llama a la función para hacer scroll horizontal
+    }
+  }
+}, {
+  root: null,         // Observa en el viewport
+  threshold: 0.1      // Cuando el 10% de la sección esté visible
+});
+
+// Añade cada sección al observador
+sections.forEach(section => observer.observe(section));
+
+
+
+
 

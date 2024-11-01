@@ -21,13 +21,6 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding: 6rem;
-}
-
-@media (max-width: 1200px) {
-  html {
-    scroll-padding: 6rem;
-  }
 }
 
 /* Evitamos problemas con las imagenes */

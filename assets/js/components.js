@@ -1,51 +1,3 @@
-/* HEADER & FOOTER & TABLE OF CONTENT */
-
-// Variables para almacenar el estado del scroll anterior
-let previousScrollPosition = window.pageYOffset;
-const navBar = document.querySelector('.navBar');
-const footer = document.querySelector('.footer');
-const tableOfContent = document.querySelector('.tableOfContent'); // Verificamos si existe
-
-// Función para manejar el evento de scroll
-window.onscroll = function () {
-    let currentScrollPosition = window.pageYOffset;
-
-    if (previousScrollPosition > currentScrollPosition) {
-        // Si el usuario hace scroll hacia arriba
-        navBar.style.transform = "translateY(0)"; // Vuelve a la posición original
-        footer.style.transform = "translateY(0)"; // Vuelve a la posición original
-
-        // Si existe la tabla de contenido, también la movemos
-        if (tableOfContent) {
-            tableOfContent.style.transform = "translateY(0)";
-        }
-    } else {
-        // Si el usuario hace scroll hacia abajo
-        navBar.style.transform = "translateY(-68px)"; // Se desplaza hacia arriba
-        footer.style.transform = "translateY(58px)";  // Se desplaza hacia abajo
-
-        // Si existe la tabla de contenido, también la movemos
-        if (tableOfContent) {
-            tableOfContent.style.transform = "translateY(-68px)";
-        }
-    }
-
-    // Actualiza la posición anterior del scroll
-    previousScrollPosition = currentScrollPosition;
-};
-
-// Estilos CSS recomendados para la transición suave
-document.addEventListener("DOMContentLoaded", function () {
-    navBar.style.transition = "transform 0.6s ease";
-    footer.style.transition = "transform 0.6s ease";
-
-    // Si existe la tabla de contenido, le aplicamos la transición también
-    if (tableOfContent) {
-        tableOfContent.style.transition = "transform 0.6s ease";
-    }
-});
-
-
 /* ----- NAVBAR ----- */
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -65,7 +17,6 @@ function activateCurrentPage() {
         link.classList.toggle('activa', href.includes(currentPage));
     });
 }
-
 
 function initializeNavigation() {
     activateCurrentPage();
