@@ -1635,6 +1635,7 @@ body.no-scroll {
   overflow-x: auto;
   white-space: nowrap;  
   scrollbar-width: none;  
+  position: relative;
 }
 
 .tableOfContentLinks::-webkit-scrollbar {
