@@ -280,7 +280,7 @@
   "cardProjectToolstack": "Toolstack",
   
   "cardProjectPortfolioChallenge": "Create a personal portfolio from scratch using Figma for design and VS Code for development.",
-  "cardProjectPortfolioRol": "Product designer and web developer.",
+  "cardProjectPortfolioRol": "Product designer.",
   "cardProjectPortfolioCronology": "8 weeks.",
   "cardProjectPortfolioToolstack": "Figma, HTML5, CSS3, Javascript and ChatGPT.",
 
@@ -371,7 +371,7 @@
   "portfolioLearning4": "Web devlopment",
 
   "cardProjectSenzoStudioChallenge": "Capture the creative essence of a VFX agency in a functional website, balancing visual complexity with usability.",
-  "cardProjectSenzoStudioRol": "Designer and developer, in charge of UX/UI design and development.",
+  "cardProjectSenzoStudioRol": "Product designer.",
   "cardProjectSenzoStudioCronology": "6 weeks.",
   "cardProjectSenzoStudioToolstack": "Figma y Wordpress.",
 
@@ -770,7 +770,7 @@
   "atipikoToursLearning4": "Implementation",
 
   "cardProjectTattooParadiseChallenge": "Create an intuitive platform that connects users with artists and tattoo studios, facilitating the visualisation of styles and designs, and improving communication between both parties.",
-  "cardProjectTattooParadiseRol": "UX/UI designer.",
+  "cardProjectTattooParadiseRol": "Product designer.",
   "cardProjectTattooParadiseCronology": "12 weeks.",
   "cardProjectTattooParadiseToolstack": "Figma, Miro and Chat GPT.",
 
@@ -1024,5 +1024,11 @@
   "userStoryMapItemPedro22": "Get the brief info",
   "userStoryMapItemPedro23": "Get the brief info",
   "userStoryMapItemPedro24": "Get the brief info",
-  "userStoryMapItemPedro25": "Press on reel button"
+  "userStoryMapItemPedro25": "Press on reel button",
+
+  "tableLeyend1":"Excellent",
+  "tableLeyend2":"Acceptable",
+  "tableLeyend3":"Improvable",
+  "tableLeyend4":"Yes",
+  "tableLeyend5":"No"
 }

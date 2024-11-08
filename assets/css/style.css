@@ -53,7 +53,7 @@ caption {
   font-size: var(--fs-regular);
   line-height: var(--lh-regular);
   font-weight: 600;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.025rem;
   color: var(--white);
 }
 
@@ -61,7 +61,7 @@ caption {
   font-size: var(--fs-regular);
   line-height: var(--lh-regular);
   font-weight: 400;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.025rem;
   color: var(--neutral-300);
 }
 
@@ -73,7 +73,7 @@ caption {
   font-size: var(--fs-small);
   line-height: var(--lh-small);
   font-weight: 400;
-  letter-spacing: 0.125rem;
+  letter-spacing: 0.05rem;
   color: var(--neutral-500);
 }
 
@@ -83,9 +83,9 @@ b {
 
 .cardFont {
   font-size: .75rem;
-  line-height: 1rem;
+  line-height: .75rem;
   font-weight: 400;
-  letter-spacing: .1rem;
+  letter-spacing: 0.025rem;
   color: var(--neutral-500);
 }
 

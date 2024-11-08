@@ -283,7 +283,7 @@
   "cardProjectToolstack": "Herramientas",
   
   "cardProjectPortfolioChallenge": "Crea un portafolio personal desde cero utilizando Figma para el diseño y VS Code para el desarrollo.",
-  "cardProjectPortfolioRol": "Diseñador de producto y desarrollador web.",
+  "cardProjectPortfolioRol": "Diseñador de producto.",
   "cardProjectPortfolioCronology": "8 semanas.",
   "cardProjectPortfolioToolstack": "Figma, HTML5, CSS3, Javascript y ChatGPT.",
 
@@ -375,7 +375,7 @@
   "portfolioLearning4": "Desarrollo web",
 
   "cardProjectSenzoStudioChallenge": "Capturar la esencia creativa de una agencia de VFX en una web funcional, equilibrando complejidad visual con usabilidad.",
-  "cardProjectSenzoStudioRol": "Diseñador y desarrollador, encargado del diseño UX/UI y del desarrollo.",
+  "cardProjectSenzoStudioRol": "Diseñador de producto.",
   "cardProjectSenzoStudioCronology": "6 semanas.",
   "cardProjectSenzoStudioToolstack": "Figma y Wordpress.",
 
@@ -717,7 +717,7 @@
   "atipikoToursLearning4": "Implementación",
 
   "cardProjectTattooParadiseChallenge": "Crear una plataforma intuitiva que conecte a usuarios con artistas y estudios de tatuaje, facilitando la visualización de estilos y diseños, y mejorando la comunicación entre ambas partes.",
-  "cardProjectTattooParadiseRol": "Diseñador UX/UI.",
+  "cardProjectTattooParadiseRol": "Diseñador de producto.",
   "cardProjectTattooParadiseCronology": "12 semanas.",
   "cardProjectTattooParadiseToolstack": "Figma, Miro y Chat GPT.",
 
@@ -838,7 +838,7 @@
   "atipikoToursTOC6": "Aprendizajes",
 
   "cardProjectGeomitesChallenge": "Crear una experiencia de juego intuitiva, utilizable y deseable para nuestros jugadores.",
-  "cardProjectGeomitesRol": "Diseñador de prodcuto.",
+  "cardProjectGeomitesRol": "Diseñador de producto.",
   "cardProjectGeomitesCronology": "12 meses.",
   "cardProjectGeomitesToolstack": "Figma, Adobe Ilustrator, Adobe Photoshop, Azure DevOps, Miro y DALL-E.",
 
@@ -971,7 +971,13 @@
 "userStoryMapItemPedro22": "Obtener información breve",
 "userStoryMapItemPedro23": "Obtener información breve",
 "userStoryMapItemPedro24": "Obtener información breve",
-"userStoryMapItemPedro25": "Presionar en el botón de reel"
+"userStoryMapItemPedro25": "Presionar en el botón de reel",
+
+"tableLeyend1":"Excelente",
+"tableLeyend2":"Aceptable",
+"tableLeyend3":"Mejorable",
+"tableLeyend4":"Si",
+"tableLeyend5":"No"
 }
 
 
