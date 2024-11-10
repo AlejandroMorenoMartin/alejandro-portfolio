@@ -5,7 +5,7 @@
 .main {
   display: flex;
   flex-direction: column;
-  width: 1200px;
+  width: 100%;
   align-items: top;
   justify-content: center;
   gap: 8rem;
@@ -24,7 +24,7 @@
 .mainSections {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 1200px;
   align-items: top;
   gap: 24rem;
   margin-inline: auto;
@@ -34,6 +34,7 @@
   .mainSections {
     gap: 12rem;
     padding: 0 1rem;
+    width: 100%;
   }
 }
 
@@ -1162,7 +1163,7 @@ body.no-scroll {
 /* ----- CARDS ----- */
 
 .cardProject p,
-.cardTextIcon p,
+.cardSkill p,
 .cardTestimonial p,
 .cardExperience p,
 .cardEducation p,
@@ -1249,14 +1250,14 @@ body.no-scroll {
 
 /* ---------- */
 
-.cardTextIcon {
+.cardSkill {
   display: flex;
+  flex-direction: column;  
   padding: 1rem;
   background: var(--neutral-1000);
   border: 0.25px solid var(--neutral-800);
   border-radius: var(--br);
-  gap: 1rem;
-  align-items: center;
+  gap: 1rem;  
 }
 
 /* ---------- */
@@ -1590,7 +1591,7 @@ body.no-scroll {
   flex-direction: column;
   position: sticky;
   top: 0;
-  width: 1200px;
+  width: 100%;
   z-index: 9999;
 }
 
@@ -1618,7 +1619,10 @@ body.no-scroll {
 .tableOfContent {
   display: flex;
   width: 100%;
-  padding: .5rem 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: calc((100% - 1200px) / 2);
+  padding-right: calc((100% - 1200px) / 2);
   border-bottom: 0.25px solid var(--neutral-800);
   background: var(--neutral-1000);
   overflow: hidden;
@@ -1653,6 +1657,7 @@ body.no-scroll {
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     overflow-x: auto;
+    padding: 0.5rem 1rem;
   }
 }
 
@@ -1679,12 +1684,11 @@ body.no-scroll {
 footer {
   display: flex;
   flex-direction: row;
-  width: 1200px;
+  width: 100%;
   padding: .5rem 1rem;
   gap: 1rem;
   border-top: 0.25px solid var(--neutral-800);
-  background: var(--neutral-1000);
-  justify-content: space-between;
+  background: var(--neutral-1000);  
   position: fixed;
   bottom: 0;
   z-index: 999;
@@ -1693,6 +1697,7 @@ footer {
 @media (max-width: 1200px) {
   footer {
     width: 100%;
+    justify-content: space-between;
   }
 }
 
@@ -2161,12 +2166,6 @@ footer {
 
 .iconSmall {
   font-size: 20px;
-}
-
-@media (max-width: 1200px) {
-  .iconSmall {
-    font-size: 16px;
-  }
 }
 
 .iconTiny {

@@ -23,10 +23,12 @@
   "mainHeroButton2": "Contact",
 
   "indexSectionHeader1": "Projects",
-  "indexSectionHeader2": "Toolstack",
-  "indexSectionHeader3": "Skills",
-  "indexSectionHeader4": "Testimonial",
-  "indexSectionHeader5": "Readings", 
+  "indexSectionHeader2": "Resume",
+  "indexSectionHeader3": "Articles",
+  "indexSectionHeader4": "Skills",
+  "indexSectionHeader5": "Toolstack", 
+  "indexSectionHeader6": "Testimonial",
+  "indexSectionHeader7": "Readings",
 
   "indexSectionHeaderButton": "See more",
 
@@ -66,15 +68,24 @@
   "cardProjectPortfolioTitle": "Designing and coding my Portfolio.",
   "cardProjectPortfolioDescription": "Showcasing product design skills and custom development.",
 
-  "cardTextIcon1": "UX Research",
-  "cardTextIcon2": "UX Design",
-  "cardTextIcon3": "UI Design",
-  "cardTextIcon4": "Wireframing",
-  "cardTextIcon5": "Prototyping",
-  "cardTextIcon6": "Problem solving",
-  "cardTextIcon7": "Communication",
-  "cardTextIcon8": "Design systems",
-  "cardTextIcon9": "Usability",
+  "cardSkill1Title": "UX Research", 
+  "cardSkill1Description": "User needs analysis for strategic product decisions.",
+  "cardSkill2Title": "UX Design",
+  "cardSkill2Description": "Design efficient experiences aligned with business and user goals.",
+  "cardSkill3Title": "UI Design",
+  "cardSkill3Description": "Develop intuitive visual interfaces that enhance interaction.",
+  "cardSkill4Title": "Wireframing",
+  "cardSkill4Description": "Organize content and functionality for optimized flows.",
+  "cardSkill5Title": "Prototyping",
+  "cardSkill5Description": "Create interactive prototypes for early testing and validation.",
+  "cardSkill6Title": "Problem solving",
+  "cardSkill6Description": "Implement creative solutions for complex design challenges.",
+  "cardSkill7Title": "Communication",
+  "cardSkill7Description": "Facilitate alignment across teams and key stakeholders.",
+  "cardSkill8Title": "Design systems",
+  "cardSkill8Description": "Standardize components for visual consistency and scalability.",
+  "cardSkill9Title": "Usability test",
+  "cardSkill9Description": "User experience validation for continuous optimization.",  
 
   "cardTestimonial1Position": "Director of product design at Rappi",
   "cardTestimonial1Description": "“Alejandro has a self-taught and hard-working profile that makes him a real asset to any design team”.",
@@ -1030,5 +1041,9 @@
   "tableLeyend2":"Acceptable",
   "tableLeyend3":"Improvable",
   "tableLeyend4":"Yes",
-  "tableLeyend5":"No"
+  "tableLeyend5":"No",
+
+  "cardArticle1Name":"User interviews",
+  "cardArticle1Description":"Practical guide for conducting user interviews in product design.",
+  "cardArticleLink":"Read on medium"
 }

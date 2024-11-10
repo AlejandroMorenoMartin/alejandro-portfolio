@@ -24,10 +24,12 @@
   "mainHeroButton2": "Contacto",
 
   "indexSectionHeader1": "Proyectos",
-  "indexSectionHeader2": "Herramientas",
-  "indexSectionHeader3": "Habilidades",
-  "indexSectionHeader4": "Testimonios",
-  "indexSectionHeader5": "Lecturas",  
+  "indexSectionHeader2": "Currículum",
+  "indexSectionHeader3": "Artículos",
+  "indexSectionHeader4": "Habilidades",
+  "indexSectionHeader5": "Herramientas", 
+  "indexSectionHeader6": "Testimonios",
+  "indexSectionHeader7": "Lecturas",  
 
   "indexSectionHeaderButton": "Ver más",
 
@@ -69,15 +71,24 @@
   "cardProjectPortfolioTitle": "Diseñando y codificando mi perfil.",
   "cardProjectPortfolioDescription": "Mostrando las capacidades de diseño y desarrollo a medida.",
 
-  "cardTextIcon1": "Investigación UX",
-  "cardTextIcon2": "Diseño UX",
-  "cardTextIcon3": "Diseño UI",
-  "cardTextIcon4": "Esquematización",
-  "cardTextIcon5": "Prototipado",
-  "cardTextIcon6": "Resolutivo",
-  "cardTextIcon7": "Comunicación",
-  "cardTextIcon8": "Sistemas de diseño",
-  "cardTextIcon9": "Usabilidad",
+  "cardSkill1Title": "Investigación UX",
+  "cardSkill1Description": "Análisis de necesidades del usuario para decisiones estratégicas de producto.",
+  "cardSkill2Title": "Diseño UX",
+  "cardSkill2Description": "Definición de experiencias eficientes alineadas con objetivos de negocio y usuario.",
+  "cardSkill3Title": "Diseño UI",
+  "cardSkill3Description": "Desarrollo de interfaces visuales intuitivas que potencian la interacción.",
+  "cardSkill4Title": "Esquematización",
+  "cardSkill4Description": "Organización de contenidos y funcionalidades para flujos optimizados.",
+  "cardSkill5Title": "Prototipado",
+  "cardSkill5Description": "Creación de prototipos interactivos para pruebas y validación temprana.",
+  "cardSkill6Title": "Resolutivo",
+  "cardSkill6Description": "Implementación de soluciones creativas para retos de diseño complejos.",
+  "cardSkill7Title": "Comunicación",
+  "cardSkill7Description": "Facilita la alineación entre equipos y stakeholders clave.",
+  "cardSkill8Title": "Sistema de diseño",
+  "cardSkill8Description": "Estandarización de componentes para coherencia visual y escalabilidad.",
+  "cardSkill9Title": "Pruebas de usabilidad",
+  "cardSkill9Description": "Validación de experiencia de usuario para optimización continua.", 
   
   "cardTestimonial1Position": "Director de diseño de producto en Rappi",
   "cardTestimonial1Description": "“Alejandro tiene un perfil autodidacta y trabajador que le convierte en un verdadero activo para cualquier equipo de diseño”.",
@@ -977,7 +988,11 @@
 "tableLeyend2":"Aceptable",
 "tableLeyend3":"Mejorable",
 "tableLeyend4":"Si",
-"tableLeyend5":"No"
+"tableLeyend5":"No",
+
+"cardArticle1Name":"Entrevistas de usuarios",
+"cardArticle1Description":"Guía práctica para realizar entrevistas a usuarios en el diseño de productos.",
+"cardArticleLink":"Leer en Medium"
 }
 
 
