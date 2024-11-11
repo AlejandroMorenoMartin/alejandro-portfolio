@@ -654,11 +654,6 @@ tr {
 }
 
 @media (max-width: 1200px) {
-  .tableCircle {
-    width: 8px;
-    height: 8px;
-  }
-
   th {
     display: none;
   }
@@ -1213,6 +1208,7 @@ body.no-scroll {
   right: 1rem;
   color: var(--neutral-300);
   transition: 0.3s all ease-in-out;
+  rotate: -45deg;
 }
 
 .cardProject:hover i,
@@ -1342,6 +1338,18 @@ body.no-scroll {
   padding: 0.5rem;
   border: 2px dashed var(--neutral-600);
   border-radius: var(--br);
+}
+
+/* ---------- */
+
+.cardLearning {
+  display: flex;   
+  padding: 1rem;
+  background: var(--neutral-1000);
+  border: 0.25px solid var(--neutral-800);
+  border-radius: var(--br);
+  gap: 1rem;
+  align-items: center;
 }
 
 /* ---------- */
