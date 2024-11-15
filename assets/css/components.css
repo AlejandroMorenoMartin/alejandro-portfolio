@@ -42,7 +42,7 @@
 
 .mainHero {
   display: flex;
-  gap: 1rem;
+  gap: 4rem;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -928,7 +928,12 @@ tr {
 
 .buttonTabComponent.active {
   border-radius: 0px;
-  border-bottom: 1px solid var(--neutral-300);
+  border-bottom: 2px solid var(--white);
+}
+
+.buttonTabComponent.active p {
+  font-weight: bold;
+  color: var(--white);
 }
 
 /* ---------- */
