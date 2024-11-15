@@ -160,7 +160,26 @@ document.querySelectorAll('.tableOfContent a[href^="#"]').forEach(anchor => {
   });
 });
 
+document.getElementById('buttonHero').addEventListener('click', function (e) {
+  e.preventDefault(); // Evita el comportamiento predeterminado del enlace
 
+  // Obtén el destino
+  const targetId = this.getAttribute('href').substring(1); // Elimina el "#"
+  const targetElement = document.getElementById(targetId);
+
+  if (targetElement) {
+      // Calcula la posición con un offset de 64px
+      const offset = 168; // Distancia fija en píxeles
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      // Realiza el desplazamiento con animación
+      window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth',
+      });
+  }
+});
 
 
 

@@ -51,7 +51,7 @@
 
 @media (max-width: 1200px) {
   .mainHero {
-    height: 70dvh;
+    height: 80dvh;
     margin-top: -4rem;
   }
 }
@@ -837,6 +837,7 @@ tr {
 
 .buttonPrimary p {
   color: var(--primary-1000);
+  font-weight: bold;
 }
 
 .buttonPrimary:hover {
