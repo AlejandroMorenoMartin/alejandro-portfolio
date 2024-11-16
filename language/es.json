@@ -990,9 +990,13 @@
 "tableLeyend4":"Si",
 "tableLeyend5":"No",
 
+"cardArticleLink":"Leer en Medium",
+
 "cardArticle1Name":"Entrevistas de usuarios",
 "cardArticle1Description":"Guía práctica para realizar entrevistas a usuarios en el diseño de productos.",
-"cardArticleLink":"Leer en Medium",
+
+"cardArticle2Name":"Entrevistas con stakeholders",
+"cardArticle2Description":"Uniendo estrategia y diseño.",
 
 "buttonHero":"Ver proyectos"
 }
