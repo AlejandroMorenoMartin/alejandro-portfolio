@@ -1,8 +1,13 @@
 {
-  "languageSwitch1": "English",
-  "languageSwitch2": "Spanish",
-  "themeSwitch1": "Light",
-  "themeSwitch2": "Dark",
+  "languageTitle": "Language",
+  "languageEnglishText": "English",
+  "languageSpanishText": "Spanish",
+
+  "themeTitle": "Theme",
+  "themeDarkText": "Dark",
+  "themeLightText": "Light",
+  
+  "copyright": "2024. No rights reserved.",
 
   "languageContainerText": "Language",
   "themeContainerText": "Theme",

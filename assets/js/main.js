@@ -1,28 +1,29 @@
 /* ----- TABCONTAINER ----- */
 
-document.addEventListener('DOMContentLoaded', function () {
-  const experienceContainer = document.getElementById('experienceContainer');
-  const educationContainer = document.getElementById('educationContainer');
+document.addEventListener("DOMContentLoaded", () => {
+  const experienceButton = document.getElementById("experienceButton");
+  const educationButton = document.getElementById("educationButton");
+  const experienceSection = document.getElementById("experienceSection");
+  const educationSection = document.getElementById("educationSection");
 
-  document.querySelectorAll('.buttonTabComponent').forEach(tab => {
-    tab.addEventListener('click', function () {
-      // Remover la clase 'active' de todos los elementos
-      document.querySelectorAll('.buttonTabComponent').forEach(tab => tab.classList.remove('active'));
+  function toggleSections(activeButton) {
+    if (activeButton === "experience") {
+      experienceSection.classList.remove("hidden");
+      educationSection.classList.add("hidden");
+      experienceButton.classList.add("active");
+      educationButton.classList.remove("active");
+    } else if (activeButton === "education") {
+      educationSection.classList.remove("hidden");
+      experienceSection.classList.add("hidden");
+      educationButton.classList.add("active");
+      experienceButton.classList.remove("active");
+    }
+  }
 
-      // Agregar la clase 'active' al elemento clicado
-      this.classList.add('active');
-
-      // Mostrar y ocultar contenedores según el botón activo
-      if (this.id === 'buttonTab1') {
-        experienceContainer.classList.remove('hidden');
-        educationContainer.classList.add('hidden');
-      } else if (this.id === 'buttonTab2') {
-        experienceContainer.classList.add('hidden');
-        educationContainer.classList.remove('hidden');
-      }
-    });
-  });
+  experienceButton.addEventListener("click", () => toggleSections("experience"));
+  educationButton.addEventListener("click", () => toggleSections("education"));
 });
+
 
 /* ----- GREETINGS ----- */
 
@@ -102,7 +103,6 @@ document.addEventListener('DOMContentLoaded', () => {
     updateProgress();
   }
 });
-
 
 /* ----- SCROLLER ----- */
 

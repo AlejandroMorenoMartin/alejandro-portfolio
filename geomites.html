@@ -67,12 +67,12 @@
       <!-- [table of content] -->
       <div class="tableOfContent">
         <div class="tableOfContentLinks">
-          <a href="#section1" data-key="geomitesParagraph1Title" class="regular"></a>
-          <a href="#section2" data-key="geomitesParagraph2Title" class="regular"></a>
-          <a href="#section3" data-key="geomitesParagraph3Title" class="regular"></a>
-          <a href="#section4" data-key="geomitesParagraph4Title" class="regular"></a>
-          <a href="#section5" data-key="geomitesParagraph5Title" class="regular"></a>
-          <a href="#section6" data-key="geomitesParagraph6Title" class="regular"></a>
+          <a href="#section1" data-key="geomitesParagraph1Title" class="small"></a>
+          <a href="#section2" data-key="geomitesParagraph2Title" class="small"></a>
+          <a href="#section3" data-key="geomitesParagraph3Title" class="small"></a>
+          <a href="#section4" data-key="geomitesParagraph4Title" class="small"></a>
+          <a href="#section5" data-key="geomitesParagraph5Title" class="small"></a>
+          <a href="#section6" data-key="geomitesParagraph6Title" class="small"></a>
         </div>
       </div>
 
@@ -885,22 +885,80 @@
     </button>
 
     <!-- [footer] -->
-    <footer class="footer">
-      <!-- [language] -->
-      <div class="frameFlexSmall switcherContainer" id="languageSwitcherContainer">
-        <input type="checkbox" id="languageSwitch">
-        <label for="languageSwitch" data-state="en" data-key="languageSwitch1" class="regular"></label>
-        <label for="languageSwitch" data-state="es" data-key="languageSwitch2" class="regular"></label>
-      </div>
+    <footer>
 
-      <!-- [theme] -->
-      <div class="frameFlexSmall switcherContainer" id="themeSwitcherContainer">
-        <input type="checkbox" id="themeSwitch">
-        <label for="themeSwitch" data-state="light" data-key="themeSwitch1" class="regular"></label>
-        <label for="themeSwitch" data-state="dark" data-key="themeSwitch2" class="regular"></label>
+      <button class="footerButton">
+        <input type="checkbox" id="footerButtonId">
+        <i class="fa-solid fa-chevron-up iconMedium"></i>
+      </button>
+
+      <div class="footerMobile">
+        
+        <!-- [tabs] -->
+        <div class="footerElementOne">
+
+          <!-- [language] -->
+          <div class="tabContainer">
+            <input type="checkbox" id="languageSwitch">
+            <label for="languageSwitch" class="tabContainerElement">
+              <i class="fa-solid fa-language"></i>
+              <div class="tabContainerElementInfo">
+                <p class="small-bold" data-key="languageTitle"></p>
+                <p class="small" data-key="languageEnglishText"></p>
+              </div>
+            </label>
+
+            <label for="languageSwitch" class="tabContainerElement">
+              <i class="fa-solid fa-language"></i>
+              <div class="tabContainerElementInfo">
+                <p class="small-bold" data-key="languageTitle"></p>
+                <p class="small" data-key="languageSpanishText"></p>
+              </div>
+            </label>
+
+            <div id="languageSlider" class="tabContainerSlide"></div>
+
+          </div>
+
+          <!-- [theme] -->
+          <div class="tabContainer">
+            <input type="checkbox" id="themeSwitch">
+            <label for="themeSwitch" class="tabContainerElement">
+              <i class="fa-solid fa-circle-half-stroke"></i>
+              <div class="tabContainerElementInfo">
+                <p class="small-bold" data-key="themeTitle"></p>
+                <p class="small" data-key="themeDarkText"></p>
+              </div>
+            </label>
+
+            <label for="themeSwitch" class="tabContainerElement">
+              <i class="fa-solid fa-circle-half-stroke"></i>
+              <div class="tabContainerElementInfo">
+                <p class="small-bold" data-key="themeTitle"></p>
+                <p class="small" data-key="themeLightText"></p>
+              </div>
+            </label>
+
+            <div id="themeSlider" class="tabContainerSlide"></div>
+
+          </div>
+
+        </div>
+
+        <!-- [copyright] -->
+        <div class="footerElementTwo">
+          <a href="index.html" class="link">
+            <p class="small-bold">alejandromorenomartin1990.com</p>
+          </a>
+          <div class="frameFlexSmall">
+            <i class="fa-regular fa-copyright iconTiny"></i>
+            <p class="small" data-key="copyright"></p>
+          </div>
+        </div>
       </div>
 
     </footer>
+
 
   </main>
 

@@ -67,13 +67,13 @@
       <!-- [table of content] -->
       <div class="tableOfContent">
         <div class="tableOfContentLinks">
-          <a href="#section1" data-key="indexSectionHeader1" class="regular"></a>
-          <a href="#section2" data-key="indexSectionHeader2" class="regular"></a>
-          <a href="#section3" data-key="indexSectionHeader3" class="regular"></a>
-          <a href="#section4" data-key="indexSectionHeader4" class="regular"></a>
-          <a href="#section5" data-key="indexSectionHeader5" class="regular"></a>
-          <a href="#section6" data-key="indexSectionHeader6" class="regular"></a>
-          <a href="#section7" data-key="indexSectionHeader7" class="regular"></a>
+          <a href="#section1" data-key="indexSectionHeader1" class="small"></a>
+          <a href="#section2" data-key="indexSectionHeader2" class="small"></a>
+          <a href="#section3" data-key="indexSectionHeader3" class="small"></a>
+          <a href="#section4" data-key="indexSectionHeader4" class="small"></a>
+          <a href="#section5" data-key="indexSectionHeader5" class="small"></a>
+          <a href="#section6" data-key="indexSectionHeader6" class="small"></a>
+          <a href="#section7" data-key="indexSectionHeader7" class="small"></a>
         </div>
       </div>
 
@@ -193,16 +193,12 @@
         <h2 data-key="resumeHeader"></h2>
 
         <div class="buttonTab">
-          <div class="buttonTabComponent active" id="buttonTab1">
-            <p data-key="buttonTab1" class="regular"></p>
-          </div>
-          <div class="buttonTabComponent " id="buttonTab2">
-            <p data-key="buttonTab2" class="regular"></p>
-          </div>
+          <button class="buttonTabComponent active" id="experienceButton"><p data-key="buttonTab1"></p></button>
+          <button class="buttonTabComponent" id="educationButton"><p data-key="buttonTab2"></p></button>
         </div>
 
         <!-- [experience] -->
-        <div class="frameFlexColumnMedium" id="experienceContainer">
+        <div class="frameFlexColumnMedium" id="experienceSection">
 
           <div class="cardExperience">
             <img class="imageExtraLarge" src="assets/icons/experience/geomites.webp" alt="cardExperienceImage">
@@ -304,11 +300,11 @@
         </div>
 
         <!-- [education] -->
-        <div class="gridThreeOverFlow hidden" id="educationContainer">
+        <div class="gridThreeOverFlow hidden" id="educationSection">
 
           <a class="cardEducation" href="assets/documents/userExperienceTheBeginnersGuide.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/idf.webp" alt="cardEducationImage">
-            <div class="frameFlexColumnTiny">
+            <div class="frameFlexColumnSmall">
               <p data-key="cardEducation13Title" class="large"></p>
               <span class="link" onclick="window.open('https://www.interaction-design.org/', '_blank')">
                 <p class="regular">Interaction Design Foundation (IDF)</p>
@@ -321,7 +317,7 @@
 
           <a class="cardEducation" href="assets/documents/UIDesignPaternsForSuccesfullSoftware.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/idf.webp" alt="cardEducationImage">
-            <div class="frameFlexColumnTiny">
+            <div class="frameFlexColumnSmall">
               <p data-key="cardEducation1Title" class="large"></p>
               <span class="link" onclick="window.open('https://www.interaction-design.org/', '_blank')">
                 <p class="regular">Interaction Design Foundation (IDF)</p>
@@ -334,7 +330,7 @@
 
           <a class="cardEducation" href="assets/documents/visualDesign.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/idf.webp" alt="cardEducationImage">
-            <div class="frameFlexColumnTiny">
+            <div class="frameFlexColumnSmall">
               <p data-key="cardEducation2Title" class="large"></p>
               <span class="link" onclick="window.open('https://www.interaction-design.org/', '_blank')">
                 <p class="regular">Interaction Design Foundation (IDF)</p>
@@ -347,7 +343,7 @@
 
           <a class="cardEducation" href="assets/documents/emotionalDesign.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/idf.webp" alt="cardEducationImage">
-            <div class="frameFlexColumnTiny">
+            <div class="frameFlexColumnSmall">
               <p data-key="cardEducation3Title" class="large"></p>
               <span class="link" onclick="window.open('https://www.interaction-design.org/', '_blank')">
                 <p class="regular">Interaction Design Foundation (IDF)</p>
@@ -360,7 +356,7 @@
 
           <a class="cardEducation" href="assets/documents/informationVisualization.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/idf.webp" alt="cardEducationImage">
-            <div class="frameFlexColumnTiny">
+            <div class="frameFlexColumnSmall">
               <p data-key="cardEducation4Title" class="large"></p>
               <span class="link" onclick="window.open('https://www.interaction-design.org/', '_blank')">
                 <p class="regular">Interaction Design Foundation (IDF)</p>
@@ -373,7 +369,7 @@
 
           <a class="cardEducation" href="assets/documents/designForThe21stCentury.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/idf.webp" alt="cardEducationImage">
-            <div class="frameFlexColumnTiny">
+            <div class="frameFlexColumnSmall">
               <p data-key="cardEducation5Title" class="large"></p>
               <span class="link" onclick="window.open('https://www.interaction-design.org/', '_blank')">
                 <p class="regular">Interaction Design Foundation (IDF)</p>
@@ -386,7 +382,7 @@
 
           <a class="cardEducation" href="assets/documents/humanComputerInteraction.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/idf.webp" alt="cardEducationImage">
-            <div class="frameFlexColumnTiny">
+            <div class="frameFlexColumnSmall">
               <p data-key="cardEducation6Title" class="large"></p>
               <span class="link" onclick="window.open('https://www.interaction-design.org/', '_blank')">
                 <p class="regular">Interaction Design Foundation (IDF)</p>
@@ -399,7 +395,7 @@
 
           <a class="cardEducation" href="assets/documents/mobileUserExperience.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/idf.webp" alt="cardEducationImage">
-            <div class="frameFlexColumnTiny">
+            <div class="frameFlexColumnSmall">
               <p data-key="cardEducation7Title" class="large"></p>
               <span class="link" onclick="window.open('https://www.interaction-design.org/', '_blank')">
                 <p class="regular">Interaction Design Foundation (IDF)</p>
@@ -412,7 +408,7 @@
 
           <a class="cardEducation" href="assets/documents/gestaltPshychologyAndWebDesign.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/idf.webp" alt="cardEducationImage">
-            <div class="frameFlexColumnTiny">
+            <div class="frameFlexColumnSmall">
               <p data-key="cardEducation8Title" class="large"></p>
               <span class="link" onclick="window.open('https://www.interaction-design.org/', '_blank')">
                 <p class="regular">Interaction Design Foundation (IDF)</p>
@@ -425,7 +421,7 @@
 
           <a class="cardEducation" href="assets/documents/userResearch.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/idf.webp" alt="cardEducationImage">
-            <div class="frameFlexColumnTiny">
+            <div class="frameFlexColumnSmall">
               <p data-key="cardEducation9Title" class="large"></p>
               <span class="link" onclick="window.open('https://www.interaction-design.org/', '_blank')">
                 <p class="regular">Interaction Design Foundation (IDF)</p>
@@ -438,7 +434,7 @@
 
           <a class="cardEducation" href="assets/documents/UXFoundations.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/google.webp" alt="cardEducationImage">
-            <div class="frameFlexColumnTiny">
+            <div class="frameFlexColumnSmall">
               <p data-key="cardEducation10Title" class="large"></p>
               <span class="link" onclick="window.open('https://www.coursera.org/', '_blank')">
                 <p class="regular">Coursera</p>
@@ -451,7 +447,7 @@
 
           <a class="cardEducation" href="assets/documents/marketing.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/urjc.webp" alt="cardEducationImage">
-            <div class="frameFlexColumnTiny">
+            <div class="frameFlexColumnSmall">
               <p data-key="cardEducation12Title" class="large"></p>
               <span class="link" onclick="window.open('https://www.urjc.es/', '_blank')">
                 <p class="regular">Universidad Rey Juan Carlos</p>
@@ -865,19 +861,76 @@
     <div id="contactFormContainer"></div>
 
     <!-- [footer] -->
-    <footer class="footer">
-      <!-- [language] -->
-      <div class="frameFlexSmall switcherContainer" id="languageSwitcherContainer">
-        <input type="checkbox" id="languageSwitch">
-        <label for="languageSwitch" data-state="en" data-key="languageSwitch1" class="regular"></label>
-        <label for="languageSwitch" data-state="es" data-key="languageSwitch2" class="regular"></label>
-      </div>
+    <footer>
 
-      <!-- [theme] -->
-      <div class="frameFlexSmall switcherContainer" id="themeSwitcherContainer">
-        <input type="checkbox" id="themeSwitch">
-        <label for="themeSwitch" data-state="light" data-key="themeSwitch1" class="regular"></label>
-        <label for="themeSwitch" data-state="dark" data-key="themeSwitch2" class="regular"></label>
+      <button class="footerButton">
+        <input type="checkbox" id="footerButtonId">
+        <i class="fa-solid fa-chevron-up iconMedium"></i>
+      </button>
+
+      <div class="footerMobile">
+        
+        <!-- [tabs] -->
+        <div class="footerElementOne">
+
+          <!-- [language] -->
+          <div class="tabContainer">
+            <input type="checkbox" id="languageSwitch">
+            <label for="languageSwitch" class="tabContainerElement">
+              <i class="fa-solid fa-language"></i>
+              <div class="tabContainerElementInfo">
+                <p class="small-bold" data-key="languageTitle"></p>
+                <p class="small" data-key="languageEnglishText"></p>
+              </div>
+            </label>
+
+            <label for="languageSwitch" class="tabContainerElement">
+              <i class="fa-solid fa-language"></i>
+              <div class="tabContainerElementInfo">
+                <p class="small-bold" data-key="languageTitle"></p>
+                <p class="small" data-key="languageSpanishText"></p>
+              </div>
+            </label>
+
+            <div id="languageSlider" class="tabContainerSlide"></div>
+
+          </div>
+
+          <!-- [theme] -->
+          <div class="tabContainer">
+            <input type="checkbox" id="themeSwitch">
+            <label for="themeSwitch" class="tabContainerElement">
+              <i class="fa-solid fa-circle-half-stroke"></i>
+              <div class="tabContainerElementInfo">
+                <p class="small-bold" data-key="themeTitle"></p>
+                <p class="small" data-key="themeDarkText"></p>
+              </div>
+            </label>
+
+            <label for="themeSwitch" class="tabContainerElement">
+              <i class="fa-solid fa-circle-half-stroke"></i>
+              <div class="tabContainerElementInfo">
+                <p class="small-bold" data-key="themeTitle"></p>
+                <p class="small" data-key="themeLightText"></p>
+              </div>
+            </label>
+
+            <div id="themeSlider" class="tabContainerSlide"></div>
+
+          </div>
+
+        </div>
+
+        <!-- [copyright] -->
+        <div class="footerElementTwo">
+          <a href="index.html" class="link">
+            <p class="small-bold">alejandromorenomartin1990.com</p>
+          </a>
+          <div class="frameFlexSmall">
+            <i class="fa-regular fa-copyright iconTiny"></i>
+            <p class="small" data-key="copyright"></p>
+          </div>
+        </div>
       </div>
 
     </footer>

@@ -69,6 +69,14 @@ caption {
   color: var(--red-500);
 }
 
+.small-bold {
+  font-size: var(--fs-small);
+  line-height: var(--lh-small);
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  color: var(--neutral-300);
+}
+
 .small {
   font-size: var(--fs-small);
   line-height: var(--lh-small);

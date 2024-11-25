@@ -339,8 +339,11 @@
 /* ---------- */
 
 .hidden {
-  display: none;
+  display: none !important;
+  /* Asegura que se oculte correctamente sin interferir con los estilos */
 }
+
+/* ---------- */
 
 .visible {
   display: block;
@@ -694,34 +697,6 @@ tr {
   background-color: var(--red-500);
 }
 
-/* ----- BUTTONS ----- */
-
-.switcherContainer {
-  position: relative;
-  display: flex;
-  border-radius: var(--br);
-  width: fit-content;
-}
-
-.switcherContainer input {
-  display: none;
-}
-
-.switcherContainer label {
-  display: block;
-  padding: 0.25rem 0.5rem;
-  border-radius: var(--br);
-  cursor: pointer;
-}
-
-.switcherContainer label:hover {
-  background: var(--neutral-950);
-}
-
-.switcherContainer label.active {
-  border: 0.25px solid var(--neutral-800);
-}
-
 /* ---------- */
 
 .mobileNavToggle {
@@ -773,7 +748,7 @@ tr {
   z-index: 50;
   padding: 0;
   right: 1rem;
-  bottom: 4rem;
+  bottom: 5rem;
   opacity: 1;
   visibility: visible;
   height: 48px;
@@ -786,6 +761,12 @@ tr {
   transition: all 0.3s ease;
   background-color: var(--neutral-1000);
   z-index: 9999;
+}
+
+@media (max-width: 1200px) {
+  .scroll-top {    
+    bottom: 1.5rem;    
+  }
 }
 
 .scroll-top:hover {
@@ -920,7 +901,7 @@ tr {
   display: block;
   padding: 0.5rem;
   border-radius: var(--br);
-  cursor: pointer;
+  cursor: pointer; 
 }
 
 .buttonTabComponent:hover {
@@ -935,6 +916,57 @@ tr {
 .buttonTabComponent.active p {
   font-weight: bold;
   color: var(--white);
+}
+
+/* ---------- */
+
+.tabContainer {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: .5rem 2rem;
+  border-radius: 100px;
+  background: var(--neutral-950);
+  position: relative;
+}
+
+.tabContainer input {
+  display: none;
+}
+
+.tabContainerElement {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+  z-index: 999;
+  width: 7rem;
+}
+
+.tabContainerElement i {
+  color: var(--neutral-300);
+}
+
+.tabContainerElement p {
+  line-height: 1rem;
+}
+
+.tabContainerElementInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabContainerSlide {
+  background: var(--neutral-1000);
+  width: 50%;
+  height: 80%;
+  border-radius: 100px;
+  position: absolute;
+  left: 1%;
+  top: 10%;
+  transition: left 0.3s ease;
+  box-shadow: 1px -1px 4px rgba(var(--white), 0.25), -1px 1px 4px rgba(var(--white), 0.25);
+
 }
 
 /* ---------- */
@@ -962,11 +994,13 @@ tr {
 /* ---------- */
 
 .link p {
-  color: var(--primary-500);
+  font-weight: bold;
+  color: var(--neutral-300);
 }
 
 .link:hover p {
-  color: var(--primary-300);
+  color: var(--white);
+  text-decoration: underline;
 }
 
 p[data-key="experienceCardTechnologiesTitle"],
@@ -980,16 +1014,6 @@ p[data-key="experienceCard3SkillsText"],
 p[data-key="experienceCard4TechnologiesText"],
 p[data-key="experienceCard4SkillsText"] {
   display: inline;
-}
-
-
-.link:hover,
-.link:focus {
-  background-size: 100% 1px;
-}
-
-span.link {
-  color: var(--primary-500);
 }
 
 /* ----- BUTTONIMAGE ----- */
@@ -1017,7 +1041,6 @@ span.link {
 }
 
 @media (max-width: 1200px) {
-
   .buttonImage {
     display: none;
   }
@@ -1254,12 +1277,12 @@ body.no-scroll {
 
 .cardSkill {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   padding: 1rem;
   background: var(--neutral-1000);
   border: 0.25px solid var(--neutral-800);
   border-radius: var(--br);
-  gap: 1rem;  
+  gap: 1rem;
 }
 
 /* ---------- */
@@ -1349,7 +1372,7 @@ body.no-scroll {
 /* ---------- */
 
 .cardLearning {
-  display: flex;   
+  display: flex;
   padding: 1rem;
   background: var(--neutral-1000);
   border: 0.25px solid var(--neutral-800);
@@ -1685,6 +1708,7 @@ body.no-scroll {
 
 .tableOfContent a:hover {
   background: var(--neutral-950);
+  color: var(--primary-500);
 }
 
 .tableOfContent a.active {
@@ -1697,21 +1721,81 @@ body.no-scroll {
 
 footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
-  padding: .5rem 1rem;
-  gap: 1rem;
-  border-top: 0.25px solid var(--neutral-800);
-  background: var(--neutral-1000);  
+  z-index: 999;
   position: fixed;
   bottom: 0;
-  z-index: 999;
+  left: 0;
+}
+
+.footerMobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 0.25px solid var(--neutral-800);
+  padding: .5rem 1rem;
+  background: var(--neutral-1000);
+}
+
+.footerButton {
+  z-index: 1000;
+  width: 32px;
+  height: 32px;
+  background: var(--neutral-1000);
+  border: 0.25px solid var(--neutral-800);
+  border-radius: 4px 4px 0px 0px;
+  align-self: center;
+  display: none;
+}
+
+#footerButtonId {
+  opacity: 0;
+  position: absolute;
+  z-index: 9999;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+footer .footerButton i {
+  transition: transform 0.3s ease-in-out;
+}
+
+#footerButtonId:checked+i {
+  transform: rotate(180deg);
+}
+
+.footerElementOne {
+  display: flex;
+  gap: 1rem;
+  transition: bottom 0.3s ease-in-out;
+}
+
+.footerElementTwo {
+  display: flex;
+  flex-direction: column;
+  transition: bottom 0.3s ease-in-out;
+}
+
+.footerElementTwo i {
+  color: var(--neutral-500);
 }
 
 @media (max-width: 1200px) {
-  footer {
-    width: 100%;
-    justify-content: space-between;
+  .footerMobile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .footerButton {
+    display: block;
+  }
+
+  .footerElementOne {
+    flex-direction: column;
   }
 }
 
@@ -2039,9 +2123,10 @@ footer {
 }
 
 @media (max-width: 1200px) {
+
   .cardUserSpecial,
-  .cardUser {    
-    padding: 0.25rem;    
+  .cardUser {
+    padding: 0.25rem;
   }
 }
 

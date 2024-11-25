@@ -1,11 +1,13 @@
 {  
-  "languageSwitch1": "Inglés",
-  "languageSwitch2": "Español",
-  "themeSwitch1": "Claro",
-  "themeSwitch2": "Oscuro",
+  "languageTitle": "Idioma",
+  "languageEnglishText": "Inglés",
+  "languageSpanishText": "Español",
 
-  "languageContainerText": "Idioma",
-  "themeContainerText": "Tema",
+  "themeTitle": "Tema",
+  "themeDarkText": "Oscuro",
+  "themeLightText": "Claro",
+
+  "copyright": "2024. Sin derechos reservados.",
 
   "navigationTitle": "Menú",  
   "navigationSubtitle1": "Páginas",
