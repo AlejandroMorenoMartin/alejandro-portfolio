@@ -20,7 +20,16 @@
   "navigationPage2": "Projects",
   "navigationPage3": "Resume",  
 
-  "currentLocation": "Madrid, Spain",
+  
+  "profilePosition": "UX/UI Designer",
+  "profileLocation": "Madrid, Spain",
+  "profileExperience": "3 years of experience",
+  "profileLanguage": "Spanish & English",
+  "profileAboutMeTitle": "About me",
+  "profileAboutMeDescription1": "Hi, I'm Alex - I specialise in creating websites and mobile applications that combine strategy and a deeply human approach.",
+  "profileAboutMeDescription2": "I currently work as a freelancer, collaborating with companies to overcome challenges and achieve their goals with custom and effective solutions.",
+  "profileAboutMeDescription3": "I am also an entrepreneur. My experience in design, product development and marketing allows me to tackle challenging projects with enthusiasm and dedication, always bringing a holistic perspective.",
+  "profileAboutMeDescription4": "In the future, I envision myself leading creative teams, guiding them with a strategic and innovative vision and committed to improving people's lives.",
 
   "mainHeroH1": "Product designer",  
   "mainHeroP2": "Hi, I'm Alex - I design websites and mobile applications with a strategic and people-oriented vision.",  
@@ -184,7 +193,7 @@
   "experienceCard1Company": "Geomites - Entrepreneur",
   "experienceCard1Date": "Mar 2023 - Present",
   "experienceCard1Location": "Spain - Remote",
-  "experienceCard1Description": "Together with a team of designers and developers, I lead the UX and UI design of this project, in which we design and develop a mobile video game for iOS and Android platforms in an agile environment. I analyze market leaders offering similar products, research potential users, and create low and high fidelity designs in Figma. I develop a prototype that allows me to verify design decisions through usability testing and A/B testing. We are now in the development phase and I collaborate with the development team to transition the prototype to React. Finally, I develop a design system that facilitates product maintenance and updates.",     
+  "experienceCard1Description": "I lead  the UX/UI design of a mobile video game for iOS and Android in an agile environment, conducting market analysis, user research, prototyping, and usability testing. I collaborate with developers to transition the prototype to React and created a design system for maintenance and updates.",     
   "experienceCard1TechnologiesText": "Figma - React - Adobe ilustrator - Microsoft azure - Miro",
   "experienceCard1SkillsText": "UX research - Wireframing - Prototyping - UX design - User test - UI design - Game design",  
   
@@ -192,7 +201,7 @@
   "experienceCard2Company": " - Freelance",
   "experienceCard2Date": "Feb 2023 - Oct 2023",
   "experienceCard2Location": "Spain - Remote",
-  "experienceCard2Description": "I was hired alongside a full-stack developer to design and develop a website for a travel agency. I conducted market research and analysis, focusing on users and competitors. Furthermore, I created low-fi and hi-fi wireframes and conducted user tests, iterating on the designs based on the feedback received. I maintained clear communication with the development team to ensure effective implementation of the designs. After designing and developing the website and optimizing the SEO, the company managed to increase its sales by 20%.",    
+  "experienceCard2Description": "I designed and developed a website for a travel agency, conducting user and competitor research, creating wireframes, and testing designs. I collaborated with developers for implementation, optimizing SEO to help the company achieve a 20% increase in sales.",    
   "experienceCard2TechnologiesText": "Figma - Adobe photoshop - Miro - Hotjar - Google analytics",  
   "experienceCard2SkillsText": "Ux research - UX design - UI design - Responsive web design - Mobile design - Web development",
 
@@ -200,7 +209,7 @@
   "experienceCard3Company": " - Freelance",
   "experienceCard3Date": "Apr 2022 - Nov 2022",
   "experienceCard3Location": "Spain - Remote",
-  "experienceCard3Description": "I was hired to design and develop a website for a visual effects studio. I researched the leading companies in the market and defined the product, creating user flows from low to high fidelity. I conducted user research and testing to ensure that the content and design were efficient. Likewise, I developed the website, ensuring the final product met the expectations of both stakeholders and users. The company recorded a 15% increase in contact requests compared to the same period of the previous year.", 
+  "experienceCard3Description": "I designed and developed a website for a visual effects studio, conducting market research, user testing, and creating user flows. I ensured the final product met user and stakeholder expectations, leading to a 15% increase in contact requests.", 
   "experienceCard3TechnologiesText": "Technologies: Figma - Adobe ilustrator - Wordpress - Google analytics", 
   "experienceCard3SkillsText": "Ux research - UX design - UI design - Responsive web design - Mobile design - Web development", 
 
@@ -208,7 +217,7 @@
   "experienceCard4Company": " - Contract",
   "experienceCard4Date": "Jul 2017 - Sep 2021",
   "experienceCard4Location": "Spain - On site",
-  "experienceCard4Description": "As an employee at an industrial machinery manufacturing company, I was responsible for marketing and design tasks. I managed the design and development of the company's website and led SEO positioning campaigns. I spearheaded marketing campaigns on social media and organized and developed the design of various products necessary for the company's operations, including catalogs, advertisements, and documents. Not only that, but I also collaborated with stakeholders to organize the marketing and sales strategy.",  
+  "experienceCard4Description": "I managed the design and development of a website and led SEO and social media marketing campaigns for an industrial machinery company. I also designed products like catalogs and documents and collaborated on marketing and sales strategies.",  
   "experienceCard4TechnologiesText": "Technologies: Google drive - Microsoft suite - Adobe ilustrator - Adobe Photoshop - Google analytics - Wordpress - Hotjar",    
   "experienceCard4SkillsText": "Negotiation - Graphic design - SEO - Strategy - Digital marketing", 
 

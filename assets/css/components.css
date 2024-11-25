@@ -24,7 +24,7 @@
 .mainSections {
   display: flex;
   flex-direction: column;
-  width: 1200px;
+  width: 90%;
   align-items: top;
   gap: 24rem;
   margin-inline: auto;
@@ -42,16 +42,17 @@
 
 .mainHero {
   display: flex;
-  gap: 4rem;
+  gap: 2rem;
   width: 100%;
   align-items: center;
   justify-content: center;
-  height: 30svh;
+  height: 60svh;
+  margin-top: -6rem;  
 }
 
 @media (max-width: 1200px) {
   .mainHero {
-    height: 95dvh;
+    height: 70dvh;
     margin-top: -4rem;
   }
 }
@@ -375,7 +376,7 @@
 .gridTwoOverFlow {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(min(480px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(640px, 100%), 1fr));
 }
 
 /* ---------- */
@@ -764,8 +765,8 @@ tr {
 }
 
 @media (max-width: 1200px) {
-  .scroll-top {    
-    bottom: 1.5rem;    
+  .scroll-top {
+    bottom: 1.5rem;
   }
 }
 
@@ -901,7 +902,7 @@ tr {
   display: block;
   padding: 0.5rem;
   border-radius: var(--br);
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .buttonTabComponent:hover {
@@ -965,8 +966,7 @@ tr {
   left: 1%;
   top: 10%;
   transition: left 0.3s ease;
-  box-shadow: 1px -1px 4px rgba(var(--white), 0.25), -1px 1px 4px rgba(var(--white), 0.25);
-
+  box-shadow: 1px -1px 4px var(--neutral-800), -1px 1px 4px var(--neutral-800);
 }
 
 /* ---------- */
@@ -1295,10 +1295,6 @@ body.no-scroll {
   border-radius: var(--br);
   border: 0.25px solid var(--neutral-800);
   background: var(--neutral-1000);
-}
-
-.gridThreeOverFlow .cardTestimonial:first-child {
-  grid-column: span 2;
 }
 
 .cardTestimonial .frameFlexSmall {
@@ -1658,8 +1654,8 @@ body.no-scroll {
   width: 100%;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  padding-left: calc((100% - 1200px) / 2);
-  padding-right: calc((100% - 1200px) / 2);
+  padding-left: calc((100% - 90%) / 2);
+  padding-right: calc((100% - 90%) / 2);
   border-bottom: 0.25px solid var(--neutral-800);
   background: var(--neutral-1000);
   overflow: hidden;
@@ -1829,7 +1825,7 @@ footer .footerButton i {
 /* ----- SCROLLER ----- */
 
 .scroller {
-  max-width: 1200px;
+  max-width: 100%;
 }
 
 .scrollerInner {
@@ -2363,4 +2359,93 @@ footer .footerButton i {
   to {
     opacity: 1;
   }
+}
+
+/* ---------- */
+
+.profileImageContainer {
+  width: 148px;
+  height: 148px;
+}
+
+@media (max-width: 1200px) {
+  .profileImageContainer {
+    width: 112px;
+    height: 112px;
+  }
+}
+
+.profileImageContainer img {
+  border-radius: 1000px;
+}
+
+.profileCard {
+  display: flex;
+  gap: .5rem;
+  padding: .5rem;
+  width: 35%;
+  border-radius: var(--br);
+  box-shadow: 1px -1px 4px var(--neutral-800), -1px 1px 4px var(--neutral-800);
+  align-items: center;
+  justify-content: center;
+  height: 296px;
+}
+
+@media (max-width: 1200px) {
+  .profileCard {    
+    width: 100%;    
+  }
+}
+
+.profileCardTitle {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  height: 100%;
+  justify-content: center; 
+}
+
+.profileCardItem {
+  width: 100%;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.profileCardDescription {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;  
+}
+
+.profileCardInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.profileInfoItems {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.profileCardDescriptionItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: flex-start;
+  height: 100%;
+  border-bottom: 0.25px solid var(--neutral-800);
+}
+
+.profileCardDescriptionItem:last-child {
+  border-bottom: none;
 }

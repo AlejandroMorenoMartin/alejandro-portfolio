@@ -83,22 +83,42 @@
 
       <!-- [hero] -->
       <section id="section0" class="mainHero">
-        <div class="frameFlexColumnMedium">
-          <div class="frameFlexColumnTiny">
-            <div class="typewriter typewriter1">
-              <p class="regular" data-key="currentLocation"></p>
+        <div class="profileCard">
+          <div class="profileCardTitle">
+            <figure class="profileImageContainer">
+              <img src="assets/images/index/mainHeroImage.png" alt="profileImage">
+            </figure>
+            <h4>Alejandro</h4>
+            <p class="small-bold" data-key="profilePosition"></p>            
+          </div>
+          <div class="profileCardDescription">
+            <div class="profileCardDescriptionItem">
+              <i class="fa-solid fa-location-dot"></i>
+              <p class="small-bold" data-key="profileLocation"></p>
             </div>
-            <div class="typewriter typewriter2">
-              <p class="small" id="currentTime"></p>
+            <div class="profileCardDescriptionItem">
+              <i class="fa-solid fa-briefcase"></i>
+              <p class="small-bold" data-key="profileExperience"></p>
+            </div>
+            <div class="profileCardDescriptionItem">
+              <i class="fa-regular fa-comment"></i>
+              <p class="small-bold" data-key="profileLanguage"></p>
             </div>
           </div>
-          <h1 data-key="mainHeroH1"></h1>
-          <p class="regular" data-key="mainHeroP2"></p>
-          <a id="buttonHero" class="buttonPrimary" href="#section1">
-            <p class="regular" data-key="buttonHero"></p>
+        </div>
+        <div class="profileCardInfo">
+          <p class="regular-bold" data-key="profileAboutMeTitle"></p>
+          <div class="profileInfoItems">
+            <p class="regular" data-key="profileAboutMeDescription1"></p>
+            <p class="regular" data-key="profileAboutMeDescription2"></p>
+            <p class="regular" data-key="profileAboutMeDescription3"></p>
+            <p class="regular" data-key="profileAboutMeDescription4"></p>
+          </div>
+          <a href="#section1" class="buttonPrimary">
+            <p data-key="buttonHero"></p>
           </a>
         </div>
-        <img class="mainHeroImage" src="assets/images/index/mainHeroImage.webp" alt="alejandroMoreno" id="animation3">
+
       </section>
 
       <!-- [projects] -->
@@ -106,7 +126,7 @@
 
         <h2 data-key="indexSectionHeader1"></h2>
 
-        <div class="gridThree">
+        <div class="gridThreeOverFlow">
 
           <!-- [geomites] -->
           <a class="cardProject" href="geomites.html" target="_blank">
@@ -193,8 +213,12 @@
         <h2 data-key="resumeHeader"></h2>
 
         <div class="buttonTab">
-          <button class="buttonTabComponent active" id="experienceButton"><p data-key="buttonTab1"></p></button>
-          <button class="buttonTabComponent" id="educationButton"><p data-key="buttonTab2"></p></button>
+          <button class="buttonTabComponent active" id="experienceButton">
+            <p data-key="buttonTab1"></p>
+          </button>
+          <button class="buttonTabComponent" id="educationButton">
+            <p data-key="buttonTab2"></p>
+          </button>
         </div>
 
         <!-- [experience] -->
@@ -304,7 +328,7 @@
 
           <a class="cardEducation" href="assets/documents/userExperienceTheBeginnersGuide.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/idf.webp" alt="cardEducationImage">
-            <div class="frameFlexColumnSmall">
+            <div class="frameFlexColumnTiny">
               <p data-key="cardEducation13Title" class="large"></p>
               <span class="link" onclick="window.open('https://www.interaction-design.org/', '_blank')">
                 <p class="regular">Interaction Design Foundation (IDF)</p>
@@ -317,7 +341,7 @@
 
           <a class="cardEducation" href="assets/documents/UIDesignPaternsForSuccesfullSoftware.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/idf.webp" alt="cardEducationImage">
-            <div class="frameFlexColumnSmall">
+            <div class="frameFlexColumnTiny">
               <p data-key="cardEducation1Title" class="large"></p>
               <span class="link" onclick="window.open('https://www.interaction-design.org/', '_blank')">
                 <p class="regular">Interaction Design Foundation (IDF)</p>
@@ -330,7 +354,7 @@
 
           <a class="cardEducation" href="assets/documents/visualDesign.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/idf.webp" alt="cardEducationImage">
-            <div class="frameFlexColumnSmall">
+            <div class="frameFlexColumnTiny">
               <p data-key="cardEducation2Title" class="large"></p>
               <span class="link" onclick="window.open('https://www.interaction-design.org/', '_blank')">
                 <p class="regular">Interaction Design Foundation (IDF)</p>
@@ -343,7 +367,7 @@
 
           <a class="cardEducation" href="assets/documents/emotionalDesign.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/idf.webp" alt="cardEducationImage">
-            <div class="frameFlexColumnSmall">
+            <div class="frameFlexColumnTiny">
               <p data-key="cardEducation3Title" class="large"></p>
               <span class="link" onclick="window.open('https://www.interaction-design.org/', '_blank')">
                 <p class="regular">Interaction Design Foundation (IDF)</p>
@@ -356,7 +380,7 @@
 
           <a class="cardEducation" href="assets/documents/informationVisualization.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/idf.webp" alt="cardEducationImage">
-            <div class="frameFlexColumnSmall">
+            <div class="frameFlexColumnTiny">
               <p data-key="cardEducation4Title" class="large"></p>
               <span class="link" onclick="window.open('https://www.interaction-design.org/', '_blank')">
                 <p class="regular">Interaction Design Foundation (IDF)</p>
@@ -369,7 +393,7 @@
 
           <a class="cardEducation" href="assets/documents/designForThe21stCentury.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/idf.webp" alt="cardEducationImage">
-            <div class="frameFlexColumnSmall">
+            <div class="frameFlexColumnTiny">
               <p data-key="cardEducation5Title" class="large"></p>
               <span class="link" onclick="window.open('https://www.interaction-design.org/', '_blank')">
                 <p class="regular">Interaction Design Foundation (IDF)</p>
@@ -382,7 +406,7 @@
 
           <a class="cardEducation" href="assets/documents/humanComputerInteraction.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/idf.webp" alt="cardEducationImage">
-            <div class="frameFlexColumnSmall">
+            <div class="frameFlexColumnTiny">
               <p data-key="cardEducation6Title" class="large"></p>
               <span class="link" onclick="window.open('https://www.interaction-design.org/', '_blank')">
                 <p class="regular">Interaction Design Foundation (IDF)</p>
@@ -395,7 +419,7 @@
 
           <a class="cardEducation" href="assets/documents/mobileUserExperience.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/idf.webp" alt="cardEducationImage">
-            <div class="frameFlexColumnSmall">
+            <div class="frameFlexColumnTiny">
               <p data-key="cardEducation7Title" class="large"></p>
               <span class="link" onclick="window.open('https://www.interaction-design.org/', '_blank')">
                 <p class="regular">Interaction Design Foundation (IDF)</p>
@@ -408,7 +432,7 @@
 
           <a class="cardEducation" href="assets/documents/gestaltPshychologyAndWebDesign.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/idf.webp" alt="cardEducationImage">
-            <div class="frameFlexColumnSmall">
+            <div class="frameFlexColumnTiny">
               <p data-key="cardEducation8Title" class="large"></p>
               <span class="link" onclick="window.open('https://www.interaction-design.org/', '_blank')">
                 <p class="regular">Interaction Design Foundation (IDF)</p>
@@ -421,7 +445,7 @@
 
           <a class="cardEducation" href="assets/documents/userResearch.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/idf.webp" alt="cardEducationImage">
-            <div class="frameFlexColumnSmall">
+            <div class="frameFlexColumnTiny">
               <p data-key="cardEducation9Title" class="large"></p>
               <span class="link" onclick="window.open('https://www.interaction-design.org/', '_blank')">
                 <p class="regular">Interaction Design Foundation (IDF)</p>
@@ -434,7 +458,7 @@
 
           <a class="cardEducation" href="assets/documents/UXFoundations.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/google.webp" alt="cardEducationImage">
-            <div class="frameFlexColumnSmall">
+            <div class="frameFlexColumnTiny">
               <p data-key="cardEducation10Title" class="large"></p>
               <span class="link" onclick="window.open('https://www.coursera.org/', '_blank')">
                 <p class="regular">Coursera</p>
@@ -677,7 +701,7 @@
 
         <h2 data-key="indexSectionHeader7"></h2>
 
-        <div class="gridTwoOverFlow">
+        <div class="gridThreeOverFlow">
           <a class="cardReading">
             <div class="frameFlexMedium">
               <div class="cardReadingImageContainer">
@@ -869,7 +893,7 @@
       </button>
 
       <div class="footerMobile">
-        
+
         <!-- [tabs] -->
         <div class="footerElementOne">
 
