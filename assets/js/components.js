@@ -111,9 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
 /* TABLE OF CONTENT */
-
 document.addEventListener("DOMContentLoaded", () => {
   const tocLinks = document.querySelectorAll('.tableOfContentLinks a');
   const sections = document.querySelectorAll('section');
@@ -181,26 +179,121 @@ document.addEventListener("DOMContentLoaded", () => {
   sections.forEach(section => observer.observe(section));
 });
 
-/* BUTTON FOOTER */
-
+/* OPEN OVERLAY */
 document.addEventListener("DOMContentLoaded", () => {
-  const footerButton = document.getElementById("footerButtonId");
-  const icon = document.querySelector(".footerButton i");
-  const footerElementOne = document.querySelector(".footerElementOne");
-  const footerElementTwo = document.querySelector(".footerElementTwo");
+  const settingsButton = document.getElementById("openSeetingsOverlay");
+  const settingsOverlay = document.querySelector(".seetingsOverlay");
 
-  footerButton.addEventListener("change", () => {
-    if (footerButton.checked) {
-      // Rotación y movimiento del icono y cambios en la visibilidad
-      icon.style.transform = "rotate(180deg)";
-      footerElementOne.style.display = "flex";
-      footerElementTwo.style.display = "flex";
+  // Función para abrir/cerrar el overlay
+  const toggleSettingsOverlay = (event) => {
+    const isOpen = settingsOverlay.classList.contains("active");
+
+    if (!isOpen) {
+      // Posicionar el overlay
+      const buttonRect = settingsButton.getBoundingClientRect();
+      settingsOverlay.style.top = `${buttonRect.bottom + 8}px`; // 2rem = 32px
+      settingsOverlay.style.right = `${window.innerWidth - buttonRect.right}px`;
+      settingsOverlay.classList.add("active");
     } else {
-      // Revertir la rotación y los cambios de visibilidad
-      icon.style.transform = "rotate(0deg)";
-      footerElementOne.style.display = "none";
-      footerElementTwo.style.display = "none";
+      settingsOverlay.classList.remove("active");
     }
+  };
+
+  // Cerrar al hacer clic fuera del overlay
+  const closeOverlayOnClickOutside = (event) => {
+    if (!settingsOverlay.contains(event.target) && event.target !== settingsButton) {
+      settingsOverlay.classList.remove("active");
+    }
+  };
+
+  // Evento de clic en el botón
+  settingsButton.addEventListener("click", (event) => {
+    event.stopPropagation(); // Evitar que se cierre al pulsar el botón
+    toggleSettingsOverlay();
   });
+
+  // Evento de clic fuera del overlay
+  document.addEventListener("click", closeOverlayOnClickOutside);
 });
 
+/* SLIDER */
+// Selección de elementos comunes
+const sliders = [
+  {
+    container: document.querySelector('.experienceContainer'),
+    buttonLeft: document.querySelector('.buttonSliderLeftExperience'),
+    buttonRight: document.querySelector('.buttonSliderRightExperience'),
+    cardWidth: 1280,
+    gap: 16,
+    totalCards: document.querySelectorAll('.cardExperience').length
+  },
+  {
+    container: document.querySelector('.educationContainer'),
+    buttonLeft: document.querySelector('.buttonSliderLeftEducation'),
+    buttonRight: document.querySelector('.buttonSliderRightEducation'),
+    cardWidth: 632,
+    gap: 16,
+    totalCards: document.querySelectorAll('.cardEducation').length
+  },
+  {
+    container: document.querySelector('.skillsContainer'),
+    buttonLeft: document.querySelector('.buttonSliderLeftSkills'),
+    buttonRight: document.querySelector('.buttonSliderRightSkills'),
+    cardWidth: 632,
+    gap: 16,
+    totalCards: document.querySelectorAll('.cardSkill').length
+  },
+  {
+    container: document.querySelector('.testimonialContainer'),
+    buttonLeft: document.querySelector('.buttonSliderLeftTestimonial'),
+    buttonRight: document.querySelector('.buttonSliderRightTestimonial'),
+    cardWidth: 632,
+    gap: 16,
+    totalCards: document.querySelectorAll('.cardTestimonial').length
+  },
+  {
+    container: document.querySelector('.readingsContainer'),
+    buttonLeft: document.querySelector('.buttonSliderLeftReadings'),
+    buttonRight: document.querySelector('.buttonSliderRightReadings'),
+    cardWidth: 632,
+    gap: 16,
+    totalCards: document.querySelectorAll('.cardReading').length
+  }
+];
+
+// Función para actualizar el estado de los botones
+function updateButtons(slider) {
+  const { container, buttonLeft, buttonRight, currentPosition, maxScroll } = slider;
+  buttonLeft.style.opacity = currentPosition === 0 ? '0.25' : '1';
+  buttonLeft.disabled = currentPosition === 0;
+
+  buttonRight.style.opacity = currentPosition === maxScroll ? '0.25' : '1';
+  buttonRight.disabled = currentPosition === maxScroll;
+}
+
+// Función genérica para manejar el desplazamiento
+function handleSliderMovement(slider, direction) {
+  const { container, cardWidth, gap, maxScroll } = slider;
+  const moveAmount = direction === 'left' ? cardWidth + gap : -(cardWidth + gap);
+
+  if ((direction === 'left' && slider.currentPosition < 0) || (direction === 'right' && slider.currentPosition > maxScroll)) {
+    slider.currentPosition += moveAmount;
+    container.style.transform = `translateX(${slider.currentPosition}px)`;
+  }
+
+  updateButtons(slider);
+}
+
+// Inicializar los deslizadores
+sliders.forEach(slider => {
+  const { buttonLeft, buttonRight, cardWidth, gap, totalCards } = slider;
+  slider.maxScroll = -((cardWidth + gap) * (totalCards - 1));
+  slider.currentPosition = 0;
+
+  // Manejadores de eventos para los botones
+  buttonLeft.addEventListener('click', () => handleSliderMovement(slider, 'left'));
+  buttonRight.addEventListener('click', () => handleSliderMovement(slider, 'right'));
+
+  // Actualizar botones al inicio
+  updateButtons(slider);
+});

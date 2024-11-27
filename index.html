@@ -38,30 +38,62 @@
 
       <!-- [navBar] -->
       <div class="navBar">
-
         <a href="index.html" alt="logoAlejandro" id="logoLink" viewBox="0 0 24 24" class="logo">
 
           <img src="/assets/icons/navigation/favicon.webp" alt="logo">
 
         </a>
 
-        <div class="frameFlexSmall">
-          <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
-              class="fa-brands fa-whatsapp iconSmall"></i></a>
+        <a id="openSeetingsOverlay" class="buttonElevation"><i class="fa-solid fa-gear iconTiny"></i></a>
 
-          <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon" target="_blank"><i
-              class="fa-brands fa-linkedin-in iconSmall"></i></a>
+        <!-- [seetings] -->
+        <div class="seetingsOverlay">
+          <p class="regular-bold" data-key="seetingText"></p>
+          <!-- [language] -->
+          <div class="tabContainer">
+            <input type="checkbox" id="languageSwitch">
+            <label for="languageSwitch" class="tabContainerElement">
+              <i class="fa-solid fa-language"></i>
+              <div class="tabContainerElementInfo">
+                <p class="small-bold" data-key="languageTitle"></p>
+                <p class="small" data-key="languageEnglishText"></p>
+              </div>
+            </label>
 
-          <a href="https://medium.com/@alejandromorenomartin1990" class="buttonIcon" target="_blank"><i
-              class="fa-brands fa-medium iconSmall"></i></a>
+            <label for="languageSwitch" class="tabContainerElement">
+              <i class="fa-solid fa-language"></i>
+              <div class="tabContainerElementInfo">
+                <p class="small-bold" data-key="languageTitle"></p>
+                <p class="small" data-key="languageSpanishText"></p>
+              </div>
+            </label>
 
-          <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
-              class="fa-brands fa-github iconSmall"></i></a>
+            <div id="languageSlider" class="tabContainerSlide"></div>
 
-          <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
-              class="fa-solid fa-envelope iconSmall"></i></a>
+          </div>
+          <!-- [theme] -->
+          <div class="tabContainer">
+            <input type="checkbox" id="themeSwitch">
+            <label for="themeSwitch" class="tabContainerElement">
+              <i class="fa-solid fa-circle-half-stroke"></i>
+              <div class="tabContainerElementInfo">
+                <p class="small-bold" data-key="themeTitle"></p>
+                <p class="small" data-key="themeDarkText"></p>
+              </div>
+            </label>
+
+            <label for="themeSwitch" class="tabContainerElement">
+              <i class="fa-solid fa-circle-half-stroke"></i>
+              <div class="tabContainerElementInfo">
+                <p class="small-bold" data-key="themeTitle"></p>
+                <p class="small" data-key="themeLightText"></p>
+              </div>
+            </label>
+
+            <div id="themeSlider" class="tabContainerSlide"></div>
+
+          </div>
         </div>
-
       </div>
 
       <!-- [table of content] -->
@@ -74,6 +106,7 @@
           <a href="#section5" data-key="indexSectionHeader5" class="small"></a>
           <a href="#section6" data-key="indexSectionHeader6" class="small"></a>
           <a href="#section7" data-key="indexSectionHeader7" class="small"></a>
+          <a href="#section8" data-key="indexSectionHeader8" class="small"></a>
         </div>
       </div>
 
@@ -89,34 +122,37 @@
               <img src="assets/images/index/mainHeroImage.png" alt="profileImage">
             </figure>
             <h4>Alejandro</h4>
-            <p class="small-bold" data-key="profilePosition"></p>            
+            <p class="regular" data-key="profilePosition"></p>
           </div>
           <div class="profileCardDescription">
             <div class="profileCardDescriptionItem">
-              <i class="fa-solid fa-location-dot"></i>
-              <p class="small-bold" data-key="profileLocation"></p>
+              <p class="small" data-key="profileLocationTitle"></p>
+              <p class="regular" data-key="profileLocation"></p>
             </div>
             <div class="profileCardDescriptionItem">
-              <i class="fa-solid fa-briefcase"></i>
-              <p class="small-bold" data-key="profileExperience"></p>
+              <p class="small" data-key="profileExperienceTitle"></p>
+              <p class="regular" data-key="profileExperience"></p>
             </div>
             <div class="profileCardDescriptionItem">
-              <i class="fa-regular fa-comment"></i>
-              <p class="small-bold" data-key="profileLanguage"></p>
+              <p class="small" data-key="profileLanguageTitle"></p>
+              <p class="regular" data-key="profileLanguage"></p>
             </div>
           </div>
         </div>
         <div class="profileCardInfo">
-          <p class="regular-bold" data-key="profileAboutMeTitle"></p>
+          <p class="large" data-key="profileAboutMeTitle"></p>
           <div class="profileInfoItems">
             <p class="regular" data-key="profileAboutMeDescription1"></p>
-            <p class="regular" data-key="profileAboutMeDescription2"></p>
-            <p class="regular" data-key="profileAboutMeDescription3"></p>
-            <p class="regular" data-key="profileAboutMeDescription4"></p>
           </div>
-          <a href="#section1" class="buttonPrimary">
-            <p data-key="buttonHero"></p>
-          </a>
+          <div class="profileCardButtons">
+            <a href="#section1" class="buttonPrimary" id="buttonHero">
+              <p data-key="buttonPrimaryHero" class="regular"></p>
+            </a>
+            <a href="assets/documents/alejandroMorenoResume.pdf" class="buttonSecondary" target="_blank">
+              <p data-key="buttonSecondaryHero" class="regular"></p><i class="fa-solid fa-download"></i>
+            </a>
+          </div>
+
         </div>
 
       </section>
@@ -124,7 +160,7 @@
       <!-- [projects] -->
       <section id="section1" class="frameFlexColumnMedium">
 
-        <h2 data-key="indexSectionHeader1"></h2>
+        <h4 data-key="indexSectionHeader1"></h4>
 
         <div class="gridThreeOverFlow">
 
@@ -135,7 +171,7 @@
             </div>
             <div class="frameFlexColumnSmall">
               <div class="frameFlexColumnTiny">
-                <p class="large">Geomites</p>
+                <p class="regular-bold">Geomites</p>
                 <p class="small" data-key="cardProjectGeomitesTime"></p>
               </div>
               <p class="regular" data-key="cardProjectGeomitesDescription"></p>
@@ -143,193 +179,130 @@
             <i class="fa-solid fa-arrow-right iconMedium"></i>
           </a>
 
-          <!-- [portfolio] -->
-          <a class="cardProject" href="portfolio.html" target="_blank">
+          <!-- [eventNest] -->
+          <a class="cardProject Two" target="_blank">
             <div class="cardProjectImageContainer">
-              <img src="assets/images/projects/portfolio/headerImage.webp" alt="imageContainer">
+              <img src="assets/images/index/projectImage.png" alt="imageContainer">
             </div>
             <div class="frameFlexColumnSmall">
               <div class="frameFlexColumnTiny">
-                <p class="large">Portfolio</p>
-                <p class="small" data-key="cardProjectPortfolioTime"></p>
+                <p class="regular-bold">EventNest</p>
+                <p class="small" data-key="cardProjectEventNestTime"></p>
               </div>
-              <p class="regular" data-key="cardProjectPortfolioDescription"></p>
+              <p class="regular" data-key="cardProjectEventNestDescription"></p>
             </div>
-            <i class="fa-solid fa-arrow-right iconMedium"></i>
           </a>
 
-          <!-- [tattoParadise] -->
-          <a class="cardProject" href="tattooParadise.html" target="_blank">
+          <!-- [caseStudy] -->
+          <a class="cardProject Two" target="_blank">
             <div class="cardProjectImageContainer">
-              <img src="assets/images/projects/tattooParadise/headerImage.webp" alt="imageContainer">
+              <img src="assets/images/index/projectImage.png" alt="imageContainer">
             </div>
             <div class="frameFlexColumnSmall">
               <div class="frameFlexColumnTiny">
-                <p class="large">Tattoo paradise</p>
-                <p class="small" data-key="cardProjectTattooParadiseTime"></p>
+                <p class="regular-bold">Case study</p>
+                <p class="small" data-key="cardProjectCaseStudyTime"></p>
               </div>
-              <p class="regular" data-key="cardProjectTattooParadiseDescription"></p>
+              <p class="regular" data-key="cardProjectCaseStudyDescription"></p>
             </div>
-            <i class="fa-solid fa-arrow-right iconMedium"></i>
-          </a>
-
-          <!-- [atipikoTours] -->
-          <a class="cardProject" href="atipikoTours.html" target="_blank">
-            <div class="cardProjectImageContainer">
-              <img src="assets/images/projects/atipikoTours/headerImage.webp" alt="imageContainer">
-            </div>
-            <div class="frameFlexColumnSmall">
-              <div class="frameFlexColumnTiny">
-                <p class="large">Atipiko tours</p>
-                <p class="small" data-key="cardProjectAtipikoToursTime"></p>
-              </div>
-              <p class="regular" data-key="cardProjectAtipikoToursDescription"></p>
-            </div>
-            <i class="fa-solid fa-arrow-right iconMedium"></i>
-          </a>
-
-          <!-- [senzoStudio] -->
-          <a class="cardProject" href="senzoStudio.html" target="_blank">
-            <div class="cardProjectImageContainer">
-              <img src="assets/images/projects/senzoStudio/headerImage.webp" alt="imageContainer">
-            </div>
-            <div class="frameFlexColumnSmall">
-              <div class="frameFlexColumnTiny">
-                <p class="large">Senzo studio</p>
-                <p class="small" data-key="cardProjectSenzoStudioTime"></p>
-              </div>
-              <p class="regular" data-key="cardProjectSenzoStudioDescription"></p>
-            </div>
-            <i class="fa-solid fa-arrow-right iconMedium"></i>
           </a>
 
         </div>
 
       </section>
 
-      <!--[resume]-->
-      <section id="section2" class="frameFlexColumnMedium">
+      <!--[experience]-->
+      <section id="section2" class="experienceSection">
 
-        <h2 data-key="resumeHeader"></h2>
+        <div class="sectionHeaderSlider">
+          <h4 data-key="indexSectionHeader2"></h4>
 
-        <div class="buttonTab">
-          <button class="buttonTabComponent active" id="experienceButton">
-            <p data-key="buttonTab1"></p>
-          </button>
-          <button class="buttonTabComponent" id="educationButton">
-            <p data-key="buttonTab2"></p>
-          </button>
+          <!--[buttonSlider]-->
+          <div class="frameFlexMedium">
+            <button class="buttonSlider buttonSliderLeft buttonSliderLeftExperience"><i
+                class="fa-solid fa-chevron-up iconTiny"></i></button>
+            <button class="buttonSlider buttonSliderRight buttonSliderRightExperience"><i
+                class="fa-solid fa-chevron-up iconTiny"></i></button>
+          </div>
         </div>
 
-        <!-- [experience] -->
-        <div class="frameFlexColumnMedium" id="experienceSection">
-
+        <!-- [experienceContainer] -->
+        <div class="experienceContainer">
           <div class="cardExperience">
-            <img class="imageExtraLarge" src="assets/icons/experience/geomites.webp" alt="cardExperienceImage">
             <div class="frameFlexColumnTiny">
-              <p data-key="experienceCard1Title" class="large"></p>
+              <p data-key="experienceCard1Title" class="regular-bold"></p>
               <p data-key="experienceCard1Company" class="regular"></p>
               <p data-key="experienceCard1Date" class="small"></p>
               <p data-key="experienceCard1Location" class="small"></p>
             </div>
             <p data-key="experienceCard1Description" class="regular"></p>
-            <div class="inline">
-              <p data-key="experienceCardTechnologiesTitle" class="regular-bold"></p>
-              <p data-key="experienceCard1TechnologiesText" class="regular"></p>
-            </div>
-            <div class="inline">
-              <p data-key="experienceCardSkillsTitle" class="regular-bold"></p>
-              <p data-key="experienceCard1SkillsText" class="regular"></p>
-            </div>
           </div>
-
           <div class="cardExperience">
-            <img class="imageExtraLarge" src="assets/icons/experience/atipiko.webp" alt="cardExperienceImage">
-            <div class="frameFlexColumnMedium">
-              <div class="frameFlexColumnTiny">
-                <p data-key="experienceCard2Title" class="large"></p>
-                <div class="frameFlexSmall">
-                  <a href="https://atipikotours.com/" class="link">
-                    <p class="regular">Atipiko Tours </p>
-                  </a>
-                  <p data-key="experienceCard2Company" class="regular"></p>
-                </div>
-                <p data-key="experienceCard2Date" class="small"></p>
-                <p data-key="experienceCard2Location" class="small"></p>
+            <div class="frameFlexColumnTiny">
+              <p data-key="experienceCard2Title" class="regular-bold"></p>
+              <div class="frameFlexSmall">
+                <a href="https://atipikotours.com/" class="link">
+                  <p class="regular">Atipiko Tours </p>
+                </a>
+                <p data-key="experienceCard2Company" class="regular"></p>
               </div>
-              <p data-key="experienceCard2Description" class="regular"></p>
-              <div class="inline">
-                <p data-key="experienceCardTechnologiesTitle" class="regular-bold"></p>
-                <p data-key="experienceCard2TechnologiesText" class="regular"></p>
-              </div>
-              <div class="inline">
-                <p data-key="experienceCardSkillsTitle" class="regular-bold"></p>
-                <p data-key="experienceCard2SkillsText" class="regular"></p>
-              </div>
+              <p data-key="experienceCard2Date" class="small"></p>
+              <p data-key="experienceCard2Location" class="small"></p>
             </div>
+            <p data-key="experienceCard2Description" class="regular"></p>
           </div>
-
           <div class="cardExperience">
-            <img class="imageExtraLarge" src="assets/icons/experience/senzostudio.webp" alt="cardExperienceImage">
-            <div class="frameFlexColumnMedium">
-              <div class="frameFlexColumnTiny">
-                <p data-key="experienceCard3Title" class="large"></p>
-                <div class="frameFlexSmall">
-                  <a href="https://senzostudio.com/" class="link">
-                    <p class="regular">Senzo Studio </p>
-                  </a>
-                  <p data-key="experienceCard3Company" class="regular"></p>
-                </div>
-                <p data-key="experienceCard3Date" class="small"></p>
-                <p data-key="experienceCard3Location" class="small"></p>
+            <div class="frameFlexColumnTiny">
+              <p data-key="experienceCard3Title" class="regular-bold"></p>
+              <div class="frameFlexSmall">
+                <a href="https://senzostudio.com/" class="link">
+                  <p class="regular">Senzo Studio </p>
+                </a>
+                <p data-key="experienceCard3Company" class="regular"></p>
               </div>
-              <p data-key="experienceCard3Description" class="regular"></p>
-              <div class="inline">
-                <p data-key="experienceCardTechnologiesTitle" class="regular-bold"></p>
-                <p data-key="experienceCard3TechnologiesText" class="regular"></p>
-              </div>
-              <div class="inline">
-                <p data-key="experienceCardSkillsTitle" class="regular-bold"></p>
-                <p data-key="experienceCard3SkillsText" class="regular"></p>
-              </div>
+              <p data-key="experienceCard3Date" class="small"></p>
+              <p data-key="experienceCard3Location" class="small"></p>
             </div>
+            <p data-key="experienceCard3Description" class="regular"></p>
           </div>
-
           <div class="cardExperience">
-            <img class="imageExtraLarge" src="assets/icons/experience/promam.webp" alt="cardExperienceImage">
-            <div class="frameFlexColumnMedium">
-              <div class="frameFlexColumnTiny">
-                <p data-key="experienceCard4Title" class="large"></p>
-                <div class="frameFlexSmall">
-                  <a href="https://www.promam.es/en/" class="link">
-                    <p class="regular">Promam </p>
-                  </a>
-                  <p data-key="experienceCard4Company" class="regular"></p>
-                </div>
-                <p data-key="experienceCard4Date" class="small"></p>
-                <p data-key="experienceCard4Location" class="small"></p>
+            <div class="frameFlexColumnTiny">
+              <p data-key="experienceCard4Title" class="regular-bold"></p>
+              <div class="frameFlexSmall">
+                <a href="https://www.promam.es/en/" class="link">
+                  <p class="regular">Promam </p>
+                </a>
+                <p data-key="experienceCard4Company" class="regular"></p>
               </div>
-              <p data-key="experienceCard4Description" class="regular"></p>
-              <div class="inline">
-                <p data-key="experienceCardTechnologiesTitle" class="regular-bold"></p>
-                <p data-key="experienceCard4TechnologiesText" class="regular"></p>
-              </div>
-              <div class="inline">
-                <p data-key="experienceCardSkillsTitle" class="regular-bold"></p>
-                <p data-key="experienceCard4SkillsText" class="regular"></p>
-              </div>
+              <p data-key="experienceCard4Date" class="small"></p>
+              <p data-key="experienceCard4Location" class="small"></p>
             </div>
+            <p data-key="experienceCard4Description" class="regular"></p>
           </div>
+        </div>
+      </section>
 
+      <!-- [education] -->
+      <section id="section3" class="educationSection">
+
+        <div class="sectionHeaderSlider">
+          <h4 data-key="indexSectionHeader3"></h4>
+
+          <!--[buttonSlider]-->
+          <div class="frameFlexMedium">
+            <button class="buttonSlider buttonSliderLeft buttonSliderLeftEducation"><i
+                class="fa-solid fa-chevron-up iconTiny"></i></button>
+            <button class="buttonSlider buttonSliderRight buttonSliderRightEducation"><i
+                class="fa-solid fa-chevron-up iconTiny"></i></button>
+          </div>
         </div>
 
-        <!-- [education] -->
-        <div class="gridThreeOverFlow hidden" id="educationSection">
-
+        <!-- [educationContainer] -->
+        <div class="educationContainer">
           <a class="cardEducation" href="assets/documents/userExperienceTheBeginnersGuide.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/idf.webp" alt="cardEducationImage">
             <div class="frameFlexColumnTiny">
-              <p data-key="cardEducation13Title" class="large"></p>
+              <p data-key="cardEducation13Title" class="regular-bold"></p>
               <span class="link" onclick="window.open('https://www.interaction-design.org/', '_blank')">
                 <p class="regular">Interaction Design Foundation (IDF)</p>
               </span>
@@ -338,11 +311,10 @@
             </div>
             <i class="fa-solid fa-arrow-right iconMedium"></i>
           </a>
-
           <a class="cardEducation" href="assets/documents/UIDesignPaternsForSuccesfullSoftware.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/idf.webp" alt="cardEducationImage">
             <div class="frameFlexColumnTiny">
-              <p data-key="cardEducation1Title" class="large"></p>
+              <p data-key="cardEducation1Title" class="regular-bold"></p>
               <span class="link" onclick="window.open('https://www.interaction-design.org/', '_blank')">
                 <p class="regular">Interaction Design Foundation (IDF)</p>
               </span>
@@ -351,11 +323,10 @@
             </div>
             <i class="fa-solid fa-arrow-right iconMedium"></i>
           </a>
-
           <a class="cardEducation" href="assets/documents/visualDesign.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/idf.webp" alt="cardEducationImage">
             <div class="frameFlexColumnTiny">
-              <p data-key="cardEducation2Title" class="large"></p>
+              <p data-key="cardEducation2Title" class="regular-bold"></p>
               <span class="link" onclick="window.open('https://www.interaction-design.org/', '_blank')">
                 <p class="regular">Interaction Design Foundation (IDF)</p>
               </span>
@@ -364,11 +335,10 @@
             </div>
             <i class="fa-solid fa-arrow-right iconMedium"></i>
           </a>
-
           <a class="cardEducation" href="assets/documents/emotionalDesign.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/idf.webp" alt="cardEducationImage">
             <div class="frameFlexColumnTiny">
-              <p data-key="cardEducation3Title" class="large"></p>
+              <p data-key="cardEducation3Title" class="regular-bold"></p>
               <span class="link" onclick="window.open('https://www.interaction-design.org/', '_blank')">
                 <p class="regular">Interaction Design Foundation (IDF)</p>
               </span>
@@ -377,11 +347,10 @@
             </div>
             <i class="fa-solid fa-arrow-right iconMedium"></i>
           </a>
-
           <a class="cardEducation" href="assets/documents/informationVisualization.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/idf.webp" alt="cardEducationImage">
             <div class="frameFlexColumnTiny">
-              <p data-key="cardEducation4Title" class="large"></p>
+              <p data-key="cardEducation4Title" class="regular-bold"></p>
               <span class="link" onclick="window.open('https://www.interaction-design.org/', '_blank')">
                 <p class="regular">Interaction Design Foundation (IDF)</p>
               </span>
@@ -390,11 +359,10 @@
             </div>
             <i class="fa-solid fa-arrow-right iconMedium"></i>
           </a>
-
           <a class="cardEducation" href="assets/documents/designForThe21stCentury.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/idf.webp" alt="cardEducationImage">
             <div class="frameFlexColumnTiny">
-              <p data-key="cardEducation5Title" class="large"></p>
+              <p data-key="cardEducation5Title" class="regular-bold"></p>
               <span class="link" onclick="window.open('https://www.interaction-design.org/', '_blank')">
                 <p class="regular">Interaction Design Foundation (IDF)</p>
               </span>
@@ -403,11 +371,10 @@
             </div>
             <i class="fa-solid fa-arrow-right iconMedium"></i>
           </a>
-
           <a class="cardEducation" href="assets/documents/humanComputerInteraction.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/idf.webp" alt="cardEducationImage">
             <div class="frameFlexColumnTiny">
-              <p data-key="cardEducation6Title" class="large"></p>
+              <p data-key="cardEducation6Title" class="regular-bold"></p>
               <span class="link" onclick="window.open('https://www.interaction-design.org/', '_blank')">
                 <p class="regular">Interaction Design Foundation (IDF)</p>
               </span>
@@ -416,11 +383,10 @@
             </div>
             <i class="fa-solid fa-arrow-right iconMedium"></i>
           </a>
-
           <a class="cardEducation" href="assets/documents/mobileUserExperience.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/idf.webp" alt="cardEducationImage">
             <div class="frameFlexColumnTiny">
-              <p data-key="cardEducation7Title" class="large"></p>
+              <p data-key="cardEducation7Title" class="regular-bold"></p>
               <span class="link" onclick="window.open('https://www.interaction-design.org/', '_blank')">
                 <p class="regular">Interaction Design Foundation (IDF)</p>
               </span>
@@ -429,11 +395,10 @@
             </div>
             <i class="fa-solid fa-arrow-right iconMedium"></i>
           </a>
-
           <a class="cardEducation" href="assets/documents/gestaltPshychologyAndWebDesign.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/idf.webp" alt="cardEducationImage">
             <div class="frameFlexColumnTiny">
-              <p data-key="cardEducation8Title" class="large"></p>
+              <p data-key="cardEducation8Title" class="regular-bold"></p>
               <span class="link" onclick="window.open('https://www.interaction-design.org/', '_blank')">
                 <p class="regular">Interaction Design Foundation (IDF)</p>
               </span>
@@ -442,11 +407,10 @@
             </div>
             <i class="fa-solid fa-arrow-right iconMedium"></i>
           </a>
-
           <a class="cardEducation" href="assets/documents/userResearch.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/idf.webp" alt="cardEducationImage">
             <div class="frameFlexColumnTiny">
-              <p data-key="cardEducation9Title" class="large"></p>
+              <p data-key="cardEducation9Title" class="regular-bold"></p>
               <span class="link" onclick="window.open('https://www.interaction-design.org/', '_blank')">
                 <p class="regular">Interaction Design Foundation (IDF)</p>
               </span>
@@ -455,11 +419,10 @@
             </div>
             <i class="fa-solid fa-arrow-right iconMedium"></i>
           </a>
-
           <a class="cardEducation" href="assets/documents/UXFoundations.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/google.webp" alt="cardEducationImage">
             <div class="frameFlexColumnTiny">
-              <p data-key="cardEducation10Title" class="large"></p>
+              <p data-key="cardEducation10Title" class="regular-bold"></p>
               <span class="link" onclick="window.open('https://www.coursera.org/', '_blank')">
                 <p class="regular">Coursera</p>
               </span>
@@ -468,11 +431,10 @@
             </div>
             <i class="fa-solid fa-arrow-right iconMedium"></i>
           </a>
-
           <a class="cardEducation" href="assets/documents/marketing.pdf" target="_blank">
             <img class="imageExtraLarge" src="assets/icons/education/urjc.webp" alt="cardEducationImage">
             <div class="frameFlexColumnSmall">
-              <p data-key="cardEducation12Title" class="large"></p>
+              <p data-key="cardEducation12Title" class="regular-bold"></p>
               <span class="link" onclick="window.open('https://www.urjc.es/', '_blank')">
                 <p class="regular">Universidad Rey Juan Carlos</p>
               </span>
@@ -481,35 +443,40 @@
             </div>
             <i class="fa-solid fa-arrow-right iconMedium"></i>
           </a>
-
         </div>
+
 
       </section>
 
       <!--[articles]-->
-      <section id="section3" class="frameFlexColumnMedium">
+      <section id="section4" class="articleSection">
 
-        <h2 data-key="indexSectionHeader3"></h2>
+        <div class="sectionHeaderSlider">
+          <h4 data-key="indexSectionHeader4"></h4>
+          <a href="https://medium.com/@alejandromorenomartin1990" class="link" target="_blank">
+            <p class="small" data-key="mediumLink"></p>
+          </a>
+        </div>
 
-        <div class="gridTwoOverFlow">
+        <!-- [articleContainer] -->
+        <div class="articleContainer">
 
           <!-- [userInterviews] -->
-          <a class="cardProject" href="https://medium.com/@alejandromorenomartin1990/user-interviews-f08c17cbc10a"
+          <a class="cardArticle" href="https://medium.com/@alejandromorenomartin1990/user-interviews-f08c17cbc10a"
             target="_blank">
             <div class="frameFlexColumnTiny">
-              <p class="large" data-key="cardArticle1Name"></p>
+              <p class="regular-bold " data-key="cardArticle1Name"></p>
               <p class="regular" data-key="cardArticle1Description"></p>
             </div>
             <p class="small" data-key="cardArticleLink"></p>
             <i class="fa-solid fa-arrow-right iconMedium"></i>
           </a>
-
           <!-- [stakeHolderInterviews] -->
-          <a class="cardProject"
+          <a class="cardArticle"
             href="https://medium.com/@alejandromorenomartin1990/stakeholder-interviews-in-ui-ux-design-ef2854d77778"
             target="_blank">
             <div class="frameFlexColumnTiny">
-              <p class="large" data-key="cardArticle2Name"></p>
+              <p class="regular-bold " data-key="cardArticle2Name"></p>
               <p class="regular" data-key="cardArticle2Description"></p>
             </div>
             <p class="small" data-key="cardArticleLink"></p>
@@ -521,71 +488,82 @@
       </section>
 
       <!-- [skills] -->
-      <section id="section4" class="frameFlexColumnMedium">
+      <section id="section5" class="skillsSection">
 
-        <h2 data-key="indexSectionHeader4"></h2>
+        <div class="sectionHeaderSlider">
+          <h4 data-key="indexSectionHeader5"></h4>
 
-        <div class="gridThreeOverFlow">
+          <!--[buttonSlider]-->
+          <div class="frameFlexMedium">
+            <button class="buttonSlider buttonSliderLeft buttonSliderLeftSkills"><i
+                class="fa-solid fa-chevron-up iconTiny"></i></button>
+            <button class="buttonSlider buttonSliderRight buttonSliderRightSkills"><i
+                class="fa-solid fa-chevron-up iconTiny"></i></button>
+          </div>
+        </div>
+
+        <!-- [skillsContainer] -->
+        <div class="skillsContainer">
           <div class="cardSkill">
             <img src="assets/icons/skills/investigacionUX.webp" class="imageExtraLarge" alt="cardSkillIcon">
             <div class="frameFlexColumnTiny">
-              <p class="large" data-key="cardSkill1Title"></p>
+              <p class="regular-bold" data-key="cardSkill1Title"></p>
               <p class="regular" data-key="cardSkill1Description"></p>
             </div>
           </div>
           <div class="cardSkill">
             <img src="assets/icons/skills/diseñoUX.webp" class="imageExtraLarge" alt="cardSkillIcon">
             <div class="frameFlexColumnTiny">
-              <p class="large" data-key="cardSkill2Title"></p>
+              <p class="regular-bold" data-key="cardSkill2Title"></p>
               <p class="regular" data-key="cardSkill2Description"></p>
             </div>
           </div>
           <div class="cardSkill">
             <img src="assets/icons/skills/diseñoUI.webp" class="imageExtraLarge" alt="cardSkillIcon">
             <div class="frameFlexColumnTiny">
-              <p class="large" data-key="cardSkill3Title"></p>
+              <p class="regular-bold" data-key="cardSkill3Title"></p>
               <p class="regular" data-key="cardSkill3Description"></p>
             </div>
           </div>
           <div class="cardSkill">
             <img src="assets/icons/skills/esquematizacion.webp" class="imageExtraLarge" alt="cardSkillIcon">
             <div class="frameFlexColumnTiny">
-              <p class="large" data-key="cardSkill4Title"></p>
+              <p class="regular-bold" data-key="cardSkill4Title"></p>
               <p class="regular" data-key="cardSkill4Description"></p>
             </div>
           </div>
           <div class="cardSkill">
             <img src="assets/icons/skills/prototipado.webp " class="imageExtraLarge" alt="cardSkillIcon">
             <div class="frameFlexColumnTiny">
-              <p class="large" data-key="cardSkill5Title"></p>
+              <p class="regular-bold" data-key="cardSkill5Title"></p>
               <p class="regular" data-key="cardSkill5Description"></p>
             </div>
           </div>
           <div class="cardSkill">
             <img src="assets/icons/skills/resolutivo.webp" class="imageExtraLarge" alt="cardSkillIcon">
             <div class="frameFlexColumnTiny">
-              <p class="large" data-key="cardSkill6Title"></p>
+              <p class="regular-bold" data-key="cardSkill6Title"></p>
               <p class="regular" data-key="cardSkill6Description"></p>
             </div>
           </div>
           <div class="cardSkill">
             <img src="assets/icons/skills/communication.webp" class="imageExtraLarge" alt="cardSkillIcon">
             <div class="frameFlexColumnTiny">
-              <p class="large" data-key="cardSkill7Title"></p>
+              <p class="regular-bold" data-key="cardSkill7Title"></p>
               <p class="regular" data-key="cardSkill7Description"></p>
             </div>
           </div>
           <div class="cardSkill">
             <img src="assets/icons/skills/sistemasDeDiseño.webp" class="imageExtraLarge" alt="cardSkillIcon">
             <div class="frameFlexColumnTiny">
-              <p class="large" data-key="cardSkill8Title"></p>
+              <p class="regular-bold" data-key="cardSkill8Title"></p>
               <p class="regular" data-key="cardSkill8Description"></p>
             </div>
           </div>
           <div class="cardSkill">
             <img src="assets/icons/skills/usabilidad.webp" class="imageExtraLarge" alt="cardSkillIcon">
             <div class="frameFlexColumnTiny">
-              <p class="large" data-key="cardSkill9Title"></p>
+              <p class="regular-bold" data-key="cardSkill9Title"></p>
               <p class="regular" data-key="cardSkill9Description"></p>
             </div>
           </div>
@@ -593,9 +571,9 @@
       </section>
 
       <!-- [toolStack] -->
-      <section id="section5" class="frameFlexColumnMedium">
+      <section id="section6" class="frameFlexColumnMedium">
 
-        <h2 data-key="indexSectionHeader5"></h2>
+        <h4 data-key="indexSectionHeader6"></h4>
 
         <div class="scroller" data-speed="fast">
           <ul class="tagList scrollerInner">
@@ -631,18 +609,29 @@
       </section>
 
       <!-- [testimonial] -->
-      <section id="section6" class="frameFlexColumnMedium">
+      <section id="section7" class="testimonialSection">
 
-        <h2 data-key="indexSectionHeader6"></h2>
+        <div class="sectionHeaderSlider">
+          <h4 data-key="indexSectionHeader7"></h4>
 
-        <div class="gridThreeOverFlow">
+          <!--[buttonSlider]-->
+          <div class="frameFlexMedium">
+            <button class="buttonSlider buttonSliderLeft buttonSliderLeftTestimonial"><i
+                class="fa-solid fa-chevron-up iconTiny"></i></button>
+            <button class="buttonSlider buttonSliderRight buttonSliderRightTestimonial"><i
+                class="fa-solid fa-chevron-up iconTiny"></i></button>
+          </div>
+        </div>
+
+        <!-- [testimonialContainer] -->
+        <div class="testimonialContainer">
 
           <div class="cardTestimonial">
             <p class="regular padding" data-key="cardTestimonial1Description"></p>
             <div class="frameFlexSmall">
               <img src="assets/images/personas/imageDiego.webp" alt="testimonialImage" class="imageExtraLarge">
               <div class="frameFlexColumnTiny">
-                <p class="regular">Diego Villaroel</p>
+                <p class="regular-bold">Diego Villaroel</p>
                 <p class="small" data-key="cardTestimonial1Position"></p>
               </div>
             </div>
@@ -653,7 +642,7 @@
             <div class="frameFlexSmall">
               <img src="assets/images/personas/imageMarc.webp" alt="testimonialImage" class="imageExtraLarge">
               <div class="frameFlexColumnTiny">
-                <p class="regular">Marc Bernardo</p>
+                <p class="regular-bold">Marc Bernardo</p>
                 <p class="small" data-key="cardTestimonial2Position"></p>
                 </a>
               </div>
@@ -665,7 +654,7 @@
             <div class="frameFlexSmall">
               <img src="assets/images/personas/imageRuben.webp" alt="testimonialImage" class="imageExtraLarge">
               <div class="frameFlexColumnTiny">
-                <p class="regular">Rubén Hinarejos</p>
+                <p class="regular-bold">Rubén Hinarejos</p>
                 <p class="small" data-key="cardTestimonial3Position"></p>
               </div>
             </div>
@@ -676,7 +665,7 @@
             <div class="frameFlexSmall">
               <img src="assets/images/personas/imageAlvaro.webp" alt="testimonialImage" class="imageExtraLarge">
               <div class="frameFlexColumnTiny">
-                <p class="regular">Álvaro Torrijos</p>
+                <p class="regular-bold">Álvaro Torrijos</p>
                 <p class="small" data-key="cardTestimonial4Position"></p>
               </div>
             </div>
@@ -687,7 +676,7 @@
             <div class="frameFlexSmall">
               <img src="assets/images/personas/imageLluis.webp" alt="testimonialImage" class="imageExtraLarge">
               <div class="frameFlexColumnTiny">
-                <p class="regular">Lluís Fortuny</p>
+                <p class="regular-bold">Lluís Fortuny</p>
                 <p class="small" data-key="cardTestimonial5Position"></p>
               </div>
             </div>
@@ -697,11 +686,22 @@
       </section>
 
       <!-- [readings] -->
-      <section id="section7" class="frameFlexColumnMedium">
+      <section id="section8" class="readingsSection">
 
-        <h2 data-key="indexSectionHeader7"></h2>
+        <div class="sectionHeaderSlider">
+          <h4 data-key="indexSectionHeader8"></h4>
 
-        <div class="gridThreeOverFlow">
+          <!--[buttonSlider]-->
+          <div class="frameFlexMedium">
+            <button class="buttonSlider buttonSliderLeft buttonSliderLeftReadings"><i
+                class="fa-solid fa-chevron-up iconTiny"></i></button>
+            <button class="buttonSlider buttonSliderRight buttonSliderRightReadings"><i
+                class="fa-solid fa-chevron-up iconTiny"></i></button>
+          </div>
+        </div>
+        
+        <!-- [readingsContainer] -->
+        <div class="readingsContainer">
           <a class="cardReading">
             <div class="frameFlexMedium">
               <div class="cardReadingImageContainer">
@@ -870,7 +870,7 @@
       <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up" width="24" height="24"
         viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
         stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path stroke="none" d="M0 0h44v24H0z" fill="none" />
         <line x1="12" y1="5" x2="12" y2="19" />
         <line x1="18" y1="11" x2="12" y2="5" />
         <line x1="6" y1="11" x2="12" y2="5" />
@@ -886,77 +886,35 @@
 
     <!-- [footer] -->
     <footer>
-
-      <button class="footerButton">
-        <input type="checkbox" id="footerButtonId">
-        <i class="fa-solid fa-chevron-up iconMedium"></i>
-      </button>
-
-      <div class="footerMobile">
-
-        <!-- [tabs] -->
-        <div class="footerElementOne">
-
-          <!-- [language] -->
-          <div class="tabContainer">
-            <input type="checkbox" id="languageSwitch">
-            <label for="languageSwitch" class="tabContainerElement">
-              <i class="fa-solid fa-language"></i>
-              <div class="tabContainerElementInfo">
-                <p class="small-bold" data-key="languageTitle"></p>
-                <p class="small" data-key="languageEnglishText"></p>
-              </div>
-            </label>
-
-            <label for="languageSwitch" class="tabContainerElement">
-              <i class="fa-solid fa-language"></i>
-              <div class="tabContainerElementInfo">
-                <p class="small-bold" data-key="languageTitle"></p>
-                <p class="small" data-key="languageSpanishText"></p>
-              </div>
-            </label>
-
-            <div id="languageSlider" class="tabContainerSlide"></div>
-
-          </div>
-
-          <!-- [theme] -->
-          <div class="tabContainer">
-            <input type="checkbox" id="themeSwitch">
-            <label for="themeSwitch" class="tabContainerElement">
-              <i class="fa-solid fa-circle-half-stroke"></i>
-              <div class="tabContainerElementInfo">
-                <p class="small-bold" data-key="themeTitle"></p>
-                <p class="small" data-key="themeDarkText"></p>
-              </div>
-            </label>
-
-            <label for="themeSwitch" class="tabContainerElement">
-              <i class="fa-solid fa-circle-half-stroke"></i>
-              <div class="tabContainerElementInfo">
-                <p class="small-bold" data-key="themeTitle"></p>
-                <p class="small" data-key="themeLightText"></p>
-              </div>
-            </label>
-
-            <div id="themeSlider" class="tabContainerSlide"></div>
-
-          </div>
-
-        </div>
-
-        <!-- [copyright] -->
-        <div class="footerElementTwo">
-          <a href="index.html" class="link">
-            <p class="small-bold">alejandromorenomartin1990.com</p>
-          </a>
-          <div class="frameFlexSmall">
-            <i class="fa-regular fa-copyright iconTiny"></i>
-            <p class="small" data-key="copyright"></p>
-          </div>
+      <!-- [copyright] -->
+      <div class="frameFlexMedium">
+        <p class="small-bold" data-key="footerText1"></p>
+        <a href="index.html" class="link">
+          <p class="small">alejandromorenomartin.com</p>
+        </a>
+        <div class="frameFlexSmall">
+          <i class="fa-regular fa-copyright iconTiny"></i>
+          <p class="small">2024.</p>
+          <p class="small" data-key="footerText2"></p>
         </div>
       </div>
+      <!-- [socialMedia] -->
+      <div class="frameFlexMedium">
+        <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
+            class="fa-brands fa-whatsapp iconMedium"></i></a>
 
+        <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon" target="_blank"><i
+            class="fa-brands fa-linkedin-in iconMedium"></i></a>
+
+        <a href="https://medium.com/@alejandromorenomartin1990" class="buttonIcon" target="_blank"><i
+            class="fa-brands fa-medium iconMedium"></i></a>
+
+        <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
+            class="fa-brands fa-github iconMedium"></i></a>
+
+        <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
+            class="fa-solid fa-envelope iconMedium"></i></a>
+      </div>
     </footer>
 
   </main>

@@ -8,15 +8,7 @@
   width: 100%;
   align-items: top;
   justify-content: center;
-  gap: 8rem;
   margin: 0 auto;
-}
-
-@media (max-width: 1200px) {
-  .main {
-    gap: 6rem;
-    width: 100%;
-  }
 }
 
 /* ---------- */
@@ -24,16 +16,17 @@
 .mainSections {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 1280px;
   align-items: top;
-  gap: 24rem;
+  gap: 16rem;
   margin-inline: auto;
+  padding-bottom: 22.5rem;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .mainSections {
     gap: 12rem;
-    padding: 0 1rem;
+    padding: 0 1rem 12.25rem;
     width: 100%;
   }
 }
@@ -46,23 +39,16 @@
   width: 100%;
   align-items: center;
   justify-content: center;
-  height: 60svh;
-  margin-top: -6rem;  
+  height: 80svh;
 }
 
-@media (max-width: 1200px) {
-  .mainHero {
-    height: 70dvh;
-    margin-top: -4rem;
-  }
-}
 
 .mainHeroTitle {
   display: flex;
   gap: 1rem;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .mainHero {
     display: flex;
     flex-direction: column;
@@ -77,7 +63,7 @@
   gap: 8rem;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .projectHero {
     display: flex;
     flex-direction: column;
@@ -86,7 +72,7 @@
 }
 
 /* ---------- */
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .reverse {
     flex-direction: column;
   }
@@ -150,7 +136,7 @@
   flex: 1;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .frameFlexDynamic {
     flex-direction: column;
   }
@@ -237,7 +223,7 @@
   gap: 1rem;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .someDesignsFrame {
     flex-direction: column;
   }
@@ -286,7 +272,7 @@
   gap: 1rem;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
 
   .gridFour,
   .gridSix {
@@ -312,7 +298,7 @@
   gap: 1rem;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
 
   .gridFiveFour {
     gap: .5rem;
@@ -358,7 +344,7 @@
   visibility: hidden;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
 
   .hiddenFlex {
     display: none;
@@ -387,10 +373,16 @@
   grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr));
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
 
   .gridTwoOverFlow,
-  .gridThreeOverFlow {
+  .gridThreeOverFlow,
+  .experienceContainer,
+  .educationContainer,
+  .articleContainer,
+  .skillsContainer,
+  .testimonialContainer,
+  .readingsContainer {
     grid-template-columns: none;
     grid-auto-flow: column;
     overflow-x: scroll;
@@ -398,6 +390,8 @@
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
+    width: 100%;
+    scroll-snap-align: start;
   }
 
   .gridThreeOverFlow>* {
@@ -414,7 +408,7 @@
   gap: 1rem;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .gridTwoAuto {
     display: flex;
     flex-direction: column;
@@ -458,7 +452,7 @@
   margin-inline: auto;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .article {
     margin-top: -8px;
     gap: 4rem;
@@ -485,7 +479,7 @@
   padding: 0px calc((100% - 1200px) / 2);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .padding {
     padding: 0 5%;
   }
@@ -493,7 +487,7 @@
 
 /* ---------- */
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
 
   .frameFlexColumnSmall.lateralPadding {
     padding: 0 5%;
@@ -581,7 +575,7 @@
   padding: 0px calc((100% - 1200px) / 2);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .articleInfo {
     margin-top: 6rem;
     padding: 0 5%;
@@ -657,7 +651,7 @@ tr {
   border-bottom: 0.25px solid var(--neutral-800);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   th {
     display: none;
   }
@@ -764,7 +758,7 @@ tr {
   z-index: 9999;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .scroll-top {
     bottom: 1.5rem;
   }
@@ -823,7 +817,7 @@ tr {
 }
 
 .buttonPrimary:hover {
-  background: var(--primary-700);
+  background: var(--primary-800);
 }
 
 .buttonPrimary:active {
@@ -852,6 +846,7 @@ tr {
   justify-content: center;
   transition: 0.3s all ease-in-out;
   width: fit-content;
+  border: 0.25px solid var(--neutral-800);
 }
 
 .buttonSecondary i {
@@ -864,7 +859,6 @@ tr {
 }
 
 .buttonSecondary:hover i {
-  transform: translateX(-10%);
   color: var(--white);
 }
 
@@ -887,86 +881,6 @@ tr {
 
 .buttonIcon:active {
   transform: scale(0.90);
-}
-
-/* ---------- */
-
-.buttonTab {
-  display: flex;
-  gap: .5rem;
-  width: 100%;
-  border-bottom: 0.25px solid var(--neutral-800);
-}
-
-.buttonTabComponent {
-  display: block;
-  padding: 0.5rem;
-  border-radius: var(--br);
-  cursor: pointer;
-}
-
-.buttonTabComponent:hover {
-  background: var(--neutral-950);
-}
-
-.buttonTabComponent.active {
-  border-radius: 0px;
-  border-bottom: 2px solid var(--white);
-}
-
-.buttonTabComponent.active p {
-  font-weight: bold;
-  color: var(--white);
-}
-
-/* ---------- */
-
-.tabContainer {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-  padding: .5rem 2rem;
-  border-radius: 100px;
-  background: var(--neutral-950);
-  position: relative;
-}
-
-.tabContainer input {
-  display: none;
-}
-
-.tabContainerElement {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-  cursor: pointer;
-  z-index: 999;
-  width: 7rem;
-}
-
-.tabContainerElement i {
-  color: var(--neutral-300);
-}
-
-.tabContainerElement p {
-  line-height: 1rem;
-}
-
-.tabContainerElementInfo {
-  display: flex;
-  flex-direction: column;
-}
-
-.tabContainerSlide {
-  background: var(--neutral-1000);
-  width: 50%;
-  height: 80%;
-  border-radius: 100px;
-  position: absolute;
-  left: 1%;
-  top: 10%;
-  transition: left 0.3s ease;
-  box-shadow: 1px -1px 4px var(--neutral-800), -1px 1px 4px var(--neutral-800);
 }
 
 /* ---------- */
@@ -994,26 +908,12 @@ tr {
 /* ---------- */
 
 .link p {
-  font-weight: bold;
   color: var(--neutral-300);
 }
 
 .link:hover p {
   color: var(--white);
   text-decoration: underline;
-}
-
-p[data-key="experienceCardTechnologiesTitle"],
-p[data-key="experienceCardSkillsTitle"],
-p[data-key="experienceCard1TechnologiesText"],
-p[data-key="experienceCard1SkillsText"],
-p[data-key="experienceCard2TechnologiesText"],
-p[data-key="experienceCard2SkillsText"],
-p[data-key="experienceCard3TechnologiesText"],
-p[data-key="experienceCard3SkillsText"],
-p[data-key="experienceCard4TechnologiesText"],
-p[data-key="experienceCard4SkillsText"] {
-  display: inline;
 }
 
 /* ----- BUTTONIMAGE ----- */
@@ -1040,7 +940,7 @@ p[data-key="experienceCard4SkillsText"] {
   color: var(--neutral-1000);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .buttonImage {
     display: none;
   }
@@ -1163,7 +1063,7 @@ body.no-scroll {
 }
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
 
   .contactForm {
     width: 90svw;
@@ -1191,7 +1091,8 @@ body.no-scroll {
 .cardTestimonial p,
 .cardExperience p,
 .cardEducation p,
-.cardReading p {
+.cardReading p,
+.cardArticle p {
   hyphens: manual;
   word-break: break-word;
 }
@@ -1210,8 +1111,18 @@ body.no-scroll {
 }
 
 .cardProject:hover,
-.cardEducation:hover {
+.cardEducation:hover,
+.cardArticle:hover {
   background: var(--neutral-950);
+}
+
+.cardProject.Two:hover {
+  background: none;
+  cursor: not-allowed;
+}
+
+.cardProject.Two {
+  opacity: 0.5;
 }
 
 .cardProjectImageContainer {
@@ -1231,7 +1142,8 @@ body.no-scroll {
 }
 
 .cardProject i,
-.cardEducation i {
+.cardEducation i,
+.cardArticle i {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -1241,109 +1153,9 @@ body.no-scroll {
 }
 
 .cardProject:hover i,
-.cardEducation:hover i {
+.cardEducation:hover i,
+.cardArticle:hover i {
   color: var(--white);
-}
-
-/* ---------- */
-
-.cardReading {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  gap: 1rem;
-  border-radius: var(--br);
-  border: 0.25px solid var(--neutral-800);
-  justify-content: flex-start;
-}
-
-.cardReading .cardReadingImageContainer {
-  flex-basis: 7.5%;
-}
-
-@media (max-width: 1200px) {
-  .cardReading .cardReadingImageContainer {
-    flex-basis: 17.5%;
-  }
-}
-
-.cardReading .cardReadingImageContainer img {
-  object-fit: cover;
-  height: auto;
-  border-radius: var(--br);
-}
-
-/* ---------- */
-
-.cardSkill {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  background: var(--neutral-1000);
-  border: 0.25px solid var(--neutral-800);
-  border-radius: var(--br);
-  gap: 1rem;
-}
-
-/* ---------- */
-
-.cardTestimonial {
-  display: Flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 0.125rem;
-  border-radius: var(--br);
-  border: 0.25px solid var(--neutral-800);
-  background: var(--neutral-1000);
-}
-
-.cardTestimonial .frameFlexSmall {
-  padding: 1rem;
-  background: var(--neutral-950);
-  border-radius: 2px;
-}
-
-.cardTestimonial .padding {
-  padding: 1rem;
-}
-
-
-@media (max-width: 1200px) {
-  .gridThreeOverFlow .cardTestimonial:first-child {
-    grid-column: span 1;
-  }
-
-  .cardTestimonial:first-child {
-    grid-column: auto;
-  }
-}
-
-/* ---------- */
-
-.cardExperience {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 1rem;
-  border-radius: var(--br);
-  border: 0.25px solid var(--neutral-800);
-}
-
-.cardExperience .frameFlexSmall {
-  align-items: flex-start;
-}
-
-/* ---------- */
-
-.cardEducation {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 1rem;
-  border-radius: var(--br);
-  border: 0.25px solid var(--neutral-800);
-  transition: 0.3s all ease-in-out;
 }
 
 /* ---------- */
@@ -1628,7 +1440,7 @@ body.no-scroll {
   z-index: 9999;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .headerContainer {
     width: 100%;
   }
@@ -1641,10 +1453,89 @@ body.no-scroll {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: .5rem 1rem;
+  padding: .5rem calc((100% - 1280px) / 2);
   border-bottom: 0.25px solid var(--neutral-800);
   background: var(--neutral-1000);
   z-index: 9900;
+}
+
+@media (max-width: 1280px) {
+  .navBar {
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* ---------- */
+
+.seetingsOverlay {
+  flex-direction: column;
+  border-radius: var(--br);
+  box-shadow: 1px -1px 4px var(--neutral-800), -1px 1px 4px var(--neutral-800);
+  background: var(--neutral-1000);
+  position: absolute;
+  visibility: hidden;
+  display: flex;
+  opacity: 0;
+  padding: 1rem;
+  gap: 1rem;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s;
+  max-width: 21rem;
+}
+
+.seetingsOverlay.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.tabContainer {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: .5rem 2rem;
+  border-radius: 100px;
+  background: var(--neutral-950);
+  position: relative;
+}
+
+.tabContainer input {
+  display: none;
+}
+
+.tabContainerElement {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+  z-index: 999;
+  width: 7rem;
+}
+
+.tabContainerElement i {
+  color: var(--neutral-300);
+}
+
+.tabContainerElement p {
+  line-height: 1rem;
+}
+
+.tabContainerElementInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabContainerSlide {
+  background: var(--neutral-1000);
+  width: 50%;
+  height: 80%;
+  border-radius: 100px;
+  position: absolute;
+  left: 1%;
+  top: 10%;
+  transition: left 0.3s ease;
+  box-shadow: 1px -1px 4px var(--neutral-800), -1px 1px 4px var(--neutral-800);
 }
 
 /* ---------- */
@@ -1654,8 +1545,7 @@ body.no-scroll {
   width: 100%;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  padding-left: calc((100% - 90%) / 2);
-  padding-right: calc((100% - 90%) / 2);
+  padding: .5rem calc((100% - 1280px) / 2);
   border-bottom: 0.25px solid var(--neutral-800);
   background: var(--neutral-1000);
   overflow: hidden;
@@ -1678,8 +1568,7 @@ body.no-scroll {
   display: none;
 }
 
-@media (max-width: 1200px) {
-
+@media (max-width: 1280px) {
   .tableOfContent {
     top: 3.4rem;
     border-bottom: 0.25px solid var(--neutral-800);
@@ -1696,7 +1585,7 @@ body.no-scroll {
 
 .tableOfContentLinks a {
   padding: .25rem .5rem;
-  border-radius: 50px;
+  border-radius: var(--br);
   cursor: pointer;
   display: inline-block;
   scroll-snap-align: start;
@@ -1717,83 +1606,29 @@ body.no-scroll {
 
 footer {
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  z-index: 999;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-}
-
-.footerMobile {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: .5rem calc((100% - 1280px) / 2);
   border-top: 0.25px solid var(--neutral-800);
-  padding: .5rem 1rem;
   background: var(--neutral-1000);
 }
 
-.footerButton {
-  z-index: 1000;
-  width: 32px;
-  height: 32px;
-  background: var(--neutral-1000);
-  border: 0.25px solid var(--neutral-800);
-  border-radius: 4px 4px 0px 0px;
-  align-self: center;
-  display: none;
-}
-
-#footerButtonId {
-  opacity: 0;
-  position: absolute;
-  z-index: 9999;
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
-}
-
-footer .footerButton i {
-  transition: transform 0.3s ease-in-out;
-}
-
-#footerButtonId:checked+i {
-  transform: rotate(180deg);
-}
-
-.footerElementOne {
-  display: flex;
-  gap: 1rem;
-  transition: bottom 0.3s ease-in-out;
-}
-
-.footerElementTwo {
-  display: flex;
-  flex-direction: column;
-  transition: bottom 0.3s ease-in-out;
-}
-
-.footerElementTwo i {
+footer .i {
   color: var(--neutral-500);
 }
 
-@media (max-width: 1200px) {
-  .footerMobile {
+@media (max-width: 1280px) {
+  footer {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 1rem;
   }
 
-  .footerButton {
-    display: block;
-  }
-
-  .footerElementOne {
+  footer .frameFlexMedium:first-child {
     flex-direction: column;
   }
 }
+
 
 /* ----- HEADER ----- */
 
@@ -1804,13 +1639,13 @@ footer .footerButton i {
   width: 100%;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .section {
     scroll-margin-top: 150px;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .sectionHeader {
     gap: .25rem;
   }
@@ -1927,7 +1762,7 @@ footer .footerButton i {
   width: 25rem;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
 
   .mainHeroImage {
     width: 100%;
@@ -1948,7 +1783,7 @@ footer .footerButton i {
   height: 48px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .imageExtraLarge {
     width: 36px;
     height: 36px;
@@ -1960,7 +1795,7 @@ footer .footerButton i {
   height: 36px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .imageLarge {
     width: 24px;
     height: 24px;
@@ -1972,7 +1807,7 @@ footer .footerButton i {
   height: 24px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .imageMedium {
     width: 20px;
     height: 20px;
@@ -1984,7 +1819,7 @@ footer .footerButton i {
   height: 20px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .imageSmall {
     width: 16px;
     height: 16px;
@@ -1996,7 +1831,7 @@ footer .footerButton i {
   height: 16px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .imageTiny {
     width: 12px;
     height: 12px;
@@ -2038,7 +1873,7 @@ footer .footerButton i {
   margin-top: -12rem;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .projectHeader {
     gap: 2rem;
     margin-top: -6rem;
@@ -2065,7 +1900,7 @@ footer .footerButton i {
   inset: 0;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .desktopFrame {
     width: 100%;
   }
@@ -2118,7 +1953,7 @@ footer .footerButton i {
   height: 5rem;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
 
   .cardUserSpecial,
   .cardUser {
@@ -2239,20 +2074,8 @@ footer .footerButton i {
   font-size: 48px;
 }
 
-@media (max-width: 1200px) {
-  .iconExtraLarge {
-    font-size: 36px;
-  }
-}
-
 .iconLarge {
   font-size: 36px;
-}
-
-@media (max-width: 1200px) {
-  .iconLarge {
-    font-size: 24px;
-  }
 }
 
 .iconMedium {
@@ -2265,12 +2088,6 @@ footer .footerButton i {
 
 .iconTiny {
   font-size: 16px;
-}
-
-@media (max-width: 1200px) {
-  .iconTiny {
-    font-size: 12px;
-  }
 }
 
 /* ---------- */
@@ -2301,7 +2118,7 @@ footer .footerButton i {
   height: auto;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .someDesignsImageContainer img {
     max-width: 192px;
   }
@@ -2364,14 +2181,14 @@ footer .footerButton i {
 /* ---------- */
 
 .profileImageContainer {
-  width: 148px;
-  height: 148px;
+  width: 124px;
+  height: 124px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .profileImageContainer {
-    width: 112px;
-    height: 112px;
+    width: 96px;
+    height: 96px;
   }
 }
 
@@ -2383,17 +2200,17 @@ footer .footerButton i {
   display: flex;
   gap: .5rem;
   padding: .5rem;
-  width: 35%;
+  width: 100%;
   border-radius: var(--br);
-  box-shadow: 1px -1px 4px var(--neutral-800), -1px 1px 4px var(--neutral-800);
+  box-shadow: -0.25px -0.25px 5px var(--neutral-800), 2px 2px 10px var(--neutral-800);
   align-items: center;
   justify-content: center;
-  height: 296px;
+  height: 18rem;
 }
 
-@media (max-width: 1200px) {
-  .profileCard {    
-    width: 100%;    
+@media (max-width: 1280px) {
+  .profileCard {
+    width: 100%;
   }
 }
 
@@ -2403,7 +2220,12 @@ footer .footerButton i {
   width: 100%;
   align-items: center;
   height: 100%;
-  justify-content: center; 
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.profileCardTitle p {
+  text-align: center;
 }
 
 .profileCardItem {
@@ -2420,7 +2242,7 @@ footer .footerButton i {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
 .profileCardInfo {
@@ -2440,7 +2262,6 @@ footer .footerButton i {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 0.5rem;
   align-items: flex-start;
   height: 100%;
   border-bottom: 0.25px solid var(--neutral-800);
@@ -2448,4 +2269,208 @@ footer .footerButton i {
 
 .profileCardDescriptionItem:last-child {
   border-bottom: none;
+}
+
+.profileCardButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 1280px) {
+  .profileCardButtons {
+    flex-direction: column;
+  }
+
+  .profileCardButtons a {
+    width: 100%;
+  }
+}
+
+/* ---------- */
+
+.buttonElevation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .75rem;
+  border-radius: 100px;
+  border: 0.25px solid var(--neutral-800);
+  cursor: pointer;
+}
+
+.buttonElevation:hover {
+  box-shadow: 1px -1px 4px var(--neutral-800), -1px 1px 4px var(--neutral-800);
+}
+
+/* ---------- */
+
+.sectionHeaderSlider {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttonSlider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .75rem;
+  border-radius: 100px;
+  border: 0.25px solid var(--neutral-800);
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+@media (max-width: 1280px) {
+  .buttonSlider {
+    display: none;
+  }
+}
+
+.buttonSliderLeft[disabled],
+.buttonSliderRight[disabled] {
+  cursor: not-allowed;
+  opacity: 0.25;
+}
+
+.buttonSlider:hover {
+  box-shadow: 1px -1px 4px var(--neutral-800), -1px 1px 4px var(--neutral-800);
+}
+
+.buttonSliderLeft {
+  transform: rotate(270deg);
+}
+
+.buttonSliderRight {
+  transform: rotate(90deg);
+}
+
+/* ---------- */
+
+.cardExperience {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: var(--br);
+  border: 0.25px solid var(--neutral-800);
+  flex: 0 0 1280px;
+  max-width: 1280px;
+}
+
+.cardExperience .frameFlexSmall {
+  align-items: flex-start;
+}
+
+/* ---------- */
+
+.cardEducation,
+.cardArticle,
+.cardSkill {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: var(--br);
+  border: 0.25px solid var(--neutral-800);
+  background: var(--neutral-1000);
+  transition: 0.3s all ease-in-out;
+  flex: 0 0 632px;
+  max-width: 632px;
+}
+
+.cardTestimonial {
+  display: Flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.125rem;
+  border-radius: var(--br);
+  border: 0.25px solid var(--neutral-800);
+  background: var(--neutral-1000);
+  gap: 1rem;
+  padding: 1rem;
+  flex: 0 0 632px;
+  max-width: 632px;
+}
+
+/* ---------- */
+
+.cardReading {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  border-radius: var(--br);
+  border: 0.25px solid var(--neutral-800);
+  justify-content: flex-start;
+  flex: 0 0 632px;
+  max-width: 632px;
+}
+
+.cardReading .cardReadingImageContainer {
+  flex-basis: 7.5%;
+}
+
+@media (max-width: 1280px) {
+  .cardReading .cardReadingImageContainer {
+    flex-basis: 17.5%;
+  }
+}
+
+.cardReading .cardReadingImageContainer img {
+  object-fit: cover;
+  height: auto;
+  border-radius: var(--br);
+}
+
+.experienceSection,
+.educationSection,
+.articleSection,
+.skillsSection,
+.testimonialSection,
+.readingsSection {
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.experienceContainer,
+.educationContainer,
+.articleContainer,
+.skillsContainer,
+.testimonialContainer,
+.readingsContainer {
+  display: flex;
+  gap: 1rem;
+  width: 1280px;
+  justify-content: flex-start;
+  align-items: stretch;
+  transition: transform .6s ease-in-out;
+  position: relative;
+}
+
+@media (max-width: 1280px) {
+
+  .cardExperience,
+  .cardEducation,
+  .cardArticle,
+  .cardSkill,
+  .cardTestimonial,
+  .cardReading {
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+
+  .experienceContainer,
+  .educationContainer,
+  .articleContainer,
+  .skillsContainer,
+  .testimonialContainer,
+  .readingsContainer {
+    width: 100%;
+  }
 }

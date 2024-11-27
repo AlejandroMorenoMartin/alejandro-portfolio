@@ -1,51 +1,3 @@
-/* ----- TABCONTAINER ----- */
-
-document.addEventListener("DOMContentLoaded", () => {
-  const experienceButton = document.getElementById("experienceButton");
-  const educationButton = document.getElementById("educationButton");
-  const experienceSection = document.getElementById("experienceSection");
-  const educationSection = document.getElementById("educationSection");
-
-  function toggleSections(activeButton) {
-    if (activeButton === "experience") {
-      experienceSection.classList.remove("hidden");
-      educationSection.classList.add("hidden");
-      experienceButton.classList.add("active");
-      educationButton.classList.remove("active");
-    } else if (activeButton === "education") {
-      educationSection.classList.remove("hidden");
-      experienceSection.classList.add("hidden");
-      educationButton.classList.add("active");
-      experienceButton.classList.remove("active");
-    }
-  }
-
-  experienceButton.addEventListener("click", () => toggleSections("experience"));
-  educationButton.addEventListener("click", () => toggleSections("education"));
-});
-
-
-/* ----- GREETINGS ----- */
-
-document.addEventListener('DOMContentLoaded', function () {
-  // Obtener el elemento donde se mostrará la hora
-  const currentTimeElement = document.getElementById('currentTime');
-
-  // Función para actualizar la hora
-  function updateTime() {
-    const now = new Date();
-    const options = { hour: '2-digit', minute: '2-digit', hour12: true };
-    currentTimeElement.textContent = now.toLocaleString([], options); // Solo mostrar la hora
-  }
-
-  // Actualizar la hora al cargar la página
-  updateTime();
-
-  // Opcional: Actualizar la hora cada minuto
-  setInterval(updateTime, 60000); // 60000 ms = 1 minuto
-});
-
-
 /* ----- BUTTONPROGRESS ----- */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -141,7 +93,7 @@ document.querySelectorAll('.tableOfContent a[href^="#"]').forEach(anchor => {
 
       // Obtener el ID de la sección
       const targetId = this.getAttribute("href").substring(1);
-      const targetElement = document.querySelector(`#${targetId} h2`);
+      const targetElement = document.querySelector(`#${targetId} h4`);
 
       if (targetElement) {
           // Obtener la posición actual de la tabla de contenido y restar el offset

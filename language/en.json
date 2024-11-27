@@ -21,15 +21,15 @@
   "navigationPage3": "Resume",  
 
   
-  "profilePosition": "UX/UI Designer",
+  "profilePosition": "Product designer",
+  "profileLocationTitle": "Location",
   "profileLocation": "Madrid, Spain",
-  "profileExperience": "3 years of experience",
+  "profileExperienceTitle": "Experience",
+  "profileExperience": "3 years",
+  "profileLanguageTitle": "Languages",
   "profileLanguage": "Spanish & English",
   "profileAboutMeTitle": "About me",
-  "profileAboutMeDescription1": "Hi, I'm Alex - I specialise in creating websites and mobile applications that combine strategy and a deeply human approach.",
-  "profileAboutMeDescription2": "I currently work as a freelancer, collaborating with companies to overcome challenges and achieve their goals with custom and effective solutions.",
-  "profileAboutMeDescription3": "I am also an entrepreneur. My experience in design, product development and marketing allows me to tackle challenging projects with enthusiasm and dedication, always bringing a holistic perspective.",
-  "profileAboutMeDescription4": "In the future, I envision myself leading creative teams, guiding them with a strategic and innovative vision and committed to improving people's lives.",
+  "profileAboutMeDescription1": "Hi, I'm Alex - I'm a product designer with a background in front-end development. I'm particularly interested in user experience, usability and research and its applications to improve people's lives. My native language is Spanish and I'm fluent in English.",  
 
   "mainHeroH1": "Product designer",  
   "mainHeroP2": "Hi, I'm Alex - I design websites and mobile applications with a strategic and people-oriented vision.",  
@@ -37,12 +37,13 @@
   "mainHeroButton2": "Contact",
 
   "indexSectionHeader1": "Projects",
-  "indexSectionHeader2": "Resume",
-  "indexSectionHeader3": "Articles",
-  "indexSectionHeader4": "Skills",
-  "indexSectionHeader5": "Toolstack", 
-  "indexSectionHeader6": "Testimonial",
-  "indexSectionHeader7": "Readings",
+  "indexSectionHeader2": "Experience",
+  "indexSectionHeader3": "Education",
+  "indexSectionHeader4": "Articles",
+  "indexSectionHeader5": "Skills", 
+  "indexSectionHeader6": "Toolstack",
+  "indexSectionHeader7": "Testimonial",
+  "indexSectionHeader8": "Readings",
 
   "indexSectionHeaderButton": "See more",
 
@@ -182,44 +183,33 @@
   "contactFormMessage": "Message",
   "contactFormButton": "Submit",
 
-  "resumeHeader": "Resume",
-  "buttonTab1": "Experience",
-  "buttonTab2": "Education",
+  "experienceHeader": "Experience",  
 
-  "experienceCardTechnologiesTitle": "Technologies:",    
-  "experienceCardSkillsTitle": "Skills:", 
-
-  "experienceCard1Title": "Product designer",
-  "experienceCard1Company": "Geomites - Entrepreneur",
-  "experienceCard1Date": "Mar 2023 - Present",
-  "experienceCard1Location": "Spain - Remote",
-  "experienceCard1Description": "I lead  the UX/UI design of a mobile video game for iOS and Android in an agile environment, conducting market analysis, user research, prototyping, and usability testing. I collaborate with developers to transition the prototype to React and created a design system for maintenance and updates.",     
-  "experienceCard1TechnologiesText": "Figma - React - Adobe ilustrator - Microsoft azure - Miro",
-  "experienceCard1SkillsText": "UX research - Wireframing - Prototyping - UX design - User test - UI design - Game design",  
+  "experienceCard1Title": "Product designer — Entrepreneur",
+  "experienceCard1Company": "EventNest",
+  "experienceCard1Date": "Oct 2024 — Present",
+  "experienceCard1Location": "Spain — Remote",
+  "experienceCard1Description": "I am working on the creation of a marketplace that helps event organizers and promoters find the services they need to develop their activities. The project is currently in its initial phase, where I am conducting the necessary research to define the MVP (Minimum Viable Product) to begin working on.",    
   
-  "experienceCard2Title": "Product designer",
-  "experienceCard2Company": " - Freelance",
-  "experienceCard2Date": "Feb 2023 - Oct 2023",
-  "experienceCard2Location": "Spain - Remote",
-  "experienceCard2Description": "I designed and developed a website for a travel agency, conducting user and competitor research, creating wireframes, and testing designs. I collaborated with developers for implementation, optimizing SEO to help the company achieve a 20% increase in sales.",    
-  "experienceCard2TechnologiesText": "Figma - Adobe photoshop - Miro - Hotjar - Google analytics",  
-  "experienceCard2SkillsText": "Ux research - UX design - UI design - Responsive web design - Mobile design - Web development",
+  "experienceCard2Title": "Product designer — Entrepreneur",
+  "experienceCard2Company": "Geomites",
+  "experienceCard2Date": "Mar 2023 — Present",
+  "experienceCard2Location": "Spain — Remote",
+  "experienceCard2Description": "I lead the UX/UI design of a mobile video game for iOS and Android in an agile environment, conducting market analysis, user research, prototyping, and usability testing. I collaborate with developers to transition the prototype to React and created a design system for maintenance and updates.",      
 
-  "experienceCard3Title": "Product designer",
-  "experienceCard3Company": " - Freelance",
-  "experienceCard3Date": "Apr 2022 - Nov 2022",
-  "experienceCard3Location": "Spain - Remote",
-  "experienceCard3Description": "I designed and developed a website for a visual effects studio, conducting market research, user testing, and creating user flows. I ensured the final product met user and stakeholder expectations, leading to a 15% increase in contact requests.", 
-  "experienceCard3TechnologiesText": "Technologies: Figma - Adobe ilustrator - Wordpress - Google analytics", 
-  "experienceCard3SkillsText": "Ux research - UX design - UI design - Responsive web design - Mobile design - Web development", 
+  "experienceCard3Title": "Product designer — Freelance",
+  "experienceCard3Company": "",
+  "experienceCard3Date": "Apr 2023 — Present",
+  "experienceCard3Location": "Spain — Remote",
+  "experienceCard3Description": "I work as a product designer for different companies and sectors. My main freelance activities include designing and developing company websites, designing corporate documents, and participating in the design process of various products or services.",   
 
-  "experienceCard4Title": "Marketing manager",
-  "experienceCard4Company": " - Contract",
+  "experienceCard4Title": "Marketing manager — Contract",
+  "experienceCard4Company": "Promam",
   "experienceCard4Date": "Jul 2017 - Sep 2021",
-  "experienceCard4Location": "Spain - On site",
-  "experienceCard4Description": "I managed the design and development of a website and led SEO and social media marketing campaigns for an industrial machinery company. I also designed products like catalogs and documents and collaborated on marketing and sales strategies.",  
-  "experienceCard4TechnologiesText": "Technologies: Google drive - Microsoft suite - Adobe ilustrator - Adobe Photoshop - Google analytics - Wordpress - Hotjar",    
-  "experienceCard4SkillsText": "Negotiation - Graphic design - SEO - Strategy - Digital marketing", 
+  "experienceCard4Location": "Spain — On site",
+  "experienceCard4Description": "I was responsible for marketing and design tasks,  managing the design and development of the company's website and led SEO positioning campaigns. I spearheaded marketing campaigns on social media and organized and developed the design of various products necessary for the company's operations, including catalogs, advertisements, and documents.",   
+
+  "educationHeader": "Education",
 
   "cardEducation1Title": "UI design patterns for successful software",
   "cardEducation1Date": "Aug 2022",
@@ -1045,5 +1035,19 @@
   "cardArticle2Name":"Stakeholder interviews",
   "cardArticle2Description":"Bridging strategy and design.",
 
-  "buttonHero":"See projects"
+  "buttonPrimaryHero":"See projects",
+  "buttonSecondaryHero":"Download resume",
+
+  "seetingText":"Seetings",
+
+  "footerText1":"Portfolio",
+  "footerText2":"No rights reserved.",
+
+  "cardProjectEventNestTime":"",
+  "cardProjectEventNestDescription":"Entrepreneurship project to set up a marketplace for musical artists.",
+
+  "cardProjectCaseStudyTime":"",
+  "cardProjectCaseStudyDescription":"Improvement proposal for a top market application.",  
+
+  "mediumLink":"All articles"
 }

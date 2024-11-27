@@ -17,16 +17,15 @@
   "navigationPage2": "Proyectos",
   "navigationPage3": "Currículum", 
 
-  "profilePosition": "Diseñador UX/UI",
+  "profilePosition": "Diseñador de producto",
+  "profileLocationTitle": "Localización",
   "profileLocation": "Madrid, España",
-  "profileExperience": "3 años de experiencia",
-  "profileLanguage": "Español & Inglés",
-  "profileAboutMeTitle": "About me",
-  "profileAboutMeDescription1": "Hola, soy Alex — Me especializo en crear sitios web y aplicaciones móviles que combinan estrategia y un enfoque profundamente humano.",
-  "profileAboutMeDescription2": "Actualmente trabajo como freelance, colaborando con empresas para superar retos y alcanzar sus objetivos con soluciones personalizadas y efectivas.",
-  "profileAboutMeDescription3": "Además, soy emprendedor. Mi experiencia en diseño, desarrollo de productos y marketing me permite afrontar proyectos desafiantes con entusiasmo y dedicación, aportando siempre una perspectiva integral.",
-  "profileAboutMeDescription4": "En el futuro, me visualizo liderando equipos creativos, guiándolos con una visión estratégica e innovadora y comprometida con mejorar la vida de las personas.",
-
+  "profileExperienceTitle": "Experiencia",
+  "profileExperience": "3 años",
+  "profileLanguageTitle": "Idiomas",
+  "profileLanguage": "Español & Inglés",  
+  "profileAboutMeTitle": "Sobre mí",
+  "profileAboutMeDescription1": "Hola, soy Alex — Soy diseñador de producto con conocimientos de desarrollo front-end. Estoy particularmente interesado en la experiencia del usuario, la usabilidad y la investigación, así como sus aplicaciones para mejorar la vida de las personas. Mi lengua materna es el español y hablo inglés con fluidez.",
 
   "mainHeroH1": "Diseñador de producto",
   
@@ -35,12 +34,13 @@
   "mainHeroButton2": "Contacto",
 
   "indexSectionHeader1": "Proyectos",
-  "indexSectionHeader2": "Currículum",
-  "indexSectionHeader3": "Artículos",
-  "indexSectionHeader4": "Habilidades",
+  "indexSectionHeader2": "Experiencia",
+  "indexSectionHeader3": "Educación",
+  "indexSectionHeader4": "Artículos",
   "indexSectionHeader5": "Herramientas", 
-  "indexSectionHeader6": "Testimonios",
-  "indexSectionHeader7": "Lecturas",  
+  "indexSectionHeader6": "Habilidades",
+  "indexSectionHeader7": "Testimonios",
+  "indexSectionHeader8": "Lecturas",  
 
   "indexSectionHeaderButton": "Ver más",
 
@@ -181,44 +181,33 @@
   "contactFormMessage": "Mensaje",
   "contactFormButton": "Enviar",
 
-  "resumeHeader": "Currículum",
-  "buttonTab1": "Experiencia",
-  "buttonTab2": "Educación",
+  "experienceHeader": "Experiencia",  
 
-  "experienceCardTechnologiesTitle": "Tecnologías:",    
-  "experienceCardSkillsTitle": "Habilidades:", 
-
-  "experienceCard1Title": "Diseñador de producto",
-  "experienceCard1Company": "Geomites - Emprendedor",
-  "experienceCard1Date": "Mar 2023 - Hoy",
+  "experienceCard1Title": "Diseñador de producto — Emprendedor",
+  "experienceCard1Company": "EventNest",
+  "experienceCard1Date": "Oct 2024 — Hoy",
   "experienceCard1Location": "España - Remoto",
-  "experienceCard1Description": "Lidero el diseño UX/UI de un videojuego móvil para iOS y Android en un entorno ágil, realizando análisis de mercado, investigación de usuarios, prototipado y pruebas de usabilidad. Colaboro con los desarrolladores en la transición del prototipo a React y creé un sistema de diseño para el mantenimiento y las actualizaciones.", 
-  "experienceCard1TechnologiesText": "Figma - React - Adobe ilustrator - Microsoft azure - Miro",  
-  "experienceCard1SkillsText": "Investigación UX - Prototipado - Diseño UX - Testeo de usuarios - Diseño UI - Diseño de videojuegos",
+  "experienceCard1Description": "Estoy trabajando en la creación de un marketplace que ayude a organizadores y promotores de eventos a encontrar los servicios que necesitan para desarrollar sus actividades. El proyecto se encuentra actualmente en su fase inicial, en la que estoy realizando la investigación necesaria para definir el MVP (Minimum Viable Product) sobre el que empezar a trabajar.",   
   
-  "experienceCard2Title": "Diseñador de producto",
-  "experienceCard2Company": " - Autónomo",
-  "experienceCard2Date": "Feb 2023 - Oct 2023",
+  "experienceCard2Title": "Diseñador de producto — Emprendedor",
+  "experienceCard2Company": "Geomites",
+  "experienceCard2Date": "Mar 2023 — Hoy",
   "experienceCard2Location": "España - Remoto",
-  "experienceCard2Description": "Diseñé y desarrollé un sitio web para una agencia de viajes, realizando una investigación de usuarios y competidores, creando wireframes y probando diseños. Colaboré con los desarrolladores para la implementación, optimizando el SEO para ayudar a la empresa a lograr un aumento del 20% en las ventas.",       
-  "experienceCard2TechnologiesText": "Figma - Adobe photoshop - Miro - Hotjar - Google analytics",  
-  "experienceCard2SkillsText": "Investigación UX - Diseño UX - Diseño UI - Diseño responsivo - Diseño de móvil - Desarrollo web",  
+  "experienceCard2Description": "Dirigí el diseño UX/UI de un videojuego móvil para iOS y Android en un entorno ágil, realizando análisis de mercado, investigación de usuarios, creación de prototipos y pruebas de usabilidad. Colaboré con los desarrolladores en la transición del prototipo a React y creé un sistema de diseño para el mantenimiento y las actualizaciones.",   
 
-  "experienceCard3Title": "Diseñador de producto",
-  "experienceCard3Company": " - Autónomo",
-  "experienceCard3Date": "Abr 2022 - Nov 2022",
+  "experienceCard3Title": "Diseñador de producto — Freelance",
+  "experienceCard3Company": "",
+  "experienceCard3Date": "Abr 2023 — Hoy",
   "experienceCard3Location": "España - Remoto",
-  "experienceCard3Description": "Diseñé y desarrollé un sitio web para un estudio de efectos visuales, realizando estudios de mercado, pruebas con usuarios y creando flujos de usuarios. Me aseguré de que el producto final cumpliera las expectativas de los usuarios y las partes interesadas, lo que llevó a un aumento del 15% en las solicitudes de contacto.",  
-  "experienceCard3TechnologiesText": "Figma - Adobe ilustrator - Wordpress - Google analytics",    
-  "experienceCard3SkillsText": "Investigación UX - Diseño UX - Diseño UI - Diseño responsivo - Diseño de móvil - Desarrollo web",
+  "experienceCard3Description": "Trabajo como diseñador de productos para diferentes empresas y sectores. Mis principales actividades como freelance incluyen el diseño y desarrollo de sitios web de empresas, el diseño de documentos corporativos y la participación en el proceso de diseño de diversos productos o servicios.",   
 
   "experienceCard4Title": "Responsable de marketing",
-  "experienceCard4Company": " - Contratado",
+  "experienceCard4Company": "Promam",
   "experienceCard4Date": "Jul 2017 - Sep 2021",
   "experienceCard4Location": "España - En oficina",
-  "experienceCard4Description": "Gestioné el diseño y desarrollo de un sitio web y dirigí campañas de SEO y marketing en redes sociales para una empresa de maquinaria industrial. También diseñé productos como catálogos y documentos y colaboré en estrategias de marketing y ventas.",
-  "experienceCard4TechnologiesText": "Google drive - Microsoft suite - Adobe ilustrator - Adobe Photoshop - Google analytics - Wordpress - Hotjar",  
-  "experienceCard4SkillsText": "Negociación - Diseño gráfico - SEO - Estrategia - Marketing digital",
+  "experienceCard4Description": "Fui responsable de tareas de marketing y diseño, gestionando el diseño y desarrollo de la página web de la empresa y dirigí campañas de posicionamiento SEO. Lideré campañas de marketing en las redes sociales y organicé y desarrollé el diseño de varios productos necesarios para las operaciones de la empresa, incluidos catálogos, anuncios y documentos.",  
+
+  "educationHeader": "Educación",
 
   "cardEducation1Title": "Patrones de diseño de interfaz de usuario para el éxito del software",
   "cardEducation1Date": "Ago 2022",
@@ -988,7 +977,21 @@
 "cardArticle2Name":"Entrevistas con stakeholders",
 "cardArticle2Description":"Uniendo estrategia y diseño.",
 
-"buttonHero":"Ver proyectos"
+"buttonPrimaryHero":"Ver proyectos",
+"buttonSecondaryHero":"Descargar CV",
+
+"seetingText":"Ajustes",
+
+"footerText1":"Portafolio",
+"footerText2":"Sin derechos reservados.",
+
+"cardProjectEventNestTime":"",
+"cardProjectEventNestDescription":"Proyecto empresarial para crear un mercado de artistas musicales.",
+
+"cardProjectCaseStudyTime":"",
+"cardProjectCaseStudyDescription":"Propuesta de mejora para una aplicación de mercado puntera.",  
+
+"mediumLink":"Todos los artículos"
 }
 
 
