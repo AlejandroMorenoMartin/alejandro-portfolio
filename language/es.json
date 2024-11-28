@@ -25,7 +25,7 @@
   "profileLanguageTitle": "Idiomas",
   "profileLanguage": "Español & Inglés",  
   "profileAboutMeTitle": "Sobre mí",
-  "profileAboutMeDescription1": "Hola, soy Alex — Soy diseñador de producto con conocimientos de desarrollo front-end. Estoy particularmente interesado en la experiencia del usuario, la usabilidad y la investigación, así como sus aplicaciones para mejorar la vida de las personas. Mi lengua materna es el español y hablo inglés con fluidez.",
+  "profileAboutMeDescription1": "Hola! — Soy diseñador de producto con conocimientos de desarrollo front-end. Estoy particularmente interesado en la experiencia del usuario, la usabilidad y la investigación, así como sus aplicaciones para mejorar la vida de las personas.",
 
   "mainHeroH1": "Diseñador de producto",
   
@@ -37,8 +37,8 @@
   "indexSectionHeader2": "Experiencia",
   "indexSectionHeader3": "Educación",
   "indexSectionHeader4": "Artículos",
-  "indexSectionHeader5": "Herramientas", 
-  "indexSectionHeader6": "Habilidades",
+  "indexSectionHeader5": "Habilidades", 
+  "indexSectionHeader6": "Herramientas",
   "indexSectionHeader7": "Testimonios",
   "indexSectionHeader8": "Lecturas",  
 
@@ -101,7 +101,7 @@
   "cardSkill9Title": "Pruebas de usabilidad",
   "cardSkill9Description": "Validación de experiencia de usuario para optimización continua.", 
   
-  "cardTestimonial1Position": "Director de diseño de producto en Rappi",
+  "cardTestimonial1Position": "Director de diseño en Rappi",
   "cardTestimonial1Description": "“Alejandro tiene un perfil autodidacta y trabajador que le convierte en un verdadero activo para cualquier equipo de diseño”.",
   "cardTestimonial2Position": "Desarrollador full-stack en BMAT",
   "cardTestimonial2Description": "“Alejandro es una persona disciplinada y dedicada en los proyectos que decide llevar a cabo”.",
@@ -109,7 +109,7 @@
   "cardTestimonial3Description": "“El trabajo que hizo con nuestra página web, nos permitió tener una presencia en Internet que ha incrementado nuestras ventas en un 60%”.",
   "cardTestimonial4Position": "Diseñador de producto en SISnet360",
   "cardTestimonial4Description": "“La atención al detalle y la capacidad para resolver problemas hacen de Alejandro un buen compañero para afrontar grandes retos”.",
-  "cardTestimonial5Position": "Diseñador dgráfico en Zitro games",
+  "cardTestimonial5Position": "Diseñador gráfico en Zitro games",
   "cardTestimonial5Description": "“Trabajar con él ha sido muy fácil, y ha sido muy profesional en la entrega de lo que se ha solicitado”.",
 
   "cardReading1Title": "El camino hacia diseñador de producto Sr.",

@@ -223,6 +223,7 @@ const sliders = [
     container: document.querySelector('.experienceContainer'),
     buttonLeft: document.querySelector('.buttonSliderLeftExperience'),
     buttonRight: document.querySelector('.buttonSliderRightExperience'),
+    counter: document.querySelector('#experienceCounter'),
     cardWidth: 1280,
     gap: 16,
     totalCards: document.querySelectorAll('.cardExperience').length
@@ -231,6 +232,7 @@ const sliders = [
     container: document.querySelector('.educationContainer'),
     buttonLeft: document.querySelector('.buttonSliderLeftEducation'),
     buttonRight: document.querySelector('.buttonSliderRightEducation'),
+    counter: document.querySelector('#educationCounter'),
     cardWidth: 632,
     gap: 16,
     totalCards: document.querySelectorAll('.cardEducation').length
@@ -239,6 +241,7 @@ const sliders = [
     container: document.querySelector('.skillsContainer'),
     buttonLeft: document.querySelector('.buttonSliderLeftSkills'),
     buttonRight: document.querySelector('.buttonSliderRightSkills'),
+    counter: document.querySelector('#skillsCounter'),
     cardWidth: 632,
     gap: 16,
     totalCards: document.querySelectorAll('.cardSkill').length
@@ -247,6 +250,7 @@ const sliders = [
     container: document.querySelector('.testimonialContainer'),
     buttonLeft: document.querySelector('.buttonSliderLeftTestimonial'),
     buttonRight: document.querySelector('.buttonSliderRightTestimonial'),
+    counter: document.querySelector('#testimonialCounter'),
     cardWidth: 632,
     gap: 16,
     totalCards: document.querySelectorAll('.cardTestimonial').length
@@ -255,6 +259,7 @@ const sliders = [
     container: document.querySelector('.readingsContainer'),
     buttonLeft: document.querySelector('.buttonSliderLeftReadings'),
     buttonRight: document.querySelector('.buttonSliderRightReadings'),
+    counter: document.querySelector('#readingCounter'),
     cardWidth: 632,
     gap: 16,
     totalCards: document.querySelectorAll('.cardReading').length
@@ -271,6 +276,15 @@ function updateButtons(slider) {
   buttonRight.disabled = currentPosition === maxScroll;
 }
 
+// Función para actualizar el contador
+function updateCounter(slider) {
+  const { counter, currentPosition, cardWidth, gap, totalCards } = slider;
+  if (counter) {
+    const cardIndex = Math.abs(currentPosition) / (cardWidth + gap) + 1; // Cálculo del índice actual
+    counter.textContent = `${Math.round(cardIndex)} / ${totalCards}`;
+  }
+}
+
 // Función genérica para manejar el desplazamiento
 function handleSliderMovement(slider, direction) {
   const { container, cardWidth, gap, maxScroll } = slider;
@@ -282,6 +296,7 @@ function handleSliderMovement(slider, direction) {
   }
 
   updateButtons(slider);
+  updateCounter(slider); // Actualizar el contador
 }
 
 // Inicializar los deslizadores
@@ -289,6 +304,9 @@ sliders.forEach(slider => {
   const { buttonLeft, buttonRight, cardWidth, gap, totalCards } = slider;
   slider.maxScroll = -((cardWidth + gap) * (totalCards - 1));
   slider.currentPosition = 0;
+
+  // Inicializar contador
+  updateCounter(slider);
 
   // Manejadores de eventos para los botones
   buttonLeft.addEventListener('click', () => handleSliderMovement(slider, 'left'));

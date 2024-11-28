@@ -1483,6 +1483,12 @@ body.no-scroll {
   max-width: 21rem;
 }
 
+@media (max-width: 1280px) {
+  .seetingsOverlay {    
+    max-width: 20rem;
+  }
+}
+
 .seetingsOverlay.active {
   visibility: visible;
   opacity: 1;
@@ -2425,6 +2431,8 @@ footer .i {
   border-radius: var(--br);
 }
 
+/* ---------- */
+
 .experienceSection,
 .educationSection,
 .articleSection,
@@ -2473,4 +2481,13 @@ footer .i {
   .readingsContainer {
     width: 100%;
   }
+}
+
+/* ---------- */
+
+@media (max-width: 1280px) {
+
+  .sliderCounter {
+    display: none;    
+  }  
 }

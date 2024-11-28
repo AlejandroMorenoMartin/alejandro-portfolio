@@ -29,12 +29,7 @@
   "profileLanguageTitle": "Languages",
   "profileLanguage": "Spanish & English",
   "profileAboutMeTitle": "About me",
-  "profileAboutMeDescription1": "Hi, I'm Alex - I'm a product designer with a background in front-end development. I'm particularly interested in user experience, usability and research and its applications to improve people's lives. My native language is Spanish and I'm fluent in English.",  
-
-  "mainHeroH1": "Product designer",  
-  "mainHeroP2": "Hi, I'm Alex - I design websites and mobile applications with a strategic and people-oriented vision.",  
-  "mainHeroButton1": "Portfolio",
-  "mainHeroButton2": "Contact",
+  "profileAboutMeDescription1": "Hi! — I'm a product designer with a background in front-end development. I'm particularly interested in user experience, usability and research and its applications to improve people's lives.",   
 
   "indexSectionHeader1": "Projects",
   "indexSectionHeader2": "Experience",
@@ -102,7 +97,7 @@
   "cardSkill9Title": "Usability test",
   "cardSkill9Description": "User experience validation for continuous optimization.",  
 
-  "cardTestimonial1Position": "Director of product design at Rappi",
+  "cardTestimonial1Position": "Design director at Rappi",
   "cardTestimonial1Description": "“Alejandro has a self-taught and hard-working profile that makes him a real asset to any design team”.",
   "cardTestimonial2Position": "Full-stack developer at BMAT",
   "cardTestimonial2Description": "“Alejandro is a disciplined and dedicated person in the projects he decides to carry out”.",
