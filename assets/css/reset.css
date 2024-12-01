@@ -79,8 +79,8 @@ th {
 
 /* Quitamos los puntos de los <li> */
 
-li {
-  list-style-type: none;
+section ul li {
+  margin-left: 2rem;
 }
 
 /* (Opcional) Configuramos anclas suaves */

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 
 <head>
 
@@ -44,7 +44,7 @@
 
         </a>
 
-        <a id="openSeetingsOverlay" class="buttonElevation"><i class="fa-solid fa-gear iconTiny"></i></a>
+        <button id="openSeetingsOverlay" class="buttonElevation"><i class="fa-solid fa-globe iconTiny"></i></button>
 
         <!-- [seetings] -->
         <div class="seetingsOverlay">
@@ -70,29 +70,7 @@
 
             <div id="languageSlider" class="tabContainerSlide"></div>
 
-          </div>
-          <!-- [theme] -->
-          <div class="tabContainer">
-            <input type="checkbox" id="themeSwitch">
-            <label for="themeSwitch" class="tabContainerElement">
-              <i class="fa-solid fa-circle-half-stroke"></i>
-              <div class="tabContainerElementInfo">
-                <p class="small-bold" data-key="themeTitle"></p>
-                <p class="small" data-key="themeDarkText"></p>
-              </div>
-            </label>
-
-            <label for="themeSwitch" class="tabContainerElement">
-              <i class="fa-solid fa-circle-half-stroke"></i>
-              <div class="tabContainerElementInfo">
-                <p class="small-bold" data-key="themeTitle"></p>
-                <p class="small" data-key="themeLightText"></p>
-              </div>
-            </label>
-
-            <div id="themeSlider" class="tabContainerSlide"></div>
-
-          </div>
+          </div>          
         </div>
       </div>
 
@@ -112,57 +90,60 @@
 
     </header>
 
-    <div class="mainSections">
-
-      <!-- [hero] -->
-      <section id="section0" class="mainHero">
-        <div class="profileCard">
-          <div class="profileCardTitle">
-            <figure class="profileImageContainer">
-              <img src="assets/images/index/mainHeroImage.png" alt="profileImage">
-            </figure>
-            <h4>Alejandro</h4>
-            <p class="regular" data-key="profilePosition"></p>
+    <!-- [hero] -->
+    <section id="section0" class="mainHero">
+      <div class="profileCard">
+        <div class="profileCardTitle">
+          <figure class="profileImageContainer">
+            <img src="assets/images/index/mainHeroImage.png" alt="profileImage">
+          </figure>
+          <div class="projectHeroTitleName">
+            <h4 class="projectHeroTitleNameLetter">A</h4>
+            <h4>lejandro</h4>
           </div>
-          <div class="profileCardDescription">
-            <div class="profileCardDescriptionItem">
-              <p class="small" data-key="profileLocationTitle"></p>
-              <p class="regular" data-key="profileLocation"></p>
-            </div>
-            <div class="profileCardDescriptionItem">
-              <p class="small" data-key="profileExperienceTitle"></p>
-              <p class="regular" data-key="profileExperience"></p>
-            </div>
-            <div class="profileCardDescriptionItem">
-              <p class="small" data-key="profileLanguageTitle"></p>
-              <p class="regular" data-key="profileLanguage"></p>
-            </div>
+          <p class="regular" data-key="profilePosition"></p>
+        </div>
+        <div class="profileCardDescription">
+          <div class="profileCardDescriptionItem">
+            <p class="small" data-key="profileLocationTitle"></p>
+            <p class="regular" data-key="profileLocation"></p>
+          </div>
+          <div class="profileCardDescriptionItem">
+            <p class="small" data-key="profileExperienceTitle"></p>
+            <p class="regular" data-key="profileExperience"></p>
+          </div>
+          <div class="profileCardDescriptionItem">
+            <p class="small" data-key="profileLanguageTitle"></p>
+            <p class="regular" data-key="profileLanguage"></p>
           </div>
         </div>
-        <div class="profileCardInfo">
-          <p class="large" data-key="profileAboutMeTitle"></p>
-          <div class="profileInfoItems">
-            <p class="regular" data-key="profileAboutMeDescription1"></p>
-          </div>
-          <div class="profileCardButtons">
-            <a href="#section1" class="buttonPrimary" id="buttonHero">
-              <p data-key="buttonPrimaryHero" class="regular"></p>
-            </a>
-            <a href="assets/documents/alejandroMorenoResume.pdf" class="buttonSecondary" target="_blank">
-              <p data-key="buttonSecondaryHero" class="regular"></p><i class="fa-solid fa-download"></i>
-            </a>
-          </div>
-
+      </div>
+      <div class="profileCardInfo">
+        <p class="large" data-key="profileAboutMeTitle"></p>
+        <div class="profileInfoItems">
+          <p class="regular" data-key="profileAboutMeDescription1"></p>
+        </div>
+        <div class="profileCardButtons">
+          <a href="#section1" class="buttonPrimary" id="buttonHero">
+            <p data-key="buttonPrimaryHero" class="regular"></p>
+          </a>
+          <a href="assets/documents/alejandroMorenoResume.pdf" class="buttonSecondary" target="_blank">
+            <p data-key="buttonSecondaryHero" class="regular"></p><i class="fa-solid fa-download"></i>
+          </a>
         </div>
 
-      </section>
+      </div>
+
+    </section>
+
+    <div class="mainSections">      
 
       <!-- [projects] -->
       <section id="section1" class="frameFlexColumnMedium">
 
         <h4 data-key="indexSectionHeader1"></h4>
 
-        <div class="gridThreeOverFlow">
+        <div class="flexAuto">
 
           <!-- [geomites] -->
           <a class="cardProject" href="geomites.html" target="_blank">
@@ -182,7 +163,7 @@
           <!-- [eventNest] -->
           <a class="cardProject Two" target="_blank">
             <div class="cardProjectImageContainer">
-              <img src="assets/images/index/projectImage.png" alt="imageContainer">
+              <img src="assets/images/index/projectImage.webp" alt="imageContainer">
             </div>
             <div class="frameFlexColumnSmall">
               <div class="frameFlexColumnTiny">
@@ -196,7 +177,7 @@
           <!-- [caseStudy] -->
           <a class="cardProject Two" target="_blank">
             <div class="cardProjectImageContainer">
-              <img src="assets/images/index/projectImage.png" alt="imageContainer">
+              <img src="assets/images/index/projectImage.webp" alt="imageContainer">
             </div>
             <div class="frameFlexColumnSmall">
               <div class="frameFlexColumnTiny">
@@ -905,20 +886,19 @@
       </div>
       <!-- [socialMedia] -->
       <div class="frameFlexMedium">
-        <a href="https://wa.me/34618110583" class="buttonIcon" target="_blank"><i
-            class="fa-brands fa-whatsapp iconMedium"></i></a>
+        <a href="https://wa.me/34618110583" class="buttonElevation" target="_blank"><i
+            class="fa-brands fa-whatsapp iconTiny"></i></a>
 
-        <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonIcon" target="_blank"><i
-            class="fa-brands fa-linkedin-in iconMedium"></i></a>
+        <a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" class="buttonElevation" target="_blank"><i
+            class="fa-brands fa-linkedin-in iconTiny"></i></a>
 
-        <a href="https://medium.com/@alejandromorenomartin1990" class="buttonIcon" target="_blank"><i
-            class="fa-brands fa-medium iconMedium"></i></a>
+        <a href="https://medium.com/@alejandromorenomartin1990" class="buttonElevation" target="_blank"><img src="assets/icons/medium.png" alt="" class="imageTiny"></a>
 
-        <a href="https://github.com/kakomoma" class="buttonIcon" target="_blank"><i
-            class="fa-brands fa-github iconMedium"></i></a>
+        <a href="https://github.com/kakomoma" class="buttonElevation" target="_blank"><i
+            class="fa-brands fa-github iconTiny"></i></a>
 
-        <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonIcon" target="_blank"><i
-            class="fa-solid fa-envelope iconMedium"></i></a>
+        <a href="mailto:alejandromorenomartin199@gmail.com" class="buttonElevation" target="_blank"><i
+            class="fa-solid fa-envelope iconTiny"></i></a>
       </div>
     </footer>
 

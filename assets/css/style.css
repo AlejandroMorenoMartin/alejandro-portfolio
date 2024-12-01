@@ -3,7 +3,7 @@
 body {
   font-family: var(--font-family);
   font-size: var(--font-size);
-  background-color: var(--neutral-1000);
+  background: var(--neutral-900);
   color: var(--neutral-200);
 }
 

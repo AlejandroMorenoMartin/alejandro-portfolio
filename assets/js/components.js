@@ -5,25 +5,21 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function initializeNavigation() {
-  initializeSwitchers();
+  initializeLanguageSwitcher();
 }
 
-function initializeSwitchers() {
+function initializeLanguageSwitcher() {
   const languageSwitch = document.getElementById('languageSwitch');
-  const themeSwitch = document.getElementById('themeSwitch');
 
-  // Cargar y aplicar las preferencias guardadas de idioma y tema
+  // Cargar y aplicar las preferencias guardadas de idioma
   const loadPreferences = () => {
     const savedLang = localStorage.getItem('lang') || 'en';
-    const savedTheme = localStorage.getItem('theme') || 'dark';
 
-    // Configurar las opciones guardadas de idioma y tema
+    // Configurar las opciones guardadas de idioma
     translate(savedLang);
-    updateTheme(savedTheme);
 
     // Actualizar el estado de los switches según las preferencias guardadas
     languageSwitch.checked = savedLang === 'es';
-    themeSwitch.checked = savedTheme === 'light';
   };
 
   // Función para traducir y actualizar el atributo lang
@@ -51,15 +47,6 @@ function initializeSwitchers() {
     }
   };
 
-  // Función para actualizar el tema
-  const updateTheme = (theme) => {
-    document.documentElement.setAttribute('data-theme', theme);
-    updateLabels(document.querySelectorAll('#themeSwitcherContainer label'), theme);
-
-    // Guardar la preferencia de tema en localStorage
-    localStorage.setItem('theme', theme);
-  };
-
   const updateLabels = (labels, activeState) => {
     labels.forEach(label => label.classList.toggle('active', label.getAttribute('data-state') === activeState));
   };
@@ -70,16 +57,11 @@ function initializeSwitchers() {
     translate(lang);
   });
 
-  themeSwitch.addEventListener('change', () => {
-    const theme = themeSwitch.checked ? 'light' : 'dark';
-    updateTheme(theme);
-  });
-
   // Cargar las preferencias del usuario al cargar la página
   loadPreferences();
 }
 
-// Controla la posicion de tabContainerSlide
+// Controla la posición de tabContainerSlide para el cambio de idioma
 
 document.addEventListener("DOMContentLoaded", () => {
   const checkbox = document.getElementById("languageSwitch");
@@ -96,20 +78,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const checkbox = document.getElementById("themeSwitch");
-  const slide = document.getElementById("themeSlider");
-
-  checkbox.addEventListener("change", () => {
-    if (checkbox.checked) {
-      // Si el checkbox está activado, mueve el slide a la derecha
-      slide.style.left = "calc(100% - 51%)";
-    } else {
-      // Si el checkbox no está activado, mueve el slide a la posición inicial
-      slide.style.left = "1%";
-    }
-  });
-});
 
 /* TABLE OF CONTENT */
 document.addEventListener("DOMContentLoaded", () => {
@@ -233,7 +201,7 @@ const sliders = [
     buttonLeft: document.querySelector('.buttonSliderLeftEducation'),
     buttonRight: document.querySelector('.buttonSliderRightEducation'),
     counter: document.querySelector('#educationCounter'),
-    cardWidth: 632,
+    cardWidth: 628,
     gap: 16,
     totalCards: document.querySelectorAll('.cardEducation').length
   },
