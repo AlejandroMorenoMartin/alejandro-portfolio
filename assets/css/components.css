@@ -45,7 +45,6 @@
   align-items: center;
 }
 
-
 .mainHeroTitle {
   display: flex;
   gap: 1rem;
@@ -55,6 +54,8 @@
   .mainHero {
     display: flex;
     flex-direction: column;
+    padding: 4rem 1rem 4rem;
+    width: 100%;
   }
 }
 
@@ -841,7 +842,7 @@ tr {
   cursor: pointer;
   overflow: hidden;
   border-radius: var(--br);
-  transition: 0.1s all ease-in-out;
+  transition: 0.3s all ease-in-out;
   box-shadow: var(--default-shadow);
 }
 
@@ -884,13 +885,18 @@ tr {
   right: 1rem;
   color: var(--neutral-300);
   transition: 0.3s all ease-in-out;
-  rotate: -45deg;
+  rotate: 90deg;
+  transform: translateY(.5rem);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
 }
 
 .cardProject:hover i,
 .cardEducation:hover i,
 .cardArticle:hover i {
   color: var(--white);
+  transform: translateY(0);
+  opacity: 1;
 }
 
 /* ---------- */
@@ -1347,7 +1353,6 @@ footer .i {
     flex-direction: column;
   }
 }
-
 
 /* ----- HEADER ----- */
 
@@ -2266,17 +2271,17 @@ figcaption {
 
 /* ---------- */
 
-.otherProjectsHeader{
+.otherProjectsHeader {
   display: flex;
-  align-items: center; 
-  justify-content: center; 
-  gap: 1rem; 
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .otherProjectsHeaderLine {
-  flex: 1; 
-  height: 0.5px; 
-  background-color: var(--neutral-600); 
+  flex: 1;
+  height: 0.5px;
+  background-color: var(--neutral-600);
 }
 
 .otherProjectsHeaderText {

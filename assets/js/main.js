@@ -88,27 +88,27 @@ function addAnimation() {
 /* SALTO A LA SECCIÓN */
 
 document.querySelectorAll('.tableOfContent a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function(event) {
-      event.preventDefault();
+  anchor.addEventListener("click", function (event) {
+    event.preventDefault();
 
-      // Obtener el ID de la sección
-      const targetId = this.getAttribute("href").substring(1);
-      const targetElement = document.querySelector(`#${targetId} h4`);
+    // Obtener el ID de la sección
+    const targetId = this.getAttribute("href").substring(1);
+    const targetElement = document.querySelector(`#${targetId} h4`);
 
-      if (targetElement) {
-          // Obtener la posición actual de la tabla de contenido y restar el offset
-          const tableOfContentOffset = document.querySelector('.tableOfContent').getBoundingClientRect().bottom;
-          const offset = 64; // 2rem es igual a 32px
+    if (targetElement) {
+      // Obtener la posición actual de la tabla de contenido y restar el offset
+      const tableOfContentOffset = document.querySelector('.tableOfContent').getBoundingClientRect().bottom;
+      const offset = 64; // 2rem es igual a 32px
 
-          // Calcular la posición de destino en relación a la posición de .tableOfContent
-          const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - tableOfContentOffset - offset;
+      // Calcular la posición de destino en relación a la posición de .tableOfContent
+      const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - tableOfContentOffset - offset;
 
-          // Hacer scroll a la posición calculada
-          window.scrollTo({
-              top: targetPosition,
-              behavior: "smooth"
-          });
-      }
+      // Hacer scroll a la posición calculada
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth"
+      });
+    }
   });
 });
 
@@ -120,19 +120,17 @@ document.getElementById('buttonHero').addEventListener('click', function (e) {
   const targetElement = document.getElementById(targetId);
 
   if (targetElement) {
-      // Calcula la posición con un offset de 64px
-      const offset = 168; // Distancia fija en píxeles
-      const elementPosition = targetElement.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
+    // Calcula la posición con un offset de 64px
+    const offset = 168; // Distancia fija en píxeles
+    const elementPosition = targetElement.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - offset;
 
-      // Realiza el desplazamiento con animación
-      window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth',
-      });
+    // Realiza el desplazamiento con animación
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth',
+    });
   }
 });
 
-
-
-
+/* FOOTER - QUIZ */
