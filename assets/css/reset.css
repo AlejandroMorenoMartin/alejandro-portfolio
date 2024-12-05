@@ -1,5 +1,3 @@
-@import url('variables.css');
-
 /* Reseteamos los margin y paddings de todas las etiquetas */
 
 *,
@@ -97,13 +95,6 @@ q:before,
 q:after {
   content: '';
   content: none;
-}
-
-/* (Opcional) Configuramos el texto que seleccionamos */
-
-::selection {
-  background-color: var(--negro);
-  color: var(--blanco);
 }
 
 /* Nivelamos problemas de tipografías y colocación de formularios */
