@@ -180,10 +180,10 @@
   "experienceHeader": "Experiencia",  
 
   "experienceCard1Title": "Diseñador de producto — Emprendedor",
-  "experienceCard1Company": "EventNest",
+  "experienceCard1Company": "Artisteo",
   "experienceCard1Date": "Oct 2024 — Hoy",
   "experienceCard1Location": "España - Remoto",
-  "experienceCard1Description": "Estoy trabajando en la creación de un marketplace que ayude a organizadores y promotores de eventos a encontrar los servicios que necesitan para desarrollar sus actividades. El proyecto se encuentra actualmente en su fase inicial, en la que estoy realizando la investigación necesaria para definir el MVP (Minimum Viable Product) sobre el que empezar a trabajar.",   
+  "experienceCard1Description": "Estoy liderando el diseño de un marketpace enfocado en dar visibilidad a artistas musicales y democratizar su contratación. A través de un enfoque estratégico, estoy alineando las necesidades de los usuarios con los objetivos del negocio, diseñando una experiencia que sea intuitiva, eficiente y accesible. Este proyecto combina investigación, diseño centrado en el usuario y desarrollo iterativo para crear una solución que impulse conexiones significativas entre artistas y quienes buscan sus servicios.",   
   
   "experienceCard2Title": "Diseñador de producto — Emprendedor",
   "experienceCard2Company": "Geomites",
@@ -774,8 +774,6 @@
   "geomitesIconographyGuidelinesFour": "Tamaño 24 x 24px, sin relleno.",
   "geomitesIconographyGuidelinesFive": "Formato vectorial SVG.",
   "geomitesIconographyGuidelinesSix": "Estilo gráfico homogéneo (líneas, proporciones y grosores).", 
-  "geomitesSubParagraph11Title": "Componentes",
-  "geomitesSubParagraph11Text": "El edificio fortaleza permite a los jugadores almacenar tanto sus geomitas como los objetos y pasivos que equipan. En este componente diseñé el edificio con diferentes pestañas y botones que permiten realizar búsquedas filtradas.",
   "geomitesSubParagraph11Title": "Components",
   "geomitesSubParagraph11Text": "El sistema de diseño incluye una biblioteca de componentes que nos permite estandarizar y proporcionar una mayor coherencia visual para una experiencia de usuario inmersiva. También nos permite realizar ajustes rápidos en la configuración de los componentes del juego.",
   "geomitesComponentsGuidelines": "Directrices",
