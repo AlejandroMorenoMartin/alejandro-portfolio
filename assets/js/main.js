@@ -133,4 +133,4 @@ document.getElementById('buttonHero').addEventListener('click', function (e) {
   }
 });
 
-/* FOOTER - QUIZ */
+/* SLIDER BUTTON */
