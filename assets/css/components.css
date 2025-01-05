@@ -2265,7 +2265,7 @@ figcaption {
   right: -32px;
   cursor: pointer;
   box-shadow: var(--default-shadow);
-  opacity: 0.2;
+  opacity: 0.4;
 }
 
 .sliderButtonRight i {
@@ -2291,7 +2291,7 @@ figcaption {
   left: -32px;
   cursor: pointer;
   box-shadow: var(--default-shadow);
-  opacity: 0.2;
+  opacity: 0.4;
 }
 
 .sliderButtonLeft i {
@@ -2305,7 +2305,7 @@ figcaption {
 .sliderButtonLeft:hover,
 .sliderButtonRight:hover {
   box-shadow: var(--hover-shadow);
-  opacity: 0.4;
+  opacity: 1;
 }
 
 @media (max-width: 1280px) {
