@@ -187,13 +187,13 @@
   "experienceCard3Company": "",
   "experienceCard3Date": "Apr 2023 — Present",
   "experienceCard3Location": "Spain — Remote",
-  "experienceCard3Description": "I work as a product designer for different companies and sectors. My main freelance activities include designing and developing company websites, designing corporate documents, and participating in the design process of various products or services.",   
+  "experienceCard3Description": "I collabore with companies and startups in sectors such as technology, tourism and video games, designing interfaces, products and experiences that improve usability and boost results. With a focus on user research and design thinking, I have managed to increase conversion, user retention and brand awareness in several projects.",   
 
   "experienceCard4Title": "Marketing manager — Contract",
   "experienceCard4Company": "Promam",
   "experienceCard4Date": "Jul 2017 - Sep 2021",
   "experienceCard4Location": "Spain — On site",
-  "experienceCard4Description": "I was responsible for marketing and design tasks,  managing the design and development of the company's website and led SEO positioning campaigns. I spearheaded marketing campaigns on social media and organized and developed the design of various products necessary for the company's operations, including catalogs, advertisements, and documents.",   
+  "experienceCard4Description": "I led the marketing strategies in an industrial machinery company, being responsible for the management and optimization of the corporate website to improve its functionality and attractiveness. I designed catalogs, technical manuals and commercial documentation, integrating technical information with a professional visual design. These actions strengthened brand presence, increased market visibility and facilitated more effective communication with customers and distributors.",   
 
   "educationHeader": "Education",
 
@@ -774,7 +774,7 @@
   "atipikoToursTOC5": "Design system",
   "atipikoToursTOC6": "Learnings",
 
-  "cardProjectGeomitesChallenge": "Create an intuitive, usable and desirable gaming experience for our players.",
+  "cardProjectGeomitesChallenge": "Create an intuitive, usable and desirable gaming experience for our players",
   "cardProjectGeomitesRol": "Product designer.",
   "cardProjectGeomitesCronology": "12 months.",
   "cardProjectGeomitesToolstack": "Figma, Adobe Ilustrator, Adobe Photoshop, Azure DevOps, Miro and DALL-E.",
@@ -959,8 +959,8 @@
   "cardProjectArtisteoTime":"14min read",
   "cardProjectArtisteoDescription":"A marketplace for musical artists.",
 
-  "cardProjectCaseStudyTime":"",
-  "cardProjectCaseStudyDescription":"Improvement proposal for a top market application.",  
+  "cardProjectCaseStudyTime":"12min read",
+  "cardProjectCaseStudyDescription":"Improvement proposal for a market application.",  
 
   "mediumLink":"All articles",
 
@@ -969,7 +969,7 @@
   "projectHeroInfoDate":"Date",
   "projectHeroInfoTimeline":"Deadline",
 
-  "geomitesChallenge":"Create an intuitive, usable and desirable gaming experience for our players.",
+  "geomitesChallenge":"Create an intuitive, usable and desirable gaming experience for our players",
   "geomitesRole":"Product designer",
   "geomitesDate":"June 2024",
   "geomitesTimeline":"16 weeks",
@@ -984,7 +984,7 @@
   "figcaptionGeomitesDesignPatternMarioKartTour":"Leaderboard — Mario Kart Tour",
   "figcaptionGeomitesDesignPatternTennisRoyale":"Player profile — Tennis Royale",
 
-  "artisteoChallenge":"Create a user-centered MVP for Artisteo, ensuring an intuitive experience and a solid design foundation for future development.",
+  "artisteoChallenge":"Create a user-centered MVP for Artisteo, ensuring an intuitive experience and a solid design foundation for future development",
   "artisteoRole":"Product designer",
   "artisteoDate":"December 2024",
   "artisteoTimeline":"12 weeks",  
@@ -1050,5 +1050,10 @@
   "artisteoLearning1":"Action over theory",
   "artisteoLearning2":"Early validation",
   "artisteoLearning3":"Constant collaboration",
-  "artisteoLearning4":"Design systems"
+  "artisteoLearning4":"Design systems",
+
+  "caseStudyChallenge":"Analysis and redesign of an existing application to improve user experience",
+  "caseStudyRole":"Product designer",
+  "caseStudyDate":"January 2025",
+  "caseStudyTimeline":"2 weeks"
 }

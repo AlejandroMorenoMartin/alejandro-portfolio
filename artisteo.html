@@ -10,7 +10,7 @@
     <meta http-equiv="Content-Language" content="en" />
     <meta
       name="description"
-      content="Welcome to my portfolio. Here you will find relevant information about my background as a product designer and how it can impact people's lives.."
+      content="Explore Artisteo, a platform that connects artists with their audience. Learn about the design and development of this innovative digital solution focused on user experience."
     />
     <meta name="theme-color" content="#EB8F3B" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -165,8 +165,16 @@
       <!-- [sliderButtons] -->
       <button
         class="sliderButtonLeft"
-        title="Geomites"
+        title="Proyect: Geomites"
         onclick="window.location.href='geomites.html';"
+      >
+        <i class="fa-solid fa-chevron-up"></i>
+      </button>
+
+      <button
+        class="sliderButtonRight"
+        title="Proyect: Case study"
+        onclick="window.location.href='caseStudy.html';"
       >
         <i class="fa-solid fa-chevron-up"></i>
       </button>
@@ -184,7 +192,10 @@
           </div>
 
           <video controls autoplay loop muted>
-            <source src="assets/videos/artisteo/artisteoPrototype.mp4" type="video/mp4" />            
+            <source
+              src="assets/videos/artisteo/artisteoPrototype.mp4"
+              type="video/mp4"
+            />
           </video>
 
           <!-- [Value proposition] -->
@@ -617,8 +628,23 @@
             <i class="fa-solid fa-chevron-up iconMedium"></i>
           </a>
 
+          <!-- [geomites] -->
+          <a class="cardProject" href="geomites.html" target="_blank">
+            <div class="cardProjectImageContainer">
+              <img
+                src="assets/images/projects/geomites/headerImage.webp"
+                alt="imageContainer"
+              />
+            </div>
+            <div class="frameFlexColumnTiny">
+              <p class="regular-bold">Geomites</p>
+              <p class="regular" data-key="cardProjectGeomitesDescription"></p>
+            </div>
+            <i class="fa-solid fa-chevron-up iconMedium"></i>
+          </a>
+
           <!-- [caseStudy] -->
-          <a class="cardProject Two" target="_blank">
+          <a class="cardProject" href="caseStudy.html" target="_blank">
             <div class="cardProjectImageContainer">
               <img
                 src="assets/images/index/projectImage.webp"
@@ -629,6 +655,7 @@
               <p class="regular-bold">Case study</p>
               <p class="regular" data-key="cardProjectCaseStudyDescription"></p>
             </div>
+            <i class="fa-solid fa-chevron-up iconMedium"></i>
           </a>
         </div>
       </section>

@@ -181,25 +181,25 @@
   "experienceCard1Company": "Artisteo",
   "experienceCard1Date": "Oct 2024 — Hoy",
   "experienceCard1Location": "España - Remoto",
-  "experienceCard1Description": "Estoy liderando el diseño de un marketpace enfocado en dar visibilidad a artistas musicales y democratizar su contratación. A través de un enfoque estratégico, estoy alineando las necesidades de los usuarios con los objetivos del negocio, diseñando una experiencia que sea intuitiva, eficiente y accesible. Este proyecto combina investigación, diseño centrado en el usuario y desarrollo iterativo para crear una solución que impulse conexiones significativas entre artistas y quienes buscan sus servicios.",   
+  "experienceCard1Description": "Dirijo el diseño de un marketplace centrado en dar visibilidad a los artistas musicales y democratizar su contratación. A través de un enfoque estratégico, estoy alineando las necesidades del usuario con los objetivos de negocio, diseñando una experiencia que sea intuitiva, eficiente y accesible. Este proyecto combina investigación, diseño centrado en el usuario y desarrollo iterativo para crear una solución que impulse conexiones entre los artistas y quienes buscan sus servicios.",   
   
   "experienceCard2Title": "Diseñador de producto — Emprendedor",
   "experienceCard2Company": "Geomites",
   "experienceCard2Date": "Mar 2023 — Hoy",
   "experienceCard2Location": "España - Remoto",
-  "experienceCard2Description": "Dirijo el diseño UX/UI de un videojuego móvil para iOS y Android en un entorno ágil, realizando análisis de mercado, investigación de usuarios, creación de prototipos y pruebas de usabilidad. Colaboro con los desarrolladores en la transición del prototipo a React y creé un sistema de diseño para el mantenimiento y las actualizaciones.",   
+  "experienceCard2Description": "Dirijo el diseño UX/UI de un videojuego móvil para iOS y Android en un entorno ágil, realizando análisis de mercado, investigación de usuarios, creación de prototipos y pruebas de usabilidad. Colaboré con los desarrolladores en la transición del prototipo a React y creé un sistema de diseño para el mantenimiento y las actualizaciones.",   
 
   "experienceCard3Title": "Diseñador de producto — Freelance",
   "experienceCard3Company": "",
   "experienceCard3Date": "Abr 2023 — Hoy",
   "experienceCard3Location": "España - Remoto",
-  "experienceCard3Description": "Trabajo como diseñador de productos para diferentes empresas y sectores. Mis principales actividades como freelance incluyen el diseño y desarrollo de sitios web de empresas, el diseño de documentos corporativos y la participación en el proceso de diseño de diversos productos o servicios.",   
+  "experienceCard3Description": "Colaboro con empresas y startups de sectores como la tecnología, el turismo y los videojuegos, diseñando interfaces, productos y experiencias que mejoran la usabilidad e impulsan los resultados. Centrándome en la investigación de usuarios y el pensamiento de diseño, he conseguido aumentar la conversión, la retención de usuarios y la notoriedad de marca en varios proyectos.",   
 
   "experienceCard4Title": "Responsable de marketing",
   "experienceCard4Company": "Promam",
   "experienceCard4Date": "Jul 2017 - Sep 2021",
   "experienceCard4Location": "España - En oficina",
-  "experienceCard4Description": "Fui responsable de tareas de marketing y diseño, gestionando el diseño y desarrollo de la página web de la empresa y dirigí campañas de posicionamiento SEO. Lideré campañas de marketing en las redes sociales y organicé y desarrollé el diseño de varios productos necesarios para las operaciones de la empresa, incluidos catálogos, anuncios y documentos.",  
+  "experienceCard4Description": "Lideré las estrategias de marketing en una empresa de maquinaria industrial, siendo responsable de la gestión y optimización de la web corporativa para mejorar su funcionalidad y atractivo. Diseñé catálogos, manuales técnicos y documentación comercial, integrando la información técnica con un diseño visual profesional. Estas acciones reforzaron la presencia de la marca, aumentaron su visibilidad en el mercado y facilitaron una comunicación más eficaz con clientes y distribuidores.",  
 
   "educationHeader": "Educación",
 
@@ -724,7 +724,7 @@
   "atipikoToursTOC5": "Sistema de diseño",
   "atipikoToursTOC6": "Aprendizajes",
 
-  "cardProjectGeomitesChallenge": "Crear una experiencia de juego intuitiva, utilizable y deseable para nuestros jugadores.",
+  "cardProjectGeomitesChallenge": "Crear una experiencia de juego intuitiva, utilizable y deseable para nuestros jugadores",
   "cardProjectGeomitesRol": "Diseñador de producto.",
   "cardProjectGeomitesCronology": "12 meses.",
   "cardProjectGeomitesToolstack": "Figma, Adobe Ilustrator, Adobe Photoshop, Azure DevOps, Miro y DALL-E.",
@@ -909,8 +909,8 @@
 "cardProjectArtisteoTime":"14 min de lectura",
 "cardProjectArtisteoDescription":"Un mercado para artistas musicales.",
 
-"cardProjectCaseStudyTime":"",
-"cardProjectCaseStudyDescription":"Propuesta de mejora para una aplicación de mercado puntera.",  
+"cardProjectCaseStudyTime":"12 min de lectura",
+"cardProjectCaseStudyDescription":"Propuesta de mejora para una aplicación de mercado.",  
 
 "mediumLink":"Todos los artículos",
 
@@ -919,7 +919,7 @@
 "projectHeroInfoDate":"Fecha",
 "projectHeroInfoTimeline":"Plazo",
 
-"geomitesChallenge":"Crear una experiencia de juego intuitiva, utilizable y deseable para nuestros jugadores.",
+"geomitesChallenge":"Crear una experiencia de juego intuitiva, utilizable y deseable para nuestros jugadores",
 "geomitesRole":"Diseñador de producto",
 "geomitesDate":"Junio 2024",
 "geomitesTimeline":"16 semanas",
@@ -934,7 +934,7 @@
 "figcaptionGeomitesDesignPatternMarioKartTour":"Tabla de clasificación — Mario Kart Tour",
 "figcaptionGeomitesDesignPatternTennisRoyale":"Perfil de jugador — Tennis Royale",
 
-  "artisteoChallenge":"Crear un MVP centrado en el usuario para Artisteo, asegurando una experiencia intuitiva y una sólida base de diseño para futuros desarrollos.",
+  "artisteoChallenge":"Crear un MVP centrado en el usuario para Artisteo, asegurando una experiencia intuitiva y una sólida base de diseño para futuros desarrollos",
   "artisteoRole":"Diseñador de producto",
   "artisteoDate":"Diciembre 2024",
   "artisteoTimeline":"12 semanas",  
@@ -1000,7 +1000,12 @@
   "artisteoLearning1":"La acción por encima de la teoría",
   "artisteoLearning2":"Validación temprana",
   "artisteoLearning3":"Colaboración constante",
-  "artisteoLearning4":"Sistemas de diseño"
+  "artisteoLearning4":"Sistemas de diseño",
+
+  "caseStudyChallenge":"Analisis y rediseño de una aplicación existente para mejorar la experiencia del usuario",
+  "caseStudyRole":"Diseñador de producto",
+  "caseStudyDate":"Enero 2025",
+  "caseStudyTimeline":"2 semanas"
 }
 
 
