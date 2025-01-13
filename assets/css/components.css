@@ -20,7 +20,7 @@
   align-items: top;
   gap: 16rem;
   margin-inline: auto;
-  padding-bottom: 22.5rem;
+  padding-bottom: 12rem;
 }
 
 @media (max-width: 1280px) {
@@ -82,7 +82,7 @@
 .projectHeroTitle {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .projectHeroTitleName {

@@ -751,6 +751,7 @@
   "geomitesSubParagraph7Title": "Patrones de diseño",
   "geomitesSubParagraph7Text": "Extrajimos patrones de diseño eficaces de juegos exitosos. Las interfaces intuitivas de Clash Royale y Brawl Stars enfatizaron la navegación clara, y el sistema de progresión de Archero nos inspiró para Geomites.",
   "geomitesParagraph4Title": "Sistema de diseño", 
+  "geomitesParagraph4Text": "Con el objetivo de iterar y desarrollar la versión MVP rápidamente, me enfoqué en construir un design system compacto y adaptado al mundo de los videojuegos indie. Este sistema no solo garantiza consistencia visual y facilita la colaboración con el desarrollo, sino que también está diseñado para ser escalable, permitiendo futuras mejoras y expansiones del juego. La estética y funcionalidad reflejan el espíritu retro-moderno de Geomites, optimizando tanto la experiencia del usuario como la eficiencia del proceso de diseño.",
   "geomitesSubParagraph8Title": "Tipografía",
   "geomitesSubParagraph8Text": "En Geomites, una tipografía clara y una redacción coherente crean una experiencia atractiva y fácil de usar. La familia tipográfica Grenze garantiza una identidad visual cohesionada, mientras que un lenguaje conciso y cercano simplifica la navegación y la jugabilidad.",
   "geomitesTypographyGuidelines": "Directrices",
