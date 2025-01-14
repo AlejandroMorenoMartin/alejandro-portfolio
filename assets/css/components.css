@@ -820,9 +820,10 @@ tr {
 
 .cardProject {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding: 1rem;
   gap: 1rem;
+  align-items: flex-end;
   position: relative;
   cursor: pointer;
   overflow: hidden;
@@ -851,6 +852,12 @@ tr {
   overflow: hidden;
   position: relative;
   height: 196px;
+  width: 100%;
+  flex: 0 0 40%;
+}
+
+.cardProject .frameFlexColumnTiny {
+  flex: 0 0 60%;
 }
 
 .cardProjectImageContainer img {
@@ -858,10 +865,7 @@ tr {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top;
-  position: absolute;
-  top: 0;
-  left: 0;
+  object-position: top; 
 }
 
 .cardProject i,
@@ -2193,6 +2197,23 @@ video::-webkit-media-controls {
 
 /* ---------- */
 
+.cardInterview {
+  display: Flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  border-radius: var(--br);
+  border: 0.25px solid var(--neutral-600);
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;  
+}
+
+.cardInterview img {
+  border-radius: 1000px;
+}
+
+/* ---------- */
+
 .cardReading {
   display: flex;
   flex-direction: column;
@@ -2270,7 +2291,8 @@ video::-webkit-media-controls {
   .cardReading,
   .flexCard,
   .cardProject,
-  .flexColumnCard {
+  .flexColumnCard,
+  .cardInterview {
     flex: 0 0 90%;
     max-width: 90%;
   }

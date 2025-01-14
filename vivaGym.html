@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- [metas] -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, orientation=portrait"
+    />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta
+      name="description"
+      content="Case study of an existing market application. Explore user experience improvements and strategic solutions based on research and real-world data."
+    />
+    <meta name="theme-color" content="#EB8F3B" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#EB8F3B" />
+
+    <!-- [links] -->
+    <link
+      rel="icon"
+      href="/assets/icons/navigation/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/variables.css" />
+    <link rel="stylesheet" href="/assets/css/components.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- [title] -->
+    <title>Viva Gym</title>
+  </head>
+
+  <body>
+    <!-- [main] -->
+    <main class="main">
+      <!-- [header] -->
+      <header class="headerContainer">
+        <!-- [navBar] -->
+        <div class="navBar">
+          <a
+            href="index.html"
+            alt="logoAlejandro"
+            id="logoLink"
+            viewBox="0 0 24 24"
+            class="logo"
+          >
+            <img src="/assets/icons/navigation/favicon.webp" alt="logo" />
+          </a>
+
+          <button id="openSeetingsOverlay" class="buttonElevation">
+            <i class="fa-solid fa-globe iconSmall"></i>
+          </button>
+
+          <!-- [seetings] -->
+          <div class="seetingsOverlay">
+            <!-- [language] -->
+            <div class="tabContainer">
+              <input type="checkbox" id="languageSwitch" />
+              <label for="languageSwitch" class="tabContainerElement">
+                <i class="fa-solid fa-language"></i>
+                <div class="tabContainerElementInfo">
+                  <p class="small-bold">Language</p>
+                  <p class="small">English</p>
+                </div>
+              </label>
+
+              <label for="languageSwitch" class="tabContainerElement">
+                <i class="fa-solid fa-language"></i>
+                <div class="tabContainerElementInfo">
+                  <p class="small-bold">Idioma</p>
+                  <p class="small">Español</p>
+                </div>
+              </label>
+
+              <div id="languageSlider" class="tabContainerSlide"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- [table of content] -->
+        <div class="tableOfContent">
+          <div class="tableOfContentLinks">
+            <a
+              href="#section1"
+              data-key="artisteoParagraph1Title"
+              class="small"
+            ></a>
+            <a
+              href="#section2"
+              data-key="artisteoParagraph2Title"
+              class="small"
+            ></a>
+            <a
+              href="#section3"
+              data-key="artisteoParagraph3Title"
+              class="small"
+            ></a>
+            <a
+              href="#section4"
+              data-key="artisteoParagraph4Title"
+              class="small"
+            ></a>
+            <a
+              href="#section5"
+              data-key="artisteoParagraph5Title"
+              class="small"
+            ></a>
+            <a
+              href="#section6"
+              data-key="artisteoParagraph6Title"
+              class="small"
+            ></a>
+          </div>
+        </div>
+      </header>
+
+      <!-- [hero] -->
+      <section id="section0" class="projectHero">
+        <div class="projectHeroTitle">
+          <div class="projectHeroTitleName">
+            <h1 class="projectHeroTitleNameLetter">V</h1>
+            <h1>iva Gym</h1>
+          </div>
+          <h4 data-key="projectVivaGymDescription"></h4>
+          <p data-key="projectVivaGymTime" class="small"></p>
+        </div>
+
+        <figure class="imageContainerOne">
+          <img
+            src="assets/images/projects/vivaGym/headerImage.webp"
+            alt="imageContainer"
+          />
+        </figure>
+
+        <div class="projectHeroInfo">
+          <div class="projectHeroInfoItem">
+            <p class="regular-bold" data-key="projectHeroInfoChallenge"></p>
+            <p class="regular" data-key="vivaGymChallenge"></p>
+          </div>
+          <div class="projectHeroInfoItem">
+            <p class="regular-bold" data-key="projectHeroInfoRole"></p>
+            <p class="regular" data-key="vivaGymRole"></p>
+          </div>
+          <div class="projectHeroInfoItem">
+            <p class="regular-bold" data-key="projectHeroInfoDate"></p>
+            <p class="regular" data-key="vivaGymDate"></p>
+          </div>
+          <div class="projectHeroInfoItem">
+            <p class="regular-bold" data-key="projectHeroInfoTimeline"></p>
+            <p class="regular" data-key="vivaGymTimeline"></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- [sliderButtons] -->
+      <button
+        class="sliderButtonLeft"
+        title="Proyect: Artisteo"
+        onclick="window.location.href='artisteo.html';"
+      >
+        <i class="fa-solid fa-chevron-up"></i>
+      </button>
+
+      <button
+        class="sliderButtonRight"
+        title="Proyect: Geomites"
+        onclick="window.location.href='geomites.html';"
+      >
+        <i class="fa-solid fa-chevron-up"></i>
+      </button>
+
+      <!-- [mainSections] -->
+      <article class="mainSections">
+        <!-- [Introduction] -->
+        <section id="section1" class="frameFlexColumnExtraLarge">
+          <div class="frameFlexColumnSmall">
+            <h2 data-key="vivaGymParagraph1Title"></h2>
+            <p data-key="vivaGymParagraph1Text1" class="regular"></p>
+            <p data-key="vivaGymParagraph1Text2" class="regular"></p>
+          </div>
+        </section>
+
+        <!-- [Research] -->
+        <section id="section2" class="frameFlexColumnExtraLarge">
+          <div class="frameFlexColumnSmall">
+            <h2 data-key="vivaGymParagraph2Title"></h2>
+            <p data-key="vivaGymParagraph2Text" class="regular"></p>
+          </div>
+
+          <div class="frameFlexColumnSmall">
+            <h4 data-key="vivaGymSubParagraph1Title"></h4>
+            <p data-key="vivaGymSubParagraph1Text1" class="regular"></p>
+            <p data-key="vivaGymSubParagraph1Text2" class="regular"></p>
+            <p data-key="vivaGymSubParagraph1Text3" class="regular"></p>
+            <p data-key="vivaGymSubParagraph1Text4" class="regular"></p>
+          </div>
+
+          <div class="frameFlexColumnSmall">
+            <h4 data-key="vivaGymSubParagraph2Title"></h4>
+            <p data-key="vivaGymSubParagraph2Text1" class="regular"></p>
+            <p data-key="vivaGymSubParagraph2Text2" class="regular"></p>
+          </div>
+
+          <div class="frameFlexColumnSmall">
+            <h4 data-key="vivaGymSubParagraph3Title"></h4>
+            <p data-key="vivaGymSubParagraph3Text1" class="regular"></p>          
+            <p data-key="vivaGymSubParagraph3Text2" class="regular"></p>              
+          </div>
+
+          <div class="frameFlexColumnSmall">
+            <h4 data-key="vivaGymSubParagraph4Title"></h4>
+            <p data-key="vivaGymSubParagraph4Text" class="regular"></p>            
+          </div>
+
+          <div class="flexAuto">
+            <div class="cardInterview">
+              <p class="regular padding" data-key="cardTestimonial6Description"></p>
+              <div class="frameFlexSmall">
+                <img src="assets/images/projects/vivaGym/marta.webp" alt="testimonialImage" class="imageExtraLarge">
+                <div class="frameFlexColumnTiny">
+                  <p class="regular-bold">Marta</p>
+                  <p class="small" data-key="cardTestimonial6Position"></p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="cardInterview">
+              <p class="regular padding" data-key="cardTestimonial7Description"></p>
+              <div class="frameFlexSmall">
+                <img src="assets/images/projects/vivaGym/luis.webp" alt="testimonialImage" class="imageExtraLarge">
+                <div class="frameFlexColumnTiny">
+                  <p class="regular-bold">Luis</p>
+                  <p class="small" data-key="cardTestimonial7Position"></p>
+                  </a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="cardInterview">
+              <p class="regular padding" data-key="cardTestimonial8Description"></p>
+              <div class="frameFlexSmall">
+                <img src="assets/images/projects/vivaGym/clara.webp" alt="testimonialImage" class="imageExtraLarge">
+                <div class="frameFlexColumnTiny">
+                  <p class="regular-bold">Clara</p>
+                  <p class="small" data-key="cardTestimonial8Position"></p>
+                </div>
+              </div>
+            </div>
+          </div>          
+        </section>
+
+        <!-- [Design decisions] -->
+        <section id="section3" class="frameFlexColumnExtraLarge">
+          <h2 data-key="artisteoParagraph3Title"></h2>
+        </section>
+
+        <!-- [Design system] -->
+        <section id="section4" class="frameFlexColumnExtraLarge">
+          <h2 data-key="artisteoParagraph4Title"></h2>
+        </section>
+
+        <!-- [Team] -->
+        <section id="section5" class="frameFlexColumnExtraLarge">
+          <h2 data-key="artisteoParagraph5Title"></h2>
+        </section>
+
+        <!-- [Learnings] -->
+        <section id="section6" class="frameFlexColumnExtraLarge">
+          <h2 data-key="artisteoParagraph6Title"></h2>
+        </section>
+      </article>
+
+      <!-- [otherProjects] -->
+      <section class="frameFlexColumnMedium otherProjects">
+        <!-- [intro] -->
+        <div class="otherProjectsHeader">
+          <div
+            class="otherProjectsHeaderLine otherProjectsHeaderLineLeft"
+          ></div>
+          <p
+            class="large otherProjectsHeaderText"
+            data-key="otherProjectsSectionHeader"
+          ></p>
+          <div
+            class="otherProjectsHeaderLine otherProjectsHeaderLineRight"
+          ></div>
+        </div>
+
+        <div class="flexAuto">
+          <!-- [artisteo] -->
+          <a class="cardProject" href="artisteo.html" target="_blank">
+            <div class="cardProjectImageContainer">
+              <img
+                src="assets/images/projects/artisteo/cardImage.webp"
+                alt="imageContainer"
+              />
+            </div>
+            <div class="frameFlexColumnTiny">
+              <p class="regular-bold">Artisteo</p>
+              <p class="regular" data-key="cardProjectArtisteoDescription"></p>
+            </div>
+            <i class="fa-solid fa-chevron-up iconMedium"></i>
+          </a>
+
+          <!-- [artisteo] -->
+          <a class="cardProject" href="artisteo.html" target="_blank">
+            <div class="cardProjectImageContainer">
+              <img
+                src="assets/images/projects/artisteo/cardImage.webp"
+                alt="imageContainer"
+              />
+            </div>
+            <div class="frameFlexColumnTiny">
+              <p class="regular-bold">Artisteo</p>
+              <p class="regular" data-key="cardProjectArtisteoDescription"></p>
+            </div>
+            <i class="fa-solid fa-chevron-up iconMedium"></i>
+          </a>
+
+          <!-- [geomites] -->
+          <a class="cardProject" href="geomites.html" target="_blank">
+            <div class="cardProjectImageContainer">
+              <img
+                src="assets/images/projects/geomites/headerImage.webp"
+                alt="imageContainer"
+              />
+            </div>
+            <div class="frameFlexColumnTiny">
+              <p class="regular-bold">Geomites</p>
+              <p class="regular" data-key="cardProjectGeomitesDescription"></p>
+            </div>
+            <i class="fa-solid fa-chevron-up iconMedium"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- [progressButton] -->
+      <button
+        class="scroll-top js-scroll-top"
+        type="button"
+        title="Scroll to top"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-arrow-up"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <line x1="12" y1="5" x2="12" y2="19" />
+          <line x1="18" y1="11" x2="12" y2="5" />
+          <line x1="6" y1="11" x2="12" y2="5" />
+        </svg>
+        <svg
+          class="progress-circle"
+          width="100%"
+          height="100%"
+          viewBox="-1 -1 102 102"
+        >
+          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+      </button>
+
+      <!-- [footer] -->
+      <footer>
+        <!-- [copyright] -->
+        <div class="frameFlexMedium">
+          <p class="small-bold" data-key="footerText1"></p>
+          <a href="index.html" class="link">
+            <p class="small">alejandromorenomartin.com</p>
+          </a>
+          <div class="frameFlexSmall">
+            <i class="fa-regular fa-copyright iconTiny"></i>
+            <p class="small">2025.</p>
+            <p class="small" data-key="footerText2"></p>
+          </div>
+        </div>
+        <!-- [socialMedia] -->
+        <div class="frameFlexMedium">
+          <a
+            href="https://wa.me/34618110583"
+            class="buttonElevation"
+            target="_blank"
+            ><i class="fa-brands fa-whatsapp iconSmall"></i
+          ></a>
+
+          <a
+            href="https://www.linkedin.com/in/alejandromorenoproductdesigner/"
+            class="buttonElevation"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin-in iconSmall"></i
+          ></a>
+
+          <a
+            href="https://medium.com/@alejandromorenomartin1990"
+            class="buttonElevation"
+            target="_blank"
+            ><img src="assets/icons/medium.png" alt="" class="imageSmall"
+          /></a>
+
+          <a
+            href="https://github.com/kakomoma"
+            class="buttonElevation"
+            target="_blank"
+            ><i class="fa-brands fa-github iconSmall"></i
+          ></a>
+
+          <a
+            href="mailto:alejandromorenomartin199@gmail.com"
+            class="buttonElevation"
+            target="_blank"
+            ><i class="fa-solid fa-envelope iconSmall"></i
+          ></a>
+        </div>
+      </footer>
+    </main>
+
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/components.js"></script>
+    <script
+      src="https://kit.fontawesome.com/35d35eeb85.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

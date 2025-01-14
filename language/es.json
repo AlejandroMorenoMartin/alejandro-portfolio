@@ -27,7 +27,7 @@
   "mainHeroButton1": "Portfolio",
   "mainHeroButton2": "Contacto",
 
-  "indexSectionHeader1": "Otros proyectos",
+  "indexSectionHeader1": "Proyectos",
   "indexSectionHeader2": "Experiencia",
   "indexSectionHeader3": "Educación",
   "indexSectionHeader4": "Artículos",
@@ -35,6 +35,7 @@
   "indexSectionHeader6": "Herramientas",
   "indexSectionHeader7": "Testimonios",
   "indexSectionHeader8": "Lecturas",  
+  "otherProjectsSectionHeader": "Otros proyectos",
 
   "indexSectionHeaderButton": "Ver más",
 
@@ -912,9 +913,9 @@
 "cardProjectArtisteoDescription":"Un mercado para artistas musicales.",
 "projectArtisteoDescription":"¿Cómo se diseña un mercado que equilibre los objetivos empresariales con las necesidades específicas de los artistas musicales? En Artisteo, soy responsable de dirigir el diseño de producto de una plataforma que conecta a los músicos con las oportunidades, permitiéndoles mostrar su talento y hacer crecer sus carreras.",
 
-"projectCaseStudyTime":"12 min de lectura",
-"cardProjectCaseStudyDescription":"Propuesta de mejora para una aplicación de mercado.", 
-"projectCaseStudyDescription":"¿Cómo rediseñar una aplicación para equilibrar los objetivos empresariales y las necesidades de los usuarios? Durante mi trabajo en un proyecto para una aplicación móvil existente, fui responsable de mejorar la experiencia del usuario y optimizar su funcionalidad para alinearla tanto con los objetivos empresariales como con las expectativas de los usuarios.", 
+"projectVivaGymTime":"16 min de lectura",
+"cardProjectVivaGymDescription":"Adaptando la aplicación a las necesidades de los usuarios.", 
+"projectVivaGymDescription":"¿Cómo puede una aplicación de fitness integrarse a la perfección en la vida de los miembros de un gimnasio y, al mismo tiempo, contribuir a su salud y bienestar? En Viva Gym, soy responsable de dirigir el diseño de producto de una plataforma que permite a los usuarios ser constantes, seguir sus progresos y hacer del fitness una parte agradable de su rutina diaria.", 
 
 "mediumLink":"Todos los artículos",
 
@@ -1022,10 +1023,41 @@
   "artisteoLearning3":"Colaboración constante",
   "artisteoLearning4":"Sistemas de diseño",
 
-  "caseStudyChallenge":"Analisis y rediseño de una aplicación existente para mejorar la experiencia del usuario",
-  "caseStudyRole":"Diseñador de producto",
-  "caseStudyDate":"Enero 2025",
-  "caseStudyTimeline":"2 semanas"
+  "vivaGymChallenge":"Diseñar una aplicación móvil que facilite la experiencia del usuario en su viaje hacia un estilo de vida saludable, al tiempo que se alinea con los objetivos empresariales de Viva Gym",
+  "vivaGymRole":"Diseñador de producto",
+  "vivaGymDate":"Enero 2025",
+  "vivaGymTimeline":"2 semanas",
+
+  "vivaGymParagraph1Title":"Introducción",
+  "vivaGymParagraph1Text1":"Viva Gym es una reconocida cadena de gimnasios que opera bajo un modelo de suscripción accesible y flexible, ofreciendo modernas instalaciones y una amplia variedad de actividades dirigidas a todos los niveles de fitness. Como parte de su oferta, la aplicación móvil de Viva Gym busca complementar la experiencia presencial, permitiendo a los usuarios gestionar reservas, consultar horarios y mantenerse conectados con sus progresos y objetivos.",
+  "vivaGymParagraph1Text2":"En un mercado en el que la tecnología se ha convertido en un pilar fundamental de la experiencia del usuario, la app representa una oportunidad estratégica para fortalecer la relación entre los socios y la marca. Este proyecto busca explorar cómo la app puede evolucionar para alinearse con las expectativas actuales y mejorar la experiencia integral que Viva Gym ofrece a sus socios.",
+
+  "vivaGymParagraph2Title":"Investigación",
+  "vivaGymParagraph2Text":"In this section, we will break down the research process to understand what issues current app users face, what the key objectives of Viva Gym as a business are, and how interviews with real users helped validate our assumptions and uncover new insights.",
+ 
+  "vivaGymSubParagraph1Title":"Encontrando el problema",
+  "vivaGymSubParagraph1Text1":"Los seres humanos buscamos el equilibrio entre comodidad y aspiraciones. En el mundo del fitness, esta dualidad se refleja en nuestra elección de rutinas de ejercicio: preferimos las actividades familiares que se ajustan a nuestras capacidades y horarios, pero aspiramos a mejoras constantes que exigen salir de nuestra zona de confort.",
+  "vivaGymSubParagraph1Text2":"La aplicación VivaGym MyApp, diseñada para facilitar y personalizar la experiencia de ejercicio de los usuarios, se enfrenta a un reto inherente: cómo motivar a las personas para que adopten nuevos hábitos y mantengan su compromiso a largo plazo. Aunque la aplicación ofrece herramientas como planes de entrenamiento personalizados y acceso a actividades específicas, el compromiso real depende de la interacción diaria de los usuarios con estas funcionalidades.",
+  "vivaGymSubParagraph1Text3":"Por otro lado, Viva Gym, como empresa, pretende fomentar el uso activo de la aplicación para aumentar la fidelidad de los clientes y diferenciarse en un mercado competitivo. Sin embargo, aquí surge un conflicto: los usuarios quieren facilidad y resultados inmediatos, mientras que la empresa necesita que se mantengan comprometidos para cumplir sus objetivos comerciales.",
+  "vivaGymSubParagraph1Text4":"Este es el meollo del problema: ¿cómo puede VivaGym MyApp equilibrar la inercia natural de los usuarios con la necesidad de incentivarlos para que se comprometan más profundamente, satisfaciendo al mismo tiempo sus propios objetivos empresariales? Este equilibrio entre los objetivos del usuario y los de la empresa será clave para desarrollar una solución que beneficie a ambas partes.",
+
+  "vivaGymSubParagraph2Title":"Objetivos empresariales",
+  "vivaGymSubParagraph2Text1":"La misión de VivaGym no es solo ofrecer instalaciones de fitness accesibles, sino también integrar más profundamente la experiencia digital en la vida de sus usuarios. El objetivo es hacer de la app una herramienta indispensable para seguir el progreso de la forma física, reservar clases y personalizar el entrenamiento, todo ello dentro de una plataforma que facilita y motiva la actividad física.",
+  "vivaGymSubParagraph2Text2":"El reto es que, aunque los usuarios ya están familiarizados con la plataforma básica, sigue faltando incentivo para utilizarla de forma constante. Por ello, los objetivos de negocio se centran en aumentar el engagement, la retención de usuarios y, a su vez, monetizar el aspecto digital de la app, creando una experiencia más atractiva y funcional que aporte valor tanto a los usuarios como a VivaGym como marca.",
+
+  "vivaGymSubParagraph3Title":"Necesidades emergentes",
+  "vivaGymSubParagraph3Text1":"Los usuarios de VivaGym buscan una experiencia más personalizada y flexible. Aunque la aplicación ofrece planes generales, muchos quieren entrenamientos adaptados a sus objetivos específicos y un seguimiento claro de sus progresos.",
+  "vivaGymSubParagraph3Text2":"Además, la flexibilidad es clave; los usuarios quieren acceder a clases y formación a la carta, sin depender de horarios fijos. Estas necesidades emergentes apuntan a la importancia de ofrecer una experiencia más personalizada y accesible que se adapte mejor a la vida cotidiana de los usuarios.",
+
+  "vivaGymSubParagraph4Title":"Entrevistas a usuarios",
+  "vivaGymSubParagraph4Text":"A lo largo de la investigación, propusimos varias hipótesis sobre lo que los usuarios necesitaban de la plataforma. Estas hipótesis se validaron mediante encuestas y entrevistas, y los resultados nos permitieron confirmar o ajustar nuestras suposiciones. Por ejemplo, descubrimos que la posibilidad de ver fácilmente las obras de los artistas y acceder a reseñas era crucial para los usuarios, lo que reafirmó la orientación de nuestro diseño.",
+
+  "cardTestimonial6Description":"“Me gustaría poder entrenar cuando tengo un hueco de tiempo, sin preocuparme por los horarios. La flexibilidad es esencial para no perder la motivación.”",
+  "cardTestimonial6Position":"Madre de dos niños",
+  "cardTestimonial7Description":"“Necesito saber si realmente estoy progresando. Quiero ver claramente cómo estoy mejorando y qué tengo que hacer para alcanzar mis objetivos.”",
+  "cardTestimonial7Position":"Nuevo en el gimnasio",
+  "cardTestimonial8Description":"“Me aburro de seguir siempre los mismos entrenamientos, quiero que la app me ofrezca retos o nuevas rutinas que se adapten a mi nivel.”",
+  "cardTestimonial8Position":"Usuario avanzado"
 }
 
 
