@@ -794,7 +794,16 @@ footer {
 }
 
 .cardReadingFrame {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   width: 80%;
+}
+
+.cardReadingFrameTitle {
+  display: flex;
+  flex-direction: column;
+  gap: .125rem;
 }
 
 .cardReadingFrameTitle .regularBold {
