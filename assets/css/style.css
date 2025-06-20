@@ -3,58 +3,58 @@
 body {
   font-family: var(--font-family);
   font-size: var(--font-size);
-  background: var(--neutral-900);
-  color: var(--neutral-200);
+  background: var(--white);
+  color: var(--black-200);
 }
 
 h1 {
   font-family: var(--font-family);
   font-size: var(--fs-h1);
   line-height: var(--lh-h1);
-  font-weight: 900;
+  font-weight: 500;
   letter-spacing: 0;
-  color: var(--white);
+  color: var(--black);
 }
 
 h2 {
   font-size: var(--fs-h2);
   line-height: var(--lh-h2);
-  font-weight: 800;
+  font-weight: 500;
   letter-spacing: 0;
-  color: var(--white);
+  color: var(--black-100);
 }
 
 h3 {
   font-size: var(--fs-h3);
   line-height: var(--lh-h3);
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0;
-  color: var(--white);
+  color: var(--black-100);
 }
 
 h4 {
   font-size: var(--fs-h4);
   line-height: var(--lh-h4);
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0;
-  color: var(--white);
+  color: var(--black-100);
 }
 
 .large,
 caption {
   font-size: var(--fs-large);
   line-height: var(--lh-large);
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0;
-  color: var(--white);
+  color: var(--black-100);
 }
 
-.regular-bold {
+.regularBold {
   font-size: var(--fs-regular);
   line-height: var(--lh-regular);
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.025rem;
-  color: var(--white);
+  color: var(--black-200);
 }
 
 .regular {
@@ -62,19 +62,15 @@ caption {
   line-height: var(--lh-regular);
   font-weight: 400;
   letter-spacing: 0.025rem;
-  color: var(--neutral-300);
+  color: var(--black-200);
 }
 
-.regular-red {
-  color: var(--red-500);
-}
-
-.small-bold {
+.smallBold {
   font-size: var(--fs-small);
   line-height: var(--lh-small);
-  font-weight: 800;
+  font-weight: 500;
   letter-spacing: 0.05rem;
-  color: var(--neutral-300);
+  color: var(--black-300);
 }
 
 .small {
@@ -82,28 +78,9 @@ caption {
   line-height: var(--lh-small);
   font-weight: 400;
   letter-spacing: 0.05rem;
-  color: var(--neutral-500);
+  color: var(--black-300);
 }
 
 b {
-  color: var(--white);
-}
-
-.cardFont {
-  font-size: .75rem;
-  line-height: .75rem;
-  font-weight: 400;
-  letter-spacing: 0.025rem;
-  color: var(--neutral-500);
-}
-
-@media (max-width: 1200px) {
-
-  .cardFont {
-    font-size: .6rem;
-    line-height: .8rem;
-    font-weight: 400;
-    letter-spacing: .1rem;
-    color: var(--neutral-500);
-  }
+  font-weight: 600;
 }

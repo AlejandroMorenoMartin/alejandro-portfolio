@@ -1,63 +1,199 @@
-/* ----- BUTTONPROGRESS ----- */
+document.addEventListener("DOMContentLoaded", () => {
+  const htmlElement = document.documentElement;
+  const langButtons = document.querySelectorAll(".langButton");
+  const activeLangClass = "active";
+  let currentTranslations = {};
 
-document.addEventListener('DOMContentLoaded', () => {
-  const scrollTopBtn = document.querySelector('.js-scroll-top');
-  if (scrollTopBtn) {
-    scrollTopBtn.onclick = () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
+  async function loadTranslations(lang) {
+    try {
+      const response = await fetch(`./language/${lang}.json`);
+      if (!response.ok) throw new Error("Error al cargar traducciones.");
+      currentTranslations = await response.json();
+    } catch (error) {
+      console.error(`No se pudo cargar '${lang}':`, error);
+      currentTranslations = {};
+    }
   }
 
-  const offset = 100;
-  window.addEventListener(
-    'scroll',
-    function (event) {
-      const scrollPos = window.scrollY || document.documentElement.scrollTop;
-      if (scrollPos > offset) {
-        scrollTopBtn.classList.add('is-active');
+  function applyTranslations() {
+    document.querySelectorAll("[data-key]").forEach((el) => {
+      const key = el.dataset.key;
+      const text = currentTranslations[key];
+      if (text !== undefined) {
+        el.innerHTML = text;
       } else {
-        scrollTopBtn.classList.remove('is-active');
+        console.warn(`Clave '${key}' no encontrada.`);
       }
-    },
-    false,
-  );
+    });
+  }
 
-  const progressPath = document.querySelector('.progress-circle path');
-  if (progressPath) {
-    const pathLength = progressPath.getTotalLength();
-    progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
-    progressPath.style.strokeDasharray = `${pathLength} ${pathLength}`;
-    progressPath.style.strokeDashoffset = pathLength;
-    progressPath.getBoundingClientRect();
-    progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+  function generateTableOfContents() {
+    const toc = document.getElementById("tableOfContents");
+    if (!toc) return;
 
-    const updateProgress = function () {
-      const scroll = window.scrollY || document.documentElement.scrollTop;
+    const sections = document.querySelectorAll(".indexSection");
+    const wrapper = document.createElement("div");
+    const title = document.createElement("p");
+    const list = document.createElement("ul");
 
-      const docHeight = Math.max(
-        document.body.scrollHeight, document.documentElement.scrollHeight,
-        document.body.offsetHeight, document.documentElement.offsetHeight,
-        document.body.clientHeight, document.documentElement.clientHeight
-      );
+    title.dataset.key = "tocTitle";
+    title.classList.add("toc-title"); // para margen
+    wrapper.appendChild(title);
 
-      const windowHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-
-      const height = docHeight - windowHeight;
-      const progress = pathLength - (scroll * pathLength / height);
-      progressPath.style.strokeDashoffset = progress;
-    };
-
-    window.addEventListener('scroll', function (event) {
-      updateProgress();
+    sections.forEach((section) => {
+      const id = section.id;
+      const titleElement = section.querySelector("h2");
+      if (id && titleElement && titleElement.textContent.trim() !== "") {
+        const text = titleElement.textContent.trim();
+        const listItem = document.createElement("li");
+        const link = document.createElement("a");
+        link.href = `#${id}`;
+        link.textContent = text;
+        listItem.appendChild(link);
+        list.appendChild(listItem);
+      }
     });
 
-    // Call updateProgress initially to set the correct state
-    updateProgress();
+    wrapper.appendChild(list);
+    toc.innerHTML = "";
+    toc.appendChild(wrapper);
+    applyTranslations(); // volver a aplicar después de regenerar
+    enableSmoothScrollForTOC();
+    highlightTOCOnScroll();
+  }
+
+  async function setLanguage(lang) {
+    localStorage.setItem("userLanguage", lang);
+    htmlElement.setAttribute("lang", lang);
+    await loadTranslations(lang);
+    applyTranslations();
+    generateTableOfContents();
+
+    langButtons.forEach((btn) => {
+      btn.classList.remove(activeLangClass);
+      if (btn.dataset.lang === lang) btn.classList.add(activeLangClass);
+    });
+
+    console.log(`Idioma establecido: ${lang}`);
+  }
+
+  const savedLang = localStorage.getItem("userLanguage") || "es";
+  setLanguage(savedLang);
+
+  langButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      setLanguage(btn.dataset.lang);
+    });
+  });
+
+  function enableSmoothScrollForTOC() {
+    const offset = 96;
+    const tocLinks = document.querySelectorAll("#tableOfContents a");
+
+    tocLinks.forEach((link) => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute("href");
+        const targetElement = document.querySelector(targetId);
+        if (!targetElement) return;
+
+        const topPosition =
+          targetElement.getBoundingClientRect().top +
+          window.pageYOffset -
+          offset;
+
+        window.scrollTo({
+          top: topPosition,
+          behavior: "smooth",
+        });
+      });
+    });
+  }
+
+  function highlightTOCOnScroll() {
+    const tocLinks = document.querySelectorAll("#tableOfContents a");
+    const sections = document.querySelectorAll(".indexSection");
+    const offset = 100;
+
+    window.addEventListener("scroll", () => {
+      let currentId = "";
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= offset && rect.bottom > offset) {
+          currentId = section.id;
+        }
+      });
+
+      tocLinks.forEach((link) => {
+        if (link.getAttribute("href") === `#${currentId}`) {
+          link.classList.add("active");
+        } else {
+          link.classList.remove("active");
+        }
+      });
+    });
   }
 });
 
-/* ----- SCROLLER ----- */
+/* salto de linea */
+document
+  .querySelector('a.button[href="#projects"]')
+  .addEventListener("click", function (e) {
+    e.preventDefault(); // Evita el salto automático
+    const offset = 96; // altura del nacContainer
+    const targetId = this.getAttribute("href");
+    const targetElement = document.querySelector(targetId);
+    const topPosition =
+      targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
 
+    window.scrollTo({
+      top: topPosition,
+      behavior: "smooth",
+    });
+  });
+
+/* scroll to top */
+document.addEventListener("DOMContentLoaded", () => {
+  const scrollBtn = document.getElementById("scrollToTop");
+  const progressCircle = document.getElementById("progressCircle");
+  const radius = 45;
+  const circumference = 2 * Math.PI * radius;
+
+  progressCircle.style.strokeDasharray = circumference;
+  progressCircle.style.strokeDashoffset = circumference;
+
+  function setProgress(percent) {
+    const offset = circumference - (percent / 100) * circumference;
+    progressCircle.style.strokeDashoffset = offset;
+  }
+
+  function updateScrollProgress() {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    const docHeight =
+      document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = (scrollTop / docHeight) * 100;
+
+    setProgress(scrollPercent);
+
+    if (scrollPercent > 5) {
+      scrollBtn.style.opacity = "1";
+      scrollBtn.style.pointerEvents = "auto";
+    } else {
+      scrollBtn.style.opacity = "0";
+      scrollBtn.style.pointerEvents = "none";
+    }
+  }
+
+  scrollBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  window.addEventListener("scroll", updateScrollProgress);
+
+  updateScrollProgress();
+});
+
+/* tools */
 const scrollers = document.querySelectorAll(".scroller");
 
 // If a user hasn't opted in for recuded motion, then we add the animation
@@ -71,7 +207,7 @@ function addAnimation() {
     scroller.setAttribute("data-animated", true);
 
     // Make an array from the elements within `.scroller-inner`
-    const scrollerInner = scroller.querySelector(".scrollerInner");
+    const scrollerInner = scroller.querySelector(".scroller__inner");
     const scrollerContent = Array.from(scrollerInner.children);
 
     // For each item in the array, clone it
@@ -85,52 +221,98 @@ function addAnimation() {
   });
 }
 
-/* SALTO A LA SECCIÓN */
+/* testimonySection */
+document.addEventListener("DOMContentLoaded", () => {
+  const track = document.querySelector(".sliderTrack");
+  const cards = document.querySelectorAll(".cardTestimony");
+  const prevBtn = document.querySelectorAll(".sliderButton")[0];
+  const nextBtn = document.querySelectorAll(".sliderButton")[1];
+  const indicatorContainer = document.querySelector(".sliderIndicators");
 
-document.querySelectorAll('.tableOfContent a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function (event) {
-    event.preventDefault();
+  let currentIndex = 0;
 
-    // Obtener el ID de la sección
-    const targetId = this.getAttribute("href").substring(1);
-    const targetElement = document.querySelector(`#${targetId} h4`);
+  // Ajustar el ancho de las cards para ocupar todo el frame
+  const updateCardWidths = () => {
+    const containerWidth =
+      document.querySelector(".indexSectionFrame").offsetWidth;
+    cards.forEach((card) => {
+      card.style.minWidth = `${containerWidth}px`;
+    });
+  };
 
-    if (targetElement) {
-      // Obtener la posición actual de la tabla de contenido y restar el offset
-      const tableOfContentOffset = document.querySelector('.tableOfContent').getBoundingClientRect().bottom;
-      const offset = 64; // 2rem es igual a 32px
-
-      // Calcular la posición de destino en relación a la posición de .tableOfContent
-      const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - tableOfContentOffset - offset;
-
-      // Hacer scroll a la posición calculada
-      window.scrollTo({
-        top: targetPosition,
-        behavior: "smooth"
+  // Crear indicadores
+  const createIndicators = () => {
+    indicatorContainer.innerHTML = "";
+    cards.forEach((_, index) => {
+      const dot = document.createElement("div");
+      dot.classList.add("sliderDot");
+      if (index === currentIndex) dot.classList.add("active");
+      dot.addEventListener("click", () => {
+        currentIndex = index;
+        updateSlider();
       });
+      indicatorContainer.appendChild(dot);
+    });
+  };
+
+  const updateIndicators = () => {
+    const dots = document.querySelectorAll(".sliderDot");
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === currentIndex);
+    });
+  };
+
+  // Ocultar/mostrar cards según el índice
+  const updateCardVisibility = () => {
+    cards.forEach((card, i) => {
+      if (i === currentIndex) {
+        card.classList.add("showing");
+        card.classList.remove("hiddenUntilActive");
+      } else {
+        card.classList.remove("showing");
+        card.classList.add("hiddenUntilActive");
+      }
+    });
+  };
+
+  // Ocultar/mostrar botones según posición
+  const updateButtonVisibility = () => {
+    prevBtn.classList.toggle("hidden", currentIndex === 0);
+    nextBtn.classList.toggle("hidden", currentIndex === cards.length - 1);
+  };
+
+  // Mover el slider
+  const updateSlider = () => {
+    const width = cards[0].offsetWidth;
+    track.style.transform = `translateX(-${currentIndex * width}px)`;
+    updateIndicators();
+    updateCardVisibility();
+    updateButtonVisibility();
+  };
+
+  // Botones
+  prevBtn.addEventListener("click", () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateSlider();
     }
   });
+
+  nextBtn.addEventListener("click", () => {
+    if (currentIndex < cards.length - 1) {
+      currentIndex++;
+      updateSlider();
+    }
+  });
+
+  // Inicializar
+  updateCardWidths();
+  createIndicators();
+  updateSlider();
+
+  // Recalcular en resize
+  window.addEventListener("resize", () => {
+    updateCardWidths();
+    updateSlider();
+  });
 });
-
-document.getElementById('buttonHero').addEventListener('click', function (e) {
-  e.preventDefault(); // Evita el comportamiento predeterminado del enlace
-
-  // Obtén el destino
-  const targetId = this.getAttribute('href').substring(1); // Elimina el "#"
-  const targetElement = document.getElementById(targetId);
-
-  if (targetElement) {
-    // Calcula la posición con un offset de 64px
-    const offset = 168; // Distancia fija en píxeles
-    const elementPosition = targetElement.getBoundingClientRect().top;
-    const offsetPosition = elementPosition + window.pageYOffset - offset;
-
-    // Realiza el desplazamiento con animación
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: 'smooth',
-    });
-  }
-});
-
-/* SLIDER BUTTON */
