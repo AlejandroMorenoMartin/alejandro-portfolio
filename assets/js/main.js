@@ -171,7 +171,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
     const docHeight =
       document.documentElement.scrollHeight - window.innerHeight;
-    const scrollPercent = (scrollTop / docHeight) * 100;
+    let scrollPercent = (scrollTop / docHeight) * 100;
+
+    // Forzar el 100% si estás muy cerca del final
+    if (scrollPercent > 99.5) scrollPercent = 100;
 
     setProgress(scrollPercent);
 
@@ -314,5 +317,67 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("resize", () => {
     updateCardWidths();
     updateSlider();
+  });
+});
+
+/* h2 efecto */
+document.addEventListener("DOMContentLoaded", () => {
+  const titles = document.querySelectorAll("h2");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const target = entry.target;
+
+        if (entry.isIntersecting) {
+          target.classList.add("visible");
+          target.classList.remove("hidden");
+        } else {
+          target.classList.remove("visible");
+          target.classList.add("hidden");
+        }
+      });
+    },
+    {
+      root: null,
+      threshold: 1,
+    }
+  );
+
+  titles.forEach((title) => observer.observe(title));
+});
+
+/* efecto hero */
+document.addEventListener("DOMContentLoaded", () => {
+  const heroSection = document.querySelector(".heroSectionText");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          heroSection.classList.add("heroAnimate");
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  observer.observe(heroSection);
+});
+
+/* pageLoader */
+document.addEventListener("DOMContentLoaded", () => {
+  const loader = document.getElementById("pageLoader");
+
+  const MIN_TIME = 1000;
+  const start = performance.now();
+
+  window.addEventListener("load", () => {
+    const elapsed = performance.now() - start;
+    const delay = Math.max(0, MIN_TIME - elapsed);
+
+    setTimeout(() => {
+      loader.classList.add("hidden");
+    }, delay);
   });
 });
