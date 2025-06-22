@@ -220,7 +220,7 @@
 @media screen and (max-width: 1200px) {
   .heroSection img {
     width: 75%;
-    max-width: 12rem;
+    max-width: 16rem;
     height: auto;
     border-radius: 1.5rem;
   }
