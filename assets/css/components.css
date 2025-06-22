@@ -1024,16 +1024,17 @@ h2.hidden {
 /* Animación al activar */
 .heroAnimate h1 {
   animation: fadeUp 1s ease forwards;
+  animation-delay: 1s;
 }
 
 .heroAnimate h4 {
   animation: fadeUp 1s ease forwards;
-  animation-delay: 0.5s;
+  animation-delay: 1s;
 }
 
 .heroAnimate .heroSectionTextTitleFrame2 {
   animation: fadeDown 1s ease forwards;
-  animation-delay: 1s;
+  animation-delay: 1.5s;
 }
 
 .heroAnimate > p {
