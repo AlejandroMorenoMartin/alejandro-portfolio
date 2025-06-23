@@ -62,16 +62,20 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 1rem;
   background-color: var(--light);
   border: none;
   cursor: pointer;
   transition: all 200ms ease-in-out;
   width: fit-content;
+}
+
+@media screen and (max-width: 1200px) {
+  .button300 {
+    gap: 0.25rem;
+    padding: 0.25rem 0.5rem;
+  }
 }
 
 .button300 i {
@@ -279,13 +283,6 @@
   justify-content: space-between;
 }
 
-@media screen and (max-width: 1200px) {
-  .sectionHeader {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
 .indexSectionFrame {
   display: flex;
   flex-direction: column;
@@ -469,8 +466,7 @@ footer {
 }
 
 @media screen and (max-width: 1200px) {
-  .footerFrameLeftTwo {
-    flex-direction: column;
+  .footerFrameLeftTwo {    
     align-items: flex-start;
   }
 }
