@@ -1190,7 +1190,7 @@ h2.hidden {
 .sectionTwo {
   display: flex;
   flex-direction: column;
-  gap: 128px;
+  gap: 248px;
 }
 
 .cardObjectives {
@@ -1222,7 +1222,11 @@ h2.hidden {
 }
 
 .designDecisionImage {
-  width: 35%;
+  width: 30%;
 }
 
-/* geomites */
+.indexSubSection {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
