@@ -281,7 +281,7 @@
   }
 }
 
-.indexSection > div:nth-of-type(2) {
+.sectionCut > div:nth-of-type(2) {
   margin-top: -10rem;
 }
 
@@ -590,7 +590,6 @@ footer {
 }
 
 /* cardarticle */
-
 .cardArticle {
   display: flex;
   flex-direction: column;
@@ -1248,7 +1247,7 @@ h2.hidden {
   text-align: left;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .responsiveTable thead {
     display: none;
   }
@@ -1263,10 +1262,175 @@ h2.hidden {
 
   .responsiveTable tr {
     margin-bottom: 1rem;
-    padding: 0.5rem;    
+    padding: 0.5rem;
   }
 
-  .responsiveTable td {    
+  .responsiveTable td {
     position: relative;
-  }  
+  }
+}
+
+.gridOne {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .gridOne {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+}
+
+.geomitesCardTypography {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--white-200);
+  border: 1.5px solid var(--white-500);
+  width: 100%;
+  height: flex;
+}
+
+.geomitesCardOneTypographyOne {
+  font-family: "Grenze", serif;
+  font-size: 96px;
+  font-weight: bold;
+}
+
+.geomitesCardOneTypographyTwo {
+  font-family: "Grenze", serif;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.geomitesCardOneTypographyThree {
+  font-family: "Grenze", serif;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.geomitesCardOneTypographyFour {
+  font-family: "Grenze", serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.geomitesCardOneTypographyFive {
+  font-family: "Grenze", serif;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.geomitesCardOneTypographySix {
+  font-family: "Grenze", serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.geomitesCardOneTypographySeven {
+  font-family: "Grenze", serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.geomitesCardOneTypographyEight {
+  font-family: "Grenze", serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.geomitesCardOneTypographyNine {
+  font-family: "Grenze", serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.geomitesCardOneTypographyTen {
+  font-family: "Grenze", serif;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.gridTwo {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+}
+
+@media (max-width: 1200px) {
+  .gridTwo {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+}
+
+.geomitesCardColor {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px;
+  align-items: center;
+  justify-content: end;
+  height: 168px;
+}
+
+.geomitesCardColorOne {
+  background-color: #f5f0eb;
+}
+
+.geomitesCardColorTwo {
+  background-color: #D6C1A6;
+}
+
+.geomitesCardColorThree {
+  background-color: #B89474;
+}
+
+.geomitesCardColorOne p,
+.geomitesCardColorTwo p,
+.geomitesCardColorThree p {
+  color: #2e1c0f;
+}
+
+.geomitesCardColorFour {
+  background-color: #8C5E3C;
+}
+
+.geomitesCardColorFive {
+  background-color: #5A3A1E;
+}
+
+.geomitesCardColorSix {
+  background-color: #2E1C0F;
+}
+
+.geomitesCardColorFour p,
+.geomitesCardColorFive p,
+.geomitesCardColorSix p {
+  color: #F5F0EB;
+}
+
+.gridThree {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  grid-template-rows: repeat(4, auto);   
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .gridThree {
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: auto; 
+  }
+}
+
+.geomitesIcon {
+  height: 32px;
+  width: 32px;
 }
