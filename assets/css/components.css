@@ -1202,7 +1202,6 @@ h2.hidden {
   gap: 4px;
   padding: 16px 0;
   position: relative;
-  z-index: 100;
   overflow: hidden;
 }
 
@@ -1383,11 +1382,11 @@ h2.hidden {
 }
 
 .geomitesCardColorTwo {
-  background-color: #D6C1A6;
+  background-color: #d6c1a6;
 }
 
 .geomitesCardColorThree {
-  background-color: #B89474;
+  background-color: #b89474;
 }
 
 .geomitesCardColorOne p,
@@ -1397,27 +1396,27 @@ h2.hidden {
 }
 
 .geomitesCardColorFour {
-  background-color: #8C5E3C;
+  background-color: #8c5e3c;
 }
 
 .geomitesCardColorFive {
-  background-color: #5A3A1E;
+  background-color: #5a3a1e;
 }
 
 .geomitesCardColorSix {
-  background-color: #2E1C0F;
+  background-color: #2e1c0f;
 }
 
 .geomitesCardColorFour p,
 .geomitesCardColorFive p,
 .geomitesCardColorSix p {
-  color: #F5F0EB;
+  color: #f5f0eb;
 }
 
 .gridThree {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); 
-  grid-template-rows: repeat(4, auto);   
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, auto);
   gap: 2rem;
   justify-items: center;
   align-items: center;
@@ -1425,12 +1424,70 @@ h2.hidden {
 
 @media (max-width: 1200px) {
   .gridThree {
-    grid-template-columns: repeat(4, 1fr); 
-    grid-template-rows: auto; 
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
   }
 }
 
 .geomitesIcon {
-  height: 32px;
-  width: 32px;
+  height: 36px;
+  width: 36px;
+}
+
+.componentImage {
+  width: 35%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .componentImage {
+    width: 75%;
+  }
+}
+
+.improveFrame {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px;
+  border-radius: 16px;
+  background: var(--white-200);
+  border: 1.5px solid var(--white-500);
+}
+
+.invertFrame {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+@media (max-width: 1200px) {
+  .invertFrame {
+    flex-direction: column;
+  }
+}
+
+.learningFrame {
+  display: flex;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1.5px solid var(--white-500);
+  background: var(--white-200);
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+}
+
+.learningFrame img {
+  position: absolute;
+  height: 98px;
+  width: 98px;
+  right: 0;
+}
+
+@media (max-width: 1200px) {
+  .learningFrame img {   
+    height: 48px;
+    width: 48px;   
+  }
 }

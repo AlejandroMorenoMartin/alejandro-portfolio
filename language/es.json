@@ -210,7 +210,25 @@
   "geomitesSubSectionTwoTitleFive":"Descubrimiento de contenido",
   "geomitesSubSectionThreeTitleFive":"Retención de usuarios",
   "geomitesSectionTitleSeven":"Equipo",
-  "geomitesSectionTitleEight":"Otros proyectos"  
+  "geomitesSectionTitleEight":"Otros proyectos",
+  "geomitesImproveFrameOneTitle":"Ideas de mejora",
+  "geomitesImproveFrameOneDescription":"Asegurarse de que los usuarios reciben una <b>guía clara y atractiva</b> durante el proceso de onboarding, mostrándole claramente cómo deben completar las acciones principales y animándoles a seguir adelante con <b>mensajes positivos y personalizados</b>.",
+  "tableTwoRowOneColumnOne":"Versión",
+  "tableTwoRowOneColumnTwo":"Personalización",
+  "tableTwoRowOneColumnThree":"Entrenar Geomite",
+  "tableTwoRowOneColumnFour":"Craftear objeto",
+  "geomitesImproveFrameTwoTitle":"Ideas de mejora",
+  "geomitesImproveFrameTwoDescription":"Introducir <b>recompensas o desafíos</b> para incentivar a los usuarios a explorar el contenido adicional.",
+  "tableThreeRowOneColumnOne":"Versión",
+  "tableThreeRowOneColumnTwo":"Día 1",
+  "tableThreeRowOneColumnThree":"Día 7",
+  "tableThreeRowOneColumnFour":"Día 14",
+  "geomitesImproveFrameThreeTitle":"Ideas de mejora",
+  "geomitesImproveFrameThreeDescription":"Introducir un sistema de <b> recompensas diarias o bonificaciones</b> de logros a largo plazo que motive a los usuarios a regresar.",
+  "geomitesLearningFrameOne":"Metodología ágil",
+  "geomitesLearningFrameTwo":"Diseño de interfaces de usuario",
+  "geomitesLearningFrameThree":"Evaluación comparativa",
+  "geomitesLearningFrameFour":"Colaboración cruzada"  
 }
 
 
