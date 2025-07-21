@@ -1456,38 +1456,53 @@ h2.hidden {
 }
 
 .invertFrame {
-  display: flex;
-  flex-direction: row;
-  gap: 32px;
+  display: grid;
+  gap: 2rem; 
+  grid-template-columns: repeat(4, 1fr);
 }
 
 @media (max-width: 1200px) {
   .invertFrame {
-    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
   }
 }
 
 .learningFrame {
   display: flex;
-  padding: 16px;
+  padding: 1rem;
   border-radius: 16px;
   border: 1.5px solid var(--white-500);
   background: var(--white-200);
   position: relative;
   flex: 1;
   overflow: hidden;
+  text-align: center;
 }
 
 .learningFrame img {
   position: absolute;
-  height: 98px;
-  width: 98px;
+  height: 76px;
+  width: 76px;
   right: 0;
+  bottom: -12px;
+}
+
+.invertFrameTwo {
+  display: grid;
+  gap: 2rem; 
+  grid-template-columns: repeat(5, 1fr);
 }
 
 @media (max-width: 1200px) {
-  .learningFrame img {   
-    height: 48px;
-    width: 48px;   
+  .invertFrameTwo {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
   }
+}
+
+.teamFrame {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }

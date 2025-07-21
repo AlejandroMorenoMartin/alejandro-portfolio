@@ -224,11 +224,19 @@
   "tableThreeRowOneColumnThree":"Día 7",
   "tableThreeRowOneColumnFour":"Día 14",
   "geomitesImproveFrameThreeTitle":"Ideas de mejora",
-  "geomitesImproveFrameThreeDescription":"Introducir un sistema de <b> recompensas diarias o bonificaciones</b> de logros a largo plazo que motive a los usuarios a regresar.",
+  "geomitesImproveFrameThreeDescription":"Introducir un sistema de <b>recompensas diarias o bonificaciones</b> de logros a largo plazo que motive a los usuarios a regresar.",
   "geomitesLearningFrameOne":"Metodología ágil",
-  "geomitesLearningFrameTwo":"Diseño de interfaces de usuario",
+  "geomitesLearningFrameTwo":"Diseño de interfaces",
   "geomitesLearningFrameThree":"Evaluación comparativa",
-  "geomitesLearningFrameFour":"Colaboración cruzada"  
+  "geomitesLearningFrameFour":"Colaboración cruzada",
+  "geomitesSectionDescriptionSix":"Geomites me permitió afianzar un enfoque de <b>diseño centrado en el usuario</b> y guiado por datos, aprendiendo a iterar con criterio y a equilibrar creatividad con objetivos de producto.",
+  "geomitesSectionDescriptionSeven":"Geomites fue desarrollado en colaboración con un pequeño equipo técnico y creativo. Trabajar codo a codo con ellos <b>me permitió alinear diseño, desarrollo y visión de producto</b> de forma ágil y coherente.",  
+  "geomitesTeamFrameOneDescription":"Desarrollador full-stack", 
+  "geomitesTeamFrameTwoDescription":"Desarrollador back-end",  
+  "geomitesTeamFrameThreeDescription":"Diseñador de producto",  
+  "geomitesTeamFrameFourDescription":"Diseñador gráfico", 
+  "geomitesTeamFrameFiveDescription":"Diseñador de interacción",
+  "geomitesSectionDescriptionEight":"Geomites es uno de varios proyectos donde aplico diseño estratégico y enfoque analítico. Date una vuelta, si quieres y <b>explora otros </b>en los que trabajé."  
 }
 
 

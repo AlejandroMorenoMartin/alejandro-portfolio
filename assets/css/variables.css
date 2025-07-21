@@ -144,8 +144,8 @@
   --light-100: rgba(217, 224, 230, 1);
 
   /* elevation */
-  --elevationDefault: 0 0.125rem 1.5625rem 0.3125rem rgba(0, 0, 0, 0.1); /* X:0, Y:2px, Blur:25px, Spread:5px, Color:000000 10% */
-  --elevationHover: 0 0.125rem 1.875rem 0.9375rem rgba(0, 0, 0, 0.1); /* X:0, Y:2px, Blur:30px, Spread:15px, Color:000000 10% */
+  --elevationDefault: 0 0.125rem 1.5rem 0.3rem rgba(0, 0, 0, 0.1); 
+  --elevationHover: 0 0.125rem 1.75rem 0.5rem rgba(0, 0, 0, 0.15); 
 
   /* content */
   --contentMaxWidth: 55rem;
