@@ -1137,9 +1137,30 @@ h2.hidden {
   gap: 2rem;
 }
 
+@media screen and (max-width: 1200px) {
+  .heroProjectSection {
+    gap: 2rem;
+  }
+  .heroProjectSectionInfo {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .heroProjectSectionInfo .frameRight {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+
 .overviewImage {
-  width: 35%;
+  width: 30%;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .overviewImage {
+    width: 75%;
+  }
 }
 
 .sectionHeaderFrame {
@@ -1151,7 +1172,19 @@ h2.hidden {
 .sectionOne {
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: 4rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .sectionOne {
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .overviewImage {
+    width: 75%;
+  }
 }
 
 .subSectionOne {
@@ -1173,6 +1206,21 @@ h2.hidden {
   align-items: center;
 }
 
+@media screen and (max-width: 1200px) {
+  .subSectionOneRow {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .indexSection:nth-of-type(4) .subSectionOneRow:nth-of-type(3) {
+    flex-direction: column-reverse;
+  }
+  .indexSection:nth-of-type(4) .subSectionOneRow:nth-of-type(5) {
+    flex-direction: column-reverse;
+  }
+}
+
 .subSectionOneRowColumn {
   flex: 1;
   display: flex;
@@ -1190,10 +1238,22 @@ h2.hidden {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1200px) {
+  .subSectionOneRowColumn img {
+    width: 75%;
+  }
+}
+
 .sectionTwo {
   display: flex;
   flex-direction: column;
-  gap: 248px;
+  gap: 16rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .sectionTwo {
+    gap: 16rem;
+  }
 }
 
 .cardObjectives {
@@ -1214,17 +1274,14 @@ h2.hidden {
   left: 0;
 }
 
-.cardObjectives i {
-  position: absolute;
-  font-size: 128px;
-  font-weight: bold;
-  color: var(--primary-100);
-  bottom: -32px;
-  right: 0;
-}
-
 .designDecisionImage {
   width: 30%;
+}
+
+@media screen and (max-width: 1200px) {
+  .designDecisionImage {
+    width: 75%;
+  }
 }
 
 .indexSubSection {
@@ -1457,7 +1514,7 @@ h2.hidden {
 
 .invertFrame {
   display: grid;
-  gap: 2rem; 
+  gap: 2rem;
   grid-template-columns: repeat(4, 1fr);
 }
 
@@ -1490,7 +1547,7 @@ h2.hidden {
 
 .invertFrameTwo {
   display: grid;
-  gap: 2rem; 
+  gap: 2rem;
   grid-template-columns: repeat(5, 1fr);
 }
 
