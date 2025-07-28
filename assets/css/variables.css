@@ -9,7 +9,7 @@
   --fs-h3: 2rem;
   --fs-h4: 1.5rem;
   --fs-large: 1.15rem;
-  --fs-regular: .95rem;
+  --fs-regular: 0.95rem;
   --fs-small: 0.75rem;
 
   /* line-height */
@@ -27,6 +27,38 @@
   /* border-width */
   --bw-0: 0.05rem;
   --bw-1: 1px;
+
+  /* black */
+  --black: rgba(0, 0, 0, 1);
+  --black-100: rgba(0, 0, 0, 0.9);
+  --black-200: rgba(0, 0, 0, 0.6);
+  --black-300: rgba(0, 0, 0, 0.5);
+
+  /* white */
+  --white: rgba(255, 255, 255, 1);
+  --white-100: rgba(0, 0, 0, 0.015);
+  --white-200: rgba(0, 0, 0, 0.025);
+  --white-300: rgba(0, 0, 0, 0.05);
+  --white-400: rgba(0, 0, 0, 0.075);
+  --white-500: rgba(0, 0, 0, 0.14);
+
+  /* primary */
+  --primary: rgba(0, 122, 255, 0.1);
+  --primary-100: rgba(0, 122, 255, 0.2);
+  --primary-200: rgba(0, 122, 255, 1);
+  --primary-300: rgba(0, 96, 201, 1);
+  --primary-400: rgba(0, 86, 179, 1);
+
+  /* light */
+  --light: rgba(235, 240, 245, 1);
+  --light-100: rgba(217, 224, 230, 1);
+
+  /* elevation */
+  --elevationDefault: 0 0.1rem 1.25rem 0.25rem rgba(0, 0, 0, 0.1);
+  --elevationHover: 0 0.125rem 1.75rem 0.5rem rgba(0, 0, 0, 0.15);
+
+  /* content */
+  --contentMaxWidth: 55rem;
 }
 
 @media (max-width: 1200px) {
@@ -37,7 +69,7 @@
     --fs-h3: 1.6rem;
     --fs-h4: 1.3rem;
     --fs-large: 1.1rem;
-    --fs-regular: .85rem;
+    --fs-regular: 0.85rem;
     --fs-small: 0.6rem;
 
     /* line-height */
@@ -48,6 +80,10 @@
     --lh-large: 1.5rem;
     --lh-regular: 1.4rem;
     --lh-small: 1.125rem;
+
+    /* elevation */
+    --elevationDefault: 0 2px 8px 2px rgba(0, 0, 0, 0.08);
+    --elevationHover: 0 4px 10px 4px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -113,40 +149,4 @@
   src: url(/assets/fonts/static/Montserrat-Extra-Light.ttf) format("truetype");
   font-weight: 200;
   font-style: normal;
-}
-
-/* colors */
-
-:root {
-  /* black */
-  --black: rgba(0, 0, 0, 1);
-  --black-100: rgba(0, 0, 0, 0.9);
-  --black-200: rgba(0, 0, 0, 0.6);
-  --black-300: rgba(0, 0, 0, 0.5);
-
-  /* white */
-  --white: rgba(255, 255, 255, 1);
-  --white-100: rgba(0, 0, 0, 0.015);
-  --white-200: rgba(0, 0, 0, 0.025);
-  --white-300: rgba(0, 0, 0, 0.05);
-  --white-400: rgba(0, 0, 0, 0.075);
-  --white-500: rgba(0, 0, 0, 0.14);
-
-  /* primary */
-  --primary: rgba(0, 122, 255, 0.1);
-  --primary-100: rgba(0, 122, 255, 0.2);
-  --primary-200: rgba(0, 122, 255, 1);
-  --primary-300: rgba(0, 96, 201, 1);
-  --primary-400: rgba(0, 86, 179, 1);
-
-  /* light */
-  --light: rgba(235, 240, 245, 1);
-  --light-100: rgba(217, 224, 230, 1);
-
-  /* elevation */
-  --elevationDefault: 0 0.125rem 1.5rem 0.3rem rgba(0, 0, 0, 0.1); 
-  --elevationHover: 0 0.125rem 1.75rem 0.5rem rgba(0, 0, 0, 0.15); 
-
-  /* content */
-  --contentMaxWidth: 55rem;
 }
