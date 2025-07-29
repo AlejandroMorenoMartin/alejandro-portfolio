@@ -1153,7 +1153,7 @@ h2.hidden {
 }
 
 .overviewImage {
-  width: 30%;
+  width: 240px;
   margin: 0 auto;
 }
 
@@ -1231,11 +1231,6 @@ h2.hidden {
 
 .subSectionOneRowColumnInfo {
   text-align: center;
-}
-
-.subSectionOneRowColumn img {
-  width: 50%;
-  margin: 0 auto;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1405,44 +1400,44 @@ h2.hidden {
 }
 
 @media (max-width: 1200px) {
-  .geomitesCardOneTypographyOne {    
-    font-size: 48px;    
+  .geomitesCardOneTypographyOne {
+    font-size: 48px;
   }
 
-  .geomitesCardOneTypographyTwo {   
-    font-size: 24px;    
+  .geomitesCardOneTypographyTwo {
+    font-size: 24px;
   }
 
-  .geomitesCardOneTypographyThree {    
-    font-size: 18px;   
+  .geomitesCardOneTypographyThree {
+    font-size: 18px;
   }
 
-  .geomitesCardOneTypographyFour {    
-    font-size: 16px;   
+  .geomitesCardOneTypographyFour {
+    font-size: 16px;
   }
 
-  .geomitesCardOneTypographyFive {   
-    font-size: 14px;    
+  .geomitesCardOneTypographyFive {
+    font-size: 14px;
   }
 
-  .geomitesCardOneTypographySix {    
-    font-size: 12px;   
+  .geomitesCardOneTypographySix {
+    font-size: 12px;
   }
 
-  .geomitesCardOneTypographySeven {    
-    font-size: 10px;    
+  .geomitesCardOneTypographySeven {
+    font-size: 10px;
   }
 
-  .geomitesCardOneTypographyEight {    
-    font-size: 8px;    
+  .geomitesCardOneTypographyEight {
+    font-size: 8px;
   }
 
-  .geomitesCardOneTypographyNine {   
-    font-size: 6px;    
+  .geomitesCardOneTypographyNine {
+    font-size: 6px;
   }
 
-  .geomitesCardOneTypographyTen {    
-    font-size: 5px;    
+  .geomitesCardOneTypographyTen {
+    font-size: 5px;
   }
 }
 
