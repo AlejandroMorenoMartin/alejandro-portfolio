@@ -236,5 +236,9 @@
   "geomitesTeamFrameThreeDescription":"Product designer",  
   "geomitesTeamFrameFourDescription":"Graphic designer", 
   "geomitesTeamFrameFiveDescription":"Interaction designer",
-  "geomitesSectionDescriptionEight":"Geomites is one of several projects where I apply strategic design and analytical thinking. Take a look around if you like and <b>explore others </b>in which I worked."           
+  "geomitesSectionDescriptionEight":"Geomites is one of several projects where I apply strategic design and analytical thinking. Take a look around if you like and <b>explore others </b>in which I worked.",
+  "geomitesComponentTitleOne":"Geomite component",
+  "geomitesComponentTitleTwo":"Item component",
+  "geomitesComponentTitleThree":"Building component",
+  "geomitesComponentTitleFour":"Passive component"          
 }

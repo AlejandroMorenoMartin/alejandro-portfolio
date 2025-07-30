@@ -236,7 +236,11 @@
   "geomitesTeamFrameThreeDescription":"Diseñador de producto",  
   "geomitesTeamFrameFourDescription":"Diseñador gráfico", 
   "geomitesTeamFrameFiveDescription":"Diseñador de interacción",
-  "geomitesSectionDescriptionEight":"Geomites es uno de varios proyectos donde aplico diseño estratégico y enfoque analítico. Date una vuelta, si quieres y <b>explora otros </b>en los que trabajé."  
+  "geomitesSectionDescriptionEight":"Geomites es uno de varios proyectos donde aplico diseño estratégico y enfoque analítico. Date una vuelta, si quieres y <b>explora otros </b>en los que trabajé.",
+  "geomitesComponentTitleOne":"Componente de geomite",
+  "geomitesComponentTitleTwo":"Componente de objeto", 
+  "geomitesComponentTitleThree":"Componente de edificio", 
+  "geomitesComponentTitleFour":"Componente de pasiva"   
 }
 
 

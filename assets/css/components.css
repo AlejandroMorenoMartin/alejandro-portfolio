@@ -1152,14 +1152,16 @@ h2.hidden {
   }
 }
 
-.overviewImage {
+.overviewImage,
+.overviewVideo {
   width: 240px;
   margin: 0 auto;
 }
 
 @media screen and (max-width: 1200px) {
-  .overviewImage {
-    width: 75%;
+  .overviewImage,
+  .overviewVideo {
+     width: 75%;
   }
 }
 
@@ -1178,12 +1180,6 @@ h2.hidden {
 @media screen and (max-width: 1200px) {
   .sectionOne {
     gap: 2rem;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .overviewImage {
-    width: 75%;
   }
 }
 
@@ -1267,16 +1263,6 @@ h2.hidden {
   color: var(--primary-100);
   top: -32px;
   left: 0;
-}
-
-.designDecisionImage {
-  width: 30%;
-}
-
-@media screen and (max-width: 1200px) {
-  .designDecisionImage {
-    width: 75%;
-  }
 }
 
 .indexSubSection {
@@ -1519,17 +1505,6 @@ h2.hidden {
 .geomitesIcon {
   height: 36px;
   width: 36px;
-}
-
-.componentImage {
-  width: 35%;
-  margin: 0 auto;
-}
-
-@media (max-width: 1200px) {
-  .componentImage {
-    width: 75%;
-  }
 }
 
 .improveFrame {
