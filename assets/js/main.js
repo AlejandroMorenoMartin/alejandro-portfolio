@@ -381,3 +381,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }, delay);
   });
 });
+
+/* navContainer */
+window.addEventListener("scroll", function () {
+  const nav = document.querySelector(".navContainer");
+  if (window.scrollY > 0) {
+    nav.classList.add("scrolled");
+  } else {
+    nav.classList.remove("scrolled");
+  }
+});
