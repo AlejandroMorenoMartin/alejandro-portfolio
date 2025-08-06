@@ -102,7 +102,7 @@
       <nav id="tableOfContents" class="table-of-contents"></nav>
 
       <!-- [mainSections] -->
-      <div class="mainContainerSections">
+      <div class="mainContainerSections mainContainerSectionsProject">
         <!-- [hero] -->
         <section class="heroProjectSection">
           <div class="heroProjectSectionTitle">
@@ -330,7 +330,7 @@
             <p class="regular" data-key="geomitesSectionDescriptionThree"></p>
           </div>
           <!-- [decisionOne] -->
-          <div class="subSectionOneRow">
+          <div class="subSectionOneRow subSectionOneRowSpecial">
             <div class="subSectionHeader">
               <p
                 class="regularBold"
@@ -348,7 +348,7 @@
             />
           </div>
           <!-- [decisionTwo] -->
-          <div class="subSectionOneRow">
+          <div class="subSectionOneRow subSectionOneRowSpecial">
             <img
               src="assets/images/projects/geomites/decisionTwo.webp"
               alt="designDecisionImage"
@@ -366,7 +366,7 @@
             </div>
           </div>
           <!-- [decisionThree] -->
-          <div class="subSectionOneRow">
+          <div class="subSectionOneRow subSectionOneRowSpecial">
             <div class="subSectionHeader">
               <p
                 class="regularBold"
@@ -384,7 +384,7 @@
             />
           </div>
           <!-- [decisionFour] -->
-          <div class="subSectionOneRow">
+          <div class="subSectionOneRow subSectionOneRowSpecial">
             <img
               src="assets/images/projects/geomites/decisionFour.webp"
               alt="designDecisionImage"
@@ -638,7 +638,10 @@
               </tbody>
             </table>
             <div class="improveFrame">
-              <p class="small" data-key="geomitesImproveFrameOneTitle"></p>
+              <div class="improveFrameTitle">
+                <i class="fa-solid fa-lightbulb"></i>
+                <p class="small" data-key="geomitesImproveFrameOneTitle"></p>
+              </div>              
               <p class="regular" data-key="geomitesImproveFrameOneDescription"></p>
             </div>
           </div>
@@ -684,7 +687,10 @@
               </tbody>
             </table>
             <div class="improveFrame">
-              <p class="small" data-key="geomitesImproveFrameTwoTitle"></p>
+              <div class="improveFrameTitle">
+                <i class="fa-solid fa-lightbulb"></i>
+                <p class="small" data-key="geomitesImproveFrameTwoTitle"></p>
+              </div>              
               <p class="regular" data-key="geomitesImproveFrameTwoDescription"></p>
             </div>
           </div>
@@ -730,7 +736,10 @@
               </tbody>
             </table>
             <div class="improveFrame">
-              <p class="small" data-key="geomitesImproveFrameThreeTitle"></p>
+              <div class="improveFrameTitle">
+                <i class="fa-solid fa-lightbulb"></i>
+                <p class="small" data-key="geomitesImproveFrameThreeTitle"></p>
+              </div>              
               <p class="regular" data-key="geomitesImproveFrameThreeDescription"></p>
             </div>
           </div>
@@ -744,19 +753,19 @@
           <div class="invertFrame"> 
             <div class="learningFrame">
               <p class="regular" data-key="geomitesLearningFrameOne"></p>
-              <img src="assets/images/projects/geomites/shieldCheck.webp" alt="learningIcon">
+              <i class="fa-solid fa-trophy"></i>
             </div>    
             <div class="learningFrame">
               <p class="regular" data-key="geomitesLearningFrameTwo"></p>
-              <img src="assets/images/projects/geomites/shieldCheck.webp" alt="learningIcon">
+              <i class="fa-solid fa-trophy"></i>
             </div> 
             <div class="learningFrame">
               <p class="regular" data-key="geomitesLearningFrameThree"></p>
-              <img src="assets/images/projects/geomites/shieldCheck.webp" alt="learningIcon">
+              <i class="fa-solid fa-trophy"></i>
             </div> 
             <div class="learningFrame">
               <p class="regular" data-key="geomitesLearningFrameFour"></p>
-              <img src="assets/images/projects/geomites/shieldCheck.webp" alt="learningIcon">
+              <i class="fa-solid fa-trophy"></i>
             </div>        
           </div>
         </section>
@@ -803,16 +812,18 @@
               </div>
             </div>
           </div>
-        </section>
-        <!-- [otrosProyectos] -->
-        <section class="indexSection sectionOne" id="otherProjects">
-          <div class="sectionHeaderFrame">
+        </section>        
+      </div>
+
+      <!-- [otrosProyectos] -->
+        <section class="otherProjects" id="otherProjects">
+          <div class="otherProjectsTitle">
             <h2 data-key="geomitesSectionTitleEight"></h2>
             <p class="regular" data-key="geomitesSectionDescriptionEight"></p>
           </div>
-          <div class="indexSectionFrame">            
+          <div class="otherProjectsFrame">
             <!-- [artisteo] -->
-            <a class="cardProject" href="#">
+            <a class="cardProject" href="artisteo.html">
               <figure>
                 <img
                   src="assets/images/index/projects/cardProjectArtisteo.webp"
@@ -821,14 +832,16 @@
               </figure>
               <div class="cardProjectFrame">
                 <div class="cardProjectFrameText">
-                  <p class="regularBold">Artisteo</p>
+                  <div class="cardProjectFrameTextTitle">
+                    <p class="regularBold">Artisteo</p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
                   <p class="regular" data-key="artisteoCardDescription"></p>
                 </div>
                 <div class="cardTag">
                   <p class="smallBold" data-key="artisteoCardTag"></p>
                 </div>
               </div>
-              <i class="fa-solid fa-arrow-right"></i>
             </a>
             <!-- [vivaGym] -->
             <a class="cardProject" href="#">
@@ -840,18 +853,19 @@
               </figure>
               <div class="cardProjectFrame">
                 <div class="cardProjectFrameText">
-                  <p class="regularBold">Viva gym</p>
+                  <div class="cardProjectFrameTextTitle">
+                    <p class="regularBold">Viva gym</p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
                   <p class="regular" data-key="vivaGymCardDescription"></p>
                 </div>
                 <div class="cardTag">
                   <p class="smallBold" data-key="vivaGymCardTag"></p>
                 </div>
               </div>
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-          </div>
+            </a>    
+          </div>               
         </section>
-      </div>
 
       <!-- [footer] -->
       <footer>

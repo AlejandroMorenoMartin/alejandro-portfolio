@@ -278,10 +278,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
-  // Ocultar/mostrar botones según posición
+  // Aplicar clase 'disabled' a los botones si corresponde
   const updateButtonVisibility = () => {
-    prevBtn.classList.toggle("hidden", currentIndex === 0);
-    nextBtn.classList.toggle("hidden", currentIndex === cards.length - 1);
+    prevBtn.classList.toggle("disabled", currentIndex === 0);
+    nextBtn.classList.toggle("disabled", currentIndex === cards.length - 1);
   };
 
   // Mover el slider

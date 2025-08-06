@@ -43,15 +43,16 @@
   --white-500: rgba(0, 0, 0, 0.14);
 
   /* primary */
-  --primary: rgba(0, 122, 255, 0.1);
-  --primary-100: rgba(0, 122, 255, 0.2);
-  --primary-200: rgba(0, 122, 255, 1);
-  --primary-300: rgba(0, 96, 201, 1);
-  --primary-400: rgba(0, 86, 179, 1);
+  --primary: rgba(0, 122, 255, 0.07);
+  --primary-100: rgba(0, 122, 255, 0.14);
+  --primary-200: rgba(0, 122, 255, 0.28);
+  --primary-300: rgba(0, 122, 255, 1);
+  --primary-400: rgba(0, 96, 201, 1);
+  --primary-500: rgba(0, 86, 179, 1);
 
   /* light */
   --light: rgba(235, 240, 245, 1);
-  --light-100: rgba(217, 224, 230, 1);
+  --light-100: rgba(228, 232, 238, 1);
 
   /* elevation */
   --elevationDefault: 0 0.1rem 1.25rem 0.25rem rgba(0, 0, 0, 0.1);

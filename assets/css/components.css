@@ -6,7 +6,7 @@
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
   border-radius: 1rem;
-  background-color: var(--primary-200);
+  background-color: var(--primary-300);
   border: none;
   cursor: pointer;
   transition: all 200ms ease-in-out;
@@ -25,7 +25,7 @@
 }
 
 .button:hover {
-  background-color: var(--primary-300);
+  background-color: var(--primary-400);
 }
 
 .button100 {
@@ -35,7 +35,7 @@
   gap: 4px;
   padding: 0.5rem;
   border-radius: 0.75rem;
-  color: var(--primary-200);
+  color: var(--primary-300);
   border: none;
   cursor: pointer;
   transition: all 200ms ease-in-out;
@@ -46,7 +46,7 @@
 }
 
 .button100:hover {
-  background-color: var(--primary);
+  background-color: var(--primary-100);
 }
 
 .button200 {
@@ -95,6 +95,12 @@
   background-color: var(--light-100);
 }
 
+.button300.disabled {
+  background-color: var(--white-300);
+  color: var(--white-500);
+  pointer-events: none;
+}
+
 .sliderButton {
   width: 3rem;
   height: 3rem;
@@ -139,7 +145,7 @@
 }
 
 .navContainer.scrolled {
-  box-shadow: var(--elevationDefault); 
+  box-shadow: var(--elevationDefault);
 }
 
 @media screen and (max-width: 1200px) {
@@ -164,7 +170,7 @@
 }
 
 .langButton.active p.regularBold {
-  color: var(--primary-200);
+  color: var(--primary-300);
 }
 
 .langButton:not(.active) p.regularBold {
@@ -263,18 +269,18 @@
 .indexSection {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   width: 100%;
-}
-
-@media screen and (max-width: 1200px) {
-  .indexSection {
-    gap: 1rem;
-  }
 }
 
 .sectionCut > div:nth-of-type(2) {
   margin-top: -10rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .sectionCut > div:nth-of-type(2) {
+    margin-top: 0rem;
+  }
 }
 
 .sectionHeader {
@@ -289,25 +295,18 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 2rem;
-}
-
-@media screen and (max-width: 1200px) {
-  .indexSectionFrame {
-    gap: 1rem;
-  }
+  gap: 1rem;
 }
 
 .indexSectionFrameRow {
   display: flex;
   flex-direction: row;
   width: 100%;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 @media screen and (max-width: 1200px) {
   .indexSectionFrameRow {
-    gap: 1rem;
     flex-direction: column;
   }
 }
@@ -321,7 +320,7 @@
   background-color: var(--white-100);
   border: 1.5px solid var(--white-500);
   border-radius: 1rem;
-  padding: 1rem;  
+  padding: 1rem;
   box-sizing: border-box;
   gap: 1rem;
   overflow: hidden;
@@ -383,7 +382,7 @@
 }
 
 .cardProject i {
-  font-size: 1rem; 
+  font-size: 1rem;
   transform: rotate(-45deg);
 }
 
@@ -418,7 +417,7 @@
 
 .cardFreelance i {
   font-size: 1rem;
-  transform: rotate(-45deg);  
+  transform: rotate(-45deg);
 }
 
 /* footer */
@@ -433,6 +432,7 @@ footer {
   padding-bottom: 4rem;
   border-top: 1.5px solid var(--white-500);
   align-items: flex-start;
+  background-color: var(--white-300);
 }
 
 @media screen and (max-width: 1200px) {
@@ -491,6 +491,15 @@ footer {
   letter-spacing: 0.05rem;
 }
 
+.table-of-contents::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--white);
+  z-index: -1;
+  border-radius: 1rem;
+}
+
 @media screen and (max-width: 1200px) {
   .table-of-contents {
     display: none;
@@ -537,10 +546,9 @@ footer {
   right: 2rem;
   width: 50px;
   height: 50px;
-  background: var(--white);
+  background: var(--light);
   border-radius: 50%;
   border: none;
-  box-shadow: var(--elevationDefault);
   cursor: pointer;
   padding: 0;
   display: flex;
@@ -560,7 +568,7 @@ footer {
 }
 
 #scrollToTop:hover {
-  box-shadow: var(--elevationHover);
+  background: var(--light-100);
 }
 
 #scrollToTop svg {
@@ -583,13 +591,19 @@ footer {
   background-color: var(--white-100);
   border-radius: 1rem;
   border: 1.5px solid var(--white-500);
-  padding: 1rem;  
   box-sizing: border-box;
   gap: 1rem;
   overflow: hidden;
   cursor: pointer;
   transition: all 200ms ease-in-out;
   position: relative;
+}
+
+.cardArticleFrame {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0 1rem 1rem;
 }
 
 .cardArticleTitle {
@@ -604,7 +618,11 @@ footer {
 
 .cardArticle i {
   font-size: 1rem;
-  transform: rotate(-45deg);  
+  transform: rotate(-45deg);
+}
+
+.cardArticleImage {
+  border-radius: 8px 8px 0 0;
 }
 
 /* cardExperience */
@@ -718,6 +736,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  align-items: center;
 }
 
 .cardSkill img {
@@ -1068,7 +1087,7 @@ h2.hidden {
 .heroProjectSection {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .heroProjectSectionTitle {
@@ -1116,7 +1135,7 @@ h2.hidden {
 .heroProjectSectionInfoFrameTwo {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1136,14 +1155,14 @@ h2.hidden {
 
 .overviewImage,
 .overviewVideo {
-  width: 240px;
+  width: 320px;
   margin: 0 auto;
 }
 
 @media screen and (max-width: 1200px) {
   .overviewImage,
   .overviewVideo {
-     width: 75%;
+    width: 75%;
   }
 }
 
@@ -1168,7 +1187,7 @@ h2.hidden {
 .subSectionOne {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 1rem;
 }
 
 .subSectionHeader {
@@ -1180,7 +1199,7 @@ h2.hidden {
 .subSectionOneRow {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 1rem;
   align-items: center;
 }
 
@@ -1199,11 +1218,21 @@ h2.hidden {
   }
 }
 
+.subSectionOneRowSpecial {
+  gap: 8rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .subSectionOneRow {
+    gap: 1rem;
+  }
+}
+
 .subSectionOneRowColumn {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
   align-items: center;
 }
 
@@ -1225,7 +1254,7 @@ h2.hidden {
 
 @media screen and (max-width: 1200px) {
   .sectionTwo {
-    gap: 16rem;
+    gap: 4rem;
   }
 }
 
@@ -1292,7 +1321,7 @@ h2.hidden {
 .gridOne {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .geomitesCardTypography {
@@ -1472,7 +1501,7 @@ h2.hidden {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(4, auto);
-  gap: 2rem;
+  gap: 1rem;
   justify-items: center;
   align-items: center;
 }
@@ -1495,8 +1524,24 @@ h2.hidden {
   gap: 4px;
   padding: 16px;
   border-radius: 16px;
-  background: var(--white-200);
-  border: 1.5px solid var(--white-500);
+  background: var(--primary);
+  border: 1.5px solid var(--primary-200);
+}
+
+.improveFrame p {
+  color: var(--primary-500);
+}
+
+.improveFrameTitle {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+
+.improveFrame i {
+  font-size: 1rem;
+  color: #eedf04;
 }
 
 .invertFrame {
@@ -1521,15 +1566,14 @@ h2.hidden {
   position: relative;
   flex: 1;
   overflow: hidden;
-  text-align: center;
 }
 
-.learningFrame img {
+.learningFrame i {
   position: absolute;
-  height: 76px;
-  width: 76px;
-  right: 0;
-  bottom: -12px;
+  font-size: 8rem;
+  right: -24px;
+  bottom: -64px;
+  color: var(--primary);
 }
 
 .invertFrameTwo {
@@ -1549,4 +1593,59 @@ h2.hidden {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.cardExperienceFrame {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.experienceIcon {
+  height: 3rem;
+  width: 3rem;
+}
+
+.otherProjects {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100%;
+  padding-left: calc((100% - var(--contentMaxWidth)) / 2);
+  padding-right: calc((100% - var(--contentMaxWidth)) / 2);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  align-items: flex-start;
+  background-color: var(--white-300);
+  border-top: 1.5px solid var(--white-500);
+}
+
+@media screen and (max-width: 1200px) {
+  .otherProjects {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+}
+
+.otherProjectsTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.otherProjectsFrame {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mainContainerSectionsProject {
+  margin-top: 6rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .mainContainerSectionsProject {
+    margin-top: 4rem;
+  }
 }
