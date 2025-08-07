@@ -383,11 +383,16 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 /* navContainer */
-window.addEventListener("scroll", function () {
+document.addEventListener("DOMContentLoaded", function () {
   const nav = document.querySelector(".navContainer");
-  if (window.scrollY > 0) {
-    nav.classList.add("scrolled");
-  } else {
-    nav.classList.remove("scrolled");
-  }
+  if (!nav) return;
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY >= 64) {
+      nav.classList.add("scrolled");
+    } else {
+      nav.classList.remove("scrolled");
+    }
+  });
 });
+
