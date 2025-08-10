@@ -152,50 +152,6 @@ document
     });
   });
 
-/* scroll to top */
-document.addEventListener("DOMContentLoaded", () => {
-  const scrollBtn = document.getElementById("scrollToTop");
-  const progressCircle = document.getElementById("progressCircle");
-  const radius = 45;
-  const circumference = 2 * Math.PI * radius;
-
-  progressCircle.style.strokeDasharray = circumference;
-  progressCircle.style.strokeDashoffset = circumference;
-
-  function setProgress(percent) {
-    const offset = circumference - (percent / 100) * circumference;
-    progressCircle.style.strokeDashoffset = offset;
-  }
-
-  function updateScrollProgress() {
-    const scrollTop = window.scrollY || document.documentElement.scrollTop;
-    const docHeight =
-      document.documentElement.scrollHeight - window.innerHeight;
-    let scrollPercent = (scrollTop / docHeight) * 100;
-
-    // Forzar el 100% si estás muy cerca del final
-    if (scrollPercent > 99.5) scrollPercent = 100;
-
-    setProgress(scrollPercent);
-
-    if (scrollPercent > 5) {
-      scrollBtn.style.opacity = "1";
-      scrollBtn.style.pointerEvents = "auto";
-    } else {
-      scrollBtn.style.opacity = "0";
-      scrollBtn.style.pointerEvents = "none";
-    }
-  }
-
-  scrollBtn.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-
-  window.addEventListener("scroll", updateScrollProgress);
-
-  updateScrollProgress();
-});
-
 /* tools */
 const scrollers = document.querySelectorAll(".scroller");
 
@@ -379,20 +335,6 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
       loader.classList.add("hidden");
     }, delay);
-  });
-});
-
-/* navContainer */
-document.addEventListener("DOMContentLoaded", function () {
-  const nav = document.querySelector(".navContainer");
-  if (!nav) return;
-
-  window.addEventListener("scroll", function () {
-    if (window.scrollY >= 64) {
-      nav.classList.add("scrolled");
-    } else {
-      nav.classList.remove("scrolled");
-    }
   });
 });
 

@@ -1,69 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <!-- [metas] -->
+    <!-- [Basic Metadata] -->
     <meta charset="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, orientation=portrait"
     />
     <meta http-equiv="Content-Language" content="es" />
+    <meta name="author" content="Alejandro Moreno" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.alejandromorenomartin.com/" />
+
+    <!-- [SEO] -->
+    <title>Alejandro Moreno - Product & UX Designer | Portfolio</title>
     <meta
       name="description"
-      content="Hi, I'm Alejandro, a freelance product designer. I research and design for people, helping companies connect with their users."
+      content="Portfolio of Alejandro Moreno, Product & UX Designer specializing in user-centered design, visual storytelling, and creative digital experiences."
     />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="author" content="Alejandro Moreno" />
     <meta
       name="keywords"
-      content="diseñador de producto, UX, UI, portfolio, Alejandro Moreno, diseño web"
+      content="Alejandro Moreno, product designer, UX designer, UI design, visual storytelling, portfolio, case studies, digital product design, game design"
     />
-    <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="Alejandro Moreno - Portfolio" />
+
+    <!-- [Open Graph] -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Alejandro Moreno - Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Alejandro Moreno - Product & UX Designer"
+    />
     <meta
       property="og:description"
-      content="Hi, I'm Alejandro, a freelance product designer. I research and design for people, helping companies connect with their users."
+      content="Explore the portfolio of Alejandro Moreno, featuring UX design, product design, and creative digital projects with a focus on user experience."
     />
+    <meta property="og:url" content="https://www.alejandromorenomartin.com/" />
     <meta
       property="og:image"
-      content="https://tusitio.com/assets/images/preview.webp"
+      content="https://www.alejandromorenomartin.com/assets/images/portfolioOg.webp"
     />
-    <meta property="og:url" content="https://tusitio.com/" />
-    <meta property="og:type" content="website" />
+
+    <!-- [Twitter Cards] -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Alejandro Moreno - Portfolio" />
+    <meta
+      name="twitter:title"
+      content="Alejandro Moreno - Product & UX Designer"
+    />
     <meta
       name="twitter:description"
-      content="Hi, I'm Alejandro, a freelance product designer. I research and design for people, helping companies connect with their users."
+      content="Discover my portfolio: UX design, product design, and creative projects crafted with a user-first approach."
     />
     <meta
       name="twitter:image"
-      content="https://tusitio.com/assets/images/preview.webp"
+      content="https://www.alejandromorenomartin.com/assets/images/portfolioTwitter.webp"
     />
-    <link rel="canonical" href="https://www.alejandromorenomartin.com/" />
 
-    <!-- [links] -->
+    <!-- [Language Alternates for SEO] -->
+    <link
+      rel="alternate"
+      hreflang="es"
+      href="https://www.alejandromorenomartin.com/"
+    />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://www.alejandromorenomartin.com/en/"
+    />
+
+    <!-- [Favicons & App Icons] -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/icons/appleTouchIcon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/icons/favicon32X32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/assets/icons/favicon192X192.png"
+    />
     <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <!-- [CSS & Fonts] -->
     <link rel="stylesheet" href="/assets/css/reset.css" />
     <link rel="stylesheet" href="/assets/css/variables.css" />
     <link rel="stylesheet" href="/assets/css/components.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap"
       rel="stylesheet"
     />
-
-    <!-- [title] -->
-    <title>Alejandro Moreno - Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grenze:wght@100;400;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <!-- [pageLoader] -->
-    <div id="pageLoader">
-      <div class="spinner"></div>
-    </div>
     <!-- [main] -->
     <main class="mainContainer">
       <!-- [header] -->
@@ -1301,9 +1343,76 @@
     </main>
 
     <script src="/assets/js/main.js"></script>
+    <!-- [fontAwsome] -->
     <script
       src="https://kit.fontawesome.com/35d35eeb85.js"
       crossorigin="anonymous"
     ></script>
+    <!-- [navContainer] -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const nav = document.querySelector(".navContainer");
+        if (!nav) return;
+
+        const onScroll = () => {
+          if (window.scrollY >= 64) {
+            nav.classList.add("scrolled");
+          } else {
+            nav.classList.remove("scrolled");
+          }
+        };
+        onScroll();
+        window.addEventListener("scroll", onScroll);
+      });
+    </script>
+    <!-- [scroll to top] -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const scrollBtn = document.getElementById("scrollToTop");
+        const progressCircle = document.getElementById("progressCircle");
+
+        if (!scrollBtn || !progressCircle) return;
+
+        const radius = 48; //
+        const circumference = 2 * Math.PI * radius;
+
+        progressCircle.style.strokeDasharray = circumference;
+        progressCircle.style.strokeDashoffset = circumference;
+
+        function setProgress(percent) {
+          const offset = circumference - (percent / 100) * circumference;
+          progressCircle.style.strokeDashoffset = offset;
+        }
+
+        function updateScrollProgress() {
+          const scrollTop =
+            window.scrollY || document.documentElement.scrollTop;
+          const docHeight =
+            document.documentElement.scrollHeight - window.innerHeight;
+
+          let scrollPercent = (scrollTop / docHeight) * 100;
+
+          if (scrollPercent > 99.5) scrollPercent = 100;
+
+          setProgress(scrollPercent);
+
+          if (scrollPercent > 5) {
+            scrollBtn.style.opacity = "1";
+            scrollBtn.style.pointerEvents = "auto";
+          } else {
+            scrollBtn.style.opacity = "0";
+            scrollBtn.style.pointerEvents = "none";
+          }
+        }
+
+        scrollBtn.addEventListener("click", () => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+        updateScrollProgress();
+
+        window.addEventListener("scroll", updateScrollProgress);
+      });
+    </script>
   </body>
 </html>

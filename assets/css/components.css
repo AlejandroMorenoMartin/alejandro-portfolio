@@ -445,7 +445,7 @@
   }
   .cardFreelance img {
     top: -16px;
-    right: -16px;   
+    right: -16px;
     transform: rotate(5deg) scale(1.1);
     opacity: 100%;
   }
@@ -1078,40 +1078,6 @@ h2.hidden {
 .heroAnimate .button {
   animation: fadeRight 1s ease forwards;
   animation-delay: 2s;
-}
-
-/* pageLoader */
-/* loader */
-#pageLoader {
-  position: fixed;
-  z-index: 9999;
-  inset: 0;
-  background-color: var(--white); /* fondo claro, ajustable a tu modo */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: opacity 0.6s ease-in-out, visibility 0.6s ease-in-out;
-}
-
-#pageLoader.hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-
-/* spinner minimalista */
-.spinner {
-  width: 48px;
-  height: 48px;
-  border: 3px solid var(--white-500);
-  border-top-color: var(--primary-300);
-  border-radius: 50%;
-  animation: spin 0.8s linear infinite;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 /* projectsPage */
