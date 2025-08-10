@@ -1190,7 +1190,7 @@ h2.hidden {
 .subSectionHeader {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 8px;
 }
 
 .subSectionOneRow {
@@ -1199,12 +1199,17 @@ h2.hidden {
   gap: 1rem;
 }
 
-@media screen and (max-width: 1200px) {
-  .indexSection:nth-of-type(4) .subSectionOneRowSpecial:nth-of-type(3) {
-    flex-direction: column-reverse;
+/* Para pantallas de 1200px o menos */
+@media (max-width: 1200px) {
+  .subSectionOneRowSpecial {
+    flex-direction: column;
   }
-  .indexSection:nth-of-type(4) .subSectionOneRowSpecial:nth-of-type(5) {
-    flex-direction: column-reverse;
+
+  .subSectionOneRowSpecial img:first-child {
+    order: 2;
+  }
+  .subSectionOneRowSpecial .subSectionHeader:last-child {
+    order: 1;
   }
 }
 
@@ -1513,7 +1518,8 @@ h2.hidden {
   }
 }
 
-.geomitesIcon {
+.geomitesIcon,
+.artisteoIcon {
   height: 36px;
   width: 36px;
 }
@@ -1680,3 +1686,228 @@ h2.hidden {
     grid-template-rows: repeat(2, auto);
   }
 }
+
+.userResearchCard {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--white-100);
+  border: 1.5px solid var(--white-500);
+  border-radius: 1rem;
+}
+
+.userResearchCard img {
+  width: 78px;
+  height: 78px;
+  border-radius: .5rem;
+}
+
+.userResearchCardTitle {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.gridBrandCreation {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: auto auto auto; 
+  gap: 1rem; 
+}
+
+.gridBrandCreation img:nth-child(1) {
+  grid-column: 1 / 2; 
+  grid-row: 1 / 2;   
+}
+
+.gridBrandCreation img:nth-child(2) {
+  grid-column: 2 / 3; 
+  grid-row: 1 / 2;    
+}
+
+.gridBrandCreation img:nth-child(3) {
+  grid-column: 1 / 3; 
+  grid-row: 2 / 3;    
+}
+
+.artisteoCardTypography {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--white-200);
+  border: 1.5px solid var(--white-500);
+  width: 100%;
+  height: flex;
+}
+
+.artisteoCardOneTypographyFrame {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.artisteoCardOneTypographyOne {
+  font-family: "Montserrat", sans-serif;
+  font-size: 96px;
+  font-weight: bold;
+}
+
+.artisteoCardOneTypographyTwo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.artisteoCardOneTypographyThree {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.artisteoCardOneTypographyFour {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.artisteoCardOneTypographyFive {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.artisteoCardOneTypographySix {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.artisteoCardOneTypographySeven {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.artisteoCardOneTypographyEight {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.artisteoCardOneTypographyNine {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.artisteoCardOneTypographyTen {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+  .artisteoCardOneTypographyOne {
+    font-size: 48px;
+  }
+
+  .artisteoCardOneTypographyTwo {
+    font-size: 24px;
+  }
+
+  .artisteoCardOneTypographyThree {
+    font-size: 18px;
+  }
+
+  .artisteoCardOneTypographyFour {
+    font-size: 16px;
+  }
+
+  .artisteoCardOneTypographyFive {
+    font-size: 14px;
+  }
+
+  .artisteoCardOneTypographySix {
+    font-size: 12px;
+  }
+
+  .artisteoCardOneTypographySeven {
+    font-size: 10px;
+  }
+
+  .artisteoCardOneTypographyEight {
+    font-size: 8px;
+  }
+
+  .artisteoCardOneTypographyNine {
+    font-size: 6px;
+  }
+
+  .artisteoCardOneTypographyTen {
+    font-size: 5px;
+  }
+}
+
+.artisteoCardColor {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px;
+  align-items: center;
+  justify-content: end;
+  height: 168px;
+}
+
+.artisteoCardColorOne {
+  background-color: #EBFDFD;
+}
+
+.artisteoCardColorTwo {
+  background-color: #92EDED;
+}
+
+.artisteoCardColorThree {
+  background-color: #4DCECE;
+}
+
+.artisteoCardColorOne p,
+.artisteoCardColorTwo p,
+.artisteoCardColorThree p {
+  color: #001010;
+}
+
+.artisteoCardColorFour {
+  background-color: #1F9F9F;
+}
+
+.artisteoCardColorFive {
+  background-color: #076161;
+}
+
+.artisteoCardColorSix {
+  background-color: #001010;
+}
+
+.artisteoCardColorFour p,
+.artisteoCardColorFive p,
+.artisteoCardColorSix p {
+  color: #EBFDFD;
+}
+
+.gridResponsiveSix {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+}
+
+@media (min-width: 1201px) {
+  .gridResponsiveSix {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
+

@@ -74,11 +74,9 @@ th {
   min-width: 100px; /* Ajusta el valor según el contenido */
 }
 
-
-/* Quitamos los puntos de los <li> */
-
 section ul li {
   margin-left: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* (Opcional) Configuramos anclas suaves */
