@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function highlightTOCOnScroll() {
     const tocLinks = document.querySelectorAll("#tableOfContents a");
-    const sections = document.querySelectorAll(".indexSection");
+    const sections = document.querySelectorAll(".indexSection, .indexSubSection");
     const offset = 100;
 
     window.addEventListener("scroll", () => {

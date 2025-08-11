@@ -156,13 +156,13 @@
             <p class="regular" data-key="geomitesSectionDescriptionTwo"></p>
           </div>
           <!-- [analisisDatos] -->
-          <div class="sectionOne">
+          <div class="indexSubSection">
             <div class="sectionHeaderFrame">
               <h4 data-key="geomitesDataAnalysisTitle"></h4>
               <p class="regular" data-key="geomitesDataAnalysisDescription"></p>
             </div>
             <!-- [conversionEn] -->
-            <div class="subSectionHeader">
+            <div class="kpiFrame">
               <p
                 class="regularBold"
                 data-key="geomitesDataAnalysisSubsectionOneTitle"
@@ -173,7 +173,7 @@
               ></p>
             </div>
             <!-- [descubrimientoDe] -->
-            <div class="subSectionHeader">
+            <div class="kpiFrame">
               <p
                 class="regularBold"
                 data-key="geomitesDataAnalysisSubsectionTwoTitle"
@@ -184,7 +184,7 @@
               ></p>
             </div>
             <!-- [retencionDe] -->
-            <div class="subSectionHeader">
+            <div class="kpiFrame">
               <p
                 class="regularBold"
                 data-key="geomitesDataAnalysisSubsectionThreeTitle"
@@ -565,8 +565,17 @@
             <p class="regular" data-key="geomitesSectionDescriptionFive"></p>
           </div>
           <!-- [conversionEn] -->
-          <div class="indexSubSection">
-            <h4 data-key="geomitesSubSectionOneTitleFive"></h4>
+          <div class="indexSubSection">           
+            <div class="kpiFrame kpiFrameSpecial">
+              <p
+                class="regularBold"
+                data-key="geomitesDataAnalysisSubsectionOneTitle"
+              ></p>
+              <p
+                class="regular"
+                data-key="geomitesDataAnalysisSubsectionOneDescription"
+              ></p>
+            </div>
             <table class="responsiveTable">
               <thead>
                 <tr>
@@ -615,7 +624,16 @@
           </div>
           <!-- [descubrimientoDe] -->
           <div class="indexSubSection">
-            <h4 data-key="geomitesSubSectionTwoTitleFive"></h4>
+            <div class="kpiFrame kpiFrameSpecial">
+              <p
+                class="regularBold"
+                data-key="geomitesDataAnalysisSubsectionTwoTitle"
+              ></p>
+              <p
+                class="regular"
+                data-key="geomitesDataAnalysisSubsectionTwoDescription"
+              ></p>
+            </div>
             <table class="responsiveTable">
               <thead>
                 <tr>
@@ -664,7 +682,16 @@
           </div>
           <!-- [retenecionDe] -->
           <div class="indexSubSection">
-            <h4 data-key="geomitesSubSectionThreeTitleFive"></h4>
+            <div class="kpiFrame kpiFrameSpecial">
+              <p
+                class="regularBold"
+                data-key="geomitesDataAnalysisSubsectionThreeTitle"
+              ></p>
+              <p
+                class="regular"
+                data-key="geomitesDataAnalysisSubsectionThreeDescription"
+              ></p>
+            </div>
             <table class="responsiveTable">
               <thead>
                 <tr>
@@ -789,7 +816,7 @@
       </div>
 
       <!-- [otrosProyectos] -->
-      <section class="otherProjects" id="otherProjects">
+      <section class="otherProjects">
           <div class="otherProjectsTitle">
             <h4 data-key="geomitesSectionTitleEight"></h4>
             <p class="regular" data-key="geomitesSectionDescriptionEight"></p>
@@ -841,55 +868,73 @@
       </section>
 
       <!-- [footer] -->
-      <footer>
-        <div class="footerFrameLeft">
-          <div class="footerFrameLeftOne">
-            <p class="regularBold" data-key="footerTitle"></p>
-            <p class="regular" data-key="footerDescription"></p>
-          </div>
-          <div class="footerFrameLeftTwo">
-            <span>&copy;</span>
-            <p class="small" data-key="footerInfo"></p>
-          </div>
-        </div>
-        <div class="footerFrameRight">
-          <!-- [whatsapp] -->
-          <a href="https://wa.me/34618110583" class="button100" target="_blank">
+      <footer>        
+          <div class="footerFrameLeft">
+            <div class="footerFrameMessage">
+              <p class="regularBold" data-key="footerTitle"></p>
+              <p class="regular" data-key="footerDescription"></p>
+            </div>
+            <div class="footerFrameSocial">
+              <!-- [whatsapp] -->
+              <a href="https://wa.me/34618110583" class="button100" target="_blank">
             <i class="fa-brands fa-whatsapp"></i>
-          </a>
-          <!-- [linkedin] -->
-          <a
+              </a>
+              <!-- [linkedin] -->
+              <a
             href="https://www.linkedin.com/in/alejandromorenoproductdesigner/"
             class="button100"
             target="_blank"
           >
             <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-          <!-- [medium] -->
-          <a
+              </a>
+              <!-- [medium] -->
+              <a
             href="https://medium.com/@alejandromorenomartin1990"
             class="button100"
             target="_blank"
           >
             <i class="fa-brands fa-medium"></i>
-          </a>
-          <!-- [github] -->
-          <a
+              </a>
+              <!-- [github] -->
+              <a
             href="https://github.com/kakomoma"
             class="button100"
             target="_blank"
           >
             <i class="fa-brands fa-github"></i>
-          </a>
-          <!-- [email] -->
-          <a
+              </a>
+              <!-- [email] -->
+              <a
             href="mailto:alejandromorenomartin1990@gmail.com"
             class="button100"
             target="_blank"
           >
             <i class="fa-solid fa-envelope"></i>
-          </a>
-        </div>
+              </a>
+            </div>
+          </div>
+          <div class="footerFrameLeft">
+            <div class="footerFrameBottomFrame">
+              <i class="fa-solid fa-circle-user"></i>
+              <p class="smallBold">Alejandro Moreno</p>
+            </div>
+            <div class="footerFrameBottomFrame">
+              <i class="fa-solid fa-pen-nib"></i>
+              <p class="smallBold">Figma</p>
+            </div>
+            <div class="footerFrameBottomFrame">
+              <i class="fa-solid fa-code"></i>
+              <p class="smallBold">HTML, CSS3, JavaScript</p>
+            </div>
+            <div class="footerFrameBottomFrame">
+              <i class="fa-solid fa-folder-tree"></i>
+              <p class="smallBold">V 4.0</p>
+            </div>
+            <div class="footerFrameBottomFrame">
+              <i class="fa-solid fa-copyright"></i>
+              <p class="smallBold">2025</p>
+            </div>
+          </div>                
       </footer>
 
       <!-- [scroll to top] -->
