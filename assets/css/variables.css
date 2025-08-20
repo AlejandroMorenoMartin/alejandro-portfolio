@@ -28,6 +28,12 @@
   --bw-0: 0.05rem;
   --bw-1: 1px;
 
+  /* content */
+  --contentMaxWidth: 55rem;
+}
+
+/* Tema Claro */
+:root[data-theme="light"] {
   /* black */
   --black: rgba(0, 0, 0, 1);
   --black-100: rgba(0, 0, 0, 0.9);
@@ -55,10 +61,36 @@
   --light-100: rgba(228, 232, 238, 1);
 
   /* elevation */
-  --elevationDefault: 0 0.125rem 1.3rem 0.3rem rgba(0, 0, 0, 0.125);  
+  --elevationDefault: 0 0.125rem 1.3rem 0.3rem rgba(0, 0, 0, 0.125);
+}
 
-  /* content */
-  --contentMaxWidth: 55rem;
+/* Tema Oscuro */
+:root[data-theme="dark"] {
+  /* black → blanco */
+  --black: rgba(255, 255, 255, 1);
+  --black-100: rgba(255, 255, 255, 0.9);
+  --black-200: rgba(255, 255, 255, 0.6);
+  --black-300: rgba(255, 255, 255, 0.5);
+
+  /* white → negro translúcido */
+  --white: rgba(0, 0, 0, 1);
+  --white-100: rgba(255, 255, 255, 0.015);
+  --white-200: rgba(255, 255, 255, 0.025);
+  --white-300: rgba(255, 255, 255, 0.05);
+  --white-400: rgba(255, 255, 255, 0.075);
+  --white-500: rgba(255, 255, 255, 0.14);
+
+  /* primary → más vivos en dark */
+  --primary: rgba(0, 122, 255, 0.12);
+  --primary-100: rgba(0, 122, 255, 0.24);
+  --primary-200: rgba(0, 122, 255, 0.36);
+  --primary-300: rgba(0, 122, 255, 1);
+  --primary-400: rgba(64, 156, 255, 1);
+  --primary-500: rgba(10, 132, 255, 1);
+
+  /* light → grises oscuros */
+  --light: rgba(28, 28, 30, 1);
+  --light-100: rgba(44, 44, 46, 1);  
 }
 
 @media (max-width: 1200px) {

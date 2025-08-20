@@ -1,6 +1,19 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="light">
   <head>
+    <!-- Theme + Color Scheme -->
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#000000"
+      media="(prefers-color-scheme: dark)"
+    />
+
     <!-- [Basic Metadata] -->
     <meta charset="UTF-8" />
     <meta
@@ -119,19 +132,45 @@
     <main class="mainContainer">
       <!-- [header] -->
       <nav class="navContainer">
-        <div class="navContainerIcon">
-          <a class="button200" href="index.html">
-            <img src="assets/icons/logo.svg" alt="Logo" />
-          </a>
-        </div>
-        <div class="languageSwitcher">
-          <button class="button100 langButton active" data-lang="es">
-            <p class="regularBold">Es</p>
-          </button>
-          <p class="regularBold">|</p>
-          <button class="button100 langButton" data-lang="en">
-            <p class="regularBold">En</p>
-          </button>
+        <a class="button200" href="index.html">
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M24.1754 33.2656H8.92587L4.5 41.0646H28.9519L24.1754 33.2656Z"
+              class="logoBlue"
+            />
+            <path
+              d="M22.8168 6.9375L11.6426 28.6214H21.2393L23.0359 23.7075H24.5696L34.3854 40.9284H43.5001L24.3505 6.9375H22.8168Z"
+              class="logoTheme"
+            />
+          </svg>
+        </a>
+        <div class="navContainerswitchers">
+          <!-- [theme] -->
+          <div class="themeSwitcher">
+            <button
+              id="themeToggle"
+              class="button100 themeButton"
+              aria-label="Cambiar tema"
+            >
+              <i class="fa-solid fa-moon"></i>
+            </button>
+          </div>
+          <!-- [language] -->
+          <div class="languageSwitcher">
+            <button class="button100 langButton active" data-lang="es">
+              <p class="regularBold">Es</p>
+            </button>
+            <p class="regularBold">|</p>
+            <button class="button100 langButton" data-lang="en">
+              <p class="regularBold">En</p>
+            </button>
+          </div>
         </div>
       </nav>
 
@@ -895,18 +934,21 @@
             </div>
           </div>
         </section>
-      </div>      
+      </div>
 
       <!-- [otrosProyectos] -->
       <section class="otherProjects">
-          <div class="otherProjectsTitle">
-            <h4 data-key="artisteoOtherProjectsSectionTitle"></h4>            
-          </div>
-          <div class="otherProjectsDescription">
-              <p class="regular otherProjectsDescriptionRegular" data-key="artisteoOtherProjectsSectionDescription"></p>
-            <div class="otherProjectsFrame">              
-              <!-- [vivaGym] -->
-              <a class="cardProject" href="vivaGym.html">
+        <div class="otherProjectsTitle">
+          <h4 data-key="artisteoOtherProjectsSectionTitle"></h4>
+        </div>
+        <div class="otherProjectsDescription">
+          <p
+            class="regular otherProjectsDescriptionRegular"
+            data-key="artisteoOtherProjectsSectionDescription"
+          ></p>
+          <div class="otherProjectsFrame">
+            <!-- [vivaGym] -->
+            <a class="cardProject" href="#">
               <figure>
                 <img
                   src="assets/images/index/projects/cardProjectVivagym.webp"
@@ -925,30 +967,30 @@
                   <p class="smallBold" data-key="vivaGymCardTag"></p>
                 </div>
               </div>
-              </a>    
-              <!-- [geomites] -->
-          <a class="cardProject" href="geomites.html">
-            <figure>
-              <img
-                src="assets/images/index/projects/cardProjectGeomites.webp"
-                alt="cardProjectImage"
-              />
-            </figure>
-            <div class="cardProjectFrame">
-              <div class="cardProjectFrameText">
-                <div class="cardProjectFrameTextTitle">
-                  <p class="regularBold">Geomites</p>
-                  <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <!-- [geomites] -->
+            <a class="cardProject" href="geomites.html">
+              <figure>
+                <img
+                  src="assets/images/index/projects/cardProjectGeomites.webp"
+                  alt="cardProjectImage"
+                />
+              </figure>
+              <div class="cardProjectFrame">
+                <div class="cardProjectFrameText">
+                  <div class="cardProjectFrameTextTitle">
+                    <p class="regularBold">Geomites</p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                  <p class="regular" data-key="geomitesCardDescription"></p>
                 </div>
-                <p class="regular" data-key="geomitesCardDescription"></p>
+                <div class="cardTag">
+                  <p class="smallBold" data-key="geomitesCardTag"></p>
+                </div>
               </div>
-              <div class="cardTag">
-                <p class="smallBold" data-key="geomitesCardTag"></p>
-              </div>
-            </div>
-          </a>
-            </div>  
-          </div>                       
+            </a>
+          </div>
+        </div>
       </section>
 
       <!-- [footer] -->
@@ -1058,12 +1100,11 @@
         </svg>
         <i
           class="fa-solid fa-chevron-up"
-          style="position: absolute; font-size: 16px; color: #000000b3"
+          style="position: absolute; font-size: 16px;"
         ></i>
       </button>
     </main>
-
-    <script src="/assets/js/main.js"></script>
+    
     <!-- [fontAwsome] -->
     <script
       src="https://kit.fontawesome.com/35d35eeb85.js"
@@ -1135,5 +1176,7 @@
         window.addEventListener("scroll", updateScrollProgress);
       });
     </script>
+    <!-- [mainJs] -->
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>

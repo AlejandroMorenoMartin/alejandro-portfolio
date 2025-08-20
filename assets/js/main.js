@@ -112,7 +112,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function highlightTOCOnScroll() {
     const tocLinks = document.querySelectorAll("#tableOfContents a");
-    const sections = document.querySelectorAll(".indexSection, .indexSubSection");
+    const sections = document.querySelectorAll(
+      ".indexSection, .indexSubSection"
+    );
     const offset = 100;
 
     window.addEventListener("scroll", () => {
@@ -336,5 +338,50 @@ document.addEventListener("DOMContentLoaded", () => {
       loader.classList.add("hidden");
     }, delay);
   });
+});
+
+/* theme */
+// Seleccionamos el botón
+const themeToggle = document.getElementById("themeToggle");
+const html = document.documentElement;
+
+// Función para cambiar el tema
+function setTheme(theme) {
+  html.setAttribute("data-theme", theme);
+  localStorage.setItem("theme", theme);
+
+  // Cambiamos el icono
+  const icon = themeToggle.querySelector("i");
+  if (theme === "dark") {
+    icon.classList.remove("fa-moon");
+    icon.classList.add("fa-sun");
+  } else {
+    icon.classList.remove("fa-sun");
+    icon.classList.add("fa-moon");
+  }
+}
+
+// Detectar tema del sistema
+const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+// Cargar tema al inicio
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme) {
+  setTheme(savedTheme);
+} else {
+  setTheme(systemPrefersDark ? "dark" : "light");
+}
+
+// Cambiar tema al pulsar el botón
+themeToggle.addEventListener("click", () => {
+  const currentTheme = html.getAttribute("data-theme");
+  setTheme(currentTheme === "light" ? "dark" : "light");
+});
+
+// Actualizar automáticamente si el usuario cambia la preferencia del sistema
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", e => {
+  if (!localStorage.getItem("theme")) { // Solo si no hay preferencia guardada
+    setTheme(e.matches ? "dark" : "light");
+  }
 });
 
