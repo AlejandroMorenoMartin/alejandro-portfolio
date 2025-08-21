@@ -37,16 +37,16 @@
   /* black */
   --black: rgba(0, 0, 0, 1);
   --black-100: rgba(0, 0, 0, 0.9);
-  --black-200: rgba(0, 0, 0, 0.6);
-  --black-300: rgba(0, 0, 0, 0.5);
+  --black-200: rgba(0, 0, 0, 0.7);
+  --black-300: rgba(0, 0, 0, 0.6);
 
   /* white */
   --white: rgba(255, 255, 255, 1);
-  --white-100: rgba(0, 0, 0, 0.015);
-  --white-200: rgba(0, 0, 0, 0.025);
-  --white-300: rgba(0, 0, 0, 0.05);
-  --white-400: rgba(0, 0, 0, 0.075);
-  --white-500: rgba(0, 0, 0, 0.14);
+  --white-100: rgba(0, 0, 0, 0.02);
+  --white-200: rgba(0, 0, 0, 0.04);
+  --white-300: rgba(0, 0, 0, 0.08);
+  --white-400: rgba(0, 0, 0, 0.12);
+  --white-500: rgba(0, 0, 0, 0.18);
 
   /* primary */
   --primary: rgba(0, 122, 255, 0.07);
@@ -69,16 +69,16 @@
   /* black → blanco */
   --black: rgba(255, 255, 255, 1);
   --black-100: rgba(255, 255, 255, 0.9);
-  --black-200: rgba(255, 255, 255, 0.6);
-  --black-300: rgba(255, 255, 255, 0.5);
+  --black-200: rgba(255, 255, 255, 0.7);
+  --black-300: rgba(255, 255, 255, 0.6);
 
   /* white → negro translúcido */
   --white: rgba(0, 0, 0, 1);
-  --white-100: rgba(255, 255, 255, 0.015);
-  --white-200: rgba(255, 255, 255, 0.025);
-  --white-300: rgba(255, 255, 255, 0.05);
-  --white-400: rgba(255, 255, 255, 0.075);
-  --white-500: rgba(255, 255, 255, 0.14);
+  --white-100: rgba(255, 255, 255, 0.02);
+  --white-200: rgba(255, 255, 255, 0.04);
+  --white-300: rgba(255, 255, 255, 0.08);
+  --white-400: rgba(255, 255, 255, 0.12);
+  --white-500: rgba(255, 255, 255, 0.18);
 
   /* primary → más vivos en dark */
   --primary: rgba(0, 122, 255, 0.12);

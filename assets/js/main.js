@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
+  /* ================================
+      MULTI-IDIOMA
+  ================================= */
   const htmlElement = document.documentElement;
   const langButtons = document.querySelectorAll(".langButton");
   const activeLangClass = "active";
@@ -37,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const list = document.createElement("ul");
 
     title.dataset.key = "tocTitle";
-    title.classList.add("toc-title"); // para margen
+    title.classList.add("toc-title");
     wrapper.appendChild(title);
 
     sections.forEach((section) => {
@@ -57,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
     wrapper.appendChild(list);
     toc.innerHTML = "";
     toc.appendChild(wrapper);
-    applyTranslations(); // volver a aplicar después de regenerar
+    applyTranslations();
     enableSmoothScrollForTOC();
     highlightTOCOnScroll();
   }
@@ -102,10 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
           window.pageYOffset -
           offset;
 
-        window.scrollTo({
-          top: topPosition,
-          behavior: "smooth",
-        });
+        window.scrollTo({ top: topPosition, behavior: "smooth" });
       });
     });
   }
@@ -127,53 +127,170 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       tocLinks.forEach((link) => {
-        if (link.getAttribute("href") === `#${currentId}`) {
-          link.classList.add("active");
-        } else {
-          link.classList.remove("active");
-        }
+        link.classList.toggle(
+          "active",
+          link.getAttribute("href") === `#${currentId}`
+        );
       });
+    });
+  }
+
+  /* ================================
+      SCROLL MANUAL BOTÓN
+  ================================= */
+  const projectsBtn = document.querySelector('a.button[href="#projects"]');
+  if (projectsBtn) {
+    projectsBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      const offset = 96;
+      const targetId = this.getAttribute("href");
+      const targetElement = document.querySelector(targetId);
+      if (!targetElement) return;
+      const topPosition =
+        targetElement.getBoundingClientRect().top +
+        window.pageYOffset -
+        offset;
+
+      window.scrollTo({ top: topPosition, behavior: "smooth" });
+    });
+  }
+
+  /* ================================
+      TESTIMONIOS SLIDER
+  ================================= */
+  const track = document.querySelector(".sliderTrack");
+  const cards = document.querySelectorAll(".cardTestimony");
+  const prevBtn = document.querySelectorAll(".sliderButton")[0];
+  const nextBtn = document.querySelectorAll(".sliderButton")[1];
+  const indicatorContainer = document.querySelector(".sliderIndicators");
+  let currentIndex = 0;
+
+  if (track && cards.length > 0) {
+    const updateCardWidths = () => {
+      const containerWidth =
+        document.querySelector(".indexSectionFrame").offsetWidth;
+      cards.forEach((card) => {
+        card.style.minWidth = `${containerWidth}px`;
+      });
+    };
+
+    const createIndicators = () => {
+      indicatorContainer.innerHTML = "";
+      cards.forEach((_, index) => {
+        const dot = document.createElement("div");
+        dot.classList.add("sliderDot");
+        if (index === currentIndex) dot.classList.add("active");
+        dot.addEventListener("click", () => {
+          currentIndex = index;
+          updateSlider();
+        });
+        indicatorContainer.appendChild(dot);
+      });
+    };
+
+    const updateIndicators = () => {
+      document
+        .querySelectorAll(".sliderDot")
+        .forEach((dot, i) =>
+          dot.classList.toggle("active", i === currentIndex)
+        );
+    };
+
+    const updateCardVisibility = () => {
+      cards.forEach((card, i) => {
+        card.classList.toggle("showing", i === currentIndex);
+        card.classList.toggle("hiddenUntilActive", i !== currentIndex);
+      });
+    };
+
+    const updateButtonVisibility = () => {
+      prevBtn.classList.toggle("disabled", currentIndex === 0);
+      nextBtn.classList.toggle("disabled", currentIndex === cards.length - 1);
+    };
+
+    const updateSlider = () => {
+      const width = cards[0].offsetWidth;
+      track.style.transform = `translateX(-${currentIndex * width}px)`;
+      updateIndicators();
+      updateCardVisibility();
+      updateButtonVisibility();
+    };
+
+    prevBtn.addEventListener("click", () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateSlider();
+      }
+    });
+
+    nextBtn.addEventListener("click", () => {
+      if (currentIndex < cards.length - 1) {
+        currentIndex++;
+        updateSlider();
+      }
+    });
+
+    updateCardWidths();
+    createIndicators();
+    updateSlider();
+    window.addEventListener("resize", () => {
+      updateCardWidths();
+      updateSlider();
+    });
+  }
+
+  /* ================================
+      EFECTOS VISUALES
+  ================================= */
+  const titles = document.querySelectorAll("h2");
+  const titleObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        entry.target.classList.toggle("visible", entry.isIntersecting);
+        entry.target.classList.toggle("hidden", !entry.isIntersecting);
+      });
+    },
+    { threshold: 1 }
+  );
+  titles.forEach((title) => titleObserver.observe(title));
+
+  const heroSection = document.querySelector(".heroSectionText");
+  if (heroSection) {
+    const heroObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) heroSection.classList.add("heroAnimate");
+        });
+      },
+      { threshold: 0.5 }
+    );
+    heroObserver.observe(heroSection);
+  }
+
+  /* ================================
+      LOADER
+  ================================= */
+  const loader = document.getElementById("pageLoader");
+  if (loader) {
+    const MIN_TIME = 1000;
+    const start = performance.now();
+    window.addEventListener("load", () => {
+      const elapsed = performance.now() - start;
+      const delay = Math.max(0, MIN_TIME - elapsed);
+      setTimeout(() => loader.classList.add("hidden"), delay);
     });
   }
 });
 
-/* salto de linea */
-document
-  .querySelector('a.button[href="#projects"]')
-  .addEventListener("click", function (e) {
-    e.preventDefault(); // Evita el salto automático
-    const offset = 96; // altura del nacContainer
-    const targetId = this.getAttribute("href");
-    const targetElement = document.querySelector(targetId);
-    const topPosition =
-      targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
-
-    window.scrollTo({
-      top: topPosition,
-      behavior: "smooth",
-    });
-  });
-
-/* tools */
+/* ================================
+    SCROLLER ANIMATION
+================================= */
 const scrollers = document.querySelectorAll(".scroller");
-
-// If a user hasn't opted in for recuded motion, then we add the animation
 if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-  addAnimation();
-}
-
-function addAnimation() {
   scrollers.forEach((scroller) => {
-    // add data-animated="true" to every `.scroller` on the page
     scroller.setAttribute("data-animated", true);
-
-    // Make an array from the elements within `.scroller-inner`
     const scrollerInner = scroller.querySelector(".scroller__inner");
     const scrollerContent = Array.from(scrollerInner.children);
-
-    // For each item in the array, clone it
-    // add aria-hidden to it
-    // add it into the `.scroller-inner`
     scrollerContent.forEach((item) => {
       const duplicatedItem = item.cloneNode(true);
       duplicatedItem.setAttribute("aria-hidden", true);
@@ -182,206 +299,34 @@ function addAnimation() {
   });
 }
 
-/* testimonySection */
-document.addEventListener("DOMContentLoaded", () => {
-  const track = document.querySelector(".sliderTrack");
-  const cards = document.querySelectorAll(".cardTestimony");
-  const prevBtn = document.querySelectorAll(".sliderButton")[0];
-  const nextBtn = document.querySelectorAll(".sliderButton")[1];
-  const indicatorContainer = document.querySelector(".sliderIndicators");
-
-  let currentIndex = 0;
-
-  // Ajustar el ancho de las cards para ocupar todo el frame
-  const updateCardWidths = () => {
-    const containerWidth =
-      document.querySelector(".indexSectionFrame").offsetWidth;
-    cards.forEach((card) => {
-      card.style.minWidth = `${containerWidth}px`;
-    });
-  };
-
-  // Crear indicadores
-  const createIndicators = () => {
-    indicatorContainer.innerHTML = "";
-    cards.forEach((_, index) => {
-      const dot = document.createElement("div");
-      dot.classList.add("sliderDot");
-      if (index === currentIndex) dot.classList.add("active");
-      dot.addEventListener("click", () => {
-        currentIndex = index;
-        updateSlider();
-      });
-      indicatorContainer.appendChild(dot);
-    });
-  };
-
-  const updateIndicators = () => {
-    const dots = document.querySelectorAll(".sliderDot");
-    dots.forEach((dot, i) => {
-      dot.classList.toggle("active", i === currentIndex);
-    });
-  };
-
-  // Ocultar/mostrar cards según el índice
-  const updateCardVisibility = () => {
-    cards.forEach((card, i) => {
-      if (i === currentIndex) {
-        card.classList.add("showing");
-        card.classList.remove("hiddenUntilActive");
-      } else {
-        card.classList.remove("showing");
-        card.classList.add("hiddenUntilActive");
-      }
-    });
-  };
-
-  // Aplicar clase 'disabled' a los botones si corresponde
-  const updateButtonVisibility = () => {
-    prevBtn.classList.toggle("disabled", currentIndex === 0);
-    nextBtn.classList.toggle("disabled", currentIndex === cards.length - 1);
-  };
-
-  // Mover el slider
-  const updateSlider = () => {
-    const width = cards[0].offsetWidth;
-    track.style.transform = `translateX(-${currentIndex * width}px)`;
-    updateIndicators();
-    updateCardVisibility();
-    updateButtonVisibility();
-  };
-
-  // Botones
-  prevBtn.addEventListener("click", () => {
-    if (currentIndex > 0) {
-      currentIndex--;
-      updateSlider();
-    }
-  });
-
-  nextBtn.addEventListener("click", () => {
-    if (currentIndex < cards.length - 1) {
-      currentIndex++;
-      updateSlider();
-    }
-  });
-
-  // Inicializar
-  updateCardWidths();
-  createIndicators();
-  updateSlider();
-
-  // Recalcular en resize
-  window.addEventListener("resize", () => {
-    updateCardWidths();
-    updateSlider();
-  });
-});
-
-/* h2 efecto */
-document.addEventListener("DOMContentLoaded", () => {
-  const titles = document.querySelectorAll("h2");
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        const target = entry.target;
-
-        if (entry.isIntersecting) {
-          target.classList.add("visible");
-          target.classList.remove("hidden");
-        } else {
-          target.classList.remove("visible");
-          target.classList.add("hidden");
-        }
-      });
-    },
-    {
-      root: null,
-      threshold: 1,
-    }
-  );
-
-  titles.forEach((title) => observer.observe(title));
-});
-
-/* efecto hero */
-document.addEventListener("DOMContentLoaded", () => {
-  const heroSection = document.querySelector(".heroSectionText");
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          heroSection.classList.add("heroAnimate");
-        }
-      });
-    },
-    { threshold: 0.5 }
-  );
-
-  observer.observe(heroSection);
-});
-
-/* pageLoader */
-document.addEventListener("DOMContentLoaded", () => {
-  const loader = document.getElementById("pageLoader");
-
-  const MIN_TIME = 1000;
-  const start = performance.now();
-
-  window.addEventListener("load", () => {
-    const elapsed = performance.now() - start;
-    const delay = Math.max(0, MIN_TIME - elapsed);
-
-    setTimeout(() => {
-      loader.classList.add("hidden");
-    }, delay);
-  });
-});
-
-/* theme */
-// Seleccionamos el botón
+/* ================================
+    TEMA OSCURO/CLARO
+================================= */
 const themeToggle = document.getElementById("themeToggle");
 const html = document.documentElement;
 
-// Función para cambiar el tema
 function setTheme(theme) {
   html.setAttribute("data-theme", theme);
   localStorage.setItem("theme", theme);
-
-  // Cambiamos el icono
   const icon = themeToggle.querySelector("i");
   if (theme === "dark") {
-    icon.classList.remove("fa-moon");
-    icon.classList.add("fa-sun");
+    icon.classList.replace("fa-moon", "fa-sun");
   } else {
-    icon.classList.remove("fa-sun");
-    icon.classList.add("fa-moon");
+    icon.classList.replace("fa-sun", "fa-moon");
   }
 }
 
-// Detectar tema del sistema
 const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-
-// Cargar tema al inicio
 const savedTheme = localStorage.getItem("theme");
-if (savedTheme) {
-  setTheme(savedTheme);
-} else {
-  setTheme(systemPrefersDark ? "dark" : "light");
-}
+setTheme(savedTheme || (systemPrefersDark ? "dark" : "light"));
 
-// Cambiar tema al pulsar el botón
 themeToggle.addEventListener("click", () => {
   const currentTheme = html.getAttribute("data-theme");
   setTheme(currentTheme === "light" ? "dark" : "light");
 });
 
-// Actualizar automáticamente si el usuario cambia la preferencia del sistema
-window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", e => {
-  if (!localStorage.getItem("theme")) { // Solo si no hay preferencia guardada
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => {
+  if (!localStorage.getItem("theme")) {
     setTheme(e.matches ? "dark" : "light");
   }
 });
-

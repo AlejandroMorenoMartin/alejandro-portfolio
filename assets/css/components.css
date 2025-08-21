@@ -96,7 +96,7 @@
 }
 
 .button300.disabled {
-  background-color: var(--white-300);
+  background-color: var(--white-200);
   color: var(--white-500);
   pointer-events: none;
 }
@@ -138,8 +138,8 @@
   padding-bottom: 0.25rem;
   padding-top: 0.25rem;
   box-sizing: border-box;
-  backdrop-filter: blur(25px);
-  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(1000px);
+  -webkit-backdrop-filter: blur(1000px);
   transition: box-shadow 200ms ease;
 }
 
@@ -663,6 +663,10 @@ footer {
   z-index: 2;
   pointer-events: none;
   color: var(--black-200);
+}
+
+.circleOne {
+  stroke: var(--white-500);
 }
 
 /* cardarticle */
