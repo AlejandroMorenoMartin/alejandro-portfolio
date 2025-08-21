@@ -37,7 +37,7 @@
   /* black */
   --black: rgba(0, 0, 0, 1);
   --black-100: rgba(0, 0, 0, 0.9);
-  --black-200: rgba(0, 0, 0, 0.7);
+  --black-200: rgba(0, 0, 0, 0.75);
   --black-300: rgba(0, 0, 0, 0.6);
 
   /* white */
@@ -69,7 +69,7 @@
   /* black → blanco */
   --black: rgba(255, 255, 255, 1);
   --black-100: rgba(255, 255, 255, 0.9);
-  --black-200: rgba(255, 255, 255, 0.7);
+  --black-200: rgba(255, 255, 255, 0.75);
   --black-300: rgba(255, 255, 255, 0.6);
 
   /* white → negro translúcido */
