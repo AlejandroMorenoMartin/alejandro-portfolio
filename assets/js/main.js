@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   /* ================================
-      MULTI-IDIOMA
+      MULTI-IDIOMA / TABLE OF CONTENT
   ================================= */
   const htmlElement = document.documentElement;
   const langButtons = document.querySelectorAll(".langButton");
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const id = section.id;
       const titleElement = section.querySelector("h2");
       if (id && titleElement && titleElement.textContent.trim() !== "") {
-        const text = titleElement.textContent.trim();
+        const text = titleElement.textContent.trim().replace(/\.$/, ""); 
         const listItem = document.createElement("li");
         const link = document.createElement("a");
         link.href = `#${id}`;
@@ -147,9 +147,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const targetElement = document.querySelector(targetId);
       if (!targetElement) return;
       const topPosition =
-        targetElement.getBoundingClientRect().top +
-        window.pageYOffset -
-        offset;
+        targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
 
       window.scrollTo({ top: topPosition, behavior: "smooth" });
     });
@@ -316,7 +314,9 @@ function setTheme(theme) {
   }
 }
 
-const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+const systemPrefersDark = window.matchMedia(
+  "(prefers-color-scheme: dark)"
+).matches;
 const savedTheme = localStorage.getItem("theme");
 setTheme(savedTheme || (systemPrefersDark ? "dark" : "light"));
 
@@ -325,8 +325,10 @@ themeToggle.addEventListener("click", () => {
   setTheme(currentTheme === "light" ? "dark" : "light");
 });
 
-window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => {
-  if (!localStorage.getItem("theme")) {
-    setTheme(e.matches ? "dark" : "light");
-  }
-});
+window
+  .matchMedia("(prefers-color-scheme: dark)")
+  .addEventListener("change", (e) => {
+    if (!localStorage.getItem("theme")) {
+      setTheme(e.matches ? "dark" : "light");
+    }
+  });

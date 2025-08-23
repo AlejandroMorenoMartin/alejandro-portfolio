@@ -1200,7 +1200,7 @@ footer {
 .sectionHeaderFrame {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: .5rem;
 }
 
 .sectionOne {
@@ -1626,6 +1626,7 @@ footer {
   position: relative;
   flex: 1;
   overflow: hidden;
+  height: 5.25rem;
 }
 
 .learningFrame i {
