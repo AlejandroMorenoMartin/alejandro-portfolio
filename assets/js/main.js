@@ -332,3 +332,10 @@ window
       setTheme(e.matches ? "dark" : "light");
     }
   });
+
+  document.querySelectorAll(".cardFAQsFrame").forEach(frame => {
+  frame.addEventListener("click", () => {
+    const card = frame.parentElement;
+    card.classList.toggle("active");
+  });
+});
