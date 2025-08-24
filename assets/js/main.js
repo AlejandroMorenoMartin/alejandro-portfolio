@@ -136,13 +136,29 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* ================================
-      SCROLL MANUAL BOTÓN
-  ================================= */
+      SCROLL MANUAL BOTÓN
+  ================================= */
   const projectsBtn = document.querySelector('a.button[href="#projects"]');
+  const pricesBtn = document.querySelector('a.buttonSecondary[href="#prices"]');
+
   if (projectsBtn) {
     projectsBtn.addEventListener("click", function (e) {
       e.preventDefault();
-      const offset = 96;
+      const offset = 104;
+      const targetId = this.getAttribute("href");
+      const targetElement = document.querySelector(targetId);
+      if (!targetElement) return;
+      const topPosition =
+        targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
+
+      window.scrollTo({ top: topPosition, behavior: "smooth" });
+    });
+  }
+
+  if (pricesBtn) {
+    pricesBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      const offset = 104;
       const targetId = this.getAttribute("href");
       const targetElement = document.querySelector(targetId);
       if (!targetElement) return;
@@ -280,7 +296,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Esperamos al render completo
     requestAnimationFrame(() => {
       const bannerHeight = banner.offsetHeight;
-      const extraSpace = 8; // opcional
+      const extraSpace = 0; // opcional
 
       nav.style.top = `${bannerHeight + extraSpace}px`;
       if (toc) toc.style.marginTop = `${bannerHeight + extraSpace}px`;
@@ -326,31 +342,36 @@ document.addEventListener("DOMContentLoaded", () => {
 ================================= */
 document.addEventListener("DOMContentLoaded", () => {
   const buttonPannel = document.querySelector(".buttonPannel");
-  const mainSections = document.querySelectorAll(".mainContainerSections section");
+  const mainSections = document.querySelectorAll(
+    ".mainContainerSections section"
+  );
 
   if (buttonPannel && mainSections.length > 2) {
     const firstSection = mainSections[0];
     const lastSection = mainSections[mainSections.length - 1];
 
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        // Hide the button panel if the first section is in view
-        if (entry.target === firstSection && entry.isIntersecting) {
-          buttonPannel.classList.remove("visible");
-        }
-        // Show the button panel if the first section is out of view
-        if (entry.target === firstSection && !entry.isIntersecting) {
-          buttonPannel.classList.add("visible");
-        }
-        // Hide the button panel if the last section is in view
-        if (entry.target === lastSection && entry.isIntersecting) {
-          buttonPannel.classList.remove("visible");
-        }
-      });
-    }, {
-      rootMargin: "0px",
-      threshold: 0.1
-    });
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          // Hide the button panel if the first section is in view
+          if (entry.target === firstSection && entry.isIntersecting) {
+            buttonPannel.classList.remove("visible");
+          }
+          // Show the button panel if the first section is out of view
+          if (entry.target === firstSection && !entry.isIntersecting) {
+            buttonPannel.classList.add("visible");
+          }
+          // Hide the button panel if the last section is in view
+          if (entry.target === lastSection && entry.isIntersecting) {
+            buttonPannel.classList.remove("visible");
+          }
+        });
+      },
+      {
+        rootMargin: "0px",
+        threshold: 0.1,
+      }
+    );
 
     observer.observe(firstSection);
     observer.observe(lastSection);
