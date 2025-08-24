@@ -2648,3 +2648,7 @@ span.cardPricesRecommended {
 .buttonPannelFrame {
   text-align: center;
 }
+
+.buttonPannelFrame .smallBold {
+  color: var(--primary-300);
+}
