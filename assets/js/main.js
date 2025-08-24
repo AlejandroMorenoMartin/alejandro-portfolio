@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const id = section.id;
       const titleElement = section.querySelector("h2");
       if (id && titleElement && titleElement.textContent.trim() !== "") {
-        const text = titleElement.textContent.trim().replace(/\.$/, ""); 
+        const text = titleElement.textContent.trim().replace(/\.$/, "");
         const listItem = document.createElement("li");
         const link = document.createElement("a");
         link.href = `#${id}`;
@@ -266,17 +266,94 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* ================================
-      LOADER
+      BANNER (solo en index)
   ================================= */
-  const loader = document.getElementById("pageLoader");
-  if (loader) {
-    const MIN_TIME = 1000;
-    const start = performance.now();
-    window.addEventListener("load", () => {
-      const elapsed = performance.now() - start;
-      const delay = Math.max(0, MIN_TIME - elapsed);
-      setTimeout(() => loader.classList.add("hidden"), delay);
+  const banner = document.querySelector(".banner");
+  const nav = document.querySelector(".navContainer");
+  const toc = document.querySelector("#tableOfContents");
+
+  if (
+    banner &&
+    window.location.pathname.includes("index.html") &&
+    !sessionStorage.getItem("bannerClosed")
+  ) {
+    // Esperamos al render completo
+    requestAnimationFrame(() => {
+      const bannerHeight = banner.offsetHeight;
+      const extraSpace = 8; // opcional
+
+      nav.style.top = `${bannerHeight + extraSpace}px`;
+      if (toc) toc.style.marginTop = `${bannerHeight + extraSpace}px`;
     });
+
+    // Botón cerrar
+    const closeBtn = banner.querySelector(".fa-x");
+    if (closeBtn) {
+      closeBtn.addEventListener("click", () => closeBanner());
+    }
+
+    // Botón CTA (tarifas)
+    const tarifaBtn = banner.querySelector(".buttonBanner");
+    if (tarifaBtn) {
+      tarifaBtn.addEventListener("click", () => closeBanner());
+    }
+
+    function closeBanner() {
+      banner.classList.add("hidden");
+      sessionStorage.setItem("bannerClosed", "true");
+
+      setTimeout(() => {
+        banner.style.display = "none";
+
+        // Volvemos a posiciones originales
+        nav.style.top = "0px";
+        if (toc) toc.style.marginTop = "0px";
+      }, 200);
+    }
+  } else {
+    // Si no hay banner o ya fue cerrado
+    nav.style.top = "0px";
+    if (toc) toc.style.marginTop = "0px";
+    if (banner) banner.style.display = "none";
+  }
+});
+
+/* ================================
+    BUTTON PANNEL (scroll control)
+  ================================= */
+/* ================================
+  BUTTON PANNEL (scroll control)
+================================= */
+document.addEventListener("DOMContentLoaded", () => {
+  const buttonPannel = document.querySelector(".buttonPannel");
+  const mainSections = document.querySelectorAll(".mainContainerSections section");
+
+  if (buttonPannel && mainSections.length > 2) {
+    const firstSection = mainSections[0];
+    const lastSection = mainSections[mainSections.length - 1];
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        // Hide the button panel if the first section is in view
+        if (entry.target === firstSection && entry.isIntersecting) {
+          buttonPannel.classList.remove("visible");
+        }
+        // Show the button panel if the first section is out of view
+        if (entry.target === firstSection && !entry.isIntersecting) {
+          buttonPannel.classList.add("visible");
+        }
+        // Hide the button panel if the last section is in view
+        if (entry.target === lastSection && entry.isIntersecting) {
+          buttonPannel.classList.remove("visible");
+        }
+      });
+    }, {
+      rootMargin: "0px",
+      threshold: 0.1
+    });
+
+    observer.observe(firstSection);
+    observer.observe(lastSection);
   }
 });
 
@@ -333,7 +410,7 @@ window
     }
   });
 
-  document.querySelectorAll(".cardFAQsFrame").forEach(frame => {
+document.querySelectorAll(".cardFAQsFrame").forEach((frame) => {
   frame.addEventListener("click", () => {
     const card = frame.parentElement;
     card.classList.toggle("active");

@@ -414,7 +414,7 @@
   "vivagymSectionTitleEight":"Other projects.",
   "vivagymSectionDescriptionEight": "<b>VivaGym</b> is one of the projects I dedicated my time and effort to. If you want to learn more about my work, here are <b>other projects</b> I have contributed to.",
 
-  "freelanceButton":"See prices",
+  "freelanceButton":"More info",
   "contactButton":"Contact me",
   "pricesHeroTitle":"Web design and development to grow your business.",
   "pricesHeroDescription":"I help small and medium-sized businesses create professional, clear, and easy-to-manage websites.",
@@ -472,5 +472,12 @@
   "cardFAQsDescriptionSix":"A professional website isn't an expense; it's an investment. It helps you gain visibility, attract clients, and build trust. Many businesses recover their investment within the first few months.",
   "someQuestionsSectionTitle":"Have a question?",
   "someQuestionsSectionDescription":"Don't hesitate to get in touch; I'd be happy to chat with you.",
-  "someQuestionsSectionButton":"Contact me"
+  "someQuestionsSectionButton":"Contact me",
+
+  "bannerInfo": "Freelance services.",
+  "bannerButton": "Info",
+
+  "buttonPannelPreviousTitle":"Previous project",
+  "buttonPanneCurrentlTitle":"Current project",
+  "buttonPannelNextTitle":"Next project"
 }

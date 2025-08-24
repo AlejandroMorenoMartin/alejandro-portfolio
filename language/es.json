@@ -415,7 +415,7 @@
   "vivagymSectionTitleEight":"Otros proyectos.",
   "vivagymSectionDescriptionEight":"<b>VivaGym</b> es uno de los proyectos a los que dediqué mi tiempo y esfuerzo. Si quieres saber más acerca de mi trabajo, te dejo <b>otros proyectos</b> en los que he participado.",
   
-  "freelanceButton":"Ver tarifas",
+  "freelanceButton":"Más info",
   "contactButton":"Contáctame",
   "pricesHeroTitle":"Diseño y desarrollo web para hacer crecer tu negocio.",
   "pricesHeroDescription":"Ayudo a pequeñas y medianas empresas a tener una web profesional, clara y fácil de gestionar.",
@@ -473,7 +473,14 @@
   "cardFAQsDescriptionSix":"Una web profesional no es un gasto, es una inversión. Te ayuda a ganar visibilidad, atraer clientes y transmitir confianza. Muchos negocios recuperan la inversión en los primeros meses.",
   "someQuestionsSectionTitle":"¿Alguna pregunta?",
   "someQuestionsSectionDescription":"No dudes en ponerte en contacto, estaré encantado de charlar contigo.",
-  "someQuestionsSectionButton":"Contáctame"
+  "someQuestionsSectionButton":"Contáctame",
+
+  "bannerInfo":"Servicios freelance.",
+  "bannerButton":"Info",
+
+  "buttonPannelPreviousTitle":"Proyecto anterior",
+  "buttonPanneCurrentlTitle":"Proyecto actual",
+  "buttonPannelNextTitle":"Proyecto siguiente"
 }
 
 

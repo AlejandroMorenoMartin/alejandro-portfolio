@@ -163,6 +163,7 @@
   backdrop-filter: blur(1000px);
   -webkit-backdrop-filter: blur(1000px);
   transition: box-shadow 200ms ease, top 0.5s ease;
+  transition: top 200ms ease-in-out;
 }
 
 .navContainer.scrolled {
@@ -725,6 +726,7 @@ footer {
   font-weight: 400;
   letter-spacing: 0.05rem;
   z-index: 1000;
+  transition: 200ms ease-in-out;
 }
 
 .table-of-contents::before {
@@ -2494,4 +2496,149 @@ span.cardPricesRecommended {
 
 .cardFAQs.active .cardFAQsFrame i {
   transform: rotate(180deg);
+}
+
+.banner {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+  transform: translateY(0);
+  transition: transform 400ms ease-in-out;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;  
+  padding-left: calc((100% - var(--contentMaxWidth)) / 2);
+  padding-right: calc((100% - var(--contentMaxWidth)) / 2);  
+  padding-bottom: .5rem;
+  padding-top: .5rem;
+  background-color: var(--primary-300);
+  gap: 1rem;
+  justify-content: space-between;
+  color: var(--white);
+}
+
+@media screen and (max-width: 1200px) {
+  .banner {
+    padding: 0.5rem 1rem;
+  }
+}
+
+.banner.hidden {
+  transform: translateY(-100%);
+}
+
+.banner i {
+  font-size: 16px;
+  line-height: var(--lh-small);
+  cursor: pointer;
+  display: block;
+  padding: .25rem .5rem;  
+  align-items: center;  
+}
+
+.banner .smallBold,
+.banner .small {
+  color: var(--white);
+}
+
+.bannerFrameOne{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  padding-right: 1rem;
+  border-right: .25px solid var(--white);
+  justify-content: space-between;  
+}
+
+.bannerFrameOneFirst{
+  display: flex;
+  flex-direction: row;
+  gap: .25rem;
+  align-items: center;
+}
+
+.bannerFrameOneFirst i{
+  font-size: 16px;
+  line-height: var(--lh-small);
+}
+
+.buttonBanner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  padding: 0.25rem 1rem;
+  border-radius: 1rem;  
+  box-shadow: inset 0 0 0 0.5px var(--white);
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+  width: fit-content;
+}
+
+.buttonBanner:hover {
+  box-shadow: inset 0 0 0 2px var(--white);
+}
+
+.buttonPannel {
+  display: flex;
+  position: fixed;
+  bottom: -100px;
+  right: 0;
+  flex-direction: row;
+  width: 100%;
+  padding-left: calc((100% - var(--contentMaxWidth)) / 2);
+  padding-right: calc((100% - var(--contentMaxWidth)) / 2);  
+  padding-bottom: .5rem;
+  padding-top: .5rem;
+  background-color: var(--white);
+  border-top: 1.5px solid var(--white-500);
+  justify-content: space-between;
+  z-index: 1000;
+  align-items: center;
+  transition: all 400ms ease-in-out;
+}
+
+.buttonPannel.visible {
+  bottom: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .buttonPannel {
+    display: none;
+  }
+}
+
+.buttonPannelButton {
+  display: flex;
+  flex-direction: row;
+  gap: .5rem;
+  align-items: center;
+  padding: .5rem;
+  border-radius: 1rem;
+  box-shadow: inset 0 0 0 0.5px var(--black-400);
+  transition: all 200ms ease-in-out;
+}
+
+.buttonPannelButton:hover {
+  box-shadow: inset 0 0 0 2px var(--black-400);
+}
+
+.buttonPannelButton:first-child {
+  text-align: left;
+}
+
+.buttonPannelButton:last-child {
+  text-align: right;
+}
+
+.buttonPannelButton i {
+  font-size: 16px;
+  line-height: var(--lh-small);
+}
+
+.buttonPannelFrame {
+  text-align: center;
 }
