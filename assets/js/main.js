@@ -279,59 +279,7 @@ document.addEventListener("DOMContentLoaded", () => {
       { threshold: 0.5 }
     );
     heroObserver.observe(heroSection);
-  }
-
-  /* ================================
-      BANNER (solo en index)
-  ================================= */
-  const banner = document.querySelector(".banner");
-  const nav = document.querySelector(".navContainer");
-  const toc = document.querySelector("#tableOfContents");
-
-  if (
-    banner &&
-    window.location.pathname.includes("index.html") &&
-    !sessionStorage.getItem("bannerClosed")
-  ) {
-    // Esperamos al render completo
-    requestAnimationFrame(() => {
-      const bannerHeight = banner.offsetHeight;
-      const extraSpace = 0; // opcional
-
-      nav.style.top = `${bannerHeight + extraSpace}px`;
-      if (toc) toc.style.marginTop = `${bannerHeight + extraSpace}px`;
-    });
-
-    // Botón cerrar
-    const closeBtn = banner.querySelector(".fa-x");
-    if (closeBtn) {
-      closeBtn.addEventListener("click", () => closeBanner());
-    }
-
-    // Botón CTA (tarifas)
-    const tarifaBtn = banner.querySelector(".buttonBanner");
-    if (tarifaBtn) {
-      tarifaBtn.addEventListener("click", () => closeBanner());
-    }
-
-    function closeBanner() {
-      banner.classList.add("hidden");
-      sessionStorage.setItem("bannerClosed", "true");
-
-      setTimeout(() => {
-        banner.style.display = "none";
-
-        // Volvemos a posiciones originales
-        nav.style.top = "0px";
-        if (toc) toc.style.marginTop = "0px";
-      }, 200);
-    }
-  } else {
-    // Si no hay banner o ya fue cerrado
-    nav.style.top = "0px";
-    if (toc) toc.style.marginTop = "0px";
-    if (banner) banner.style.display = "none";
-  }
+  }  
 });
 
 /* ================================

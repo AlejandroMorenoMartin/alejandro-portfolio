@@ -80,10 +80,3 @@ caption {
   letter-spacing: 0.05rem;
   color: var(--black-400);
 }
-
-b {
-  font-size: var(--fs-regular);
-  line-height: var(--lh-regular);
-  font-weight: 500;
-  letter-spacing: 0.025rem;  
-}
