@@ -74,8 +74,11 @@
   letter-spacing: 0.5px;
 }
 
-.buttonLink:hover p {
+.buttonLink p {
   text-decoration: underline;
+}
+
+.buttonLink:hover p {  
   color: var(--primary-300);
 }
 
@@ -93,8 +96,8 @@
   cursor: pointer;
 }
 
-.buttonTerciary:hover {  
-  background: var(--gray-100);  
+.buttonTerciary:hover {
+  background: var(--gray-100);
 }
 
 /* toolTipText */
@@ -605,13 +608,13 @@ footer {
 .footerFrameTop {
   display: flex;
   flex-direction: column;
-  gap: 1rem;  
+  gap: 1rem;
 }
 
 .footerFrameBot {
   display: flex;
-  flex-direction: row;  
-  gap: 1rem;    
+  flex-direction: row;
+  gap: 1rem;
   width: 100%;
   align-items: center;
 }
@@ -619,12 +622,12 @@ footer {
 @media screen and (max-width: 1200px) {
   footer {
     flex-direction: column;
-  } 
+  }
 
   .footerFrameBot {
     display: flex;
-    flex-direction: row; 
-    flex-wrap: wrap;  
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
@@ -637,7 +640,7 @@ footer {
   border: 1.5px solid var(--white-500);
   background-color: var(--gray-200);
   position: fixed;
-  top: 4.25rem;
+  top: 8rem;
   right: 2rem;
   max-width: 300px;
   font-size: var(--fs-small);

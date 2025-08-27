@@ -34,7 +34,7 @@
   "myHistoryFour":"Diseñar es hacer visible lo inteligente. Cada proyecto es una oportunidad para aportar valor, aprender desde la práctica y <b>acercarte a la vida de las personas</b>.",  
 
   "articlesSectionTitle":"Artículos.",
-  "articlesSectionButton":"Ver perfil en Medium",
+  "articlesSectionButton":"Perfil de Medium",
   "article1Title": "Entrevistas de usuarios",
   "article1Description": "Las entrevistas de usuarios permiten conocer necesidades, comportamientos y motivaciones reales. Ayudan a detectar problemas, validar ideas y encontrar oportunidades. Su éxito depende de preparar bien las preguntas, mantenerlas abiertas y escuchar sin prejuicios.",
   "article2Title": "Entrevistas con stakeholders",
@@ -52,7 +52,7 @@
   "cardExperienceTwoDescription": "Dirigí estrategias de marketing en una empresa de maquinaria industrial, gestionando y optimizando la web corporativa. Elaboré catálogos y documentación técnica, fortaleciendo la identidad de marca y su presencia en el sector.",
 
   "educationSectionTitle":"Educación.",
-  "educationSectionButton":"Ver credenciales",
+  "educationSectionButton":"Ver certificaciones",
   "cardEducationOneTitle":"Experiencia de usuario: Guía definitiva",
   "cardEducationOneDate":"Nov 2024",
   "cardEducationTwoTitle":"Diseño de patrones UI para un software exitoso",
@@ -512,7 +512,7 @@
   "someQuestionsSectionButton":"Contáctame",
 
   "bannerInfo":"Servicios freelance.",
-  "bannerButton":"Info",
+  "bannerButton":"Más información",
 
   "buttonPannelPreviousTitle":"Proyecto anterior",
   "buttonPanneCurrentlTitle":"Proyecto actual",
