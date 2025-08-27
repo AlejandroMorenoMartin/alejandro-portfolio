@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="light">
+<html lang="es" data-theme="dark">
   <head>
     <!-- Theme + Color Scheme -->
-    <meta name="color-scheme" content="light dark" />
+    <meta name="color-scheme" content="dark light" />
     <meta
       name="theme-color"
       content="#ffffff"
@@ -68,45 +68,40 @@
     <main class="mainContainer">
       <!-- [header] -->
       <nav class="navContainer">
-        <a class="button200" href="index.html">
-            <svg
-              width="48"
-              height="48"
-              viewBox="0 0 48 48"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+        <div class="navContainerIcon">
+          <a class="buttonLogo" href="index.html">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M24.1754 33.2656H8.92587L4.5 41.0646H28.9519L24.1754 33.2656Z"
-                class="logoBlue"
               />
               <path
                 d="M22.8168 6.9375L11.6426 28.6214H21.2393L23.0359 23.7075H24.5696L34.3854 40.9284H43.5001L24.3505 6.9375H22.8168Z"
-                class="logoTheme"
               />
             </svg>
           </a>
+        </div>
         <div class="navContainerswitchers">
           <!-- [theme] -->
-          <div class="themeSwitcher">
-            <button
-              id="themeToggle"
-              class="button100 themeButton"
-              aria-label="Cambiar tema"
-            >
-              <i class="fa-solid fa-moon"></i>
-            </button>
-          </div>
+          <button
+            id="themeToggle"
+            aria-label="Cambiar tema"
+            class="buttonSecondary buttonSecondary-100"
+          >
+            <i class="fa-solid fa-moon"></i>
+            <span class="toolTipText"
+              ><p class="small" data-key="toolTipTextOne"></p
+            ></span>
+          </button>
           <!-- [language] -->
-          <div class="languageSwitcher">
-            <button class="button100 langButton active" data-lang="es">
-              <p class="regularBold">Es</p>
-            </button>
-            <p class="regularBold">|</p>
-            <button class="button100 langButton" data-lang="en">
-              <p class="regularBold">En</p>
-            </button>
-          </div>
+          <button
+            class="buttonSecondary buttonSecondary-100 langButton"
+            data-lang="es"
+          >
+            <p class="smallBold">Es</p>
+            <span class="toolTipText"
+              ><p class="small" data-key="toolTipTextTwo"></p
+            ></span>
+          </button>
         </div>
       </nav>
 
@@ -115,7 +110,7 @@
 
       <!-- [buttonPannel] -->
       <div class="buttonPannel">
-        <a class="buttonPannelButton" href="artisteo.html">
+        <a class="buttonSecondary" href="artisteo.html">
           <i class="fa-solid fa-chevron-left"></i>
           <div class="buttonPannelButtonFrame">
             <p class="small" data-key="buttonPannelPreviousTitle"></p>
@@ -126,7 +121,7 @@
           <p class="small" data-key="buttonPanneCurrentlTitle"></p>
           <p class="smallBold">Geomites</p>
         </div>
-        <a class="buttonPannelButton" href="vivaGym.html">
+        <a class="buttonSecondary" href="vivaGym.html">
           <div class="buttonPannelButtonFrame">
             <p class="small" data-key="buttonPannelNextTitle"></p>
             <p class="smallBold">VivaGym</p>
@@ -228,7 +223,7 @@
             <div class="kpiFrame">
               <p
                 class="regularBold"
-                data-key="kpiFrame"
+                data-key="geomitesDataAnalysisSubsectionOneTitle"
               ></p>
               <p
                 class="regular"
@@ -652,7 +647,7 @@
             <p class="regular" data-key="geomitesSectionDescriptionFive"></p>
           </div>
           <!-- [conversionEn] -->
-          <div class="indexSubSection">   
+          <div class="indexSection">   
             <p
             class="regularBold"
             data-key="geomitesDataAnalysisSubsectionOneTitle"
@@ -701,10 +696,10 @@
             </div>
           </div>
           <!-- [descubrimientoDe] -->
-          <div class="indexSubSection">
+          <div class="indexSection">
             <p
-            class="regular"
-            data-key="geomitesDataAnalysisSubsectionTwoDescription"
+            class="regularBold"
+            data-key="geomitesDataAnalysisSubsectionTwoTitle"
             ></p>            
             <table class="responsiveTable">
               <thead>
@@ -750,10 +745,10 @@
             </div>            
           </div>
           <!-- [retenecionDe] -->
-          <div class="indexSubSection">
+          <div class="indexSection">
             <p
-            class="regular"
-            data-key="geomitesDataAnalysisSubsectionThreeDescription"
+            class="regularBold"
+            data-key="geomitesDataAnalysisSubsectionThreeTitle"
             ></p>            
             <table class="responsiveTable">
               <thead>
@@ -930,73 +925,124 @@
       </section>
 
       <!-- [footer] -->
-      <footer>        
-          <div class="footerFrameLeft">
-            <div class="footerFrameMessage">
-              <p class="regularBold" data-key="footerTitle"></p>
-              <p class="regular" data-key="footerDescription"></p>
-            </div>
-            <div class="footerFrameSocial">
-              <!-- [whatsapp] -->
-              <a href="https://wa.me/34618110583" class="button100" target="_blank">
-            <i class="fa-brands fa-whatsapp"></i>
-              </a>
-              <!-- [linkedin] -->
-              <a
-            href="https://www.linkedin.com/in/alejandromorenoproductdesigner/"
-            class="button100"
-            target="_blank"
-          >
-            <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-              <!-- [medium] -->
-              <a
-            href="https://medium.com/@alejandromorenomartin1990"
-            class="button100"
-            target="_blank"
-          >
-            <i class="fa-brands fa-medium"></i>
-              </a>
-              <!-- [github] -->
-              <a
-            href="https://github.com/kakomoma"
-            class="button100"
-            target="_blank"
-          >
-            <i class="fa-brands fa-github"></i>
-              </a>
-              <!-- [email] -->
-              <a
-            href="mailto:alejandromorenomartin1990@gmail.com"
-            class="button100"
-            target="_blank"
-          >
-            <i class="fa-solid fa-envelope"></i>
-              </a>
-            </div>
+      <footer>
+        <div class="footerFrameTop">
+          <a class="buttonLogo" href="index.html">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24.1754 33.2656H8.92587L4.5 41.0646H28.9519L24.1754 33.2656Z"
+              />
+              <path
+                d="M22.8168 6.9375L11.6426 28.6214H21.2393L23.0359 23.7075H24.5696L34.3854 40.9284H43.5001L24.3505 6.9375H22.8168Z"
+              />
+            </svg>
+          </a>
+          <div class="footerFrameMessage">
+            <p class="regularBold" data-key="footerTitle"></p>
+            <p class="regular" data-key="footerDescription"></p>
           </div>
-          <div class="footerFrameLeft">
-            <div class="footerFrameBottomFrame">
-              <i class="fa-solid fa-circle-user"></i>
-              <p class="small">Alejandro Moreno</p>
-            </div>
-            <div class="footerFrameBottomFrame">
-              <i class="fa-solid fa-pen-nib"></i>
-              <p class="small">Figma</p>
-            </div>
-            <div class="footerFrameBottomFrame">
-              <i class="fa-solid fa-code"></i>
-              <p class="small">HTML, CSS3, JavaScript</p>
-            </div>
-            <div class="footerFrameBottomFrame">
-              <i class="fa-solid fa-folder-tree"></i>
-              <p class="small">V 4.0</p>
-            </div>
-            <div class="footerFrameBottomFrame">
-              <i class="fa-solid fa-copyright"></i>
-              <p class="small">2025</p>
-            </div>
-          </div>                
+          <div class="footerFrameSocial">
+            <!-- [whatsapp] -->
+            <a
+              href="https://wa.me/34618110583"
+              class="buttonSecondary buttonSecondary-100"
+              target="_blank"
+              title="Whatsapp"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+              <span class="toolTipText"
+                ><p class="small" data-key="toolTipTextThree"></p
+              ></span>
+            </a>
+            <!-- [linkedin] -->
+            <a
+              href="https://www.linkedin.com/in/alejandromorenoproductdesigner/"
+              class="buttonSecondary buttonSecondary-100"
+              target="_blank"
+              title="Linkedin"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+              <span class="toolTipText"
+                ><p class="small" data-key="toolTipTextFour"></p
+              ></span>
+            </a>
+            <!-- [medium] -->
+            <a
+              href="https://medium.com/@alejandromorenomartin1990"
+              class="buttonSecondary buttonSecondary-100"
+              target="_blank"
+              title="Medium"
+            >
+              <i class="fa-brands fa-medium"></i>
+              <span class="toolTipText"
+                ><p class="small" data-key="toolTipTextFive"></p
+              ></span>
+            </a>
+            <!-- [github] -->
+            <a
+              href="https://github.com/kakomoma"
+              class="buttonSecondary buttonSecondary-100"
+              target="_blank"
+              title="Github"
+            >
+              <i class="fa-brands fa-github"></i>
+              <span class="toolTipText"
+                ><p class="small" data-key="toolTipTextSix"></p
+              ></span>
+            </a>
+            <!-- [email] -->
+            <a
+              href="mailto:alejandromorenomartin1990@gmail.com"
+              class="buttonSecondary buttonSecondary-100"
+              target="_blank"
+              title="Email"
+            >
+              <i class="fa-solid fa-envelope"></i>
+              <span class="toolTipText"
+                ><p class="small" data-key="toolTipTextSeven"></p
+              ></span>
+            </a>
+          </div>
+        </div>
+        <div class="footerFrameBot">
+          <a href="index.html" class="buttonLink"
+            ><p class="smallBold">Index</p></a
+          >
+          <a href="vivaGym.html" class="buttonLink"
+            ><p class="smallBold">VivaGym</p></a
+          >
+          <a href="artisteo.html" class="buttonLink"
+            ><p class="smallBold">Artisteo</p></a
+          >
+          <a href="geomites.html" class="buttonLink"
+            ><p class="smallBold">Geomites</p></a
+          >
+          <a href="tarifas.html" class="buttonLink"
+            ><p class="smallBold">Freelance</p></a
+          >
+        </div>
+        <div class="footerFrameBot">
+          <div class="footerFrameBottomFrame">
+            <i class="fa-solid fa-circle-user"></i>
+            <p class="small">Alejandro Moreno</p>
+          </div>
+          <div class="footerFrameBottomFrame">
+            <i class="fa-solid fa-pen-nib"></i>
+            <p class="small">Figma</p>
+          </div>
+          <div class="footerFrameBottomFrame">
+            <i class="fa-solid fa-code"></i>
+            <p class="small">HTML, CSS3, JavaScript</p>
+          </div>
+          <div class="footerFrameBottomFrame">
+            <i class="fa-solid fa-folder-tree"></i>
+            <p class="small">V 4.0</p>
+          </div>
+          <div class="footerFrameBottomFrame">
+            <i class="fa-solid fa-copyright"></i>
+            <p class="small">2025</p>
+          </div>
+        </div>        
       </footer>
 
       <!-- [scroll to top] -->
@@ -1021,7 +1067,7 @@
             cx="50"
             cy="50"
             r="48"
-            stroke="#007BFF"
+            stroke="#FF9500"
             stroke-width="4"
             fill="none"
             stroke-linecap="round"
@@ -1041,72 +1087,7 @@
     <script
       src="https://kit.fontawesome.com/35d35eeb85.js"
       crossorigin="anonymous"
-    ></script>
-    <!-- [navContainer] -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const nav = document.querySelector(".navContainer");
-        if (!nav) return;
-
-        const onScroll = () => {
-          if (window.scrollY >= 64) {
-            nav.classList.add("scrolled");
-          } else {
-            nav.classList.remove("scrolled");
-          }
-        };        
-        onScroll();
-        window.addEventListener("scroll", onScroll);
-      });
-    </script>
-    <!-- [scroll to top] -->
-    <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const scrollBtn = document.getElementById("scrollToTop");
-    const progressCircle = document.getElementById("progressCircle");
-
-    if (!scrollBtn || !progressCircle) return;
-
-    const radius = 48; // 
-    const circumference = 2 * Math.PI * radius;
-
-    progressCircle.style.strokeDasharray = circumference;
-    progressCircle.style.strokeDashoffset = circumference;
-
-    function setProgress(percent) {
-      const offset = circumference - (percent / 100) * circumference;
-      progressCircle.style.strokeDashoffset = offset;
-    }
-
-    function updateScrollProgress() {
-      const scrollTop = window.scrollY || document.documentElement.scrollTop;
-      const docHeight =
-        document.documentElement.scrollHeight - window.innerHeight;
-
-      let scrollPercent = (scrollTop / docHeight) * 100;
-
-      if (scrollPercent > 99.5) scrollPercent = 100;
-
-      setProgress(scrollPercent);
-
-      if (scrollPercent > 5) {
-        scrollBtn.style.opacity = "1";
-        scrollBtn.style.pointerEvents = "auto";
-      } else {
-        scrollBtn.style.opacity = "0";
-        scrollBtn.style.pointerEvents = "none";
-      }
-    }
-
-    scrollBtn.addEventListener("click", () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-    
-    updateScrollProgress();
-
-    window.addEventListener("scroll", updateScrollProgress);
-  });
-    </script>
+    ></script>    
     <!-- [mainJs] -->
     <script src="/assets/js/main.js"></script>
   </body>

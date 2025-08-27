@@ -3,8 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
       MULTI-IDIOMA / TABLE OF CONTENT
   ================================= */
   const htmlElement = document.documentElement;
-  const langButtons = document.querySelectorAll(".langButton");
-  const activeLangClass = "active";
+  const langButton = document.querySelector(".langButton");
   let currentTranslations = {};
 
   async function loadTranslations(lang) {
@@ -30,6 +29,100 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  async function setLanguage(lang) {
+    localStorage.setItem("userLanguage", lang);
+    htmlElement.setAttribute("lang", lang);
+    await loadTranslations(lang);
+    applyTranslations();
+    generateTableOfContents();
+    console.log(`Idioma establecido: ${lang}`);
+  }
+
+  // Detectar idioma inicial
+  function detectInitialLanguage() {
+    const savedLang = localStorage.getItem("userLanguage");
+    if (savedLang) return savedLang;
+
+    const browserLang = navigator.language || navigator.userLanguage || "es";
+    return browserLang.startsWith("es") ? "es" : "en";
+  }
+
+  // Alternar idioma al pulsar el botón
+  langButton.addEventListener("click", () => {
+    const currentLang = htmlElement.getAttribute("lang") || "es";
+    const newLang = currentLang === "es" ? "en" : "es";
+    setLanguage(newLang);
+  });
+
+  // Inicialización
+  const initialLang = detectInitialLanguage();
+  setLanguage(initialLang);
+
+  // Efecto scroll
+  const nav = document.querySelector(".navContainer");
+        if (!nav) return;
+
+        const onScroll = () => {
+          if (window.scrollY >= 64) {
+            nav.classList.add("scrolled");
+          } else {
+            nav.classList.remove("scrolled");
+          }
+        };
+        onScroll();
+        window.addEventListener("scroll", onScroll);
+
+  /* ================================
+  BUTTON PROGRESS
+  ================================= */
+  const scrollBtn = document.getElementById("scrollToTop");
+        const progressCircle = document.getElementById("progressCircle");
+
+        if (!scrollBtn || !progressCircle) return;
+
+        const radius = 48; //
+        const circumference = 2 * Math.PI * radius;
+
+        progressCircle.style.strokeDasharray = circumference;
+        progressCircle.style.strokeDashoffset = circumference;
+
+        function setProgress(percent) {
+          const offset = circumference - (percent / 100) * circumference;
+          progressCircle.style.strokeDashoffset = offset;
+        }
+
+        function updateScrollProgress() {
+          const scrollTop =
+            window.scrollY || document.documentElement.scrollTop;
+          const docHeight =
+            document.documentElement.scrollHeight - window.innerHeight;
+
+          let scrollPercent = (scrollTop / docHeight) * 100;
+
+          if (scrollPercent > 99.5) scrollPercent = 100;
+
+          setProgress(scrollPercent);
+
+          if (scrollPercent > 5) {
+            scrollBtn.style.opacity = "1";
+            scrollBtn.style.pointerEvents = "auto";
+          } else {
+            scrollBtn.style.opacity = "0";
+            scrollBtn.style.pointerEvents = "none";
+          }
+        }
+
+        scrollBtn.addEventListener("click", () => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+        updateScrollProgress();
+
+        window.addEventListener("scroll", updateScrollProgress);
+
+  /* ================================
+      TABLE OF CONTENT (sin cambios)
+  ================================= */
   function generateTableOfContents() {
     const toc = document.getElementById("tableOfContents");
     if (!toc) return;
@@ -64,30 +157,6 @@ document.addEventListener("DOMContentLoaded", () => {
     enableSmoothScrollForTOC();
     highlightTOCOnScroll();
   }
-
-  async function setLanguage(lang) {
-    localStorage.setItem("userLanguage", lang);
-    htmlElement.setAttribute("lang", lang);
-    await loadTranslations(lang);
-    applyTranslations();
-    generateTableOfContents();
-
-    langButtons.forEach((btn) => {
-      btn.classList.remove(activeLangClass);
-      if (btn.dataset.lang === lang) btn.classList.add(activeLangClass);
-    });
-
-    console.log(`Idioma establecido: ${lang}`);
-  }
-
-  const savedLang = localStorage.getItem("userLanguage") || "es";
-  setLanguage(savedLang);
-
-  langButtons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      setLanguage(btn.dataset.lang);
-    });
-  });
 
   function enableSmoothScrollForTOC() {
     const offset = 96;
@@ -279,51 +348,33 @@ document.addEventListener("DOMContentLoaded", () => {
       { threshold: 0.5 }
     );
     heroObserver.observe(heroSection);
-  }  
-});
-
-/* ================================
-    BUTTON PANNEL (scroll control)
-  ================================= */
-/* ================================
-  BUTTON PANNEL (scroll control)
-================================= */
-document.addEventListener("DOMContentLoaded", () => {
-  const buttonPannel = document.querySelector(".buttonPannel");
-  const mainSections = document.querySelectorAll(
-    ".mainContainerSections section"
-  );
-
-  if (buttonPannel && mainSections.length > 2) {
-    const firstSection = mainSections[0];
-    const lastSection = mainSections[mainSections.length - 1];
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          // Hide the button panel if the first section is in view
-          if (entry.target === firstSection && entry.isIntersecting) {
-            buttonPannel.classList.remove("visible");
-          }
-          // Show the button panel if the first section is out of view
-          if (entry.target === firstSection && !entry.isIntersecting) {
-            buttonPannel.classList.add("visible");
-          }
-          // Hide the button panel if the last section is in view
-          if (entry.target === lastSection && entry.isIntersecting) {
-            buttonPannel.classList.remove("visible");
-          }
-        });
-      },
-      {
-        rootMargin: "0px",
-        threshold: 0.1,
-      }
-    );
-
-    observer.observe(firstSection);
-    observer.observe(lastSection);
   }
+
+  /* ================================
+  BUTTON PANNEL (scroll control)
+  ================================= */
+  const buttonPannel = document.querySelector(".buttonPannel");
+  if (!buttonPannel) return;
+
+  function toggleButtonPanel() {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    const windowHeight = window.innerHeight;
+    const docHeight = document.documentElement.scrollHeight;
+
+    const distanceFromBottom = docHeight - (scrollTop + windowHeight);
+
+    if (scrollTop > 1000 && distanceFromBottom > 1000) {
+      // Usuario a más de 2000px del top y a más de 2000px del bottom → mostrar
+      buttonPannel.classList.add("visible");
+    } else {
+      // Usuario muy arriba o muy abajo → ocultar
+      buttonPannel.classList.remove("visible");
+    }
+  }
+
+  // Ejecutar en scroll y al cargar
+  window.addEventListener("scroll", toggleButtonPanel);
+  toggleButtonPanel();
 });
 
 /* ================================

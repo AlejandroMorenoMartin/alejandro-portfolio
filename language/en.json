@@ -28,10 +28,10 @@
   "cardFreelanceElevaTools":"Figma - WordPress - Elementor",
   "cardFreelanceElevaDescription":"Website design and development for an online training company, with a modular structure and functional approach.",
 
-  "myHistorySectionTitle":"My history.",
-  "myHistoryOne":"I have always been curious about how things work and how they can be improved. I started my professional career in marketing and soon discovered product design, a field where I could combine <b>creativity, empathy, and problem-solving</b>.",
-  "myHistoryTwo":"My training as a designer was a self-taught and ongoing process. Through courses, books, and personal projects, I understood the importance of <b>designing based on people's real needs</b>. I discovered that a good product should not only look good, but also be clear, accessible, and useful.",  
-  "myHistoryFour":"Designing is about improving people's lives. Each project is an opportunity to add value, learn from practice, and <b>get closer to people's lives</b>.",  
+  "myHistorySectionTitle":"My history.",  
+  "myHistoryOne": "I've always been curious about how things work and how they can be improved. I started my professional journey in marketing and soon discovered product design—a field where I could combine <b>creativity, empathy, and problem-solving</b>.",
+  "myHistoryTwo": "Training as a designer is a continuous process that I enjoy every day. I understood the importance of <b>designing from real needs</b>. I discovered that a good product shouldn't just look good, but also be clear, accessible, and useful.",
+  "myHistoryFour": "Design is making intelligence visible. Every project is an opportunity to add value, learn through practice, and <b>connect with people's lives</b>.", 
 
   "articlesSectionTitle":"Articles.",
   "articlesSectionButton":"View profile on Medium",
@@ -339,7 +339,7 @@
   "artisteoOtherProjectsSectionTitle":"Other Projects.",
   "artisteoOtherProjectsSectionDescription":"<b>Artisteo</b> is a project where I applied strategic design and a user-centered approach to solve real challenges in the music industry. Feel free to explore <b>other projects</b> I have worked on as well.",
   
-  "vivagymReadingTime":"20 min read",
+  "vivagymReadingTime":"24 min read",
   "vivagymInfoDescriptionOne":"Product Designer.",
   "vivagymInfoDescriptionTwo":"August, 2025.",
   "vivagymInfoDescriptionThree":"Internal and external research, problem definition, solution proposals, and prototype design.",
@@ -456,7 +456,7 @@
   "cardPricesThreeThirdIncluded":"UX/UI strategy to boost conversions",
   "cardPricesThreeFourthIncluded":"3 months of technical support included",
   "cardPricesRecommended":"Recommended",
-  "pricesFAQsTitle":"Missed something?",
+  "pricesFAQsTitle":"Frequently asked questions",
   "pricesFAQsDescription":"I'll answer some of the most common questions that people I work with often have.",
   "cardFAQsTitleOne":"What if I'm not a tech expert?",
   "cardFAQsDescriptionOne":"I'll handle the entire process and deliver a website that's easy to manage. Plus, I'll teach you what you need to be independent in its use.",
@@ -479,5 +479,16 @@
 
   "buttonPannelPreviousTitle":"Previous project",
   "buttonPanneCurrentlTitle":"Current project",
-  "buttonPannelNextTitle":"Next project"
+  "buttonPannelNextTitle":"Next project",
+
+  "toolTipTextOne":"Change theme",
+  "toolTipTextTwo":"Change language",
+  "toolTipTextThree":"Send me a WhatsApp",
+  "toolTipTextFour":"Visit my LinkedIn profile",
+  "toolTipTextFive":"Visit my Medium profile",
+  "toolTipTextSix":"Visit my Github profile",
+  "toolTipTextSeven":"Send me an email",
+  "toolTipTextEight":"Back to top",
+
+  "buttonLanguage":"En"
 }

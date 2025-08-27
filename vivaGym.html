@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="light">
+<html lang="es" data-theme="dark">
   <head>
     <!-- Theme + Color Scheme -->
-    <meta name="color-scheme" content="light dark" />
+    <meta name="color-scheme" content="dark light" />
     <meta
       name="theme-color"
       content="#ffffff"
@@ -129,45 +129,40 @@
     <main class="mainContainer">
       <!-- [header] -->
       <nav class="navContainer">
-        <a class="button200" href="index.html">
-          <svg
-            width="48"
-            height="48"
-            viewBox="0 0 48 48"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M24.1754 33.2656H8.92587L4.5 41.0646H28.9519L24.1754 33.2656Z"
-              class="logoBlue"
-            />
-            <path
-              d="M22.8168 6.9375L11.6426 28.6214H21.2393L23.0359 23.7075H24.5696L34.3854 40.9284H43.5001L24.3505 6.9375H22.8168Z"
-              class="logoTheme"
-            />
-          </svg>
-        </a>
+        <div class="navContainerIcon">
+          <a class="buttonLogo" href="index.html">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24.1754 33.2656H8.92587L4.5 41.0646H28.9519L24.1754 33.2656Z"
+              />
+              <path
+                d="M22.8168 6.9375L11.6426 28.6214H21.2393L23.0359 23.7075H24.5696L34.3854 40.9284H43.5001L24.3505 6.9375H22.8168Z"
+              />
+            </svg>
+          </a>
+        </div>
         <div class="navContainerswitchers">
           <!-- [theme] -->
-          <div class="themeSwitcher">
-            <button
-              id="themeToggle"
-              class="button100 themeButton"
-              aria-label="Cambiar tema"
-            >
-              <i class="fa-solid fa-moon"></i>
-            </button>
-          </div>
+          <button
+            id="themeToggle"
+            aria-label="Cambiar tema"
+            class="buttonSecondary buttonSecondary-100"
+          >
+            <i class="fa-solid fa-moon"></i>
+            <span class="toolTipText"
+              ><p class="small" data-key="toolTipTextOne"></p
+            ></span>
+          </button>
           <!-- [language] -->
-          <div class="languageSwitcher">
-            <button class="button100 langButton active" data-lang="es">
-              <p class="regularBold">Es</p>
-            </button>
-            <p class="regularBold">|</p>
-            <button class="button100 langButton" data-lang="en">
-              <p class="regularBold">En</p>
-            </button>
-          </div>
+          <button
+            class="buttonSecondary buttonSecondary-100 langButton"
+            data-lang="es"
+          >
+            <p class="smallBold">Es</p>
+            <span class="toolTipText"
+              ><p class="small" data-key="toolTipTextTwo"></p
+            ></span>
+          </button>
         </div>
       </nav>
 
@@ -176,7 +171,7 @@
 
       <!-- [buttonPannel] -->
       <div class="buttonPannel">
-        <a class="buttonPannelButton" href="geomites.html">
+        <a class="buttonSecondary" href="geomites.html">
           <i class="fa-solid fa-chevron-left"></i>
           <div class="buttonPannelButtonFrame">
             <p class="small" data-key="buttonPannelPreviousTitle"></p>
@@ -187,7 +182,7 @@
           <p class="small" data-key="buttonPanneCurrentlTitle"></p>
           <p class="smallBold">VivaGym</p>
         </div>
-        <a class="buttonPannelButton" href="artisteo.html">
+        <a class="buttonSecondary" href="artisteo.html">
           <div class="buttonPannelButtonFrame">
             <p class="small" data-key="buttonPannelNextTitle"></p>
             <p class="smallBold">Artisteo</p>
@@ -609,10 +604,10 @@
                 <a
                   target="_blank"
                   href="https://docs.google.com/forms/d/e/1FAIpQLSfkiT-ALuyr88um9lhe0WqLBhsUHCWY2x35BsUfWsyXI9O_qA/viewform"
-                  class="button300"
+                  class="buttonSecondary"
                 >
                   <p class="small" data-key="buttonExternalVivagymTitleOne"></p>
-                  <i class="fa-solid fa-arrow-right"></i>
+                  <i class="fa-solid fa-arrow-right external"></i>
                 </a>
               </div>
               <p
@@ -633,10 +628,27 @@
                 ></p>
               </div>
               <div class="graphContainer">
-                <img
-                  src="assets/images/projects/vivaGym/graphOne.png"
-                  alt="graphImage"
-                />
+                <svg
+                  width="187"
+                  height="187"
+                  viewBox="0 0 187 187"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M186.736 93.5182C186.736 110.679 181.991 127.506 173.024 142.139C164.058 156.771 151.22 168.638 135.929 176.429C120.639 184.22 103.492 187.631 86.3842 186.285C69.2764 184.938 52.8742 178.887 38.9908 168.8C25.1075 158.713 14.284 144.983 7.71689 129.128C1.14977 113.273 -0.905123 95.9113 1.7794 78.9615C4.46393 62.0117 11.7833 46.1343 22.9283 33.0849C34.0733 20.0355 48.6097 10.3223 64.9305 5.0192L93.6849 93.5182H186.736Z"
+                    class="graphRed"
+                  />
+                  <path
+                    d="M169.592 41.0555C180.338 55.8073 186.139 73.5825 186.162 91.8335L99.7391 91.9432L169.592 41.0555Z"
+                    class="graphGreen"
+                  />
+                  <path
+                    d="M67.3012 4.82502C85.7002 -1.14288 105.516 -1.13282 123.909 4.85376C142.302 10.8404 158.327 22.4961 169.688 38.1505L95.5598 91.9505L67.3012 4.82502Z"
+                    class="graphYellow"
+                  />
+                </svg>
+
                 <div class="graphContainerLeyend">
                   <div class="graphContainerLeyendFrame">
                     <div class="graphContainerLeyendFrameElipse red"></div>
@@ -703,10 +715,27 @@
                 ></p>
               </div>
               <div class="graphContainer">
-                <img
-                  src="assets/images/projects/vivaGym/graphTwo.png"
-                  alt="graphImage"
-                />
+                <svg
+                  width="187"
+                  height="187"
+                  viewBox="0 0 187 187"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M186.995 93.4089C186.995 113.06 180.774 132.206 169.224 148.104C157.673 164.002 141.387 175.835 122.698 181.908C104.009 187.98 83.878 187.98 65.1893 181.908C46.5006 175.835 30.214 164.002 18.6638 148.104C7.11351 132.206 0.892576 113.06 0.892578 93.4089C0.89258 73.7579 7.11351 54.6114 18.6638 38.7134C30.214 22.8155 46.5006 10.9823 65.1894 4.90982C83.8781 -1.16265 104.009 -1.16265 122.698 4.90983L93.9437 93.4089H186.995Z"
+                    class="graphRed"
+                  />
+                  <path
+                    d="M169.562 39.3638C180.588 54.5002 186.54 72.7389 186.563 91.4658L97.8874 91.5783L169.562 39.3638Z"
+                    class="graphGreen"
+                  />
+                  <path
+                    d="M123.958 5.21925C141.934 10.974 157.627 22.272 168.787 37.4939L96.7056 90.3424L123.958 5.21925Z"
+                    class="graphYellow"
+                  />
+                </svg>
+
                 <div class="graphContainerLeyend">
                   <div class="graphContainerLeyendFrame">
                     <div class="graphContainerLeyendFrameElipse red"></div>
@@ -773,10 +802,27 @@
                 ></p>
               </div>
               <div class="graphContainer">
-                <img
-                  src="assets/images/projects/vivaGym/graphThree.png"
-                  alt="graphImage"
-                />
+                <svg
+                  width="187"
+                  height="187"
+                  viewBox="0 0 187 187"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M186.845 93.9557C186.845 113.607 180.625 132.753 169.074 148.651C157.524 164.549 141.237 176.382 122.549 182.455C103.86 188.527 83.7286 188.527 65.0399 182.455C46.3512 176.382 30.0646 164.549 18.5143 148.651C6.96409 132.753 0.743162 113.607 0.743164 93.9557C0.743166 74.3048 6.9641 55.1583 18.5144 39.2603C30.0646 23.3624 46.3512 11.5292 65.0399 5.4567C83.7286 -0.615777 103.86 -0.615774 122.549 5.45671L93.7943 93.9557H186.845Z"
+                    class="graphRed"
+                  />
+                  <path
+                    d="M168.495 40.3858C179.404 55.3622 185.293 73.4081 185.316 91.937L97.5778 92.0484L168.495 40.3858Z"
+                    class="graphGreen"
+                  />
+                  <path
+                    d="M123.519 5.71649C141.377 11.4335 156.967 22.6573 168.054 37.7793L96.4455 90.2809L123.519 5.71649Z"
+                    class="graphYellow"
+                  />
+                </svg>
+
                 <div class="graphContainerLeyend">
                   <div class="graphContainerLeyendFrame">
                     <div class="graphContainerLeyendFrameElipse red"></div>
@@ -859,12 +905,12 @@
                     data-key="geomitesGameTwoInfoDescriptionOne"
                   ></p>
                   <div class="improveFrameSmall">
-                  <i class="fa-solid fa-hand-point-right"></i>
-                  <p
-                    class="small"
-                    data-key="vivagymMarketFirstSuggestion"
-                  ></p>
-                </div>
+                    <i class="fa-solid fa-hand-point-right"></i>
+                    <p
+                      class="small"
+                      data-key="vivagymMarketFirstSuggestion"
+                    ></p>
+                  </div>
                 </div>
               </div>
               <div class="subSectionOneRowColumn">
@@ -883,12 +929,12 @@
                     data-key="geomitesGameTwoInfoDescriptionTwo"
                   ></p>
                   <div class="improveFrameSmall">
-                  <i class="fa-solid fa-hand-point-right"></i>
-                  <p
-                    class="small"
-                    data-key="vivagymMarketSecondSuggestion"
-                  ></p>
-                </div>
+                    <i class="fa-solid fa-hand-point-right"></i>
+                    <p
+                      class="small"
+                      data-key="vivagymMarketSecondSuggestion"
+                    ></p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1331,28 +1377,74 @@
           <div class="indexSection">
             <div class="sectionHeaderFrame">
               <p class="regularBold" data-key="vivaGymUserFlowsFirstTitle"></p>
-              <p class="regular" data-key="vivaGymUserFlowsFirstDescription"></p>
+              <p
+                class="regular"
+                data-key="vivaGymUserFlowsFirstDescription"
+              ></p>
             </div>
             <div class="gridFive">
-              <img src="assets/images/projects/vivaGym/userFlowFirstFlowFirstImage.png" alt="userFlowImage" class="userFlowImage">
-              <img src="assets/images/projects/vivaGym/userFlowFirstFlowFirstImage.png" alt="userFlowImage" class="userFlowImage">
-              <img src="assets/images/projects/vivaGym/userFlowFirstFlowFirstImage.png" alt="userFlowImage" class="userFlowImage">
-              <img src="assets/images/projects/vivaGym/userFlowFirstFlowFirstImage.png" alt="userFlowImage" class="userFlowImage">
-              <img src="assets/images/projects/vivaGym/userFlowFirstFlowFirstImage.png" alt="userFlowImage" class="userFlowImage">
+              <img
+                src="assets/images/projects/vivaGym/userFlowFirstFlowFirstImage.png"
+                alt="userFlowImage"
+                class="userFlowImage"
+              />
+              <img
+                src="assets/images/projects/vivaGym/userFlowFirstFlowFirstImage.png"
+                alt="userFlowImage"
+                class="userFlowImage"
+              />
+              <img
+                src="assets/images/projects/vivaGym/userFlowFirstFlowFirstImage.png"
+                alt="userFlowImage"
+                class="userFlowImage"
+              />
+              <img
+                src="assets/images/projects/vivaGym/userFlowFirstFlowFirstImage.png"
+                alt="userFlowImage"
+                class="userFlowImage"
+              />
+              <img
+                src="assets/images/projects/vivaGym/userFlowFirstFlowFirstImage.png"
+                alt="userFlowImage"
+                class="userFlowImage"
+              />
             </div>
           </div>
           <!-- [flowTwo] -->
           <div class="indexSection">
             <div class="sectionHeaderFrame">
               <p class="regularBold" data-key="vivaGymUserFlowsSecondTitle"></p>
-              <p class="regular" data-key="vivaGymUserFlowsSecondDescription"></p>
+              <p
+                class="regular"
+                data-key="vivaGymUserFlowsSecondDescription"
+              ></p>
             </div>
             <div class="gridFive">
-              <img src="assets/images/projects/vivaGym/userFlowFirstFlowFirstImage.png" alt="userFlowImage" class="userFlowImage">
-              <img src="assets/images/projects/vivaGym/userFlowFirstFlowFirstImage.png" alt="userFlowImage" class="userFlowImage">
-              <img src="assets/images/projects/vivaGym/userFlowFirstFlowFirstImage.png" alt="userFlowImage" class="userFlowImage">
-              <img src="assets/images/projects/vivaGym/userFlowFirstFlowFirstImage.png" alt="userFlowImage" class="userFlowImage">
-              <img src="assets/images/projects/vivaGym/userFlowFirstFlowFirstImage.png" alt="userFlowImage" class="userFlowImage">
+              <img
+                src="assets/images/projects/vivaGym/userFlowFirstFlowFirstImage.png"
+                alt="userFlowImage"
+                class="userFlowImage"
+              />
+              <img
+                src="assets/images/projects/vivaGym/userFlowFirstFlowFirstImage.png"
+                alt="userFlowImage"
+                class="userFlowImage"
+              />
+              <img
+                src="assets/images/projects/vivaGym/userFlowFirstFlowFirstImage.png"
+                alt="userFlowImage"
+                class="userFlowImage"
+              />
+              <img
+                src="assets/images/projects/vivaGym/userFlowFirstFlowFirstImage.png"
+                alt="userFlowImage"
+                class="userFlowImage"
+              />
+              <img
+                src="assets/images/projects/vivaGym/userFlowFirstFlowFirstImage.png"
+                alt="userFlowImage"
+                class="userFlowImage"
+              />
             </div>
           </div>
         </section>
@@ -1442,7 +1534,17 @@
 
       <!-- [footer] -->
       <footer>
-        <div class="footerFrameLeft">
+        <div class="footerFrameTop">
+          <a class="buttonLogo" href="index.html">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24.1754 33.2656H8.92587L4.5 41.0646H28.9519L24.1754 33.2656Z"
+              />
+              <path
+                d="M22.8168 6.9375L11.6426 28.6214H21.2393L23.0359 23.7075H24.5696L34.3854 40.9284H43.5001L24.3505 6.9375H22.8168Z"
+              />
+            </svg>
+          </a>
           <div class="footerFrameMessage">
             <p class="regularBold" data-key="footerTitle"></p>
             <p class="regular" data-key="footerDescription"></p>
@@ -1451,46 +1553,83 @@
             <!-- [whatsapp] -->
             <a
               href="https://wa.me/34618110583"
-              class="button100"
+              class="buttonSecondary buttonSecondary-100"
               target="_blank"
+              title="Whatsapp"
             >
               <i class="fa-brands fa-whatsapp"></i>
+              <span class="toolTipText"
+                ><p class="small" data-key="toolTipTextThree"></p
+              ></span>
             </a>
             <!-- [linkedin] -->
             <a
               href="https://www.linkedin.com/in/alejandromorenoproductdesigner/"
-              class="button100"
+              class="buttonSecondary buttonSecondary-100"
               target="_blank"
+              title="Linkedin"
             >
               <i class="fa-brands fa-linkedin-in"></i>
+              <span class="toolTipText"
+                ><p class="small" data-key="toolTipTextFour"></p
+              ></span>
             </a>
             <!-- [medium] -->
             <a
               href="https://medium.com/@alejandromorenomartin1990"
-              class="button100"
+              class="buttonSecondary buttonSecondary-100"
               target="_blank"
+              title="Medium"
             >
               <i class="fa-brands fa-medium"></i>
+              <span class="toolTipText"
+                ><p class="small" data-key="toolTipTextFive"></p
+              ></span>
             </a>
             <!-- [github] -->
             <a
               href="https://github.com/kakomoma"
-              class="button100"
+              class="buttonSecondary buttonSecondary-100"
               target="_blank"
+              title="Github"
             >
               <i class="fa-brands fa-github"></i>
+              <span class="toolTipText"
+                ><p class="small" data-key="toolTipTextSix"></p
+              ></span>
             </a>
             <!-- [email] -->
             <a
               href="mailto:alejandromorenomartin1990@gmail.com"
-              class="button100"
+              class="buttonSecondary buttonSecondary-100"
               target="_blank"
+              title="Email"
             >
               <i class="fa-solid fa-envelope"></i>
+              <span class="toolTipText"
+                ><p class="small" data-key="toolTipTextSeven"></p
+              ></span>
             </a>
           </div>
         </div>
-        <div class="footerFrameLeft">
+        <div class="footerFrameBot">
+          <a href="index.html" class="buttonLink"
+            ><p class="smallBold">Index</p></a
+          >
+          <a href="vivaGym.html" class="buttonLink"
+            ><p class="smallBold">VivaGym</p></a
+          >
+          <a href="artisteo.html" class="buttonLink"
+            ><p class="smallBold">Artisteo</p></a
+          >
+          <a href="geomites.html" class="buttonLink"
+            ><p class="smallBold">Geomites</p></a
+          >
+          <a href="tarifas.html" class="buttonLink"
+            ><p class="smallBold">Freelance</p></a
+          >
+        </div>
+        <div class="footerFrameBot">
           <div class="footerFrameBottomFrame">
             <i class="fa-solid fa-circle-user"></i>
             <p class="small">Alejandro Moreno</p>
@@ -1511,7 +1650,7 @@
             <i class="fa-solid fa-copyright"></i>
             <p class="small">2025</p>
           </div>
-        </div>
+        </div>        
       </footer>
 
       <!-- [scroll to top] -->
@@ -1536,7 +1675,7 @@
             cx="50"
             cy="50"
             r="48"
-            stroke="#007BFF"
+            stroke="#FF9500"
             stroke-width="4"
             fill="none"
             stroke-linecap="round"
@@ -1556,73 +1695,7 @@
     <script
       src="https://kit.fontawesome.com/35d35eeb85.js"
       crossorigin="anonymous"
-    ></script>
-    <!-- [navContainer] -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const nav = document.querySelector(".navContainer");
-        if (!nav) return;
-
-        const onScroll = () => {
-          if (window.scrollY >= 64) {
-            nav.classList.add("scrolled");
-          } else {
-            nav.classList.remove("scrolled");
-          }
-        };
-        onScroll();
-        window.addEventListener("scroll", onScroll);
-      });
-    </script>
-    <!-- [scroll to top] -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const scrollBtn = document.getElementById("scrollToTop");
-        const progressCircle = document.getElementById("progressCircle");
-
-        if (!scrollBtn || !progressCircle) return;
-
-        const radius = 48; //
-        const circumference = 2 * Math.PI * radius;
-
-        progressCircle.style.strokeDasharray = circumference;
-        progressCircle.style.strokeDashoffset = circumference;
-
-        function setProgress(percent) {
-          const offset = circumference - (percent / 100) * circumference;
-          progressCircle.style.strokeDashoffset = offset;
-        }
-
-        function updateScrollProgress() {
-          const scrollTop =
-            window.scrollY || document.documentElement.scrollTop;
-          const docHeight =
-            document.documentElement.scrollHeight - window.innerHeight;
-
-          let scrollPercent = (scrollTop / docHeight) * 100;
-
-          if (scrollPercent > 99.5) scrollPercent = 100;
-
-          setProgress(scrollPercent);
-
-          if (scrollPercent > 5) {
-            scrollBtn.style.opacity = "1";
-            scrollBtn.style.pointerEvents = "auto";
-          } else {
-            scrollBtn.style.opacity = "0";
-            scrollBtn.style.pointerEvents = "none";
-          }
-        }
-
-        scrollBtn.addEventListener("click", () => {
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        });
-
-        updateScrollProgress();
-
-        window.addEventListener("scroll", updateScrollProgress);
-      });
-    </script>
+    ></script>    
     <!-- [mainJs] -->
     <script src="/assets/js/main.js"></script>
   </body>

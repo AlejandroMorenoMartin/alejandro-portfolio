@@ -30,8 +30,8 @@
 
   "myHistorySectionTitle":"Mi historia.",
   "myHistoryOne":"Siempre he sentido curiosidad por cómo funcionan las cosas y cómo se pueden mejorar. Empecé mi camino profesional desde el marketing y pronto descubri el diseño de producto, un campo donde pude unir <b>creatividad, empatía y resolución de problemas</b>.",
-  "myHistoryTwo":"Formarme como diseñador fue un proceso autodidacta y constante. A través de cursos, libros y proyectos personales, entendí la importancia de <b>diseñar desde las necesidades reales</b>. Descubrí que un buen producto no sólo debe verse bien, sino también ser claro, accesible y útil.",  
-  "myHistoryFour":"Diseñar es mejorar la vida de las personas. Cada proyecto es una oportunidad para aportar valor, aprender desde la práctica y <b>acercarte a la vida de las personas</b>.",  
+  "myHistoryTwo":"Formarme como diseñador es un proceso constante y que disfruto cada día. Entendí la importancia de <b>diseñar desde las necesidades reales</b>. Descubrí que un buen producto no sólo debe verse bien, sino también ser claro, accesible y útil.",  
+  "myHistoryFour":"Diseñar es hacer visible lo inteligente. Cada proyecto es una oportunidad para aportar valor, aprender desde la práctica y <b>acercarte a la vida de las personas</b>.",  
 
   "articlesSectionTitle":"Artículos.",
   "articlesSectionButton":"Ver perfil en Medium",
@@ -340,7 +340,7 @@
   "artisteoOtherProjectsSectionTitle":"Otros proyectos.",
   "artisteoOtherProjectsSectionDescription":"<b>Artisteo</b> es un proyecto donde apliqué diseño estratégico y un enfoque centrado en el usuario para resolver retos reales del sector musical. Si quieres, explora también <b>otros proyectos</b> en los que he trabajado.",
   
-  "vivagymReadingTime":"20 min de lectura",
+  "vivagymReadingTime":"24 min de lectura",
   "vivagymInfoDescriptionOne":"Diseñador de producto.",
   "vivagymInfoDescriptionTwo":"Agosto, 2025.",
   "vivagymInfoDescriptionThree":"Investigación interna y externa, definición de problemas, propuesta de soluciones y diseño de prototipos.",
@@ -493,7 +493,7 @@
   "cardPricesThreeThirdIncluded":"Estrategia UX/UI para potenciar conversiones",
   "cardPricesThreeFourthIncluded":"3 meses de soporte técnico incluido",
   "cardPricesRecommended":"Recomendada",
-  "pricesFAQsTitle":"¿Te has perdido algo?",
+  "pricesFAQsTitle":"Preguntas frecuentes",
   "pricesFAQsDescription":"Te respondo algunas de las <b>preguntas</b> más <b>comunes</b> que suelen tener las personas con las que trabajo.",
   "cardFAQsTitleOne":"¿Y si no tengo conocimientos técnicos?",
   "cardFAQsDescriptionOne":"Me encargo de todo el proceso y te entrego una web fácil de gestionar. Además, te explico lo necesario para que seas independiente en su uso.", 
@@ -516,7 +516,18 @@
 
   "buttonPannelPreviousTitle":"Proyecto anterior",
   "buttonPanneCurrentlTitle":"Proyecto actual",
-  "buttonPannelNextTitle":"Proyecto siguiente"
+  "buttonPannelNextTitle":"Proyecto siguiente",
+
+  "toolTipTextOne":"Cambiar tema",
+  "toolTipTextTwo":"Cambiar idioma",
+  "toolTipTextThree":"Envíame un Whatsapp",
+  "toolTipTextFour":"Visita mi perfil de Linkedin",
+  "toolTipTextFive":"Visita mi perfil de Medium",
+  "toolTipTextSix":"Visita mi perfil de Github",
+  "toolTipTextSeven":"Envíame un email",
+  "toolTipTextEight":"Volver a arriba",
+
+  "buttonLanguage":"Es"
 }
 
 

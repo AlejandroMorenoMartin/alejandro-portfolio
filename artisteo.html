@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="light">
+<html lang="es" data-theme="dark">
   <head>
     <!-- Theme + Color Scheme -->
-    <meta name="color-scheme" content="light dark" />
+    <meta name="color-scheme" content="dark light" />
     <meta
       name="theme-color"
       content="#ffffff"
@@ -132,45 +132,40 @@
     <main class="mainContainer">
       <!-- [header] -->
       <nav class="navContainer">
-        <a class="button200" href="index.html">
-          <svg
-            width="48"
-            height="48"
-            viewBox="0 0 48 48"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M24.1754 33.2656H8.92587L4.5 41.0646H28.9519L24.1754 33.2656Z"
-              class="logoBlue"
-            />
-            <path
-              d="M22.8168 6.9375L11.6426 28.6214H21.2393L23.0359 23.7075H24.5696L34.3854 40.9284H43.5001L24.3505 6.9375H22.8168Z"
-              class="logoTheme"
-            />
-          </svg>
-        </a>
+        <div class="navContainerIcon">
+          <a class="buttonLogo" href="index.html">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24.1754 33.2656H8.92587L4.5 41.0646H28.9519L24.1754 33.2656Z"
+              />
+              <path
+                d="M22.8168 6.9375L11.6426 28.6214H21.2393L23.0359 23.7075H24.5696L34.3854 40.9284H43.5001L24.3505 6.9375H22.8168Z"
+              />
+            </svg>
+          </a>
+        </div>
         <div class="navContainerswitchers">
           <!-- [theme] -->
-          <div class="themeSwitcher">
-            <button
-              id="themeToggle"
-              class="button100 themeButton"
-              aria-label="Cambiar tema"
-            >
-              <i class="fa-solid fa-moon"></i>
-            </button>
-          </div>
+          <button
+            id="themeToggle"
+            aria-label="Cambiar tema"
+            class="buttonSecondary buttonSecondary-100"
+          >
+            <i class="fa-solid fa-moon"></i>
+            <span class="toolTipText"
+              ><p class="small" data-key="toolTipTextOne"></p
+            ></span>
+          </button>
           <!-- [language] -->
-          <div class="languageSwitcher">
-            <button class="button100 langButton active" data-lang="es">
-              <p class="regularBold">Es</p>
-            </button>
-            <p class="regularBold">|</p>
-            <button class="button100 langButton" data-lang="en">
-              <p class="regularBold">En</p>
-            </button>
-          </div>
+          <button
+            class="buttonSecondary buttonSecondary-100 langButton"
+            data-lang="es"
+          >
+            <p class="smallBold">Es</p>
+            <span class="toolTipText"
+              ><p class="small" data-key="toolTipTextTwo"></p
+            ></span>
+          </button>
         </div>
       </nav>
 
@@ -179,7 +174,7 @@
 
       <!-- [buttonPannel] -->
       <div class="buttonPannel">
-        <a class="buttonPannelButton" href="vivaGym.html">
+        <a class="buttonSecondary" href="vivaGym.html">
           <i class="fa-solid fa-chevron-left"></i>
           <div class="buttonPannelButtonFrame">
             <p class="small" data-key="buttonPannelPreviousTitle"></p>
@@ -190,7 +185,7 @@
           <p class="small" data-key="buttonPanneCurrentlTitle"></p>
           <p class="smallBold">Artisteo</p>
         </div>
-        <a class="buttonPannelButton" href="geomites.html">
+        <a class="buttonSecondary" href="geomites.html">
           <div class="buttonPannelButtonFrame">
             <p class="small" data-key="buttonPannelNextTitle"></p>
             <p class="smallBold">Geomites</p>
@@ -425,7 +420,7 @@
               <h4 data-key="artisteoUserResearchTitle"></h4>
               <p class="regular" data-key="artisteoUserResearchDescription"></p>
             </div>
-            <div class="indexSubSection">
+            <div class="indexSectionFrame">
               <!-- [userOne] -->
               <div class="userResearchCard">
                 <div class="userResearchCardTitle">
@@ -502,7 +497,7 @@
             ></p>
           </div>
           <!-- [decisionOne] -->
-          <div class="indexSubSection">
+          <div class="indexSectionFrame">
             <div class="cardDesignDecision">
               <div class="cardDesignDecisionFirstFrame">
                 <p
@@ -538,7 +533,7 @@
             />
           </div>
           <!-- [decisionTwo] -->
-          <div class="indexSubSection">
+          <div class="indexSectionFrame">
             <div class="cardDesignDecision">
               <div class="cardDesignDecisionFirstFrame">
                 <p
@@ -574,7 +569,7 @@
             />
           </div>
           <!-- [decisionThree] -->
-          <div class="indexSubSection">
+          <div class="indexSectionFrame">
             <div class="cardDesignDecision">
               <div class="cardDesignDecisionFirstFrame">
                 <p
@@ -610,7 +605,7 @@
             />
           </div>
           <!-- [decisionFour] -->
-          <div class="indexSubSection">
+          <div class="indexSectionFrame">
             <div class="cardDesignDecision">
               <div class="cardDesignDecisionFirstFrame">
                 <p
@@ -765,111 +760,238 @@
               ></p>
             </div>
             <div class="gridThree">
-              <img
+              <svg
                 class="artisteoIcon"
-                src="assets/images/projects/artisteo/accessibility.webp"
-                alt="artisteoIcon"
-              />
-              <img
+                viewBox="0 0 36 37"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.1842 17.5495H17.1316V10.6022H18.8684V17.5495H25.8158V19.2864H18.8684V26.2338H17.1316V19.2864H10.1842V17.5495ZM18 1.91797C22.3761 1.91797 26.5729 3.65636 29.6673 6.75071C32.7616 9.84506 34.5 14.0419 34.5 18.418C34.5 22.794 32.7616 26.9909 29.6673 30.0852C26.5729 33.1796 22.3761 34.918 18 34.918C13.6239 34.918 9.42709 33.1796 6.33274 30.0852C3.23839 26.9909 1.5 22.794 1.5 18.418C1.5 14.0419 3.23839 9.84506 6.33274 6.75071C9.42709 3.65636 13.6239 1.91797 18 1.91797ZM18 3.65481C14.0846 3.65481 10.3295 5.21021 7.56087 7.97884C4.79224 10.7475 3.23684 14.5025 3.23684 18.418C3.23684 22.3334 4.79224 26.0885 7.56087 28.8571C10.3295 31.6257 14.0846 33.1811 18 33.1811C19.9387 33.1811 21.8585 32.7993 23.6496 32.0573C25.4408 31.3154 27.0682 30.228 28.4391 28.8571C29.81 27.4862 30.8975 25.8587 31.6394 24.0676C32.3813 22.2764 32.7632 20.3567 32.7632 18.418C32.7632 14.5025 31.2078 10.7475 28.4391 7.97884C25.6705 5.21021 21.9154 3.65481 18 3.65481Z"
+                />
+              </svg>
+              <svg
                 class="artisteoIcon"
-                src="assets/images/projects/artisteo/arrow.webp"
-                alt="artisteoIcon"
-              />
-              <img
+                viewBox="0 0 36 37"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.0585 1.91797C17.3893 1.91797 20.5836 3.24032 22.9388 5.59413C25.294 7.94794 26.6171 11.1404 26.6171 14.4692C26.6171 17.5973 25.4772 20.4551 23.5837 22.6371L34.5 33.547L33.1282 34.918L22.2119 24.0081C19.9422 25.9547 17.0494 27.0234 14.0585 27.0204C10.7278 27.0204 7.5335 25.698 5.17831 23.3442C2.82313 20.9904 1.5 17.798 1.5 14.4692C1.5 11.1404 2.82313 7.94794 5.17831 5.59413C7.5335 3.24032 10.7278 1.91797 14.0585 1.91797ZM14.0585 3.84892C11.2402 3.84892 8.53735 4.96784 6.5445 6.95952C4.55166 8.9512 3.43208 11.6525 3.43208 14.4692C3.43208 17.2858 4.55166 19.9871 6.5445 21.9788C8.53735 23.9705 11.2402 25.0894 14.0585 25.0894C15.454 25.0894 16.8359 24.8147 18.1251 24.281C19.4144 23.7473 20.5858 22.965 21.5726 21.9788C22.5594 20.9926 23.3421 19.8219 23.8761 18.5334C24.4101 17.2449 24.685 15.8638 24.685 14.4692C24.685 13.0745 24.4101 11.6935 23.8761 10.405C23.3421 9.11647 22.5594 7.9457 21.5726 6.95952C20.5858 5.97334 19.4144 5.19106 18.1251 4.65734C16.8359 4.12362 15.454 3.84892 14.0585 3.84892Z"
+                />
+              </svg>
+              <svg
                 class="artisteoIcon"
-                src="assets/images/projects/artisteo/copyright.webp"
-                alt="artisteoIcon"
-              />
-              <img
+                viewBox="0 0 36 37"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.92991 4.61496L11.6294 1.91797L26.3331 16.6166C26.5702 16.8521 26.7583 17.1322 26.8866 17.4407C27.015 17.7492 27.0811 18.08 27.0811 18.4142C27.0811 18.7483 27.015 19.0791 26.8866 19.3876C26.7583 19.6961 26.5702 19.9762 26.3331 20.2117L11.6294 34.918L8.93245 32.221L22.7329 18.418L8.92991 4.61496Z"
+                />
+              </svg>
+              <svg
                 class="artisteoIcon"
-                src="assets/images/projects/artisteo/diamond.webp"
-                alt="artisteoIcon"
-              />
-              <img
+                viewBox="0 0 36 37"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18 1.91797C20.188 1.91797 22.2865 2.78716 23.8336 4.33434C25.3808 5.88151 26.25 7.97993 26.25 10.168C26.25 12.356 25.3808 14.4544 23.8336 16.0016C22.2865 17.5488 20.188 18.418 18 18.418C15.812 18.418 13.7135 17.5488 12.1664 16.0016C10.6192 14.4544 9.75 12.356 9.75 10.168C9.75 7.97993 10.6192 5.88151 12.1664 4.33434C13.7135 2.78716 15.812 1.91797 18 1.91797ZM18 22.543C27.1163 22.543 34.5 26.2348 34.5 30.793V34.918H1.5V30.793C1.5 26.2348 8.88375 22.543 18 22.543Z"
+                />
+              </svg>
+              <svg
+                width="36"
+                height="37"
+                viewBox="0 0 36 37"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18 23.1244V4.16797L1.5 32.7266L18 23.1244Z"
+                />
+                <path
+                  d="M19 22.5498L31.7617 29.9385L19 7.85059V22.5498Z"
+                  stroke-opacity="0.8"
+                  stroke-width="2"
+                />
+              </svg>
+
+              <svg
                 class="artisteoIcon"
-                src="assets/images/projects/artisteo/facebook.webp"
-                alt="artisteoIcon"
-              />
-              <img
+                viewBox="0 0 36 37"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.5 7.42188H34.5M7 18.4219H29M13.6 29.4219H22.4"
+                  stroke="black"
+                  stroke-opacity="0.8"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <svg
                 class="artisteoIcon"
-                src="assets/images/projects/artisteo/filter.webp"
-                alt="artisteoIcon"
-              />
-              <img
+                viewBox="0 0 36 37"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.24609 3.68416C4.24609 2.90686 5.09406 2.42675 5.76059 2.82667L30.3169 17.5605C30.9643 17.9489 30.9643 18.8871 30.3169 19.2755L5.76059 34.0093C5.09406 34.4092 4.24609 33.9291 4.24609 33.1518V3.68416Z"
+                />
+              </svg>
+              <svg
                 class="artisteoIcon"
-                src="assets/images/projects/artisteo/instagram.webp"
-                alt="artisteoIcon"
-              />
-              <img
+                viewBox="0 0 36 37"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.57268 34.918C11.1655 34.918 13.287 32.7965 13.287 30.2037V6.63225C13.287 4.0394 11.1655 1.91797 8.57268 1.91797C5.97983 1.91797 3.8584 4.0394 3.8584 6.63225V30.2037C3.8584 32.7965 5.97983 34.918 8.57268 34.918ZM22.7155 6.63225V30.2037C22.7155 32.7965 24.837 34.918 27.4298 34.918C30.0227 34.918 32.1441 32.7965 32.1441 30.2037V6.63225C32.1441 4.0394 30.0227 1.91797 27.4298 1.91797C24.837 1.91797 22.7155 4.0394 22.7155 6.63225Z"
+                />
+              </svg>
+              <svg
                 class="artisteoIcon"
-                src="assets/images/projects/artisteo/linkedin.webp"
-                alt="artisteoIcon"
-              />
-              <img
+                viewBox="0 0 36 37"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M30.0249 10.3205C30.2512 10.0945 30.5581 9.96746 30.878 9.96746C31.198 9.96746 31.5048 10.0945 31.7312 10.3205L31.7344 10.3238L31.7393 10.327L31.7505 10.3383L31.7827 10.3705L31.8825 10.4815C31.963 10.5733 32.0757 10.7037 32.2061 10.8695C33.6935 12.8027 34.5 15.1735 34.5 17.6127C34.5 20.052 33.6935 22.4227 32.2061 24.356C32.0713 24.5281 31.9295 24.6945 31.7811 24.855L31.7489 24.8872L31.7393 24.8985L31.7344 24.9017L31.7328 24.9033L30.9119 24.0856L31.7328 24.9065C31.5063 25.133 31.1992 25.2603 30.8789 25.2603C30.5585 25.2603 30.2514 25.133 30.0249 24.9065C29.7984 24.6801 29.6712 24.3729 29.6712 24.0526C29.6712 23.7323 29.7984 23.4251 30.0249 23.1986L30.0233 23.2002L30.02 23.2018L30.0281 23.1938L30.0812 23.1358C30.1327 23.08 30.2073 22.9904 30.305 22.867C31.3234 21.5375 31.9336 19.9409 32.0617 18.2711C32.1897 16.6014 31.8299 14.9303 31.0261 13.4612C30.8163 13.0745 30.5751 12.7057 30.305 12.3585C30.2176 12.2455 30.1252 12.1365 30.0281 12.0317L30.02 12.0237C29.7956 11.7968 29.6701 11.4903 29.671 11.1711C29.6719 10.852 29.7991 10.5461 30.0249 10.3205ZM20.4742 4.56728C22.3463 3.3326 24.8415 4.67674 24.8415 6.91913V29.9161C24.8415 32.1601 22.3463 33.5026 20.4742 32.268L10.8157 25.9014C10.7503 25.8578 10.6737 25.8343 10.5951 25.8338H5.92683C4.75276 25.8338 3.62678 25.3674 2.79659 24.5372C1.9664 23.707 1.5 22.581 1.5 21.4069V15.4283C1.5 14.2542 1.9664 13.1283 2.79659 12.2981C3.62678 11.4679 4.75276 11.0015 5.92683 11.0015H10.5951C10.674 11.0017 10.7513 10.9788 10.8173 10.9355L20.4742 4.56728Z"
+                />
+              </svg>
+              <svg
                 class="artisteoIcon"
-                src="assets/images/projects/artisteo/location.webp"
-                alt="artisteoIcon"
-              />
-              <img
+                viewBox="0 0 36 37"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M26.4059 14.5363C26.6218 14.3207 26.9145 14.1995 27.2197 14.1995C27.5249 14.1995 27.8176 14.3207 28.0335 14.5363L30.2907 16.7935L32.5479 14.5363C32.7662 14.3329 33.055 14.2222 33.3533 14.2274C33.6517 14.2327 33.9363 14.3536 34.1473 14.5646C34.3583 14.7756 34.4792 15.0602 34.4845 15.3586C34.4897 15.6569 34.379 15.9457 34.1756 16.164L31.9199 18.4212L34.1771 20.6784C34.3868 20.8957 34.5027 21.1866 34.5 21.4886C34.4972 21.7905 34.3759 22.0793 34.1623 22.2927C33.9487 22.5062 33.6598 22.6271 33.3578 22.6296C33.0559 22.6321 32.765 22.5159 32.5479 22.306L30.2907 20.0488L28.0335 22.306C27.8152 22.5094 27.5265 22.6202 27.2281 22.6149C26.9298 22.6096 26.6451 22.4888 26.4341 22.2778C26.2231 22.0668 26.1023 21.7821 26.097 21.4838C26.0917 21.1854 26.2025 20.8967 26.4059 20.6784L28.6631 18.4212L26.4059 16.164C26.1902 15.948 26.0691 15.6553 26.0691 15.3502C26.0691 15.045 26.1902 14.7523 26.4059 14.5363ZM19.599 5.20968C21.3848 4.03195 23.7648 5.31409 23.7648 7.45305V29.3893C23.7648 31.5298 21.3848 32.8104 19.599 31.6327L10.386 25.5597C10.3236 25.5182 10.2505 25.4958 10.1756 25.4952H5.72264C4.60273 25.4952 3.52868 25.0504 2.73678 24.2585C1.94488 23.4666 1.5 22.3925 1.5 21.2726V15.5697C1.5 14.4498 1.94488 13.3758 2.73678 12.5839C3.52868 11.792 4.60273 11.3471 5.72264 11.3471H10.1756C10.2509 11.3473 10.3246 11.3254 10.3875 11.2841L19.599 5.20968Z"
+                />
+              </svg>
+              <svg
                 class="artisteoIcon"
-                src="assets/images/projects/artisteo/logo.webp"
-                alt="artisteoIcon"
-              />
-              <img
+                viewBox="0 0 36 37"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.83203 2.41797H27.165C28.0396 2.41797 28.7766 2.72387 29.4023 3.34961C30.0279 3.97527 30.3331 4.71118 30.332 5.58398V34.1592L18.1953 28.958L17.998 28.874L17.8018 28.958L5.66504 34.1592V5.58496L5.67969 5.2627C5.74685 4.52764 6.04951 3.89585 6.59668 3.34961C7.14423 2.80311 7.77624 2.50047 8.51074 2.43262L8.83203 2.41797Z"
+                  stroke="black"
+                  stroke-opacity="0.8"
+                />
+              </svg>
+              <svg
                 class="artisteoIcon"
-                src="assets/images/projects/artisteo/pause.webp"
-                alt="artisteoIcon"
-              />
-              <img
+                viewBox="0 0 36 37"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18.0051 17.593C16.9111 17.593 15.8618 17.1584 15.0883 16.3848C14.3147 15.6112 13.8801 14.562 13.8801 13.468C13.8801 12.374 14.3147 11.3247 15.0883 10.5512C15.8618 9.77757 16.9111 9.34297 18.0051 9.34297C19.0991 9.34297 20.1483 9.77757 20.9219 10.5512C21.6955 11.3247 22.1301 12.374 22.1301 13.468C22.1301 14.0097 22.0234 14.5461 21.8161 15.0465C21.6088 15.547 21.3049 16.0017 20.9219 16.3848C20.5389 16.7678 20.0841 17.0717 19.5836 17.279C19.0832 17.4863 18.5468 17.593 18.0051 17.593ZM18.0051 1.91797C14.9418 1.91797 12.004 3.13484 9.83799 5.30089C7.67195 7.46693 6.45508 10.4047 6.45508 13.468C6.45508 22.1305 18.0051 34.918 18.0051 34.918C18.0051 34.918 29.5551 22.1305 29.5551 13.468C29.5551 10.4047 28.3382 7.46693 26.1722 5.30089C24.0061 3.13484 21.0683 1.91797 18.0051 1.91797Z"
+                />
+              </svg>
+              <svg
                 class="artisteoIcon"
-                src="assets/images/projects/artisteo/play.webp"
-                alt="artisteoIcon"
-              />
-              <img
+                viewBox="0 0 36 37"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.81125 34.0922L10.4925 22.5009L1.5 14.7047L13.38 13.6734L18 2.74219L22.62 13.6734L34.5 14.7047L25.5075 22.5009L28.1887 34.0922L18 27.9459L7.81125 34.0922Z"
+                />
+              </svg>
+              <svg
                 class="artisteoIcon"
-                src="assets/images/projects/artisteo/plusCircle.webp"
-                alt="artisteoIcon"
-              />
-              <img
+                viewBox="0 0 36 37"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M16.2332 2.77442C16.4438 2.50746 16.7123 2.29171 17.0183 2.14337C17.3243 1.99503 17.66 1.91797 18.0001 1.91797C18.3401 1.91797 18.6758 1.99503 18.9818 2.14337C19.2879 2.29171 19.5563 2.50746 19.767 2.77442L29.6752 15.3311C30.0931 15.8607 30.3204 16.5157 30.3204 17.1903C30.3204 17.865 30.0931 18.5199 29.6752 19.0495L19.767 31.6062C19.5563 31.8735 19.2878 32.0895 18.9816 32.238C18.6755 32.3865 18.3396 32.4636 17.9993 32.4636C17.659 32.4636 17.3232 32.3865 17.017 32.238C16.7108 32.0895 16.4423 31.8735 16.2317 31.6062L6.32494 19.051C5.907 18.5214 5.67969 17.8665 5.67969 17.1918C5.67969 16.5172 5.907 15.8622 6.32494 15.3326L16.2332 2.77592V2.77442Z"
+                />
+              </svg>
+              <svg
                 class="artisteoIcon"
-                src="assets/images/projects/artisteo/search.webp"
-                alt="artisteoIcon"
-              />
-              <img
+                viewBox="0 0 36 37"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M34.5 18.4593C34.5 9.32849 27.108 1.91797 18 1.91797C8.892 1.91797 1.5 9.32849 1.5 18.4593C1.5 26.4653 7.176 33.1315 14.7 34.6698V23.4217H11.4V18.4593H14.7V14.324C14.7 11.1315 17.2905 8.53451 20.475 8.53451H24.6V13.4969H21.3C20.3925 13.4969 19.65 14.2413 19.65 15.1511V18.4593H24.6V23.4217H19.65V34.918C27.9825 34.0909 34.5 27.0443 34.5 18.4593Z"
+                />
+              </svg>
+              <svg
                 class="artisteoIcon"
-                src="assets/images/projects/artisteo/soundOff.webp"
-                alt="artisteoIcon"
-              />
-              <img
+                viewBox="0 0 36 37"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.07 1.91797H24.93C30.21 1.91797 34.5 6.20797 34.5 11.488V25.348C34.5 27.8861 33.4917 30.3203 31.697 32.115C29.9023 33.9097 27.4681 34.918 24.93 34.918H11.07C5.79 34.918 1.5 30.628 1.5 25.348V11.488C1.5 8.94985 2.50827 6.51568 4.30299 4.72096C6.09771 2.92623 8.53188 1.91797 11.07 1.91797ZM10.74 5.21797C9.16461 5.21797 7.65375 5.84379 6.53979 6.95775C5.42582 8.07172 4.8 9.58258 4.8 11.158V25.678C4.8 28.9615 7.4565 31.618 10.74 31.618H25.26C26.8354 31.618 28.3462 30.9921 29.4602 29.8782C30.5742 28.7642 31.2 27.2534 31.2 25.678V11.158C31.2 7.87447 28.5435 5.21797 25.26 5.21797H10.74ZM26.6625 7.69297C27.2095 7.69297 27.7341 7.91027 28.1209 8.29706C28.5077 8.68385 28.725 9.20846 28.725 9.75547C28.725 10.3025 28.5077 10.8271 28.1209 11.2139C27.7341 11.6007 27.2095 11.818 26.6625 11.818C26.1155 11.818 25.5909 11.6007 25.2041 11.2139C24.8173 10.8271 24.6 10.3025 24.6 9.75547C24.6 9.20846 24.8173 8.68385 25.2041 8.29706C25.5909 7.91027 26.1155 7.69297 26.6625 7.69297ZM18 10.168C20.188 10.168 22.2865 11.0372 23.8336 12.5843C25.3808 14.1315 26.25 16.2299 26.25 18.418C26.25 20.606 25.3808 22.7044 23.8336 24.2516C22.2865 25.7988 20.188 26.668 18 26.668C15.812 26.668 13.7135 25.7988 12.1664 24.2516C10.6192 22.7044 9.75 20.606 9.75 18.418C9.75 16.2299 10.6192 14.1315 12.1664 12.5843C13.7135 11.0372 15.812 10.168 18 10.168ZM18 13.468C16.6872 13.468 15.4281 13.9895 14.4998 14.9178C13.5715 15.8461 13.05 17.1051 13.05 18.418C13.05 19.7308 13.5715 20.9898 14.4998 21.9181C15.4281 22.8465 16.6872 23.368 18 23.368C19.3128 23.368 20.5719 22.8465 21.5002 21.9181C22.4285 20.9898 22.95 19.7308 22.95 18.418C22.95 17.1051 22.4285 15.8461 21.5002 14.9178C20.5719 13.9895 19.3128 13.468 18 13.468Z"
+                />
+              </svg>
+              <svg
                 class="artisteoIcon"
-                src="assets/images/projects/artisteo/soundOn.webp"
-                alt="artisteoIcon"
-              />
-              <img
+                viewBox="0 0 36 37"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.0504 15.8911L32.9846 1.91797H30.156L19.7964 14.0502L11.5181 1.91797H1.97168L14.4881 20.266L1.97168 34.918H4.80025L15.7421 22.1045L24.4848 34.918H34.0312L21.0504 15.8911ZM17.1776 20.4263L15.9095 18.5995L5.81854 4.06297H10.1628L18.3043 15.7945L19.5725 17.6213L30.1584 32.872H25.8142L17.1776 20.4263Z"
+                />
+              </svg>
+              <svg
                 class="artisteoIcon"
-                src="assets/images/projects/artisteo/starFilled.webp"
-                alt="artisteoIcon"
-              />
-              <img
+                viewBox="0 0 36 37"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M30.8333 1.91797C31.8058 1.91797 32.7384 2.30428 33.4261 2.99191C34.1137 3.67954 34.5 4.61217 34.5 5.58464V31.2513C34.5 32.2238 34.1137 33.1564 33.4261 33.844C32.7384 34.5317 31.8058 34.918 30.8333 34.918H5.16667C4.19421 34.918 3.26157 34.5317 2.57394 33.844C1.88631 33.1564 1.5 32.2238 1.5 31.2513V5.58464C1.5 4.61217 1.88631 3.67954 2.57394 2.99191C3.26157 2.30428 4.19421 1.91797 5.16667 1.91797H30.8333ZM29.9167 30.3346V20.618C29.9167 19.0329 29.287 17.5127 28.1661 16.3918C27.0453 15.271 25.5251 14.6413 23.94 14.6413C22.3817 14.6413 20.5667 15.5946 19.6867 17.0246V14.9896H14.5717V30.3346H19.6867V21.2963C19.6867 19.8846 20.8233 18.7296 22.235 18.7296C22.9157 18.7296 23.5686 19.0001 24.0499 19.4814C24.5313 19.9627 24.8017 20.6156 24.8017 21.2963V30.3346H29.9167ZM8.61333 12.1113C9.4302 12.1113 10.2136 11.7868 10.7912 11.2092C11.3688 10.6316 11.6933 9.84817 11.6933 9.0313C11.6933 7.3263 10.3183 5.93297 8.61333 5.93297C7.7916 5.93297 7.00353 6.2594 6.42248 6.84045C5.84143 7.4215 5.515 8.20957 5.515 9.0313C5.515 10.7363 6.90833 12.1113 8.61333 12.1113ZM11.1617 30.3346V14.9896H6.08333V30.3346H11.1617Z"
+                />
+              </svg>
+              <svg
                 class="artisteoIcon"
-                src="assets/images/projects/artisteo/tiktok.webp"
-                alt="artisteoIcon"
-              />
-              <img
+                viewBox="0 0 36 37"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M18.7199 1.94548C20.5211 1.91797 22.3085 1.9317 24.0959 1.91797C24.2059 4.02172 24.9622 6.16668 26.502 7.65164C28.042 9.17788 30.2144 9.87913 32.3318 10.1129V15.6541C30.3519 15.5853 28.3582 15.1728 26.5571 14.3203C25.7733 13.9628 25.0446 13.5091 24.3297 13.0416C24.3159 17.0565 24.3434 21.0715 24.3022 25.0727C24.1922 26.9976 23.5597 28.9089 22.446 30.4901C20.6448 33.1301 17.5237 34.8488 14.3201 34.9038C12.354 35.0138 10.3878 34.4775 8.71035 33.4876C5.93299 31.8514 3.98054 28.8539 3.69184 25.6364C3.66432 24.9489 3.65059 24.2614 3.67806 23.5877C3.92556 20.9752 5.218 18.4727 7.22543 16.7678C9.50779 14.7878 12.6977 13.8391 15.6813 14.4028C15.7088 16.4378 15.6263 18.4727 15.6263 20.5077C14.2651 20.0677 12.6702 20.1915 11.474 21.0165C10.6078 21.5802 9.94781 22.4464 9.60407 23.4227C9.31532 24.124 9.39782 24.8939 9.41156 25.6364C9.74156 27.8914 11.9139 29.7889 14.2239 29.5826C15.7638 29.5689 17.235 28.6751 18.0325 27.3689C18.2937 26.9151 18.5824 26.4476 18.5962 25.9114C18.7337 23.4502 18.6787 21.0027 18.6924 18.5415C18.7062 13.0003 18.6787 7.4729 18.7199 1.94548Z"
+                />
+              </svg>
+              <svg
                 class="artisteoIcon"
-                src="assets/images/projects/artisteo/twitter.webp"
-                alt="artisteoIcon"
-              />
-              <img
+                viewBox="0 0 36 37"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.7 25.018H21.3C21.7675 25.018 22.1596 24.8596 22.4764 24.5428C22.7932 24.226 22.9511 23.8344 22.95 23.368V20.068H19.65V21.718H16.35V15.118H19.65V16.768H22.95V13.468C22.95 13.0005 22.7916 12.6089 22.4748 12.2932C22.158 11.9775 21.7664 11.8191 21.3 11.818H14.7C14.2325 11.818 13.8409 11.9764 13.5252 12.2932C13.2095 12.61 13.0511 13.0016 13.05 13.468V23.368C13.05 23.8355 13.2084 24.2276 13.5252 24.5444C13.842 24.8612 14.2336 25.0191 14.7 25.018ZM18 34.9179C15.7175 34.9179 13.5725 34.4845 11.565 33.6177C9.5575 32.7509 7.81125 31.5756 6.32625 30.0917C4.84125 28.6078 3.6659 26.8615 2.8002 24.853C1.9345 22.8444 1.5011 20.6994 1.5 18.418C1.4989 16.1366 1.9323 13.9916 2.8002 11.983C3.6681 9.97436 4.84345 8.22811 6.32625 6.74422C7.80905 5.26032 9.5553 4.08497 11.565 3.21817C13.5747 2.35137 15.7197 1.91797 18 1.91797C20.2803 1.91797 22.4253 2.35137 24.435 3.21817C26.4447 4.08497 28.1909 5.26032 29.6737 6.74422C31.1565 8.22811 32.3324 9.97436 33.2014 11.983C34.0704 13.9916 34.5033 16.1366 34.5 18.418C34.4967 20.6994 34.0633 22.8444 33.1998 24.853C32.3363 26.8615 31.1609 28.6078 29.6737 30.0917C28.1865 31.5756 26.4403 32.7515 24.435 33.6194C22.4297 34.4873 20.2847 34.9201 18 34.9179ZM18 31.6179C21.685 31.6179 24.8062 30.3392 27.3637 27.7817C29.9212 25.2242 31.2 22.103 31.2 18.418C31.2 14.733 29.9212 11.6117 27.3637 9.05421C24.8062 6.49672 21.685 5.21797 18 5.21797C14.315 5.21797 11.1937 6.49672 8.63625 9.05421C6.07875 11.6117 4.8 14.733 4.8 18.418C4.8 22.103 6.07875 25.2242 8.63625 27.7817C11.1937 30.3392 14.315 31.6179 18 31.6179Z"
+                />
+              </svg>
+              <svg
                 class="artisteoIcon"
-                src="assets/images/projects/artisteo/unsaved.webp"
-                alt="artisteoIcon"
-              />
-              <img
-                class="artisteoIcon"
-                src="assets/images/projects/artisteo/user.webp"
-                alt="artisteoIcon"
-              />
+                viewBox="0 0 36 37"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.0929 5.01087C21.0929 5.83116 20.767 6.61785 20.187 7.19788C19.6069 7.77792 18.8203 8.10377 18 8.10377C17.1797 8.10377 16.393 7.77792 15.813 7.19788C15.2329 6.61785 14.9071 5.83116 14.9071 5.01087C14.9071 4.19058 15.2329 3.40389 15.813 2.82386C16.393 2.24383 17.1797 1.91797 18 1.91797C18.8203 1.91797 19.6069 2.24383 20.187 2.82386C20.767 3.40389 21.0929 4.19058 21.0929 5.01087ZM13.8761 13.2586L4.52522 12.3472C4.2484 12.3131 3.99505 12.1745 3.8169 11.9599C3.63875 11.7453 3.54921 11.4708 3.56658 11.1924C3.58394 10.914 3.7069 10.6528 3.91034 10.462C4.11379 10.2712 4.38239 10.1652 4.66131 10.1657H31.3407C31.6196 10.1652 31.8882 10.2712 32.0916 10.462C32.2951 10.6528 32.418 10.914 32.4354 11.1924C32.4528 11.4708 32.3632 11.7453 32.1851 11.9599C32.0069 12.1745 31.7536 12.3131 31.4768 12.3472L22.1238 13.2586V20.4754L23.0558 33.713C23.0816 33.9908 23.0011 34.268 22.8307 34.4888C22.6603 34.7097 22.4125 34.8577 22.1373 34.9032C21.862 34.9487 21.5798 34.8882 21.3474 34.7339C21.1149 34.5797 20.9496 34.3431 20.8846 34.0718L18.501 22.4755C18.3691 21.9559 17.6309 21.9559 17.4989 22.4755L15.1153 34.0718C15.0503 34.3431 14.885 34.5797 14.6526 34.7339C14.4201 34.8882 14.1379 34.9487 13.8627 34.9032C13.5875 34.8577 13.3397 34.7097 13.1692 34.4888C12.9988 34.268 12.9184 33.9908 12.9441 33.713L13.8761 20.4754V13.2586Z"
+                />
+              </svg>
             </div>
           </div>
           <!-- [componentes] -->
@@ -1091,7 +1213,17 @@
 
       <!-- [footer] -->
       <footer>
-        <div class="footerFrameLeft">
+        <div class="footerFrameTop">
+          <a class="buttonLogo" href="index.html">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24.1754 33.2656H8.92587L4.5 41.0646H28.9519L24.1754 33.2656Z"
+              />
+              <path
+                d="M22.8168 6.9375L11.6426 28.6214H21.2393L23.0359 23.7075H24.5696L34.3854 40.9284H43.5001L24.3505 6.9375H22.8168Z"
+              />
+            </svg>
+          </a>
           <div class="footerFrameMessage">
             <p class="regularBold" data-key="footerTitle"></p>
             <p class="regular" data-key="footerDescription"></p>
@@ -1100,46 +1232,83 @@
             <!-- [whatsapp] -->
             <a
               href="https://wa.me/34618110583"
-              class="button100"
+              class="buttonSecondary buttonSecondary-100"
               target="_blank"
+              title="Whatsapp"
             >
               <i class="fa-brands fa-whatsapp"></i>
+              <span class="toolTipText"
+                ><p class="small" data-key="toolTipTextThree"></p
+              ></span>
             </a>
             <!-- [linkedin] -->
             <a
               href="https://www.linkedin.com/in/alejandromorenoproductdesigner/"
-              class="button100"
+              class="buttonSecondary buttonSecondary-100"
               target="_blank"
+              title="Linkedin"
             >
               <i class="fa-brands fa-linkedin-in"></i>
+              <span class="toolTipText"
+                ><p class="small" data-key="toolTipTextFour"></p
+              ></span>
             </a>
             <!-- [medium] -->
             <a
               href="https://medium.com/@alejandromorenomartin1990"
-              class="button100"
+              class="buttonSecondary buttonSecondary-100"
               target="_blank"
+              title="Medium"
             >
               <i class="fa-brands fa-medium"></i>
+              <span class="toolTipText"
+                ><p class="small" data-key="toolTipTextFive"></p
+              ></span>
             </a>
             <!-- [github] -->
             <a
               href="https://github.com/kakomoma"
-              class="button100"
+              class="buttonSecondary buttonSecondary-100"
               target="_blank"
+              title="Github"
             >
               <i class="fa-brands fa-github"></i>
+              <span class="toolTipText"
+                ><p class="small" data-key="toolTipTextSix"></p
+              ></span>
             </a>
             <!-- [email] -->
             <a
               href="mailto:alejandromorenomartin1990@gmail.com"
-              class="button100"
+              class="buttonSecondary buttonSecondary-100"
               target="_blank"
+              title="Email"
             >
               <i class="fa-solid fa-envelope"></i>
+              <span class="toolTipText"
+                ><p class="small" data-key="toolTipTextSeven"></p
+              ></span>
             </a>
           </div>
         </div>
-        <div class="footerFrameLeft">
+        <div class="footerFrameBot">
+          <a href="index.html" class="buttonLink"
+            ><p class="smallBold">Index</p></a
+          >
+          <a href="vivaGym.html" class="buttonLink"
+            ><p class="smallBold">VivaGym</p></a
+          >
+          <a href="artisteo.html" class="buttonLink"
+            ><p class="smallBold">Artisteo</p></a
+          >
+          <a href="geomites.html" class="buttonLink"
+            ><p class="smallBold">Geomites</p></a
+          >
+          <a href="tarifas.html" class="buttonLink"
+            ><p class="smallBold">Freelance</p></a
+          >
+        </div>
+        <div class="footerFrameBot">
           <div class="footerFrameBottomFrame">
             <i class="fa-solid fa-circle-user"></i>
             <p class="small">Alejandro Moreno</p>
@@ -1160,7 +1329,7 @@
             <i class="fa-solid fa-copyright"></i>
             <p class="small">2025</p>
           </div>
-        </div>
+        </div>        
       </footer>
 
       <!-- [scroll to top] -->
@@ -1185,7 +1354,7 @@
             cx="50"
             cy="50"
             r="48"
-            stroke="#007BFF"
+            stroke="#FF9500"
             stroke-width="4"
             fill="none"
             stroke-linecap="round"
@@ -1205,73 +1374,7 @@
     <script
       src="https://kit.fontawesome.com/35d35eeb85.js"
       crossorigin="anonymous"
-    ></script>
-    <!-- [navContainer] -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const nav = document.querySelector(".navContainer");
-        if (!nav) return;
-
-        const onScroll = () => {
-          if (window.scrollY >= 64) {
-            nav.classList.add("scrolled");
-          } else {
-            nav.classList.remove("scrolled");
-          }
-        };
-        onScroll();
-        window.addEventListener("scroll", onScroll);
-      });
-    </script>
-    <!-- [scroll to top] -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const scrollBtn = document.getElementById("scrollToTop");
-        const progressCircle = document.getElementById("progressCircle");
-
-        if (!scrollBtn || !progressCircle) return;
-
-        const radius = 48; //
-        const circumference = 2 * Math.PI * radius;
-
-        progressCircle.style.strokeDasharray = circumference;
-        progressCircle.style.strokeDashoffset = circumference;
-
-        function setProgress(percent) {
-          const offset = circumference - (percent / 100) * circumference;
-          progressCircle.style.strokeDashoffset = offset;
-        }
-
-        function updateScrollProgress() {
-          const scrollTop =
-            window.scrollY || document.documentElement.scrollTop;
-          const docHeight =
-            document.documentElement.scrollHeight - window.innerHeight;
-
-          let scrollPercent = (scrollTop / docHeight) * 100;
-
-          if (scrollPercent > 99.5) scrollPercent = 100;
-
-          setProgress(scrollPercent);
-
-          if (scrollPercent > 5) {
-            scrollBtn.style.opacity = "1";
-            scrollBtn.style.pointerEvents = "auto";
-          } else {
-            scrollBtn.style.opacity = "0";
-            scrollBtn.style.pointerEvents = "none";
-          }
-        }
-
-        scrollBtn.addEventListener("click", () => {
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        });
-
-        updateScrollProgress();
-
-        window.addEventListener("scroll", updateScrollProgress);
-      });
-    </script>
+    ></script>    
     <!-- [mainJs] -->
     <script src="/assets/js/main.js"></script>
   </body>
