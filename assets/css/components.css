@@ -39,7 +39,7 @@
   display: flex;
   height: auto;
   gap: 0.5rem;
-  padding: 0.5rem 1rem;
+  padding: 0.25rem .5rem;
   border-radius: var(--br);
   background: var(--white);
   border: 1.5px solid var(--white-500);
@@ -66,7 +66,7 @@
 }
 
 .buttonSecondary-100 {
-  width: 52px;
+  width: 37px;
   height: 36px;
 }
 
@@ -139,8 +139,7 @@
   z-index: 1000;
   padding: 0.5rem 2rem;
   box-sizing: border-box;
-  backdrop-filter: blur(100px);
-  -webkit-backdrop-filter: blur(100px);
+  background: var(--white);
   transition: box-shadow 200ms ease, top 0.5s ease;
   transition: top 200ms ease-in-out;
 }
@@ -621,6 +620,7 @@ footer {
 
 @media screen and (max-width: 1200px) {
   footer {
+    padding: 0.5rem 1rem;
     flex-direction: column;
   }
 
@@ -1070,6 +1070,19 @@ footer {
   background-color: var(--white-500);
 }
 
+.sliderButton.disabled {
+  border: 1.5px solid var(--white-400);
+}
+
+.sliderButton.disabled:hover {
+  background: var(--white-100);
+  cursor: not-allowed;
+}
+
+.sliderButton.disabled i {  
+  color: var(--white-400);
+}
+
 /* readings */
 .cardReading {
   display: flex;
@@ -1382,7 +1395,7 @@ footer {
 .sectionTwo {
   display: flex;
   flex-direction: column;
-  gap: 16rem;
+  gap: 1rem;
 }
 
 @media screen and (max-width: 1200px) {
