@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!toc) return;
 
     const tocLinks = document.querySelectorAll("#tableOfContents a");
-    const sections = document.querySelectorAll(".sectionHeader");
+    const sections = document.querySelectorAll(".sectionHeader, .sectionHeaderTwo");
     const offset = 100;
     const showFromTop = 750;
     const hideFromBottom = 500;
