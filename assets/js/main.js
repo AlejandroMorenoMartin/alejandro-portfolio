@@ -38,96 +38,48 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log(`Idioma establecido: ${lang}`);
   }
 
-  // Detectar idioma inicial
   function detectInitialLanguage() {
     const savedLang = localStorage.getItem("userLanguage");
     if (savedLang) return savedLang;
-
     const browserLang = navigator.language || navigator.userLanguage || "es";
     return browserLang.startsWith("es") ? "es" : "en";
   }
 
-  // Alternar idioma al pulsar el botón
-  langButton.addEventListener("click", () => {
-    const currentLang = htmlElement.getAttribute("lang") || "es";
-    const newLang = currentLang === "es" ? "en" : "es";
-    setLanguage(newLang);
-  });
+  if (langButton) {
+    langButton.addEventListener("click", () => {
+      const currentLang = htmlElement.getAttribute("lang") || "es";
+      const newLang = currentLang === "es" ? "en" : "es";
+      setLanguage(newLang);
+    });
+  }
 
-  // Inicialización
   const initialLang = detectInitialLanguage();
   setLanguage(initialLang);
 
-  // Efecto scroll
-  const nav = document.querySelector(".navContainer");
-        if (!nav) return;
-
-        const onScroll = () => {
-          if (window.scrollY >= 64) {
-            nav.classList.add("scrolled");
-          } else {
-            nav.classList.remove("scrolled");
-          }
-        };
-        onScroll();
-        window.addEventListener("scroll", onScroll);
-
   /* ================================
-  BUTTON PROGRESS
+      NAV EFFECT ON SCROLL
   ================================= */
-  const scrollBtn = document.getElementById("scrollToTop");
-        const progressCircle = document.getElementById("progressCircle");
-
-        if (!scrollBtn || !progressCircle) return;
-
-        const radius = 48; //
-        const circumference = 2 * Math.PI * radius;
-
-        progressCircle.style.strokeDasharray = circumference;
-        progressCircle.style.strokeDashoffset = circumference;
-
-        function setProgress(percent) {
-          const offset = circumference - (percent / 100) * circumference;
-          progressCircle.style.strokeDashoffset = offset;
-        }
-
-        function updateScrollProgress() {
-          const scrollTop =
-            window.scrollY || document.documentElement.scrollTop;
-          const docHeight =
-            document.documentElement.scrollHeight - window.innerHeight;
-
-          let scrollPercent = (scrollTop / docHeight) * 100;
-
-          if (scrollPercent > 99.5) scrollPercent = 100;
-
-          setProgress(scrollPercent);
-
-          if (scrollPercent > 5) {
-            scrollBtn.style.opacity = "1";
-            scrollBtn.style.pointerEvents = "auto";
-          } else {
-            scrollBtn.style.opacity = "0";
-            scrollBtn.style.pointerEvents = "none";
-          }
-        }
-
-        scrollBtn.addEventListener("click", () => {
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        });
-
-        updateScrollProgress();
-
-        window.addEventListener("scroll", updateScrollProgress);
+  const nav = document.querySelector(".navContainer");
+  if (nav) {
+    const onScroll = () => {
+      if (window.scrollY >= 64) {
+        nav.classList.add("scrolled");
+      } else {
+        nav.classList.remove("scrolled");
+      }
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll);
+  }
 
   /* ================================
-      TABLE OF CONTENT (sin cambios)
+      TABLE OF CONTENT
   ================================= */
   function generateTableOfContents() {
     const toc = document.getElementById("tableOfContents");
     if (!toc) return;
 
-    const sections = document.querySelectorAll(".indexSection");
+    const sections = document.querySelectorAll(".sectionHeader");
     const wrapper = document.createElement("div");
     const title = document.createElement("p");
     const list = document.createElement("ul");
@@ -180,14 +132,28 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function highlightTOCOnScroll() {
+    const toc = document.getElementById("tableOfContents");
+    if (!toc) return;
+
     const tocLinks = document.querySelectorAll("#tableOfContents a");
-    const sections = document.querySelectorAll(
-      ".indexSection, .indexSubSection"
-    );
+    const sections = document.querySelectorAll(".sectionHeader");
     const offset = 100;
+    const showFromTop = 750;
+    const hideFromBottom = 500;
 
     window.addEventListener("scroll", () => {
       let currentId = "";
+      const scrollTop = window.scrollY;
+      const scrollHeight = document.body.scrollHeight;
+      const windowHeight = window.innerHeight;
+      const distanceFromBottom = scrollHeight - (scrollTop + windowHeight);
+
+      if (scrollTop > showFromTop && distanceFromBottom > hideFromBottom) {
+        toc.classList.add("visible");
+      } else {
+        toc.classList.remove("visible");
+      }
+
       sections.forEach((section) => {
         const rect = section.getBoundingClientRect();
         if (rect.top <= offset && rect.bottom > offset) {
@@ -205,38 +171,24 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* ================================
-      SCROLL MANUAL BOTÓN
-  ================================= */
-  const projectsBtn = document.querySelector('a.button[href="#projects"]');
-  const pricesBtn = document.querySelector('a.buttonSecondary[href="#prices"]');
-
-  if (projectsBtn) {
-    projectsBtn.addEventListener("click", function (e) {
+      SCROLL MANUAL BOTONES
+  ================================= */
+  function smoothScrollTrigger(selector, offset = 104) {
+    const btn = document.querySelector(selector);
+    if (!btn) return;
+    btn.addEventListener("click", (e) => {
       e.preventDefault();
-      const offset = 104;
-      const targetId = this.getAttribute("href");
+      const targetId = btn.getAttribute("href");
       const targetElement = document.querySelector(targetId);
       if (!targetElement) return;
       const topPosition =
         targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
-
       window.scrollTo({ top: topPosition, behavior: "smooth" });
     });
   }
 
-  if (pricesBtn) {
-    pricesBtn.addEventListener("click", function (e) {
-      e.preventDefault();
-      const offset = 104;
-      const targetId = this.getAttribute("href");
-      const targetElement = document.querySelector(targetId);
-      if (!targetElement) return;
-      const topPosition =
-        targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
-
-      window.scrollTo({ top: topPosition, behavior: "smooth" });
-    });
-  }
+  smoothScrollTrigger('a.button[href="#projects"]');
+  smoothScrollTrigger('a.buttonSecondary[href="#prices"]');
 
   /* ================================
       TESTIMONIOS SLIDER
@@ -251,7 +203,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (track && cards.length > 0) {
     const updateCardWidths = () => {
       const containerWidth =
-        document.querySelector(".indexSectionFrame").offsetWidth;
+        document.querySelector(".sectionHeader").offsetWidth;
       cards.forEach((card) => {
         card.style.minWidth = `${containerWidth}px`;
       });
@@ -323,62 +275,79 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* ================================
-      EFECTOS VISUALES
+      BUTTON PANNEL (aparecer/desaparecer)
   ================================= */
-  const titles = document.querySelectorAll("h2");
-  const titleObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        entry.target.classList.toggle("visible", entry.isIntersecting);
-        entry.target.classList.toggle("hidden", !entry.isIntersecting);
-      });
-    },
-    { threshold: 1 }
-  );
-  titles.forEach((title) => titleObserver.observe(title));
+  function buttonPannelVisibility() {
+    const panel = document.querySelector(".buttonPannel");
+    if (!panel) return;
 
-  const heroSection = document.querySelector(".heroSectionText");
-  if (heroSection) {
-    const heroObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) heroSection.classList.add("heroAnimate");
-        });
-      },
-      { threshold: 0.5 }
-    );
-    heroObserver.observe(heroSection);
+    const showFromTop = 750;
+    const hideFromBottom = 500;
+
+    window.addEventListener("scroll", () => {
+      const scrollTop = window.scrollY;
+      const scrollHeight = document.body.scrollHeight;
+      const windowHeight = window.innerHeight;
+      const distanceFromBottom = scrollHeight - (scrollTop + windowHeight);
+
+      if (scrollTop > showFromTop && distanceFromBottom > hideFromBottom) {
+        panel.classList.add("visible");
+      } else {
+        panel.classList.remove("visible");
+      }
+    });
   }
+  buttonPannelVisibility();
 
   /* ================================
-  BUTTON PANNEL (scroll control)
-  ================================= */
-  const buttonPannel = document.querySelector(".buttonPannel");
-  if (!buttonPannel) return;
+     BUTTON SCROLL TO TOP
+ ================================= */
+  function scrollToTopButton() {
+    const button = document.getElementById("buttonBackToTop");
+    if (!button) return;
 
-  function toggleButtonPanel() {
-    const scrollTop = window.scrollY || document.documentElement.scrollTop;
-    const windowHeight = window.innerHeight;
-    const docHeight = document.documentElement.scrollHeight;
+    // Lógica para mostrar/ocultar el botón
+    const showFromTop = 750;
 
-    const distanceFromBottom = docHeight - (scrollTop + windowHeight);
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > showFromTop) {
+        button.classList.add("visible");
+      } else {
+        button.classList.remove("visible");
+      }
+    });
 
-    if (scrollTop > 1000 && distanceFromBottom > 1000) {
-      // Usuario a más de 2000px del top y a más de 2000px del bottom → mostrar
-      buttonPannel.classList.add("visible");
-    } else {
-      // Usuario muy arriba o muy abajo → ocultar
-      buttonPannel.classList.remove("visible");
-    }
+    // Lógica del clic del botón
+    button.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    });
   }
 
-  // Ejecutar en scroll y al cargar
-  window.addEventListener("scroll", toggleButtonPanel);
-  toggleButtonPanel();
+  scrollToTopButton();
+
+  /* ================================
+      PROGRESS BAR
+  ================================= */
+  function scrollProgressBar() {
+    const progressBar = document.getElementById("scrollProgressBar");
+    if (!progressBar) return;
+
+    window.addEventListener("scroll", () => {
+      const scrollTop = window.scrollY;
+      const docHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = (scrollTop / docHeight) * 100;
+      progressBar.style.width = scrollPercent + "%";
+    });
+  }
+  scrollProgressBar();
 });
 
 /* ================================
-    SCROLLER ANIMATION
+    SCROLLER ANIMATION (outside DOMContentLoaded)
 ================================= */
 const scrollers = document.querySelectorAll(".scroller");
 if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
@@ -395,7 +364,7 @@ if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
 }
 
 /* ================================
-    TEMA OSCURO/CLARO
+    TEMA OSCURO/CLARO (outside DOMContentLoaded)
 ================================= */
 const themeToggle = document.getElementById("themeToggle");
 const html = document.documentElement;

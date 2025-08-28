@@ -158,7 +158,7 @@
             class="buttonSecondary buttonSecondary-100 langButton"
             data-lang="es"
           >
-            <p class="smallBold">Es</p>
+            <p class="smallBold" data-key="buttonLanguage"></p>
             <span class="toolTipText"
               ><p class="small" data-key="toolTipTextTwo"></p
             ></span>
@@ -166,11 +166,14 @@
         </div>
       </nav>
 
+      <!-- progressBar -->
+      <div id="scrollProgressBar"></div>
+
       <!-- [pricesSections] -->
-      <div class="pricesSections">
+      <div class="mainContainerSections">
         <!-- [hero] -->
-        <section class="pricesSectionsSection pricesHeroSection">
-          <div class="pricesHeroSectionFrame">
+        <section class="heroSection hersoSectionPrices">
+          <div class="sectionHeaderFrame">
             <h1 data-key="pricesHeroTitle"></h1>
             <p class="regular" data-key="pricesHeroDescription"></p>
           </div>
@@ -184,8 +187,8 @@
           </div>
         </section>
         <!-- [info] -->
-        <section class="pricesSectionsSection pricesOtherSection" id="info">
-          <div class="pricesHeroSectionFrame">
+        <section class="sectionHeaderTwo" id="info">
+          <div class="sectionHeaderFrame">
             <h2 data-key="pricesInfoTitle"></h2>
             <p class="regular" data-key="pricesInfoDescription"></p>
           </div>
@@ -265,8 +268,8 @@
           </div>
         </section>
         <!-- [prices] -->
-        <section class="pricesSectionsSection pricesOtherSection" id="prices">
-          <div class="pricesHeroSectionFrame">
+        <section class="sectionHeaderTwo" id="prices">
+          <div class="sectionHeaderFrame">
             <h2 data-key="pricesPricesTitle"></h2>
             <p class="regular" data-key="pricesPricesDescription"></p>
           </div>
@@ -441,8 +444,8 @@
           </div>
         </section>
         <!-- [FAQs] -->
-        <section class="pricesSectionsSection pricesOtherSection" id="FAQs">
-          <div class="pricesHeroSectionFrame">
+        <section class="sectionHeaderTwo" id="FAQs">
+          <div class="sectionHeaderFrame">
             <h2 data-key="pricesFAQsTitle"></h2>
             <p class="regular" data-key="pricesFAQsDescription"></p>
           </div>
@@ -496,25 +499,18 @@
               <p class="regular" data-key="cardFAQsDescriptionSix"></p>
             </div>
           </div>
-        </section>
-        <!-- [someQuestions] -->
-        <section
-          class="pricesSectionsSection someQuestionsSection"
-          id="someQuestions"
-        >
-          <div class="pricesHeroSectionFrame">
-            <h2 data-key="someQuestionsSectionTitle"></h2>
-            <p class="regular" data-key="someQuestionsSectionDescription"></p>
-          </div>
-          <a
-            class="buttonTerciary"
-            href="https://wa.me/34618110583"
-            target="_blank"
-          >
-            <p class="regularBold" data-key="someQuestionsSectionButton"></p>
-          </a>
-        </section>
+        </section>        
       </div>
+
+      <!-- [buttonBackToTop] -->
+        <button
+          id="buttonBackToTop" 
+          class="buttonSecondary buttonSecondary-100 buttonBackToTop">
+          <i class="fa-solid fa-chevron-up"></i>
+          <span class="toolTipText toolTipTextTwo"
+            ><p class="small" data-key="toolTipTextEleven"></p
+          ></span>
+        </button>
 
       <!-- [footer] -->
       <footer>
@@ -635,44 +631,7 @@
             <p class="small">2025</p>
           </div>
         </div>        
-      </footer>
-
-      <!-- [scroll to top] -->
-      <button id="scrollToTop" aria-label="Volver arriba" title="Volver arriba">
-        <svg
-          width="60"
-          height="60"
-          viewBox="0 0 100 100"
-          aria-hidden="true"
-          focusable="false"
-        >
-          <circle
-            cx="50"
-            cy="50"
-            r="48"
-            stroke-width="4"
-            fill="none"
-            class="circleOne"
-          />
-          <circle
-            id="progressCircle"
-            cx="50"
-            cy="50"
-            r="48"
-            stroke="#FF9500"
-            stroke-width="4"
-            fill="none"
-            stroke-linecap="round"
-            transform="rotate(-90 50 50)"
-            stroke-dasharray="283"
-            stroke-dashoffset="283"
-          />
-        </svg>
-        <i
-          class="fa-solid fa-chevron-up"
-          style="position: absolute; font-size: 16px"
-        ></i>
-      </button>
+      </footer>      
     </main>
 
     <!-- [fontAwsome] -->

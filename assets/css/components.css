@@ -14,15 +14,15 @@
 .buttonPrimary {
   position: relative;
   display: flex;
-  width: fit-content;
-  height: auto;
-  padding: 0.5rem 1rem;
+  width: fit-content;  
+  gap: 0.5rem;
+  padding: 0.25rem .5rem;
   border-radius: var(--br);
   background: var(--primary-300);
   justify-content: center;
   align-items: center;
   transition: all 200ms ease-in-out;
-  cursor: pointer;
+  cursor: pointer;       
 }
 
 .buttonPrimary p,
@@ -36,10 +36,10 @@
 
 .buttonSecondary {
   position: relative;
-  display: flex;
-  height: auto;
+  display: flex;  
   gap: 0.5rem;
   padding: 0.25rem .5rem;
+  width: fit-content;
   border-radius: var(--br);
   background: var(--white);
   border: 1.5px solid var(--white-500);
@@ -76,10 +76,17 @@
 
 .buttonLink p {
   text-decoration: underline;
+  text-underline-offset: 0.25rem;
 }
 
-.buttonLink:hover p {  
+.buttonLink:hover p {
   color: var(--primary-300);
+}
+
+.buttonLinkSectionHeader {
+  position: absolute;
+  top: 0.5rem;
+  right: 0;
 }
 
 .buttonTerciary {
@@ -122,9 +129,30 @@
   color: var(--white);
 }
 
+.toolTipTextTwo {
+  top: -125%;
+}
+
 .buttonSecondary:hover .toolTipText {
   visibility: visible;
   opacity: 1;
+}
+
+.buttonBackToTop {
+  position: fixed;
+  bottom: -10rem;
+  right: 2rem;
+  z-index: 1000;
+}
+
+.buttonBackToTop.visible {
+  bottom: 0.6rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .buttonBackToTop.visible {
+    right: 1rem;
+  }
 }
 
 /* header */
@@ -182,123 +210,92 @@ html[data-theme="dark"] .navContainer.scrolled {
 }
 
 /* main */
-.pricesSections {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20rem;
-  height: auto;
-}
-
-.pricesSectionsSection {
-  padding-left: calc((100% - var(--contentMaxWidth)) / 2);
-  padding-right: calc((100% - var(--contentMaxWidth)) / 2);
-  display: flex;
-  flex-direction: column;
-}
-
-@media screen and (max-width: 1200px) {
-  .pricesSections {
-    gap: 10rem;
-  }
-
-  .pricesSectionsSection {
-    padding: 1.5rem 1rem;
-  }
-}
-
 .mainContainerSections {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 20rem;
-  padding-bottom: 8rem;
+  gap: 15rem;
   padding-left: calc((100% - var(--contentMaxWidth)) / 2);
   padding-right: calc((100% - var(--contentMaxWidth)) / 2);
   box-sizing: border-box;
+  padding-bottom: 15rem;
+}
+
+.sectionHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  position: relative;
+  width: 100%;
+}
+
+.subSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5rem;
+  width: 100%;
+}
+
+.sectionHeaderRow {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
 }
 
 @media screen and (max-width: 1200px) {
   .mainContainerSections {
-    gap: 10rem;
+    gap: 7.5rem;
     padding: 1.5rem 1rem;
+    padding-bottom: 7.5rem;
+  }
+
+  .subSection {
+    gap: 2.5rem;
+  }
+
+  .sectionHeaderRow {
+    flex-direction: column;
   }
 }
 
-.pricesHeroSection {
+.sectionHeaderFrame {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 4rem;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-@media screen and (max-width: 1200px) {
-  .pricesHeroSection {
-    gap: 2rem;
-  }
-}
-
-.pricesOtherSection {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 4rem;
-  text-align: center;
-}
-
-@media screen and (max-width: 1200px) {
-  .pricesOtherSection {
-    gap: 2rem;
-  }
-}
-
-.someQuestionsSection {
-  width: 100%;
-  background-color: var(--black);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 4rem;
-  text-align: center;
-  padding-bottom: 4rem;
-  padding-top: 4rem;
-}
-
-@media screen and (max-width: 1200px) {
-  .someQuestionsSection {
-    gap: 2rem;
-  }
-}
-
-.someQuestionsSection .regularBold {
-  color: var(--black);
-}
-
-.someQuestionsSection h2,
-.someQuestionsSection p {
-  color: var(--white);
-}
-
-.pricesHeroSectionFrame {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.pricesHeroSectionButtons {
-  display: flex;
-  flex-direction: row;
   gap: 1rem;
-  align-items: center;
+}
+
+.sectionHeaderTwo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4rem;
+  position: relative;
+  width: 100%;
+}
+
+.gridFour {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+
+.gridTwo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .gridFour {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .heroSection {
@@ -369,55 +366,18 @@ html[data-theme="dark"] .navContainer.scrolled {
   align-items: center;
 }
 
-.pricesSection {
+.hersoSectionPrices {
   display: flex;
   flex-direction: column;
+  width: 100%;
   gap: 2rem;
+  text-align: center;
 }
 
-.indexSection {
+.pricesHeroSectionButtons {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  width: 100%;
-}
-
-.sectionCut > div:nth-of-type(2) {
-  margin-top: -12rem;
-}
-
-@media screen and (max-width: 1200px) {
-  .sectionCut > div:nth-of-type(2) {
-    margin-top: 0rem;
-  }
-}
-
-.sectionHeader {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.indexSectionFrame {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 1rem;
-}
-
-.indexSectionFrameRow {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  gap: 1rem;
-}
-
-@media screen and (max-width: 1200px) {
-  .indexSectionFrameRow {
-    flex-direction: column;
-  }
+  flex-direction: row;  
+  gap: .5rem; 
 }
 
 /* cardProjects */
@@ -641,14 +601,18 @@ footer {
   background-color: var(--gray-200);
   position: fixed;
   top: 8rem;
-  right: 2rem;
+  right: -16rem;
   max-width: 300px;
   font-size: var(--fs-small);
   line-height: var(--lh-small);
   font-weight: 400;
   letter-spacing: 0.05rem;
   z-index: 1;
-  transition: 200ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.table-of-contents.visible {
+  right: 2rem;
 }
 
 .table-of-contents::before {
@@ -699,55 +663,6 @@ footer {
   background-color: var(--white-300);
 }
 
-/* scroll to top */
-#scrollToTop {
-  position: fixed;
-  bottom: 6rem;
-  right: 2rem;
-  width: 50px;
-  height: 50px;
-  background: var(--white);
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 200ms ease-in-out;
-  z-index: 1000;
-  opacity: 0;
-  pointer-events: none;
-}
-
-@media screen and (max-width: 1200px) {
-  #scrollToTop {
-    bottom: 1rem;
-    right: 1rem;
-  }
-}
-
-#scrollToTop:hover {
-  background: var(--white-300);
-}
-
-#scrollToTop i {
-  display: block;
-  position: relative;
-  z-index: 1;
-}
-
-#scrollToTop i.fa-solid {
-  position: absolute;
-  z-index: 2;
-  pointer-events: none;
-  color: var(--black-1400);
-}
-
-.circleOne {
-  stroke: var(--white-500);
-}
-
 /* cardarticle */
 .cardArticle {
   display: flex;
@@ -788,8 +703,6 @@ footer {
 
 .cardArticle svg {
   color: var(--black);
-  height: 72px;
-  width: 72px;
 }
 
 /* cardExperience */
@@ -811,33 +724,6 @@ footer {
 }
 
 /* cardEducation */
-.gridFrame,
-.gridFrameTwo {
-  display: grid;
-}
-
-@media screen and (min-width: 880px) {
-  .gridFrame {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, auto);
-  }
-  .gridFrameTwo {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, auto);
-  }
-}
-
-@media screen and (max-width: 880px) {
-  .gridFrame {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, auto);
-  }
-  .gridFrameTwo {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(10, auto);
-  }
-}
-
 .cardEducation {
   display: flex;
   flex-direction: column;
@@ -848,58 +734,7 @@ footer {
   border-radius: var(--br);
 }
 
-.cardEducation .regularBold {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.cardEducationInfoLink,
-.cardTestimonyJobTitleLink {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  align-items: center;
-}
-
-.cardEducation img {
-  height: 3rem;
-  width: 3rem;
-}
-
-.cardEducation i,
-.cardTestimonyJobTitleLink i {
-  font-size: 0.75rem;
-  transform: rotate(-45deg);
-  color: var(--black-300);
-}
-
-/* link */
-.link {
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-  color: inherit;
-}
-
-.link::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 1px;
-  width: 0%;
-  background-color: var(--black-300);
-  transition: width 200ms ease-in-out;
-}
-
-.link:hover::after {
-  width: 100%;
-}
-
-/* cardSkills */
+/* cardSkill */
 .cardSkill {
   display: flex;
   flex-direction: column;
@@ -907,9 +742,10 @@ footer {
   align-items: center;
 }
 
-.cardSkill img {
-  height: 48px;
+/* regularImage */
+.regularImage {
   width: 48px;
+  height: 48px;
 }
 
 /* tools */
@@ -972,8 +808,8 @@ footer {
 }
 
 .tag-list li img {
-  width: 3rem;
-  height: 3rem;
+  width: 48px;
+  height: 48px;
 }
 
 /* testimonies */
@@ -989,21 +825,16 @@ footer {
   transition: opacity 0.75s ease-in-out;
 }
 
-@media screen and (max-width: 1200px) {
-  .cardTestimony {
-    flex-direction: column;
-  }
-}
-
 .cardTestimony img {
   width: 146px;
   height: 146px;
+  border-radius: var(--br);
 }
 
 @media screen and (max-width: 1200px) {
   .cardTestimony img {
-    width: 96px;
-    height: 96px;
+    width: 48px;
+    height: 48px;
   }
 }
 
@@ -1042,6 +873,19 @@ footer {
   position: relative;
 }
 
+.sliderWrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.sliderTrack {
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.75s ease-in-out;
+  width: 100%;
+}
+
 .sliderTrack {
   display: flex;
   flex-direction: row;
@@ -1051,15 +895,17 @@ footer {
 
 .sliderIndicators {
   display: flex;
-  justify-content: center;
+  gap: 0.5rem;
+  position: absolute;
+  bottom: -2rem;
+  right: 45%;
   align-items: center;
-  gap: 8px;
 }
 
 .sliderDot {
   width: 10px;
   height: 10px;
-  background-color: var(--white-400);
+  background-color: var(--white-300);
   border-radius: 50%;
   transition: background-color 0.75s ease-in-out, transform 0.75s ease-in-out;
 }
@@ -1071,7 +917,7 @@ footer {
 }
 
 .sliderButton.disabled {
-  border: 1.5px solid var(--white-400);
+  border: 1.5px solid var(--white-300);
 }
 
 .sliderButton.disabled:hover {
@@ -1079,7 +925,7 @@ footer {
   cursor: not-allowed;
 }
 
-.sliderButton.disabled i {  
+.sliderButton.disabled i {
   color: var(--white-400);
 }
 
@@ -1128,84 +974,6 @@ footer {
   overflow: hidden;
   text-overflow: ellipsis;
   word-break: break-word;
-}
-
-/* efecto hero */
-/* Estado inicial */
-.heroSectionText h1,
-.heroSectionText h4,
-.heroSectionTextTitleFrame2,
-.heroSectionText > p,
-.heroSectionText .buttonPrimary {
-  opacity: 0;
-  transform: translateY(20px);
-}
-
-/* Animaciones comunes */
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeDown {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeRight {
-  from {
-    opacity: 0;
-    transform: translateX(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-/* Animación al activar */
-.heroAnimate h1 {
-  animation: fadeUp 1s ease forwards;
-  animation-delay: 1s;
-}
-
-.heroAnimate h4 {
-  animation: fadeUp 1s ease forwards;
-  animation-delay: 1s;
-}
-
-.heroAnimate .heroSectionTextTitleFrame2 {
-  animation: fadeDown 1s ease forwards;
-  animation-delay: 1.5s;
-}
-
-.heroAnimate > p {
-  animation: fadeLeft 1s ease forwards;
-  animation-delay: 2s;
-}
-
-.heroAnimate .buttonPrimary {
-  animation: fadeRight 1s ease forwards;
-  animation-delay: 2s;
 }
 
 /* projectsPage */
@@ -1294,114 +1062,6 @@ footer {
 .overviewImageTablet {
   width: 100%;
   margin: 0 auto;
-}
-
-.sectionHeaderFrame {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.sectionOne {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-}
-
-@media screen and (max-width: 1200px) {
-  .sectionOne {
-    gap: 2rem;
-  }
-}
-
-.subSectionOne {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.subSectionHeader {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.subSectionOneRow {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-}
-
-/* Para pantallas de 1200px o menos */
-@media (max-width: 1200px) {
-  .subSectionOneRow {
-    gap: 1rem;
-  }
-
-  .subSectionOneRowSpecial {
-    flex-direction: column;
-  }
-
-  .subSectionOneRowSpecial img:first-child {
-    order: 2;
-  }
-  .subSectionOneRowSpecial .subSectionHeader:last-child {
-    order: 1;
-  }
-}
-
-.subSectionOneRowSpecial {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 8rem;
-}
-
-.subSectionOneRowSpecialFrame {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-@media screen and (max-width: 1200px) {
-  .subSectionOneRowSpecial {
-    flex-direction: column;
-    gap: 1rem;
-  }
-}
-
-.subSectionOneRowColumn {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  align-items: center;
-}
-
-.subSectionOneRowColumnInfo {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  justify-content: center;
-}
-
-@media screen and (max-width: 1200px) {
-  .subSectionOneRowColumn img {
-    width: 75%;
-  }
-}
-
-.sectionTwo {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-@media screen and (max-width: 1200px) {
-  .sectionTwo {
-    gap: 4rem;
-  }
 }
 
 .cardObjectives {
@@ -1581,19 +1241,6 @@ footer {
 
   .geomitesCardOneTypographyTen {
     font-size: 5px;
-  }
-}
-
-.gridTwo {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 1fr;
-}
-
-@media (max-width: 1200px) {
-  .gridTwo {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
   }
 }
 
@@ -1787,13 +1434,6 @@ footer {
 
 .cardExperienceFrame svg {
   color: var(--black);
-  width: 48px;
-  height: 48px;
-}
-
-.experienceIcon {
-  height: 3rem;
-  width: 3rem;
 }
 
 .otherProjects {
@@ -1859,29 +1499,6 @@ footer {
 
 .otherProjectsDescriptionRegular {
   text-align: center;
-}
-
-.mainContainerSectionsProject {
-  margin-top: 6rem;
-}
-
-@media screen and (max-width: 1200px) {
-  .mainContainerSectionsProject {
-    margin-top: 4rem;
-  }
-}
-
-.gridResponsiveFour {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-@media screen and (max-width: 1200px) {
-  .gridResponsiveFour {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-  }
 }
 
 .userResearchCard {
@@ -2440,20 +2057,17 @@ span.cardPricesRecommended {
 .buttonPannel {
   display: flex;
   position: fixed;
-  bottom: -100px;
+  bottom: -10rem;
   right: 0;
   flex-direction: row;
   width: 100%;
-  padding-left: calc((100% - var(--contentMaxWidth)) / 2);
-  padding-right: calc((100% - var(--contentMaxWidth)) / 2);
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
+  padding: 0.5rem 2rem;
   background-color: var(--white);
   border-top: 1.5px solid var(--white-500);
   justify-content: space-between;
   z-index: 1000;
   align-items: center;
-  transition: all 400ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 .buttonPannel.visible {
@@ -2462,12 +2076,21 @@ span.cardPricesRecommended {
 
 @media screen and (max-width: 1200px) {
   .buttonPannel {
-    display: none;
+    padding: 0.5rem 1rem;
   }
 }
 
 .buttonPannelFrame {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.buttonPannelFrameButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
 }
 
 .graphContainer {
@@ -2541,14 +2164,20 @@ span.cardPricesRecommended {
   background-color: var(--white-300);
 }
 
-.gridFive {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1rem;
-}
-
 .userFlowImage {
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+/* Progress bar container */
+#scrollProgressBar {
+  position: fixed;
+  top: var(--nav-height, 56px);
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--primary-200);
+  z-index: 9999;
+  transition: width 200ms ease-in-out;
 }

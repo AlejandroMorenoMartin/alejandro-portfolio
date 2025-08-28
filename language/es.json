@@ -493,7 +493,7 @@
   "cardPricesThreeThirdIncluded":"Estrategia UX/UI para potenciar conversiones",
   "cardPricesThreeFourthIncluded":"3 meses de soporte técnico incluido",
   "cardPricesRecommended":"Recomendada",
-  "pricesFAQsTitle":"Preguntas frecuentes",
+  "pricesFAQsTitle":"Preguntas frecuentes.",
   "pricesFAQsDescription":"Te respondo algunas de las <b>preguntas</b> más <b>comunes</b> que suelen tener las personas con las que trabajo.",
   "cardFAQsTitleOne":"¿Y si no tengo conocimientos técnicos?",
   "cardFAQsDescriptionOne":"Me encargo de todo el proceso y te entrego una web fácil de gestionar. Además, te explico lo necesario para que seas independiente en su uso.", 
@@ -506,10 +506,7 @@
   "cardFAQsTitleFive":"¿Qué pasa con el dominio y el hosting?",
   "cardFAQsDescriptionFive":"Si no tienes todavía, te ayudo a elegir y configurar las opciones más seguras y económicas para tu negocio.",
   "cardFAQsTitleSix":"¿La inversión realmente merece la pena?",
-  "cardFAQsDescriptionSix":"Una web profesional no es un gasto, es una inversión. Te ayuda a ganar visibilidad, atraer clientes y transmitir confianza. Muchos negocios recuperan la inversión en los primeros meses.",
-  "someQuestionsSectionTitle":"¿Alguna pregunta?",
-  "someQuestionsSectionDescription":"No dudes en ponerte en contacto, estaré encantado de charlar contigo.",
-  "someQuestionsSectionButton":"Contáctame",
+  "cardFAQsDescriptionSix":"Una web profesional no es un gasto, es una inversión. Te ayuda a ganar visibilidad, atraer clientes y transmitir confianza. Muchos negocios recuperan la inversión en los primeros meses.",  
 
   "bannerInfo":"Servicios freelance.",
   "bannerButton":"Más información",
@@ -526,8 +523,13 @@
   "toolTipTextSix":"Visita mi perfil de Github",
   "toolTipTextSeven":"Envíame un email",
   "toolTipTextEight":"Volver a arriba",
+  "toolTipTextNine":"Proyecto anterior",
+  "toolTipTextTen":"Proyecto siguiente",
+  "toolTipTextEleven":"Volver a arriba",
 
-  "buttonLanguage":"Es"
+  "buttonLanguage":"Es",
+
+  "buttonPannelTitle":"Proyecto actual"
 }
 
 

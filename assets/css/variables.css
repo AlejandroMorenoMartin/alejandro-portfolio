@@ -210,3 +210,7 @@
   font-weight: 200;
   font-style: normal;
 }
+
+:target {
+  scroll-margin-top: 96px;
+}

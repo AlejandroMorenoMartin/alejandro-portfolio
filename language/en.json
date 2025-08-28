@@ -456,7 +456,7 @@
   "cardPricesThreeThirdIncluded":"UX/UI strategy to boost conversions",
   "cardPricesThreeFourthIncluded":"3 months of technical support included",
   "cardPricesRecommended":"Recommended",
-  "pricesFAQsTitle":"Frequently asked questions",
+  "pricesFAQsTitle":"Frequently asked questions.",
   "pricesFAQsDescription":"I'll answer some of the most common questions that people I work with often have.",
   "cardFAQsTitleOne":"What if I'm not a tech expert?",
   "cardFAQsDescriptionOne":"I'll handle the entire process and deliver a website that's easy to manage. Plus, I'll teach you what you need to be independent in its use.",
@@ -469,10 +469,7 @@
   "cardFAQsTitleFive":"What about the domain and hosting?",
   "cardFAQsDescriptionFive":"If you don't have them yet, I'll help you choose and set up the safest and most affordable options for your business.",
   "cardFAQsTitleSix":"Is the investment really worth it?",
-  "cardFAQsDescriptionSix":"A professional website isn't an expense; it's an investment. It helps you gain visibility, attract clients, and build trust. Many businesses recover their investment within the first few months.",
-  "someQuestionsSectionTitle":"Have a question?",
-  "someQuestionsSectionDescription":"Don't hesitate to get in touch; I'd be happy to chat with you.",
-  "someQuestionsSectionButton":"Contact me",
+  "cardFAQsDescriptionSix":"A professional website isn't an expense; it's an investment. It helps you gain visibility, attract clients, and build trust. Many businesses recover their investment within the first few months.",  
 
   "bannerInfo": "Freelance services.",
   "bannerButton": "Info",
@@ -489,6 +486,11 @@
   "toolTipTextSix":"Visit my Github profile",
   "toolTipTextSeven":"Send me an email",
   "toolTipTextEight":"Back to top",
+  "toolTipTextNine":"Previous project",
+  "toolTipTextTen":"Next project",
+  "toolTipTextEleven":"Back to top",
 
-  "buttonLanguage":"En"
+  "buttonLanguage":"En",
+
+  "buttonPannelTitle":"Current project"
 }

@@ -97,7 +97,7 @@
             class="buttonSecondary buttonSecondary-100 langButton"
             data-lang="es"
           >
-            <p class="smallBold">Es</p>
+            <p class="smallBold" data-key="buttonLanguage"></p>
             <span class="toolTipText"
               ><p class="small" data-key="toolTipTextTwo"></p
             ></span>
@@ -105,30 +105,11 @@
         </div>
       </nav>
 
-      <!-- [tableOfContent] -->
-      <nav id="tableOfContents" class="table-of-contents"></nav>
+      <!-- progressBar -->
+      <div id="scrollProgressBar"></div>
 
-      <!-- [buttonPannel] -->
-      <div class="buttonPannel">
-        <a class="buttonSecondary" href="artisteo.html">
-          <i class="fa-solid fa-chevron-left"></i>
-          <div class="buttonPannelButtonFrame">
-            <p class="small" data-key="buttonPannelPreviousTitle"></p>
-            <p class="smallBold">Artisteo</p>
-          </div>
-        </a>
-        <div class="buttonPannelFrame">
-          <p class="small" data-key="buttonPanneCurrentlTitle"></p>
-          <p class="smallBold">Geomites</p>
-        </div>
-        <a class="buttonSecondary" href="vivaGym.html">
-          <div class="buttonPannelButtonFrame">
-            <p class="small" data-key="buttonPannelNextTitle"></p>
-            <p class="smallBold">VivaGym</p>
-          </div>
-          <i class="fa-solid fa-chevron-right"></i>
-        </a>
-      </div>
+      <!-- [tableOfContent] -->
+      <nav id="tableOfContents" class="table-of-contents"></nav>      
 
       <!-- [mainSections] -->
       <div class="mainContainerSections mainContainerSectionsProject">
@@ -924,6 +905,39 @@
           </div>                       
       </section>
 
+      <!-- [buttonPannel] -->
+      <div class="buttonPannel">
+        <div class="buttonPannelFrame">
+          <div class="buttonPannelFrameText">
+            <p class="small" data-key="buttonPannelTitle"></p>
+            <p class="smallBold">Geomites</p>
+          </div>
+          <div class="buttonPannelFrameButtons">
+            <a class="buttonSecondary buttonSecondary-100" href="artisteo.html">
+              <i class="fa-solid fa-chevron-left"></i>
+              <span class="toolTipText toolTipTextTwo"
+                ><p class="small" data-key="toolTipTextNine"></p
+              ></span>
+            </a>
+            <a class="buttonSecondary buttonSecondary-100" href="vivaGym.html">
+              <i class="fa-solid fa-chevron-right"></i>
+              <span class="toolTipText toolTipTextTwo"
+                ><p class="small" data-key="toolTipTextTen"></p
+              ></span>
+            </a>
+          </div>
+        </div>
+        <!-- [buttonBackToTop] -->
+        <button
+          id="buttonBackToTop" 
+          class="buttonSecondary buttonSecondary-100">
+          <i class="fa-solid fa-chevron-up"></i>
+          <span class="toolTipText toolTipTextTwo"
+            ><p class="small" data-key="toolTipTextEleven"></p
+          ></span>
+        </button>
+      </div>
+
       <!-- [footer] -->
       <footer>
         <div class="footerFrameTop">
@@ -1043,44 +1057,7 @@
             <p class="small">2025</p>
           </div>
         </div>        
-      </footer>
-
-      <!-- [scroll to top] -->
-      <button id="scrollToTop" aria-label="Volver arriba" title="Volver arriba">
-        <svg
-          width="60"
-          height="60"
-          viewBox="0 0 100 100"
-          aria-hidden="true"
-          focusable="false"
-        >
-          <circle
-            cx="50"
-            cy="50"
-            r="48"            
-            stroke-width="4"
-            fill="none"
-            class="circleOne"
-          />
-          <circle
-            id="progressCircle"
-            cx="50"
-            cy="50"
-            r="48"
-            stroke="#FF9500"
-            stroke-width="4"
-            fill="none"
-            stroke-linecap="round"
-            transform="rotate(-90 50 50)"
-            stroke-dasharray="283"
-            stroke-dashoffset="283"
-          />
-        </svg>
-        <i
-          class="fa-solid fa-chevron-up"
-          style="position: absolute; font-size: 16px"
-        ></i>
-      </button>
+      </footer>      
     </main>
     
     <!-- [fontAwsome] -->
