@@ -16,10 +16,7 @@
 
     <!-- [Basic Metadata] -->
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, orientation=portrait"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
     <meta http-equiv="Content-Language" content="es" />
     <meta name="author" content="Alejandro Moreno" />
     <meta name="robots" content="index, follow" />
@@ -176,7 +173,7 @@
       <nav id="tableOfContents" class="table-of-contents"></nav>      
 
       <!-- [mainSections] -->
-      <div class="mainContainerSections mainContainerSectionsProject">
+      <div class="mainContainerSections">
         <!-- [hero] -->
         <section class="heroProjectSection">
           <div class="heroProjectSectionTitle">
@@ -221,45 +218,28 @@
               </div>
             </div>
           </div>
-          <!-- [overviewImage] -->
-          <img
-            src="assets/images/projects/artisteo/artisteoOverviewImage.webp"
-            alt="overviewImage"
-            class="overviewImageTablet"
-          />
+          
         </section>
+        <!-- [overviewImage] -->
+        <img
+          src="assets/images/projects/artisteo/artisteoOverviewImage.webp"
+          alt="overviewImage"
+          class="overviewImageTablet"
+        />
         <!-- [propuesta de valor] -->
-        <section class="indexSection" id="valueProposition">
-          <div class="sectionHeader">
-            <h2 data-key="artisteoSectionTitleOne"></h2>
-          </div>
-          <div class="indexSectionFrame">
-            <p
-              class="regular"
-              data-key="artisteoSectionTitleOneFirstParagraph"
-            ></p>
-            <p
-              class="regular"
-              data-key="artisteoSectionTitleOneSecondParagraph"
-            ></p>
-            <p
-              class="regular"
-              data-key="artisteoSectionTitleOneThirdParagraph"
-            ></p>
-          </div>
+        <section class="sectionHeader" id="valueProposition">
+          <h2 data-key="artisteoSectionTitleOne"></h2>
+          <p class="regular" data-key="artisteoSectionTitleOneFirstParagraph"></p>
+          <p class="regular" data-key="artisteoSectionTitleOneSecondParagraph"></p>
+          <p class="regular" data-key="artisteoSectionTitleOneThirdParagraph"></p>          
         </section>
         <!-- [objetivos] -->
-        <section class="indexSection sectionOne" id="objectives">
+        <section class="sectionHeaderTwo" id="objectives">
           <div class="sectionHeaderFrame">
-            <div class="sectionHeader">
-              <h2 data-key="artisteoSectionTitleTwo"></h2>
-            </div>
-            <p
-              class="regular"
-              data-key="artisteoSectionObjectivesDescription"
-            ></p>
+            <h2 data-key="artisteoSectionTitleTwo"></h2>
+            <p class="regular" data-key="artisteoSectionObjectivesDescription"></p>            
           </div>
-          <div class="subSectionOne">
+          <div class="sectionHeader">
             <!-- [cardObjectivesOne] -->
             <div class="cardObjectives">
               <p
@@ -299,18 +279,13 @@
           </div>
         </section>
         <!-- [investigación] -->
-        <section class="indexSection sectionTwo sectionCut" id="research">
+        <section class="sectionHeaderTwo" id="research">
           <div class="sectionHeaderFrame">
-            <div class="sectionHeader">
-              <h2 data-key="artisteoSectionTitleThree"></h2>
-            </div>
-            <p
-              class="regular"
-              data-key="artisteoSectionResearchDescription"
-            ></p>
+            <h2 data-key="artisteoSectionTitleThree"></h2>
+            <p class="regular" data-key="artisteoSectionResearchDescription"></p>            
           </div>
           <!-- [analisisMercado] -->
-          <div class="sectionOne">
+          <div class="sectionHeaderThree">
             <div class="sectionHeaderFrame">
               <h4 data-key="artisteoDataAnalysisTitle"></h4>
               <p class="regular" data-key="artisteoDataAnalysisDescription"></p>
@@ -328,85 +303,45 @@
                   data-key="artisteoDataAnalysisPointThree"
                 ></li>
               </ul>
-            </div>
-            <!-- [subSectionOneRow] -->
-            <div class="subSectionOneRow">
-              <div class="subSectionOneRowColumn">
-                <img
-                  class="overviewImage"
-                  src="assets/images/projects/artisteo/fiverrCover.webp"
-                  alt="gameScreen"
-                />
-                <div class="subSectionOneRowColumnInfo">
+            </div>            
+            <div class="gridFour">
+              <div class="imageLeyendFrame">
+                <img class="overviewImage" src="assets/images/projects/artisteo/fiverrCover.webp"
+                  alt="gameScreen"/>
                   <p class="smallBold" data-key="artisteoGameOneInfoTitle"></p>
-                  <p
-                    class="small"
-                    data-key="artisteoGameOneInfoDescription"
-                  ></p>
-                </div>
+                  <p class="small" data-key="artisteoGameOneInfoDescription"></p>                
               </div>
-              <div class="subSectionOneRowColumn">
-                <img
-                  class="overviewImage"
-                  src="assets/images/projects/artisteo/skoolCover.webp"
-                  alt="gameScreen"
-                />
-                <div class="subSectionOneRowColumnInfo">
-                  <p class="smallBold" data-key="artisteoGameTwoInfoTitle"></p>
-                  <p
-                    class="small"
-                    data-key="artisteoGameTwoInfoDescription"
-                  ></p>
-                </div>
+              <div class="imageLeyendFrame">
+                <img class="overviewImage" src="assets/images/projects/artisteo/skoolCover.webp"
+                alt="gameScreen"/>
+                <p class="smallBold" data-key="artisteoGameTwoInfoTitle"></p>
+                <p class="small" data-key="artisteoGameTwoInfoDescription"></p>                
               </div>
-            </div>
-            <!-- [subSectionOneRow] -->
-            <div class="subSectionOneRow">
-              <div class="subSectionOneRowColumn">
-                <img
-                  class="overviewImage"
-                  src="assets/images/projects/artisteo/gigsaladCover.webp"
-                  alt="gameScreen"
-                />
-                <div class="subSectionOneRowColumnInfo">
-                  <p
-                    class="smallBold"
-                    data-key="artisteoGameThreeInfoTitle"
-                  ></p>
-                  <p
-                    class="small"
-                    data-key="artisteoGameThreeInfoDescription"
-                  ></p>
-                </div>
+              <div class="imageLeyendFrame">
+                <img class="overviewImage" src="assets/images/projects/artisteo/gigsaladCover.webp" alt="gameScreen">
+                <p class="smallBold" data-key="artisteoGameThreeInfoTitle"></p>
+                <p class="small" data-key="artisteoGameThreeInfoDescription"></p>                
               </div>
-              <div class="subSectionOneRowColumn">
-                <img
-                  class="overviewImage"
-                  src="assets/images/projects/artisteo/upworkCover.webp"
-                  alt="gameScreen"
-                />
-                <div class="subSectionOneRowColumnInfo">
-                  <p class="smallBold" data-key="artisteoGameFourInfoTitle"></p>
-                  <p
-                    class="small"
-                    data-key="artisteoGameFourInfoDescription"
-                  ></p>
-                </div>
+              <div class="imageLeyendFrame">
+                <img class="overviewImage" src="assets/images/projects/artisteo/upworkCover.webp"
+                alt="gameScreen"/>
+                <p class="smallBold" data-key="artisteoGameFourInfoTitle"></p>
+                <p class="small" data-key="artisteoGameFourInfoDescription"></p>
+                
               </div>
-            </div>
+            </div>            
           </div>
           <!-- [investigacionUsuarios] -->
-          <div class="indexSubSection">
+          <div class="sectionHeaderThree">
             <div class="sectionHeaderFrame">
               <h4 data-key="artisteoUserResearchTitle"></h4>
               <p class="regular" data-key="artisteoUserResearchDescription"></p>
             </div>
-            <div class="indexSectionFrame">
+            <div class="gridTwo">
               <!-- [userOne] -->
               <div class="userResearchCard">
                 <div class="userResearchCardTitle">
-                  <img
-                    class="userResearchCardImage"
+                  <img                    
                     src="assets/images/projects/artisteo/lucasRomero.webp"
                     alt="userResearchCardImage"
                   />
@@ -435,8 +370,7 @@
               <!-- [userTwo] -->
               <div class="userResearchCard">
                 <div class="userResearchCardTitle">
-                  <img
-                    class="userResearchCardImage"
+                  <img                    
                     src="assets/images/projects/artisteo/anaSalazar.webp"
                     alt="userResearchCardImage"
                   />
@@ -466,10 +400,7 @@
           </div>
         </section>
         <!-- [decisionesDe] -->
-        <section
-          class="indexSection sectionTwo sectionCut"
-          id="designDecisions"
-        >
+        <section class="sectionHeaderTwo" id="designDecisions">
           <div class="sectionHeaderFrame">
             <h2 data-key="artisteoSectionTitleFour"></h2>
             <p
@@ -478,7 +409,7 @@
             ></p>
           </div>
           <!-- [decisionOne] -->
-          <div class="indexSectionFrame">
+          <div class="sectionHeaderFrame">
             <div class="cardDesignDecision">
               <div class="cardDesignDecisionFirstFrame">
                 <p
@@ -514,7 +445,7 @@
             />
           </div>
           <!-- [decisionTwo] -->
-          <div class="indexSectionFrame">
+          <div class="sectionHeaderFrame">
             <div class="cardDesignDecision">
               <div class="cardDesignDecisionFirstFrame">
                 <p
@@ -550,7 +481,7 @@
             />
           </div>
           <!-- [decisionThree] -->
-          <div class="indexSectionFrame">
+          <div class="sectionHeaderFrame">
             <div class="cardDesignDecision">
               <div class="cardDesignDecisionFirstFrame">
                 <p
@@ -586,7 +517,7 @@
             />
           </div>
           <!-- [decisionFour] -->
-          <div class="indexSectionFrame">
+          <div class="sectionHeaderFrame">
             <div class="cardDesignDecision">
               <div class="cardDesignDecisionFirstFrame">
                 <p
@@ -623,7 +554,7 @@
           </div>
         </section>
         <!-- [sistemaDe] -->
-        <section class="indexSection sectionTwo sectionCut" id="designSystem">
+        <section class="sectionHeaderTwo" id="designSystem">
           <div class="sectionHeaderFrame">
             <h2 data-key="artisteoDesignSystemSectionTitle"></h2>
             <p
@@ -632,7 +563,7 @@
             ></p>
           </div>
           <!-- [creacionDeMarca] -->
-          <div class="indexSubSection">
+          <div class="sectionHeaderFrame">
             <div class="sectionHeaderFrame">
               <h4 data-key="artisteoBrandCreationOneTitle"></h4>
               <p
@@ -656,7 +587,7 @@
             </div>
           </div>
           <!-- [tipografía] -->
-          <div class="indexSubSection">
+          <div class="sectionHeaderFrame">
             <div class="sectionHeaderFrame">
               <h4 data-key="artisteoBrandCreationTwoTitle"></h4>
               <p
@@ -664,7 +595,7 @@
                 data-key="artisteoBrandCreationTwoDescription"
               ></p>
             </div>
-            <div class="gridOne">
+            <div class="gridTwoTwo">
               <div class="artisteoCardTypography">
                 <p class="artisteoCardOneTypographyOne">Aa</p>
                 <div class="artisteoCardOneTypographyFrame">
@@ -696,7 +627,7 @@
             </div>
           </div>
           <!-- [color] -->
-          <div class="indexSubSection">
+          <div class="sectionHeaderFrame">
             <div class="sectionHeaderFrame">
               <h4 data-key="artisteoBrandCreationThreeTitle"></h4>
               <p
@@ -704,7 +635,7 @@
                 data-key="artisteoBrandCreationThreeDescription"
               ></p>
             </div>
-            <div class="gridTwo">
+            <div class="gridSix">
               <div class="artisteoCardColor artisteoCardColorOne">
                 <p class="smallBold">primary-100</p>
                 <p class="small">#EBFDFD</p>
@@ -732,7 +663,7 @@
             </div>
           </div>
           <!-- [iconografía] -->
-          <div class="indexSubSection">
+          <div class="sectionHeaderFrame">
             <div class="sectionHeaderFrame">
               <h4 data-key="artisteoBrandCreationFourTitle"></h4>
               <p
@@ -976,7 +907,7 @@
             </div>
           </div>
           <!-- [componentes] -->
-          <div class="indexSubSection">
+          <div class="sectionHeaderFrame">
             <div class="sectionHeaderFrame">
               <h4 data-key="artisteoBrandCreationFiveTitle"></h4>
               <p
@@ -986,76 +917,64 @@
             </div>
             <div class="gridResponsiveSix">
               <!-- [componente1] -->
-              <div class="subSectionOneRowColumn">
+              <div class="imageLeyendFrame">
                 <img
                   class="overviewImage"
                   src="assets/images/projects/artisteo/componentOne.webp"
                   alt="gameScreen"
                 />
-                <div class="subSectionOneRowColumnInfo">
-                  <p class="smallBold" data-key="artisteoComponentOne"></p>
-                </div>
+                <p class="smallBold" data-key="artisteoComponentOne"></p>                
               </div>
               <!-- [componente2] -->
-              <div class="subSectionOneRowColumn">
+              <div class="imageLeyendFrame">
                 <img
                   class="overviewImage"
                   src="assets/images/projects/artisteo/componentTwo.webp"
                   alt="gameScreen"
                 />
-                <div class="subSectionOneRowColumnInfo">
-                  <p class="smallBold" data-key="artisteoComponentTwo"></p>
-                </div>
+                <p class="smallBold" data-key="artisteoComponentTwo"></p>                
               </div>
               <!-- [componente3] -->
-              <div class="subSectionOneRowColumn">
+              <div class="imageLeyendFrame">
                 <img
                   class="overviewImage"
                   src="assets/images/projects/artisteo/componentThree.webp"
                   alt="gameScreen"
                 />
-                <div class="subSectionOneRowColumnInfo">
-                  <p class="smallBold" data-key="artisteoComponentThree"></p>
-                </div>
+                <p class="smallBold" data-key="artisteoComponentThree"></p>                
               </div>
               <!-- [componente4] -->
-              <div class="subSectionOneRowColumn">
+              <div class="imageLeyendFrame">
                 <img
                   class="overviewImage"
                   src="assets/images/projects/artisteo/componentFour.webp"
                   alt="gameScreen"
                 />
-                <div class="subSectionOneRowColumnInfo">
-                  <p class="smallBold" data-key="artisteoComponentFour"></p>
-                </div>
+                <p class="smallBold" data-key="artisteoComponentFour"></p>                
               </div>
               <!-- [componente5] -->
-              <div class="subSectionOneRowColumn">
+              <div class="imageLeyendFrame">
                 <img
                   class="overviewImage"
                   src="assets/images/projects/artisteo/componentFive.webp"
                   alt="gameScreen"
                 />
-                <div class="subSectionOneRowColumnInfo">
-                  <p class="smallBold" data-key="artisteoComponentFive"></p>
-                </div>
+                <p class="smallBold" data-key="artisteoComponentFive"></p>                
               </div>
               <!-- [componente6] -->
-              <div class="subSectionOneRowColumn">
+              <div class="imageLeyendFrame">
                 <img
                   class="overviewImage"
                   src="assets/images/projects/artisteo/componentSix.webp"
                   alt="gameScreen"
                 />
-                <div class="subSectionOneRowColumnInfo">
-                  <p class="smallBold" data-key="artisteoComponentSix"></p>
-                </div>
+                <p class="smallBold" data-key="artisteoComponentSix"></p>                
               </div>
             </div>
           </div>
         </section>
         <!-- [aprendizajes] -->
-        <section class="indexSection sectionOne" id="learnings">
+        <section class="sectionHeaderTwo" id="learnings">
           <div class="sectionHeaderFrame">
             <h2 data-key="artisteoLearningsSectionTitle"></h2>
             <p
@@ -1063,7 +982,7 @@
               data-key="artisteoLearningsSectionDescription"
             ></p>
           </div>
-          <div class="invertFrame">
+          <div class="gridFour">
             <div class="learningFrame">
               <p class="regular" data-key="artisteoLearningFrameOne"></p>
               <i class="fa-solid fa-trophy"></i>
@@ -1083,53 +1002,44 @@
           </div>
         </section>
         <!-- [equipo] -->
-        <section class="indexSection sectionOne" id="team">
+        <section class="sectionHeaderTwo" id="team">
           <div class="sectionHeaderFrame">
             <h2 data-key="artisteoTeamSectionTitle"></h2>
             <p class="regular" data-key="artisteoTeamSectionDescription"></p>
           </div>
-          <div class="invertFrameTwo">
+          <div class="gridFive">
             <!-- [teamMemberOne] -->
-            <div class="teamFrame">
+            <div class="imageLeyendFrame">
               <img
                 src="assets/images/projects/artisteo/daniel.webp"
                 alt="teamImage"
               />
-              <div class="teamFrameText">
-                <p class="regularBold">Daniel Ruíz</p>
-                <p
-                  class="regular"
-                  data-key="artisteoTeamFrameOneDescription"
-                ></p>
-              </div>
+              <p class="regularBold">Daniel Ruíz</p>
+              <p class="regular"data-key="artisteoTeamFrameOneDescription"></p>              
             </div>
             <!-- [teamMemberTwo] -->
-            <div class="teamFrame">
+            <div class="imageLeyendFrame">
               <img
                 src="assets/images/projects/artisteo/javier.webp"
                 alt="teamImage"
               />
-              <div class="teamFrameText">
-                <p class="regularBold">Javier Ruíz</p>
-                <p
-                  class="regular"
-                  data-key="artisteoTeamFrameTwoDescription"
-                ></p>
-              </div>
+              <p class="regularBold">Javier Ruíz</p>
+              <p
+                class="regular"
+                data-key="artisteoTeamFrameTwoDescription"
+              ></p>              
             </div>
             <!-- [teamMemberThree] -->
-            <div class="teamFrame">
+            <div class="imageLeyendFrame">
               <img
                 src="assets/images/projects/artisteo/alejandro.webp"
                 alt="teamImage"
-              />
-              <div class="teamFrameText">
+                />
                 <p class="regularBold">Alejandro Moreno</p>
                 <p
                   class="regular"
                   data-key="artisteoTeamFrameThreeDescription"
-                ></p>
-              </div>
+                ></p>              
             </div>
           </div>
         </section>

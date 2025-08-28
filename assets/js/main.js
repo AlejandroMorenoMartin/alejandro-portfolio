@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const toc = document.getElementById("tableOfContents");
     if (!toc) return;
 
-    const sections = document.querySelectorAll(".sectionHeader");
+    const sections = document.querySelectorAll(".sectionHeader, .sectionHeaderTwo");
     const wrapper = document.createElement("div");
     const title = document.createElement("p");
     const list = document.createElement("ul");

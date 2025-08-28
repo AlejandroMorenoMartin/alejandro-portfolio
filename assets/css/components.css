@@ -14,15 +14,15 @@
 .buttonPrimary {
   position: relative;
   display: flex;
-  width: fit-content;  
+  width: fit-content;
   gap: 0.5rem;
-  padding: 0.25rem .5rem;
+  padding: 0.5rem 1rem;
   border-radius: var(--br);
   background: var(--primary-300);
   justify-content: center;
   align-items: center;
   transition: all 200ms ease-in-out;
-  cursor: pointer;       
+  cursor: pointer;
 }
 
 .buttonPrimary p,
@@ -36,9 +36,9 @@
 
 .buttonSecondary {
   position: relative;
-  display: flex;  
+  display: flex;
   gap: 0.5rem;
-  padding: 0.25rem .5rem;
+  padding: 0.5rem 1rem;
   width: fit-content;
   border-radius: var(--br);
   background: var(--white);
@@ -107,6 +107,10 @@
   background: var(--gray-100);
 }
 
+.langButton {
+  padding: 0.25rem 0.5rem;
+}
+
 /* toolTipText */
 .toolTipText {
   visibility: hidden;
@@ -136,6 +140,13 @@
 .buttonSecondary:hover .toolTipText {
   visibility: visible;
   opacity: 1;
+}
+
+@media screen and (max-width: 1200px) {
+  .buttonSecondary:hover .toolTipText {
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 
 .buttonBackToTop {
@@ -278,6 +289,50 @@ html[data-theme="dark"] .navContainer.scrolled {
   width: 100%;
 }
 
+.sectionHeaderFrameFrame {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.sectionHeaderThree {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+}
+
+.designDecisionFrame {
+  display: flex;
+  flex-direction: row;
+  gap: 8rem;
+  width: 100%;
+  align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .designDecisionFrame {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .designDecisionFrame:nth-of-type(odd) {
+    flex-direction: column-reverse;
+  }
+}
+
+.imageLeyendFrame {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.25rem;  
+}
+
+.imageLeyendFrame img {
+  border-radius: var(--br);
+}
+
 .gridFour {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -292,9 +347,74 @@ html[data-theme="dark"] .navContainer.scrolled {
   width: 100%;
 }
 
-@media (max-width: 1200px) {
+.gridTwoTwo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+
+.gridSix {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  width: 100%;
+}
+
+.gridThree {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, auto);
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.gridTypeTwo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  gap: 1rem;
+}
+
+.gridTypeThree {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
   .gridFour {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gridTwo {
+    grid-template-columns: 1fr;
+  }
+
+  .gridTwoTwo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gridSix {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .gridThree {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .gridTypeTwo {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  .gridTypeThree {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
   }
 }
 
@@ -376,8 +496,15 @@ html[data-theme="dark"] .navContainer.scrolled {
 
 .pricesHeroSectionButtons {
   display: flex;
-  flex-direction: row;  
-  gap: .5rem; 
+  flex-direction: row;
+  gap: 0.5rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.mainContainerSectionPrices .sectionHeaderFrame h2,
+.mainContainerSectionPrices .sectionHeaderFrame p {
+  text-align: center;
 }
 
 /* cardProjects */
@@ -826,15 +953,29 @@ footer {
 }
 
 .cardTestimony img {
-  width: 146px;
-  height: 146px;
+  width: 132px;
+  height: 132px;
   border-radius: var(--br);
 }
 
 @media screen and (max-width: 1200px) {
-  .cardTestimony img {
+  .cardTestimony img,
+  .userResearchCardTitle img {
     width: 48px;
     height: 48px;
+  }
+}
+
+.userResearchCardTitle img {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--br);
+}
+
+@media screen and (max-width: 1200px) {
+  .userResearchCardTitle img {
+    width: 72px;
+    height: 72px;
   }
 }
 
@@ -898,8 +1039,9 @@ footer {
   gap: 0.5rem;
   position: absolute;
   bottom: -2rem;
-  right: 45%;
   align-items: center;
+  width: 100%;
+  justify-content: center;
 }
 
 .sliderDot {
@@ -967,7 +1109,8 @@ footer {
   text-overflow: ellipsis;
 }
 
-.cardReading p.regular {
+.cardReading p.regular,
+.cardEducation p.regularBold {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -980,7 +1123,12 @@ footer {
 .heroProjectSection {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 1rem;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .heroProjectSectionTitle {
@@ -989,6 +1137,7 @@ footer {
   gap: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1.5px solid var(--white-500);
+  width: 100%;
 }
 
 .heroProjectSectionTitleInfo {
@@ -1009,7 +1158,7 @@ footer {
 .heroProjectSectionInfo {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 1rem;
   align-items: start;
 }
 
@@ -1033,7 +1182,9 @@ footer {
 
 @media screen and (max-width: 1200px) {
   .heroProjectSection {
-    gap: 2rem;
+    gap: 1rem;
+    height: auto;
+    padding-top: 2rem;
   }
   .heroProjectSectionInfo {
     display: grid;
@@ -1048,7 +1199,7 @@ footer {
 
 .overviewImage,
 .overviewVideo {
-  width: 320px;
+  width: 272px;
   margin: 0 auto;
 }
 
@@ -1290,22 +1441,6 @@ footer {
   color: #f5f0eb;
 }
 
-.gridThree {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(4, auto);
-  gap: 1rem;
-  justify-items: center;
-  align-items: center;
-}
-
-@media (max-width: 1200px) {
-  .gridThree {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-  }
-}
-
 .geomitesIcon,
 .artisteoIcon {
   height: 36px;
@@ -1319,12 +1454,6 @@ footer {
 .artisteoIcon path {
   stroke-width: 1px;
   stroke: var(--black);
-}
-
-.kpiFrame {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
 }
 
 .subSectionOneRowSpecialFrameFrame {
@@ -1370,23 +1499,10 @@ footer {
   line-height: var(--lh-small);
 }
 
-.invertFrame {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-@media (max-width: 1200px) {
-  .invertFrame {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-  }
-}
-
 .learningFrame {
   display: flex;
   padding: 1rem;
-  border-radius: 16px;
+  border-radius: var(--br);
   border: 1.5px solid var(--white-500);
   background: var(--white-200);
   position: relative;
@@ -1401,19 +1517,6 @@ footer {
   right: -24px;
   bottom: -64px;
   color: var(--primary-100);
-}
-
-.invertFrameTwo {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(5, 1fr);
-}
-
-@media (max-width: 1200px) {
-  .invertFrameTwo {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
-  }
 }
 
 .teamFrame {
@@ -1508,12 +1611,6 @@ footer {
   padding: 1rem;
   background-color: var(--white-100);
   border: 1.5px solid var(--white-500);
-  border-radius: var(--br);
-}
-
-.userResearchCard img {
-  width: 96px;
-  height: 96px;
   border-radius: var(--br);
 }
 
@@ -1725,6 +1822,19 @@ footer {
   }
 }
 
+.gridFive {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .gridFive {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .cardDesignDecision {
   display: flex;
   flex-direction: column;
@@ -1783,34 +1893,6 @@ footer {
 
 .cardDesignDecisionThirdFrame h4 {
   color: var(--primary-300);
-}
-
-.gridTypeTwo {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto auto;
-  gap: 1rem;
-}
-
-@media (max-width: 1200px) {
-  .gridTypeTwo {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
-  }
-}
-
-.gridTypeThree {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto auto;
-  gap: 1rem;
-}
-
-@media (max-width: 1200px) {
-  .gridTypeThree {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-  }
 }
 
 .cardInsightVivagym {
@@ -1877,6 +1959,7 @@ footer {
 .cardPricesInfoSection {
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 
 .cardPricesInfoSectionFrame {
@@ -1916,22 +1999,6 @@ footer {
 .cardTwo .cardPriceImage,
 .cardFour .cardPriceImage {
   border-radius: 0 1rem 1rem 0;
-}
-
-.pricesPricesCardContainer {
-  display: flex;
-}
-
-.pricesPricesCardContainer {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-}
-
-@media (max-width: 1200px) {
-  .pricesPricesCardContainer {
-    flex-direction: column;
-  }
 }
 
 .cardPrices {
@@ -2007,8 +2074,8 @@ span.cardPricesRecommended {
   color: var(--primary-300);
 }
 
-.pricesPricesCardContainer .cardPrices:nth-child(2) {
-  border: 3px solid var(--primary-300);
+.sectionHeaderRow .cardPrices:nth-child(2) {
+  border: 1px solid var(--primary-300);
 }
 
 .cardFAQs {
@@ -2176,8 +2243,8 @@ span.cardPricesRecommended {
   top: var(--nav-height, 56px);
   left: 0;
   width: 0%;
-  height: 2px;
-  background: var(--primary-200);
+  height: 1px;
+  background: var(--primary-300);
   z-index: 9999;
   transition: width 200ms ease-in-out;
 }
