@@ -1297,6 +1297,7 @@ footer {
   gap: 1rem;
 }
 
+/* geomites tipography */
 .geomitesCardTypography {
   display: flex;
   flex-direction: column;
@@ -1369,44 +1370,116 @@ footer {
   font-weight: 400;
 }
 
+/* vivagym tipograhpy */
+
+.vivagymCardOneTypographyOne {
+  font-family: "Montserrat", sans-serif;
+  font-size: 96px;
+  font-weight: bold;
+}
+
+.vivagymCardOneTypographyTwo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.vivagymCardOneTypographyThree {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.vivagymCardOneTypographyFour {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.vivagymCardOneTypographyFive {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.vivagymCardOneTypographySix {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.vivagymCardOneTypographySeven {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.vivagymCardOneTypographyEight {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.vivagymCardOneTypographyNine {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.vivagymCardOneTypographyTen {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+}
+
 @media (max-width: 1200px) {
-  .geomitesCardOneTypographyOne {
+  .geomitesCardOneTypographyOne,
+  .vivagymCardOneTypographyOne {
     font-size: 48px;
   }
 
-  .geomitesCardOneTypographyTwo {
+  .geomitesCardOneTypographyTwo,
+  .vivagymCardOneTypographyTwo {
     font-size: 24px;
   }
 
-  .geomitesCardOneTypographyThree {
+  .geomitesCardOneTypographyThree,
+  .vivagymCardOneTypographyThree {
     font-size: 18px;
   }
 
-  .geomitesCardOneTypographyFour {
+  .geomitesCardOneTypographyFour,
+  .vivagymCardOneTypographyFour {
     font-size: 16px;
   }
 
-  .geomitesCardOneTypographyFive {
+  .geomitesCardOneTypographyFive,
+  .vivagymCardOneTypographyFive {
     font-size: 14px;
   }
 
-  .geomitesCardOneTypographySix {
+  .geomitesCardOneTypographySix,
+  .vivagymCardOneTypographySix {
     font-size: 12px;
   }
 
-  .geomitesCardOneTypographySeven {
+  .geomitesCardOneTypographySeven,
+  .vivagymCardOneTypographySeven {
     font-size: 10px;
   }
 
-  .geomitesCardOneTypographyEight {
+  .geomitesCardOneTypographyEight,
+  .vivagymCardOneTypographyEight {
     font-size: 8px;
   }
 
-  .geomitesCardOneTypographyNine {
+  .geomitesCardOneTypographyNine,
+  .vivagymCardOneTypographyNine {
     font-size: 6px;
   }
 
-  .geomitesCardOneTypographyTen {
+  .geomitesCardOneTypographyTen,
+  .vivagymCardOneTypographyTen {
     font-size: 5px;
   }
 }
@@ -1461,6 +1534,42 @@ footer {
 .artisteoIcon {
   height: 36px;
   width: 36px;
+}
+
+.vivagymCardColorOne {
+  background-color: #FFE1CC;
+}
+
+.vivagymCardColorTwo {
+  background-color: #FF9C66;
+}
+
+.vivagymCardColorThree {
+  background-color: #FD5000;
+}
+
+.vivagymCardColorOne p,
+.vivagymCardColorTwo p,
+.vivagymCardColorThree p {
+  color: #661F00;
+}
+
+.vivagymCardColorFour {
+  background-color: #CC4000;
+}
+
+.vivagymCardColorFive {
+  background-color: #992F00;
+}
+
+.vivagymCardColorSix {
+  background-color: #661F00;
+}
+
+.vivagymCardColorFour p,
+.vivagymCardColorFive p,
+.vivagymCardColorSix p {
+  color: #FFE1CC;
 }
 
 .artisteoIcon {
@@ -2096,9 +2205,15 @@ span.cardPricesRecommended {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
-  padding-bottom: 1rem;
+  padding: 1rem;
+  border-radius: var(--br);
   border-bottom: 1.5px solid var(--white-500);
   cursor: pointer;
+  width: 100%;
+}
+
+.cardFAQs:hover {
+  background: var(--white-200);
 }
 
 .cardFAQsFrame {
@@ -2179,9 +2294,9 @@ span.cardPricesRecommended {
   align-items: flex-start;
 }
 
-.graphContainer svg {
-  width: 160px;
-  height: 160px;
+.graphContainer img {
+  width: 256px;
+  height: 256px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -2189,22 +2304,10 @@ span.cardPricesRecommended {
     width: 100%;
     justify-content: space-between;
   }
-  .graphContainer svg {
-    width: 96px;
-    height: 96px;
+  .graphContainer img {
+    width: 128px;
+    height: 128px;
   }
-}
-
-.graphContainer .graphRed {
-  color: var(--red);
-}
-
-.graphContainer .graphYellow {
-  color: var(--yellow);
-}
-
-.graphContainer .graphGreen {
-  color: var(--green);
 }
 
 .graphContainerLeyend {
@@ -2228,15 +2331,15 @@ span.cardPricesRecommended {
 }
 
 .graphContainerLeyendFrameElipse.red {
-  background-color: var(--red);
+  background-color: #FF743F;
 }
 
 .graphContainerLeyendFrameElipse.green {
-  background-color: var(--green);
+  background-color: #EC4864;
 }
 
 .graphContainerLeyendFrameElipse.yellow {
-  background-color: var(--yellow);
+  background-color: #D9B272;
 }
 
 .graphContainerLeyendFrameElipse.neutral {
