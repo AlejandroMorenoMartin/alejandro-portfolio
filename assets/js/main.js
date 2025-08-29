@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const tocLinks = document.querySelectorAll("#tableOfContents a");
     const sections = document.querySelectorAll(".sectionHeader, .sectionHeaderTwo");
     const offset = 100;
-    const showFromTop = 1500;
+    const showFromTop = 750;
     const hideFromBottom = 550;
 
     window.addEventListener("scroll", () => {
@@ -281,7 +281,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const panel = document.querySelector(".buttonPannel");
     if (!panel) return;
 
-    const showFromTop = 1500;
+    const showFromTop = 750;
     const hideFromBottom = 550;
 
     window.addEventListener("scroll", () => {
@@ -301,7 +301,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* ================================
      BUTTON SCROLL TO TOP
- ================================= */
+  ================================= */
   function scrollToTopButton() {
     const button = document.getElementById("buttonBackToTop");
     if (!button) return;

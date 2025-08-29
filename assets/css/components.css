@@ -326,8 +326,14 @@ html[data-theme="dark"] .navContainer.scrolled {
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 0.25rem;
+  gap: .5rem;
   text-align: center;
+}
+
+.imageLeyendFrameText {
+  display: flex;
+  flex-direction: column;
+  width: 100%;  
 }
 
 .cardTeam {
