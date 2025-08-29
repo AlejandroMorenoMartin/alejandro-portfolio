@@ -2176,12 +2176,12 @@ span.cardPricesRecommended {
   display: flex;
   flex-direction: row;
   gap: 4rem;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .graphContainer svg {
-  width: 280px;
-  height: 280px;
+  width: 160px;
+  height: 160px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -2190,8 +2190,8 @@ span.cardPricesRecommended {
     justify-content: space-between;
   }
   .graphContainer svg {
-    width: 172px;
-    height: 172px;
+    width: 96px;
+    height: 96px;
   }
 }
 

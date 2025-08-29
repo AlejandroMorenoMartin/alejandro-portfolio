@@ -371,7 +371,7 @@
   "vivagymUsabilityTestSecondSuggestion":"<b>Reorganizar</b> la sección y mejorar el copywriting para incentivar el seguimiento del progreso.",
   "vivagymUsabilityTestThirdTitle":"Gestión de la cuenta y servicios básicos.",
   "vivagymUsabilityTestThirdValoration":"Las gestiones son posibles, pero con un diseño desactualizado y poco claro.",
-  "vivagymUsabilityTestThirdSuggestion":"<b>Modernizar</b> la interfaz y simplificar la gestión de suscripción y datos sin necesidad de acudir al gimnasio.",
+  "vivagymUsabilityTestThirdSuggestion":"<b>Modernizar</b> la interfaz y simplificar la gestión de suscripción y datos.",
   "vivagymUsabilityTestFourthTitle":"Onboarding y descubrimiento.",
   "vivagymUsabilityTestFourthValoration":"No hay orientación inicial ni se comunica el valor de la app.",
   "vivagymUsabilityTestFourthSuggestion":"<b>Implementar</b> un onboarding guiado que explique funciones clave y motive el primer uso.",
@@ -451,6 +451,7 @@
   "vivagymSectionDescriptionEight":"<b>VivaGym</b> es uno de los proyectos a los que dediqué mi tiempo y esfuerzo. Si quieres saber más acerca de mi trabajo, te dejo <b>otros proyectos</b> en los que he participado.",
   "vivagymMarketFirstSuggestion":"<b>Integrar</b> dinámicas sociales y retos entre socios de VivaGym.",
   "vivagymMarketSecondSuggestion":"<b>Aplicar</b> mecánicas de gamificación (rachas de asistencia, logros, insignias).",
+
   "freelanceButton":"Ver tarifas",
   "contactButton":"Contáctame",
   "pricesHeroTitle":"Diseño y desarrollo web para hacer crecer tu negocio.",
