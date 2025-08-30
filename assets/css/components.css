@@ -2305,8 +2305,8 @@ span.cardPricesRecommended {
 }
 
 .graphContainer img {
-  width: 256px;
-  height: 256px;
+  width: 192px;
+  height: 192px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -2341,15 +2341,15 @@ span.cardPricesRecommended {
 }
 
 .graphContainerLeyendFrameElipse.red {
-  background-color: #ff743f;
+  background-color: #FD5000;
 }
 
 .graphContainerLeyendFrameElipse.green {
-  background-color: #ec4864;
+  background-color: #FF9C66;
 }
 
 .graphContainerLeyendFrameElipse.yellow {
-  background-color: #d9b272;
+  background-color: #FFE1CC;
 }
 
 .graphContainerLeyendFrameElipse.neutral {
