@@ -53,7 +53,7 @@
 .buttonSecondary svg {
   color: var(--black-400);
   line-height: var(--lh-small);
-  font-size: 1rem;  
+  font-size: 1rem;
 }
 
 .buttonSecondary .external {
@@ -65,8 +65,8 @@
 }
 
 .buttonSecondary-100 {
-  width: 37px;
-  height: 36px;
+  width: 42px;
+  height: 42px;
 }
 
 .buttonSecondary-100 p {
@@ -125,7 +125,7 @@
   z-index: 1;
   top: -125%;
   left: -50%;
-  transition: opacity 200ms ease-in-out;   
+  transition: opacity 200ms ease-in-out;
 }
 
 .toolTipText p {
@@ -134,7 +134,7 @@
 
 .toolTipTextTwo {
   top: -125%;
-  left: -200%;  
+  left: -200%;
 }
 
 .buttonSecondary:hover .toolTipText {
@@ -200,7 +200,7 @@ html[data-theme="dark"] .navContainer.scrolled {
 
 .navContainer .regularBold {
   opacity: 0;
-  transform: translateY(20%);
+  transform: translateY(5%);
   visibility: hidden;
   transition: all 200ms ease-in-out;
 }
@@ -268,7 +268,7 @@ html[data-theme="dark"] .navContainer.scrolled {
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .sectionHeaderTwo {
@@ -317,27 +317,27 @@ html[data-theme="dark"] .navContainer.scrolled {
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: .5rem;
+  gap: 0.5rem;
   text-align: center;
 }
 
 .imageLeyendFrameText {
   display: flex;
   flex-direction: column;
-  width: 100%;  
+  width: 100%;
 }
 
 .cardTeam {
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 .cardTeamText {
   display: flex;
   flex-direction: column;
-  width: 100%;  
+  width: 100%;
 }
 
 .imageLeyendFrame img {
@@ -738,7 +738,7 @@ footer {
   border: 1.5px solid var(--white-500);
   background-color: var(--gray-200);
   position: fixed;
-  top: 6rem;
+  top: var(--nav-height, 84px);
   right: 2rem;
   font-size: var(--fs-small);
   line-height: var(--lh-small);
@@ -746,7 +746,7 @@ footer {
   letter-spacing: 0.05rem;
   z-index: 1;
   opacity: 0;
-  transform: translateY(20%); 
+  transform: translateY(5%);
   visibility: hidden;
   transition: all 400ms ease-in-out;
 }
@@ -1538,39 +1538,39 @@ footer {
 }
 
 .vivagymCardColorOne {
-  background-color: #FFE1CC;
+  background-color: #ffe1cc;
 }
 
 .vivagymCardColorTwo {
-  background-color: #FF9C66;
+  background-color: #ff9c66;
 }
 
 .vivagymCardColorThree {
-  background-color: #FD5000;
+  background-color: #fd5000;
 }
 
 .vivagymCardColorOne p,
 .vivagymCardColorTwo p,
 .vivagymCardColorThree p {
-  color: #661F00;
+  color: #661f00;
 }
 
 .vivagymCardColorFour {
-  background-color: #CC4000;
+  background-color: #cc4000;
 }
 
 .vivagymCardColorFive {
-  background-color: #992F00;
+  background-color: #992f00;
 }
 
 .vivagymCardColorSix {
-  background-color: #661F00;
+  background-color: #661f00;
 }
 
 .vivagymCardColorFour p,
 .vivagymCardColorFive p,
 .vivagymCardColorSix p {
-  color: #FFE1CC;
+  color: #ffe1cc;
 }
 
 .artisteoIcon {
@@ -1599,6 +1599,12 @@ footer {
   font-size: 24px;
   color: var(--red);
   line-height: var(--lh-regular);
+}
+
+.subSectionOneRowSpecialFrameFrameNSmall i {
+  font-size: 16px;
+  color: var(--red);
+  line-height: var(--lh-small);
 }
 
 .improveFrameRegular {
@@ -2255,18 +2261,18 @@ span.cardPricesRecommended {
 .buttonPannel {
   display: flex;
   position: fixed;
-  gap: .5rem;
+  gap: 0.5rem;
   bottom: 2rem;
   right: 2rem;
-  flex-direction: column;  
+  flex-direction: column;
   justify-content: space-between;
   z-index: 1000;
-  align-items: center;  
+  align-items: center;
 }
 
 .buttonPannelVariable {
   opacity: 0;
-  transform: translateY(20%); 
+  transform: translateY(5%);
   visibility: hidden;
   transition: all 300ms ease-in-out;
 }
@@ -2281,7 +2287,14 @@ span.cardPricesRecommended {
 .buttonPannelVariable {
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 0.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .buttonPannel {
+    bottom: 1rem;
+    right: 1rem;
+  }
 }
 
 .graphContainer {
@@ -2328,15 +2341,15 @@ span.cardPricesRecommended {
 }
 
 .graphContainerLeyendFrameElipse.red {
-  background-color: #FF743F;
+  background-color: #ff743f;
 }
 
 .graphContainerLeyendFrameElipse.green {
-  background-color: #EC4864;
+  background-color: #ec4864;
 }
 
 .graphContainerLeyendFrameElipse.yellow {
-  background-color: #D9B272;
+  background-color: #d9b272;
 }
 
 .graphContainerLeyendFrameElipse.neutral {
