@@ -398,7 +398,7 @@
   "vivagymUsabilityTestFourthValoration": "There is no initial guidance or communication of the app's value.",
   "vivagymUsabilityTestFourthSuggestion": "<b>Implement</b> a guided onboarding that explains key functions and motivates the first use.",
   "vivagymSectionResearchSecondSubtitle": "Heuristic analysis.",
-  "vivagymSectionResearchSecondDescription": "I evaluated the app against these 5 key heuristics:",
+  "vivagymSectionResearchSecondDescription": "I evaluated the app against these 4 key heuristics:",
   "vivagymHeuristicTestFirstTitle": "Visibility of system status.",
   "vivagymHeuristicTestFirstValoration": "Feedback after actions is insufficient or unclear.",
   "vivagymHeuristicTestFirstSuggestion": "<b>Include</b> visible confirmations, alerts, and relevant notifications to keep the user informed.",
