@@ -68,41 +68,18 @@
     <main class="mainContainer">
       <!-- [header] -->
       <nav class="navContainer">
-        <div class="navContainerIcon">
-          <a class="buttonLogo" href="index.html">
-            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M24.1754 33.2656H8.92587L4.5 41.0646H28.9519L24.1754 33.2656Z"
-              />
-              <path
-                d="M22.8168 6.9375L11.6426 28.6214H21.2393L23.0359 23.7075H24.5696L34.3854 40.9284H43.5001L24.3505 6.9375H22.8168Z"
-              />
-            </svg>
-          </a>
-        </div>
-        <div class="navContainerswitchers">
-          <!-- [theme] -->
-          <button
-            id="themeToggle"
-            aria-label="Cambiar tema"
-            class="buttonSecondary buttonSecondary-100"
-          >
-            <i class="fa-solid fa-moon"></i>
-            <span class="toolTipText"
-              ><p class="small" data-key="toolTipTextOne"></p
-            ></span>
-          </button>
-          <!-- [language] -->
-          <button
-            class="buttonSecondary buttonSecondary-100 langButton"
-            data-lang="es"
-          >
-            <p class="smallBold" data-key="buttonLanguage"></p>
-            <span class="toolTipText"
-              ><p class="small" data-key="toolTipTextTwo"></p
-            ></span>
-          </button>
-        </div>
+        <a class="buttonLogo" href="index.html">
+          <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M24.1754 33.2656H8.92587L4.5 41.0646H28.9519L24.1754 33.2656Z"
+            />
+            <path
+              d="M22.8168 6.9375L11.6426 28.6214H21.2393L23.0359 23.7075H24.5696L34.3854 40.9284H43.5001L24.3505 6.9375H22.8168Z"
+            />
+          </svg>
+        </a>
+        <p class="regularBold">GEOMITES</p>
+        <div class="buttonLogo"></div>
       </nav>
 
       <!-- progressBar -->
@@ -878,34 +855,57 @@
       </section>
 
       <!-- [buttonPannel] -->
-      <div class="buttonPannel">
-        <div class="buttonPannelFrame">
+      <div class="buttonPannel">        
+        <!-- [buttonPannelVariable] -->
+        <div class="buttonPannelVariable">
+          <!-- [buttonPrevious] -->
           <a class="buttonSecondary buttonSecondary-100" href="artisteo.html">
             <i class="fa-solid fa-chevron-left"></i>
             <span class="toolTipText toolTipTextTwo"
               ><p class="small" data-key="toolTipTextNine"></p
             ></span>
           </a>
-          <div class="buttonPannelFrameText">
-            <p class="small" data-key="buttonPannelTitle"></p>
-            <p class="smallBold">Geomites</p>
-          </div>
+          <!-- [buttonNext] -->
           <a class="buttonSecondary buttonSecondary-100" href="vivaGym.html">
             <i class="fa-solid fa-chevron-right"></i>
             <span class="toolTipText toolTipTextTwo"
               ><p class="small" data-key="toolTipTextTen"></p
             ></span>
-          </a>          
+          </a>
+          <!-- [buttonBackToTop] -->
+          <button
+            id="buttonBackToTop"
+            class="buttonSecondary buttonSecondary-100"
+          >
+            <i class="fa-solid fa-chevron-up"></i>
+            <span class="toolTipText toolTipTextTwo"
+              ><p class="small" data-key="toolTipTextEleven"></p
+            ></span>
+          </button>
         </div>
-        <!-- [buttonBackToTop] -->
-        <button
-          id="buttonBackToTop" 
-          class="buttonSecondary buttonSecondary-100">
-          <i class="fa-solid fa-chevron-up"></i>
-          <span class="toolTipText toolTipTextTwo"
-            ><p class="small" data-key="toolTipTextEleven"></p
-          ></span>
-        </button>
+        <!-- [buttonPannelFixed] -->
+        <div class="buttonPannelFixed">
+          <!-- [buttonTheme] -->
+          <button
+            id="themeToggle"
+            aria-label="Cambiar tema"
+            class="buttonSecondary buttonSecondary-100">
+            <i class="fa-solid fa-circle-half-stroke"></i>            
+            <span class="toolTipText">
+              <p class="small" data-key="toolTipTextOne"></p>
+            </span>
+          </button>
+          <!-- [buttonLanguage] -->
+          <button
+            class="buttonSecondary buttonSecondary-100 langButton"
+            data-lang="es"
+          >
+            <p class="smallBold" data-key="buttonLanguage"></p>
+            <span class="toolTipText"
+              ><p class="small" data-key="toolTipTextTwo"></p
+            ></span>
+          </button>
+        </div>
       </div>
 
       <!-- [footer] -->

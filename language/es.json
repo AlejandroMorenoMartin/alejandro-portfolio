@@ -140,8 +140,7 @@
   "toolTipTextNine": "Proyecto anterior",
   "toolTipTextTen": "Proyecto siguiente",
   "toolTipTextEleven": "Volver a arriba",
-  "buttonLanguage": "Es",
-  "buttonPannelTitle": "Proyecto actual",
+  "buttonLanguage": "Es",  
 
 
   "geomitesTagProject": "Emprendimiento",
@@ -472,6 +471,10 @@
   "vivagymLearningFrameFour": "Diseño funcional",
   "vivagymSectionTitleEight": "Otros proyectos.",
   "vivagymSectionDescriptionEight": "<b>VivaGym</b> es uno de los proyectos a los que dediqué mi tiempo y esfuerzo. Si quieres saber más acerca de mi trabajo, te dejo <b>otros proyectos</b> en los que he participado.",
+  "vivagymMarketFirstTitle":"Strava - Comunidad y restos",
+  "vivagymMarketFirstDescription":"Planes personalizados y registro del progreso con una experiencia visual atractiva.",
+  "vivagymMarketSecondTitle":"Duolingo - Gamificación y progreso",
+  "vivagymMarketSecondDescription":"Mantiene al usuario activo con rachas, insignias y recompensas visibles.",
   "vivagymMarketFirstSuggestion": "<b>Integrar</b> dinámicas sociales y retos entre socios de VivaGym.",
   "vivagymMarketSecondSuggestion": "<b>Aplicar</b> mecánicas de gamificación (rachas de asistencia, logros, insignias).",
   "vivagymDesignSystemTitle":"Sistema de diseño.",

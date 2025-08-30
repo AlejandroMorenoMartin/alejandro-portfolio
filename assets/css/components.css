@@ -50,11 +50,10 @@
 }
 
 .buttonSecondary i,
-.buttonSecondary img,
 .buttonSecondary svg {
   color: var(--black-400);
   line-height: var(--lh-small);
-  font-size: 1rem;
+  font-size: 1rem;  
 }
 
 .buttonSecondary .external {
@@ -124,9 +123,9 @@
   padding: 0.25rem 0.5rem;
   position: absolute;
   z-index: 1;
-  top: 125%;
-  left: -100%;
-  transition: opacity 200ms ease-in-out;
+  top: -125%;
+  left: -50%;
+  transition: opacity 200ms ease-in-out;   
 }
 
 .toolTipText p {
@@ -135,6 +134,7 @@
 
 .toolTipTextTwo {
   top: -125%;
+  left: -200%;  
 }
 
 .buttonSecondary:hover .toolTipText {
@@ -198,26 +198,17 @@ html[data-theme="dark"] .navContainer.scrolled {
   }
 }
 
-.navContainerIcon {
-  height: 2.5rem;
-  width: 2.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.navContainer .regularBold {
+  opacity: 0;
+  transform: translateY(20%);
+  visibility: hidden;
+  transition: all 200ms ease-in-out;
 }
 
-.languageSwitcher {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem;
-}
-
-.navContainerswitchers {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
-  align-items: center;
+.navContainer .regularBold.visible {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
 }
 
 /* main */
@@ -742,24 +733,28 @@ footer {
 .table-of-contents {
   display: flex;
   flex-direction: column;
-  padding: 0.5rem 0.5rem;
+  padding: 1rem;
   border-radius: var(--br);
   border: 1.5px solid var(--white-500);
   background-color: var(--gray-200);
   position: fixed;
-  top: 8rem;
-  right: -16rem;
-  max-width: 300px;
+  top: 6rem;
+  right: 2rem;
   font-size: var(--fs-small);
   line-height: var(--lh-small);
   font-weight: 400;
   letter-spacing: 0.05rem;
   z-index: 1;
+  opacity: 0;
+  transform: translateY(20%); 
+  visibility: hidden;
   transition: all 400ms ease-in-out;
 }
 
 .table-of-contents.visible {
-  right: 2rem;
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
 }
 
 .table-of-contents::before {
@@ -2256,41 +2251,37 @@ span.cardPricesRecommended {
   transform: rotate(180deg);
 }
 
+/* buttonPannel */
 .buttonPannel {
   display: flex;
   position: fixed;
-  bottom: -10rem;
-  right: 0;
-  flex-direction: row;
-  width: 100%;
-  padding: 0.5rem 2rem;
-  background-color: var(--white);
-  border-top: 1.5px solid var(--white-500);
+  gap: .5rem;
+  bottom: 2rem;
+  right: 2rem;
+  flex-direction: column;  
   justify-content: space-between;
   z-index: 1000;
-  align-items: center;
-  transition: all 200ms ease-in-out;
+  align-items: center;  
 }
 
-.buttonPannel.visible {
-  bottom: 0;
+.buttonPannelVariable {
+  opacity: 0;
+  transform: translateY(20%); 
+  visibility: hidden;
+  transition: all 300ms ease-in-out;
 }
 
-@media screen and (max-width: 1200px) {
-  .buttonPannel {
-    padding: 0.5rem 1rem;
-  }
+.buttonPannelVariable.visible {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
 }
 
-.buttonPannelFrame {
+.buttonPannelFixed,
+.buttonPannelVariable {
   display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  align-items: center;
-}
-
-.buttonPannelFrameText {
-  text-align: center;
+  flex-direction: column;
+  gap: .5rem;
 }
 
 .graphContainer {
@@ -2361,11 +2352,10 @@ span.cardPricesRecommended {
 /* Progress bar container */
 #scrollProgressBar {
   position: fixed;
-  top: var(--nav-height, 56px);
+  top: var(--nav-height, 52px);
   left: 0;
   width: 0%;
   height: 1px;
   background: var(--primary-300);
   z-index: 9999;
-  transition: width 200ms ease-in-out;
 }

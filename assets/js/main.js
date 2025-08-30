@@ -79,7 +79,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const toc = document.getElementById("tableOfContents");
     if (!toc) return;
 
-    const sections = document.querySelectorAll(".sectionHeader, .sectionHeaderTwo");
+    const sections = document.querySelectorAll(
+      ".sectionHeader, .sectionHeaderTwo"
+    );
     const wrapper = document.createElement("div");
     const title = document.createElement("p");
     const list = document.createElement("ul");
@@ -136,7 +138,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!toc) return;
 
     const tocLinks = document.querySelectorAll("#tableOfContents a");
-    const sections = document.querySelectorAll(".sectionHeader, .sectionHeaderTwo");
+    const sections = document.querySelectorAll(
+      ".sectionHeader, .sectionHeaderTwo"
+    );
     const offset = 100;
     const showFromTop = 750;
     const hideFromBottom = 550;
@@ -275,25 +279,21 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* ================================
-      BUTTON PANNEL (aparecer/desaparecer)
-  ================================= */
+      BUTTON PANNEL 
+================================= */
   function buttonPannelVisibility() {
-    const panel = document.querySelector(".buttonPannel");
-    if (!panel) return;
+    const variablePanel = document.querySelector(".buttonPannelVariable");
+    if (!variablePanel) return;
 
     const showFromTop = 750;
-    const hideFromBottom = 550;
 
     window.addEventListener("scroll", () => {
       const scrollTop = window.scrollY;
-      const scrollHeight = document.body.scrollHeight;
-      const windowHeight = window.innerHeight;
-      const distanceFromBottom = scrollHeight - (scrollTop + windowHeight);
 
-      if (scrollTop > showFromTop && distanceFromBottom > hideFromBottom) {
-        panel.classList.add("visible");
+      if (scrollTop > showFromTop) {
+        variablePanel.classList.add("visible");
       } else {
-        panel.classList.remove("visible");
+        variablePanel.classList.remove("visible");
       }
     });
   }
@@ -372,12 +372,6 @@ const html = document.documentElement;
 function setTheme(theme) {
   html.setAttribute("data-theme", theme);
   localStorage.setItem("theme", theme);
-  const icon = themeToggle.querySelector("i");
-  if (theme === "dark") {
-    icon.classList.replace("fa-moon", "fa-sun");
-  } else {
-    icon.classList.replace("fa-sun", "fa-moon");
-  }
 }
 
 const systemPrefersDark = window.matchMedia(
@@ -399,9 +393,22 @@ window
     }
   });
 
-document.querySelectorAll(".cardFAQsFrame").forEach((frame) => {
-  frame.addEventListener("click", () => {
-    const card = frame.parentElement;
-    card.classList.toggle("active");
+/* ================================
+    EFECTO TÍTULO DE PÁGINA (outside DOMContentLoaded)
+================================= */
+function showTitleOnScroll() {
+  const title = document.querySelector(".navContainer .regularBold");
+  if (!title) return;
+
+  const showFromTop = 750;
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > showFromTop) {
+      title.classList.add("visible");
+    } else {
+      title.classList.remove("visible");
+    }
   });
-});
+}
+
+showTitleOnScroll();
