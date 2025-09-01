@@ -2306,8 +2306,8 @@ span.cardPricesRecommended {
 }
 
 .graphContainer img {
-  width: 192px;
-  height: 192px;
+  width: 156px;
+  height: 156px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -2373,3 +2373,18 @@ span.cardPricesRecommended {
   background: var(--primary-300);
   z-index: 9999;
 }
+
+/*
+.iframeContainer {
+  position: relative;
+  width: 100%;
+}
+
+.iframeContainer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 375px;
+  height: 812px;
+}
+  */
