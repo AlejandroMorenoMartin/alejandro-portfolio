@@ -2374,6 +2374,10 @@ span.cardPricesRecommended {
   z-index: 9999;
 }
 
+.flowImage {
+  border: .5px solid var(--black);
+}
+
 /*
 .iframeContainer {
   position: relative;

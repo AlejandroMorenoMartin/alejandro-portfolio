@@ -412,3 +412,21 @@ function showTitleOnScroll() {
 }
 
 showTitleOnScroll();
+
+/* ================================
+    FAQS
+================================= */
+document.addEventListener('DOMContentLoaded', () => {
+    // Select all elements with the class 'cardFAQs'
+    const cards = document.querySelectorAll('.cardFAQs');
+
+    // Loop through each card
+    cards.forEach(card => {
+        // Add a 'click' event listener to each card
+        card.addEventListener('click', () => {
+            // Toggle the 'active' class on the clicked card
+            // This will show or hide the answer based on the CSS rules
+            card.classList.toggle('active');
+        });
+    });
+});
