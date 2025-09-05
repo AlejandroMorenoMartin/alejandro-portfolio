@@ -2302,7 +2302,7 @@ span.cardPricesRecommended {
   display: flex;
   flex-direction: row;
   gap: 4rem;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .graphContainer img {
@@ -2314,6 +2314,7 @@ span.cardPricesRecommended {
   .graphContainer {
     width: 100%;
     justify-content: space-between;
+    align-items: flex-start;
   }
   .graphContainer img {
     width: 128px;
@@ -2378,17 +2379,15 @@ span.cardPricesRecommended {
   border: .5px solid var(--black);
 }
 
-/*
-.iframeContainer {
-  position: relative;
-  width: 100%;
+.surveyQuestion {
+  display: flex;
+  flex-direction: row;
+  padding-left: 1rem;
+  border-left: 1px solid var(--primary-300);
 }
 
-.iframeContainer iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 375px;
-  height: 812px;
+.surveyQuestion p {
+  font-style: italic;
 }
-  */
+
+
