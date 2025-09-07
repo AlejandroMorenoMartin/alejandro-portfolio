@@ -494,9 +494,10 @@
   "vivagymComponentDescriptionThree": "Tracking of physical progress through statistics and charts.",
   "vivagymComponentTitleFour": "Achievements.",
   "vivagymComponentDescriptionFour": "Badges and medals earned by completing goals.",
-  "vivagymSurveyQuestionOne":"Ignoring QR access, how often do you use the app?",
-  "vivagymSurveyQuestionTwo":"Which features do you use most often?",
-  "vivagymSurveyQuestionThree":"Which features do you use most often?",
+  "vivagymSurveyQuestionOne":"“Ignoring QR access, how often do you use the app?”",
+  "vivagymSurveyQuestionTwo":"“Which features do you use most often?”",
+  "vivagymSurveyQuestionThree":"“Does the app motivate you to train more often?”",
+
 
 
   "freelanceButton": "See pricing",
