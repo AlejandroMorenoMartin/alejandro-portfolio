@@ -123,8 +123,8 @@
   padding: 0.25rem 0.5rem;
   position: absolute;
   z-index: 1;
-  transform: translateY(-150%); 
-  left: .25rem;
+  transform: translateY(-150%);
+  left: 0.25rem;
   transition: opacity 200ms ease-in-out;
 }
 
@@ -132,8 +132,8 @@
   color: var(--white);
 }
 
-.toolTipTextTwo {     
-  transform: translateY(-150%); 
+.toolTipTextTwo {
+  transform: translateY(-150%);
   left: -6rem;
 }
 
@@ -268,7 +268,7 @@ html[data-theme="dark"] .navContainer.scrolled {
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .sectionHeaderTwo {
@@ -313,11 +313,49 @@ html[data-theme="dark"] .navContainer.scrolled {
   }
 }
 
+.analysisFrameContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .analysisFrameContainer {
+    flex-direction: column;
+  }
+}
+
+.analysisFrame {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 1rem;
+  align-items: center;
+}
+
+.analysisFrameInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.analysisImage {
+  width: 192px;
+  height: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .analysisImage {
+    width: 128px;
+  }
+}
+
 .imageLeyendFrame {
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 0.5rem;
+  gap: 0.25rem;
   text-align: center;
 }
 
@@ -2343,15 +2381,15 @@ span.cardPricesRecommended {
 }
 
 .graphContainerLeyendFrameElipse.red {
-  background-color: #FD5000;
+  background-color: #fd5000;
 }
 
 .graphContainerLeyendFrameElipse.green {
-  background-color: #FF9C66;
+  background-color: #ff9c66;
 }
 
 .graphContainerLeyendFrameElipse.yellow {
-  background-color: #FFE1CC;
+  background-color: #ffe1cc;
 }
 
 .graphContainerLeyendFrameElipse.neutral {
@@ -2376,7 +2414,7 @@ span.cardPricesRecommended {
 }
 
 .flowImage {
-  border: .5px solid var(--black);
+  border: 0.5px solid var(--black);
 }
 
 .surveyQuestion {
@@ -2389,5 +2427,3 @@ span.cardPricesRecommended {
 .surveyQuestion p {
   font-style: italic;
 }
-
-
