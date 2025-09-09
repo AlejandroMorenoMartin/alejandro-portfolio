@@ -268,7 +268,7 @@ html[data-theme="dark"] .navContainer.scrolled {
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .sectionHeaderTwo {
@@ -357,12 +357,6 @@ html[data-theme="dark"] .navContainer.scrolled {
   width: 100%;
   gap: 0.25rem;
   text-align: center;
-}
-
-.imageLeyendFrameText {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
 }
 
 .cardTeam {
