@@ -740,6 +740,7 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  text-align: center;
 }
 
 .footerFrameBot {
@@ -747,7 +748,7 @@ footer {
   flex-direction: row;
   gap: 1rem;
   width: 100%;  
-  justify-content: center;
+  justify-content: center;    
 }
 
 @media screen and (max-width: 1200px) {
