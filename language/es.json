@@ -4,8 +4,7 @@
   "heroDescription": "Diseño para las personas, mejorando su experiencia a través de la <b>observación</b>, <b>la investigación</b> y la <b>usabilidad</b>.",
   "heroButton": "Ver proyectos",
   "projectSectionTitle": "Proyectos.",
-  "footerTitle": "¡Gracias por tu visita!",
-  "footerDescription": "Si algo de lo que viste conecta contigo, estaré encantado de conversar y explorar cómo crear algo juntos.",
+  "footerTitle": "¡Gracias por tu visita!",  
   "footerInfo": "2025. Alejandro Moreno.<b>V 4.0</b>",
   "geomitesCardDescription": "Diseño y desarrollo de un videojuego independiente que combina exploración, aventura y mecánicas de toma de decisiones.",
   "geomitesCardTag": "Emprendimiento",
@@ -434,9 +433,7 @@
   "vivagymLearningFrameOne": "Alinear diseño y negocio",
   "vivagymLearningFrameTwo": "Simplificar la experiencia",
   "vivagymLearningFrameThree": "Investigación aplicada",
-  "vivagymLearningFrameFour": "Diseño funcional",
-  "vivagymSectionTitleEight": "Otros proyectos.",
-  "vivagymSectionDescriptionEight": "<b>VivaGym</b> es uno de los proyectos a los que dediqué mi tiempo y esfuerzo. Si quieres saber más acerca de mi trabajo, te dejo <b>otros proyectos</b> en los que he participado.",
+  "vivagymLearningFrameFour": "Diseño funcional",  
   "vivagymMarketFirstTitle":"Strava - Comunidad y retos.",
   "vivagymMarketFirstDescription":"Planes personalizados y registro del progreso con una experiencia visual atractiva.",
   "vivagymMarketSecondTitle":"Duolingo - Gamificación y progreso.",
@@ -523,7 +520,9 @@
   "cardFAQsTitleFive":"¿Qué pasa con el dominio y el hosting?",
   "cardFAQsDescriptionFive":"Si no tienes todavía, te ayudo a elegir y configurar las opciones más seguras y económicas para tu negocio.",
   "cardFAQsTitleSix":"¿La inversión realmente merece la pena?",
-  "cardFAQsDescriptionSix":"Una web profesional no es un gasto, es una inversión. Te ayuda a ganar visibilidad, atraer clientes y transmitir confianza. Muchos negocios recuperan la inversión en los primeros meses."  
+  "cardFAQsDescriptionSix":"Una web profesional no es un gasto, es una inversión. Te ayuda a ganar visibilidad, atraer clientes y transmitir confianza. Muchos negocios recuperan la inversión en los primeros meses.",  
+  "previousProjectButton":"Anterior",
+  "nextProjectButton":"Siguiente"
 }
 
 

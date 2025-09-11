@@ -80,3 +80,8 @@ caption {
   letter-spacing: 0.05rem;
   color: var(--black-400);
 }
+
+b {
+  font-weight: 500;
+  color: var(--black-200);
+}

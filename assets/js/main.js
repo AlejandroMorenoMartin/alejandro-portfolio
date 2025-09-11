@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* ================================
       TABLE OF CONTENT
-  ================================= */
+================================= */
   function generateTableOfContents() {
     const toc = document.getElementById("tableOfContents");
     if (!toc) return;
@@ -129,6 +129,15 @@ document.addEventListener("DOMContentLoaded", () => {
           offset;
 
         window.scrollTo({ top: topPosition, behavior: "smooth" });
+
+        // --- highlight temporal del h2 ---
+        const h2 = targetElement.querySelector("h2");
+        if (h2) {
+          h2.classList.add("highlight");
+          setTimeout(() => {
+            h2.classList.remove("highlight");
+          }, 2000); // Dura 2s
+        }
       });
     });
   }
@@ -416,17 +425,17 @@ showTitleOnScroll();
 /* ================================
     FAQS
 ================================= */
-document.addEventListener('DOMContentLoaded', () => {
-    // Select all elements with the class 'cardFAQs'
-    const cards = document.querySelectorAll('.cardFAQs');
+document.addEventListener("DOMContentLoaded", () => {
+  // Select all elements with the class 'cardFAQs'
+  const cards = document.querySelectorAll(".cardFAQs");
 
-    // Loop through each card
-    cards.forEach(card => {
-        // Add a 'click' event listener to each card
-        card.addEventListener('click', () => {
-            // Toggle the 'active' class on the clicked card
-            // This will show or hide the answer based on the CSS rules
-            card.classList.toggle('active');
-        });
+  // Loop through each card
+  cards.forEach((card) => {
+    // Add a 'click' event listener to each card
+    card.addEventListener("click", () => {
+      // Toggle the 'active' class on the clicked card
+      // This will show or hide the answer based on the CSS rules
+      card.classList.toggle("active");
     });
+  });
 });

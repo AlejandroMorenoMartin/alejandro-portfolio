@@ -4,8 +4,7 @@
   "heroDescription": "Hi, I'm Alejandro, a product designer. I design for people, improving their experience through <b>observation</b>, <b>research</b>, and <b>usability</b>.",
   "heroButton": "View projects",
   "projectSectionTitle": "Projects.",
-  "footerTitle": "Thank you for your visit!",
-  "footerDescription": "If something you saw resonates with you, I would be happy to talk and explore how to create something together.",
+  "footerTitle": "Thank you for your visit!",  
   "footerInfo": "2025. Alejandro Moreno.<b>V 4.0</b>",
   "geomitesCardDescription": "Design and development of an indie video game that combines exploration, adventure, and decision-making mechanics.",
   "geomitesCardTag": "Entrepreneurship",
@@ -437,9 +436,7 @@
   "vivagymLearningFrameOne": "Aligning design and business",
   "vivagymLearningFrameTwo": "Simplifying the experience",
   "vivagymLearningFrameThree": "Applied research",
-  "vivagymLearningFrameFour": "Functional design",
-  "vivagymSectionTitleEight": "Other projects.",
-  "vivagymSectionDescriptionEight": "<b>VivaGym</b> is one of the projects to which I dedicated my time and effort. If you want to know more about my work, I'll leave you with <b>other projects</b> I have participated in.",
+  "vivagymLearningFrameFour": "Functional design",  
   "vivagymMarketFirstTitle": "Strava - Community and Challenges.",
   "vivagymMarketFirstDescription": "Personalized plans and progress tracking with an engaging visual experience.",
   "vivagymMarketSecondTitle": "Duolingo - Gamification and Progress.",
@@ -527,5 +524,7 @@
   "cardFAQsTitleFive": "What about the domain and hosting?",
   "cardFAQsDescriptionFive": "If you don't have them yet, I'll help you choose and configure the safest and most economical options for your business.",
   "cardFAQsTitleSix": "Is the investment really worth it?",
-  "cardFAQsDescriptionSix": "A professional website isn't an expense; it's an investment. It helps you gain visibility, attract clients, and build trust. Many businesses recover their investment within the first few months." 
+  "cardFAQsDescriptionSix": "A professional website isn't an expense; it's an investment. It helps you gain visibility, attract clients, and build trust. Many businesses recover their investment within the first few months.",
+  "previousProjectButton":"Previous",
+  "nextProjectButton":"Next"
 }
