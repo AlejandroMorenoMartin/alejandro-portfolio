@@ -1,18 +1,18 @@
 /* scrollBar */
 ::-webkit-scrollbar {
-  width:8px; 
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent; 
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
   background: var(--white-500);
   border-radius: var(--br);
-  border: 2px solid transparent;  
-  background-clip: content-box;   
-} 
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
 
 /* buttons */
 .buttonLogo {
@@ -354,9 +354,16 @@ html[data-theme="dark"] .navContainer.scrolled {
   justify-content: space-between;
   padding-left: calc((100% - var(--contentMaxWidth)) / 2);
   padding-right: calc((100% - var(--contentMaxWidth)) / 2);
-  box-sizing: border-box;  
+  box-sizing: border-box;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .otherProjectsSection {    
+    padding: 1.5rem 1rem;
+    padding-bottom: 2rem;
+  }
 }
 
 @media screen and (max-width: 1200px) {
