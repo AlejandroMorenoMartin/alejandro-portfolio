@@ -8,10 +8,15 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--white-500);
+  background: var(--white-300);
   border-radius: var(--br);
   border: 2px solid transparent;
   background-clip: content-box;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--white-400);  
 }
 
 /* buttons */
@@ -813,7 +818,7 @@ footer {
 
 @media screen and (max-width: 1200px) {
   footer {
-    padding: 0.5rem 1rem;
+    padding: 1rem;
     flex-direction: column;
   }
 
