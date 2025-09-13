@@ -450,22 +450,31 @@ document.addEventListener("DOMContentLoaded", () => {
   const icon = button.querySelector("i");
 
   button.addEventListener("click", () => {
-    navigator.clipboard.writeText(emailText).then(() => {
-      // Cambiar tooltip e icono
-      tooltip.textContent = "¡Copiado!";
-      icon.classList.remove("fa-copy");
-      icon.classList.add("fa-check");
+    navigator.clipboard
+      .writeText(emailText)
+      .then(() => {
+        // Cambiar tooltip e icono
+        tooltip.setAttribute("data-key", "toolTipTextThirteen");
+        if (typeof applyTranslations === "function") {
+          applyTranslations(); // aplica traducción del nuevo data-key
+        }
 
-      // Reiniciar tras 1 segundo
-      setTimeout(() => {
-        tooltip.textContent = "Copiar";
-        icon.classList.remove("fa-check");
-        icon.classList.add("fa-copy");
-      }, 1000);
-    }).catch(err => {
-      console.error("Error al copiar el correo: ", err);
-    });
+        icon.classList.remove("fa-copy");
+        icon.classList.add("fa-check");
+
+        // Reiniciar tras 1 segundo
+        setTimeout(() => {
+          tooltip.setAttribute("data-key", "toolTipTextTwelve");
+          if (typeof applyTranslations === "function") {
+            applyTranslations(); // restaura traducción original
+          }
+
+          icon.classList.remove("fa-check");
+          icon.classList.add("fa-copy");
+        }, 1000);
+      })
+      .catch((err) => {
+        console.error("Error al copiar el correo: ", err);
+      });
   });
 });
-
-
