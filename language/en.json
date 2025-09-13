@@ -133,13 +133,14 @@
   "toolTipTextThree": "Send me a Whatsapp",
   "toolTipTextFour": "Visit my Linkedin profile",
   "toolTipTextFive": "Visit my Medium profile",
-  "toolTipTextSix": "Visit my Github profile",
-  "toolTipTextSeven": "Send me an email",
+  "toolTipTextSix": "Visit my Github profile",  
   "toolTipTextEight": "Back to top",
   "toolTipTextNine": "Previous project",
   "toolTipTextTen": "Next project",
   "toolTipTextEleven": "Back to top",
-  "buttonLanguage": "En",  
+  "toolTipTextTwelve":"Copy to clipboard",
+  "toolTipTextThirteen":"Copied!",  
+  "buttonLanguage": "En",
 
 
   "geomitesTagProject": "Entrepreneurship",

@@ -439,3 +439,33 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+/* ================================
+    COPIAR EMAIL
+================================= */
+document.addEventListener("DOMContentLoaded", () => {
+  const button = document.querySelector(".buttonTerciary");
+  const emailText = document.querySelector("#email p").textContent.trim();
+  const tooltip = button.querySelector(".toolTipText p");
+  const icon = button.querySelector("i");
+
+  button.addEventListener("click", () => {
+    navigator.clipboard.writeText(emailText).then(() => {
+      // Cambiar tooltip e icono
+      tooltip.textContent = "¡Copiado!";
+      icon.classList.remove("fa-copy");
+      icon.classList.add("fa-check");
+
+      // Reiniciar tras 1 segundo
+      setTimeout(() => {
+        tooltip.textContent = "Copiar";
+        icon.classList.remove("fa-check");
+        icon.classList.add("fa-copy");
+      }, 1000);
+    }).catch(err => {
+      console.error("Error al copiar el correo: ", err);
+    });
+  });
+});
+
+

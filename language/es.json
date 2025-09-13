@@ -134,12 +134,13 @@
   "toolTipTextFour": "Visita mi perfil de Linkedin",
   "toolTipTextFive": "Visita mi perfil de Medium",
   "toolTipTextSix": "Visita mi perfil de Github",
-  "toolTipTextSeven": "Envíame un email",
   "toolTipTextEight": "Volver a arriba",
   "toolTipTextNine": "Proyecto anterior",
   "toolTipTextTen": "Proyecto siguiente",
   "toolTipTextEleven": "Volver a arriba",
-  "buttonLanguage": "Es",  
+  "toolTipTextTwelve":"Copiar al portapapeles",
+  "toolTipTextThirteen":"¡Copiado!",  
+  "buttonLanguage": "Es",
 
 
   "geomitesTagProject": "Emprendimiento",

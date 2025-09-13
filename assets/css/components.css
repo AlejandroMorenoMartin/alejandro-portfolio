@@ -16,7 +16,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--white-400);  
+  background: var(--white-400);
 }
 
 /* buttons */
@@ -112,18 +112,25 @@
   position: relative;
   display: flex;
   height: auto;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   border-radius: var(--br);
   background: var(--white);
   justify-content: center;
   align-items: center;
   transition: all 200ms ease-in-out;
   cursor: pointer;
+  width: 42px;
+  height: 42px;
 }
 
 .buttonTerciary:hover {
-  background: var(--gray-100);
+  background: var(--white-400);
+}
+
+.buttonTerciary i {
+  font-size: 20px;
+  color: var(--black-300);
+  transition: color 0.25ms ease-in-out;
 }
 
 .langButton {
@@ -177,6 +184,11 @@
 
 .buttonSecondary:hover .toolTipText,
 .otherProjectButton:hover .toolTipText {
+  visibility: visible;
+  opacity: 1;
+}
+
+.buttonTerciary:hover .toolTipText {
   visibility: visible;
   opacity: 1;
 }
@@ -365,7 +377,7 @@ html[data-theme="dark"] .navContainer.scrolled {
 }
 
 @media screen and (max-width: 1200px) {
-  .otherProjectsSection {    
+  .otherProjectsSection {
     padding: 1.5rem 1rem;
     padding-bottom: 2rem;
   }
@@ -2429,4 +2441,13 @@ span.cardPricesRecommended {
 
 .surveyQuestion p {
   font-style: italic;
+}
+
+/* Copy container */
+.copyContainer {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
 }
