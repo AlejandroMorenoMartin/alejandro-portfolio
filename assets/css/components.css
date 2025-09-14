@@ -272,7 +272,7 @@ html[data-theme="dark"] .navContainer.scrolled {
   padding-left: calc((100% - var(--contentMaxWidth)) / 2);
   padding-right: calc((100% - var(--contentMaxWidth)) / 2);
   box-sizing: border-box;
-  padding-bottom: 15rem;
+  padding-bottom: 15rem;  
 }
 
 .sectionHeader {
@@ -780,8 +780,8 @@ footer {
   flex-direction: column;
   width: 100%;
   border-top: 1.5px solid var(--white-500);
-  align-items: center;
-  gap: 2rem;
+  justify-content: flex-start;
+  gap: 1rem;
   padding: 2rem;
 }
 
@@ -802,7 +802,7 @@ footer {
   font-size: 20px;
 }
 
-.footerFrameBottomFrame {
+.tag {
   display: flex;
   padding: 0.25rem 0.5rem;
   border-radius: var(--br);
@@ -812,11 +812,11 @@ footer {
   align-items: center;
 }
 
-.footerFrameBottomFrame p {
+.tag p {
   color: var(--black-400);
 }
 
-.footerFrameBottomFrame i {
+.tag i {
   color: var(--black-400);
 }
 
@@ -825,18 +825,14 @@ footer {
   flex-direction: row;
   gap: 1rem;
   width: 100%;
-  justify-content: center;
 }
 
 @media screen and (max-width: 1200px) {
   footer {
     padding: 1rem;
-    flex-direction: column;
   }
 
   .footerFrameBot {
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
   }
 }
@@ -973,6 +969,7 @@ footer {
   background-color: var(--white-100);
   border-radius: var(--br);
   flex: 1;
+  position: relative;
 }
 
 .cardExperienceTitle {
@@ -1005,6 +1002,15 @@ footer {
   width: 48px;
   height: 48px;
   border-radius: var(--br);
+}
+
+/* cardExperienceImage */
+.cardExperienceImage {
+  width: 148px;
+  height: 148px;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;  
 }
 
 /* tools */
@@ -1785,7 +1791,7 @@ footer {
 }
 
 .cardExperienceFrame svg {
-  color: var(--black);
+  color: var(--primary-100);
 }
 
 .userResearchCard {

@@ -57,6 +57,43 @@ document.addEventListener("DOMContentLoaded", () => {
   setLanguage(initialLang);
 
   /* ================================
+      COPY EMAIL BUTTON
+  ================================= */
+  const copyBtn = document.getElementById("copyEmail");
+  const emailElement = document.getElementById("email");
+  const toolTipText = copyBtn.querySelector(".toolTipText p");
+  const icon = copyBtn.querySelector("i");
+
+  if (copyBtn && emailElement && toolTipText && icon) {
+    copyBtn.addEventListener("click", async () => {
+      const email = emailElement.textContent.trim();
+
+      try {
+        await navigator.clipboard.writeText(email);
+
+        // Cambiar icono
+        icon.classList.remove("fa-copy");
+        icon.classList.add("fa-check");
+
+        // Cambiar texto a toolTipTextThirteen
+        toolTipText.dataset.key = "toolTipTextThirteen";
+        applyTranslations();
+
+        // Volver al estado original después de 1s
+        setTimeout(() => {
+          icon.classList.remove("fa-check");
+          icon.classList.add("fa-copy");
+
+          toolTipText.dataset.key = "toolTipTextTwelve";
+          applyTranslations();
+        }, 1000);
+      } catch (err) {
+        console.error("Error copiando al portapapeles:", err);
+      }
+    });
+  }
+
+  /* ================================
       NAV EFFECT ON SCROLL
   ================================= */
   const nav = document.querySelector(".navContainer");
@@ -152,7 +189,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
     const offset = 100;
     const showFromTop = 750;
-    const hideFromBottom = 550;
+    const hideFromBottom = 250;
 
     window.addEventListener("scroll", () => {
       let currentId = "";
@@ -383,11 +420,26 @@ function setTheme(theme) {
   localStorage.setItem("theme", theme);
 }
 
-const systemPrefersDark = window.matchMedia(
-  "(prefers-color-scheme: dark)"
-).matches;
 const savedTheme = localStorage.getItem("theme");
-setTheme(savedTheme || (systemPrefersDark ? "dark" : "light"));
+
+if (savedTheme) {
+  // Si hay un tema guardado, lo aplicamos directamente
+  setTheme(savedTheme);
+} else {
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const prefersLight = window.matchMedia(
+    "(prefers-color-scheme: light)"
+  ).matches;
+
+  if (prefersDark) {
+    setTheme("dark");
+  } else if (prefersLight) {
+    setTheme("light");
+  } else {
+    // Si no hay preferencia → dark por defecto
+    setTheme("dark");
+  }
+}
 
 themeToggle.addEventListener("click", () => {
   const currentTheme = html.getAttribute("data-theme");
@@ -441,10 +493,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 /* ================================
-    COPIAR EMAIL
+   COPIAR EMAIL
 ================================= */
 document.addEventListener("DOMContentLoaded", () => {
-  const button = document.querySelector(".buttonTerciary");
+  const button = document.getElementById("copyEmail"); // ✅ Selección por ID
   const emailText = document.querySelector("#email p").textContent.trim();
   const tooltip = button.querySelector(".toolTipText p");
   const icon = button.querySelector("i");
@@ -453,24 +505,20 @@ document.addEventListener("DOMContentLoaded", () => {
     navigator.clipboard
       .writeText(emailText)
       .then(() => {
-        // Cambiar tooltip e icono
         tooltip.setAttribute("data-key", "toolTipTextThirteen");
         if (typeof applyTranslations === "function") {
-          applyTranslations(); // aplica traducción del nuevo data-key
+          applyTranslations();
         }
 
-        icon.classList.remove("fa-copy");
-        icon.classList.add("fa-check");
+        icon.classList.replace("fa-copy", "fa-check");
 
-        // Reiniciar tras 1 segundo
         setTimeout(() => {
           tooltip.setAttribute("data-key", "toolTipTextTwelve");
           if (typeof applyTranslations === "function") {
-            applyTranslations(); // restaura traducción original
+            applyTranslations();
           }
 
-          icon.classList.remove("fa-check");
-          icon.classList.add("fa-copy");
+          icon.classList.replace("fa-check", "fa-copy");
         }, 1000);
       })
       .catch((err) => {
