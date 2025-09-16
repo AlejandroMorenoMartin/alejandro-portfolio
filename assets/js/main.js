@@ -61,29 +61,19 @@ document.addEventListener("DOMContentLoaded", () => {
   ================================= */
   const copyBtn = document.getElementById("copyEmail");
   const emailElement = document.getElementById("email");
-  const toolTipText = copyBtn.querySelector(".toolTipText p");
-  const icon = copyBtn.querySelector("i");
+  const toolTipText = copyBtn?.querySelector(".toolTipText p");
+  const icon = copyBtn?.querySelector("i");
 
   if (copyBtn && emailElement && toolTipText && icon) {
     copyBtn.addEventListener("click", async () => {
       const email = emailElement.textContent.trim();
-
       try {
         await navigator.clipboard.writeText(email);
-
-        // Cambiar icono
-        icon.classList.remove("fa-copy");
-        icon.classList.add("fa-check");
-
-        // Cambiar texto a toolTipTextThirteen
+        icon.classList.replace("fa-copy", "fa-check");
         toolTipText.dataset.key = "toolTipTextThirteen";
         applyTranslations();
-
-        // Volver al estado original después de 1s
         setTimeout(() => {
-          icon.classList.remove("fa-check");
-          icon.classList.add("fa-copy");
-
+          icon.classList.replace("fa-check", "fa-copy");
           toolTipText.dataset.key = "toolTipTextTwelve";
           applyTranslations();
         }, 1000);
@@ -91,6 +81,8 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error("Error copiando al portapapeles:", err);
       }
     });
+  } else {
+    console.warn("Elementos para copiar email no encontrados");
   }
 
   /* ================================
@@ -111,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* ================================
       TABLE OF CONTENT
-================================= */
+  ================================= */
   function generateTableOfContents() {
     const toc = document.getElementById("tableOfContents");
     if (!toc) return;
@@ -326,27 +318,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* ================================
       BUTTON PANNEL 
-================================= */
+  ================================= */
   function buttonPannelVisibility() {
     const variablePanel = document.querySelector(".buttonPannelVariable");
-    if (!variablePanel) return;
-
+    if (!variablePanel) {
+      console.warn("buttonPannelVariable no encontrado");
+      return;
+    }
     const showFromTop = 750;
-
     window.addEventListener("scroll", () => {
       const scrollTop = window.scrollY;
-
-      if (scrollTop > showFromTop) {
-        variablePanel.classList.add("visible");
-      } else {
-        variablePanel.classList.remove("visible");
-      }
+      variablePanel.classList.toggle("visible", scrollTop > showFromTop);
     });
   }
   buttonPannelVisibility();
 
   /* ================================
-     BUTTON SCROLL TO TOP
+      BUTTON SCROLL TO TOP
   ================================= */
   function scrollToTopButton() {
     const button = document.getElementById("buttonBackToTop");
@@ -379,17 +367,34 @@ document.addEventListener("DOMContentLoaded", () => {
   ================================= */
   function scrollProgressBar() {
     const progressBar = document.getElementById("scrollProgressBar");
-    if (!progressBar) return;
-
+    if (!progressBar) {
+      console.warn("scrollProgressBar no encontrado");
+      return;
+    }
     window.addEventListener("scroll", () => {
       const scrollTop = window.scrollY;
-      const docHeight =
-        document.documentElement.scrollHeight - window.innerHeight;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
       const scrollPercent = (scrollTop / docHeight) * 100;
-      progressBar.style.width = scrollPercent + "%";
+      progressBar.style.width = `${scrollPercent}%`;
     });
   }
   scrollProgressBar();
+
+  /* ================================
+      FAQS
+  ================================= */
+  // Select all elements with the class 'cardFAQs'
+  const cardsFaqs = document.querySelectorAll(".cardFAQs");
+
+  // Loop through each card
+  cardsFaqs.forEach((card) => {
+    // Add a 'click' event listener to each card
+    card.addEventListener("click", () => {
+      // Toggle the 'active' class on the clicked card
+      // This will show or hide the answer based on the CSS rules
+      card.classList.toggle("active");
+    });
+  });
 });
 
 /* ================================
@@ -473,56 +478,3 @@ function showTitleOnScroll() {
 }
 
 showTitleOnScroll();
-
-/* ================================
-    FAQS
-================================= */
-document.addEventListener("DOMContentLoaded", () => {
-  // Select all elements with the class 'cardFAQs'
-  const cards = document.querySelectorAll(".cardFAQs");
-
-  // Loop through each card
-  cards.forEach((card) => {
-    // Add a 'click' event listener to each card
-    card.addEventListener("click", () => {
-      // Toggle the 'active' class on the clicked card
-      // This will show or hide the answer based on the CSS rules
-      card.classList.toggle("active");
-    });
-  });
-});
-
-/* ================================
-   COPIAR EMAIL
-================================= */
-document.addEventListener("DOMContentLoaded", () => {
-  const button = document.getElementById("copyEmail"); // ✅ Selección por ID
-  const emailText = document.querySelector("#email p").textContent.trim();
-  const tooltip = button.querySelector(".toolTipText p");
-  const icon = button.querySelector("i");
-
-  button.addEventListener("click", () => {
-    navigator.clipboard
-      .writeText(emailText)
-      .then(() => {
-        tooltip.setAttribute("data-key", "toolTipTextThirteen");
-        if (typeof applyTranslations === "function") {
-          applyTranslations();
-        }
-
-        icon.classList.replace("fa-copy", "fa-check");
-
-        setTimeout(() => {
-          tooltip.setAttribute("data-key", "toolTipTextTwelve");
-          if (typeof applyTranslations === "function") {
-            applyTranslations();
-          }
-
-          icon.classList.replace("fa-check", "fa-copy");
-        }, 1000);
-      })
-      .catch((err) => {
-        console.error("Error al copiar el correo: ", err);
-      });
-  });
-});
