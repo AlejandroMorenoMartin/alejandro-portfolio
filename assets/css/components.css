@@ -818,6 +818,13 @@ footer {
 
 .tag i {
   color: var(--black-400);
+  font-size: 20px;
+}
+
+.tag svg {
+  color: var(--black-400);
+  width: 20px;
+  height: 20px;
 }
 
 .footerFrameBot {
