@@ -8,7 +8,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--white-300);
+  background: var(--white-400);
   border-radius: var(--br);
   border: 2px solid transparent;
   background-clip: content-box;
@@ -16,7 +16,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--white-400);
+  background: var(--white-500);
 }
 
 /* buttons */
@@ -818,13 +818,13 @@ footer {
 
 .tag i {
   color: var(--black-400);
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .tag svg {
   color: var(--black-400);
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
 }
 
 .footerFrameBot {
