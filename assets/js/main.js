@@ -478,3 +478,34 @@ function showTitleOnScroll() {
 }
 
 showTitleOnScroll();
+
+/* ================================
+    CHAT STATE
+================================= */
+document.addEventListener('DOMContentLoaded', () => {
+    const chatStatusSpan = document.querySelector('.chatContainer span');
+    const chatStatusText = document.querySelector('[data-key="chatContainerText"]');
+    const chatButtonLink = document.querySelector('.chatButton');
+    const chatButtonText = document.querySelector('[data-key="chatContainerButton"]');
+
+    const now = new Date();
+    const currentHour = now.getHours();
+
+    // Comprueba si la hora está entre las 6:00 y las 18:00
+    if (currentHour >= 6 && currentHour < 18) {
+        // Horario diurno: Conectado
+        chatStatusSpan.style.backgroundColor = 'var(--green)';
+        chatStatusText.textContent = 'Connected';
+        chatButtonLink.href = 'https://wa.me/34618110583';
+        chatButtonText.textContent = 'Chat';
+    } else {
+        // Horario nocturno: Desconectado
+        chatStatusSpan.style.backgroundColor = 'var(--red)';
+        chatStatusText.textContent = 'Disconnected';
+        chatButtonLink.href = 'mailto:alejandromorenomartin1990@gmail.com';
+        chatButtonText.textContent = 'Email';
+        // Quita la animación de "pulse" en modo desconectado
+        chatStatusSpan.style.animation = 'none';
+        chatStatusSpan.style.opacity = '1'; 
+    }
+});
