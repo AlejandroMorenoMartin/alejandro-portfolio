@@ -93,6 +93,10 @@
   letter-spacing: 0.5px;
 }
 
+.buttonLink {
+  display: inline-flex;
+}
+
 .buttonLink p {
   text-decoration: underline;
   text-underline-offset: 0.25rem;
