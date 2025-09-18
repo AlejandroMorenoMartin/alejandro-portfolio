@@ -2468,3 +2468,40 @@ span.cardPricesRecommended {
   gap: 0.5rem;
   cursor: pointer;
 }
+
+/* Chat container */
+.chatContainer {
+  display: flex;
+  flex-direction: row;
+  gap: .5rem;
+  align-items: center;
+}
+
+.chatContainer span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%; 
+  background-color: var(--green);
+  opacity: 1; 
+  animation: pulse 1.5s infinite; 
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+.chatButton {
+  transition: all 0.2s ease-in-out ;
+}
+
+.chatButton:hover {
+  text-decoration: underline;
+}

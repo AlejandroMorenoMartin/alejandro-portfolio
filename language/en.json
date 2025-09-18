@@ -527,5 +527,7 @@
   "cardFAQsTitleSix": "Is the investment really worth it?",
   "cardFAQsDescriptionSix": "A professional website isn't an expense; it's an investment. It helps you gain visibility, attract clients, and build trust. Many businesses recover their investment within the first few months.",
   "previousProjectButton":"Previous",
-  "nextProjectButton":"Next"
+  "nextProjectButton":"Next",
+  "chatContainerText":"Connected — ",
+  "chatContainerButton":"Chat"
 }

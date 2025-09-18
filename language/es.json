@@ -523,7 +523,9 @@
   "cardFAQsTitleSix":"¿La inversión realmente merece la pena?",
   "cardFAQsDescriptionSix":"Una web profesional no es un gasto, es una inversión. Te ayuda a ganar visibilidad, atraer clientes y transmitir confianza. Muchos negocios recuperan la inversión en los primeros meses.",  
   "previousProjectButton":"Anterior",
-  "nextProjectButton":"Siguiente"
+  "nextProjectButton":"Siguiente",
+  "chatContainerText":"Conectado — ",
+  "chatContainerButton":"Chat"
 }
 
 
