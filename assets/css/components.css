@@ -95,6 +95,8 @@
 
 .buttonLink {
   display: inline-flex;
+  width: auto; 
+  max-width: max-content;
 }
 
 .buttonLink p {
@@ -560,14 +562,14 @@ html[data-theme="dark"] .navContainer.scrolled {
 @media screen and (max-width: 1200px) {
   .heroSection {
     flex-direction: column;
+    justify-content: flex-end;
     align-items: flex-start;
   }
 }
 
 .heroSection img {
-  width: 22.5rem;
-  height: 22.5rem;
-  border-radius: 2rem;
+  width: 25rem;
+  height: 25rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -575,10 +577,9 @@ html[data-theme="dark"] .navContainer.scrolled {
 
 @media screen and (max-width: 1200px) {
   .heroSection img {
-    width: 75%;
-    max-width: 16rem;
+    width: 100%;
+    max-width: 22rem;
     height: auto;
-    border-radius: 1.5rem;
   }
 }
 
