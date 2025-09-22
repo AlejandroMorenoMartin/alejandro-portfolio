@@ -568,8 +568,8 @@ html[data-theme="dark"] .navContainer.scrolled {
 }
 
 .heroSection img {
-  width: 25rem;
-  height: 25rem;
+  width: 21rem;
+  height: 21rem;
   display: flex;
   justify-content: center;
   align-items: center;
