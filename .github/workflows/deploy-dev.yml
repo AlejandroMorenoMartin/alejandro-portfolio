@@ -1,4 +1,4 @@
-name: 🚀 Deploy DEV to IONOS via SFTP
+name: Deploy DEV to IONOS via SFTP
 
 on:
   push:
@@ -12,10 +12,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: 🧾 Debug remote path
-        run: echo "Remote path (DEV): ${{ secrets.IONOS_DEV_REMOTE_PATH }}"
+      - name: Debug remote path (DEV)
+        env:
+          REMOTE_PATH: ${{ secrets.IONOS_DEV_REMOTE_PATH }}
+        run: echo "Remote path (DEV): $REMOTE_PATH"
 
-      - name: 📂 Upload files via SFTP
+      - name: Upload files via SFTP (DEV)
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           server: ${{ secrets.IONOS_FTP_HOST }}
