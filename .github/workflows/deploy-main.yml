@@ -13,9 +13,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Debug remote path (MAIN)
-        env:
-          REMOTE_PATH: ${{ secrets.IONOS_PROD_REMOTE_PATH }}
-        run: echo "Remote path (MAIN): $REMOTE_PATH"
+        run: echo "Remote path (MAIN): ${{ secrets.IONOS_PROD_REMOTE_PATH }}"
 
       - name: Upload files via SFTP (MAIN)
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
