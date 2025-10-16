@@ -1,0 +1,24 @@
+name: 🚀 Deploy static site to Production (IONOS)
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🧩 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 📦 Upload files to IONOS via SFTP
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:
+          server: ${{ secrets.IONOS_FTP_HOST }}
+          username: ${{ secrets.IONOS_FTP_USER }}
+          password: ${{ secrets.IONOS_FTP_PASS }}
+          local_path: ./        
+          remote_path: ${{ secrets.IONOS_PROD_REMOTE_PATH }}   
+          port: 22
