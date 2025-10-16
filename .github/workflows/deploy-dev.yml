@@ -12,6 +12,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: 🧾 Debug remote path
+        run: echo "Remote path (DEV): ${{ secrets.IONOS_DEV_REMOTE_PATH }}"
+
       - name: 📂 Upload files via SFTP
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
